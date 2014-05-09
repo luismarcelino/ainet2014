@@ -1,0 +1,347 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+		<title>.:Internamento:.</title>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+
+		<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function() {
+				$('#menu_items > li').bind('mouseover', openSubMenu);
+				$('#menu_items > li').bind('mouseout', closeSubMenu);
+				$("#login_hidden").click(function() {
+					document.getElementById("login").setAttribute("class", "null");
+
+				});
+				$("#login_close_btn").click(function() {
+					document.getElementById("login").setAttribute("class", "hidden");
+
+				});
+
+				function openSubMenu() {
+					$(this).find('ul').css('visibility', 'visible');
+				};
+
+				function closeSubMenu() {
+					$(this).find('ul').css('visibility', 'hidden');
+				};
+			});
+
+			// carregar o slideshow
+			$(document).ready(function() {
+
+				var counter = 0, $items = $('.slideshow figure'), numItems = $items.length;
+
+				var showCurrent = function slide() {
+					var itemToShow = Math.abs(counter % numItems);
+					$items.removeClass('show');
+					$items.eq(itemToShow).addClass('show');
+
+				};
+
+				// o clique para a proxima imagem
+				$('.next').on('click', function() {
+					counter++;
+					showCurrent();
+				});
+				// o clique para a imagem anterior
+				$('.prev').on('click', function() {
+					counter--;
+					showCurrent();
+
+				});
+				//o primeiro clique
+				$(document).ready(function() {
+					$('.next').trigger('click');
+				});
+
+				function next() {
+					$('.next').trigger('click');
+				}
+
+				//para efectuar um clique de 7s em 7s
+				setInterval(next, 7000);
+			});
+
+			function validateLogin() {
+				var x = document.forms["loginForm"]["email"].value;
+				var y = document.forms["loginForm"]["password"].value;
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				document.getElementById("errorEmail").innerHTML = "";
+				document.getElementById("errorPassword").innerHTML = "";
+				document.getElementById("email").setAttribute("class", "login_input_email");
+				document.getElementById("password").setAttribute("class", "login_input_pass");
+
+				if ((x == null || x == "") && (y == null || y == "")) {
+					document.getElementById("email").setAttribute("class", "login_input_error");
+					document.getElementById("password").setAttribute("class", "login_input_error login_input_error_pass");
+					document.getElementById("errorEmail").innerHTML = "O e-mail está vazio";
+					document.getElementById("errorPassword").innerHTML = "A palavra-chave está vazia";
+					return false;
+				} else if ((atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) && (y == null || y == "")) {
+					document.getElementById("email").setAttribute("class", "login_input_error");
+					document.getElementById("password").setAttribute("class", "login_input_error login_input_error_pass");
+					document.getElementById("errorEmail").innerHTML = "E-mail é invalido";
+					document.getElementById("errorPassword").innerHTML = "A palavra-chave está vazia";
+					return false;
+				} else if (x == null || x == "") {
+					document.getElementById("email").setAttribute("class", "login_input_error");
+					document.getElementById("errorEmail").innerHTML = "O e-mail está vazio";
+					return false;
+				} else if (y == null || y == "") {
+					document.getElementById("password").setAttribute("class", "login_input_error login_input_error_pass");
+					document.getElementById("errorPassword").innerHTML = "A palavra-chave está vazia";
+					return false;
+				}
+				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+					document.getElementById("email").setAttribute("class", "login_input_error");
+					document.getElementById("errorEmail").innerHTML = "E-mail é invalido";
+					return false;
+				}
+			}
+
+            // carregar o slideshow
+			$(document).ready(function() {
+
+				var counter = 0, $items = $('.slideshow figure'), numItems = $items.length;
+
+				var showCurrent = function slide() {
+					var itemToShow = Math.abs(counter % numItems);
+					$items.removeClass('show');
+					$items.eq(itemToShow).addClass('show');
+
+				};
+                 
+                 // o clique para a proxima imagem
+				$('.next').on('click', function() {
+					counter++;
+					showCurrent();
+				});
+                // o clique para a imagem anterior
+				$('.prev').on('click', function() {
+					counter--;
+					showCurrent();
+
+				});
+				//o primeiro clique
+				$(document).ready(function() {
+					$('.next').trigger('click'); 
+				});
+                
+				function next() {
+					$('.next').trigger('click');
+				}
+                //para efectuar um clique de 7s em 7s
+				setInterval(next, 7000);
+			});
+
+			//]]>
+		</script>
+
+	</head>
+
+	<body>
+		<!-- Inicio Main -->
+		<div id="main">
+			<!-- Inicio header-->
+			<header>
+				<div id="logo_space" class="clearfix">
+					<img src="images/santa_casa200.png" alt="logotipo" >
+				</div>
+				<div id="msg_space" class="clearfix">
+					<img src="images/msg2.png" alt="logotipo" >
+				</div>
+				<!-- fim logo-->
+				<!--inicio login-->
+				<div id="login_space">
+					<span id="login_hidden" class="closed">Entrar</span> | <a href="registar.html">Registrar-se</a>
+					<div id="login" class="hidden">
+						<!-- incio Div login -->
+						<form action="#" id="loginForm" onsubmit="return validateLogin();"
+						method="post">
+							<div>
+								<label for="email"></label>
+								<input type="text"
+								class="login_input_email" name="email" id="email"
+								placeholder="E-mail"/>
+							</div>
+							<div id="errorEmail" class="errorLogin"></div>
+							<div>
+								<label for="password"></label>
+								<input type="password"
+								class="login_input_pass" name="password" id="password"
+								placeholder="Palavra-chave"/>
+							</div>
+							<div id="errorPassword" class="errorLogin"></div>
+							<div id="login_control">
+								<!--  <a href="register.html">Regista-se aqui</a>-->
+								<label for="login_btn"></label>
+								<input type="submit"
+								id="login_btn" name="login_btn" value="login"/>
+								<label for="login_close_btn"></label>
+								<input type="button"
+								id="login_close_btn" name="login_close_btn" value="X"/>
+							</div>
+
+						</form>
+					</div>
+					<!-- fim de div login -->
+
+				</div>
+				<!-- fim login_space-->
+				<!-- inicio pesquisa-->
+				<!-- fim pesquisa-->
+
+				<nav >
+					<!-- inicio Menu-->
+					<ul id="menu_items">
+						<li>
+							<a href="index.html">Entrada</a>
+						</li>
+						<li>
+							<a href="saude.html">Saúde</a>
+							<ul>
+								<li>
+									<a href="#">Hospital</a>
+								</li>
+								<li>
+									<a href="acupuntura.html">Lista de Especialidades</a>
+								</li>
+								<li>
+									<a href="corpoclinico.html">Corpo Clínico</a>
+								</li>
+								<li>
+									<a href="noticiasgeral.html">Notícias Clínicas</a>
+								</li>
+								<li>
+									<a href="marcacoes.html">Marcação de Consultas</a>
+								</li>
+								<li>
+									<a href="#">Confirmação de Marcações</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="cuidadosgeriatricos.html">Cuidados Geriátricos</a>
+
+							<ul>
+								<li>
+									<a href="residencial.html">Residencial</a>
+								</li>
+								<li>
+									<a href="lar.html">Lar</a>
+								</li>
+								<li>
+									<a href="#">Internamento</a>
+								</li>
+								<li>
+									<a href="apoiodomiciliario.html">Apoio domiciliário</a>
+								</li>
+
+							</ul>
+						</li>
+						<li>
+							<a href="creche.html">Creche</a>
+						</li>
+						<li>
+							<a href="irmandade.html">Irmandade</a>
+						</li>
+						<li>
+							<a href="contactos.html">Contactos</a>
+						</li>
+					</ul>
+					<div id="pesquisa_space">
+						<form action="#" method="get">
+							<div>
+								<input id="pesquisa_input" type="text" placeholder="Pesquisa..."
+								name="pesquisa_input" class="pesquisa" />
+							</div>
+						</form>
+					</div>
+				</nav>
+				<!-- fim menu-->
+			</header>
+			<!-- inicio slider-->
+			<section class="slideshow">
+				<figure>
+
+					<img src="images/santa_casa_all.jpg" alt="imagem1">
+					<figcaption>
+						Hospital <a href="residencial.html">clique aqui!</a>.
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/Nova_imagem2.JPG" alt="imagem2">
+					<figcaption>
+						Aldeia da Saúde
+					</figcaption>
+				</figure>
+				<figure>
+					<img src="images/UCCI4.jpg" alt="imagem3" >
+					<figcaption>
+						Unidade de cuidados Continuados <a href="cuidadosgeriatricos.html">Clique aqui!</a>.
+					</figcaption>
+
+				</figure>
+				<span class="prev">&laquo;</span>
+				<span class="next">&raquo;</span>
+
+			</section>
+			<!-- fim slider-->
+			<section id="content">
+				<!-- inicio do content-->
+
+				<div id="content-left-total">
+					<!-- inicio content left-->
+
+					<div class="content-not-geral">
+						<div class="cont-not-header-geral">
+							<h2> Internamento Privado</h2>
+						</div>
+						<div class="content-text">
+							<p>
+								A Unidade de Internamentos Privada está localizada no piso 1, dispõe de nove camas e destina-se a suprir as necessidades emergentes de utentes provenientes de subsistemas, seguros e privados.
+							</p>
+							<p>
+								<b> Telefone geral:</b> 244 100 009
+							</p>
+							<p>
+								<b>Para marcações – número directo 244 106 203</b>
+							</p>
+							
+								<div class="btn-mais-cg">
+									<a class="btn-content-marcar" href="formulariocontacto.html">Contacto-nos!</a>
+
+								</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</section>
+			<!-- fim do content-->
+			<footer class="clearfix">
+				<!-- inicio do footer-->
+				<div id="copyright_space">
+					<p>
+						Copyright - Bruno Amando | Márcio Carvalho | José Moreira -
+						All Rights Reserved 2014
+					</p>
+				</div>
+				<div id="follow_space">
+					Siga-nos: <a href="https://www.facebook.com/santacasaleiria?fref=ts" target="_blank"> <img src="./images/face.gif" alt="facebook"/> </a>
+
+				</div>
+			</footer>
+			<!-- fim do footer-->
+
+		</div>
+		<!-- fim do main-->
+	</body>
+</html>

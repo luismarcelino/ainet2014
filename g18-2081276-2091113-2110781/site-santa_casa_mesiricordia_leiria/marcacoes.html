@@ -1,0 +1,579 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+<title>.:Marcações de Consultas:.</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+
+
+
+<script type="text/javascript">
+			//<![CDATA[
+			$(document).ready(function() {
+				$('#menu_items > li').bind('mouseover', openSubMenu);
+				$('#menu_items > li').bind('mouseout', closeSubMenu);
+				$("#login_hidden").click(function() {
+					document.getElementById("login").setAttribute("class", "null");
+
+				});
+				$("#login_close_btn").click(function() {
+					document.getElementById("login").setAttribute("class", "hidden");
+
+				});
+
+				function openSubMenu() {
+					$(this).find('ul').css('visibility', 'visible');
+				};
+
+				function closeSubMenu() {
+					$(this).find('ul').css('visibility', 'hidden');
+				};
+			});
+
+		
+			function validateLogin() {
+				var x = document.forms["loginForm"]["email"].value;
+				var y = document.forms["loginForm"]["password"].value;
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				document.getElementById("errorEmail").innerHTML = "";
+				document.getElementById("errorPassword").innerHTML = "";
+				document.getElementById("email").setAttribute("class", "login_input_email");
+				document.getElementById("password").setAttribute("class", "login_input_pass");
+
+				if ((x == null || x == "") && (y == null || y == "")) {
+					document.getElementById("email").setAttribute("class", "login_input_error");
+					document.getElementById("password").setAttribute("class", "login_input_error login_input_error_pass");
+					document.getElementById("errorEmail").innerHTML = "O e-mail está vazio";
+					document.getElementById("errorPassword").innerHTML = "A palavra-chave está vazia";
+					return false;
+				} else if ((atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) && (y == null || y == "")) {
+					document.getElementById("email").setAttribute("class", "login_input_error");
+					document.getElementById("password").setAttribute("class", "login_input_error login_input_error_pass");
+					document.getElementById("errorEmail").innerHTML = "E-mail é invalido";
+					document.getElementById("errorPassword").innerHTML = "A palavra-chave está vazia";
+					return false;
+				} else if (x == null || x == "") {
+					document.getElementById("email").setAttribute("class", "login_input_error");
+					document.getElementById("errorEmail").innerHTML = "O e-mail está vazio";
+					return false;
+				} else if (y == null || y == "") {
+					document.getElementById("password").setAttribute("class", "login_input_error login_input_error_pass");
+					document.getElementById("errorPassword").innerHTML = "A palavra-chave está vazia";
+					return false;
+				}
+				if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= x.length) {
+					document.getElementById("email").setAttribute("class", "login_input_error");
+					document.getElementById("errorEmail").innerHTML = "E-mail é invalido";
+					return false;
+				}
+			}
+
+			function trim(str) {
+				return str.replace(/^\s+/gi, '').replace(/\s+$/gi, '');
+			}
+			
+			function valida_marcacoes(evt) {
+				var form = evt.target;
+				var elem = null;
+				var nome = trim(form.nome.value) || "";
+				if (nome.length == 0) {
+					document.getElementById("nome").setAttribute("class", "errorValidacao");
+					document.getElementById("errorNome").innerHTML = "Tem de introduzir um nome válido!";
+					if (elem == null) elem = form.nome;
+				}else{
+					document.getElementById("nome").setAttribute("class", "none");
+					document.getElementById("errorNome").innerHTML = "";
+					
+				}
+				
+				var apelido = trim(form.apelido.value) || "";
+				if (apelido.length == 0) {
+					document.getElementById("apelido").setAttribute("class", "errorValidacao");
+					document.getElementById("errorApelido").innerHTML = "Tem de introduzir um Apelido válido!";
+					if (elem == null) elem = form.apelido;
+				}else{
+					document.getElementById("apelido").setAttribute("class", "none");
+					document.getElementById("errorApelido").innerHTML = "";
+					
+				}
+				
+
+				var idade = trim(form.idade.value) || "";
+				if (idade.length == 0) {
+					document.getElementById("idade").setAttribute("class", "errorValidacao");
+					document.getElementById("errorIdade").innerHTML = "Tem de indicar uma data de nascimento";
+					if (elem == null) elem = form.idade;
+				}else{
+					document.getElementById("idade").setAttribute("class", "none");
+					document.getElementById("errorIdade").innerHTML = "";
+					if (!idade.match(/^[0-9]{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])/)) {
+						document.getElementById("idade").setAttribute("class", "errorValidacao");
+						document.getElementById("errorIdade").innerHTML = "Tem de indicar uma data valida!";
+						if (elem == null) elem = form.idade;
+					}
+					
+				}
+				
+				var data_pretendida = trim(form.data_pretendida.value) || "";
+				if (!(data_pretendida.length == 0)) {
+					
+					
+					if (!idade.match(/^[0-9]{4}\-(0[1-9]|1[012])\-(0[1-9]|[12][0-9]|3[01])/)) {
+						document.getElementById("data_pretendida").setAttribute("class", "errorValidacao");
+						document.getElementById("errorData_pretendida").innerHTML = "Tem de indicar uma data valida!";
+						if (elem == null) elem = form.data_pretendida;
+					}else{
+						document.getElementById("data_pretendida").setAttribute("class", "none");
+						document.getElementById("errorData_pretendida").innerHTML = "";
+						}
+					
+				}
+				
+				if (!(document.getElementById("optionsSexo_m").checked || document.getElementById("optionsSexo_f").checked)) {
+					
+					document.getElementById("errorSexo").innerHTML = "Tem de introduzir um genero!";
+					if (elem == null) elem = form.optionsSexo_m;
+				}else{
+					
+					document.getElementById("errorSexo").innerHTML = "";
+					
+				}
+				
+				var email_m = trim(form.email_m.value) || "";
+				if (!(email_m.length == 0)) {
+					
+					if (!email_m.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
+						document.getElementById("email_m").setAttribute("class", "errorValidacao");
+						document.getElementById("errorEmail_m").innerHTML = "Email inválido. Tem de estar na forma: xxxxxx@xxx.xxx";
+						if (elem == null) elem = form.email_m;
+					}else{
+						document.getElementById("email_m").setAttribute("class", "none");
+						document.getElementById("errorEmail_m").innerHTML = "";
+					}
+					
+				}
+				
+				var telefone = form.telefone.value || "";
+				if (!telefone.match(/^\d{9,14}$/)) {
+					document.getElementById("telefone").setAttribute("class", "errorValidacao");
+					document.getElementById("errorTelefone").innerHTML = "O telefone tem de possuir 9 digitos.";
+					if (elem == null) elem = form.telefone;
+				}else{
+					document.getElementById("telefone").setAttribute("class", "none");
+					document.getElementById("errorTelefone").innerHTML = "";
+					
+				}
+				
+				var consulta_id = trim(form.consulta_id.value) || "";
+				var exame_id = trim(form.exame_id.value) || "";
+				if (consulta_id.length == 0 && exame_id.length != 0) {
+					document.getElementById("consulta_id").setAttribute("class", "none");
+					document.getElementById("errorConsulta_id").innerHTML = "";
+					document.getElementById("exame_id").setAttribute("class", "none");
+					document.getElementById("errorExame_id").innerHTML = "";
+					
+				}else if(consulta_id.length != 0 && exame_id.length == 0){
+						document.getElementById("consulta_id").setAttribute("class", "none");
+						document.getElementById("errorConsulta_id").innerHTML = "";
+						document.getElementById("exame_id").setAttribute("class", "none");
+						document.getElementById("errorExame_id").innerHTML = "";
+					
+				}else if(consulta_id.length != 0 && exame_id.length != 0){
+					document.getElementById("consulta_id").setAttribute("class", "none");
+					document.getElementById("errorConsulta_id").innerHTML = "";
+					document.getElementById("exame_id").setAttribute("class", "none");
+					document.getElementById("errorExame_id").innerHTML = "";
+				
+				}else{
+					
+					document.getElementById("consulta_id").setAttribute("class", "errorValidacao");
+					document.getElementById("errorConsulta_id").innerHTML = "Tem de selecionar uma consulta ou um exame!";
+					document.getElementById("exame_id").setAttribute("class", "errorValidacao");
+					document.getElementById("errorExame_id").innerHTML = "Tem de selecionar uma consulta ou um exame!";
+					if (elem == null) elem = form.consulta_id;
+				}
+				
+				if (elem != null) {
+					elem.focus();
+					return false;
+				}
+				
+				return true;
+			}
+
+			$(document).ready(function () {
+				$("#marcacoesForm").submit(valida_marcacoes);
+			});
+			
+			
+			
+			
+			//]]>
+		</script>
+
+</head>
+
+<body>
+		<!-- Inicio Main -->
+		<div id="main">
+			<!-- Inicio header-->
+			<header>
+				<div id="logo_space" class="clearfix">
+					<img src="images/santa_casa200.png" alt="logotipo" >
+				</div>
+				<div id="msg_space" class="clearfix">
+					<img src="images/msg2.png" alt="logotipo" >
+				</div>
+				<!-- fim logo-->
+				<!--inicio login-->
+				<div id="login_space">
+					<span id="login_hidden" class="closed">Entrar</span> | <a href="registar.html">Registrar-se</a>
+					<div id="login" class="hidden">
+						<!-- incio Div login -->
+						<form action="#" id="loginForm" onsubmit="return validateLogin();"
+						method="post">
+							<div>
+								<label for="email"></label>
+								<input type="text"
+								class="login_input_email" name="email" id="email"
+								placeholder="E-mail"/>
+							</div>
+							<div id="errorEmail" class="errorLogin"></div>
+							<div>
+								<label for="password"></label>
+								<input type="password"
+								class="login_input_pass" name="password" id="password"
+								placeholder="Palavra-chave"/>
+							</div>
+							<div id="errorPassword" class="errorLogin"></div>
+							<div id="login_control">
+								<!--  <a href="register.html">Regista-se aqui</a>-->
+								<label for="login_btn"></label>
+								<input type="submit"
+								id="login_btn" name="login_btn" value="login"/>
+								<label for="login_close_btn"></label>
+								<input type="button"
+								id="login_close_btn" name="login_close_btn" value="X"/>
+							</div>
+
+						</form>
+					</div>
+				<!-- fim de div login -->
+
+			</div>
+			<!-- fim login_space-->
+			<!-- inicio pesquisa-->
+			<!-- fim pesquisa-->
+
+			<nav>
+				<!-- inicio Menu-->
+				<ul id="menu_items">
+					<li><a href="index.html">Entrada</a></li>
+					<li><a href="saude.html">Saúde</a>
+						<ul>
+							<li><a href="hospital.html">Hospital</a></li>
+							<li><a href="acupuntura.html">Lista de Especialidades</a></li>
+							<li><a href="corpoclinico.html">Corpo Clínico</a></li>
+							<li><a href="noticiasgeral.html">Notícias Clínicas</a></li>
+							<li><a href="#">Marcação de Consultas</a></li>
+							<li><a href="#">Confirmação de Marcações</a></li>
+
+						</ul></li>
+					<li><a href="cuidadosgeriatricos.html">Cuidados
+							Geriátricos</a>
+
+						<ul>
+							<li><a href="residencial.html">Residencial</a></li>
+							<li><a href="lar.html">Lar</a></li>
+							<li><a href="internamento.html">Internamento</a></li>
+							<li><a href="apoiodomiciliario.html">Apoio domiciliário</a>
+							</li>
+
+						</ul></li>
+					<li><a href="creche.html">Creche</a></li>
+					<li><a href="irmandade.html">Irmandade</a></li>
+					<li><a href="contactos.html">Contactos</a></li>
+				</ul>
+				<div id="pesquisa_space">
+					<form action="#" method="get">
+						<div>
+							<input id="pesquisa_input" type="text" placeholder="Pesquisa..."
+								name="pesquisa_input" class="pesquisa" />
+						</div>
+					</form>
+				</div>
+			</nav>
+			<!-- fim menu-->
+		</header>
+		<!-- fim header-->
+
+		<section id="content">
+			<!-- inicio do content-->
+
+			<div id="content-left">
+				<!-- inicio content left-->
+				<div class="cont-not-header-geral">
+					<h2>Marcação de Consultas</h2>
+				</div>
+				<div class="content-text">
+					<p>"Aqui pode efectuar o pedido de marcação de uma consulta ou
+						de um exame. Este procedimento carece de validação pelo Hospital
+						D. Manuel de Aguiar. Oportunamente será contactado para
+						confirmação do dia e hora do seu pedido. Obrigado!"</p>
+					
+					
+					<form method="post" action="#" id="marcacoesForm" name="marcacoesForm"
+						onsubmit="return valida_marcacoes();"
+						enctype="multipart/form-data">
+
+						<div class="cont-not-header-geral">
+							<h2>Identificação</h2>
+						</div>
+    					<div class="content-text">
+    						<p>(*) campos obrigatórios</p>
+    					</div>	
+    					<div class="floatleft_td">
+							<div class="label_td">
+								<label for="nome">Nome *</label>
+							</div>
+							<div class="input_td">
+								<input type="text" name="nome" id="nome" value="">
+								
+								<div id="errorNome" class="errorMsg"></div>
+							</div>
+						</div>
+						<div class="floatright_td">
+							<div class="label_td">
+								<label for="apelido">Apelido *</label>
+							</div>
+							<div class="input_td">
+								<input type="text" name="apelido" id="apelido" value="">
+								
+								<div id="errorApelido" class="errorMsg"></div>
+							</div>
+						</div>
+						<div class="floatleft_td c">
+							<div class="label_td">
+								<label for="morada">Morada</label>
+							</div>
+							<div >
+								<textarea name="morada" id="morada" ></textarea>
+								<div  class="errorMsg"></div>
+							</div>
+						</div>
+						<div class="floatleft_td c">
+							<div class="label_td">
+								<label for="idade">Data de Nascimento *</label>
+							</div>
+							<div class="input_td">
+								<input type="text" name="idade" id="idade" value="" placeholder="aaaa-mm-dd">
+								<div id="errorIdade" class="errorMsg"></div>
+								
+							</div>
+						</div>
+					<div class="floatright_td">
+							<div class="label_td">
+                                <label>Sexo *</label>
+                            </div>
+                            <div id="sexo" class="input_td">
+                                <label for="optionsSexo_m">
+                                    <input type="radio" name="sexo" id="optionsSexo_m" value="m">
+                                    Masculino</label>
+                                <label for="optionsSexo_f">
+                                    <input type="radio" name="sexo" id="optionsSexo_f" value="f">
+                                    Feminino</label>
+                                    <div id="errorSexo" class="errorMsg"></div>
+                           </div>
+                        </div>
+						<div class="floatleft_td c">
+							<div class="label_td">
+								<label for="email_m">E-mail</label>
+							</div>
+							<div class="input_td">
+								<input type="text" name="email_m" id="email_m" value="" >
+								<div id="errorEmail_m" class="errorMsg"></div>
+							</div>
+						</div>
+						<div class="floatright_td">
+							<div class="label_td">
+								<label for="telefone">Telefone *</label>
+							</div>
+							<div class="input_td">
+								<input type="text" name="telefone" id="telefone" value="" >
+								<div id="errorTelefone" class="errorMsg"></div>
+							</div>
+						</div>
+						<div class="cont-not-header-geral c">
+							<h2>Marcação</h2>
+						</div>
+    					<div class="content-text">
+    						<p>(*) campos obrigatórios</p>
+    					</div>	
+						<div class="floatleft_td c">
+							<div class="label_td">
+								<label for="sistema_saude_id">Subsistema ou Seguro de Saúde </label>
+							</div>
+							<div class="input_td">
+								<select name="sistema_saude_id" id="sistema_saude_id">
+									<option value="">--- Seleccione ---</option>
+									<option value="10">ADMG (só para MFR)</option>
+									<option value="1">ADSE</option>
+									<option value="5">IASFA (ADMA, ADME, ADMFA)</option>
+									<option value="12">Medis (só para MFR)</option>
+									<option value="7">Multicare</option>
+									<option value="13">Particular</option>
+									<option value="8">Planicare</option>
+									<option value="11">SAD PSP (só para MFR)</option>
+									<option value="2">SAMS Centro</option>
+									<option value="6">Serviços Sociais da CGD</option>
+									<option value="9">Servimed</option>
+									<option value="3">Sindicato dos Funcionários Judiciais</option>
+									<option value="4">SNS</option>
+								</select>
+								<div class="errorMsg"></div>					
+							</div>
+						</div>
+						<div class="floatleft_td c">
+							<div class="label_td">
+								<label for="consulta_id">Consulta</label>
+							</div>
+							<div class="input_td">
+								<select name="consulta_id" id="consulta_id">
+									<option value="">--- Seleccione ---</option>
+									<option value="65">Acupunctura</option>
+									<option value="66">Cardiologia</option>
+									<option value="13">Cirurgia Geral</option>
+									<option value="20">Cirurgia Plástica e Reconstrutiva</option>
+									<option value="21">Cirurgia Vascular</option>
+									<option value="67">Dermatologia</option>
+									<option value="78">Diabetes</option>
+									<option value="11">Dietista</option>
+									<option value="8">Endocrinologia</option>
+									<option value="23">Estomatologia</option>
+									<option value="68">Gastrenterologia</option>
+									<option value="69">Ginecologia</option>
+									<option value="16">Medicina Desportiva</option>
+									<option value="24">Medicina Física e de Reabilitação</option>
+									<option value="26">Mesoterapia</option>
+									<option value="27">Neurocirurgia</option>
+									<option value="70">Neurologia</option>
+									<option value="71">Oftalmologia adulto e infantil</option>
+									<option value="72">Ortopedia</option>
+									<option value="73">Otorrinolaringologia</option>
+									<option value="74">Pneumologia</option>
+									<option value="10">Psicologia Clínica</option>
+									<option value="9">Psiquiatria</option>
+									<option value="75">Reumatologia</option>
+									<option value="76">Urologia</option>
+								</select>
+								<div class="marcacao_info">* Obrigatório se não seleccionar exame</div>
+								<div id="errorConsulta_id" class="errorMsg"></div>	
+							</div>
+						</div>
+						<div class="floatleft_td c">
+							<div class="label_td">
+								<label for="exame_id">Exame</label>
+							</div>
+							<div class="input_td">
+								<select name="exame_id" id="exame_id">
+									<option value="">--- Seleccione ---</option>
+									<option value="42">Anatomia Patológica</option>
+									<option value="3">Análises Clínicas</option>
+									<option value="51">Audiometria</option>
+									<option value="1">Cardiologia</option>
+									<option value="45">Colonoscopia</option>
+									<option value="4">Dermatologia</option>
+									<option value="48">Doppler a cores, transesofágico</option>
+									<option value="62">Eco-Doppler</option>
+									<option value="47">Ecocardiografia Modo M, 2D</option>
+									<option value="61">Ecografia</option>
+									<option value="43">Ecografia Geral e Vascular</option>
+									<option value="39">Electrocardiograma com prova de esforço em tapete rolante</option>
+									<option value="49">Electrocardiograma simples</option>
+									<option value="44">Endoscopia alta</option>
+									<option value="19">Gastrenterologia</option>
+									<option value="5">Ginecologia</option>
+									<option value="57">Imagiologia</option>
+									<option value="54">Impedânciometria</option>
+									<option value="63">Mamografia Digital</option>
+									<option value="50">MAPA (medição ambulatória da pressão arterial)</option>
+									<option value="28">Neurologia</option>
+									<option value="32">Oftalmologia</option>
+									<option value="33">Ortopedia</option>
+									<option value="64">Osteodensitometria</option>
+									<option value="37">Otorrinolaringologia</option>
+									<option value="2">Pneumologia</option>
+									<option value="53">Posturografia dinâmica e computorizada</option>
+									<option value="56">Provas funcionais respiratórias</option>
+									<option value="46">Rectosigmoidoscopia</option>
+									<option value="58">Reumatologia</option>
+									<option value="60">Rx-Digital</option>
+									<option value="59">TAC</option>
+									<option value="55">Timpanometria</option>
+									<option value="29">Urologia</option>
+									<option value="52">Videonistagmografia</option>
+								</select>
+								<div class="marcacao_info">* Obrigatório se não seleccionar consulta</div>
+								<div id="errorExame_id" class="errorMsg"></div>	
+							</div>
+						</div>
+						<div class="floatleft_td c">
+							<div class="label_td">
+								<label for="data_pretendida">Data pretendida</label>
+							</div>
+							<div class="input_td">	
+								<input type="text" name="data_pretendida" id="data_pretendida" value="" placeholder="aaaa-mm-dd">
+								<div id="errorData_pretendida" class="errorMsg"></div>
+							</div>
+						</div>
+						<div class="content-text c">
+    						<p><strong>Nota:</strong> No dia da consulta deve ser portador dos Meios Complementares de Diagnóstico e/ou Terapêutica recentes que dispuser.<br>
+Deve ser igualmente portador do Cartão de Utente do SNS e/ou do Cartão da Entidade Financeira Responsável (Termos de Responsabilidade e/ou Credenciais, quando aplicável).</p>
+				
+    					</div>
+				
+		
+		
+		
+			<div class="btn-marcar c"><input type="reset" value="Limpar" class="btn-content-marcar"></div>
+			<div class="btn-marcar"><input type="submit" value="Enviar" class="btn-content-marcar"></div>
+
+
+					</form>
+				</div>
+			</div>
+			<!-- fim content left-->
+				<div id="content-right-marcacoes" >
+					<img src="images/consultas.jpg" alt="imagem do profissional de saúde"/>
+				</div>
+				
+
+		</section>
+		<!-- fim do content-->
+
+		<footer>
+			<!-- inicio do footer-->
+			<div id="copyright_space">
+				<p>Copyright - Bruno Amando | Márcio Carvalho | José Moreira -
+					All Rights Reserved 2014</p>
+			</div>
+			<div id="follow_space">
+				Siga-nos: <a href="https://www.facebook.com/santacasaleiria?fref=ts"
+					target="_blank"> <img src="./images/face.gif" alt="facebook" />
+				</a>
+
+			</div>
+		</footer>
+		<!-- fim do footer-->
+
+	</div>
+	<!-- fim do main-->
+</body>
+</html>
