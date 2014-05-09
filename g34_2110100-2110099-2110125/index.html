@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Santa Casa da Misericórdia de Leiria - Início</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<script src="js/jquery.js"></script>
+	<script src="js/utils.js"></script>
+
+	<script>
+
+	$(document).ready(function(){
+		var trigger = $('ul.trigger li');
+		var images = $('ul.images li');
+		var lastElem = trigger.length-2;
+		var target;
+
+
+		trigger.eq(1).addClass('active');
+		images.hide().first().show();
+
+		function sliderResponse(target) {
+			images.hide().eq(target-1).fadeIn(300);
+			trigger.removeClass('active').eq(target).addClass('active');
+		}
+
+		trigger.click(function() {
+			if ( !$(this).hasClass('active') && !$(this).hasClass('prev') && !$(this).hasClass('next') ) {
+				target = $(this).index();
+				sliderResponse(target);
+				resetTiming();
+			}
+		});
+
+		$('.next').click(function() {
+			target = $('ul.trigger li.active').index();
+			target === lastElem ? target = 1 : target = target+1;
+			sliderResponse(target);
+			resetTiming();
+		});
+		$('.prev').click(function() {
+			target = $('ul.trigger li.active').index();
+			lastElem = trigger.length-2;
+			target === 1 ? target = lastElem : target = target-1;
+			sliderResponse(target);
+			resetTiming();
+		});
+
+		function sliderTiming() {
+			target = $('ul.trigger li.active').index();
+			target === lastElem ? target = 1 : target = target+1;
+			sliderResponse(target);
+		}
+
+		var timingRun = setInterval(function() { sliderTiming(); },12000);
+		function resetTiming() {
+			clearInterval(timingRun);
+			timingRun = setInterval(function() { sliderTiming(); },12000);
+		}
+
+	});
+</script>
+</head>
+
+<body>
+
+	<header>
+		<div class="full-width">
+			<div id="logo">
+				<div class="center">
+					<img src="./img/logo.png" alt="" />
+					<div id="login-box">
+						<form action="">
+
+							<fieldset>
+
+								<div id="login-box-username">
+									<label for="username">Username: </label>
+									<input type="text" name="username" id="username">
+								</div>
+								<div id="login-box-password">
+									<label for="password">Password: </label>
+									<input type="password" name="password" id="password">
+								</div>
+								<div id="login-box-button">
+									<button>
+										Entrar
+									</button>
+								</div>
+
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<div class="center">
+					<ul>
+						<li class="activeNav">
+							<a href="index.html">Início</a>
+						</li>
+						<li>
+							<a href="saude.html">Saúde</a>
+						</li>
+						<li>
+							<a href="cuidadosgeriatricos.html">Cuidados Geriátricos</a>
+						</li>
+						<li>
+							<a href="creche.html">Creche</a>
+						</li>
+						<li>
+							<a href="irmandade.html">Irmandade</a>
+						</li>
+						<li>
+							<a href="contactos.html">Contactos</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</div>
+		<div id="welcome_message">
+			<p>
+				Bem Vindo Visitante!
+			</p>
+			<p id="clickToEnter">
+				Clique para autenticar
+			</p>
+		</div>
+		<div id="search_box">
+			<input type="text" id="search_field" name="search_field" placeholder="Search..." />
+			<input type="button" id="search_button" value="Search" />
+		</div>
+	</header>
+	<div id="main">
+		<div class="container">
+
+			<div class="inside">
+				<div class="wrapper">
+					<section id="slider">
+						<ul class="images">
+							<li>
+								<div class="slider_text">
+									<h2>Hospital D. Manuel de Aguiar</h2>
+								<p>A Santa Casa da Misericórdia de Leiria - Hospital D. Manuel de Aguiar dispõe de uma enorme variedade de valências, disponíveis para toda a população, visando uma melhoria da qualidade de vida. Dispomos de uma equipa especializada à sua espera de forma a corresponder às suas necessidades.</p>
+
+								<p>Temos acordos com diversos sub-sistemas de Saúde e Seguradoras para realizar os seus tratamentos de fisioterapia (Terapia manual, Electroterapia, termoterapia, cinesioterapia vertebral e respiratória, mecanoterapia, treinos proprioceptivos e hidroterapia). Para mais informações ligue o 244 100 009. Obrigado.</p>
+
+								</div>
+								<img src="img/1.jpg" alt="1" />
+							</li>
+							<li>
+								<div class="slider_text">
+								<h2>Creche Casa Sanches</h2>
+								<p>O metodo de funcionamento da creche tem por base o instituido pela segurança social</p>
+								<h3>Oferecemos</h3>
+								<p>Segurança</p>
+								<p>Higiene e Cuidados de Saúde</p>
+								<p>Alimentação (Orientada por uma dietista)</p>
+								<p>Atividades Lúdico-Pedagógicas</p>
+								</div>
+								<img src="img/2.png" alt="2" />
+							</li>
+							<li>
+								<div class="slider_text">
+								<h2>Residêncial</h2>
+								<p>A Residêncial XXI é o local ideal para quem pretende uma opção
+								de repouso e cariz familiar, onde a personalidade de cada utente determina o atendimento
+								dos diversos profissionais desta unidade</p>
+								<p> A funcionalidade das instalações e o atendimento personalizado são os seus principais
+								atributos. Com uma localização priviligiada e detentora de vistas
+								soberbas sobre Leiria, nomeadamente para dois dos principais símbolos desta cidade, o Rio Liz e o castelo, a residêncial XXI assume-se como uma refência de qualidade no que toca ao acolhimento. </p>
+								<p>
+								Os Utentes da residêncial Assistida XXI beneficiam ainda de apoio médico, enfermagem, psicologia,
+								clínica e de animação cultural, fisioterapia, terapeuta ocupacional, 
+								dietista e serviços ecuménicos. 
+								</p>
+								</div>
+								<img src="img/3.jpg" alt="3" />
+							</li>
+							<li>
+								<div class="slider_text">
+								<h2>Lar</h2>
+								<p>O envelhecimento da população é um fenómeno de aplitude mundial, não sendo Portugal excepção
+								a esta realidade. O quadro actual do envelhecimento caracteriza-se por um aumento da longevidade</p>
+								<p>O cuidar de indivíduos no seu processo de envelhecimento deve incluir o conhecimento
+								das mudanças que ocorrem durante o seu ciclo de vida, das reais necessidades sentidas face à doença ou
+								às perdas de funcionalidade, mas também prevenir as perdas de autonomia, valorizando potêncialidades
+								e promovendo a auto estima</p>
+								<p>Oferece alojamento temporário ou permanente, em quartos
+								individuais ou duplos, num ambiente acolhedor e familiar ,
+								preservando a individualidade e privacidade de cada utente</p>
+								</div>
+								<img src="img/4.png" alt="4" />
+							</li>
+
+							<li>
+								<div class="slider_text">
+								<h2>Internamento</h2>
+								<p>A unidade de Internamento do Hospital D. Manuel de Aguiar oferece aos pacieentes o melhor
+								acompanhamento médico e de enfermagem além de excelentes condições de conforto e privacidade.</p>
+								<h3>Comodidades</h3>
+								<p>Capacidade para 9 camas</p>
+								<p>Ar condicionado</p>
+								<p>Rede de gases medicinais</p>
+								<p>Televisão e telefone</p>
+								</div>
+								<img src="img/5.png" alt="5" />
+							</li>
+							<li>
+								<div class="slider_text">
+								<h2>Apoio Domiciliário</h2>
+								<p>Apoia os indíviduos e famílias na satiscação das necessidades e actividades
+								de vida diária no domicílio a sua saúde, bem estar e integração social</p>
+								<h3>Serviços:</h3>
+								<p>Fornecimento de refeições</p>
+								<p>Tratamento de roupas</p>
+								<p>Cuidados de Higiene</p>
+								<p>Apoio Psico-Social e actividades lúdicas</p>
+								</div>
+								<img src="img/6.png" alt="6" />
+							</li>
+						</ul>
+
+						<ul class="trigger">
+							<li class="prev">Prev</li>
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+							<li>6</li>
+							<li class="next">Next</li>
+						</ul>
+					</section>
+				</div>
+
+			</div>
+
+			<div>
+				<h2 class="category">Últimas Publicações dos Médicos</h2>
+			</div>
+
+			<div class="wrapper">
+				<section>
+
+					<div>
+						<div class="article">
+							<h3><a href="#">Sed ut perspiciatis unde</a></h3>
+							<address class="newsFooter">
+								Autores: Manuel, Afonso, Rui
+							</address>
+							<div class="thumbnailImage">
+								<img src="img/default.jpg" alt="">
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus dolor ante, ac lacinia ante commodo at. Vestibulum nec vulputate magna, non tincidunt mi. Donec vitae massa a felis cursus rutrum ut ac magna. Phasellus eu vulputate nibh, non pharetra metus. Suspendisse tellus ligula, commodo ut est eget, sagittis luctus velit. Nam quis ornare massa. Sed suscipit neque ac ullamcorper lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut malesuada tortor. Nulla nec diam velit. Donec turpis erat, volutpat sed venenatis in, molestie vel mauris. Etiam nec dui justo. Vivamus tortor lacus, mattis interdum euismod non, tristique ac lorem. Quisque condimentum suscipit ante, quis porta nibh laoreet pretium. Nullam viverra tortor ac porta varius.
+							</p>
+							<p>
+								<a href="#">Ler Mais...</a>
+							</p>
+
+						</div>
+						<div class="article">
+							<h3><a href="#">Totam rem aperiam</a></h3>
+							<address class="newsFooter">
+								Autores: Manuel, Afonso, Rui
+							</address>
+							<div class="thumbnailImage">
+								<img src="img/default.jpg" alt="">
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus dolor ante, ac lacinia ante commodo at. Vestibulum nec vulputate magna, non tincidunt mi. Donec vitae massa a felis cursus rutrum ut ac magna. Phasellus eu vulputate nibh, non pharetra metus. Suspendisse tellus ligula, commodo ut est eget, sagittis luctus velit. Nam quis ornare massa. Sed suscipit neque ac ullamcorper lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut malesuada tortor. Nulla nec diam velit. Donec turpis erat, volutpat sed venenatis in, molestie vel mauris. Etiam nec dui justo. Vivamus tortor lacus, mattis interdum euismod non, tristique ac lorem. Quisque condimentum suscipit ante, quis porta nibh laoreet pretium. Nullam viverra tortor ac porta varius.
+							</p>
+							<p>
+								<a href="#">Ler Mais...</a>
+							</p>
+						</div>
+						<div class="article">
+							<h3><a href="#">Inventore veritatis et quasi</a></h3>
+							<address class="newsFooter">
+								Autores: Medico1
+							</address>
+							<div class="thumbnailImage">
+								<img src="img/medico1.png" alt="">
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus dolor ante, ac lacinia ante commodo at. Vestibulum nec vulputate magna, non tincidunt mi. Donec vitae massa a felis cursus rutrum ut ac magna. Phasellus eu vulputate nibh, non pharetra metus. Suspendisse tellus ligula, commodo ut est eget, sagittis luctus velit. Nam quis ornare massa. Sed suscipit neque ac ullamcorper lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut malesuada tortor. Nulla nec diam velit. Donec turpis erat, volutpat sed venenatis in, molestie vel mauris. Etiam nec dui justo. Vivamus tortor lacus, mattis interdum euismod non, tristique ac lorem. Quisque condimentum suscipit ante, quis porta nibh laoreet pretium. Nullam viverra tortor ac porta varius.
+							</p>
+							<p>
+								<a href="#">Ler Mais...</a>
+							</p>
+						</div>
+
+
+
+
+						<div class="floatLeft">
+							<h3><a href="#">Mais Publicações </a></h3>
+						</div>
+					</div>
+				</section>
+				<section id="content">
+					<h2 class="category">Últimas Notícias</h2>
+					<div class="noticia" id="noticia1">
+						<article>
+							<h2 class="category">Irmandade</h2>
+							<h2><a href="visualizacaoNoticia.html">Noticia1</a></h2>
+							<div class="newsFooter">
+								Irmandade - publicado em: 18/04/2014
+							</div>
+							<address class="newsFooter">
+								Autores: Manuel, Afonso, Rui
+							</address>
+							<div class="thumbnailImage">
+								<img src="http://guiadoestudante.abril.com.br/blogs/melhores-faculdades/files/2012/11/medicina_1-1.jpg" alt="">
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nisl, sagittis eu auctor ac, iaculis at dolor. Suspendisse ac pellentesque lorem, quis pharetra risus. Morbi luctus malesuada nulla sed vehicula. Vestibulum ultrices tellus quis dui lacinia tincidunt. Nunc ut pharetra leo, ac placerat orci. Sed at nibh nisl. Nulla blandit diam et nulla pharetra varius. Morbi id nisl at diam rutrum gravida. Vivamus vel mauris pellentesque, dictum nulla eget, porta lectus. Morbi rhoncus vestibulum luctus.
+							</p>
+							<p>
+								Mauris iaculis condimentum vulputate. Curabitur massa erat, tempus non egestas et, tristique viverra odio. Phasellus ornare vel metus id fringilla. Quisque sodales, mauris ac aliquet mattis, ante nulla ornare elit, tempus porttitor quam orci ut metus. Etiam tempor augue at dolor ullamcorper, quis egestas mauris vehicula. Sed aliquam urna eu nisi eleifend pulvinar at sed mi. Suspendisse potenti. Suspendisse potenti. Aenean ipsum lectus, auctor in feugiat luctus, aliquam id nulla. Etiam fermentum, velit at elementum egestas, lectus tellus rutrum turpis, nec vulputate purus massa sit amet turpis. Pellentesque venenatis viverra felis dapibus fermentum. Nulla sagittis dui sed justo blandit accumsan. Vivamus at faucibus ipsum. Curabitur cursus iaculis dolor, eget condimentum nibh.
+							</p>
+							<p>
+								Etiam tincidunt euismod odio vitae tristique. Sed lobortis urna quis volutpat blandit. Ut sed purus viverra, vestibulum magna eu, aliquam est. Donec eros nulla, fermentum id adipiscing sed, ultrices pharetra enim. Donec a arcu molestie quam sollicitudin consequat. Duis porta convallis arcu. Morbi semper arcu iaculis, volutpat erat vel, pellentesque diam. Pellentesque imperdiet ante sed nunc ornare, ut feugiat urna lacinia. Proin sodales leo massa, mollis euismod purus egestas eget.
+							</p>
+							<p>
+								<a href="visualizacaoNoticia.html">Ver Mais</a>
+							</p>
+						</article>
+
+					</div>
+					<div class="noticia" id="noticia2">
+
+						<article>
+							<h2 class="category">Creche</h2>
+							<h2><a href="visualizacaoNoticia.html">Noticia1</a></h2>
+							<div class="newsFooter">
+								Irmandade - publicado em: 18/04/2014
+							</div>
+							<address class="newsFooter">
+								Autores: Manuel, Afonso, Rui
+							</address>
+							<div class="thumbnailImage">
+								<img src="http://guiadoestudante.abril.com.br/blogs/melhores-faculdades/files/2012/11/medicina_1-1.jpg" alt="">
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nisl, sagittis eu auctor ac, iaculis at dolor. Suspendisse ac pellentesque lorem, quis pharetra risus. Morbi luctus malesuada nulla sed vehicula. Vestibulum ultrices tellus quis dui lacinia tincidunt. Nunc ut pharetra leo, ac placerat orci. Sed at nibh nisl. Nulla blandit diam et nulla pharetra varius. Morbi id nisl at diam rutrum gravida. Vivamus vel mauris pellentesque, dictum nulla eget, porta lectus. Morbi rhoncus vestibulum luctus.
+							</p>
+							<p>
+								Mauris iaculis condimentum vulputate. Curabitur massa erat, tempus non egestas et, tristique viverra odio. Phasellus ornare vel metus id fringilla. Quisque sodales, mauris ac aliquet mattis, ante nulla ornare elit, tempus porttitor quam orci ut metus. Etiam tempor augue at dolor ullamcorper, quis egestas mauris vehicula. Sed aliquam urna eu nisi eleifend pulvinar at sed mi. Suspendisse potenti. Suspendisse potenti. Aenean ipsum lectus, auctor in feugiat luctus, aliquam id nulla. Etiam fermentum, velit at elementum egestas, lectus tellus rutrum turpis, nec vulputate purus massa sit amet turpis. Pellentesque venenatis viverra felis dapibus fermentum. Nulla sagittis dui sed justo blandit accumsan. Vivamus at faucibus ipsum. Curabitur cursus iaculis dolor, eget condimentum nibh.
+							</p>
+							<p>
+								Etiam tincidunt euismod odio vitae tristique. Sed lobortis urna quis volutpat blandit. Ut sed purus viverra, vestibulum magna eu, aliquam est. Donec eros nulla, fermentum id adipiscing sed, ultrices pharetra enim. Donec a arcu molestie quam sollicitudin consequat. Duis porta convallis arcu. Morbi semper arcu iaculis, volutpat erat vel, pellentesque diam. Pellentesque imperdiet ante sed nunc ornare, ut feugiat urna lacinia. Proin sodales leo massa, mollis euismod purus egestas eget.
+							</p>
+							<p>
+								<a href="visualizacaoNoticia.html">Ver Mais</a>
+							</p>
+						</article>
+					</div>
+					<div class="noticia">
+						<article>
+							<h2 class="category">Lar</h2>
+							<h2><a href="visualizacaoNoticia.html">Noticia1</a></h2>
+							<div class="newsFooter">
+								Irmandade - publicado em: 18/04/2014
+							</div>
+							<address class="newsFooter">
+								Autores: Manuel, Afonso, Rui
+							</address>
+							<div class="thumbnailImage">
+								<img src="http://guiadoestudante.abril.com.br/blogs/melhores-faculdades/files/2012/11/medicina_1-1.jpg" alt="">
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nisl, sagittis eu auctor ac, iaculis at dolor. Suspendisse ac pellentesque lorem, quis pharetra risus. Morbi luctus malesuada nulla sed vehicula. Vestibulum ultrices tellus quis dui lacinia tincidunt. Nunc ut pharetra leo, ac placerat orci. Sed at nibh nisl. Nulla blandit diam et nulla pharetra varius. Morbi id nisl at diam rutrum gravida. Vivamus vel mauris pellentesque, dictum nulla eget, porta lectus. Morbi rhoncus vestibulum luctus.
+							</p>
+							<p>
+								Mauris iaculis condimentum vulputate. Curabitur massa erat, tempus non egestas et, tristique viverra odio. Phasellus ornare vel metus id fringilla. Quisque sodales, mauris ac aliquet mattis, ante nulla ornare elit, tempus porttitor quam orci ut metus. Etiam tempor augue at dolor ullamcorper, quis egestas mauris vehicula. Sed aliquam urna eu nisi eleifend pulvinar at sed mi. Suspendisse potenti. Suspendisse potenti. Aenean ipsum lectus, auctor in feugiat luctus, aliquam id nulla. Etiam fermentum, velit at elementum egestas, lectus tellus rutrum turpis, nec vulputate purus massa sit amet turpis. Pellentesque venenatis viverra felis dapibus fermentum. Nulla sagittis dui sed justo blandit accumsan. Vivamus at faucibus ipsum. Curabitur cursus iaculis dolor, eget condimentum nibh.
+							</p>
+							<p>
+								Etiam tincidunt euismod odio vitae tristique. Sed lobortis urna quis volutpat blandit. Ut sed purus viverra, vestibulum magna eu, aliquam est. Donec eros nulla, fermentum id adipiscing sed, ultrices pharetra enim. Donec a arcu molestie quam sollicitudin consequat. Duis porta convallis arcu. Morbi semper arcu iaculis, volutpat erat vel, pellentesque diam. Pellentesque imperdiet ante sed nunc ornare, ut feugiat urna lacinia. Proin sodales leo massa, mollis euismod purus egestas eget.
+							</p>
+							<p>
+								<a href="visualizacaoNoticia.html">Ver Mais</a>
+							</p>
+						</article>
+					</div>
+					<div class="noticia">
+						<article>
+							<h2 class="category">Residencial</h2>
+							<h2><a href="visualizacaoNoticia.html">Noticia1</a></h2>
+							<div class="newsFooter">
+								Irmandade - publicado em: 18/04/2014
+							</div>
+							<address class="newsFooter">
+								Autores: Manuel, Afonso, Rui
+							</address>
+							<div class="thumbnailImage">
+								<img src="http://guiadoestudante.abril.com.br/blogs/melhores-faculdades/files/2012/11/medicina_1-1.jpg" alt="">
+							</div>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nisl, sagittis eu auctor ac, iaculis at dolor. Suspendisse ac pellentesque lorem, quis pharetra risus. Morbi luctus malesuada nulla sed vehicula. Vestibulum ultrices tellus quis dui lacinia tincidunt. Nunc ut pharetra leo, ac placerat orci. Sed at nibh nisl. Nulla blandit diam et nulla pharetra varius. Morbi id nisl at diam rutrum gravida. Vivamus vel mauris pellentesque, dictum nulla eget, porta lectus. Morbi rhoncus vestibulum luctus.
+							</p>
+							<p>
+								Mauris iaculis condimentum vulputate. Curabitur massa erat, tempus non egestas et, tristique viverra odio. Phasellus ornare vel metus id fringilla. Quisque sodales, mauris ac aliquet mattis, ante nulla ornare elit, tempus porttitor quam orci ut metus. Etiam tempor augue at dolor ullamcorper, quis egestas mauris vehicula. Sed aliquam urna eu nisi eleifend pulvinar at sed mi. Suspendisse potenti. Suspendisse potenti. Aenean ipsum lectus, auctor in feugiat luctus, aliquam id nulla. Etiam fermentum, velit at elementum egestas, lectus tellus rutrum turpis, nec vulputate purus massa sit amet turpis. Pellentesque venenatis viverra felis dapibus fermentum. Nulla sagittis dui sed justo blandit accumsan. Vivamus at faucibus ipsum. Curabitur cursus iaculis dolor, eget condimentum nibh.
+							</p>
+							<p>
+								Etiam tincidunt euismod odio vitae tristique. Sed lobortis urna quis volutpat blandit. Ut sed purus viverra, vestibulum magna eu, aliquam est. Donec eros nulla, fermentum id adipiscing sed, ultrices pharetra enim. Donec a arcu molestie quam sollicitudin consequat. Duis porta convallis arcu. Morbi semper arcu iaculis, volutpat erat vel, pellentesque diam. Pellentesque imperdiet ante sed nunc ornare, ut feugiat urna lacinia. Proin sodales leo massa, mollis euismod purus egestas eget.
+							</p>
+							<p>
+								<a href="visualizacaoNoticia.html">Ver Mais</a>
+							</p>
+						</article>
+					</div>
+				</section>
+			</div>
+
+		</div>
+	</div>
+	
+
+	<footer>
+		<div class="container">
+			<div class="wrapper">
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

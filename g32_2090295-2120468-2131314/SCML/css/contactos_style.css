@@ -1,0 +1,52 @@
+.sede{
+	background-color: #E1EAEB; 
+	margin-right: 100px;
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	border: 1px solid gray;
+}
+
+#inst_sede, #lar, #clinica, #hosp, #creche, #residencial{
+	display: none;
+	border: 1px solid gray;
+	margin-right: 100px;
+	padding: 10px;
+}
+
+p.uni_sede{
+	padding: 7px;
+	margin: 5px 50px 5px 20px;
+	border: 1px solid gray;
+	font-weight: bold;
+}
+
+div.uni_sede{
+	padding: 7px;
+	margin: 5px 50px 5px 20px;
+}
+
+.titulo:visited{
+	color: #505050;
+} 
+
+.sede:hover {
+	background-color: gray;
+}
+
+.titulo:hover {
+	color: white;
+}
+
+#pedir{
+	margin: 20px 100px 20px 0px;
+	text-align: center;
+	padding: 25px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+#pedir:hover, #pedir a:hover{
+	background-color: #C8C8C8;
+	color: white;
+}

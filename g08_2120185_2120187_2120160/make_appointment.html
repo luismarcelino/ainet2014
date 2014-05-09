@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <script type="text/javascript" src="js/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="js/functions.js">
+    </script>
+    <link rel="stylesheet" style="text/css" href="styles/geral.css" />
+    <link rel="stylesheet" style="text/css" href="styles/make_appointment.css" />
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="div_logo">
+                <a href="index.html">
+                    <img id="logo" src="images/santa_casa1000_transparent2.png" alt="Santa Casa da Misericórdia de Leiria" />
+                    <img id="title" src="images/text_title.png" alt="Santa Casa da Misericórdia de Leiria" />
+                </a>
+            </div>
+            <div id="login">
+                <div id="login_box">
+                    <p>Bem-vindo Visitante!&nbsp;</p>
+                    <a href="">Entrar</a>
+                </div>
+            </div>
+            <div id="menu_div">
+                <nav id="menu">
+                    <a href="index.html">
+                        <img src="images/santa_casa40_transparent.png">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span>Início</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a>
+                                <span>Saúde</span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="specialities.html">
+                                        <span>Especialidades</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="medics.html">
+                                        <span>Corpo Cliníco</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="new.html">
+                                        <span>Notícias</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="make_appointment.html">
+                                        <span>Marcar Consulta</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>
+                                <span>Serviços</span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li class="have_sub_sub_menu">
+                                    <a href="geriatric_care_details.html">
+                                        <span>Cuidados Geriátricos</span>
+                                    </a>
+                                    <ul class="sub_sub_menu">
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Residencial</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Lar</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Internamento</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Apoio domiciliário</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="valency_details.html">
+                                        <span>Irmandade</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="valency_details.html">
+                                        <span>Creche</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="contacts.html">
+                                <span>Contactos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Gestão</span>
+                            </a>
+                            <!-- Menu disponivivel (e opções) apenas a utilizadores com priviligiados -->
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="edit_new.html">
+                                        <span>Notícias</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>Utilizadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>Pedidos Marcação</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div>
+            <form id="appointment_form">
+                <div id="center_col">
+                    <div>
+                        <h1>Marcação</h1>
+                    </div>
+                    <div>
+                        <label for="name">*Nome:</label>
+                        <input type="text" name="name" id="name" />
+                    </div>
+                    <div>
+                        <label for="address">Morada:</label>
+                        <input type="text" name="address" id="address" />
+                    </div>
+                    <div>
+                        <label for="bday">*Data de Nascimento:</label>
+                        <input type="date" name="bday" id="bday" />
+                    </div>
+                    <div>
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" />
+                    </div>
+                    <div>
+                        <label for="telephone">*Telefone:</label>
+                        <input type="tel" name="telephone" id="telephone">
+                    </div>
+                    <div>
+                        <label for="insurance">Subsistema ou Seguro de Saúde:</label>
+                        <select name="insurance" id="insurance">
+                            <option value="">--- Seleccione ---</option>
+                            <option value="10">ADMG (só para MFR)</option>
+                            <option value="1">ADSE</option>
+                            <option value="5">IASFA (ADMA, ADME, ADMFA)</option>
+                            <option value="12">Medis (só para MFR)</option>
+                            <option value="7">Multicare</option>
+                            <option value="13">Particular</option>
+                            <option value="8">Planicare</option>
+                            <option value="11">SAD PSP (só para MFR)</option>
+                            <option value="2">SAMS Centro</option>
+                            <option value="6">Serviços Sociais da CGD</option>
+                            <option value="9">Servimed</option>
+                            <option value="3">Sindicato dos Funcionários Judiciais</option>
+                            <option value="4">SNS</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="appointment">*Consulta:</label>
+                        <select name="appointment" id="appointment">
+                            <!-- should only appear when clicked on exam -->
+                            <option value="">--- Seleccione ---</option>
+                            <option value="65">Acupunctura</option>
+                            <option value="66">Cardiologia</option>
+                            <option value="13">Cirurgia Geral</option>
+                            <option value="20">Cirurgia Plástica e Reconstrutiva</option>
+                            <option value="21">Cirurgia Vascular</option>
+                            <option value="67">Dermatologia</option>
+                            <option value="78">Diabetes</option>
+                            <option value="11">Dietista</option>
+                            <option value="8">Endocrinologia</option>
+                            <option value="23">Estomatologia</option>
+                            <option value="68">Gastrenterologia</option>
+                            <option value="69">Ginecologia</option>
+                            <option value="16">Medicina Desportiva</option>
+                            <option value="24">Medicina Física e de Reabilitação</option>
+                            <option value="26">Mesoterapia</option>
+                            <option value="27">Neurocirurgia</option>
+                            <option value="70">Neurologia</option>
+                            <option value="71">Oftalmologia adulto e infantil</option>
+                            <option value="72">Ortopedia</option>
+                            <option value="73">Otorrinolaringologia</option>
+                            <option value="74">Pneumologia</option>
+                            <option value="10">Psicologia Clínica</option>
+                            <option value="9">Psiquiatria</option>
+                            <option value="75">Reumatologia</option>
+                            <option value="76">Urologia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="exam">*Exame:</label>
+                        <select name="exam" id="exam">
+                            <option value="">--- Seleccione ---</option>
+                            <option value="42">Anatomia Patológica</option>
+                            <option value="3">Análises Clínicas</option>
+                            <option value="51">Audiometria</option>
+                            <option value="1">Cardiologia</option>
+                            <option value="45">Colonoscopia</option>
+                            <option value="4">Dermatologia</option>
+                            <option value="48">Doppler a cores, transesofágico</option>
+                            <option value="62">Eco-Doppler</option>
+                            <option value="47">Ecocardiografia Modo M, 2D</option>
+                            <option value="61">Ecografia</option>
+                            <option value="43">Ecografia Geral e Vascular</option>
+                            <option value="39">Electrocardiograma com prova de esforço em tapete rolante</option>
+                            <option value="49">Electrocardiograma simples</option>
+                            <option value="44">Endoscopia alta</option>
+                            <option value="19">Gastrenterologia</option>
+                            <option value="5">Ginecologia</option>
+                            <option value="57">Imagiologia</option>
+                            <option value="54">Impedânciometria</option>
+                            <option value="63">Mamografia Digital</option>
+                            <option value="50">MAPA (medição ambulatória da pressão arterial)</option>
+                            <option value="28">Neurologia</option>
+                            <option value="32">Oftalmologia</option>
+                            <option value="33">Ortopedia</option>
+                            <option value="64">Osteodensitometria</option>
+                            <option value="37">Otorrinolaringologia</option>
+                            <option value="2">Pneumologia</option>
+                            <option value="53">Posturografia dinâmica e computorizada</option>
+                            <option value="56">Provas funcionais respiratórias</option>
+                            <option value="46">Rectosigmoidoscopia</option>
+                            <option value="58">Reumatologia</option>
+                            <option value="60">Rx-Digital</option>
+                            <option value="59">TAC</option>
+                            <option value="55">Timpanometria</option>
+                            <option value="29">Urologia</option>
+                            <option value="52">Videonistagmografia</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="medic">Medico:</label>
+                        <select name="medic" id="medic">
+                            <option value="">--- Seleccione ---</option>
+                            <option value="42">João Couto</option>
+                            <option value="3">Manuel Albertino</option>
+                            <option value="51">Paula Rebelo</option>
+                            <option value="1">Paula Rebelo</option>
+                            <option value="45">João Caetano</option>
+                            <option value="44">Mariana Lopes</option>
+                            <option value="32">Luis Almeida</option>
+                            <option value="12">Fabio Henriques</option>
+                            <option value="5">Paulo Gonçalves</option>
+                            <option value="27">Horácio De Jesus</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="date">Data Pretendida:</label>
+                        <input type="date" name="date" id="date" />
+                        <!-- didn't user type="date" because it came in the mm-dd-yyyy format.  fix with js!-->
+                    </div>
+                    <div>
+                        <label for="hour">Hora Pretendida:</label>
+                        <input type="text" name="hour" id="hour" />
+                        <!-- didn't user type="date" because it came in the mm-dd-yyyy format.  fix with js!-->
+                    </div>
+
+                    <!--Missing Captcha here -->
+                </div>
+                <div id="info_requirements">
+                    <p>
+                        <span class="bold">Nota:</span>No dia da consulta deve ser portador dos Meios Complementares de Diagnóstico e/ou Terapêutica recentes que dispuser. Deve ser igualmente portador do Cartão de Utente do SNS e/ou do Cartão da Entidade Financeira Responsável (Termos de Responsabilidade e/ou Credenciais, quando aplicável).
+                        <br/>(*) - Campo Obrigatório.
+                    </p>
+                </div>
+                <div id="submit_btn">
+                    <input type="submit" value="Marcar Consulta/Exame" />
+                </div>
+
+            </form>
+        </div>
+        <footer class="clearfix">
+            <div class="footer_divs">
+                <h2>Saúde</h2>
+                <a href="specialities.html">Especialidades</a>
+                <br />
+                <a href="medics.html">Corpo Clínico</a>
+                <br />
+                <a href="#">Notícias</a>
+                <br />
+                <a href="make_appointment.html">Marcar Consulta</a>
+            </div>
+            <div class="footer_divs">
+                <h2>Serviços</h2>
+                <a href="geriatric_care_details.html">Cuidados Geriátricos</a>
+                <div id="tab">
+                    <a href="valency_details.html">Residêncial</a>
+                    <br />
+                    <a href="valency_details.html">Lar</a>
+                    <br />
+                    <a href="valency_details.html">Internamento</a>
+                    <br />
+                    <a href="valency_details.html">Apoio Domiciliário</a>
+                </div>
+                <a href="medics.html">Irmandade</a>
+                <br />
+                <a href="#">Creche</a>
+                <br />
+            </div>
+            <div id="footer_contacts" class="footer_divs">
+                <h2>Contactos</h2>
+                <a href="contacts.html">Localização e Acessos</a>
+                <br />
+                <a href="contacts.html">Contacto-nos</a>
+                <br />
+                <div id="facebook">
+                    <a href="https://www.facebook.com/MisericordiadeLeiria?fref=ts" target="_blank">
+                        <img src="images/facebook_black_button.png" id="img_face">Siga-nos
+                    </a>
+                </div>
+            </div>
+            <div class="footer_divs">
+                <address>
+                    <b>Santa Casa da Misericórdia de Leiria</b>
+                    <br/>Rua Trindade Coelho, 8
+                    <br />Apartado 1109
+                    <br/>2401-801 Leiria
+                    <br/>Tel.: 244 106 202
+                    <br/>Fax: 244 106 298
+                    <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+                </address>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

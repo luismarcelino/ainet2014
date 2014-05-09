@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>
+        Santa Casa da Misericórdia de Leiria
+    </title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+    <script type='text/javascript' charset='utf-8' src='scripts/jquery.js'></script>
+    <script type='text/javascript' charset='utf-8' src='scripts/popbox/popbox.js'></script>
+    <style type='text/css' media='screen'>
+    </style>
+    <script type='text/javascript' charset='utf-8'>
+    //<![CDATA[
+    $(document).ready(function() {
+        $('.popbox').popbox();
+    });
+    //]]>
+    </script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="search">
+            <form action="#" method="get" id="search_noticias" name="search_noticias">
+                <fieldset>
+                    <input type="image" src="images/search.png" id="searchsubmit" />
+                    <input type="text" name="textSearch" onfocus="if (this.value == 'Pesquisar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pesquisar...';}" value="Pesquisar..." id="searchinput" />
+                </fieldset>
+            </form>
+        </div>
+        <div id="logo">
+            <a href="index.html">
+                <img width="200px" src="images/santa_casa.png" alt="logo" />
+            </a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html" accesskey="1" title="">Geral</a>
+                </li>
+                <li class="current_page_item"><a id="selection" href="saude.html" accesskey="2" title="">Saúde</a>
+                    <ul id="submenu">
+                        <li> <a href="especialidades.html"> Especialidades </a>
+                        </li>
+                        <li> <a href="corpo_clinico.html"> Corpo Clinico </a> 
+                        </li>
+                        <li> <a href="artigos.html"> Artigos/ Noticias  </a> 
+                        </li>
+                        <li><a href="marcacao_consultas.html"> Marcação de consultas </a> 
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="cuidadosgeriatricos.html" accesskey="3" title="">Cuidados Geriátricos</a>
+                </li>
+                <li><a href="creche.html" accesskey="4" title="">Creche</a>
+                </li>
+                <li><a href="irmandade.html" accesskey="5" title="">Irmandade</a>
+                </li>
+                <li><a href="contactos.html" accesskey="6" title="">Contactos</a>
+                </li>
+                <li>
+                    <div class="popbox">
+                        <a href="#" class='open'>Area pessoal</a>
+                        <div class='collapse'>
+                            <div class='box'>
+                                <div class='arrow'></div>
+                                <div class='arrow-border'></div>
+                                <form action="#" method="post">
+                                    <fieldset class="login">
+                                        <legend>Iniciar Sessúo</legend>
+                                        <label for="username">Nome de Utilizador:</label>
+                                        <input type="text" id="username" />
+                                        <br/>
+                                        <label for="password">Palavra-Passe:</label>
+                                        <input type="password" id="password" />
+                                        <br/>
+                                        <input type="submit" id="submit" class="button" value="Iniciar Sessão" />
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="navegacao">
+            <a href="index.html">Início</a> >
+            <a href="saude.html">Saúde</a> >
+             Marcacao de Consulta
+        </div>
+        <div id="marcacao">
+            <h1>
+                MARCAÇÃO DE CONSULTA
+            </h1>
+            <form method="post" action="index.html">
+                <table class="formulario">
+                    <tr>
+                        <td>
+                            <label for="nome">Nome *</label>
+                            <br />
+                            <input type="text" name="nome" id="nome" value="" maxlength="150" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="morada">Morada</label>
+                            <br />
+                            <textarea name="morada" id="morada" rows="4" cols="40"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="data_nascimento">Data de Nascimento *</label>
+                            <div class="legendacampo">
+                                aaaa-mm-dd
+                            </div>
+                            <input type="text" name="data_nascimento" id="data_nascimento" value="" maxlength="10" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">E-mail</label>
+                            <br />
+                            <input type="text" name="email" id="email" value="" maxlength="100" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="telef">Telefone *</label>
+                            <br />
+                            <input type="text" name="telef" id="telef" value="" maxlength="20" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="sistema_saude_id">Subsistema ou Seguro de Saúde</label>
+                            <br />
+                            <select name="sistema_saude_id" id="sistema_saude_id">
+                                <option value="">
+                                    --- Seleccione ---
+                                </option>
+                                <option value="10">
+                                    ADMG (só para MFR)
+                                </option>
+                                <option value="1">
+                                    ADSE
+                                </option>
+                                <option value="5">
+                                    IASFA (ADMA, ADME, ADMFA)
+                                </option>
+                                <option value="12">
+                                    Medis (só para MFR)
+                                </option>
+                                <option value="7">
+                                    Multicare
+                                </option>
+                                <option value="13">
+                                    Particular
+                                </option>
+                                <option value="8">
+                                    Planicare
+                                </option>
+                                <option value="11">
+                                    SAD PSP (só para MFR)
+                                </option>
+                                <option value="2">
+                                    SAMS Centro
+                                </option>
+                                <option value="6">
+                                    Serviços Sociais da CGD
+                                </option>
+                                <option value="9">
+                                    Servimed
+                                </option>
+                                <option value="3">
+                                    Sindicato dos Funcionários Judiciais
+                                </option>
+                                <option value="4">
+                                    SNS
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="consulta_id">Consulta</label>
+                            <div class="legendacampo">
+                                Obrigatório se não seleccionar exame
+                            </div>
+                            <select name="consulta_id" id="consulta_id">
+                                <option value="">
+                                    --- Seleccione ---
+                                </option>
+                                <option value="65">
+                                    Acupunctura
+                                </option>
+                                <option value="66">
+                                    Cardiologia
+                                </option>
+                                <option value="13">
+                                    Cirurgia Geral
+                                </option>
+                                <option value="20">
+                                    Cirurgia Plástica e Reconstrutiva
+                                </option>
+                                <option value="21">
+                                    Cirurgia Vascular
+                                </option>
+                                <option value="67">
+                                    Dermatologia
+                                </option>
+                                <option value="78">
+                                    Diabetes
+                                </option>
+                                <option value="11">
+                                    Dietista
+                                </option>
+                                <option value="8">
+                                    Endocrinologia
+                                </option>
+                                <option value="23">
+                                    Estomatologia
+                                </option>
+                                <option value="68">
+                                    Gastrenterologia
+                                </option>
+                                <option value="69">
+                                    Ginecologia
+                                </option>
+                                <option value="16">
+                                    Medicina Desportiva
+                                </option>
+                                <option value="24">
+                                    Medicina Física e de Reabilitação
+                                </option>
+                                <option value="26">
+                                    Mesoterapia
+                                </option>
+                                <option value="27">
+                                    Neurocirurgia
+                                </option>
+                                <option value="70">
+                                    Neurologia
+                                </option>
+                                <option value="71">
+                                    Oftalmologia adulto e infantil
+                                </option>
+                                <option value="72">
+                                    Ortopedia
+                                </option>
+                                <option value="73">
+                                    Otorrinolaringologia
+                                </option>
+                                <option value="74">
+                                    Pneumologia
+                                </option>
+                                <option value="10">
+                                    Psicologia Clínica
+                                </option>
+                                <option value="9">
+                                    Psiquiatria
+                                </option>
+                                <option value="75">
+                                    Reumatologia
+                                </option>
+                                <option value="76">
+                                    Urologia
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="exame_id">Exame</label>
+                            <div class="legendacampo">
+                                Obrigatório se não seleccionar consulta
+                            </div>
+                            <select name="exame_id" id="exame_id">
+                                <option value="">
+                                    --- Seleccione ---
+                                </option>
+                                <option value="42">
+                                    Anatomia Patológica
+                                </option>
+                                <option value="3">
+                                    Análises Clínicas
+                                </option>
+                                <option value="51">
+                                    Audiometria
+                                </option>
+                                <option value="1">
+                                    Cardiologia
+                                </option>
+                                <option value="45">
+                                    Colonoscopia
+                                </option>
+                                <option value="4">
+                                    Dermatologia
+                                </option>
+                                <option value="48">
+                                    Doppler a cores, transesofágico
+                                </option>
+                                <option value="62">
+                                    Eco-Doppler
+                                </option>
+                                <option value="47">
+                                    Ecocardiografia Modo M, 2D
+                                </option>
+                                <option value="61">
+                                    Ecografia
+                                </option>
+                                <option value="43">
+                                    Ecografia Geral e Vascular
+                                </option>
+                                <option value="39">
+                                    Electrocardiograma com prova de esforço em tapete rolante
+                                </option>
+                                <option value="49">
+                                    Electrocardiograma simples
+                                </option>
+                                <option value="44">
+                                    Endoscopia alta
+                                </option>
+                                <option value="19">
+                                    Gastrenterologia
+                                </option>
+                                <option value="5">
+                                    Ginecologia
+                                </option>
+                                <option value="57">
+                                    Imagiologia
+                                </option>
+                                <option value="54">
+                                    Impedânciometria
+                                </option>
+                                <option value="63">
+                                    Mamografia Digital
+                                </option>
+                                <option value="50">
+                                    MAPA (medição ambulatória da pressão arterial)
+                                </option>
+                                <option value="28">
+                                    Neurologia
+                                </option>
+                                <option value="32">
+                                    Oftalmologia
+                                </option>
+                                <option value="33">
+                                    Ortopedia
+                                </option>
+                                <option value="64">
+                                    Osteodensitometria
+                                </option>
+                                <option value="37">
+                                    Otorrinolaringologia
+                                </option>
+                                <option value="2">
+                                    Pneumologia
+                                </option>
+                                <option value="53">
+                                    Posturografia dinâmica e computorizada
+                                </option>
+                                <option value="56">
+                                    Provas funcionais respiratórias
+                                </option>
+                                <option value="46">
+                                    Rectosigmoidoscopia
+                                </option>
+                                <option value="58">
+                                    Reumatologia
+                                </option>
+                                <option value="60">
+                                    Rx-Digital
+                                </option>
+                                <option value="59">
+                                    TAC
+                                </option>
+                                <option value="55">
+                                    Timpanometria
+                                </option>
+                                <option value="29">
+                                    Urologia
+                                </option>
+                                <option value="52">
+                                    Videonistagmografia
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="medico_id">Médico</label>
+                            <br />
+                            <select name="medico_id" id="medico_id">
+                                <option value="">
+                                    --- Seleccione ---
+                                </option>
+                                <option value="1">
+                                    Dr. José Lopes da Silva
+                                </option>
+                                <option value="2">
+                                    Dr. António Lopes da Silva
+                                </option>
+                                <option value="3">
+                                    Dr. Manuel Lopes da Silva
+                                </option>
+                                <option value="4">
+                                    Dr. João Lopes da Silva
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="data_pretendida">Data pretendida</label>
+                            <div class="legendacampo">
+                                aaaa-mm-dd
+                            </div>
+                            <input type="text" name="data_pretendida" id="data_pretendida" value="" maxlength="10" />
+                        </td>
+                    </tr>
+                </table>
+                <div id="nota">
+                    <fieldset>
+                        <legend>Nota</legend>
+                        No dia da consulta deve ser portador dos Meios Complementares de Diagnóstico e/ou Terapêutica recentes que dispuser.
+                        <br/>Deve ser igualmente portador do Cartão de Utente do SNS e/ou do Cartão da Entidade Financeira Responsável (Termos de Responsabilidade e/ou Credenciais, quando aplicável).
+                    </fieldset>
+                </div>
+                <div class="txt_obrigatorio">
+                    (*) campos obrigatórios
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <input type="reset" value="Limpar" class="button" />
+                        </td>
+                        <td>
+                            <input type="submit" value="Enviar" class="button" />
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="marcacao_banner">
+            <img src="images/marcacao_banner.jpg" alt="Hostipal D.Manuel de Aguiar" />
+        </div>
+
+        <div style="clear:both"></div>
+    </div>
+
+    <div class="conteudo">
+        <p id="footer">
+            2013/2014 - <b>SANTA CASA DA MISERICÓRDIA DE LEIRIA</b> - APLICAÇÕES PARA A INTERNET -
+            <a href="http://www.estg.ipleiria.pt/">ESTG IPLEIRIA</a>
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+ 
+	
+	#submenuInicial{
+		width: 100%;
+		height: 25px;
+		background-color: #FFFFFF;
+		font-size: 16pt;
+		margin-top: 20px;
+
+	}
+
+	/*#submenuInicial ul{
+		margin: 0px;
+		padding: 0px;
+	}
+
+	#submenuInicial ul li {
+		display: inline;
+		height: 30px;
+		float: left;
+		list-style: none;
+		margin-left: 30px;
+		color: #000000;
+		text-decoration: none;
+		position: relative;
+	}
+
+	#submenuInicial ul li a {
+		text-decoration: none;
+		color: #000000;
+		
+	}
+
+	#submenuInicial ul li a:hover{
+		font-weight: bold;
+		background-color: #4DDBB8;
+	}
+
+	#submenuInicial li ul{
+		margin: 0px;
+		padding: 0px;
+		display: none;
+		position: absolute;
+		left: 0px;
+		top: 30px;
+		background-color: #4DDBB8;
+		z-index: 1000;
+
+	}
+
+	#submenuInicial li:hover ul{
+		display: block;
+		width: 300px;
+		background-color: #4DDBB8;
+	}
+
+	#submenuInicial li li{
+		list-style: none;
+		display: list-item;
+		width: 100%;
+		margin: 10px;
+
+	}*/
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+#listaSubMenuInicial { list-style-type: none; height: 40px; padding: 0; margin: 0;}
+
+#listaSubMenuInicial { list-style-type: none; height: 40px; padding: 0; margin: 0; }
+
+#listaSubMenuInicial li { float: left; position: relative; padding-left:  10px; padding-right:  10px;line-height: 40px; background: #5a8078 repeat-x 0 0;}
+
+#listaSubMenuInicial li:hover { background-position: 0 -40px; }
+#listaSubMenuInicial li a { display: block; padding: 0 15px; color: #fff; text-decoration: none; }
+#listaSubMenuInicial li a:hover { color: #a3f1d7; }
+#listaSubMenuInicial li ul { opacity: 0; position: absolute; left: 0; width: 8em; background: #63867f; list-style-type: none; padding: 0; margin: 0; }
+#listaSubMenuInicial li:hover ul { opacity: 1; }
+#listaSubMenuInicial li ul li { float: none; position: static; height: 0; line-height: 0; background: none; }
+#listaSubMenuInicial li:hover ul li { height: 30px; line-height: 30px; }
+#listaSubMenuInicial li ul li a { background: #63867f; }
+#listaSubMenuInicial li ul li a:hover { background: #5a8078; }
+
+#listaSubMenuInicial li ul { display: none; }
+#listaSubMenuInicial li:hover ul, #trans-nav li.over ul {display: block; }
+#listaSubMenuInicial li ul li { height: 30px; line-height: 30px; }
+
+

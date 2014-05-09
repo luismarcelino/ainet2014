@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ <!-- Author: Joaquim Ley Nr: 2121465 -->
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ 
+<head> 				<!--START of HEAD-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link rel="stylesheet" type="text/css" href="CSS/index_style.css"/>
+	<title>Santa Casa da Misericordia de Leiria</title>
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script> 
+	<script src="js/visual_functions.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+	<!-- Scripts -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  headerAnimation();
+		})
+	</script>
+	<script>
+		function initialize()
+	{
+		var mapProp = {
+  		center:new google.maps.LatLng(039.740706,-8.80267),zoom:17,mapTypeId:google.maps.MapTypeId.ROADMAP
+  	};
+		var map=new google.maps.Map(document.getElementById("mapa"),mapProp);
+	}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<!-- END of Scripts -->
+
+</head> 			<!--END of HEAD-->
+ 
+<body> 				<!-- Start of Body-->
+	<div id="login">
+		<div id="form">
+			<form>
+				utilizador: <input size="20" line-height="5" type="text" name="utilizador" >
+				password: <input size="20" type="password" name="password">
+			</form>
+		</div>
+		<a href="#">
+			<div id="btnLogin"> </div>
+		</a>
+	</div>
+
+	<!-- Top Wrapper -->
+	<div id="topWraper">
+		<div id="rightSide">
+			<div id="cover"></div>
+		</div>
+		<div id="leftSide">	
+			<div id="topLogo"></div>
+			
+			<div id="meio">
+				<h1>SANTA CASA DA MISERICORDIA DE LEIRIA</h1>
+				<h2>O SABER DA EXPERIÊNCIA 500 ANOS DE HISTÓRIA</h2>
+			</div>
+			
+			<div id="baixo">
+				<div id="saberMais"></div>
+			</div>
+
+			<div id="pesquisar" class="pesquisar">
+				<input type=search results=5 name=Pesquisar value="Pesquisar" onclick="this.value='';">
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Menu Wrapper -->
+	<div id="menuWrapper">
+
+		<div id="menu">	<!-- Menu -->
+			<a href="index.html">
+				<div id="home"></div>
+			</a>
+			<a href="saude.html">
+				<div id="saude"></div>
+			</a>
+			<a href="creche.html">
+				<div id="creche"></div>
+			</a>
+			<a href="geriatricos.html">
+				<div id="geriatricos"></div>
+			</a>
+			<a href="irmandade.html">
+				<div id="irmandade"></div>
+			</a>
+			<a href="contacto.html">
+				<div id="contactos"></div>
+			</a>
+		</div>
+	</div>
+
+	<!-- Content -->
+	<div id="noticiasWrapper">
+		<div id="noticiasIrmandade"></div>
+		<div id="noticiasCreche"></div>
+		<div id="noticiasLar"></div>
+		<div id="noticiasResidencial"></div>
+	</div>
+
+	<!-- FOOTER -->
+	<div id="footerWraper">
+		<div id="footer">
+	   		<div id="logoBaixo">
+	    		<img src="images\footer_logo.png">
+	   		</div>
+	   		<div id="mapa">
+	   			
+	   		</div>
+	   		<div id="siteMap">
+	   			<p><a href="index.html">Home</a></p>
+	   			<p><a href="saude.html">Saude</a></p>
+	   			<p><a href="creche.html">Creche</a></p>
+	   			<p><a href="geriatricos.html">Geriatricos</a></p>
+	   			<p><a href="irmandade.html">Irmandade</a></p>
+			</div>
+
+	   		<div id="moradasFooter">
+	   			<p>Hospital D.Manuel de Aguiar</p>
+	   			<p>Residencial Assistida XXI</p>
+	   			<p>Lar Nª Srª Encarnação</p>
+	   			<p>Creche Casa Sanches</p>
+			</div>
+
+	   		<div id="morada">
+	   			<p>Rua Trindade Coelho,8</p>
+	   			<p>Apartado 1109</p>
+	   			<p>2401-801 Leiria</p>
+			</div>
+	   
+	   <div id="contactosFooter">
+			<p>Tel.:244 106 202</p>
+			<p>Fax.:244 106 298</p>
+			<p>geral@misericordialeiria.pt</p>
+		</div>
+	</div>			<!-- END of FOOTER -->
+  </div>
+</body> 			<!-- END of Body-->
+
+</html>				<!-- END of HTML file-->

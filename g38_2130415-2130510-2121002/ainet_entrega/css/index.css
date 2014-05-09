@@ -1,0 +1,215 @@
+*{ margin: 0px; padding: 0px; }
+
+body{
+	font-family: tahoma;
+	font-size: 14px;
+	
+	/*
+	* Quando se muda de uma página com/sem scrollbar para uma sem/com (respectivamente),
+	* a página, ao estar centrada, desloca-se ~10px, o que confunde o utilizador.
+	* Isto força a barra a estar sempre visivel, mesmo que vazia, de forma a que a página
+	* não se desloque horizontalmente.
+	*
+	* Desenho da Interacção II, bitch!
+	*/
+	overflow-y: scroll;
+}
+
+#topbar{
+	height: 32px;
+	background: url('../img/noise.png');
+}
+
+#root, #topbar>div{
+	width: 1000px;
+	margin: auto;
+}
+
+#topbar>div{
+	height: 32px;
+	line-height: 32px;
+	position: relative;
+	color: #fff;
+}
+
+#logo{
+	background: url('../img/logo.png');
+	height: 199px;
+	width: 199px;
+	position: absolute;
+	left: 16px;
+	top: 16px;
+}
+
+#title{
+	position: absolute;
+	left: 231px;
+	top: 48px;
+	font-size: 30px;
+	line-height: 60px;
+	width: 650px;
+}
+
+#title h1, #title h3{
+	font-weight: normal;
+	text-shadow: 4px 4px 3px #125;
+	color: #ddd;
+}
+
+#root>*{
+	border-right: 1px solid #08d;
+	border-left: 1px solid #08d;
+}
+
+#root>header{
+	background-image: url('../img/barra_temp.png');
+	background-size: contain;
+}
+
+.banner-spacer{
+	position: relative;
+	height: 198px;
+}
+
+.menu-tab{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	padding: 0px 15px;
+	background: #ccc;
+	border-radius: 10px 10px 0px 0px;
+	border: 1px solid #04a;
+	cursor: pointer;
+	color: #444;
+	margin-left: 10px;
+	position: relative;
+	display: none;
+}
+
+.menu-tab.active{
+	background: #eee;
+	border-color: #08d;
+	color: #666;
+	cursor: default;
+}
+
+.menu-tab:not(.active):hover{ background: #ddd; }
+
+.menu-tab-border-override{
+	height: 1px;
+	width: 100%;
+	position: absolute;
+	background-color: inherit;
+	top: 100%;
+	left: 0px; /* doing nothing apparently equals -1px */
+}
+
+.active .menu-tab-border-override{ height: 2px; }
+
+#root>nav{
+	min-height: 2em;
+	background: #eee;
+	border-top: 1px solid #08d;
+	border-bottom: 1px solid #08d;
+	font-size: 1.15em;
+	line-height: 2em;
+	color: #999;
+}
+
+.sub-menu-nav{
+	padding-right: 16px;
+	padding-left: 16px;
+}
+
+.sub-menu-nav:not(:last-child){
+	border-bottom: 1px dotted #bbb;
+}
+
+.sub-menu-nav>.noscript{
+	display: inline-block;
+	width: 6.5em;
+	text-align: right;
+	margin-right: 0.35em;
+	color: #666;
+}
+
+.sub-menu-link{
+	text-decoration: none;
+	color: #08d;
+}
+
+#font-control{
+	display: none;
+	border: 1px solid #08d;
+	height: 3em;
+	width: 9.2em;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 1.25em;
+	background: #eee;
+	
+	/*
+	* Disable users accidentally selecting
+	* text while manipulating font size:
+	*/
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#font-control>div{
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.5em;
+	font-size: 2em;
+	text-align: center;
+	color: #555;
+	cursor: pointer;
+	float: left;
+	position: relative;
+}
+
+#resetFont{
+	border-right: 0.05em solid #aaa;
+	border-left: 0.05em solid #aaa;
+}
+
+.font-caption{
+	display: none;
+	position: absolute;
+	background-color: #eee;
+	font-size: 0.75em;
+	height: 1.5em;
+	line-height: 1.5em;
+	width: 15em;
+	border: 1px solid #08d;
+	right: 0em;
+	top: -1.75em;
+	border-radius: 0.5em;
+	text-align: center;
+}
+
+div:hover>.font-caption{
+	display: block;
+}
+
+.sub-menu-link:not(:last-child){ margin-right: 25px; }
+
+#content{
+	padding: 15px;
+	text-align: justify;
+	color: #333;
+}
+
+#root>footer{
+	height: 2.666em;
+	font-size: 0.85em;
+	line-height: 2.666em;
+	background: #eee;
+	color: #666;
+	border: 1px solid #08d;
+	border-radius: 0px 0px 10px 10px;
+	padding-right: 16px;
+	padding-left: 16px;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Santa Casa da Mesericódia</title>
+	<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script type='text/javascript' src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type='text/javascript' src='../js/menu_jquery.js'></script>
+<script type="text/javascript">
+	var step=1;
+			function slideit()
+			{
+				$('img.slide').attr('src','../css/img/santacasa'+step+'.jpg');
+				if(step<5)
+					step++;
+				else
+					step=3;
+				setTimeout("slideit()",3000);
+			}
+			slideit();
+</script>
+<style type="text/css" media="screen">
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+label.error { float: none; color: red; margin: 0 .5em 0 0; vertical-align: top; font-size: 10px }
+p { clear: both; }
+
+form {
+  padding: 20px 15%;
+}
+form header {
+  margin: 0 0 20px 0; 
+}
+form header div {
+  font-size: 90%;
+  color: #999;
+}
+form header h2 {
+  margin: 0 0 5px 0;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+	width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password],
+textarea {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input[type=text],
+input[type=email],
+input[type=url],
+input[type=password] {
+  width: 50%;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+textarea:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=url],
+  input[type=password],
+  textarea,
+  select {
+    width: 100%; 
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+}
+</style>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div id="header">
+			<div class="left main">
+				<div class="container">
+					<div class="contents">
+						<div id="logo">
+							<img src="../css/img/santa_casa100.PNG" alt="logo" />
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+			<div class="center main">
+				<div class="container">
+					<div class="contents">
+						<div id="slide">
+							<p><img id="slide" src="../css/img/santacasa5.jpg" alt="slide" width="200" height="120"/></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content-wrapper-">		
+			<div id="sidebar-left-"> 
+				<div id="cssmenu">
+					<ul>
+					   <li><a id="entrada" href='../index.html'><span>Entrada</span></a></li>
+					   <li class='active'><a id="saude" href='../saude.html'><span>Saude</span></a></li>
+					   <li><a id="cuidadoGer" href='../cuidados.html'><span>Cuidados Geriátricos</span></a></li>
+					   <li><a id="creche" href='../creche.html'><span>Creche</span></a></li>
+					   <li><a id="irmandade" href='../irmandade.html'><span>Irmandade</span></a></li>
+					   <li><a id="contactos" href='../contactos.html'><span>Contactos</span></a></li>
+					   <li><a id="pessoal" href='../pessoal.html'><span>Pessoal</span></a></li>
+					   <li class='last'><a id="medico" href='../medicos.html'><span>Médicos</span></a></li>
+					</ul>	
+				</div>
+			</div>
+			<div id="content-">
+				<div class="painel clearfix"  >			
+					<div id="janelinha" class="grid">
+						<div id="hpage_latest">
+							<form id="marcacao" method="POST">
+								<h1>Pedido de marcação de consulta</h1>  
+								<div>
+									<label class="desc" id="lblnome">Nome Completo</label>
+									<div>
+										<input id="nome" name="nome" type="text" class="field text fn" value="" size="30" tabindex="1" required>
+									</div>
+								</div>
+	
+								<div>
+									<label class="desc" id="lblEmail">Email</label>
+									<div>
+										<input id="email" name="email" type="email" spellcheck="false" value="" maxlength="255" size="30" tabindex="3" required> 
+								   </div>
+								</div>
+
+								<div>
+									<label class="desc" id="lblDesc" for="Field4">Justificação do pedido</label>
+									<div>
+									  <textarea id="descricao" name="descricao" spellcheck="true" rows="10" cols="50" tabindex="4" required></textarea>
+									</div>
+								</div>
+									
+								<div>
+									<legend class="desc">Urgente</legend>
+									<div>
+										<input id="urgenteS" name="urgenteS" type="radio" value="Sim" tabindex="5" checked="checked"><label class="choice">Sim</label>
+										<input id="urgenteN" name="urgenteN" type="radio" value="Nao" tabindex="6"><label class="choice">Não</label>
+									</div>
+								</div>
+								  
+								  <div>
+									<fieldset>
+										<legend id="" class="desc">Horário para consulta</legend>
+										<div>
+											<input id="manha" name="manha" type="checkbox" value="8h-12h" tabindex="8">
+											<label class="choice" for="Field6">8h-12h</label>
+										</div>
+										<div>
+											<input id="tarde" name="tarde" type="checkbox" value="14h-17h" tabindex="9">
+											<label class="choice" for="Field7">14h-17h</label>
+										</div>
+									</fieldset>
+								  
+								<div>
+									<label class="desc" id="lblEsp">Selecione uma Especialidade</label>
+									<div>
+										<select id="especialidade" name="especialidade" class="field select medium" tabindex="11"> 
+											<option value="acupunctura">Acupunctura</option>
+											<option value="cardiologia">Cardiologia</option>
+											<option value="cirurgiaGeral">Cirurgia Geral</option>
+											<option value="cirurgiaPlástica">Cirurgia Plástica</option>
+											<option value="cirurgiaVascular">Cirurgia Vascular</option>
+											<option value="dermatologia">Dermatologia</option>
+											<option value="diabetes">Diabetes</option>
+											<option value="dietista">Dietista</option>
+											<option value="endocrinologia">Endocrinologia</option>
+											<option value="estomatologia">Estomatologia</option>
+											<option value="gastrenterologia">Gastrenterologia</option>
+											<option value="genecologia">Ginecologia</option>
+											<option value="medicinaDesportiva">Medicina Desportiva</option>
+											<option value="medicinaFisica">Medicina Física</option>
+											<option value="mesoterapia">Mesoterapia</option>
+											<option value="neurocirurgia">Neurocirurgia</option>
+											<option value="neurologia">Neurologia</option>
+											<option value="oftalmologia">Oftalmologia</option>
+											<option value="ortopedia">Ortopedia</option>
+											<option value="otorrinolaringologia">Otorrinolaringologia</option>
+											<option value="pneumologia">Pneumologia</option>
+											<option value="psicologiaClinica">Psicologia Clínica</option>
+											<option value="psiquiatria">Psiquiatria</option>
+											<option value="reumatologia">Reumatologia</option>
+											<option value="urulogia">Urulogia</option>
+										</select>
+									</div>
+								</div>		
+								<div>
+									<label class="desc" id="lblEsp">Selecione um/a médico/a</label>
+									<div>
+										<select id="especialidade" name="especialidade" class="field select medium" tabindex="11"> 
+											<option value="First Choice">Em breve terá esta opção</option>
+
+										</select>
+									</div>
+								</div>
+								<div>
+									<br/>
+									<input class="submit" type="submit" value="Enviar" />
+								</div>
+							</form>
+						</div>
+					</div>		
+					<div class="grid_1">&nbsp;</div>		
+				</div> <!-- fechar container_12 //!-->
+			</div>
+			<div id="sidebar-right-">
+
+			</div>
+		</div>
+		<div class="footer" id="footer">
+			<p>Santa Casa da Misericórdia Leiria © Bruno Sousa & Marc Bernardo - AINET / Engenharia Informática - ESTG IPLeiria 2013/2014</p>
+		</div>
+		<!-- end #footer -->
+	</div>
+</body>
+</html>

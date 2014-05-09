@@ -1,0 +1,31 @@
+#valency_image {
+    width: 24%;
+	float: left;
+    display: inline;
+}
+#valency_description {
+    width: 40%;
+    margin-left: 5%;
+	float: left;
+    display: inline;
+}
+.extra{
+    width: 21%;
+    margin-left: 3%;
+    display: inline;
+    float: left;    
+}
+
+#valency_description p{
+    font-size: 17px;
+}
+.content_div_title {
+    width: 100%;
+}
+#contact_extra {
+    padding: 5px 0 25px 25px;
+}
+#extra_content{
+   padding-left: 18px;
+    width: 100%;
+}

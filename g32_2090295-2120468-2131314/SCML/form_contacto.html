@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!--Title with Image-->
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="shortcut icon" href="img/header.png" />
+		
+		<!--Scripts-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="script/scripts.js"></script>
+		<script type="text/javascript" src="script/scriptsJQ.js"></script>
+		
+		<!--Fonts da google-->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'/>
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menuSTYLE.css"/>
+		<link rel="stylesheet" type="text/css" href="css/registar.css"/>
+
+	</head>
+
+	<body>
+		<div id="wrapper" class="clearfix">
+			<div id="header" class="clearfix">
+				<div id="headerimg"><a href="index.html"><img src="img/header.png" alt="header" /></a>
+					<p id="saber">O Saber da Experiência</p>
+					<p>500 anos de história</p>
+				</div>
+				
+
+				<div id="loginbox">
+						<a onclick="show()" href="#">Login</a><a href="registar.html">Registar</a>
+				</div>
+
+				<div id="container-login" class="hide">
+					<div>
+						<h1>Login</h1>
+					</div>
+					<div>
+						<form action="login_sucesso.html" method="get">
+							<div id="loginFields">
+								<label>Username:</label><input type="text" name="user"/><br/>
+								<label>Password:</label><input type="password" name="pass"/><br/>
+	
+								<input type="submit" value="Entrar"/>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div id="searchbox">
+					<p><input type="text" value="Procure aqui..." /></p>
+				</div>
+			</div>
+
+			<div id="middle" class="clearfix">
+				<div id="sidebar">
+				 	<!--Menus de navegacao-->
+					<ul id="nav">
+						<li><a href="index.html">Entrada</a></li>
+						<li><a href="#">Saúde</a>
+							<ul>
+								<li><a href="especialidades.html">Especialidades</a></li>	
+								<li><a href="corpoclinico.html">Corpo Clínico</a></li>
+								<li><a href="artEnot.html">Artigos/Notícias Clínicas</a></li>
+								<li><a href="marcar_consulta.html">Marcação de Consultas</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Cuidados Geriátricos</a>
+							<ul>
+								<li><a href="tipoValencia.html">Residencial</a></li>
+								<li><a href="tipoValencia.html">Lar</a></li>
+								<li><a href="tipoValencia.html">Internamento</a></li>
+								<li><a href="tipoValencia.html">Apoio domiciliário</a></li>
+							</ul>
+						</li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="content">
+					<form id="form_contact" action="" method="get">
+						<div>
+							<div>
+								<label class="campo">Tipo de Contacto:</label>
+								<select name="tipo_id" class="little">
+										<option value="">--- Seleccione ---</option>
+										<option value="1">Contacto</option>
+										<option value="4">Emprego</option>
+										<option value="5">Inscrição como Irmão (ã)</option>
+										<option value="3">Inscrições de Utentes</option>
+										<option value="6">Outro</option>
+										<option value="2">Voluntariado</option>
+								</select>
+							</div>
+							<div>
+								<label class="campo">Nome:</label> 
+								<input type="text" class="big" name="name"/>
+							</div>
+							<div>
+								<label class="campo">Sexo:</label> 
+								<select name="sex" class="little">
+									<option value="">--- Seleccione ---</option>
+									<option value="masc">Masculino</option>
+									<option value="fem">Feminino</option>
+								</select>
+							</div>
+							<div>
+								<label class="campo">Data de Nascimento:</label>
+								<input type="text" class="little" name="dtnasc"/>
+							</div>
+							<div>
+								<label class="campo">Morada:</label>
+								<input type="text" class="big" name="rua"/>
+							</div>
+							<div>
+								<label class="campo">Localidade:</label>
+								<input class="little" type="text" name="loc" />
+								<label class="encoste">Código Postal:</label>
+								<input class="smaller" type="text" name="cp1" /><b>-</b><input class="smaller" type="text" name="cp2" />
+							</div>
+							<div>
+								<label class="campo">Telefone:</label>
+								<input type="text" class="little" name="tel"/>
+							</div>
+							<div>
+								<label class="campo">E-mail:</label>
+								<input type="text" class="middle" name="email"/>
+							</div>
+							<div>
+								<label class="campo">Subsistema de saude:</label>
+								<input type="text" class="middle" name="ss"/>
+							</div>
+							<div>
+								<label class="campo">Numero de beneficiario:</label>
+								<input type="text" class="little" name="nb"/>
+							</div>
+							<div>
+								<label class="campo">Mensagem:</label>
+								<textarea class="middle" rows="" cols=""></textarea>
+							</div>
+							<div>
+								<label class="campo">Forma de contacto:</label>
+								<select name="forma_contacto" class="little">
+									<option value="">--- Seleccione ---</option>
+									<option value="1">Tel./Telem</option>
+									<option value="2">E-mail</option>
+									<option value="3">CTT</option>
+								</select>
+							</div>
+							<div>
+								<div class="campo">
+									<input type="reset" value="Limpar" />
+								</div>
+								<input type="submit" value="Enviar"/>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>2014 &#169; Alexandra Pedro, André Tiago e Fábio Santos. <br/> DEI ESTG-IPLEIRIA </p>
+			</div>
+		</div>	
+	</body>
+</html>

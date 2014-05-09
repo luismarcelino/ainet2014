@@ -1,0 +1,103 @@
+body {background-color:#FFFFFF;}
+
+a {color:#000;}
+a:hover {color:#02AAFC;}
+
+/* ----------------------------------------------------------------------------------------------------------
+Generally HTML styles (table, ul, dl...)
+---------------------------------------------------------------------------------------------------------- */            
+
+table.table-style01 {border:1px solid #CCC;}
+table.table-style01 th {border-right:1px solid #CCC; background:#EFEFEF; color:#0288CA;}
+table.table-style01 td {border:1px solid #DDD;}
+table.table-style01 tr.bg td {background:#F5F5F5;}
+
+/* ----------------------------------------------------------------------------------------------------------
+Layout
+---------------------------------------------------------------------------------------------------------- */
+
+#header {background-color:#70DBDB;}
+
+#logo span {color:#FFFFFF;}
+#logo a {color:#FFF;}
+
+/*----------------------------------------*/
+
+#nav {
+	background-color: #FFFFFF;
+}
+#nav ul li a {color:#555;}
+#nav ul li#nav-active a {color:#000;}
+#nav ul li a:hover {color:#000;}
+
+#cols {background-color:#FFF;}
+
+#content #content-title {
+	background-color: #70DBDB;
+	color: #FFFFFF;
+}
+
+#aside #aside-title {
+	background-color: #70DBDB;
+	color: #FFFFFF;
+}
+#aside .title {
+	background-color: #70DBDB;
+	color: #FFFFFF;
+}
+
+#footer {background-color:#70DBDB; color:#FFFFFF;}
+#footer a {color:#FFFFFF;}
+#footer a:hover {color:#FFF;}
+    
+/* ----------------------------------------------------------------------------------------------------------
+Page: Home
+---------------------------------------------------------------------------------------------------------- */
+
+#perex {border-top:1px solid #2A2A2A; background-color:#E8E8E8; color:#000000Y;}
+#perex a {
+	color: #000;
+}
+#perex a:hover {
+	color: #0000FF;
+}
+
+.section h3 {background-color:#0385C6; color:#FFF;}
+.section h3 a {color:#FFF;}
+.section h3 a:hover {color:#000;}
+.section-in {border-bottom:1px solid #DADADA;}
+
+dl#news dd {border-bottom:1px solid #CACACA; color:#555;}
+dl#news dd span.date {color:#0288CA;}
+
+#noticia_irmandade{margin:0 0 20px 0;border:1px solid black;}
+#noticia_irmandadeh2{width:230px; height:32px; margin-bottom:2px; color:#06F}
+
+.destaque{font:10px/12px Arial, Helvetica, sans-serif; color:#CC0}
+
+#noticia_creche{margin:0 0 20px 0;border:1px solid black;}
+#noticia_crecheh2{width:230px; height:32px;margin-bottom:2px; color:#06F}
+
+#noticia_lar{margin:0 0 20px 0;border:1px solid black;}
+#noticia_larh2{width:230px; height:32px;margin-bottom:2px; color:#06F}
+
+#noticia_residencial{margin:0 0 20px 0;border:1px solid black;}
+#noticia_residencialh2{width:230px; height:32px;margin-bottom:2px; color:#06F}
+
+h2{color:#FFFFFF;}
+
+div, p, ul, h2, h3, h4, img, form, input, textarea{
+	padding: 0px;
+	border: 0;
+	margin: 0px;
+}
+
+.solutionsItem {float:left; width:145px}
+
+h3{color:#06F}
+
+ul
+{
+padding-left: 14px; 
+margin: 0px;
+}

@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	
+	<style type="text/css">	
+		#sombraE{
+			background-image: url("img/shadow6E.png");
+			float:left;
+			height:1500px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+
+		#sombra{
+			background-image: url("img/shadow6.png");
+			float:left;
+			height:1500px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+		#content {
+			width:1000px;
+			height:1500px;
+			background-color:white;
+			margin:auto;
+			position:relative;
+			float:left;
+		}
+		
+		#menuVertical{
+			float:left;
+		}
+		
+		#conteudo{
+			float:left;
+			text-align:justify;
+			margin-top:40px;
+			margin-left:225px;
+			padding-left:10px;
+			padding-right: 40px;
+			height:400px;
+			width:724px;
+		}
+		
+		p{
+			font-size:13px;
+			text-align:justify;
+			padding:10px 100px;
+		}
+		
+		.titulo{
+			text-align:left;
+			padding-left:50px;
+			color:#132254;
+		}
+	</style>
+	<script type="text/javascript">
+		
+		function limparCaixa() {
+			var caixa = document.getElementById("txtPesquisa");
+			caixa.value="";
+			caixa.style.color="black";
+	}
+	
+	function preencheCaixa() {
+		var caixa = document.getElementById("txtPesquisa");
+		var string = caixa.value.replace(/\s+/g, '');
+		if(string=="") {
+			caixa.value="Pesquisar";
+			caixa.style.color="gray";
+		}
+	}
+	</script>
+</head>
+
+<body>
+
+<div id="teste1">
+
+<div id="sombraE"> </div>
+
+
+	<div id="content">			
+		<div class="login">
+			<div class="loginText">
+				<form action="">
+					<div>
+					<input type="text" class="txtUsername" name="username" value="Username" onclick="" />
+					<input type="password" class="txtPassword" name ="password" value="Password" onclick="" />
+					<div class="loginIMG"> </div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="cabecalho">
+			<div id="logo"> <img src="img/logo2.jpg" alt=""/> </div>
+			<div id="slogan"> <img src="img/slogan.png" alt="" /> </div>
+			
+			
+		</div>
+		
+		
+		
+		<div id="menuCont" >
+		<div id="lista">
+			<ul id="menu"> <!-- faltava fechar as ancoras (</a>)!!! como estava, tudo o que estava depois do item contactos ficava tambem com um link para a pagina contactos -->
+				<li id="inicio">  <a href="index.html" class="opcaoMenuHorizontal"> Início </a> </li>
+				<li id="noticias"> <a href="noticias.html" class="opcaoMenuHorizontal"> Notícias </a> </li>
+				<li id="saude"> <a href="saudePub.html" class="opcaoMenuHorizontal" >   Saúde </a> </li>
+				<li id="valencias"> <a href="valencias.html" class="opcaoMenuHorizontalSeleccionado" > Valências </a> </li>
+				<li id="contactos"> <a href="contactos.html" class="opcaoMenuHorizontal" > Contactos </a> </li>
+
+
+			<!--<li id="pesquisa">
+				<input type="text" id="txtPesquisa" name="pesquisa" value="Pesquisar" onclick="limparCaixa()"/>
+				<input type="image" id="imgPesquisa" src="search.png" />
+			</li>-->
+			</ul>
+			</div>
+			<div id="pesquisa">
+				<input type="text" id="txtPesquisa" name="pesquisa" value="Pesquisar" onclick="limparCaixa()" onblur="preencheCaixa()" />
+				<input type="image" id="imgPesquisa" src="img/search.png" />
+			</div>
+			
+
+				</div>
+			
+			
+		
+		<div id="corpo">
+		
+				<div id = "menuVertical">
+					<div class="paddingMenu" > MENU</div> <div class ="cantoSupMV"> </div><div class= "barraVMV"> </div>
+					<div class="opcoesMenuV">
+						<div class = "opcaoMenuVertical"  onclick= "location.href='tipoValencia.html';"> <div class  = "opcaoTexto"  id="opcaoTextoPequeno"> Cuidados Geriátricos </div></div>
+						<div class = "opcaoMenuVertical" onclick= "location.href='tipoValencia.html';" > <div class = "opcaoTexto"  >Creche </div></div>
+						<div class = "opcaoMenuVertical" onclick= "location.href='tipoValencia.html';" > <div class = "opcaoTexto">Irmandade </div></div>
+					</div>
+					<div class= "barraHMV"> </div><div class ="cantoInfMV"> </div>
+				</div> <!-- menuVertical -->
+				
+				<div class="conteudo">
+					<h1 class="titulo">Valências da SCML</h1>
+					<p>A Santa Casa da Misericórdia de Leiria apresenta várias valências em diferentes áreas, para que posso servir a maioria da população, da
+					melhor forma possivel.</p>
+					<p>Escolha uma das opções do menu lateral para mais detalhes.</p>
+				</div>
+		</div> <!-- corpo -->
+
+		
+		<!-- <div id="cse" class="canto"></div>
+		<div id="csd" class="canto"></div> 
+		<div id="cie" class="canto"></div>
+		<div id="cid" class="canto"></div>-->
+		
+	</div> <!---container-->
+	
+	<div id = "sombra" > </div>
+<div class="rodapeCont">
+	<div class="canto"> </div>
+		<div id="rodape"> Aplicações para a Internet - Beatriz Franco - David Mendes - Diogo Alves - 2013/2014</div>
+		<div class="cantoR"> </div>
+</div>
+
+</div>
+</body>
+</html>

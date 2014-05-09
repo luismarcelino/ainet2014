@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+    <script type='text/javascript' charset='utf-8' src='scripts/jquery.js'></script>
+    <script type='text/javascript' charset='utf-8' src='scripts/popbox/popbox.js'></script>
+    <script type='text/javascript' charset='utf-8'>
+    $(document).ready(function() {
+        $('.popbox').popbox();
+    });
+
+    function abrirnoticia(id) {
+        location.href = "detail.html?id=" + id;
+    }
+    </script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="search">
+            <form action="#" method="get" id="search_noticias">
+                <fieldset>
+                    <input type="image" src="images/search.png" id="searchsubmit" />
+                    <input type="text" name="textSearch" onfocus="if (this.value == 'Pesquisar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pesquisar...';}" value="Pesquisar..." id="searchinput" />
+                </fieldset>
+            </form>
+        </div>
+        <div id="logo">
+            <a href="index.html">
+                <img width="200px" src="images/santa_casa.png" alt="logo"></img>
+            </a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li ><a href="index.html" accesskey="1" title="">Geral</a>
+                </li>
+                <li class="current_page_item"><a id="selection" href="saude.html" accesskey="2" title="">Saúde</a>
+                    <ul id="submenu">
+                        <li> <a href="especialidades.html"> Especialidades </a>
+                        </li>
+                        <li> <a href="corpo_clinico.html"> Corpo Clinico </a> 
+                        </li>
+                        <li> <a href="artigos.html"> Artigos/ Noticias  </a> 
+                        </li>
+                        <li><a href="marcacao_consultas.html"> Marcação de consultas </a> 
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="cuidadosgeriatricos.html" accesskey="3" title="">Cuidados Geriátricos</a>
+                </li>
+                <li><a href="creche.html" accesskey="4" title="">Creche</a>
+                </li>
+                <li><a href="irmandade.html" accesskey="5" title="">Irmandade</a>
+                </li>
+                <li><a href="contactos.html" accesskey="6" title="">Contactos</a>
+                </li>
+                <li>
+                    <div class="popbox">
+                        <a href="#" class='open'>Area pessoal</a>
+                        <div class='collapse'>
+                            <div class='box'>
+                                <div class='arrow'></div>
+                                <div class='arrow-border'></div>
+                                <form action="#" method="post">
+                                    <fieldset class="login">
+                                        <legend>Iniciar Sessúo</legend>
+                                        <label for="username">Nome de Utilizador:</label>
+                                        <input type="text" id="username" />
+                                        <br/>
+                                        <label for="password">Palavra-Passe:</label>
+                                        <input type="password" id="password" />
+                                        <br/>
+                                        <input type="submit" id="submit" class="button" value="Iniciar Sessão" />
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <div class="navegacao">
+            <a href="index.html">Início</a> >
+            <a href="saude.html">Saúde</a> > Artigos/Noticias
+        </div>
+        <h1><a href="criacao_noticia.html"> Criar Noticia</a>
+        </h1>
+    </div>
+
+    <div class="conteudo">
+        <p id="footer">
+            2013/2014 - <b>SANTA CASA DA MISERICÓRDIA DE LEIRIA</b> - APLICAÇÕES PARA A INTERNET - <a href="http://www.estg.ipleiria.pt/">ESTG IPLEIRIA</a>
+        </p>
+    </div>
+</body>
+
+</html>

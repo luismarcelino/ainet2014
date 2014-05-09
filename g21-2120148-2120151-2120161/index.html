@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+    <script type='text/javascript' charset='utf-8' src='scripts/jquery.js'></script>
+    <script type='text/javascript' charset='utf-8' src='scripts/popbox/popbox.js'></script>
+    <script type='text/javascript' charset='utf-8'>
+		$(document).ready(function() {
+			$('.popbox').popbox();
+		});
+		
+		function abrirnoticia(id)
+		{
+			 location.href = "detail.html?id="+id;
+		}
+		function abrirartigo(id)
+		{
+			 location.href = "detailartigo.html?id="+id;
+		}
+    </script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="search">
+            <form action="#" method="get" id="search_noticias">
+                <fieldset>
+                    <input type="image" src="images/search.png" id="searchsubmit" />
+                    <input type="text" name="textSearch" onfocus="if (this.value == 'Pesquisar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pesquisar...';}" value="Pesquisar..." id="searchinput" />
+                </fieldset>
+            </form>
+        </div>
+        <div id="logo">
+            <a href="index.html">
+                <img width="200px" src="images/santa_casa.png" alt="logo"></img>
+            </a>
+        </div>
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="index.html" accesskey="1" title="">Geral</a></li>
+				<li><a id = "selection" href="saude.html" accesskey="2" title="">Saúde</a>
+					<ul id="submenu" > 
+						<li> <a href="especialidades.html"> Especialidades </a></li>
+						<li> <a href = "corpo_clinico.html"> Corpo Clinico </a> </li>
+						<li> <a href = "artigos.html"> Artigos/ Noticias  </a> </li>
+						<li ><a href = "marcacao_consultas.html"> Marcação de consultas </a> </li>
+					</ul>	
+				</li>
+				<li><a href="cuidadosgeriatricos.html" accesskey="3" title="">Cuidados Geriátricos</a></li>
+				<li><a href="creche.html" accesskey="4" title="">Creche</a></li>
+				<li><a href="irmandade.html" accesskey="5" title="">Irmandade</a></li>
+				<li><a href="contactos.html" accesskey="6" title="">Contactos</a></li>
+				<li>
+					<div class="popbox">
+						<a href="#" class='open'>Area pessoal</a>
+						<div class='collapse'>
+							<div class='box'>
+								<div class='arrow'></div>
+								<div class='arrow-border'></div>
+									<form action="#" method="post">
+										<fieldset class="login">
+											<legend>Iniciar Sessúo</legend>
+											<label for="username">Nome de Utilizador:</label>
+											<input type="text" id="username" />
+											<br/>
+											<label for="password">Palavra-Passe:</label>
+											<input type="password" id="password" />
+											<br/>
+											<input type="submit" id="submit" class="button" value="Iniciar Sessão"/>
+										</fieldset>
+									</form>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+    </div>
+
+    <div class="conteudo">
+        <h1>
+            Ultimas Notícias
+        </h1>
+        <div class="noticias">
+            <div class="artigo">
+                <div class="categoria">
+                    Cuidados Geriátricos
+                </div>
+                <div class="quadradonoticia botaoazul" onclick="abrirnoticia(1)">
+                    <h2>
+                        <a href="detail.html">Hospital D. Manuel de Aguiar volta a receber doentes</a>
+                    </h2>
+                    <img src="images\noticias\flor.JPG" width="150px" class="textwrapimageright" alt="Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia"></img>
+                    <p class="textoartigo">
+                        Para além de integrar a Rede Nacional de Cuidados Continuados – já em marcha – o Hospital D. Manuel de Aguiar contará, dentro em breve, com modernos serviços de imagiologia, medicina física e de reabilitação, medicina desportiva, fisioterapia e recobro.
+                    </p>
+                    <p class="autor">
+                        “Região de Leiria”
+                    </p>
+                </div>
+            </div>
+            <div class="artigo">
+                <div class="categoria">
+                    Cuidados Geriátricos
+                </div>
+                <div class="quadradonoticia botaoazul" onclick="abrirnoticia(2)">
+                    <h2>
+                        <a href="detail.html">Hospital D. Manuel de Aguiar volta a receber doentes</a>
+                    </h2>
+                    <img src="images\noticias\flor.JPG" width="150px" class="textwrapimageright" alt="Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia"></img>
+                    <p class="textoartigo">
+                        Para além de integrar a Rede Nacional de Cuidados Continuados – já em marcha – o Hospital D. Manuel de Aguiar contará, dentro em breve, com modernos serviços de imagiologia, medicina física e de reabilitação, medicina desportiva, fisioterapia e recobro.
+                    </p>
+                    <p class="autor">
+                        “Região de Leiria”
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="noticias">
+            <div class="artigo">
+                <div class="categoria">
+                    Cuidados Geriátricos
+                </div>
+                <div class="quadradonoticia botaoazul" onclick="abrirnoticia(3)">
+                    <h2>
+                        <a href="detail.html">Hospital D. Manuel de Aguiar volta a receber doentes</a>
+                    </h2>
+                    <img src="images\noticias\flor.JPG" width="150px" class="textwrapimageright" alt="Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia"></img>
+                    <p class="textoartigo">
+                        Para além de integrar a Rede Nacional de Cuidados Continuados – já em marcha – o Hospital D. Manuel de Aguiar contará, dentro em breve, com modernos serviços de imagiologia, medicina física e de reabilitação, medicina desportiva, fisioterapia e recobro.
+                    </p>
+                    <p class="autor">
+                        “Região de Leiria”
+                    </p>
+                </div>
+            </div>
+            <div class="artigo">
+                <div class="categoria">
+                    Cuidados Geriátricos
+                </div>
+                <div class="quadradonoticia botaoazul" onclick="abrirnoticia(4)">
+                    <h2>
+                        <a href="detail.html">Hospital D. Manuel de Aguiar volta a receber doentes</a>
+                    </h2>
+                    <img src="images\noticias\flor.JPG" width="150px" class="textwrapimageright" alt="Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia"></img>
+                    <p class="textoartigo">
+                        Para além de integrar a Rede Nacional de Cuidados Continuados – já em marcha – o Hospital D. Manuel de Aguiar contará, dentro em breve, com modernos serviços de imagiologia, medicina física e de reabilitação, medicina desportiva, fisioterapia e recobro.
+                    </p>
+                    <p class="autor">
+                        “Região de Leiria”
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="vermais">
+            <a href="#">
+                <br/>+Ver Mais</a>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h1>
+            Ultimos Artigos Médicos
+        </h1>
+        <div class="artigo">
+            <div class="quadradoartigo botaoazul" onclick="abrirartigo(1)">
+                <h2>
+                    <a href="detailartigo.html">Fracturas dos ossos longos “um projecto para o futuro”</a>
+                </h2>
+                <p class="textoartigo">
+                    A realização de osteossíntese objectiva a rápida e completa recuperação da função do membro atingido com o restabelecimento da amplitude dos movimentos articulares, conseguido através do perfeito alinhamento dos ossos e da implementação de uma fixação rígida dos fragmentos.
+                </p>
+                <p class="autor">
+                    Dr. Manuel Pereira da Silva Sá
+                </p>
+            </div>
+        </div>
+        <div class="artigo">
+            <div class="quadradoartigo botaoazul" onclick="abrirartigo(1)">
+                <h2>
+                    <a href="detailartigo.html">Fracturas dos ossos longos “um projecto para o futuro”</a>
+                </h2>
+                <p class="textoartigo">
+                    A realização de osteossíntese objectiva a rápida e completa recuperação da função do membro atingido com o restabelecimento da amplitude dos movimentos articulares, conseguido através do perfeito alinhamento dos ossos e da implementação de uma fixação rígida dos fragmentos.
+                </p>
+                <p class="autor">
+                    Dr. Manuel Pereira da Silva Sá
+                </p>
+            </div>
+        </div>
+        <div class="artigo">
+            <div class="quadradoartigo botaoazul" onclick="abrirartigo(1)">
+                <h2>
+                    <a href="detailartigo.html">Fracturas dos ossos longos “um projecto para o futuro”</a>
+                </h2>
+                <p class="textoartigo">
+                    A realização de osteossíntese objectiva a rápida e completa recuperação da função do membro atingido com o restabelecimento da amplitude dos movimentos articulares, conseguido através do perfeito alinhamento dos ossos e da implementação de uma fixação rígida dos fragmentos.
+                </p>
+                <p class="autor">
+                    Dr. Manuel Pereira da Silva Sá
+                </p>
+            </div>
+        </div>
+        <div class="vermais">
+            <a href="#">
+                <br/>+Ver Mais</a>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div id="conteudo_estatico">
+
+            <img src="images/conteudo_estatico.png" alt="Santa Casa" />
+        </div>
+    </div>
+
+    <div class="conteudo">
+        <p id="footer">
+            2013/2014 - <b>SANTA CASA DA MISERICÓRDIA DE LEIRIA</b> - APLICAÇÕES PARA A INTERNET - <a href="http://www.estg.ipleiria.pt/">ESTG IPLEIRIA</a>
+        </p>
+    </div>
+</body>
+
+</html>

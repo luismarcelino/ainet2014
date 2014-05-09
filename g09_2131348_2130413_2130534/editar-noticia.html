@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Santa Casa da Misericórdia de Leiria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/estilo.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu_estilo.css" rel="stylesheet" type="text/css" />
+<link href="styles/estilo_editar_noticia.css" rel="stylesheet"
+	type="text/css" />
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+</head>
+
+<!-- BODY -->
+<body>
+<div id="container"> 
+	<!-- CABECALHO -->
+	<header id="cabecalho"> <a href="index.html">
+		<div id="homepage"></div>
+		</a> 
+		<!-- MENU -->
+		<div id="grupo1">
+			<ul class="menu">
+				<li><a href="#pessoal">Pessoal</a></li>
+				<li><a href="#medico">Médico</a></li>
+				<li><a href="#gestao_de_utilizadores">Gestão de	Utilizadores</a></li>
+			</ul>
+		</div>
+		<!-- fim grupo1 -->
+		<div id="grupo2">
+			<ul class="menu">
+				<li><a><span>Saúde</span></a>
+					<ul>
+						<li><a href="lista-especialidades.html">Lista de Especialidades</a></li>
+						<li><a href="corpo-clinico.html">Corpo Clínico</a></li>
+						<li><a href="#artigos_noticias_clinicas">Artigos/Notícias Clínicas</a></li>
+						<li><a href="marcacao-consultas.html">Marcação de Consultas</a></li>
+						<li><a href="#confirmacao-de-marcacoes">Confirmação de Marcações</a></li>
+					</ul>
+				</li>
+				<li><a href="cuidados-geriatricos.html">Cuidados Geriátricos</a></li>
+				<li><a href="creche.html">Creche</a></li>
+				<li><a href="irmandade.html">Irmandade</a></li>
+				<li><a href="contactos.html">Contactos</a></li>
+			</ul>
+		</div>
+		<!-- fim grupo2 --> 
+	</header>
+	<!-- fim cabecalho --> 
+	
+	<article id="conteudo"> 
+	<h1 id="editar_titulo">Editar Notícia</h1>
+		<!-- NOTICIA -->
+		<div id="noticia_edit">
+			<form action="ASD.html" method="get">
+				Título:
+				<input type="text" value="Título..." />
+				Imagem:
+				<input
+						type="button" value="Importar" />
+				<br />
+				Texto: <br />
+				<textarea rows="25" cols="121">Corpo da Notícia...</textarea>
+				<br>
+				Resumo: <br>
+				<textarea rows="5" cols="121">Resumo da Notícia...</textarea>
+				<br>
+				<input type="submit" id="btn_submit" value="Guardar" />
+			</form>
+		</div>
+	</article>
+	<footer id="rodape">
+		<p>Fábio Santos| João Silva | Pedro Lisboa</p>
+		<p> <strong>Copyright. All Rights Reserved. 2014</strong> </p>
+		<h3>DEI-ESTG-IPLEIRIA</h3>
+	</footer>
+	</div>
+</body>
+</html>

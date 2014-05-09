@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+	<script type='text/javascript' charset='utf-8' src='scripts/jquery.js'></script>
+	<script type='text/javascript' charset='utf-8' src='scripts/popbox/popbox.js'></script>
+	<script type='text/javascript' charset='utf-8'>
+		$(document).ready(function(){
+			$('.popbox').popbox();
+		});
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="search">
+			<form action="#" method="get" id="search_noticias">
+				<fieldset>
+					<input type="image" src="images/search.png" id="searchsubmit" />
+					<input type="text" name="textSearch" onfocus="if (this.value == 'Pesquisar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pesquisar...';}" value="Pesquisar..." id="searchinput"/>
+				</fieldset>
+			</form>
+		</div>
+		<div id="logo">
+			<a href="index.html"><img width="200px" src="images/santa_casa.png" alt="logo"></img></a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Geral</a></li>
+				<li><a id = "selection" href="saude.html" accesskey="2" title="">Saúde</a>
+					<ul id="submenu" > 
+						<li> <a href="especialidades.html"> Especialidades </a></li>
+						<li> <a href = "corpo_clinico.html"> Corpo Clinico </a> </li>
+						<li> <a href = "artigos.html"> Artigos/ Noticias  </a> </li>
+						<li ><a href = "marcacao_consultas.html"> Marcação de consultas </a> </li>
+					</ul>	
+				</li>
+				<li><a href="cuidadosgeriatricos.html" accesskey="3" title="">Cuidados Geriátricos</a></li>
+				<li><a href="creche.html" accesskey="4" title="">Creche</a></li>
+				<li><a href="irmandade.html" accesskey="5" title="">Irmandade</a></li>
+				<li><a href="contactos.html" accesskey="6" title="">Contactos</a></li>
+				<li>
+					<div class="popbox">
+						<a href="#" class='open'>Area pessoal</a>
+						<div class='collapse'>
+							<div class='box'>
+								<div class='arrow'></div>
+								<div class='arrow-border'></div>
+									<form action="#" method="post">
+										<fieldset class="login">
+											<legend>Iniciar Sessúo</legend>
+											<label for="username">Nome de Utilizador:</label>
+											<input type="text" id="username" />
+											<br/>
+											<label for="password">Palavra-Passe:</label>
+											<input type="password" id="password" />
+											<br/>
+											<input type="submit" id="submit" class="button" value="Iniciar Sessão"/>
+										</fieldset>
+									</form>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="conteudo">
+		<h1>Fracturas dos ossos longos “um projecto para o futuro”</h1>
+		<div class="textodetail">
+			<p>A realização de osteossíntese objectiva a rápida e completa recuperação da função do membro atingido com o restabelecimento da amplitude dos movimentos articulares, conseguido através do perfeito alinhamento dos ossos e da implementação de uma fixação rígida dos fragmentos. Realizada com técnica fechada ou aberta, a osteossíntese utiliza uma vasta disponibilidade de sistemas de implantes ortopédicos passíveis de serem combinados, ajustando-se da melhor forma às necessidades próprias de cada fractura. No passado, a perfeita redução anatómica dos fragmentos constituiu a abordagem de eleição na terapêutica das fracturas, contudo, verificou-se mais tarde que em certos casos o seu custo biológico era demasiado elevado, promovendo o aparecimento de complicações pós-cirúrgicas. Factores como a espécie, idade, estado geral de saúde, localização e configuração da fractura desempenham um papel importante na cicatrização óssea. O método e a técnica cirúrgica utilizada são outros dos factores determinantes na prevenção de possíveis complicações, as quais podem ser minimizadas através do bom conhecimento da sua fisiopatologia, factores predisponentes, diagnóstico e terapêutica adequada por parte do cirurgião. O ensaio clínico realizado analisou dois grupos de indivíduos compostos por pacientes pertencentes às espécies canina e felina com fracturas que experimentaram uma ossificação sem problemas (G1) ou que desenvolveram complicações (G2). Ambas as populações foram comparadas de acordo com parâmetros que tiveram em conta não só as características físicas dos pacientes, mas tentaram também avaliar a causa, localização e grau de cominutividade da fractura, bem como a terapêutica instituída, entre outros. Utilizando os testes de Fisher, quiquadrado e teste t não-emparelhado, constatou-se a presença de uma relação estatisticamente significativa entre a idade e o peso dos doentes e a propensão ao desenvolvimento de complicações. Os restantes factores não apresentaram qualquer relação estatisticamente significativa, contudo, factores como causa, valores da classificação de Müller e Palmer e grau de cominutividade mostraram uma gravidade e cominutividade tendencialmente superiores associadas às fracturas pertencentes ao grupo G2.</p>
+			<p class="autor">
+				Luís Pedro Varela da Luz Paulino
+			</p>
+			<a href="ficheiros/artigos/caracterizacao_ossos.pdf">Transferir PDF</a>
+		</div>
+	</div>
+	<div class="conteudo">
+		<p id="footer">
+			2013/2014 - <b>SANTA CASA DA MISERICÓRDIA DE LEIRIA</b> - APLICAÇÕES PARA A INTERNET - <a href="http://www.estg.ipleiria.pt/">ESTG IPLEIRIA</a>
+		</p>
+	</div>
+</body>
+</html>

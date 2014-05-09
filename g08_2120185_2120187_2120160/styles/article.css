@@ -1,0 +1,30 @@
+#article {
+	margin-top: 20px;
+}
+#article_content {
+	width: 60%;
+	display: inline-block;
+	float: left;
+}
+#author_info {
+	display: inline;
+	float: left;
+	width: 30%;
+	margin-left: 5%;
+}
+#author_info_content {
+	background-color: #e8e8e8;
+	cursor: pointer;
+	padding: 5px;
+}
+#author_info_content:hover {
+	background-color: #d8d8d8;
+}
+#author_profile_pic {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+#author_info_description {
+	margin-top: 10px;
+}

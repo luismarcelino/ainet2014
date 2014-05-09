@@ -1,0 +1,11 @@
+#mapa{
+    position: relative;
+    top: 20px;
+    width: 500px;
+    margin-bottom: 15px;
+    margin-left: 450px;
+}
+
+#mapa h1{
+    color:#3E8CD2;
+}

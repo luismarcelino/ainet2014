@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css"  href="../css/geral.css"/>
+<link rel="stylesheet" type="text/css" href="../css/contactos.css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+		function toggleLogin(){
+                $( "#Access>*" ).toggleClass("off");
+        }
+	
+		$(document).ready(function(e) {
+            
+        });
+	//]]>
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Santa Casa da Misericórdia Contactos</title>
+</head>
+
+<body>
+<noscript><p>Client do not support javascript or doesn't have it installed.</p></noscript>
+<nav id="Nav">
+	<ul>
+    	<li><a href="index.html">Entrada</a></li>
+        <li><a href="saude.html">Saúde</a></li>
+        <li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+        <li><a href="creche.html">Creche</a></li>
+        <li><a href="Irmandade.html">Irmandade</a></li>
+        <li><a href="#">Contactos</a></li>
+        <li><a href="Pessoal.html">Pessoal</a></li>
+        <li><a href="Medico.html">Médico</a></li>
+        <li><a href="gestaoUsers.html">Gestão de Utilizadores</a></li>
+    </ul>
+</nav>
+
+<div id="Header" class="loginDiv">
+	 <div id="Access">
+                <a id="loginButton" class="buttonOn" href="#" onclick="toggleLogin();">Login</a>
+                <form action="#" method="post" class="off">  
+                    <table>
+                        <tr><td>Username:</td><td><input type="text" value="" name="user"/></td></tr>
+                        <tr><td>Password:</td><td><input type="password" value="" name="pass"/></td></tr>
+                        <tr><td><input type="button" value="Exit"  onclick="toggleLogin();"/></td><td><input type="button" value="LogIn" name="enter"/><input type="reset" value="Clear" name="clear"/></td></tr>
+                    </table>
+                </form>
+            </div>
+        </div>    
+<div id="Container">
+	<div id="wraper">
+        <section id="ContactForm">
+            <div id="formulario">
+            <h2>Envie-nos um email</h2>
+            <p>A sua opinião conta! Deixe-nos saber qual a sua opinião, o que poderemos melhorar ou até por futuras ideias em movimento!</p>
+                <form action="#" method="post">
+                    <table>
+                        <tr><td><strong>Nome:</strong></td><td><input type="text" name="nome" value=""/></td></tr>
+                        <tr><td><strong>Email:</strong></td><td><input type="text" name="email" value=""/></td></tr>
+                        <tr><td><strong>Telemóvel:</strong></td><td><input type="text" name="tele" value=""/></td></tr>
+                        <tr><td><strong>Assunto:</strong></td><td><select><option>Consulta</option><option>Contactar</option><option>Reclamação</option><option>Informações</option><option>Outros Assuntos</option></select></td></tr>
+                        <tr><td><strong>Opinião:</strong></td><td><textarea rows="4" cols="55" name="areatexto"></textarea></td></tr>
+                        <tr><td></td><td><input type="button" name="send" value="Enviar"/><input type="reset" value="Limpar" name="clear"/></td></tr>
+                    </table>   
+                </form>	
+            </div>
+        </section><!--contact form end-->
+    	<section id="infoText">
+          <h2>Contactos</h2>
+          <h3>Deseja contactar a santa casa?</h3>
+          <ul>
+              <li><b>Santa Casa de Leiria</b><ul>
+                  <li class="rua">Rua Trindade Coelho, 8 Apartado 1109
+  2401-801 Leiria</li>
+                  <li class="tel">244 106 202</li>
+                  <li class="fax">244 106 298</li>
+                  <li class="email">geral@misericordiadeleiria.pt</li>
+              </ul></li>
+              <li><b>Clínica Médica e de Reabilitação</b><ul>
+                  <li class="rua">Rua Nossa Senhora da Encarnação, 2414-004 Leiria</li>
+                  <li class="tel">244 828 484</li>
+                  <li class="fax">244 823 980</li>
+                  <li class="email">geral@misericordiadeleiria.pt</li>
+              </ul></li>
+               <li><b>Unidade de Cuidados Continuados</b><ul>
+                  <li class="tel">244 106 204 (24h)</li>
+              </ul></li>
+               <li><b>Lar Nossa Sra. da Encarnação</b><ul>
+                  <li class="rua">Rua Nossa Sra. da Encarnação
+  2414-004 Leiria</li>
+                  <li class="tel"> 244 827 400</li>
+                  <li class="fax">244 823 980</li>
+                  <li class="email">geral@misericordiadeleiria.pt</li>
+              </ul></li>
+               <li><b>Hospital Dom Manuel de Aguiar</b><ul>
+                  <li class="rua">Rua Conde Ferreira
+  2410-189 Leiria</li>
+                  <li class="tel">244 100 009</li>
+                  <li class="fax">244 106 299</li>
+                  <li class="email">geral@misericordiadeleiria.pt</li>
+              </ul></li>
+              <li><b>Creche "Casa Sanches"</b><ul>
+                  <li class="rua">Rua Trindade Coelho, 10
+  2410-189 Leiria</li>
+                  <li class="tel">244 100 009</li>
+                  <li class="tel">915 190 685</li>
+                  <li class="fax">244 106 299</li>
+                  <li class="email">geral@misericordiadeleiria.pt</li>
+              </ul></li>
+          </ul>
+        </section>    
+    </div>
+	<div class="pusher">&nbsp;<br /></div>
+</div>
+<footer id="Footer">
+	<h3>O Saber da experiência.<span>500 anos de história.</span></h3>
+</footer>
+</body>
+</html>

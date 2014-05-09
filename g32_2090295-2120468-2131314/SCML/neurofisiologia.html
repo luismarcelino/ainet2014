@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!--Title with Image-->
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="shortcut icon" href="img/header.png" />
+		
+		<!--Scripts-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="script/scripts.js"></script>
+		<script type="text/javascript" src="script/scriptsJQ.js"></script>
+		
+		<!--Fonts da google-->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'/>
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menuSTYLE.css"/>
+
+	</head>
+
+	<body>
+		<div id="wrapper" class="clearfix">
+			<div id="header" class="clearfix">
+				<div id="headerimg"><a href="index.html"><img src="img/header.png" alt="header" /></a>
+					<p id="saber">O Saber da Experiência</p>
+					<p>500 anos de história</p>
+				</div>
+				
+
+				<div id="loginbox">
+						<a onclick="show()" href="#">Login</a><a href="registar.html">Registar</a>
+				</div>
+
+				<div id="container-login" class="hide">
+					<div>
+						<h1>Login</h1>
+					</div>
+					<div>
+						<form action="login_sucesso.html" method="get">
+							<div id="loginFields">
+								<label>Username:</label><input type="text" name="user"/><br/>
+								<label>Password:</label><input type="password" name="pass"/><br/>
+	
+								<input type="submit" value="Entrar"/>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div id="searchbox">
+					<p><input type="text" value="Procure aqui..." /></p>
+				</div>
+			</div>
+
+			<div id="middle" class="clearfix">
+				<div id="sidebar">
+				 	<!--Menus de navegacao-->
+					<ul id="nav">
+						<li><a href="index.html">Entrada</a></li>
+						<li><a href="#">Saúde</a>
+							<ul>
+								<li><a href="especialidades.html">Especialidades</a></li>	
+								<li><a href="corpoclinico.html">Corpo Clínico</a></li>
+								<li><a href="artEnot.html">Artigos/Notícias Clínicas</a></li>
+								<li><a href="marcar_consulta.html">Marcação de Consultas</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Cuidados Geriátricos</a>
+							<ul>
+								<li><a href="tipoValencia.html">Residencial</a></li>
+								<li><a href="tipoValencia.html">Lar</a></li>
+								<li><a href="tipoValencia.html">Internamento</a></li>
+								<li><a href="tipoValencia.html">Apoio domiciliário</a></li>
+							</ul>
+						</li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+			<div id="content">
+				<div class="nav_esp">
+					<ul>
+						<li><a href="cirurgia_vascular.html">Acupuntura</a></li>
+						<li><a href="clinica_sono.html">Cardiologia</a></li>
+						<li><a href="neurofisiologia.html">Cirurgia Geral</a></li>
+						<li><a href="cirurgia_vascular.html">Cirurgia Plástica</a></li>
+						<li><a href="clinica_sono.html">Cirurgia Vascular</a></li>
+						<li><a href="neurofisiologia.html">Clínica Geral</a></li>
+						<li><a href="cirurgia_vascular.html">Consulta da Dor</a></li>
+						<li><a href="clinica_sono.html">Ortopedia</a></li>
+						<li><a href="neurofisiologia.html">Otorrinolaringologia</a></li>
+						<li><a href="cirurgia_vascular.html">Pneumologia</a></li>
+					</ul>
+				</div>
+				<div class="nav_esp">
+					<ul>
+						<li><a href="cirurgia_vascular.html">Dermatologia</a></li>
+						<li><a href="clinica_sono.html">Doenças Venosas</a></li>
+						<li><a href="neurofisiologia.html">Eletromiografia</a></li>
+						<li><a href="cirurgia_vascular.html">Endocrinologia</a></li>
+						<li><a href="clinica_sono.html">Fisiatria</a></li>
+						<li><a href="neurofisiologia.html">Gastrenterologia</a></li>
+						<li><a href="cirurgia_vascular.html">Ginecologia / Obstetricia</a></li>
+						<li><a href="clinica_sono.html">Psicologia</a></li>
+						<li><a href="neurofisiologia.html">Psiquiatria</a></li>
+						</ul>
+				</div>
+				<div class="nav_esp">
+					<ul>
+						<li><a href="cirurgia_vascular.html">Medicina Dentária</a></li>
+						<li><a href="clinica_sono.html">Medicina Desportiva</a></li>
+						<li><a href="neurofisiologia.html">Medicina Interna</a></li>
+						<li><a href="cirurgia_vascular.html">Neurocirurgia</a></li>
+						<li><a href="clinica_sono.html">Neurologia</a></li>
+						<li><a href="neurofisiologia.html">Nutrição</a></li>
+						<li><a href="cirurgia_vascular.html">Oftamologia</a></li>
+						<li><a href="clinica_sono.html">Reumatologia</a></li>
+						<li><a href="neurofisiologia.html">Urologia</a></li>
+					</ul>
+				</div>
+					<div class="content_esp">
+						<h1>Neurofisiologia</h1>
+					</div>
+					<div class="text_area">
+						<p>
+							As doenças e lesões do sistema nervoso periférico são muito frequentes na prática clínica. A electromiografia é o exame complementar de diagnóstico de eleição na sua avaliação, fornecendo indicações precisas sobre a natureza, localização e gravidade das mesmas. Em muitos casos, é o seu resultado que determina a orientação terapêutica mais adequada. 
+
+							A electromiografia consiste em duas técnicas que são complementares: o estudo de condução nervosa periférica e o exame muscular com eléctrodo-agulha. O exame, no seu conjunto, é de execução rápida, tolerável, não exige preparação prévia e não tem contraindicações ou consequências físicas ou outras durante e após a sua realização. Os resultados são disponibilizados e entregues ao utente após a sua conclusão.
+						</p>
+					</div>
+					<div style="padding-top:20px;">
+						<h3>Profissionais</h3>
+					</div>
+					<div class="nav_esp">
+						<h4>Dr. André Tiago</h4>
+						<label>Telef:</label>955523648<br/>
+						<label>Area Clinica: </label>Neurofisiologia<br/>
+						<label>Especialidade: </label>Neurofisiologia<br/>
+						<label>Horario Consulta: </label>Seg - Sext das 10h ás 16h<br/>
+						<a href="marcar_consulta.html"><input type="button" value="Marcar Consulta"/></a>
+					</div>
+					<div>
+						<div class="acordo">
+							<h3>Acordos</h3>
+							<ul>
+								<li>ARS</li>
+							</ul>
+						</div>
+						<div class="noticias">
+							<h3>Noticias</h3>
+							xxxxxxxxxx
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>2014 &#169; Alexandra Pedro, André Tiago e Fábio Santos. <br/> DEI ESTG-IPLEIRIA </p>
+			</div>
+		</div>	
+	</body>
+</html>

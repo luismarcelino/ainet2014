@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Santa Casa da Misericórdia de Leiria - Formulário Contacto </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.4.custom.min.css" type="text/css" media="all">
+	<script src="js/jquery.js"></script>
+	<script src="js/utils.js"></script>
+	<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			var d = new Date();
+
+			var ano = d.getFullYear();
+
+			$("#dataNascimento").datepicker({
+				changeMonth : true,
+				changeYear : true,
+				showOn : "button",
+				buttonImage : "img/calendar.png",
+				buttonImageOnly : true,
+				yearRange : '1900:' + ano,
+				monthNamesShort : ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+				dayNamesMin : ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"]
+			});
+
+			$("#dataPretendida").datepicker({
+				showOn : "button",
+				buttonImage : "img/calendar.png",
+				buttonImageOnly : true,
+				monthNames : ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+				dayNamesMin : ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"]
+			});
+
+		});
+</script>
+
+</head>
+
+<body>
+
+	<header>
+		<div class="full-width">
+			<div id="logo">
+				<div class="center">
+					<img src="./img/logo.png" alt="" />
+					<div id="login-box">
+						<form action="">
+
+							<fieldset>
+
+								<div id="login-box-username">
+									<label for="username">Username: </label>
+									<input type="text" name="username" id="username">
+								</div>
+								<div id="login-box-password">
+									<label for="password">Password: </label>
+									<input type="password" name="password" id="password">
+								</div>
+								<div id="login-box-button">
+									<button>
+										Entrar
+									</button>
+								</div>
+
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<div class="center">
+					<ul>
+						<li>
+							<a href="index.html">Início</a>
+						</li>
+						<li>
+							<a href="saude.html">Saúde</a>
+						</li>
+						<li>
+							<a href="cuidadosgeriatricos.html">Cuidados Geriátricos</a>
+						</li>
+						<li>
+							<a href="creche.html">Creche</a>
+						</li>
+						<li>
+							<a href="irmandade.html">Irmandade</a>
+						</li>
+						<li>
+							<a href="contactos.html">Contactos</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</div>
+		<div id="welcome_message">
+			<p>
+				Bem Vindo Visitante!
+			</p>
+			<p id="clickToEnter">
+				Clique para autenticar
+			</p>
+		</div>
+		<div id="search_box">
+			<input type="text" id="search_field" name="search_field" placeholder="Search..." />
+			<input type="button" id="search_button" value="Search" />
+		</div>
+	</header>
+	<div id="main">
+		<div class="container">
+
+			<div class="inside">
+				<div class="wrapper">
+					<h2 class="category">Formulário de Contacto</h2>
+					<div>
+						<form>
+
+							<div class="formularioField">
+								<div class="formularioLabel">
+									<span class="importantField">*</span>
+									<label class="bold" for="comboTipoContacto">Tipo de Contacto</label>
+								</div>
+								<div class="formularioInput">
+									<select id = "comboTipoContacto">
+										<option value = "seleccione">--- Seleccione ---</option>
+										<option value = "contacto">Contacto</option>
+										<option value = "emprego">Emprego</option>
+										<option value = "inscricaocomoirmao">Inscrição como irmão (ã) </option>
+										<option value = "inscricoesutentes">Inscricoes de Utentes</option>
+										<option value = "outro">Outro</option>
+										<option value = "voluntariado">Voluntariado</option>
+									</select>
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel">
+									<span class="importantField">*</span><label class="bold" for="fullname">Nome Completo:</label>
+								</div>
+
+								<div class="formularioInput">
+									<input type="text" id="fullname" name="fullname" />
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+
+								<div class="formularioLabel">
+									<span class="importantField">*</span><label class="bold">Género: </label>
+								</div>
+
+								<div class="formularioInput">
+									<label for="male">Masculino</label>
+									<input type="radio" name="genre" id="male" value="male" checked="checked"/>
+									<label for="female">Feminino</label>
+									<input type="radio" name="genre" id="female" value="female" />
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel formularioSpecial">
+									<span class="importantField">*</span><label class="bold" for="data_nascimento" >Data de Nascimento: </label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="data_nascimento" name="data_nascimento" />
+
+									<span class="fieldLegend">(Dia/Mês/Ano)</span>
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel">
+									<label class="bold" for="morada">Morada</label>
+								</div>
+								<div class="formularioInput">
+									<textarea id="morada"></textarea>
+								</div>
+							</div>
+
+							<div class="formularioField">
+
+								<div class="formularioLabel">
+									<label class="bold" for="codPostal">Código Postal: </label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="codPostal" name="codPostal" />
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+
+								<div class="formularioLabel">
+									<label class="bold" for="localidade">Localidade: </label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="localidade" name="localidade" />
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel">
+									<span class="importantField">*</span><label class="bold" for="telefone">Telefone / Telemóvel</label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="telefone">
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel">
+									<label class="bold" for="email">E-Mail</label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="email">
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel">
+									<label class="bold" for="comboSeguros">Subsistema ou seguro saúde</label>
+								</div>
+								<div class="formularioInput">
+									<select id = "comboSeguros">
+										<option value = "seleccione">--- Seleccione ---</option>
+										<option value = "adse">ADSE</option>
+										<option value = "multicare">Multicare</option>
+										<option value = "particular">Particular</option>
+										<option value = "servimed">Servimed</option>
+									</select>
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+
+								<div class="formularioLabel">
+									<label class="bold" for="numBeneficiario">Número de beneficiário: </label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="numBeneficiario" name="numBeneficiario" />
+								</div>
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel">
+									<label class="bold" for="mensagem">Mensagem</label>
+								</div>
+								<div class="formularioInput">
+									<textarea id="mensagem"></textarea>
+								</div>
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel">
+									<label class="bold" for="comboPerferenciaCont">Perferência de contacto</label>
+								</div>
+								<div class="formularioInput">
+									<select id = "comboPerferenciaCont">
+										<option value = "seleccione">--- Seleccione ---</option>
+										<option value = "telefone">Telefone / Telemovel</option>
+										<option value = "e-mail">E-mail</option>
+										<option value = "cartaPorEscrito">Carta Por escrito</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="margin30">
+								<span class="importantField">*</span><span> - Campo obrigatório </span>
+							</div>
+							<div class="margin30">
+								<button value="limpar" type="reset">
+									Limpar os campos
+								</button>
+							</div>
+							<div class="margin30">
+								<button>
+									Confirmar
+								</button>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="wrapper">
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

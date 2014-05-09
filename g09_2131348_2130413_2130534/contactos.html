@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link href="styles/estilo.css" rel="stylesheet" type="text/css"/>
+	<link href="styles/menu_estilo.css" rel="stylesheet" type="text/css"/>
+	<link href="styles/estilo_contactos.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery.dotdotdot.js" ></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&amp;sensor=false"></script>
+	<script type="text/javascript">
+	// <![CDATA[ 
+		$(document).ready(function() {
+			$(".noticia_med").dotdotdot();
+		});
+	// ]]>
+	</script>
+	<script type="text/javascript">
+	// <![CDATA[ 
+		function initialize()
+		{
+			/* -- Santa Casa da Misericórdia de Leiria -- */
+			//Posicao
+			var posicaoMapa1 = new google.maps.LatLng(39.744109, -8.804707);
+			//Opcoes
+		  	var opcoesMapa1 = {
+				center: posicaoMapa1,
+				scrollwheel: false,
+    			navigationControl: false,
+   				mapTypeControl: false,
+   				scaleControl: false,
+    			draggable: false,
+				zoom:15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+		 	};
+			//Instancia do mapa	
+			var map1 = new google.maps.Map(document.getElementById("googleMap1"),opcoesMapa1);
+			//Marcador no mapa
+			var marker1 = new google.maps.Marker({
+				position: posicaoMapa1,
+				map: map1,
+				title:"Estamos aqui :)"
+		  	});
+			
+			/* -- Lar Nossa Sra. da Encarnação -- */
+			//Posicao
+			var posicaoMapa2 = new google.maps.LatLng(39.739750, -8.800674);
+			//Opcoes
+		  	var opcoesMapa2 = {
+				center: posicaoMapa1,
+				scrollwheel: false,
+    			navigationControl: false,
+   				mapTypeControl: false,
+   				scaleControl: false,
+    			draggable: false,
+				zoom:15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+		 	};
+			//Instancia do mapa	
+			var map2 = new google.maps.Map(document.getElementById("googleMap2"),opcoesMapa2);
+			//Marcador no mapa
+			var marker2 = new google.maps.Marker({
+				position: posicaoMapa2,
+				map: map2,
+				title:"Estamos aqui :)"
+		  	});
+			
+			/* -- Clínica Médica e de Reabilitação -- */
+			//Posicao
+			var posicaoMapa3 = new google.maps.LatLng(39.739750, -8.800674);
+			//Opcoes
+		  	var opcoesMapa3 = {
+				center: posicaoMapa3,
+				scrollwheel: false,
+    			navigationControl: false,
+   				mapTypeControl: false,
+   				scaleControl: false,
+    			draggable: false,
+				zoom:15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+		 	};
+			//Instancia do mapa	
+			var map3 = new google.maps.Map(document.getElementById("googleMap3"),opcoesMapa3);
+			//Marcador no mapa
+			var marker3 = new google.maps.Marker({
+				position: posicaoMapa3,
+				map: map3,
+				title:"Estamos aqui :)"
+		  	});
+			
+			/* -- Hospital Dom Manuel de Aguiar -- */
+			//Posicao
+			var posicaoMapa4 = new google.maps.LatLng(39.743677, -8.805451);
+			//Opcoes
+		  	var opcoesMapa4 = {
+				center: posicaoMapa4,
+				scrollwheel: false,
+    			navigationControl: false,
+   				mapTypeControl: false,
+   				scaleControl: false,
+    			draggable: false,
+				zoom:15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+		 	};
+			//Instancia do mapa	
+			var map4 = new google.maps.Map(document.getElementById("googleMap4"),opcoesMapa4);
+			//Marcador no mapa
+			var marker4 = new google.maps.Marker({
+				position: posicaoMapa4,
+				map: map4,
+				title:"Estamos aqui :)"
+		  	});
+			
+			/* -- Creche "Casa Sanches" -- */
+			//Posicao
+			var posicaoMapa5 = new google.maps.LatLng(39.744064, -8.804713);
+			//Opcoes
+		  	var opcoesMapa5 = {
+				center: posicaoMapa5,
+				scrollwheel: false,
+    			navigationControl: false,
+   				mapTypeControl: false,
+   				scaleControl: false,
+    			draggable: false,
+				zoom:15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+		 	};
+			//Instancia do mapa	
+			var map5 = new google.maps.Map(document.getElementById("googleMap5"),opcoesMapa5);
+			//Marcador no mapa
+			var marker5 = new google.maps.Marker({
+				position: posicaoMapa5,
+				map: map5,
+				title:"Estamos aqui :)"
+		  	});
+			
+			/* -- Residencial XXI -- */
+			//Posicao
+			var posicaoMapa6 = new google.maps.LatLng(39.744358, -8.805641);
+			//Opcoes
+		  	var opcoesMapa6 = {
+				center: posicaoMapa6,
+				scrollwheel: false,
+    			navigationControl: false,
+   				mapTypeControl: false,
+   				scaleControl: false,
+    			draggable: false,
+				zoom:15,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+		 	};
+			//Instancia do mapa	
+			var map6 = new google.maps.Map(document.getElementById("googleMap6"),opcoesMapa6);
+			//Marcador no mapa
+			var marker6 = new google.maps.Marker({
+				position: posicaoMapa6,
+				map: map6,
+				title:"Estamos aqui :)"
+		  	});	
+		}
+		
+		google.maps.event.addDomListener(window, 'load', initialize);
+		// ]]>
+	</script>
+	</head>
+
+	<!-- BODY -->
+	<body>
+	<div id="container"> 
+		<!-- CABECALHO -->
+		<header id="cabecalho"> <a href="index.html">
+			<div id="homepage"></div>
+			</a> 
+			<!-- MENU -->
+			<div id="grupo1">
+				<ul class="menu">
+					<li><a href="#pessoal">Pessoal</a></li>
+					<li><a href="#medico">Médico</a></li>
+					<li><a href="#gestao_de_utilizadores">Gestão de	Utilizadores</a></li>
+				</ul>
+			</div>
+			<!-- fim grupo1 -->
+			<div id="grupo2">
+				<ul class="menu">
+					<li><a><span>Saúde</span></a>
+						<ul>
+							<li><a href="lista-especialidades.html">Lista de Especialidades</a></li>
+							<li><a href="corpo-clinico.html">Corpo Clínico</a></li>
+							<li><a href="#artigos_noticias_clinicas">Artigos/Notícias Clínicas</a></li>
+							<li><a href="marcacao-consultas.html">Marcação de Consultas</a></li>
+							<li><a href="#confirmacao-de-marcacoes">Confirmação de Marcações</a></li>
+						</ul>
+					</li>
+					<li><a href="cuidados-geriatricos.html">Cuidados Geriátricos</a></li>
+					<li><a href="creche.html">Creche</a></li>
+					<li><a href="irmandade.html">Irmandade</a></li>
+					<li><a href="contactos.html">Contactos</a></li>
+				</ul>
+			</div>
+			<!-- fim grupo2 --> 
+		</header>
+		<!-- fim cabecalho --> 
+		
+		<!-- CONTEUDO -->
+		<article id="conteudo">
+			<section id="contactos">
+				<h1>Contactos</h1>
+			</section>
+			<section class="contacto">
+				<div class="contacto_texto">
+					<h3>Santa Casa da Misericórdia de Leiria</h3>
+					<p>Instituição Particular de Solidariedade Social</p>
+					<br>
+					<br>
+					<p><strong>Sede:</strong></p>
+					<p>Rua Trindade Coelho, 8 Apartado 1109</p>
+					<p>2401-801 Leiria</p>
+					<p>• Tel.: 244 106 202</p>
+					<p>• Fax: 244 106 298</p>
+					<p><a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a></p>
+				</div>
+				<div class="contacto_mapa">
+					<div id="googleMap1" style="width:311px;height:130px;"></div>
+				</div>
+			</section>
+			<section class="contacto">
+				<div class="contacto_texto">
+					<h3>Lar Nossa Sra. da Encarnação</h3>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>Rua Nossa Sra. da Encarnação</p>
+					<p>2414-004 Leiria</p>
+					<p>• Tel.: 244 827 400</p>
+					<p>• Fax: 244 823 980</p>
+					<p><a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a></p>
+				</div>
+				<div class="contacto_mapa">
+					<div id="googleMap2" style="width:311px;height:130px;"></div>
+				</div>
+			</section>
+			<section class="contacto">
+				<div class="contacto_texto">
+					<h3>Clínica Médica e de Reabilitação</h3>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>Rua Nossa Sra. da Encarnação</p>
+					<p>2414-004 Leiria</p>
+					<p>• Tel.: 244 824 484</p>
+					<p>• Fax: 244 823 980</p>
+					<p><a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a></p>
+				</div>
+				<div class="contacto_mapa">
+					<div id="googleMap3" style="width:311px;height:130px;"></div>
+				</div>
+			</section>
+			<section class="contacto">
+				<div class="contacto_texto">
+					<h3>Hospital Dom Manuel de Aguiar</h3>
+					<p>Rua Conde Ferreira</p>
+					<p>2410-189 Leiria</p>
+					<p>• Tel.: 244 100 009</p>
+					<p>• Fax: 244 106 299</p>
+					<p><a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a></p>
+					<br>
+					<p><strong>Unidade Cirúrgica</strong></p>
+					<p>•Tel.: 244 106 203</p>
+					<p><strong>Unidade Cuidados Continuados</strong></p>
+					<p>•Tel.: 244 106 204 (24 Horas)</p>
+					<p><strong>Recepção Administrativa Central</strong></p>
+					<p>•Tel.: 244 106 201</p>
+				</div>
+				<div class="contacto_mapa">
+					<div id="googleMap4" style="width:311px;height:135px;"></div>
+				</div>
+			</section>
+			<section class="contacto">
+				<div class="contacto_texto">
+					<h3>Creche "Casa Sanches"</h3>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>Rua Trindade Coelho, 10</p>
+					<p>2410-189 Leiria</p>
+					<p>• Tel.: 244 100 009</p>
+					<p>• Tm: 915 190 685</p>
+					<p>• Fax: 244 106 298</p>
+					<p><a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a></p>
+				</div>
+				<div class="contacto_mapa">
+					<div id="googleMap5" style="width:311px;height:135px;"></div>
+				</div>
+			</section>
+			<section class="contacto">
+				<div class="contacto_texto">
+					<h3>Residencial XXI</h3>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>Rua do Lis</p>
+					<p>2410-126 Leiria</p>
+					<p>• Tel.: 244 106 300</p>
+					<p>• Fax: 244 106 298</p>
+					<p><a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a></p>
+				</div>
+				<div class="contacto_mapa">
+					<div id="googleMap6" style="width:311px;height:135px;"></div>
+				</div>
+			</section>
+			<section class="contactos_footer">
+				<h3><a href="contactos-form.html"><span id="contactos_footer_span">Contacte-nos !</span></a></h3>
+			</section>
+		</article>
+		<footer id="rodape">
+			<p>Fábio Santos| João Silva | Pedro Lisboa</p>
+			<p> <strong>Copyright. All Rights Reserved. 2014</strong> </p>
+			<h3>DEI-ESTG-IPLEIRIA</h3>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!--Title with Image-->
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="shortcut icon" href="img/header.png" />
+		
+		<!--Scripts-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="script/scripts.js"></script>
+		<script type="text/javascript" src="script/tabcontrol.js"></script>
+		<script type="text/javascript" src="script/scriptsJQ.js"></script>
+
+		<!--Fonts da google-->
+		<link href="http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,latin-ext" rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'/>
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menuSTYLE.css"/>
+
+	</head>
+
+	<body>
+		<div id="wrapper" class="clearfix">
+			<div id="header" class="clearfix">
+				<div id="headerimg"><a href="index.html"><img src="img/header.png" alt="header" /></a>
+					<p id="saber">O Saber da Experiência</p>
+					<p>500 anos de história</p>
+				</div>
+				
+
+				<div id="loginbox">
+						<a onclick="show()" href="#">Login</a><a href="registar.html">Registar</a>
+				</div>
+
+				<div id="container-login" class="hide">
+					<div>
+						<h1>Login</h1>
+					</div>
+					<div>
+						<form action="login_sucesso.html" method="get">
+							<div id="loginFields">
+								<label>Username:</label><input type="text" name="user"/><br/>
+								<label>Password:</label><input type="password" name="pass"/><br/>
+	
+								<input type="submit" value="Entrar"/>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div id="searchbox">
+					<p><input type="text" value="Procure aqui..." /></p>
+				</div>
+			</div>
+
+			<div id="middle" class="clearfix">
+				<div id="sidebar">
+				 	<!--Menus de navegacao-->
+					<ul id="nav">
+						<li><a href="index.html">Entrada</a></li>
+						<li><a href="#">Saúde</a>
+							<ul>
+								<li><a href="especialidades.html">Especialidades</a></li>	
+								<li><a href="corpoclinico.html">Corpo Clínico</a></li>
+								<li><a href="artEnot.html">Artigos/Notícias Clínicas</a></li>
+								<li><a href="marcar_consulta.html">Marcação de Consultas</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Cuidados Geriátricos</a>
+							<ul>
+								<li><a href="tipoValencia.html">Residencial</a></li>
+								<li><a href="tipoValencia.html">Lar</a></li>
+								<li><a href="tipoValencia.html">Internamento</a></li>
+								<li><a href="tipoValencia.html">Apoio domiciliário</a></li>
+							</ul>
+						</li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="content">
+					<p class="contentLabel">Notícias</p>
+					<p id="np1" class="np">Irmandade</p>
+					<p id="np2" class="np hiden">Creche</p>
+					<p id="np3" class="np hiden">Lar</p>
+					<p id="np4" class="np hiden">Residencial</p>
+					<div id="noticias" class="contentblock">
+						<div id="newsContainer" class="clearfix">
+							<div id="news1" class="news">
+								
+									<img src="img/news1.png" alt="news1" />
+									<p class="headline"><a href="noticia_visualizacao.html">Notícias sobre a Irmandade</a></p>
+
+									A última notícia sobre a Irmandade vai ser apresentada neste bloco.
+								
+							</div>
+
+							<div id="news2" class="news hiden">
+								
+								<img src="img/news2.png" alt="news2" />
+									<p class="headline"><a href="noticia_visualizacao.html">Notícia sobre a Creche</a></p>
+									A última notícia sobre a creche vai ser apresentada neste bloco.	
+								
+							</div>
+
+							<div id="news3" class="news hiden">
+								
+									<img src="img/news3.png" alt="news3" />
+									<p class="headline"><a href="noticia_visualizacao.html">Notícia sobre o Lar</a></p>
+
+									A última notícia sobre o Lar vai ser apresentada neste bloco.
+								
+							</div>
+
+							<div id="news4" class="news hiden">
+								
+									<img src="img/news4.png"  alt="news4" />
+									<p class="headline"><a href="noticia_visualizacao.html">Notícia sobre a Residencial</a></p>
+
+									A última notícia sobre a Residencial vai ser apresentada neste bloco.
+								
+							</div>
+
+							<ul class="tabs">
+								<li class="nTab selTab"><a href="javascript:;">1</a></li>
+								<li class="nTab"><a href="javascript:;">2</a></li>
+								<li class="nTab"><a href="javascript:;">3</a></li>
+								<li class="nTab"><a href="javascript:;">4</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<p class="contentLabel">Artigos</p>
+					<div id="artrecent" class="contentblock">
+						<div id="art1" class="art">
+							
+								<img src="img/art1.png" alt="art1" />
+								<p class="headline"><a href="noticiavisualizacao.html">Esta secção terá artigos dos médicos</a></p>
+								Os ultimos artigos feitos por médicos irão aparecer nesta secção, formatados tal como uma notícia.
+							
+						</div>
+
+						<div id="art2" class="art hiden">
+							
+								<img src="img/art2.png" alt="art2" />
+								<p class="headline"><a href="noticiavisualizacao.html">Artigo Dummy 1</a></p>
+								Os ultimos artigos feitos por médicos irão aparecer nesta secção, formatados tal como uma notícia.
+							
+						</div>
+
+						<div id="art3" class="art hiden">
+							
+								<img src="img/art3.png" alt="art3" />
+								<p class="headline"><a href="noticiavisualizacao.html">Artigo Dummy 2</a></p>
+								Os ultimos artigos feitos por médicos irão aparecer nesta secção, formatados tal como uma notícia.
+							
+						</div>
+
+						<ul class="tabs">
+							<li class="aTab selTab"><a href="javascript:;">1</a></li>
+							<li class="aTab"><a href="javascript:;">2</a></li>
+							<li class="aTab"><a href="javascript:;">3</a></li>
+						</ul>
+					</div>
+
+					<p class="contentLabel">Informação</p>
+					<div id="info" class="contentblock">
+						
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>2014 &#169; Alexandra Pedro, André Tiago e Fábio Santos. <br/> DEI ESTG-IPLEIRIA </p>
+			</div>
+		</div>	
+	</body>
+</html>

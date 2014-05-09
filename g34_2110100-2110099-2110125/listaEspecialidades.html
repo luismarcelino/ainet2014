@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Santa Casa da Misericórdia de Leiria - Lista de Especialidades </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<script src="js/jquery.js"></script>
+	<script src="js/utils.js"></script>
+	<script type="text/javascript">
+			// <![CDATA[
+
+			$(document).ready(function() {
+				$("section#sectionDescricaoEspecialidade div").hide();
+				$("section#sectionDescricaoEspecialidade div#" + "acumpunctura").show();
+				$("section#sectionDescricaoEspecialidade div#" + "acumpunctura" + " *").show();
+
+				$("div#listaEspecialidades ul li").click(function(event) {
+					
+					$("section#sectionDescricaoEspecialidade div").hide();
+					var title = $(this).children('a').attr("title").toLowerCase();
+
+					$("section#sectionDescricaoEspecialidade div#" + title).show()
+
+					$("section#sectionDescricaoEspecialidade div#" + title + " *").show();
+
+					$("div#listaEspecialidades ul li").removeClass("selected");
+
+					$(this).addClass("selected");
+
+				});
+			});
+
+			// ]]>
+		</script>
+	</head>
+
+	<body>
+
+		<header>
+			<div class="full-width">
+				<div id="logo">
+					<div class="center">
+						<img src="./img/logo.png" alt="" />
+						<div id="login-box">
+							<form action="">
+
+								<fieldset>
+
+									<div id="login-box-username">
+										<label for="username">Username: </label>
+										<input type="text" name="username" id="username">
+									</div>
+									<div id="login-box-password">
+										<label for="password">Password: </label>
+										<input type="password" name="password" id="password">
+									</div>
+									<div id="login-box-button">
+										<button>
+											Entrar
+										</button>
+									</div>
+
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<div class="center">
+						<ul>
+							<li>
+								<a href="index.html">Início</a>
+							</li>
+							<li>
+								<a href="saude.html">Saúde</a>
+							</li>
+							<li>
+								<a href="cuidadosgeriatricos.html">Cuidados Geriátricos</a>
+							</li>
+							<li>
+								<a href="creche.html">Creche</a>
+							</li>
+							<li>
+								<a href="irmandade.html">Irmandade</a>
+							</li>
+							<li>
+								<a href="contactos.html">Contactos</a>
+							</li>
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+			<div id="welcome_message">
+				<p>
+					Bem Vindo Visitante!
+				</p>
+				<p id="clickToEnter">
+					Clique para autenticar
+				</p>
+			</div>
+			<div id="search_box">
+				<input type="text" id="search_field" name="search_field" placeholder="Search..." />
+				<input type="button" id="search_button" value="Search" />
+			</div>
+		</header>
+		<div id="main">
+			<div class="container">
+				<nav class="subMenu">
+					<ul>
+						<li class="activeNav">
+							<a href="listaEspecialidades.html">Lista de Especialidades</a>
+						</li>
+						<li>
+							<a href="corpoClinico.html">Corpo Clinico</a>
+						</li>
+						<li >
+							<a href="marcacaoConsulta.html">Marcação Consultas</a>
+						</li>
+						<li>
+							<a href="#">Confirmação de Marcações</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="wrapper">
+
+					<section id="tituloEspecialdade">
+						<h2 class="category">Lista de Especialidades</h2>
+						<div id="listaEspecialidades">
+							<ul>
+								<li class="selected">
+									<a href="#acumpuntura" class="especialidades" title="Acumpunctura">Acumpunctura</a>
+								</li>
+								<li>
+									<a href="#audiologia" class="especialidades" title="Audiologia">Audiologia</a>
+								</li>
+								<li>
+									<a href="#cardiologia" class="especialidades" title="Cardiologia">Cardiologia</a>
+								</li>
+								<li>
+									<a href="#cirurgiaGeral" class="especialidades" title="CirurgiaGeral">Cirurgia Geral</a>
+								</li>
+								<li>
+									<a href="#doencasVenosas" class="especialidades" title="DoencasVenosas">Doenças Venosas</a>
+								</li>
+								<li>
+									<a href="#cirurgiaPlastica" class="especialidades" title="CirurgiaPlastica">Cirurgia Plástica</a>
+								</li>
+								<li>
+									<a href="#cirurgiaVascular" class="especialidades" title="CirurgiaVascular">Cirurgia Vascular</a>
+								</li>
+								<li>
+									<a href="#clinicaGeral" class="especialidades" title="ClinicaGeral">Clínica Geral</a>
+								</li>
+								<li>
+									<a href="#dermatologia" class="especialidades" title="Dermatologia">Dermatologia</a>
+								</li>
+								<li>
+									<a href="#endocrinologia" class="especialidades" title="Nutrição">Endocrinologia </a>
+								</li>
+								<li>
+									<a href="#medicinaDentaria" class="especialidades" title="MedicinaDentaria">Medicina Dentária</a>
+								</li>
+								<li>
+									<a href="#fisiatria" class="especialidades" title="Fisiatria">Fisiatria</a>
+								</li>
+								<li>
+									<a href="#gastrenterologia" class="especialidades" title="Gastrenterologia">Gastrenterologia</a>
+								</li>
+								<li>
+									<a href="#ginecologiaObstetricia" class="especialidades" title="GinecologiaObstetricia">Ginecologia Obstetricia</a>
+								</li>
+								<li>
+									<a href="#medicinaInterna" class="especialidades" title="MedicinaInterna">Medicina Interna</a>
+								</li>
+								<li>
+									<a href="#medicinaDesportiva" class="especialidades" title="MedicinaDesportiva">Medicina Desportiva</a>
+								</li>
+								<li>
+									<a href="#neurocirurgia" class="especialidades" title="Neurocirurgia">Neurocirurgia</a>
+								</li>
+								<li>
+									<a href="#neurologia" class="especialidades" title="Neurologia">Neurologia</a>
+								</li>
+								<li>
+									<a href="#nutrição" class="especialidades" title="Nutrição">Nutrição</a>
+								</li>
+								<li>
+									<a href="#oftalmologia" class="especialidades" title="Oftalmologia">Oftalmologia</a>
+								</li>
+								<li>
+									<a href="#otorrinolaringologia" class="especialidades" title="Otorrinolaringologia">Otorrinolaringologia</a>
+								</li>
+								<li>
+									<a href="#ortopedia" class="especialidades" title="Ortopedia">Ortopedia</a>
+								</li>
+								<li>
+									<a href="#pneumologia" class="especialidades" title="Pneumologia">Pneumologia</a>
+								</li>
+								<li>
+									<a href="#psicologia" class="especialidades" title="Psicologia">Psicologia</a>
+								</li>
+								<li>
+									<a href="#psiquiatria" class="especialidades" title="Psiquiatria">Psiquiatria</a>
+								</li>
+								<li>
+									<a href="#reumatologia" class="especialidades" title="Reumatologia">Reumatologia</a>
+								</li>
+								<li>
+									<a href="#urologia" class="especialidades" title="Urologia">Urulogia</a>
+								</li>
+								<li>
+									<a href="#electromiografia" class="especialidades" title="Eletromiografia">Eletromiografia</a>
+								</li>
+							</ul>
+
+						</div>
+					</section>
+
+					<section id="sectionDescricaoEspecialidade">
+
+						<div id="acumpunctura" class="esp">
+							<div class="descricaoEspecialidade">
+								<div class="descricaoEsp" id="Especialidade1">
+									<h2>Acumpunctura</h2>
+									<p class="textoEsp">
+										O tratamento acupunterápico consiste no diagnóstico (igualmente baseado em ensinamentos clássicos da Medicina Tradicional Chinesa) e na aplicação de agulhas em pontos definidos do corpo, chamados de "Pontos de Acupuntura" ou "Acupontos" que se distribuem principalmente sobre linhas chamadas "meridianos chineses" e "canais", para obter diferentes efeitos terapêuticos conforme o caso tratado.
+									</p>
+									<h3 class="titulosEsp"> Corpo Clínico</h3>
+								</div>
+								<div class="medico">
+
+									<h4>Dr José Carlos Calhaz</h4>
+
+									<div class="imgMedico">
+										<img alt="logo" src="./img/medico1.png"/>
+									</div>
+									<div class="infoMedico">
+										<p>
+											Especialidade: Ginecologia - Obstetrícia
+											<br/>
+											Telefone: 239 096900
+											<br/>
+											Email: uhc@idealmed.pt
+											<br/>
+											Área Clinica: Ginecologia e Obstetrícia
+											<br/>
+										</p>
+
+									</div>
+
+								</div>
+
+								<div class="medico">
+
+									<h4>Dr José Carlos Calhaz</h4>
+
+									<div class="imgMedico">
+										<img alt="logo" src="./img/medico1.png"/>
+									</div>
+									<div class="infoMedico">
+										<p>
+											Especialidade: Ginecologia - Obstetrícia
+											<br/>
+											Telefone: 239 096900
+											<br/>
+											Email: uhc@idealmed.pt
+											<br/>
+											Área Clinica: Ginecologia e Obstetrícia
+											<br/>
+										</p>
+
+									</div>
+
+								</div>
+
+								<h3 class="titulosEsp"> Acordos com Seguradoras </h3>
+								<div>
+									<p class="textoEsp">
+										A Santa Casa da Mesericórdia de Leiria tem acordos celebrados com as principais seguradoras e subsistemas de saúde, permitindo aos seus utentes ter acesso aos serviços
+									</p>
+
+									<ul class="listaAcordos">
+										<li>
+											SIGIC
+										</li>
+										<li>
+											SNS
+										</li>
+										<li>
+											ADSE
+										</li>
+										<li>
+											ADM
+										</li>
+										<li>
+											SAMS
+										</li>
+										<li>
+											QUADROS
+										</li>
+										<li>
+											CENTRO
+										</li>
+										<li>
+											CGD
+										</li>
+										<li>
+											MULTI
+										</li>
+										<li>
+											SERVIMED
+										</li>
+									</ul>
+
+								</div>
+								<h3 class="titulosEsp"> Notícias desta especialidade </h3>
+
+								<div class="noticiasEspecialidade">
+									<div class="noticiaEsp1">
+										<article>
+											<h2>Noticia 1</h2>
+										</article>
+									</div>
+									<div class="noticiaEsp2">
+										<article>
+											<h2>Noticia 2</h2>
+										</article>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div id="audiologia" class="esp">
+							<div class="descricaoEspecialidade">
+								<div class="descricaoEsp" id="Especialidade2">
+									<h2>Audiologia</h2>
+									<p class="textoEsp">
+										O tratamento acupunterápico consiste no diagnóstico (igualmente baseado em ensinamentos clássicos da Medicina Tradicional Chinesa) e na aplicação de agulhas em pontos definidos do corpo, chamados de "Pontos de Acupuntura" ou "Acupontos" que se distribuem principalmente sobre linhas chamadas "meridianos chineses" e "canais", para obter diferentes efeitos terapêuticos conforme o caso tratado.
+									</p>
+									<h3 class="titulosEsp"> Corpo Clínico</h3>
+								</div>
+								<div class="medico">
+
+									<h4>Dr José Carlos Calhaz</h4>
+
+									<div class="imgMedico">
+										<img alt="logo" src="./img/medico1.png"/>
+									</div>
+									<div class="infoMedico">
+										<p>
+											Especialidade: Ginecologia - Obstetrícia
+											<br/>
+											Telefone: 239 096900
+											<br/>
+											Email: uhc@idealmed.pt
+											<br/>
+											Área Clinica: Ginecologia e Obstetrícia
+											<br/>
+										</p>
+
+									</div>
+
+								</div>
+
+								<div class="medico">
+
+									<h4>Dr José Carlos Calhaz</h4>
+
+									<div class="imgMedico">
+										<img alt="logo" src="./img/medico1.png"/>
+									</div>
+									<div class="infoMedico">
+										<p>
+											Especialidade: Ginecologia - Obstetrícia
+											<br/>
+											Telefone: 239 096900
+											<br/>
+											Email: uhc@idealmed.pt
+											<br/>
+											Área Clinica: Ginecologia e Obstetrícia
+											<br/>
+										</p>
+
+									</div>
+
+								</div>
+
+								<h3 class="titulosEsp"> Acordos com Seguradoras </h3>
+								<div>
+									<p class="textoEsp">
+										A Santa Casa da Mesericórdia de Leiria tem acordos celebrados com as principais seguradoras e subsistemas de saúde, permitindo aos seus utentes ter acesso aos serviços
+									</p>
+
+									<ul class="listaAcordos">
+										<li>
+											SIGIC
+										</li>
+										<li>
+											SNS
+										</li>
+										<li>
+											ADSE
+										</li>
+										<li>
+											ADM
+										</li>
+										<li>
+											SAMS
+										</li>
+										<li>
+											QUADROS
+										</li>
+										<li>
+											CENTRO
+										</li>
+										<li>
+											CGD
+										</li>
+										<li>
+											MULTI
+										</li>
+										<li>
+											SERVIMED
+										</li>
+									</ul>
+
+								</div>
+								<h3 class="titulosEsp"> Notícias desta especialidade </h3>
+
+								<div class="noticiasEspecialidade">
+									<div class="noticiaEsp1">
+										<article>
+											<h2>Noticia 1</h2>
+										</article>
+									</div>
+									<div class="noticiaEsp2">
+										<article>
+											<h2>Noticia 2</h2>
+										</article>
+									</div>
+								</div>
+
+							</div>
+
+						</div>
+					</section>
+
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="wrapper">
+
+				</div>
+			</div>
+		</footer>
+
+	</body>
+	</html>

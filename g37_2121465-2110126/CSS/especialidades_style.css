@@ -1,0 +1,243 @@
+#login{
+	z-index: 9999;
+	position: fixed;
+	top: 0%;
+	margin-left: 48.59%;
+	background-color: #ebebeb;
+	text-align: left;
+	font-size: 14pt;
+	color:#8d8d8d;
+	font-family: "Lucida Sans Unicode";
+	width: 644px;
+	height: 33px;
+}
+
+#form{
+	position: relative;
+	top:5%;
+	left:2%;
+}
+
+#btnLogin{
+	width: 77px;
+	height: 25px;
+	background: url("../images/btn_login.png");
+	position: relative;
+	left:85%;
+	top:-23px;
+}
+
+#logo{
+	position: relative;
+	width: 239px;
+	height: 157px;
+	font-size:19pt;
+	color: blue;
+}
+
+#titulo{
+	position: relative;
+	top: -35px;
+	width: 500px;
+	left: 240px;
+	font-family: Lucida Sans Unicode;
+}
+
+#pesquisar{
+	position: relative;
+	width: 60px;
+	height: 5%;
+	left: 84.8%;
+	bottom: 5%;
+}
+
+#menuPrincipal{
+	position: absolute;
+	left: 2%;
+	height: 339px;
+	width: 1322px;
+}
+/* Content Part */
+#menuWrapper{
+	position: relative;
+	top:-15px;
+	left: 0%;
+	width: 1287px;
+	height: 185px;
+}
+
+/* MENU */
+#menu{
+	position: relative;
+	width:1287px;
+	height: 95px;
+	background: url("../images/menu_background2k.png");
+	background-size: 	1287px, 95px;
+	background-repeat: no-repeat;
+}
+
+#home{
+	position: relative;
+	width: 108.5px;
+	height: 74px;
+	left: 0.5%;
+	top:9px;
+	background: url("../images/btn_home.png");
+}
+
+#home:hover{
+	background: url("../images/btn_home_hover.png");
+}
+
+#saude{
+	position: relative;
+	background-position: center;
+	width: 227px;
+	height: 75px;
+	top:-65px;
+	left: 126px;
+	background: url("../images/btn_saude.png");
+}
+
+#saude:hover{
+	background: url("../images/btn_saude_hover.png");
+}
+
+#creche{
+	position: relative;
+	left: 344px;
+	width: 227px;
+	height: 75px;
+	top: -140px;
+	background: url("../images/btn_creche.png");
+}
+
+#creche:hover{
+	background: url("../images/btn_creche_hover.png");
+}
+
+#geriatricos{
+	position: relative;
+	left: 564px;
+	width: 227px;
+	height: 75px;
+	top: -215px;
+	background: url("../images/btn_geriatricos.png");
+}
+
+#geriatricos:hover{
+		background: url("../images/btn_geriatricos_hover.png");
+}
+
+#irmandade{
+	position: relative;
+	left: 792px;
+	width: 235px;
+	height: 75px;
+	top: -290px;
+	background: url("../images/btn_irmandade.png");
+}
+
+#irmandade:hover{
+	background: url("../images/btn_irmandade_hover.png");
+}
+
+#contactos{
+	position: relative;
+	left: 1036px;
+	width: 235px;
+	height: 75px;
+	top: -365px;
+	background: url("../images/btn_contactos.png");
+}
+
+#contactos:hover{
+	background: url("../images/btn_contactos_hover.png");
+}
+
+#subMenu{
+	z-index: 9999;
+	position: relative;
+	background-color: #ebebeb;
+	width: 1269.8px;
+	left: 0.69%;
+	height: 100px;
+	top: -10px;
+}
+
+#linksInMenu{
+	position: relative;
+	height: 100px;
+	float: left;
+	color:#8d8d8d;
+	font-family: "Lucida Sans Unicode";
+	font-size: 11pt;
+	left: 10%;
+	top:-7px;
+}
+
+
+
+/* ---------- FOOTER ------------------- */
+#footerWraper{
+	position: relative;
+	background-color: #ebebeb;
+	top:620px;
+	width: 100%;
+	height: 500px;
+	overflow: hidden;
+}
+#footer{
+	position: relative;
+	height: 500px;
+	width: 95%;
+	left:2.9%;
+}
+
+#logoBaixo{
+	position: relative;
+	height: 178px;
+	width: 481px;
+}
+
+#siteMap {
+	position: relative;
+	left: 0.5%;
+	top: -270px;
+	height: 250px;
+	width: 230px;
+}
+
+#moradasFooter {
+	position: relative;
+	top: -535px;
+	height: 250px;
+	width: 300px;
+	left: 270px;
+}
+
+#mapa{
+	position: relative;
+	width: 590px;
+	height: 300px;
+	left: 630px;
+	top: -158px;
+}
+
+#morada{
+	position: relative;
+	height: 130px;
+	left: 630px;
+	width: 280px;
+	top: -700px;
+}
+
+#contactosFooter{
+	position: relative;
+	height: 130px;
+	left: 940px;
+	width: 280px;
+	top: -848px;
+}
+
+/* ---------- END FOOTER ------------------- */

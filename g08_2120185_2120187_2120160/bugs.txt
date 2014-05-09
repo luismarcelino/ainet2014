@@ -1,0 +1,11 @@
+Bugs:
+	- ANimação MENU feita a pedreiro!
+
+ToDo:
+	- Acabar pagina de especialidades
+	- Página da saúde
+	- Corrigir lista de especialidades
+	- Corrigir corpo clínico
+	- Página com lista de notícias
+	- Página artigo/notícia
+	- Corrigir marcação de consulta (adicionar data/hora e médico)

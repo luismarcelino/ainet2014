@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+	<script type='text/javascript' charset='utf-8' src='scripts/jquery.js'></script>
+	<script type='text/javascript' charset='utf-8' src='scripts/popbox/popbox.js'></script>
+	<style type='text/css' media='screen'>
+
+		.box { width:350px; }
+
+	</style>
+	<script type='text/javascript' charset='utf-8'>
+		$(document).ready(function(){
+			$('.popbox').popbox();
+		});
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="search">
+			<form action="#" method="get" id="search_noticias">
+				<fieldset>
+					<input type="image" src="images/search.png" id="searchsubmit" />
+					<input type="text" name="textSearch" onfocus="if (this.value == 'Pesquisar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pesquisar...';}" value="Pesquisar..." id="searchinput"/>
+				</fieldset>
+			</form>
+		</div>
+		<div id="logo">
+			<a href="index.html"><img width="200px" src="images/santa_casa.png" alt="logo"></img></a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Geral</a></li>
+				<li><a id = "selection" href="saude.html" accesskey="2" title="">Saúde</a>
+					<ul id="submenu" > 
+						<li> <a href="especialidades.html"> Especialidades </a></li>
+						<li> <a href = "corpo_clinico.html"> Corpo Clinico </a> </li>
+						<li> <a href = "artigos.html"> Artigos/ Noticias  </a> </li>
+						<li ><a href = "marcacao_consultas.html"> Marcação de consultas </a> </li>
+					</ul>	
+				</li>
+				<li><a href="cuidadosgeriatricos.html" accesskey="3" title="">Cuidados Geriátricos</a></li>
+				<li><a href="creche.html" accesskey="4" title="">Creche</a></li>
+				<li class="current_page_item"><a href="irmandade.html" accesskey="5" title="">Irmandade</a></li>
+				<li><a href="contactos.html" accesskey="6" title="">Contactos</a></li>
+				<li>
+					<div class="popbox">
+						<a href="#" class='open'>Area pessoal</a>
+						<div class='collapse'>
+							<div class='box'>
+								<div class='arrow'></div>
+								<div class='arrow-border'></div>
+									<form action="#" method="post">
+										<fieldset class="login">
+											<legend>Iniciar Sessúo</legend>
+											<label for="username">Nome de Utilizador:</label>
+											<input type="text" id="username" />
+											<br/>
+											<label for="password">Palavra-Passe:</label>
+											<input type="password" id="password" />
+											<br/>
+											<input type="submit" id="submit" class="button" value="Iniciar Sessão"/>
+										</fieldset>
+									</form>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="conteudo">
+		<h1>Irmandade </h1>
+		<div class="textodetail">
+			<img src="images\irmandade.jpg" class="textwrapimageright" alt="Irmandade"></img>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut eros nunc. Fusce malesuada orci justo, nec pharetra erat volutpat id. Proin ullamcorper convallis massa. Quisque fringilla augue in velit pharetra tristique. Maecenas gravida leo dui. Proin id mi diam. Maecenas ut sem vel orci tincidunt suscipit nec ut ligula. Duis eros odio, pretium eu tellus a, auctor cursus velit. Suspendisse id feugiat velit, a suscipit mi. Nam auctor diam quis sodales pellentesque. Maecenas libero massa, mattis in tempor vel, molestie sed justo.</p>
+			<p>Nullam sit amet nunc ac felis adipiscing facilisis. Suspendisse non leo commodo, tincidunt lacus non, convallis nulla. Sed eros velit, condimentum sit amet elit eget, sollicitudin laoreet libero. Pellentesque quis massa mollis, vestibulum elit in, pretium neque. Vivamus accumsan, enim vitae malesuada rhoncus, dolor tellus facilisis libero, quis egestas turpis quam ut sapien. Proin posuere faucibus eros eu consectetur. Nullam quis imperdiet arcu, a malesuada nisl. Proin id porttitor elit. Curabitur a lacus luctus, convallis lectus ac, ornare mauris. Praesent tincidunt dui facilisis condimentum aliquam. Cras facilisis blandit sapien, in egestas felis lacinia eu. Fusce risus nibh, viverra quis mollis at, pellentesque a augue. Proin lectus sem, scelerisque non arcu et, condimentum fermentum nibh. Sed tempor nunc vehicula porttitor aliquam.</p>
+			<p>Cras et risus vitae risus elementum consectetur. Mauris ac tristique ante. Proin hendrerit tincidunt mi. Vestibulum a hendrerit neque, ut lacinia erat. Sed tempor augue pretium faucibus fermentum. Cras sit amet adipiscing odio. Mauris adipiscing imperdiet orci nec pharetra. Vivamus et magna nibh. Fusce interdum sit amet libero a convallis. Aliquam dignissim magna id dignissim tempus. Mauris ut pretium mauris. Vestibulum at malesuada tortor.</p>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Praesent vel metus bibendum, consectetur eros eget, sodales nisl. Aenean urna risus, suscipit at dignissim vitae, faucibus et neque. Nullam non libero vitae tellus volutpat imperdiet. Nullam eu lacinia nibh. Quisque ultricies condimentum quam id lacinia. Ut tortor libero, euismod sit amet nunc sit amet, consequat eleifend neque.</p>
+			<p>Donec eleifend lacus sed libero aliquam imperdiet. Pellentesque quis felis id eros accumsan porta. Nam adipiscing tortor vel vestibulum ultrices. Nunc ac interdum mi. Maecenas adipiscing rutrum est, in tincidunt felis adipiscing id. Vestibulum interdum, nisl ut convallis lobortis, diam dolor ultricies nibh, nec interdum sapien diam eu lorem. Phasellus sit amet malesuada metus. Nulla a augue vestibulum, sodales enim nec, tempor purus. Cras a dolor vel lorem sollicitudin pharetra. Ut nisi neque, ullamcorper non nulla eu, ornare tincidunt lectus. Aenean ac vulputate nisi. Nulla a ultricies mauris, vitae vestibulum erat. Quisque aliquam ultricies consequat. Donec malesuada eros suscipit velit vulputate, quis condimentum mi convallis. Ut lobortis et justo rhoncus dictum. </p>
+		</div>
+	</div>
+
+	<div class="conteudo">
+		<p id="footer">
+			2013/2014 - <b>SANTA CASA DA MISERICÓRDIA DE LEIRIA</b> - APLICAÇÕES PARA A INTERNET - <a href="http://www.estg.ipleiria.pt/">ESTG IPLEIRIA</a>
+		</p>
+	</div>
+</body>
+</html>

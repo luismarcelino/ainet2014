@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	
+	<style type="text/css">
+		#sombraE{
+			background-image: url("img/shadow6E.png");
+			float:left;
+			height:1000px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+
+		#sombra{
+			background-image: url("img/shadow6.png");
+			float:left;
+			height:1000px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+		#content {
+			width:1000px;
+			height:1000px;
+			background-color:white;
+			margin:auto;
+			position:relative;
+			float:left;
+		}
+		
+		#formularioCont{
+			width:auto;
+			height:auto;
+			padding-top:40px;
+			margin-left:225px;
+			padding-left:50px;
+			padding-right:40px;
+		}
+		
+		td{
+			font-size:13px;
+		}
+		
+	</style>
+	
+	<script type="text/javascript">
+			//<![CDATA[ 
+	function preencheCaixa() {
+		var caixa = document.getElementById("txtPesquisa");
+		var string = caixa.value.replace(/\s+/g, '');
+		if(string=="") {
+			caixa.value="Pesquisar";
+			caixa.style.color="gray";
+		}
+	}
+	//]]> 
+	</script>
+</head>
+
+<body>
+
+<div id="teste1">
+
+<div id="sombraE"> </div>
+
+
+	<div id="content">			
+		<div class="login">
+			<div class="loginText">
+				<form action="">
+					<div>
+					<input type="text" class="txtUsername" name="username" value="Username" onclick="" />
+					<input type="password" class="txtPassword" name ="password" value="Password" onclick="" />
+					<div class="loginIMG"> </div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="cabecalho">
+			<div id="logo"> <img src="img/logo2.jpg" alt="logotipo SCML"/> </div>
+			<div id="slogan"> <img src="img/slogan.png" alt="slogan SCML"/> </div>
+
+		</div>
+
+		<div id="menuCont" >
+			<div id="lista"> 
+				<ul id="menu"> <!-- ver os atributos style!!!!! -->
+					<li id="inicio">  <a href="index.html" class="opcaoMenuHorizontal" > Início </a> </li>
+					<li id="noticias"> <a href="noticias.html" class="opcaoMenuHorizontal" > Notícias </a> </li>
+					<li id="saude"> <a href="saude.html" class="opcaoMenuHorizontalSeleccionado" >Saúde </a> </li>
+					<li id="valencias"> <a href="valencias.html" class="opcaoMenuHorizontal"> Valências </a> </li>
+					<li id="contactos"> <a href="contactos.html" class="opcaoMenuHorizontal"> Contactos </a> </li>
+
+
+				</ul>
+			</div>
+			<div id="pesquisa">
+				<input type="text" id="txtPesquisa" name="pesquisa" value="Pesquisar" onclick="limparCaixa()" onblur="preencheCaixa()" />
+				<input type="image" id="imgPesquisa" src="img/search.png" />
+			</div>
+		</div>
+		<div id="corpo">
+			<div id = "menuVertical">
+				<div class="paddingMenu" > MENU</div> <div class ="cantoSupMV"> </div><div class= "barraVMV"> </div>
+				<div class="opcoesMenuV">
+					<div class = "opcaoMenuVertical" onclick= "location.href='saudePub.html';"> <div class = "opcaoTexto">Publicações </div></div>
+					<div class = "opcaoMenuVertical" onclick= "location.href='saudeListaPerfil.html';"> <div class = "opcaoTexto">Corpo Clínico </div></div>
+					<div class = "opcaoMenuVerticalSeleccionado" onclick= "location.href='formularioMarcacoes.html';" > <div class = "opcaoTextoSelecionado">Marcações </div></div>
+					<div class = "opcaoMenuVertical" onclick= "location.href='saudeEspe.html';"> <div class = "opcaoTexto">Especialidades </div></div>					
+				</div>
+				<div class= "barraHMV"> </div><div class ="cantoInfMV"> </div>
+			</div>
+			<div id="formularioCont">
+				<form action="">
+					<table border="0">
+						<tr>
+							<td>Nome: <br/>
+							<input type="text" name="nome" size="52"/></td>
+						</tr>
+						<tr>
+							<td>Morada:<br/>
+							<textarea name="morada" rows="4" cols="40"> </textarea></td>
+						</tr>
+						<tr>
+							<td>Data de Nascimento: (dd-mm-aaaa)<br/>
+							<input type="text" name="dataNascimento"/></td>
+						</tr>
+						<tr>
+							<td>E-mail:<br/>
+							<input type="text" name="email" size="52"/></td>
+						</tr>
+						<tr>
+							<td>Telefone:<br/>
+							<input type="text" name="nome"/></td>
+						</tr>
+						<tr>
+							<td>Subsistema ou Seguro de Saúde:<br/>
+							<select name="subsistemaSeguro" >
+								<option value="">--- Seleccione ---</option>
+								<option  value="1">ADMG (só para MFR)</option>
+								<option  value="2">ADSE</option>
+								<option  value="3">IASFA (ADMA, ADME, ADMFA)</option>
+								<option  value="4">Medis (só para MFR)</option>
+								<option  value="5">Multicare</option>
+								<option  value="6">Particular</option>
+								<option  value="7">Planicare</option>
+								<option  value="8">SAD PSP (só para MFR)</option>
+								<option  value="9">SAMS Centro</option>
+								<option  value="10">Serviços Sociais da CGD</option>
+								<option  value="11">Servimed</option>
+								<option  value="12">Sindicato dos Funcionários Judiciais</option>
+								<option  value="13">SNS</option>
+							</select> </td>
+						</tr>
+						<tr>
+							<td>Consulta:<br/>
+							<select name="consulta">
+								<option value="">--- Seleccione ---</option>
+								<option  value="1">Acupunctura</option>
+								<option  value="2">Cardiologia</option>
+								<option  value="3">Cirurgia Geral</option>
+								<option  value="4">Cirurgia Plástica e Reconstrutiva</option>
+								<option  value="5">Cirurgia Vascular</option>
+								<option  value="6">Dermatologia</option>
+								<option  value="7">Diabetes</option>
+								<option  value="8">Dietista</option>
+								<option  value="9">Endocrinologia</option>
+								<option  value="10">Estomatologia</option>
+								<option  value="11">Gastrenterologia</option>
+								<option  value="12">Ginecologia</option>
+								<option  value="13">Medicina Desportiva</option>
+								<option  value="14">Medicina Física e de Reabilitação</option>
+								<option  value="15">Mesoterapia</option>
+								<option  value="16">Neurocirurgia</option>
+								<option  value="17">Neurologia</option>
+								<option  value="18">Oftalmologia adulto e infantil</option>
+								<option  value="19">Ortopedia</option>
+								<option  value="20">Otorrinolaringologia</option>
+								<option  value="21">Pneumologia</option>
+								<option  value="22">Psicologia Clínica</option>
+								<option  value="23">Psiquiatria</option>
+								<option  value="24">Reumatologia</option>
+								<option  value="25">Urologia</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>Exame:<br/>
+							<select name="exame">
+								<option value="">--- Seleccione ---</option>
+								<option  value="1">Anatomia Patológica></option>
+								<option  value="2">Análises Clínicas</option>
+								<option  value="3">Audiometria</option>
+								<option  value="4">Cardiologia</option>
+								<option  value="5">Colonoscopia</option>
+								<option  value="6">Dermatologia</option>
+								<option  value="7">Doppler a cores, transesofágico</option>
+								<option  value="8">Eco-Doppler</option>
+								<option  value="9">Ecocardiografia Modo M, 2D</option>
+								<option  value="10">Ecografia</option>
+								<option  value="11">Ecografia Geral e Vascular</option>
+								<option  value="12">Electrocardiograma com prova de esforço em tapete rolante</option>
+								<option  value="13">Electrocardiograma simples</option>
+								<option  value="14">Endoscopia alta</option>
+								<option  value="15">Gastrenterologia</option>
+								<option  value="16">Ginecologia</option>
+								<option  value="17">Imagiologia</option>
+								<option  value="18">Impedânciometria</option>
+								<option  value="19">Mamografia Digital</option>
+								<option  value="20">MAPA (medição ambulatória da pressão arterial)</option>
+								<option  value="21">Neurologia</option>
+								<option  value="22">Oftalmologia</option>
+								<option  value="23">Ortopedia</option>
+								<option  value="24">Osteodensitometria</option>
+								<option  value="25">Otorrinolaringologia</option>
+								<option  value="26">Pneumologiaoption</option>
+								<option  value="27">Posturografia dinâmica e computorizada</option>
+								<option  value="28">Provas funcionais respiratórias</option>
+								<option  value="29">Rectosigmoidoscopia</option>
+								<option  value="30">Reumatologia</option>
+								<option  value="31">Rx-Digital</option>
+								<option  value="32">TAC</option>
+								<option  value="33">Timpanometria</option>
+								<option  value="34">Urologia</option>
+								<option  value="35">Videonistagmografia</option>
+							</select></td>
+						</tr>
+						<tr>
+							<td>Data Pretendida: (dd-mm-aaaa)<br/>
+							<input type="text" name="dataNascimento"/></td>
+						</tr>
+						<tr>
+							<td align="center">
+								<input type="submit" name="btnEnviar" value="Enviar"/>
+								<input type="reset" name="btnLimpar" value="Limpar"/>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div> <!-- corpo -->
+	</div> <!-- container -->
+	
+	<div id = "sombra" > </div>
+	
+</div> <!-- teste1 -->
+	<div class="rodapeCont">
+		<div class="canto"> </div>
+		<div id="rodape"> Aplicações para a Internet - Beatriz Franco - David Mendes - Diogo Alves - 2013/2014</div>
+		<div class="cantoR"> </div>
+	</div>
+</body>
+</html>

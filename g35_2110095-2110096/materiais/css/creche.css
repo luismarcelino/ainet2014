@@ -1,0 +1,21 @@
+#sobreCreche{
+	width: 50%;
+	float: left;
+}
+
+.contentorEsquerda{
+	width: 100%;
+	text-align: left !important;
+}
+
+#imagensCreche{
+
+	width: 40%;
+	float: right;
+}
+
+#imagemCreche{
+
+	width: 175px;
+	height: 300px;
+}

@@ -1,0 +1,186 @@
+#lateral_menu{
+    width: 25%;
+    margin-top: 10%;
+    display: inline-block;
+    z-index: 2;
+    position: absolute;
+    left: 38px;
+}
+
+#services_list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#services_list li{
+    padding-left: 0;
+        
+    margin: 2px;
+    text-align: center;
+    width: 75%;
+    font-size: 25px;
+    background-color: #2e2e2e;
+    color: #5172f5;
+    cursor: pointer;
+}
+
+#services_list li:hover{
+    background-color:  #5172f5;
+    color:#2e2e2e ;
+    
+}
+
+#services_list .arrow_box {
+    background-color:  #5172f5;
+    color:#2e2e2e ;
+	position: relative;
+	border: 1px solid #5172f5;
+}
+
+#services_list .arrow_box:after{
+	left: 100%;
+    top: 50%;
+	border: solid transparent;
+	content: "";
+	height: 0;
+	width: 0;
+	position: absolute;
+    border-color: rgba(77, 77, 77, 0);
+	border-left-color: #5172f5;
+	border-width: 30px;
+	margin-top: -30px;
+}
+
+
+#service_info {
+    margin-top: 5%;
+    width: 78%;
+    background-color:  #e2e2e2;
+	height: auto;
+    min-height: 500px;
+    display: inline-block;
+    border-radius: 20px;
+    z-index: 0;
+      float: right;
+}
+
+#sub_container {
+    position: relative;
+    height: auto;
+    
+}
+
+#info_container {
+    width: 60%;
+    display: inline-block;
+    border-right: 1px double #2e2e2e;
+    vertical-align: top;
+    padding: 2px;
+    padding-right: 35px;
+    
+}
+
+.professional_gui, .professional_medic div {
+    display: inline-block;
+    vertical-align: top;
+    margin:0;
+    color: #2e2e2e;
+}
+
+
+
+.professional_gui img{
+    margin-right: 1%;
+    width: 80%;
+   margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    max-height: 200px;
+}
+
+.professional_medic div{
+    width: 45%;
+}
+.professional_medic {
+    margin: 20px 0 20px 0;
+    width: 98%;
+    margin-top: 2%;
+    background-color: #fff;
+}
+
+
+
+.professional_gui img, .professional_gui div{
+    display: block;
+}
+
+.professional_gui button{
+    width: 70%;
+    height: 40px;
+    margin: 10% 15% 10% 15%;
+    color: #2e2e2e;
+    border-radius: 7px;
+    top:15px;
+    font-weight: bolder;
+	cursor: pointer;
+}
+
+.professional_gui button:focus {
+    outline: none;
+}
+
+
+
+.professional_gui div{
+    position: relative;
+    text-align: center;
+    top: 70%;
+    
+}
+
+
+#info_container > p {
+    width: 95%;
+    vertical-align: top;
+    padding: 0 2.5% 0 2.5%;
+}
+
+
+
+#available_agreements {
+    width: 30%;
+    display: inline-block;
+}
+
+#service_info > div {
+    padding: 3% 5% 3% 5%;    
+}
+
+.professional_medic p > span {
+    font-weight: bold;
+}
+
+#info_container h2{
+    text-align: center;
+}
+
+
+#available_agreements h4 , #available_agreements h5 {
+   text-align: center;
+}
+#available_agreements ul li , #available_agreements p{
+   font-size: 13px;
+}
+
+
+.content_div_title {
+    margin: auto;
+    margin-right: 29%;
+    width: 120px;
+    margin-bottom: 5%;
+}
+
+#container {
+    position: relative;
+}

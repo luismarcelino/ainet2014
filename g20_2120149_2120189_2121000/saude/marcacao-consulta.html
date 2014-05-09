@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/scm-stylesheets/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/scm-stylesheets/layout-style.css" type="text/css" />
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#bottom').load('/bottom_content.html');
+        });
+        $(function() {
+            $("#datepicker").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+        $(function() {
+            $("#dateconsulta").datepicker({
+                changeMonth: true,
+                changeYear: true
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="top">
+        <div id="logo">
+            <div class="wrapper">
+                <div class="imageholder">
+                    <a href="/index.html">
+                        <img src="/scm-imagens/santa.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="firstnavbar" class="">
+            <div class="wrapper">
+                <div id="imagesholder">
+                    <!-- 2 divs por imagem -->
+                    <a class="active" href="/saude/areas-clinicas.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Saúde</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/cuidados/cuidados.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Cuidados Geriátricos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/creche/creche.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Creche</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/irmandade/irmandade.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Irmandade</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/contactos.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Contactos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/areapessoal/areapessoal.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Área Pessoal</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/admin/admin.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Administração</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="secondnavbar" class="chromedframe b_border">
+            <div class="navbar wrapper">
+                <ul id="nav">
+                    <li>
+                        <a href="/saude/areas-clinicas.html">Áreas Clínicas</a>
+                    </li>
+                    <li>
+                        <a href="/saude/equipa-clinica.html">Equipa Clínica</a>
+                    </li>
+                    <li class="active">
+                        <a href="/saude/marcacao-consulta.html">Marcação de Consulta</a>
+                    </li>
+                </ul>
+                <div id="searchholder">
+                    <form class="navbar-search" action="">
+                        <input class="search-box" type="text" placeholder="Procurar" name="search" />
+                        <button class="search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="middle" class="wrapper">
+        <div class="titulo">
+            <h1>Marcação de Consulta</h1>
+        </div>
+        <div>
+            <div id="container" class="has_shadows b_corners t_corners has_borders">
+                <form method="post">
+                    <div class="content-row">
+                        <div class="content">
+                            <fieldset>
+                                <legend>
+                                    <span>Consulta</span>
+                                </legend>
+                                <div class="content-text">
+                                    <div class="content">
+                                        <table>
+                                            <tr>
+                                                <td class="left">
+                                                    <p>Data da Consulta:</p>
+                                                </td>
+                                                <td>
+                                                    <input type="text" id="dateconsulta">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="left">Especialidade:</td>
+                                                <td>
+                                                    <select name="especialidade">
+                                                        <option value="acumpuntura">Acumpuntura</option>
+                                                        <option value="audiologia">Audiologia</option>
+                                                        <option value="cardiologia">Cardiologia</option>
+                                                        <option value="cirurgia geral">Cirurgia Geral</option>
+                                                        <option value="cirurgia plástica">Cirurgia Plástica</option>
+                                                        <option value="cirurgia vascular">Cirurgia Vascular</option>
+                                                        <option value="clínica geral">Clínica Geral</option>
+                                                        <option value="dermatologia">Dermatologia</option>
+                                                        <option value="doenças venosas">Doenças Venosas</option>
+                                                        <option value="eletromiografia">Eletromiografia</option>
+                                                        <option value="endocrinologia">Endocrinologia</option>
+                                                        <option value="fisiatria">Fisiatria</option>
+                                                        <option value="gastrenterologia">Gastrenterologia</option>
+                                                        <option value="ginecologia/ obstetricia">Ginecologia/ Obstetricia</option>
+                                                        <option value="medicina dentária">Medicina Dentária</option>
+                                                        <option value="medicina desportiva">Medicina Desportiva</option>
+                                                        <option value="medicina interna">Medicina Interna</option>
+                                                        <option value="neurocirurgia">Neurocirurgia</option>
+                                                        <option value="neurologia">Neurologia</option>
+                                                        <option value="nutrição">Nutrição</option>
+                                                        <option value="oftalmologia">Oftalmologia</option>
+                                                        <option value="ortopedia">Ortopedia</option>
+                                                        <option value="otorrinolaringologia">Otorrinolaringologia</option>
+                                                        <option value="pneumologia">Pneumologia</option>
+                                                        <option value="psicologia">Psicologia</option>
+                                                        <option value="psiquiatria">Psiquiatria</option>
+                                                        <option value="reumatologia">Reumatologia</option>
+                                                        <option value="urologia">Urologia</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div class="content-row">
+                            <div class="content">
+                                <fieldset>
+                                    <legend>
+                                        <span>Dados Pessoais</span>
+                                    </legend>
+                                    <div class="content-text">
+                                        <div class="content">
+                                            <table>
+                                                <tr>
+                                                    <td class="left required">Nome Completo:</td>
+                                                    <td>
+                                                        <input class="big_input" type="text" name="first" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">
+                                                        Sexo:
+                                                    </td>
+                                                    <td>
+                                                        <input type="radio" name="masculino" value="Masculino" checked="checked" />Masculino
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+                                                        <input type="radio" name="feminino" value="feminino" />Feminino</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Estado Civil:</td>
+                                                    <td>
+                                                        <select name="characters">
+                                                            <option value="solteiro">Solteiro</option>
+                                                            <option value="casado">Casado</option>
+                                                            <option value="divorciado">Divorciado</option>
+                                                        </select>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Data de Nascimento:</td>
+                                                    <td>
+                                                        <input type="text" id="datepicker">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Morada:</td>
+                                                    <td>
+                                                        <input class="big_input" type="text" name="morada" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Número de contacto:</td>
+                                                    <td>
+                                                        <input type="text" name="telefone" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Email:</td>
+                                                    <td>
+                                                        <input type="text" name="email" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Confirmar Email:</td>
+                                                    <td>
+                                                        <input type="text" name="email" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">
+                                                        BI/CC:
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" name="BI" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="left">Numero Contribuinte:</td>
+                                                    <td>
+                                                        <input type="text" name="contribuinte" />
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="areatexto">Observações:</td>
+                                                    <td>
+                                                        <textarea name="comments"></textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td>
+
+                                                        <input type="submit" value="Enviar" />
+                                                        <input type="reset" value="Cancelar" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+    </div>
+</body>
+
+</html>

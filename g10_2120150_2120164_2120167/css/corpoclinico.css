@@ -1,0 +1,99 @@
+#titulocorpo{
+  color: #3E8CD2 ;
+  margin-left: 320px;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.6);
+}
+
+#barrapesquisa{
+    background-color: #3E8CD2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    margin-left: 320px;
+    margin-right: 40px;
+
+}
+
+#barrapesquisa label{
+    margin-left: 15px;
+    color: #FFFFFF;
+
+}
+
+#barrapesquisa input.pesquisar{
+margin-left: 20px;
+}
+
+
+
+.resmedico{
+    position: relative;
+    top: 20px;
+    width: 1000px;
+    height: 220px;
+    margin-bottom: 15px;
+    background-image: url('imgs/not.png');
+    background-size: 1000px 220px;
+    background-repeat: no-repeat;
+    margin-left: 320px;
+}
+
+.resmedico img{
+     width: 200px;
+    margin-left: 20px;
+    vertical-align: top;
+
+}
+
+.resespec{
+
+margin-left: 80px;
+display: inline-block;
+}
+
+.resespec h1{
+color:#3E8CD2;
+margin-bottom: 0px;
+}
+
+.resespec h3{
+color:#3E8CD2;
+}
+
+.resconsulta{
+    background-color: #3E8CD2;
+    width: 200px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+    margin-top: 60px;
+    margin-left: 80px;
+
+}
+
+.resconsulta a{
+    color:#FFFFFF;
+}
+
+.botao-pagmedico{
+    background-color: #3E8CD2;
+    width: 200px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+vertical-align: top;
+    margin-top: 20px;
+    margin-left: 80px;
+}
+
+.botao-pagmedico a{
+    color:#FFFFFF;
+    display: inline-block;
+
+}
+
+.botoes{
+    display: inline-block;
+    vertical-align: top;
+}

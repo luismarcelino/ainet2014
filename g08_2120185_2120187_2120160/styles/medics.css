@@ -1,0 +1,116 @@
+#info_container {
+    width: 100%;
+    vertical-align: top;
+    margin: auto;
+ 
+    margin-bottom: 0;
+}
+.professional_gui,
+.professional_medic div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    color: #2e2e2e;
+}
+#medics_list {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.professional_gui img {
+    margin-right: 1%;
+    width: 80%;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    max-height: 200px;
+}
+.professional_medic div {
+    width: 45%;
+}
+.professional_medic {
+    margin: 2%;
+    width: 45%;
+    position: relative;
+    background-color: #fff;
+    display: inline-block;
+    background-color: #e8e8e8;
+}
+.professional_gui img,
+.professional_gui div {
+    display: block;
+}
+.professional_gui div {
+    position: relative;
+    text-align: center;
+    top: 70%;
+}
+#info_container > p {
+    width: 95%;
+
+    padding: 0 2.5% 0 2.5%;
+    font-size: 1.2em;
+}
+#info_container > div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+#info_container h2 {
+    text-align: center;
+}
+#page_numbers {
+    padding: 0;
+    margin-top: 0;
+    max-height: 40px;
+    text-align: center;
+    border-bottom: 2.5px solid #42B3E5;
+}
+#page_numbers ul {
+    margin: 0;
+}
+#page_numbers a {
+    text-decoration: none;
+}
+#page_numbers li {
+    display: inline-block;
+    color: #2e2e2e;
+    margin: 1px 0 1px 0 1px;
+}
+#info_container > #search_bar {
+    font-family: 'PT Sans', sans-serif;
+    padding: 0;
+    color: #000;
+    border-bottom: 2.5px solid #42B3E5;
+    width: 100%;
+}
+#search_bar > div {
+    margin: 1%;
+    display: inline-block;
+}
+#page_numbers li > a:hover {
+    color: #5171f5;
+}
+#page_numbers li > a {
+    margin: 10%;
+    line-height: 10px;
+    color: #2e2e2e;
+}
+.professional_medic .medic_details {
+    display: none;
+}
+.professional_medic .medic_details.detailed {
+    display: block;
+    text-align: justify;
+    width: 100%;
+    margin: 0 5% 0 5%;
+}
+.content_div_title {
+    margin: auto;
+    margin-right: 29%;
+    width: 120px;
+    margin-bottom: 5%;
+    text-decoration: none;
+}
+.content_title{
+    margin-top: 40px;
+}

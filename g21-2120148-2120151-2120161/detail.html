@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+	<script type='text/javascript' charset='utf-8' src='scripts/jquery.js'></script>
+	<script type='text/javascript' charset='utf-8' src='scripts/popbox/popbox.js'></script>
+	<script type='text/javascript' charset='utf-8'>
+		$(document).ready(function(){
+			$('.popbox').popbox();
+		});
+	</script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="search">
+			<form action="#" method="get" id="search_noticias">
+				<fieldset>
+					<input type="image" src="images/search.png" id="searchsubmit" />
+					<input type="text" name="textSearch" onfocus="if (this.value == 'Pesquisar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pesquisar...';}" value="Pesquisar..." id="searchinput"/>
+				</fieldset>
+			</form>
+		</div>
+		<div id="logo">
+			<a href="index.html"><img width="200px" src="images/santa_casa.png" alt="logo"></img></a>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="index.html" accesskey="1" title="">Geral</a></li>
+				<li><a id = "selection" href="saude.html" accesskey="2" title="">Saúde</a>
+					<ul id="submenu" > 
+						<li> <a href="especialidades.html"> Especialidades </a></li>
+						<li> <a href = "corpo_clinico.html"> Corpo Clinico </a> </li>
+						<li> <a href = "artigos.html"> Artigos/ Noticias  </a> </li>
+						<li ><a href = "marcacao_consultas.html"> Marcação de consultas </a> </li>
+					</ul>	
+				</li>
+				<li><a href="cuidadosgeriatricos.html" accesskey="3" title="">Cuidados Geriátricos</a></li>
+				<li><a href="creche.html" accesskey="4" title="">Creche</a></li>
+				<li><a href="irmandade.html" accesskey="5" title="">Irmandade</a></li>
+				<li><a href="contactos.html" accesskey="6" title="">Contactos</a></li>
+				<li>
+					<div class="popbox">
+						<a href="#" class='open'>Area pessoal</a>
+						<div class='collapse'>
+							<div class='box'>
+								<div class='arrow'></div>
+								<div class='arrow-border'></div>
+									<form action="#" method="post">
+										<fieldset class="login">
+											<legend>Iniciar Sessúo</legend>
+											<label for="username">Nome de Utilizador:</label>
+											<input type="text" id="username" />
+											<br/>
+											<label for="password">Palavra-Passe:</label>
+											<input type="password" id="password" />
+											<br/>
+											<input type="submit" id="submit" class="button" value="Iniciar Sessão"/>
+										</fieldset>
+									</form>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="conteudo">
+		<h1>Hospital D. Manuel de Aguiar volta a receber doentes</h1>
+		<div class="textodetail">
+			<img src="images\noticias\flor.JPG" class="textwrapimageright" alt="Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia"></img>
+			<p>Para além de integrar a Rede Nacional de Cuidados Continuados – já em marcha – o Hospital D. Manuel de Aguiar contará, dentro em breve, com modernos serviços de imagiologia, medicina física e de reabilitação, medicina desportiva, fisioterapia e recobro.</p>
+
+			<p>Dada a qualidade e a polivalência das instalações existentes no edifício do Hospital D. Manuel de Aguiar, bem como a estrutura de recursos humanos a afectar e os meios técnicos idealizados para o efeito, acredita esta instituição ter capacidade para o tratamento das respostas mencionadas, salvaguardando o princípio da humanização dos serviços a prestar.</p>
+			<p>A Unidade de Cuidados Continuados Integrados está a funcionar desde o passado dia 10 de Março, acolhendo utentes encaminhados pelos centros de Saúde da Sub-Região de Saúde de Leiria e ainda de diversas unidades hospitalares da região. Em todos os casos, trata-se de doentes que necessitam de cuidados médicos continuados, de média duração e de convalescença.</p>
+			<p>O piso do Hospital D. Manuel de Aguiar afecto aos Cuidados Continuados Integrados – o segundo e último do edifício – apresenta uma capacidade máxima de quarenta camas, sendo que vinte encontram-se afectas à Rede Nacional, das quais doze se encontram ocupadas neste momento.</p>
+			<p>Das 20 camas afectas à Rede Nacional de Cuidados Continuados Integrados, 16 destinam-se a doentes em convalescença – com internamento máximo de 30 dias - e as outras quatro são para internamentos de média duração e reabilitação, em que o período de hospitalização se pode prolongar até aos 90 dias.</p>
+			<p>Para Fernando Lopes, provedor da Santa Casa da Misericórdia de Leiria, a Unidade de Cuidados Continuados Integrados assume-se como “mais um serviço social” que a Misericórdia presta à comunidade, baseado no “princípio da solidariedade” e apostando num serviço “cuidado e humanizado” a cada utente.</p>
+			<p class="autor">
+				“Região de Leiria”
+			</p>
+		</div>
+	</div>
+	<div class="conteudo">
+		<p id="footer">
+			2013/2014 - <b>SANTA CASA DA MISERICÓRDIA DE LEIRIA</b> - APLICAÇÕES PARA A INTERNET - <a href="http://www.estg.ipleiria.pt/">ESTG IPLEIRIA</a>
+		</p>
+	</div>
+</body>
+</html>

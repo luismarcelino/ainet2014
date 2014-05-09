@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+#img_lateral_esq {
+	float:left;
+	width: 276px;
+	height: 333px;
+	background-image: url(../imagens/medica_boa.png);
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+#foto {
+	float: left;
+	width: 150px;
+	height: 150px;
+	background-image: url("../imagens/medico150x150.png");
+	border-radius: 5px;
+	border-width: 1px;
+	border-style: solid;
+	margin-right: 20px;
+}
+
+#dados {
+	float: left;
+	width: 50%;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	font: bold 12px Trebuchet MS;
+	background-color: #3E78D2;
+	border-radius: 10px;
+	color: #E4E4E4;
+	box-shadow: 3px 3px 3px #888888;
+}
+
+#medicos_variavel {
+	float: left;
+	text-align: center;
+	width: 50%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	font: bold 12px Trebuchet MS;
+	height: 100%;
+}
+
+#medicos_fixo {
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	font: bold 12px Trebuchet MS;
+	height: 100%;
+}
+#noticias_medico{
+	float: left;
+	text-indent: 2em;
+	width: 625px;
+	margin:10px;
+}
+.noticia_detalhe {
+	width: 600px;
+	min-height: 80px;
+	max-height: 100px;
+	text-align: justify;
+	background-color: #82A8DB;
+	border-width: 1px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #888888;
+	padding: 5px;
+	margin-top:10px;
+}
+
+#rodape {
+	clear: both;
+	width: 1024px;
+}
+
+p.rodape {
+	font-size: 16px;
+	text-align: center;
+}
+
+ul.lista {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+li.lista {
+	background-color: #3E78D2;
+	color: #1c2f43;
+	margin-top: 10px;
+	border-style: solid;
+	border-color: #3E78D2;
+	border-width: 1px;
+}
+
+li.listaclicada {
+	background-color: #6ba2dc;
+	margin-top: 10px;
+	color: #FFFFFF;
+	border-style: solid;
+	border-color: #3E78D2;
+	border-width: 1px;
+}
+
+li.lista:hover {
+	background-color: #6ba2dc;
+	margin-top: 10px;
+	cursor: pointer;
+	color: #FFFFFF;
+	border-style: solid;
+	border-color: #3E78D2;
+	border-width: 1px;
+}

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="Estilo.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Imagens/imagemSeparador.ico">
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#painelLateral h3").click(function() {
+                $("#painelLateral ul ul").slideUp();
+                if (!$(this).next().is(":visible")) {
+                    $(this).next().slideDown();
+                }
+            })
+        })
+    </script>
+</head>
+
+
+<body>
+
+    <div id="containerBase">
+
+        <div id="superior">
+
+            <img src="Imagens/imagemTopo1.png" alt="Imagem topo" style='position:absolute; left:0px; top:0px; margin:auto' />
+            <div id="superiorEsq">
+                <a href="Base.html">
+                    <img src="Imagens/santa_casa1000.png" alt="Imagem logo" style='position:absolute; left:0px; top:0px; margin:auto; width:100%; height:100%; border-radius: 28px' />
+                </a>
+            </div>
+            <div id="menu">
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="Base.html">INÍCIO</a>
+                        </li>
+                        <li>
+                            <a href="Apresentacao.html">APRESENTAÇÃO</a>
+                        </li>
+                        <li>
+                            <a href="Contactos.html">CONTACTOS</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="pesquisar">
+                    <div class="caixaPesquisar">
+                        <input type="text" name="pesquisa" value="Pesquisar..." class="pesquisa">
+                        <div class="botaoPesquisa">
+                            <img src="Imagens/search.png" alt="Imagem topo" style='width:100%; height:100%; margin:0' />
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="containerBase2" class="especialidade">
+            <h3>Especialidades</h3>
+            <div id="containerBase2EspecialidadeApresentacao">
+                <div class="tituloEspecialidade">
+                    <h1>Consulta Externa</h1>
+                </div>
+                <div class="corpoTextoEspecialidade">
+                    <p>Várias especialidades médicas e cirúrgicas:</p>
+                    <ul>
+                        <li>Cardiologia</li>
+                        <li>Cirurgia Geral</li>
+                        <li>Cirurgia Plástica e Reconstrutiva</li>
+                        <li>Cirurgia Vascular</li>
+                        <li>Dermatologia</li>
+                        <li>Dietista</li>
+                    </ul>
+
+                </div>
+                <div class="tituloEspecialidade">
+                    <h1>Contactos</h1>
+                </div>
+                <div class="containerContactosEspecialidade">
+                    <b>Telefone geral</b>:244 100 009
+                    <br/>
+                    <b>Para marcacações</b>Número directo 244 106 201
+                </div>
+                <div class="acordosEspecialidade">
+                    <div class="tituloEspecialidade">
+                        <h1>Acordos</h1>
+                        <ul>
+                            <li>ADSE</li>
+                            <li>Multicare</li>
+                            <li>Medis</li>
+                            <li>Particular</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="containerBase2EspecialidadeCorpoClínico">
+                <div class="tituloEspecialidade">
+                    <h1>Profissionais</h1>
+                </div>
+                <div id="profissional1">
+                    <div class="imagemProfissional">
+                        <img src="Imagens/medicoPub.jpg" alt="ImagemNoticia" style=' margin:0; width:100%; height:100%'>
+                    </div>
+                    <div class="ContainerTextoProfissional">
+                        <div class="NomeMedico">
+                            <a href="Medico.html">Dr.Rui</a>
+                        </div>
+                        <div class="InformacaoMedico">
+                            <b>Telefone:</b>244 244 244
+                            <br/>
+                            <b>Email:</b>ainet@projecto.pt
+                            <br/>
+                            <b>Especialidade:</b>Cirurgia
+                        </div>
+                        <div class="marcarConsulta">
+                            <a href="FormularioConsulta.html" class="btnMarcarConsulta" style='width:100%; height:100%; margin:0'>Marcar Consulta</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="profissional2">
+                    <div class="imagemProfissional">
+                        <img src="Imagens/medicoPub.jpg" alt="ImagemNoticia" style=' margin:0; width:100%; height:100%'>
+                    </div>
+                    <div class="ContainerTextoProfissional">
+                        <div class="NomeMedico">
+                            <a href="Medico.html">Dr.Rui</a>
+                        </div>
+                        <div class="InformacaoMedico">
+                            <b>Telefone:</b>244 244 244
+                            <br/>
+                            <b>Email:</b>ainet@projecto.pt
+                            <br/>
+                            <b>Especialidade:</b>Cirurgia
+                        </div>
+
+                        <div class="marcarConsulta">
+                            <a href="FormularioConsulta.html" class="btnMarcarConsulta" style='width:100%; height:100%; margin:0'>Marcar Consulta</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div id="profissional3">
+                    <div class="imagemProfissional">
+                        <img src="Imagens/medicoPub.jpg" alt="ImagemNoticia" style=' margin:0; width:100%; height:100%'>
+                    </div>
+                    <div class="ContainerTextoProfissional">
+                        <div class="NomeMedico">
+                            <a href="Medico.html">Dr.Rui</a>
+                        </div>
+                        <div class="InformacaoMedico">
+                            <b>Telefone:</b>244 244 244
+                            <br/>
+                            <b>Email:</b>ainet@projecto.pt
+                            <br/>
+                            <b>Especialidade:</b>Cirurgia
+                        </div>
+                        <div class="marcarConsulta">
+                            <a href="FormularioConsulta.html" class="btnMarcarConsulta" style='width:100%; height:100%; margin:0'>Marcar Consulta</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="profissional4">
+                    <div class="imagemProfissional">
+                        <img src="Imagens/medicoPub.jpg" alt="ImagemNoticia" style=' margin:0; width:100%; height:100%'>
+                    </div>
+                    <div class="ContainerTextoProfissional">
+                        <div class="NomeMedico">
+                            <a href="Medico.html">Dr.Rui</a>
+                        </div>
+                        <div class="InformacaoMedico">
+                            <b>Telefone:</b>244 244 244
+                            <br/>
+                            <b>Email:</b>ainet@projecto.pt
+                            <br/>
+                            <b>Especialidade:</b>Cirurgia
+                        </div>
+                        <div class="marcarConsulta">
+                            <a href="FormularioConsulta.html" class="btnMarcarConsulta" style='width:100%; height:100%; margin:0'>Marcar Consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="painelLateral">
+            <nav>
+                <ul>
+
+                    <li >
+                        <a href="Especialidade1.html">
+                            <h3>Unidade Ciúrgica</h3>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="Especialidade2.html">
+                            <h3>Consulta Externa</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>Especialidade 3</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>Especialidade 4</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Especialidade 5</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Especialidade 6</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Especialidade 7</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <h3>Especialidade 8</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="Saude.html">
+                            <h3>Voltar a Sáude</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="painelLateralLogin">
+            <div id="tituloPainelLogin">
+                <b>Iniciar Sessão</b>
+            </div>
+            <div id="utilizadorPainelLogin">
+
+                <div class="login">
+                    <b>Utilizador:</b>
+
+                    <input type="text" id="username" size="20" />
+                </div>
+
+            </div>
+            <div id="passwordPainelLogin">
+                <div class="login">
+                    <b>Password:</b>
+
+                    <input type="password" id="password">
+                </div>
+            </div>
+            <div id="btnLogin">
+                <button type="button" style=' margin:0; width:100%; height:100%'>ENTRAR</button>
+
+            </div>
+            <div id="loginOpcoes">
+                <a href="#"> >Registar </a> <br/>
+                <a href="#"> >Esqueceu a password?</a> 
+                
+            </div>
+
+        </div>
+
+        <div id="painelFim">
+            <div id="localizacao">
+                <iframe class="mapa" src="https://maps.google.pt/maps?q=santa+casa+miseric%C3%B3rdia+leiria&amp;ie=UTF8&amp;hq=santa+casa+miseric%C3%B3rdia&amp;hnear=Leiria&amp;t=h&amp;ll=39.740267,-8.802694&amp;spn=0.020385,0.010976&amp;output=embed"></iframe>
+                <br />
+                <small>
+                    <a href="https://maps.google.pt/maps?q=santa+casa+miseric%C3%B3rdia+leiria&amp;ie=UTF8&amp;hq=santa+casa+miseric%C3%B3rdia&amp;hnear=Leiria&amp;t=h&amp;ll=39.740267,-8.802694&amp;spn=0.020385,0.010976&amp;source=embed" style="color:#0000FF;text-align:left"></a>
+                </small>
+            </div>
+
+            <div id="tituloRedeSocial">
+                Rede Social
+            </div>
+
+            <div id="tituloPainelFim">
+                Mantenha-se em contacto
+            </div>
+
+            <div id="tituloLocalizacao">
+                Localização
+            </div>
+
+            <div id="tituloNewsletter">
+                Newsletter
+            </div>
+
+            <div id="registoNewsletter">
+                <form action="demo_form.asp">
+                    Endereço e-mail:
+                    <input type="email" name="email">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div id="redeSocial">
+                <a href="https://www.facebook.com/santacasaleiria?fref=ts">
+                    <img src="Imagens/facebook_logo.png" alt="Facebook" style='position:absolute; left:0px; top:0px; margin:auto; width:100%; height:100%'>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <i>
+            <b>@ Copyright Jorge Ruivo | Rafael Dinis | Rúben Ferreira. All Rights Reserved 2014. DEI-ESTG-IPLEIRIA</b>
+        </i>
+
+    </div>
+
+</body>
+
+</html>

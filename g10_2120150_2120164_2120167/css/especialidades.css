@@ -1,0 +1,94 @@
+
+h1{
+    margin-left: 320px;
+    color: #3E8CD2;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.6);
+
+}
+
+#especs{
+    margin-left: 280px;
+    display: inline-block;
+
+}
+
+#especs li {
+    list-style-type: none;
+    text-decoration: none;
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#especs li{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+#naoativo{
+    background-color: #3E8CD2;
+}
+
+#ativo{
+    background-color: #333333;
+}
+
+#cardiologia{
+    position: absolute;
+    width: 750px;
+    display: inline-block;
+    vertical-align: top;
+    top: 350px;
+    margin-left: 550px;
+    display: none;
+}
+
+#img-doutor{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 50px;
+}
+
+.medicos{
+    border: 2px solid;
+}
+
+.medicos h3{
+    position: relative;
+    width: 300px;
+    height: 10px;
+    left: 300px;
+}
+
+.medicos p{
+    position: relative;
+    width: 600px;
+    height: 100px;
+    left: 50px;
+}
+
+#acumputura{
+    position: absolute;
+    width: 750px;
+    display: inline-block;
+    vertical-align: top;
+    top:350px;
+    margin-left: 550px;
+}
+
+#acumputura p,
+#cardiologia p,
+#show p{
+    text-align: justify;
+}
+
+#acumputura h2,
+#cardiologia h2,
+#show h2{
+    color: #3E8CD2;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.6);
+}
+

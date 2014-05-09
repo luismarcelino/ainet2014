@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Santa Casa da Misericórdia de Leiria - Cuidados Geriátricos </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<script src="js/jquery.js"></script>
+		<script src="js/utils.js"></script>
+		<script type="text/javascript">
+			// <![CDATA[
+
+			var tabLinks = new Array();
+			var contentDivs = new Array();
+
+			function init() {
+
+				// Grab the tab links and content divs from the page
+				var tabListItems = document.getElementById('tabs').childNodes;
+				for (var i = 0; i < tabListItems.length; i++) {
+					if (tabListItems[i].nodeName == "LI") {
+						var tabLink = getFirstChildWithTagName(tabListItems[i], 'A');
+						var id = getHash(tabLink.getAttribute('href'));
+						tabLinks[id] = tabLink;
+						contentDivs[id] = document.getElementById(id);
+					}
+				}
+
+				// Assign onclick events to the tab links, and
+				// highlight the first tab
+				var i = 0;
+
+				for (var id in tabLinks ) {
+					tabLinks[id].onclick = showTab;
+					tabLinks[id].onfocus = function() {
+						this.blur()
+					};
+					if (i == 0)
+						tabLinks[id].className = 'selected';
+					i++;
+				}
+
+				// Hide all content divs except the first
+				var i = 0;
+
+				for (var id in contentDivs ) {
+					if (i != 0)
+						contentDivs[id].className = 'tabContent hide';
+					i++;
+				}
+			}
+
+			function showTab() {
+				var selectedId = getHash(this.getAttribute('href'));
+
+				// Highlight the selected tab, and dim all others.
+				// Also show the selected content div, and hide all others.
+				for (var id in contentDivs ) {
+					if (id == selectedId) {
+						tabLinks[id].className = 'selected';
+						contentDivs[id].className = 'tabContent';
+					} else {
+						tabLinks[id].className = '';
+						contentDivs[id].className = 'tabContent hide';
+					}
+				}
+
+				// Stop the browser following the link
+				return false;
+			}
+
+			function getFirstChildWithTagName(element, tagName) {
+				for (var i = 0; i < element.childNodes.length; i++) {
+					if (element.childNodes[i].nodeName == tagName)
+						return element.childNodes[i];
+				}
+			}
+
+			function getHash(url) {
+				var hashPos = url.lastIndexOf('#');
+				return url.substring(hashPos + 1);
+			}
+
+			// ]]>
+		</script>
+	</head>
+
+	<body onload="init()">
+		<header>
+			<div class="full-width">
+				<div id="logo">
+					<div class="center">
+						<img src="./img/logo.png" alt="" />
+						<div id="login-box">
+							<form action="">
+
+								<fieldset>
+
+									<div id="login-box-username">
+										<label for="username">Username: </label>
+										<input type="text" name="username" id="username">
+									</div>
+									<div id="login-box-password">
+										<label for="password">Password: </label>
+										<input type="password" name="password" id="password">
+									</div>
+									<div id="login-box-button">
+										<button>
+											Entrar
+										</button>
+									</div>
+
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<div class="center">
+						<ul>
+							<li>
+								<a href="index.html">Início</a>
+							</li>
+							<li>
+								<a href="saude.html">Saúde</a>
+							</li>
+							<li class="activeNav">
+								<a href="cuidadosgeriatricos.html">Cuidados Geriátricos</a>
+							</li>
+							<li>
+								<a href="creche.html">Creche</a>
+							</li>
+							<li>
+								<a href="irmandade.html">Irmandade</a>
+							</li>
+							<li>
+								<a href="contactos.html">Contactos</a>
+							</li>
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+			<div id="welcome_message">
+				<p>
+					Bem Vindo Visitante!
+				</p>
+				<p id="clickToEnter">
+					Clique para autenticar
+				</p>
+			</div>
+			<div id="search_box">
+				<input type="text" id="search_field" name="search_field" placeholder="Search..." />
+				<input type="button" id="search_button" value="Search" />
+			</div>
+		</header>
+		<div id="main">
+			<div class="container">
+				<div class="inside">
+					<div class="wrapper" id="cuidadosGer">
+						<h2 class="category">Apresentação das Valências</h2>
+						<ul id="tabs">
+							<li>
+								<a href="#ResumoResisencialCuidaGer">Residencial</a>
+							</li>
+							<li>
+								<a href="#ResumoLarCuidaGer">Lar</a>
+							</li>
+							<li>
+								<a href="#ResumoInternamentoCuidaGer">Internamento</a>
+							</li>
+							<li>
+								<a href="#ResumoApoioDomiciliarioCuidaGer">Apoio Domiciliário</a>
+							</li>
+						</ul>
+						<div class="tabContent" id="ResumoResisencialCuidaGer">
+							<h2>Residencial</h2>
+							<div>
+								<p>
+									Já se encontra em funcionamento, sob a alçada da Santa Casa da Misericórdia de Leiria, a Residencial Assistida XXI. O edifício, localizado na Rua do Lis junto às instalações do Hospital Dom Manuel de Aguiar, proporciona aos seus utentes elevados padrões de qualidade ao nível dos serviços que presta. A funcionalidade das instalações e o atendimento personalizado são os seus principais atributos. Com uma localização privilegiada e detentora de vistas soberbas sobre Leiria, nomeadamente para dois dos principais símbolos desta cidade, o Rio Lis e o Castelo, a Residencial XXI assume-se como uma referência de qualidade no domínio dos perfis de acolhimento dos seus utentes.
+								</p>
+								<p>
+									<a href="residencial.html">Ir para a página da Residencial</a>
+								</p>
+							</div>
+						</div>
+						<div class="tabContent" id="ResumoLarCuidaGer">
+							<h2>O Lar</h2>
+							<p>
+								O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados com espaços ajardinados envolventes. O edifício e seu equipamento são considerados do mais moderno e funcional que se tem feito até hoje no nosso país.
+							</p>
+							<p>
+								<a href="lar.html">Ir para a página do Lar</a>
+							</p>
+						</div>
+						<div class="tabContent" id="ResumoInternamentoCuidaGer">
+							<h2>Internamento</h2>
+							<div>
+								<p>
+									A Unidade de Internamentos Privada está localizada no piso 1, dispõe de nove camas e destina-se a suprir as necessidades emergentes de utentes provenientes de subsistemas, seguros e privados.
+								</p>
+								<p>
+									<a href="internamento.html">Ir para a página do Internamento</a>
+								</p>
+							</div>
+						</div>
+						<div class="tabContent" id="ResumoApoioDomiciliarioCuidaGer">
+							<h2>Apoio Domiciliário</h2>
+							<div>
+								<p>
+									Tendo como objectivo a prestação de cuidados ao nível da assistência de utentes impossibilitados de se deslocarem aos Centros de Dia, Lares e outras instituições sociais, a Santa Casa da Misericórdia de Leiria iniciou, em Julho de 2004, o Serviço de Apoio Domiciliário.
+								</p>
+								<p>
+									<a href="apoioDomiciliario.html">Ir para a página do Apoio Domiciliário</a>
+								</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="wrapper">
+					<section id="content">
+						<h2 class="category">Últimas Notícias</h2>
+						<div id="noticia1" class="noticia">
+							<article>
+								<h2><a href="visualizacaoNoticia.html">Noticia1</a></h2>
+								<div class="newsFooter">
+									Irmandade - publicado em: 18/04/2014
+								</div>
+								<address class="newsFooter">
+									Autores: Manuel, Afonso, Rui
+								</address>
+								<div class="thumbnailImage">
+									<img src="http://guiadoestudante.abril.com.br/blogs/melhores-faculdades/files/2012/11/medicina_1-1.jpg" alt="">
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nisl, sagittis eu auctor ac, iaculis at dolor. Suspendisse ac pellentesque lorem, quis pharetra risus. Morbi luctus malesuada nulla sed vehicula. Vestibulum ultrices tellus quis dui lacinia tincidunt. Nunc ut pharetra leo, ac placerat orci. Sed at nibh nisl. Nulla blandit diam et nulla pharetra varius. Morbi id nisl at diam rutrum gravida. Vivamus vel mauris pellentesque, dictum nulla eget, porta lectus. Morbi rhoncus vestibulum luctus.
+								</p>
+								<p>
+									Mauris iaculis condimentum vulputate. Curabitur massa erat, tempus non egestas et, tristique viverra odio. Phasellus ornare vel metus id fringilla. Quisque sodales, mauris ac aliquet mattis, ante nulla ornare elit, tempus porttitor quam orci ut metus. Etiam tempor augue at dolor ullamcorper, quis egestas mauris vehicula. Sed aliquam urna eu nisi eleifend pulvinar at sed mi. Suspendisse potenti. Suspendisse potenti. Aenean ipsum lectus, auctor in feugiat luctus, aliquam id nulla. Etiam fermentum, velit at elementum egestas, lectus tellus rutrum turpis, nec vulputate purus massa sit amet turpis. Pellentesque venenatis viverra felis dapibus fermentum. Nulla sagittis dui sed justo blandit accumsan. Vivamus at faucibus ipsum. Curabitur cursus iaculis dolor, eget condimentum nibh.
+								</p>
+								<p>
+									Etiam tincidunt euismod odio vitae tristique. Sed lobortis urna quis volutpat blandit. Ut sed purus viverra, vestibulum magna eu, aliquam est. Donec eros nulla, fermentum id adipiscing sed, ultrices pharetra enim. Donec a arcu molestie quam sollicitudin consequat. Duis porta convallis arcu. Morbi semper arcu iaculis, volutpat erat vel, pellentesque diam. Pellentesque imperdiet ante sed nunc ornare, ut feugiat urna lacinia. Proin sodales leo massa, mollis euismod purus egestas eget.
+								</p>
+								<p>
+									<a href="visualizacaoNoticia.html">Ver Mais</a>
+								</p>
+							</article>
+
+						</div>
+						<div id="noticia2" class="noticia">
+							<article>
+								<h2><a href="visualizacaoNoticia.html">Noticia2</a></h2>
+								<div class="newsFooter">
+									Irmandade - publicado em: 18/04/2014
+								</div>
+								<address class="newsFooter">
+									Autores: Manuel, Afonso, Rui
+								</address>
+								<div class="thumbnailImage">
+									<img src="http://guiadoestudante.abril.com.br/blogs/melhores-faculdades/files/2012/11/medicina_1-1.jpg" alt="">
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nisl, sagittis eu auctor ac, iaculis at dolor. Suspendisse ac pellentesque lorem, quis pharetra risus. Morbi luctus malesuada nulla sed vehicula. Vestibulum ultrices tellus quis dui lacinia tincidunt. Nunc ut pharetra leo, ac placerat orci. Sed at nibh nisl. Nulla blandit diam et nulla pharetra varius. Morbi id nisl at diam rutrum gravida. Vivamus vel mauris pellentesque, dictum nulla eget, porta lectus. Morbi rhoncus vestibulum luctus.
+								</p>
+								<p>
+									Mauris iaculis condimentum vulputate. Curabitur massa erat, tempus non egestas et, tristique viverra odio. Phasellus ornare vel metus id fringilla. Quisque sodales, mauris ac aliquet mattis, ante nulla ornare elit, tempus porttitor quam orci ut metus. Etiam tempor augue at dolor ullamcorper, quis egestas mauris vehicula. Sed aliquam urna eu nisi eleifend pulvinar at sed mi. Suspendisse potenti. Suspendisse potenti. Aenean ipsum lectus, auctor in feugiat luctus, aliquam id nulla. Etiam fermentum, velit at elementum egestas, lectus tellus rutrum turpis, nec vulputate purus massa sit amet turpis. Pellentesque venenatis viverra felis dapibus fermentum. Nulla sagittis dui sed justo blandit accumsan. Vivamus at faucibus ipsum. Curabitur cursus iaculis dolor, eget condimentum nibh.
+								</p>
+								<p>
+									Etiam tincidunt euismod odio vitae tristique. Sed lobortis urna quis volutpat blandit. Ut sed purus viverra, vestibulum magna eu, aliquam est. Donec eros nulla, fermentum id adipiscing sed, ultrices pharetra enim. Donec a arcu molestie quam sollicitudin consequat. Duis porta convallis arcu. Morbi semper arcu iaculis, volutpat erat vel, pellentesque diam. Pellentesque imperdiet ante sed nunc ornare, ut feugiat urna lacinia. Proin sodales leo massa, mollis euismod purus egestas eget.
+								</p>
+								<p>
+									<a href="visualizacaoNoticia.html">Ver Mais</a>
+								</p>
+							</article>
+
+						</div>
+						<div id="noticia3" class="noticia">
+							<article>
+								<h2><a href="visualizacaoNoticia.html">Noticia3</a></h2>
+								<div class="newsFooter">
+									Irmandade - publicado em: 18/04/2014
+								</div>
+								<address class="newsFooter">
+									Autores: Manuel, Afonso, Rui
+								</address>
+								<div class="thumbnailImage">
+									<img src="http://guiadoestudante.abril.com.br/blogs/melhores-faculdades/files/2012/11/medicina_1-1.jpg" alt="">
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nisl, sagittis eu auctor ac, iaculis at dolor. Suspendisse ac pellentesque lorem, quis pharetra risus. Morbi luctus malesuada nulla sed vehicula. Vestibulum ultrices tellus quis dui lacinia tincidunt. Nunc ut pharetra leo, ac placerat orci. Sed at nibh nisl. Nulla blandit diam et nulla pharetra varius. Morbi id nisl at diam rutrum gravida. Vivamus vel mauris pellentesque, dictum nulla eget, porta lectus. Morbi rhoncus vestibulum luctus.
+								</p>
+								<p>
+									Mauris iaculis condimentum vulputate. Curabitur massa erat, tempus non egestas et, tristique viverra odio. Phasellus ornare vel metus id fringilla. Quisque sodales, mauris ac aliquet mattis, ante nulla ornare elit, tempus porttitor quam orci ut metus. Etiam tempor augue at dolor ullamcorper, quis egestas mauris vehicula. Sed aliquam urna eu nisi eleifend pulvinar at sed mi. Suspendisse potenti. Suspendisse potenti. Aenean ipsum lectus, auctor in feugiat luctus, aliquam id nulla. Etiam fermentum, velit at elementum egestas, lectus tellus rutrum turpis, nec vulputate purus massa sit amet turpis. Pellentesque venenatis viverra felis dapibus fermentum. Nulla sagittis dui sed justo blandit accumsan. Vivamus at faucibus ipsum. Curabitur cursus iaculis dolor, eget condimentum nibh.
+								</p>
+								<p>
+									Etiam tincidunt euismod odio vitae tristique. Sed lobortis urna quis volutpat blandit. Ut sed purus viverra, vestibulum magna eu, aliquam est. Donec eros nulla, fermentum id adipiscing sed, ultrices pharetra enim. Donec a arcu molestie quam sollicitudin consequat. Duis porta convallis arcu. Morbi semper arcu iaculis, volutpat erat vel, pellentesque diam. Pellentesque imperdiet ante sed nunc ornare, ut feugiat urna lacinia. Proin sodales leo massa, mollis euismod purus egestas eget.
+								</p>
+								<p>
+									<a href="visualizacaoNoticia.html">Ver Mais</a>
+								</p>
+							</article>
+
+						</div>
+						<div id="noticia4" class="noticia">
+							<article>
+								<h2><a href="visualizacaoNoticia.html">Noticia4</a></h2>
+								<div class="newsFooter">
+									Irmandade - publicado em: 18/04/2014
+								</div>
+								<address class="newsFooter">
+									Autores: Manuel, Afonso, Rui
+								</address>
+								<div class="thumbnailImage">
+									<img src="http://guiadoestudante.abril.com.br/blogs/melhores-faculdades/files/2012/11/medicina_1-1.jpg" alt="">
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque urna nisl, sagittis eu auctor ac, iaculis at dolor. Suspendisse ac pellentesque lorem, quis pharetra risus. Morbi luctus malesuada nulla sed vehicula. Vestibulum ultrices tellus quis dui lacinia tincidunt. Nunc ut pharetra leo, ac placerat orci. Sed at nibh nisl. Nulla blandit diam et nulla pharetra varius. Morbi id nisl at diam rutrum gravida. Vivamus vel mauris pellentesque, dictum nulla eget, porta lectus. Morbi rhoncus vestibulum luctus.
+								</p>
+								<p>
+									Mauris iaculis condimentum vulputate. Curabitur massa erat, tempus non egestas et, tristique viverra odio. Phasellus ornare vel metus id fringilla. Quisque sodales, mauris ac aliquet mattis, ante nulla ornare elit, tempus porttitor quam orci ut metus. Etiam tempor augue at dolor ullamcorper, quis egestas mauris vehicula. Sed aliquam urna eu nisi eleifend pulvinar at sed mi. Suspendisse potenti. Suspendisse potenti. Aenean ipsum lectus, auctor in feugiat luctus, aliquam id nulla. Etiam fermentum, velit at elementum egestas, lectus tellus rutrum turpis, nec vulputate purus massa sit amet turpis. Pellentesque venenatis viverra felis dapibus fermentum. Nulla sagittis dui sed justo blandit accumsan. Vivamus at faucibus ipsum. Curabitur cursus iaculis dolor, eget condimentum nibh.
+								</p>
+								<p>
+									Etiam tincidunt euismod odio vitae tristique. Sed lobortis urna quis volutpat blandit. Ut sed purus viverra, vestibulum magna eu, aliquam est. Donec eros nulla, fermentum id adipiscing sed, ultrices pharetra enim. Donec a arcu molestie quam sollicitudin consequat. Duis porta convallis arcu. Morbi semper arcu iaculis, volutpat erat vel, pellentesque diam. Pellentesque imperdiet ante sed nunc ornare, ut feugiat urna lacinia. Proin sodales leo massa, mollis euismod purus egestas eget.
+								</p>
+								<p>
+									<a href="visualizacaoNoticia.html">Ver Mais</a>
+								</p>
+							</article>
+
+						</div>
+					</section>
+
+				</div>
+
+			</div>
+		</div>
+		<footer>
+			<div class="container">
+				<div class="wrapper">
+
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metadata -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> SCM Leiria </title>
+	
+	<!-- CSS Imports -->
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link rel="stylesheet" type="text/css" href="./css/modulos.css" />
+	<link rel="stylesheet" type="text/css" href="./css/clearfix.css" />
+	
+	<!-- Scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./js/SCMLApp.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+
+<body>
+	<div id="topbar">
+		<div>
+			<div id="logo"></div>
+			<div id="title">
+				<h1> O Saber da Experiência </h1>
+				<h3> 500 Anos de História </h3>
+			</div>
+		</div>
+	</div>
+	<div id="root">
+		<header>
+			<!-- because using margin doesn't work -->
+			<div class="banner-spacer">
+				<div id="font-control">
+					<div id="shrinkFont">
+						-
+						<div class="font-caption">
+							Diminuir o tamanho da letra
+						</div>
+					</div>
+					<div id="resetFont">
+						A
+						<div class="font-caption">
+							Repor o tamanho da letra
+						</div>
+					</div>
+					<div id="enlargeFont">
+						+
+						<div class="font-caption">
+							Aumentar o tamanho da letra
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<nav class="menu-tab" id="scml">
+					A SCML
+				</nav>
+				<nav class="menu-tab" id="saude">
+					Saúde
+				</nav>
+				<nav class="menu-tab" id="geriatria">
+					Geriatria
+				</nav>
+				<nav class="menu-tab" id="creche">
+					Creche
+				</nav>
+				<nav class="menu-tab" id="admin">
+					Administração
+				</nav>
+			</nav>
+		</header>
+		<nav>
+			<nav id="sub-scml" class="sub-menu-nav">
+				<span class="noscript">A SCML</span>
+				<a class="sub-menu-link" href="./quem_somos.html" id="home-link">Quem Somos</a>
+				<a class="sub-menu-link" href="./artigos_noticias.html">Artigos/Noticias</a>
+				<a class="sub-menu-link" href="./contactos.html">Contactos</a>
+				<a class="sub-menu-link" href="./formulario_contacto.html">Formulário de Contacto</a>
+				<a class="sub-menu-link" href="./irmandade.html">A Irmandade</a>
+			</nav>
+			<nav id="sub-saude" class="sub-menu-nav">
+				<span class="noscript">Saúde</span>
+				<a class="sub-menu-link" href="./lista_especialidades.html">Lista de Especialidades</a>
+				<a class="sub-menu-link" href="./corpo_clinico.html">Corpo Clínico</a>
+				<a class="sub-menu-link" href="./marcacao_consultas.html">Marcação de Consultas</a>
+			</nav>
+			<nav id="sub-geriatria" class="sub-menu-nav">
+				<span class="noscript">Geriatria</span>
+				<a class="sub-menu-link" href="./geriatria.html">Geriatria</a>
+				<a class="sub-menu-link" href="./residencial.html">Residencial</a>
+				<a class="sub-menu-link" href="./lar.html">Lar</a>
+				<a class="sub-menu-link" href="./internamento.html">Internamento</a>
+				<a class="sub-menu-link" href="./apoio_domiciliario.html">Apoio Domiciliário</a>
+			</nav>
+			<nav id="sub-creche" class="sub-menu-nav">
+				<span class="noscript">Creche</span>
+				<a class="sub-menu-link" href="./creche.html">Creche</a>
+				
+			</nav>
+			<nav id="sub-admin" class="sub-menu-nav">
+				<span class="noscript">Administração</span>
+				<a class="sub-menu-link active" href="./criar_artigo.html">Criar Artigo/Notícia</a>
+			</nav>
+		</nav>
+		<div id="content">
+			
+<h1>Criar Artigo/Notícia </h1>
+
+<form enctype="multipart/form-data">
+<div class = "menu_table clearfix width100">
+	
+	<div class = "big_part" >
+		
+			<div class = "float_right">
+				<div class = "sameline">
+					<label>Tipo</label>
+				</div>
+				<div class = "sameline" >
+					<div class = "sameline">
+						<input  type = "radio" name = "tipo" value="Artigo" />
+					</div>
+					<div class = "sameline">
+						<p>Artigo</p>	
+					</div>
+					<div class = "sameline">
+						<input  type = "radio" name = "tipo" value="Notícia" />
+					</div>
+					<div class = "sameline">
+						<p>Notícia</p>
+					</div>					
+						
+				</div>
+			</div>
+			
+			<div class = "float_right">
+				<div class = "sameline">
+					<label for ="titulo">Título</label>
+				</div>
+				<div class = "sameline" >
+					<input  type = "text" id = "titulo" />
+				</div>
+			</div>			
+			
+			
+			<div class = "float_right">
+				<div>
+					<label for ="resumo">Resumo</label>
+				</div>
+				<div class = "float_right" >
+					<textarea id = "resumo" class = "large_field" >
+						
+					</textarea>
+				</div>
+			</div>
+			
+			<div class = "float_right">
+				<div>
+					<label for ="corpo">Corpo</label>
+				</div>
+				<div class = "float_right" >
+					<textarea id = "corpo" class = "large_field" >
+						
+					</textarea>
+				</div>
+			</div>
+			
+			<div class = "float_right">
+				<div class = "sameline">
+					<label for ="imagem_pdf">Imagem/PDF</label>
+				</div>
+				<div class = "sameline" >
+					<input  type = "file" id = "imagem_pdf"/>
+				</div>				
+			</div>
+
+			<div class = "float_right ">
+				<div class = "sameline">
+					<label for ="tipo">Tipo de Artigo/Notícia</label>
+				</div>
+				<div class = "sameline" >
+					<select id="tipo">
+						<option value="valencia8">Clínico</option>
+						<option value="tipo1">Irmandade</option> 
+						<option value="tipo2">Creche</option> 
+						<option value="tipo3">Geriatria</option> 
+						<option value="valencia4">Geriatria/Internamento</option> 
+						<option value="valencia5">Geriatria/Lar</option> 
+						<option value="valencia6">Geriatria/Apoio Domiciliário</option> 
+						<option value="valencia7">Geriatria/Residencial</option>						
+						<option value="valencia8">Outro</option>
+						
+					</select>
+				</div>
+			</div>
+
+			<div class = "float_right ">
+				<div class = "sameline">
+					<label for ="especialidade">Tipo de Artigo/Notícia</label>
+				</div>
+				<div class = "sameline" >
+					<select id ="especialidade">
+						<option value="consulta1">Cardiologia</option> 
+						<option value="consulta2">Cirurgia Geral</option> 
+						<option value="consulta3">Neurologia</option> 						
+					</select>
+				</div>
+			</div>	
+			
+			<div class = "float_right">				
+				<div class = "sameline" >
+					<input  type = "button" name = "submeter" value = "Submeter" />
+				</div>
+		</div>
+		
+	</div>
+	
+	
+	
+</div>
+</form>		
+
+
+
+
+
+
+		</div>
+		<footer>
+			&copy;2014 Santa Casa da Misericórdia de Leiria
+		</footer>
+	</div>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("#admin").click();
+		});
+	</script>
+	</body>
+</html>

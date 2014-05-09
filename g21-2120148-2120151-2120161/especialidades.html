@@ -1,0 +1,208 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+    <script type='text/javascript' charset='utf-8' src='scripts/jquery.js'></script>
+    <script type='text/javascript' charset='utf-8' src='scripts/popbox/popbox.js'></script>
+    <script type='text/javascript' charset='utf-8'>
+    $(document).ready(function() {
+        $('.popbox').popbox();
+    });
+    </script>
+    <script type='text/javascript'>
+    function setEspecialidadeSelected(caller) {
+        $(".especialidade").removeClass("especialidadeSelecionada");
+        $(caller).addClass("especialidade especialidadeSelecionada");
+        $("#tituloespecialidade").html(caller.innerHTML);
+    }
+
+    function abrirmedico(id) {
+        location.href = "medico.html?id=" + id;
+    }
+    </script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="search">
+            <form action="#" method="get" id="search_noticias">
+                <fieldset>
+                    <input type="image" src="images/search.png" id="searchsubmit" />
+                    <input type="text" name="textSearch" onfocus="if (this.value == 'Pesquisar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pesquisar...';}" value="Pesquisar..." id="searchinput" />
+                </fieldset>
+            </form>
+        </div>
+        <div id="logo">
+            <a href="index.html">
+                <img width="200px" src="images/santa_casa.png" alt="logo"></img>
+            </a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html" accesskey="1" title="">Geral</a>
+                </li>
+                <li class="current_page_item"><a id="selection" href="saude.html" accesskey="2" title="">Saúde</a>
+                    <ul id="submenu">
+                        <li> <a href="especialidades.html"> Especialidades </a>
+                        </li>
+                        <li> <a href="corpo_clinico.html"> Corpo Clinico </a> 
+                        </li>
+                        <li> <a href="artigos.html"> Artigos/ Noticias  </a> 
+                        </li>
+                        <li><a href="marcacao_consultas.html"> Marcação de consultas </a> 
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="cuidadosgeriatricos.html" accesskey="3" title="">Cuidados Geriátricos</a>
+                </li>
+                <li><a href="creche.html" accesskey="4" title="">Creche</a>
+                </li>
+                <li><a href="irmandade.html" accesskey="5" title="">Irmandade</a>
+                </li>
+                <li><a href="contactos.html" accesskey="6" title="">Contactos</a>
+                </li>
+                <li>
+                    <div class="popbox">
+                        <a href="#" class='open'>Area pessoal</a>
+                        <div class='collapse'>
+                            <div class='box'>
+                                <div class='arrow'></div>
+                                <div class='arrow-border'></div>
+                                <form action="#" method="post">
+                                    <fieldset class="login">
+                                        <legend>Iniciar Sessúo</legend>
+                                        <label for="username">Nome de Utilizador:</label>
+                                        <input type="text" id="username" />
+                                        <br/>
+                                        <label for="password">Palavra-Passe:</label>
+                                        <input type="password" id="password" />
+                                        <br/>
+                                        <input type="submit" id="submit" class="button" value="Iniciar Sessão" />
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="navegacao">
+            <a href="index.html">Início</a> >
+            <a href="saude.html">Saúde</a> > Especialidades
+        </div>
+        <h1>Especialidades</h1>
+        <div class="quadradoespecialidade">
+            <a class="especialidadeSelecionada especialidade" onclick="setEspecialidadeSelected(this)">Cirurgia plástica e reconstrutiva</a>
+
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Cirurgia Geral</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Cirurgia Vascular</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Ortopedia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Oftalmologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Urologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Neurologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Neurocirurgia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Nutrição</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Psicologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Psiquiatria</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Acumpuctura</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Mesoterapia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Pneumologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Reumotologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Dermatologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Estomatologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Fisiatria</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Ginecologia/Obstreticia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Otorrinolaringologia geral</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Cardiologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Gastrentologia</a>
+            </p>
+            <p onclick="setEspecialidadeSelected(this)"><a class="especialidade">Medicina Desportiva</a>
+            </p>
+        </div>
+        <div class="quadradoinfoespecialidade">
+            <h1 id="tituloespecialidade">Cirurgia plástica e reconstrutiva</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel pulvinar quam, in vestibulum justo. Curabitur vitae faucibus dolor, sit amet congue velit. Suspendisse nulla nibh, auctor ut auctor vulputate, facilisis vel metus. Suspendisse id lacus at orci fermentum viverra vitae ut orci. Mauris luctus, urna sed blandit vehicula, neque diam elementum purus, non feugiat mi erat vel dui. In in nunc sed justo commodo semper sit amet imperdiet nunc. Aenean tortor libero, sodales imperdiet metus id, volutpat porta velit.
+            <div id="medicosespecialidade">
+                <h2>Medicos</h2>
+            </div>
+            <div class="quadradomedicoespecialidade botaoazul" onclick="abrirmedico(1)">
+                <h3>
+                    Dr. Manuel Pereira da Silva Sá
+                </h3>
+                <div class="fotomedico">
+                    <img src="images/medico/med2.png" alt="médico"></img>
+                </div>
+            </div>
+            <div class="quadradomedicoespecialidade botaoazul" onclick="abrirmedico(2)">
+                <h3>
+                    Dr. Manuel Pereira da Silva Sá
+                </h3>
+                <div class="fotomedico">
+                    <img src="images/medico/med2.png" alt="médico"></img>
+                </div>
+            </div>
+            <div class="quadradomedicoespecialidade botaoazul" onclick="abrirmedico(3)">
+                <h3>
+                    Dr. Manuel Pereira da Silva Sá
+                </h3>
+                <div class="fotomedico">
+                    <img src="images/medico/med2.png" alt="médico"></img>
+                </div>
+            </div>
+            <div class="quadradomedicoespecialidade botaoazul" onclick="abrirmedico(4)">
+                <h3>
+                    Dr. Manuel Pereira da Silva Sá
+                </h3>
+                <div class="fotomedico">
+                    <img src="images/medico/med2.png" alt="médico"></img>
+                </div>
+            </div>
+            <div class="quadradomedicoespecialidade botaoazul" onclick="abrirmedico(5)">
+                <h3>
+                    Dr. Manuel Pereira da Silva Sá
+                </h3>
+                <div class="fotomedico">
+                    <img src="images/medico/med2.png" alt="médico"></img>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="conteudo">
+        <p id="footer">
+            2013/2014 - <b>SANTA CASA DA MISERICÓRDIA DE LEIRIA</b> - APLICAÇÕES PARA A INTERNET - <a href="http://www.estg.ipleiria.pt/">ESTG IPLEIRIA</a>
+        </p>
+    </div>
+</body>
+
+</html>

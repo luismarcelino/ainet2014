@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/geral.css"/>
+<link rel="stylesheet" type="text/css" href="../css/IndexContainer.css"/>
+<link rel="stylesheet" type="text/css" href="../css/medico.css"/>
+<link type="text/javascript" href="../JavaScript/showHideDivs.js"/>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function(e) {
+		
+		$('#Nav ul li').click(function(){
+			$('#Nav ul li.activo').removeClass('activo');
+    		$(this).closest('li').addClass('activo');
+		});
+	//]]>
+});
+</script>
+<noscript>Client do not support javascript or doesn't have it installed.</noscript>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Santa Casa da Misericórdia Home</title>
+</head>
+
+<body>
+<nav id="Nav">
+	<ul>
+    	<li><a href="index.html">Entrada</a></li>
+        <li><a href="saude.html">Saúde</a></li>
+        <li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+        <li><a href="creche.html">Creche</a></li>
+        <li><a href="Irmandade.html">Irmandade</a></li>
+        <li><a href="Contactos.html">Contactos</a></li>
+        <li><a href="Pessoal.html">Pessoal</a></li>
+        <li><a href="#">Médico</a></li>
+        <li><a href="gestaoUsers.html">Gestão de Utilizadores</a></li>
+    </ul>
+</nav>
+<div id="Header">
+	<div id="Access">
+    	<form action="#" method="post">  
+        	<table>
+        		<tr><td align="right">Username:</td><td><input type="text" value="" name="user"/></td></tr>
+            	<tr><td align="right">Password:</td><td><input type="password" value="" name="pass"/></td></tr>
+                <tr><td></td><td><input type="button" value="LogIn" name="enter"/><input type="reset" value="Clear" name="clear"/></td><td></td></tr><!-- centrado com 3 colunas tendo o butão ao centro-->
+        	</table>
+        </form>
+    </div>
+</div>
+    
+<div id="Container">  
+	<table id="tabela">
+    <tr id="col1"><td>
+	<div id="profile"> 
+    	<div id="photo"><img src="../PHP/url" alt="Imagem_Pessoal"></div>
+        <div id="professional"><p id="nome">Dr. jaquim</p>
+        <p id="Especialidade">Fisioterapia</p></div>
+    	
+    </div></td>
+    <td rowspan="2" id="col1"> 
+    <div id="Consultas">
+  	123
+    
+    <button>Remover Hora</button>
+    <button>Marcar Hora Atendimento</button>
+    
+    </div></td>
+    <tr>
+    <td id="tableNoticas">
+    
+     <div id="noticias">
+                        <ul>
+                            <li><a href="#">Noticia 1</a></li>
+                            <li><a href="#">Noticia 1</a></li>
+                            <li><a href="#">Noticia 1</a></li>
+                        </ul>
+                    </div>
+
+   </td>
+    
+    </tr>
+    </table>
+    
+      
+            
+	<div class="pusher">&nbsp;<br /></div>
+</div>
+
+<footer id="Footer">
+	<h3>O Saber da experiência.<span>500 anos de história.</span></h3>
+</footer>
+</body>
+</html>

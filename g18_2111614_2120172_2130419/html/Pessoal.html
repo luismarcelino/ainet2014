@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../css/geral.css"/>
+<link rel="stylesheet" type="text/css" href="../css/IndexContainer.css"/>
+<link rel="stylesheet" type="text/css" href="../css/Pessoal.css"/>
+<link type="text/javascript" href="../JavaScript/showHideDivs.js"/>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function(e) {
+		
+		$('#Nav ul li').click(function(){
+			$('#Nav ul li.activo').removeClass('activo');
+    		$(this).closest('li').addClass('activo');
+		});
+	//]]>
+});
+</script>
+<noscript>Client do not support javascript or doesn't have it installed.</noscript>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Santa Casa da Misericórdia Home</title>
+</head>
+
+<body>
+<nav id="Nav">
+	<ul>
+    	<li><a href="index.html">Entrada</a></li>
+        <li><a href="saude.html">Saúde</a></li>
+        <li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+        <li><a href="creche.html">Creche</a></li>
+        <li><a href="Irmandade.html">Irmandade</a></li>
+        <li><a href="Contactos.html">Contactos</a></li>
+        <li><a href="#">Pessoal</a></li>
+        <li><a href="Medico.html">Médico</a></li>
+        <li><a href="gestaoUsers.html">Gestão de Utilizadores</a></li>
+    </ul>
+</nav>
+<div id="Header">
+	<div id="Access">
+    	<form action="#" method="post">  
+        	<table>
+        		<tr><td align="right">Username:</td><td><input type="text" value="" name="user"/></td></tr>
+            	<tr><td align="right">Password:</td><td><input type="password" value="" name="pass"/></td></tr>
+                <tr><td></td><td><input type="button" value="LogIn" name="enter"/><input type="reset" value="Clear" name="clear"/></td><td></td></tr><!-- centrado com 3 colunas tendo o butão ao centro-->
+        	</table>
+        </form>
+    </div>
+</div>
+    
+<div id="Container">  
+<table id="DadosPessoais">
+<tr>
+<td id="nome" colspan="1">Nome:</td>
+<td id="nomeVar" colspan="5">NomeVar</td>
+</tr>
+<tr>
+<td id="morada">Morada:</td>
+<td id="moradaVar">MoradaVar</td>
+</tr>
+<tr>
+<td id="sexo" >Sexo:</td>
+<td id="sexoVar">M</td>
+<td id="dataNasc">Data Nascimento:</td>
+<td id="dataNascVar">24/12/2013</td>
+</tr>
+
+<tr>
+<td id="contacto" >Numero:</td>
+<td id="contactoVar">9xxyyyzzz</td>
+</tr>
+<tr>
+<td>Contacto de Emergencia</td>
+</tr>
+<tr>
+<td id="nomeEmer">Nome:</td>
+<td id="nomeEmerVar">NomeVar</td>
+<td id="contactoEmerg">Contacto:</td>
+<td id="contactoEmergVar">9yyzzzwww</td>
+</tr>
+
+<tr>
+<td id="contactEditBtn"><button type="button">Alterar Dados</button></td>
+</tr>
+
+
+
+<tr>
+<td id="124">Listagem Consultas</td>
+</tr>
+
+<td>
+<form>
+<textarea name="consultaAntigasForm" rows="4" cols="50" ></textarea>
+</form>
+ </td>
+
+<td id="consultasNovas"><form>
+<textarea name="consultaNovasForm" rows="4" cols="50" ></textarea>
+</form></td>
+</tr>
+
+<tr id="adminQuestionMark">
+<td id = "gestaoBTN">
+<button type="button">Confirmar Consulta</button>
+<button type="button">Anular Consulta</button></form></td>
+
+
+<tr>
+
+</table>
+
+      
+            
+	<div class="pusher">&nbsp;<br /></div>
+</div>
+<footer id="Footer">
+	<h3>O Saber da experiência.<span>500 anos de história.</span></h3>
+</footer>
+</body>
+</html>

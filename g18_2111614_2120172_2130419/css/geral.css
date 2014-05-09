@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+html,body{
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;	
+	position:relative;
+	background-color:#CCC;
+	background:url(../Img/bg.jpg) no-repeat;
+	position:fixed;
+}
+
+/*---------------------------------------------------------------------------------------------------
+						nav menu
+-------------------------------------------------------------------------------------------------------*/
+#Nav{
+	position:relative;
+	width:100%;
+	height:10%;
+	top:0;
+	float:left;	
+	margin:0 auto;
+}
+
+#Nav ul{
+	margin:0;
+	padding:0;
+	top:0;
+	width:90%;
+	left:25%;
+	position:relative;		
+	z-index:5;
+}
+
+#Nav ul li{
+	list-style:none;
+	background-color:#3399FF;
+	padding:10px 1px;
+	margin:0 .3%;
+	text-align:center;
+	width:8%;
+	height:35px;
+	top:0;
+	display:block;
+	float:left;
+	transition:all 0.5s linear 0s;
+	font-size:1em;
+	color:#030;
+}
+
+#Nav ul li a{
+	position:relative;
+	margin:auto;
+	text-decoration:none;
+	color:#030;
+	transition:all 0.5s linear 0s;	
+}
+
+/*aplica efeito a li e à ancora*/
+#Nav ul li:hover, #Nav ul li:hover > a{
+	margin: 18px 0;
+	color:#FFF;
+	transition:all 0.5s linear 0s;
+}
+
+.activo{
+	height:40px;
+	color:#FFF;
+	transition:all 0.5s linear 0s;
+}
+
+/*-----------------------------------------------------------------------------------------------------
+					login block inside header
+--------------------------------------------------------------------------------------------------------*/
+#Header{
+	clear:both;
+	width:100%;
+	height:8%;
+	position:relative;
+}
+
+
+#Access{
+	position:fixed;
+	width:20%;
+	height:27%;
+	top:1%;
+	left:2%;
+	z-index:4;
+}
+
+
+
+/*Container info----------------------*/
+
+#Container{
+	position:relative;
+	top:-2%;
+	width:95%;
+	height:75%;
+	background-color:#FFF;
+	margin:auto;
+}
+
+/*end of page footer--------------------------*/
+
+#Footer{
+	position:absolute;
+	width:100%;
+	height:5%;
+	bottom:0;
+	background-color:#6F0;
+	margin-top:4%;
+}
+
+#Footer h3{
+	width:35%;
+	height:25%;
+	margin:auto;
+	position:relative;
+	top:20%;
+}
+
+#Footer h3 span{
+	color:#FFF;	
+}
+
+/*estilos gerais*/
+.on{
+	display:block;	
+}
+
+.off{
+	display:none;	
+}
+
+*{
+	font-family:Arial, "Trebuchet MS", Helvetica, sans-serif;
+}

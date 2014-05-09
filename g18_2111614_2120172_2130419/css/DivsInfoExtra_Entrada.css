@@ -1,0 +1,50 @@
+.infoExtra{
+	width:80%;
+	height:80%;
+	position:relative;
+	z-index:100;
+	background-color:#0F0;
+	top:-90%;	
+	margin:auto;
+	border:5px solid #FFF;
+	box-shadow:3px 3px 2px #333;
+}
+
+.infoExtra section{
+	width:70%;
+	height:85%;
+	position:absolute;
+	left:26%;
+	overflow:auto;
+}
+
+.infoExtra section h5, h2{
+	color:#FFF;
+}
+
+.fechar{
+	width:4%;
+	height:4%;
+	background-color:#333;
+	color:#FFF;
+	position:absolute;
+	top:0;
+	right:0;
+	text-align:center;	
+}
+
+#Orgaos{
+	display:none;
+}
+
+#hist{
+	display:none;	
+}
+
+#vol{
+	display:none;	
+}
+
+#estats{
+	display:none;	
+}

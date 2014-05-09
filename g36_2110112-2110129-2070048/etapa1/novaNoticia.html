@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Nova Notícia</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="css/noticiaCss.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+
+<!-- <script type="text/javascript" src="jquery.min.js"></script> -->
+<!-- <script type="text/javascript">
+$(document).ready(function ()
+{
+
+	$("#menu li").bind	("mouseenter mouseleave", function ()	{
+		$(this).toggleClass("over");
+	}
+	);
+})
+</script> -->
+
+<script type="text/javascript" src="jqueryCalendar/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="jqueryCalendar/jquery-ui-1.8.15.custom.min.js"></script>
+<link rel="stylesheet" href="jqueryCalendar/jqueryCalendar.css" />
+<script type="text/javascript">
+jQuery(function() {
+	jQuery("#data").datepicker();
+});
+</script>
+
+</head>
+
+<body>
+	<div id="full">
+		<div id="headTop">
+			<div id="logo">
+				<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250" /></a>
+			</div>
+
+			<div id="casaMerci">
+				<img src="imagens\santaCasa.jpg" alt="casa" height="200" width="500"/>
+			</div>
+
+			<div id="login">
+				<form method="post" action="" id="formLogin">
+					<fieldset>
+						<legend>Autenticação:</legend>
+						<table>
+							<tr>
+								<td><label for="user">Username:</label></td>
+								<td><input type="text" id="user" name="user"/></td>
+							</tr>
+							<tr>
+								<td><label for="pass">Password:</label></td>
+								<td><input type="password" id="pass" name="pass" /></td>
+							</tr>
+
+							<tr><td colspan="2"><input type="submit" value="Login" /> <input type="submit" value="Registar" /></td></tr>
+						</table>
+					</fieldset>
+
+				</form>
+			</div>
+
+		</div>
+		<div id="menu">
+			<p>________________________________________________________________________________________________________________________________________</p>
+			<ul id="barraNav">
+				<li>
+					<a href="mainbody.html"><span>Entrada</span></a>
+				</li>
+				<li>
+
+					<a href=""><span>Saúde</span></a>
+					<ul >
+						<li>
+							<a href="Saude\index.html"><span>Lista de Especialidades</span></a>
+						</li>
+
+						<li>
+							<a href="medico.html"><span>Corpo Clinico</span></a>
+						</li>
+						<li>
+							<a href="noticia.html"><span>Artigos/Notícias Clínicas</span></a>
+						</li>
+						<li>
+							<a href="Marcar Consulta.html"><span>Marcação de Consultas</span></a>
+						</li>
+						<li>
+							<a href=""><span>Confirmação Marcações</span></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="valência.html"><span>Creche</span></a>
+				</li>
+				<li>
+					<a href=""><span>Cuidados  <br /> Geriátricos</span></a>
+					<ul >
+						<li>
+							<a href="valência.html"><span>Residencial</span></a>
+						</li>
+						<li>
+							<a href="valência.html"><span>Lar</span></a>
+						</li>
+						<li>
+							<a href="valência.html"><span>Internamento</span></a>
+						</li>
+						<li>
+							<a href="valência.html"><span>Apoio Domiciliário</span></a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="valência.html"><span>Irmandade</span></a>
+				</li>
+				<li>
+					<a href="contactos.html" id="refcontacts"><span>Contactos</span></a>
+				</li>
+				<li>
+					<a><span class="negado">Pessoal</span></a>
+				</li>
+				<li>
+					<a><span class="negado">Médico</span></a>
+				</li>
+				<li>
+					<a><span class="negado">Gestão de <br /> Utilizadores</span></a>
+				</li>
+			</ul>
+			<p>________________________________________________________________________________________________________________________________________</p>
+		</div>
+		<div id="containerN">
+			<h1>Criar Nova Notícia</h1>
+
+			<form action="" class="formulario" onsubmit="return valida();">
+				<table>
+					<tbody>
+						<tr>
+							<td>
+								<label for="nome" id="nome">Título *</label>	
+								<br/>
+								<input type="text" name="titulo" id="tituloInput" value=""  />	
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<br/>
+								<label for="resumo" id="resumo">Resumo *</label>
+								<br/>
+								<textarea rows="4" cols="50" id="resumoT" name="resumo"></textarea>
+								<br/>						
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="corpo" id="textA">Corpo de Texto</label>	
+								<br/>
+								<textarea name="corpo" id="corpo" rows="7" cols="80"></textarea>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Imagem:</label>
+								<br/>
+								<input type="file" name="pic" accept="image/*" />		
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Autores</label>	
+								<br/>
+								<input type="text" name="autores" id="autoresInput" value="" size="40" maxlength="80" />	
+								<br/>	
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="data">Data *</label>
+								<br/>
+								<input type="text" name="data" id="data" value="" size="10" maxlength="10" />
+								<br/>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label for="Especialidade">Especialidade</label>
+								<br/>	
+								<select name="Especialidade" id="Especialidade">
+									<option value="">--- Seleccione ---</option>
+									<option  value="1">teste1</option>
+									<option  value="2">teste2</option>
+									<option  value="3">teste3</option>
+								</select>			
+								<br/>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table id="tableBotoes">
+					<tbody>
+						<tr>
+							<td>
+								<input type="reset" value="Limpar" class="btn"/>
+							</td>
+							<td>
+								<input type="submit" value="Submeter" class="btn"/>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</form>	
+		</div>
+
+		<script type="text/javascript">
+		function valida(){
+			var grava=true;
+			if (_strip_whitespace(document.getElementById('resumo').value)=='') { alert('Tem de introduzir (resumo)!'); grava=false; }
+			else  if (_strip_whitespace(document.getElementById('titulo').value)=='') { alert('Tem de introduzir (titulo)!'); grava=false; }
+			else  if (_strip_whitespace(document.getElementById('data').value)=='') { alert('Tem de introduzir (Data)!'); grava=false; }
+
+			alert ('Inserido com Sucesso!');
+			return grava;
+		}
+		</script>
+
+		<div  class="rodape">
+			<div  class="rodape_esq">
+				<a href="rodape.html">Newsletter</a>
+				<br/>
+				<a>Localização</a>
+				<br/>
+				<a>Noticias</a>
+				<br/>
+				<a>Mapa do Site</a>
+				<br/>
+			</div>
+			<div class="rodape_cen">
+				<span>Contactos</span>
+				<br/>
+				<span>Geral: 123456789</span>
+				<br/>
+				<a href="rodape.html">Ver Todos</a>
+			</div>
+			<div class="rodape_dir">
+				<a>Desenvolvido por:<br/>
+					André Cristiano 2110112<br/>
+					Ricardo Ribeiro 2110129<br/>
+					Rodrigo Desidério 2070048<br/>
+					Todos os direitos reservados, 2014</a>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	</html>

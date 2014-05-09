@@ -1,0 +1,25 @@
+.tituloNoticia{
+
+	font-size: 16pt;
+}
+
+.resumoNoticia{
+
+	font-style: italic;
+}
+
+.corpoNoticia{
+
+
+}
+
+.autordata{
+
+	font-size: 8pt;
+	font-style: italic;
+}
+
+.separadornoticias{
+	color: orange;
+	font-size: 32pt;
+}

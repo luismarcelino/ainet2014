@@ -1,0 +1,572 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	background: #E9E9E9 url(../images/bg02.png) repeat;
+	font-family: 'Arial', sans-serif;
+	font-size: 11pt;
+	font-weight: 400;
+	color: #969696;
+}
+
+
+.conteudo
+{
+	position: relative;
+	background: #FFF;
+	border: 1px #ccc solid;
+	margin: 0px auto;
+	width: 950px;
+	margin-bottom: 1em;
+	margin-top:2px;
+	overflow:auto;
+}
+
+#header
+{
+	position: relative;
+	padding: 5em 0em 10em 0em;
+	margin: 0px auto;
+	width: 950px;
+}
+
+#logo
+{
+	position: absolute;
+	top: 1em;
+	left: 0;
+}
+
+a img
+{
+	border:none;
+}
+
+
+#menu
+{
+	position: absolute;
+	top:9.5em;
+	right: -1em;
+	z-index:2;
+}
+
+#menu ul
+{
+	display: inline-block;
+	padding:1em;
+}
+
+#menu li
+{
+	display: block;
+	float: left;
+	text-align: center;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+
+#menu li a
+{
+	padding: 1em 1em;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 0.8em;
+	color: #2B3F48;
+}
+
+
+#menu li:hover a, #menu li.active a
+{
+	color: #3278C9;
+}
+
+
+.current_page_item
+{
+	border: 2px solid #3278C9;
+	color: #3278C9;
+	font-weight:bold;
+}
+
+
+.search
+{
+	position: absolute;
+	right:0;
+	top: 8em;
+}
+
+#searchinput
+{
+	height: 20px;
+	float: right;
+}
+
+fieldset{
+	border: 0;
+}
+
+#searchsubmit {
+    float: right;
+    height:24px;
+    padding-right: 2px;
+}
+
+
+.quadradonoticia
+{
+	padding: 10px 3px 3px 10px;
+	border: 1px solid #ccc;
+	background:#fcfcfc;
+	width: 434px;
+	margin-bottom: 1em;
+}
+
+.quadradoartigo
+{
+	padding: 10px 3px 3px 10px;
+	border: 1px solid #ccc;
+	background:#fcfcfc;
+	width: 901.3px;
+	margin-bottom: 1em;
+}
+
+.vermais
+{
+	text-align:right;
+	padding-right:1.2em;
+	padding-bottom:1em;
+}
+
+.vermais a
+{
+	color: #2B3F48;
+	font-size:11px;
+}
+
+.vermais a:hover
+{
+	color: #3278C9;
+}
+
+.noticias
+{
+	float: left;
+}
+
+.artigo
+{
+	margin-left:1.2em;
+}
+
+.autor
+{
+	font-size: 8pt;
+	text-align:right;
+}
+
+.categoria
+{
+	margin:0;
+	color:#3278C9;
+	text-transform: uppercase;
+	font-size: 9pt;
+	margin-bottom: 0;
+}
+
+.textoartigo
+{
+	margin:2px;
+	text-align:justify
+}
+
+.textodetail
+{
+	margin:2em;
+}
+
+.textwrapimageright
+{
+	float:right;
+	margin-left:20px;
+	margin-bottom:20px;
+}
+
+#conteudo_estatico
+{
+	bottom:0;
+	margin:0;
+	padding:0;	
+
+}
+#conteudo_estatico img
+{
+	height: 450px;
+	
+}
+
+#footer
+{
+	text-align:center;
+	color: #6C6C6C;
+}
+
+h1
+{
+	text-transform: uppercase;
+	padding-left: 1em;
+	font-family: sans-serif;
+	color: #6C6C6C;
+}
+
+h2
+{
+	text-transform: uppercase;
+	margin: 7px 0px 0px 0px;
+}
+
+h2 a
+{
+	text-transform: uppercase;
+	margin: 7px 0px 0px 0px;
+	color: #969696;
+    text-decoration: none;
+}
+
+#login
+{
+	position: absolute;
+	right:0;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #6C6C6C;
+	background:#fff;
+	padding: 3px;
+	color: #6C6C6C;
+	z-index: 20000;
+}
+
+.login label
+{
+	display: inline-block;
+	width:150px;
+	text-align:right;
+	padding-bottom: 8px;
+}
+
+.login legend
+{
+	color: #6C6C6C;
+	font-weight: bold;
+	padding-left: 1em;
+	padding-top: 1em;
+	text-align: center;
+}
+
+.login input
+{
+	width:150px;
+}
+
+.button
+{
+	border: 1px solid #ccc;
+	padding: 2px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.button:hover
+{
+	background-color: #D5E4F2;
+	cursor:pointer;
+}
+
+.quadradoespecialidade /*Joni*/
+{
+	
+	padding: 10px 0px 0px 10px;
+	border: 1px solid #ccc;
+	background:#fcfcfc;
+	width: 200px;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	float: left;
+}
+
+.especialidadeSelecionada{
+	color:#3278C9;
+}
+
+.quadradomedicoespecialidade /*Joni*/
+{
+	border: 1px solid #ccc;
+	background:#fcfcfc;
+	width: 150px;
+	float: left;
+	margin: 5px 5px 5px 5px;
+	padding: 5px 5px 5px 5px;
+	text-align: center;
+
+}
+
+.quadradoinfoespecialidade/*Joni*/
+{
+	border: 1px solid #ccc;
+	background:#fcfcfc;
+	width: 695px;
+	text-align: center;
+	float:right;
+	margin-right: 1em;
+}
+
+.quadradoinfoespecialidade .marcar
+{
+	margin-left:1.5em;
+}
+
+.fotomedico img{
+	width: 100px;
+	height: 100px;
+}
+
+.especialidade
+{
+	cursor:pointer;
+}
+
+.quadradomedicoespecialidade input, .fotomedico img{
+	margin-left: -20px;
+}
+
+/*----CONTACTOS----*/
+
+#menucontactos
+{
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+#menucontactos ul
+{
+	display: inline;
+}	
+
+#menucontactos li
+{
+	display: block;
+	border: 1px solid #ccc;
+	text-align: center;
+	cursor:pointer;
+	padding:2px;
+	margin-bottom:2px;
+}
+
+#menucontactos li:hover
+{
+	border: 1px solid #3278C9;
+	color: #3278C9;
+}
+
+#menucontactos .contactoselecionado
+{
+	border: 1px solid #3278C9;
+	color: #3278C9;
+}
+
+#contacto
+{
+	margin:2em;
+	margin-top:1em;
+	border: 1px solid #ccc;
+	padding-left:1em;
+}
+
+
+.TabelaEspecialidades /*Joni*/
+{
+	margin-left: 1.5em;
+
+}
+.fotomedico{
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	}
+	
+.botaoazul:hover
+{
+	background-color: #D5E4F2;
+	cursor:pointer;
+}
+	
+/*----SUBMENU-------------------*/
+
+
+#submenu ul, #submenu li{
+ 						
+	z-index: 1000;
+	border:#3278C9 1px solid; 
+	margin-left:-2px;
+	background-color:white;
+}
+
+#submenu li {
+	display:block;			
+	color:#484848;
+}
+
+#submenu {
+	position:absolute;
+	top:60px;										
+	left:0px;									
+	visibility:hidden;				
+}
+
+#menu li:hover > ul {
+	visibility:visible;
+}
+
+/* ---------BOX AREA PESSOAL------------*/ 
+
+.popbox {
+  margin:0px auto;
+  text-align:center;
+  position:relative;
+  display: inline;
+}
+
+  .collapse { position:relative; }
+
+
+    .box {
+      display:none;
+      background:#FFF;
+      border:solid 1px #BBBBBB;
+      position:absolute;
+	  z-index:1000;
+	  padding-bottom:1em;
+	  width:350px;
+    }
+      .arrow {
+      	width: 0;
+      	height: 0;
+      	border-left: 11px solid transparent;
+      	border-right: 11px solid transparent;
+      	border-bottom: 11px solid #FFF;
+      	position:absolute;
+      	left:1px;
+      	top:-10px;
+      	z-index:1001;
+      }
+
+      .arrow-border {
+      	width: 0;
+      	height: 0;
+      	border-left: 11px solid transparent;
+      	border-right: 11px solid transparent;
+      	border-bottom: 11px solid #BBBBBB;
+      	position:absolute;
+      	top:-12px;
+      	z-index:1000;
+      }
+/* -------------------------------*/ 
+
+
+
+#marcacao label,  #marcacao legend, #medico label{
+	font-weight: bold;
+	padding-left: 1px;
+}
+
+
+#marcacao input, #marcacao textarea, #marcacao textarea, #marcacao select {
+	width: 497px;
+}
+
+#marcacao select {
+	width: 501px;
+
+}
+#marcacao{
+	padding-left: 1em;
+	float: left;
+}
+
+
+#marcacao_banner{
+  /*width: 200px;
+	height: 850px;*/
+	float: left;
+	padding: 50px 0px 0px 75px;
+}
+
+.legendacampo{
+	font-size: 10pt;
+}
+
+#nota fieldset{
+	border: 1px solid;
+	width: 483px;
+	text-align: justify;
+	color: #3278C9;
+	font-size: 9pt;
+}
+
+#marcacao td{
+	padding-bottom: 10px;
+}
+
+.txt_obrigatorio{
+	color: black;
+	font-size: 10pt;
+}
+
+#marcacao .button{
+	width: 250px;
+}
+
+#medico{
+	padding: 0px 0px 10px 10px;
+	width: 550px;
+	float: left;
+}
+
+#foto_medico{
+	width: 150px;
+	height: 150px;
+	margin: 50px 0px 20px 135px;
+	float: left;
+
+}
+
+#medico p{
+	margin-top: 0;
+}
+
+.about{
+	padding-left: 30px;
+}
+
+.navegacao{
+	position: relative;
+	font-size: 9pt;
+	text-align: left;
+	margin: 10px 0px 0px 10px;
+}
+
+#criacao_noticia label{
+	font-weight:bold;
+
+}
+
+#criacao_noticia input, #criacao_noticia textarea{
+	margin: 5px 0px 10px 2px;
+}

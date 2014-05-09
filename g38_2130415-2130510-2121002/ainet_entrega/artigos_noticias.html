@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metadata -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> SCM Leiria </title>
+	
+	<!-- CSS Imports -->
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link rel="stylesheet" type="text/css" href="./css/modulos.css" />
+	<link rel="stylesheet" type="text/css" href="./css/clearfix.css" />
+	
+	<!-- Scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./js/SCMLApp.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+
+<body>
+	<div id="topbar">
+		<div>
+			<div id="logo"></div>
+			<div id="title">
+				<h1> O Saber da Experiência </h1>
+				<h3> 500 Anos de História </h3>
+			</div>
+		</div>
+	</div>
+	<div id="root">
+		<header>
+			<!-- because using margin doesn't work -->
+			<div class="banner-spacer">
+				<div id="font-control">
+					<div id="shrinkFont">
+						-
+						<div class="font-caption">
+							Diminuir o tamanho da letra
+						</div>
+					</div>
+					<div id="resetFont">
+						A
+						<div class="font-caption">
+							Repor o tamanho da letra
+						</div>
+					</div>
+					<div id="enlargeFont">
+						+
+						<div class="font-caption">
+							Aumentar o tamanho da letra
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<nav class="menu-tab" id="scml">
+					A SCML
+				</nav>
+				<nav class="menu-tab" id="saude">
+					Saúde
+				</nav>
+				<nav class="menu-tab" id="geriatria">
+					Geriatria
+				</nav>
+				<nav class="menu-tab" id="creche">
+					Creche
+				</nav>
+				<nav class="menu-tab" id="admin">
+					Administração
+				</nav>
+			</nav>
+		</header>
+		<nav>
+			<nav id="sub-scml" class="sub-menu-nav">
+				<span class="noscript">A SCML</span>
+				<a class="sub-menu-link" href="./quem_somos.html" id="home-link">Quem Somos</a>
+				<a class="sub-menu-link" href="./artigos_noticias.html">Artigos/Noticias</a>
+				<a class="sub-menu-link" href="./contactos.html">Contactos</a>
+				<a class="sub-menu-link" href="./formulario_contacto.html">Formulário de Contacto</a>
+				<a class="sub-menu-link" href="./irmandade.html">A Irmandade</a>
+			</nav>
+			<nav id="sub-saude" class="sub-menu-nav">
+				<span class="noscript">Saúde</span>
+				<a class="sub-menu-link" href="./lista_especialidades.html">Lista de Especialidades</a>
+				<a class="sub-menu-link" href="./corpo_clinico.html">Corpo Clínico</a>
+				<a class="sub-menu-link" href="./marcacao_consultas.html">Marcação de Consultas</a>
+			</nav>
+			<nav id="sub-geriatria" class="sub-menu-nav">
+				<span class="noscript">Geriatria</span>
+				<a class="sub-menu-link" href="./geriatria.html">Geriatria</a>
+				<a class="sub-menu-link" href="./residencial.html">Residencial</a>
+				<a class="sub-menu-link" href="./lar.html">Lar</a>
+				<a class="sub-menu-link" href="./internamento.html">Internamento</a>
+				<a class="sub-menu-link" href="./apoio_domiciliario.html">Apoio Domiciliário</a>
+			</nav>
+			<nav id="sub-creche" class="sub-menu-nav">
+				<span class="noscript">Creche</span>
+				<a class="sub-menu-link" href="./creche.html">Creche</a>
+				
+			</nav>
+			<nav id="sub-admin" class="sub-menu-nav">
+				<span class="noscript">Administração</span>
+				<a class="sub-menu-link active" href="./criar_artigo.html">Criar Artigo/Notícia</a>
+			</nav>
+		</nav>
+		<div id="content">
+			<h1>Noticias/Artigos</h1>
+
+
+<div class = "menu_table clearfix ">
+	<form>
+		<div class = "fifty_fifty">
+			<div class = "float_right">
+				<div class = "sameline">
+					<label>Pesquisar por Tipo</label>
+				</div>
+				<div class = "sameline" >
+					<div class = "sameline">
+						<input  type = "radio" name = "tipo" value="Artigo" />
+					</div>
+					<div class = "sameline">
+						<p>Artigo</p>	
+					</div>
+					<div class = "sameline">
+						<input  type = "radio" name = "tipo" value="Notícia" />
+					</div>
+					<div class = "sameline">
+						<p>Notícia</p>
+					</div>
+					<div class = "sameline">
+						<input  type = "radio" name = "tipo" value="Ambos" checked="checked" />
+					</div>
+					<div class = "sameline">
+						<p>Ambos</p>
+					</div>		
+						
+				</div>
+			</div>
+			
+				<div class = "float_right ">
+					<div class = "sameline">
+						<label for ="tipo">Pesquisar por </label>
+					</div>
+					<select id ="tipo">
+							<option value="Autor">Autor</option> 
+							<option value="Título">Titulo</option> 
+							<option value="Frase">Frase</option>						
+						
+					</select>
+				</div>
+			
+			<div class = "float_right ">
+					<div class = "sameline">
+						<label for ="pesquisar">Pesquisar</label>
+					</div>
+				<div class = "sameline" >
+					<input  type = "text" id = "pesquisar" />
+				</div>
+			</div>
+		</div>
+			
+		<div class = "fifty_fifty">
+			<div class = "float_right ">
+				<div class = "sameline">
+					<label for ="categoria">Pesquisar por Categoria</label>
+				</div>
+				<div class = "sameline" >
+					<select id="categoria">
+						<option value="Saude">Saúde</option> 
+						<option value="Geriatria">Geriatria</option> 
+						<option value="Creche">Creche</option>
+						<option value="Irmandade">Irmandade</option> 
+						
+					</select>
+				</div>
+			</div>
+			
+			<div class = "float_right ">
+				<div class = "sameline">
+					<label for ="especialidade">Pesquisar por Especialidade</label>
+				</div>
+				<div class = "sameline" >
+					<select id="especialidade">
+						<option value="Alergologia_Pneumologia">Alergologia e Pneumologia</option> 
+						<option value="Análises_Clínicas">Análises Clínicas</option> 
+						<option value="Cardiologia">Cardiologia</option>
+						<option value="Centro_Dermoestética">Centro de Dermoestética</option> 
+						<option value="Centro_Diabetes">Centro de Diabetes</option> 
+						<option value="Centro_Oncologia_Médica">Centro Oncologia Médica</option> 
+						<option value="Cirurgia_Geral">Cirurgia Geral</option>
+						<option value="Cirurgia_MaxiloFacial">Cirurgia Maxilo-Facial</option> 
+						<option value="Cirurgia_Pediátrica">Cirurgia Pediátrica</option> 
+						<option value="Cirurgia_Plástica">Cirurgia Plástica</option> 
+						<option value="Cirurgia_Torácica">Cirurgia Torácica</option> 
+						<option value="Cirurgia_Vascular">Cirurgia Vascular</option>
+						<option value="Clinica_Sono">Clinica do Sono</option>  
+						<option value="Dermatologia_Venereologia">Dermatologia e Venereologia</option> 
+						<option value="Endocrinologia_Nutrição">Endocrinologia - Nutrição</option> 
+						<option value="Gastroenterologia">Gastroenterologia</option>
+						<option value="Ginecologia_Obstetrícia">Ginecologia e Obstetrícia</option> 
+						<option value="Medicina_Reprodução">Medicina da Reprodução</option> 
+						<option value="Medicina_Dentária">Medicina Dentária</option> 
+						<option value="Medicina_Geral_Familiar">Medicina Geral e Familiar</option> 
+						<option value="Medicina_Interna">Medicina Interna</option>
+						<option value="Neurocirurgia">Neurocirurgia</option> 
+						<option value="Neurofisiologia">Neurofisiologia</option> 
+						<option value="Neurologia">Neurologia</option>
+						<option value="Reumatologia">Reumatologia</option>
+						
+					</select>
+				</div>
+			</div>
+			<div class = "float_right">				
+				<div class = "sameline" >
+					<input  type = "button" name = "pesquisar" value = "Pesquisar" />
+				</div>
+			</div>
+			
+		</div>
+	</form>
+
+	
+	
+	<article class="wide" id = "art1">
+		
+		<header>
+			<h4>  Hospital D. Manuel de Aguiar volta a receber doentes </h4>
+		</header>
+		<section>
+			<p>Para além de integrar a Rede Nacional de Cuidados Continuados – já em marcha – o Hospital D. Manuel de Aguiar contará, dentro em breve, com
+			modernos serviços de imagiologia, medicina física e de reabilitação, medicina desportiva, fisioterapia e recobro.</p>
+
+			<p>Dada a qualidade e a polivalência das instalações existentes no edifício do Hospital D. Manuel de Aguiar, bem como a estrutura de recursos
+			humanos a afectar e os meios técnicos idealizados para o efeito, acredita esta instituição ter capacidade para o tratamento das respostas
+			mencionadas, salvaguardando o princípio da humanização dos serviços a prestar.</p>
+
+			<p>A Unidade de Cuidados Continuados Integrados está a funcionar desde o passado dia 10 de Março, acolhendo utentes encaminhados pelos centros
+			de Saúde da Sub-Região de Saúde de Leiria e ainda de diversas unidades hospitalares da região. Em todos os casos, trata-se de doentes que
+			necessitam de cuidados médicos continuados, de média duração e de convalescença.</p>
+
+			<p>O piso do Hospital D. Manuel de Aguiar afecto aos Cuidados Continuados Integrados – o segundo e último do edifício – apresenta uma capacidade
+			máxima de quarenta camas, sendo que vinte encontram-se afectas à Rede Nacional, das quais doze se encontram ocupadas neste momento.</p>
+
+			<p>Das 20 camas afectas à Rede Nacional de Cuidados Continuados Integrados, 16 destinam-se a doentes em convalescença – com internamento
+			máximo de 30 dias - e as outras quatro são para internamentos de média duração e reabilitação, em que o período de hospitalização se pode
+			prolongar até aos 90 dias.</p>
+
+			<p>Para Fernando Lopes, provedor da Santa Casa da Misericórdia de Leiria, a Unidade de Cuidados Continuados Integrados assume-se como “mais
+			um serviço social” que a Misericórdia presta à comunidade, baseado no “princípio da solidariedade” e apostando num serviço “cuidado e
+			humanizado” a cada utente.</p>
+		</section>
+		<footer>
+			Região de Leiria, 8 de Abril de 2008
+		</footer>
+	</article>					
+	
+	<article class="wide" id = "art2">
+		
+		<header>
+			<h4>Titulo: Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia</h4>
+		</header>
+		<section>
+			<p>Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes instalações,
+			com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado. O serviço de Imagiologia do HDMA resulta da parceria entre a Santa Casa da Misericórdia de Leiria e o 
+			Grupo OGS – Organizações em Gestão de Equipamentos de Saúde, Lda., 
+			colocando ao seu dispor uma gama variada de oferta e nível de exames
+			radiológicos tais como: Ressonância Magnética (1,5T), Tomografia Computorizada (TAC), 
+			Raios-x, Mamografia, Osteodensitometria, Ecografia geral e Eco-Doppler.
+			Neste novo centro de Imagiologia Geral, poderá também usufruir dos diversos acordos vigentes com as respectivas entidades, nomeadamente: ARS, Seguros e outros ainda a designar.
+			Centrado no atendimento dedicado e humanizado, o Serviço de Imagiologia do HDMA pretende assim destacar-se pela positiva, 
+			proporcionando excelência no diagnóstico e diferenciação na prestação global de cuidados de saúde.</p>
+		</section>
+		<footer>
+			Zé Carlos, 6 de Outubro de 2009
+		</footer>
+	</article>				
+	
+	<article class="wide" id = "art3">
+		
+		<header>
+			<h4>Congresso Internacional - Diferentes perspetivas do envelhecimento ativo</h4>
+		</header>
+		<section>
+			<p>Vivemos hoje, numa sociedade mergulhada num imenso problema, por falta de estratégias e de políticas capazes de sustentar o crescimento da natalidade, única forma de compensar o envelhecimento dos países.</p> 
+			<p>Como nunca, caminhamos a passos largos para um mundo envelhecido. O desenvolvimento das tecnologias e das ciências médicas, a evolução da indústria farmacêutica, o fomento da investigação, a elevação das qualidades habitacionais, bem como os níveis de higiene e salubridade que
+			os povos dos países desenvolvidos conheceram nos últimos anos, fizeram com que hoje tenhamos pessoas que vivem mais, com mais, mantendo as suas capacidades cognitivas.</p> 
+			<p>Este fenómeno motiva, para todos os que se interessam por estas matérias, a responsabilidade de pensar políticas para que o envelhecimento seja ativo, consciente e bem-sucedido. </p>
+			<p>Ao longo de 2012, Ano Europeu do Envelhecimento Ativo e da Solidariedade entre Gerações, ocorreram múltiplos eventos sobre o tema. A ANGES - Associação Nacional de Gerontologia Social, e a IDEALMED – Unidade Hospitalar de Coimbra, decidiram promover o evento que aqui apresentamos, cujo tema é abordado em diferentes perspetivas, relevando a pertinência e atualidade do mesmo</p>
+		</section>
+		<footer>
+			IDEALMED, 22 Novembro 2012
+		</footer>
+	</article>
+</div>		</div>
+		<footer>
+			&copy;2014 Santa Casa da Misericórdia de Leiria
+		</footer>
+	</div>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("#scml").click();
+		});
+	</script>
+	</body>
+</html>

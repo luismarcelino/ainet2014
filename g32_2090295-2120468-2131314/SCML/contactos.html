@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!--Title with Image-->
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="shortcut icon" href="img/header.png" />
+		
+		<!--Scripts-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="script/scripts.js"></script>
+		<script type="text/javascript" src="script/scriptsJQ.js"></script>
+		
+		<!--Fonts da google-->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'/>
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menuSTYLE.css"/>
+		<link rel="stylesheet" type="text/css" href="css/contactos_style.css"/>
+
+	</head>
+
+	<body>
+		<div id="wrapper" class="clearfix">
+			<div id="header" class="clearfix">
+				<div id="headerimg"><a href="index.html"><img src="img/header.png" alt="header" /></a>
+					<p id="saber">O Saber da Experiência</p>
+					<p>500 anos de história</p>
+				</div>
+				
+
+				<div id="loginbox">
+						<a onclick="show()" href="#">Login</a><a href="registar.html">Registar</a>
+				</div>
+
+				<div id="container-login" class="hide">
+					<div>
+						<h1>Login</h1>
+					</div>
+					<div>
+						<form action="login_sucesso.html" method="get">
+							<div id="loginFields">
+								<label>Username:</label><input type="text" name="user"/><br/>
+								<label>Password:</label><input type="password" name="pass"/><br/>
+	
+								<input type="submit" value="Entrar"/>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div id="searchbox">
+					<p><input type="text" value="Procure aqui..." /></p>
+				</div>
+			</div>
+
+			<div id="middle" class="clearfix">
+				<div id="sidebar">
+				 	<!--Menus de navegacao-->
+					<ul id="nav">
+						<li><a href="index.html">Entrada</a></li>
+						<li><a href="#">Saúde</a>
+							<ul>
+								<li><a href="especialidades.html">Especialidades</a></li>	
+								<li><a href="corpoclinico.html">Corpo Clínico</a></li>
+								<li><a href="artEnot.html">Artigos/Notícias Clínicas</a></li>
+								<li><a href="marcar_consulta.html">Marcação de Consultas</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Cuidados Geriátricos</a>
+							<ul>
+								<li><a href="tipoValencia.html">Residencial</a></li>
+								<li><a href="tipoValencia.html">Lar</a></li>
+								<li><a href="tipoValencia.html">Internamento</a></li>
+								<li><a href="tipoValencia.html">Apoio domiciliário</a></li>
+							</ul>
+						</li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="content">
+					<h1>Contactos</h1>
+					
+					<div class="sede">
+						<a class="titulo" href="#">Santa Casa da Misericórdia de Leiria</a>
+					</div>
+					<div id="inst_sede">
+						<p>Instituição Particular de Solidariedade Social - Sede</p>
+						<p>Rua Trindade Coelho, 8</p>
+						<p>Apartado 1109</p>
+						<p>2401-801 Leiria</p>
+						<p>Tel.: 244 106 202 • Fax: 244 106 298</p>
+						<p>geral@misericordiadeleiria.pt</p>
+					</div>
+					
+					<div class="sede">
+						<a class="titulo" href="#">Lar Nossa Sra. da Encarnação</a>
+					</div>
+					<div id="lar">
+						<p>Rua Nossa Sra. da Encarnação</p>
+						<p>2414-004 LEIRIA</p>
+						<p>Tel.: 244 827 400 • Fax: 244 823 980</p>
+						<p>geral@misericordiadeleiria.pt</p>
+					</div>
+					
+					<div class="sede">
+						<a class="titulo" href="#">Clínica Médica e de Reabilitação</a>
+					</div>
+					<div id="clinica">
+						<p>Rua Nossa Sra. da Encarnação</p>
+						<p>2414-004 LEIRIA</p>
+						<p>Tel.: 244 824 484 • Fax: 244 823 980</p>
+						<p>geral@misericordiadeleiria.pt</p>
+					</div>
+
+					<div class="sede">
+						<a class="titulo" href="#">Hospital Dom Manuel de Aguiar</a>
+					</div>
+					<div id="hosp">
+						<p>Rua Conde Ferreira</p>
+						<p>2410-189 LEIRIA</p>
+						<p>Tel.: 244 100 009 • Fax: 244 106 299</p>
+						<p>geral@misericordiadeleiria.pt</p>
+						
+						<p class="uni_sede">Unidade Cirúrgica</p> 
+						<div class="uni_sede">Tel.: 244 106 203</div>
+
+						<p class="uni_sede">Unidade Cuidados Continuados</p>
+						<div class="uni_sede">Tel.: 244 106 204 (24 HORAS)</div>
+
+						<p class="uni_sede">Recepção Administrativa Central</p>
+						<div class="uni_sede">Tel.: 244 106 201</div>
+					</div>
+
+					<div class="sede">
+						<a class="titulo" href="#">Creche "Casa Sanches"</a>
+					</div>
+					<div id="creche"> 
+						<p>Rua Trindade Coelho, 10</p>
+						<p>2410-189 LEIRIA</p>
+						<p>Tel.: 244 100 009 • Tm: 915 190 685 • Fax: 244 106 298</p>
+						<p>geral@misericordiadeleiria.pt</p>
+					</div>
+					
+					<div class="sede">
+						<a class="titulo" href="#">Residencial XXI</a>
+					</div>
+					<div id="residencial">
+						<p>Rua do Lis</p>
+						<p>2410-126 LEIRIA</p>
+						<p>Tel.: 244 106 300 • Fax: 244 106 298</p>
+						<p>geral@misericordiadeleiria.pt</p>
+					</div>
+					<div id="pedir">
+						<a href="form_contacto.html">Pedido de Contacto</a>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>2014 &#169; Alexandra Pedro, André Tiago e Fábio Santos. <br/> DEI ESTG-IPLEIRIA </p>
+			</div>
+		</div>	
+	</body>
+</html>

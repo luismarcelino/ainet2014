@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="Estilo.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Imagens/imagemSeparador.ico">
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+
+    <script type="text/javascript" src="js/datetimepicker.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("#painelLateral h3").click(function() {
+                $("#painelLateral ul ul").slideUp();
+                if (!$(this).next().is(":visible")) {
+                    $(this).next().slideDown();
+                }
+            })
+        })
+    </script>
+
+
+
+</head>
+
+
+<body>
+
+    <div id="containerBase">
+
+        <div id="superior">
+
+            <img src="Imagens/imagemTopo1.png" alt="Imagem topo" style='position:absolute; left:0px; top:0px; margin:auto' />
+            <div id="superiorEsq">
+                <a href="Base.html">
+                    <img src="Imagens/santa_casa1000.png" alt="Imagem logo" style='position:absolute; left:0px; top:0px; margin:auto; width:100%; height:100%; border-radius: 28px' />
+                </a>
+            </div>
+            <div id="menu">
+
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="Base.html">INÍCIO</a>
+                        </li>
+                        <li>
+                            <a href="Apresentacao.html">APRESENTAÇÃO</a>
+                        </li>
+                        <li>
+                            <a href="Contactos.html">CONTACTOS</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="pesquisar">
+                    <div class="caixaPesquisar">
+                        <input type="text" name="pesquisa" value="Pesquisar..." class="pesquisa">
+                        <div class="botaoPesquisa">
+                            <img src="Imagens/search.png" alt="Imagem topo" style='width:100%; height:100%; margin:0' />
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div id="containerBase2">
+
+            <div id="containerFormulario" class="formularios">
+                <h2>
+                    <b>Formulário de Contacto</b>
+                </h2>
+                <p>
+                    <i>Campos Obrigatórios*</i>
+                </p>
+                <form>
+                    <table>
+
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Tipo de Contacto *</b>
+                            </td>
+                            <td>
+                                <select name="tipoContacto" id="tipoContacto">
+                                    <option value="">--- Seleccione ---</option>
+                                    <option value="contacto">Contacto</option>
+                                    <option value="emprego">Emprego</option>
+                                    <option value="inscI">Inscricao como Irmao(a)</option>
+                                    <option value="inscUt">Inscricoes de Utentes</option>
+                                    <option value="outro">Outro</option>
+                                    <option value="voluntariado">Voluntariado</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Nome *</b>
+                            </td>
+                            <td>
+                                <input type="text" name="nome" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Sexo:</b>
+                            </td>
+                            <td>
+                                <input type="radio" checked="checked" name="hotornot" value="hot" />Masculino</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="radio" name="hotornot" value="hot" />Feminino</td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Data de Nascimento *</b>
+
+                            </td>
+                            <td>
+                                <input type="date" name="dataNascimento">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Morada</b>
+                            </td>
+                            <td>
+                                <textarea rows="4" cols="50"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Codigo Postal</b>
+                            </td>
+                            <td>
+                                <input type="text" name="codPostal" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Localidade</b>
+                            </td>
+                            <td>
+                                <input type="text" name="localidade" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Tel./Telem *</b>
+                            </td>
+                            <td>
+                                <input type="text" name="contacto" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>E-mail *</b>
+                            </td>
+                            <td>
+                                <input type="text" name="email" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Subsistema ou Seguro de Saúde</b>
+                            </td>
+                            <td>
+                                <select name="sistemaSaudeId" id="sistemaSaudeId">
+                                    <option value="">--- Seleccione ---</option>
+                                    <option value="ADMG">ADMG (só para MFR)</option>
+                                    <option value="ADSE">ADSE</option>
+                                    <option value="IASFA">IASFA (ADMA, ADME, ADMFA)</option>
+                                    <option value="Medis">Medis (só para MFR)</option>
+                                    <option value="Multicare">Multicare</option>
+                                    <option value="Particular">Particular</option>
+                                    <option value="Planicare">Planicare</option>
+                                    <option value="SAD">SAD PSP (só para MFR)</option>
+                                    <option value="SAMS">SAMS Centro</option>
+                                    <option value="Serv_socias_CGD">Serviços Sociais da CGD</option>
+                                    <option value="Servimed">Servimed</option>
+                                    <option value="Sind_func_judiciais">Sindicato dos Funcionários Judiciais</option>
+                                    <option value="SNS">SNS</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Numero de Beneficiario</b>
+                            </td>
+                            <td>
+                                <input type="text" name="numBeneficiado" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Mensagem *</b>
+                            </td>
+                            <td>
+                                <textarea rows="4" cols="50"></textarea>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="colunaEsquerda">
+                                <b>Forma Preferencial de contacto</b>
+                            </td>
+                            <td>
+                                <select name="prefContacto" id="prefContacto">
+                                    <option value="">--- Seleccione ---</option>
+                                    <option value="contacto">Tel./Telem</option>
+                                    <option value="mail">E-mail</option>
+                                    <option value="ctt">CTT</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="buttonFormularios">
+                        <button type="reset" value="Limpar">
+                            <b>Limpar</b>
+                        </button>
+                        <button type="button" value="Enviar">
+                            <b>Enviar</b>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="painelLateral">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="Irmandade.html">
+                            <h3>Irmandade</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Creche.html">
+                            <h3>Creche</h3>
+                        </a>
+
+                    </li>
+                    <li>
+                        <h3>Cuidados Geriátricos</h3>
+
+                        <ul>
+                            <li>
+                                <a href="CuidadosGeriatricos.html">Cuidados Geriátricos</a>
+                            </li>
+
+                            <li>
+                                <a href="Residencial.html">Residencial</a>
+                            </li>
+
+
+                            <li>
+                                <a href="Lar.html">Lar</a>
+                            </li>
+
+
+                            <li>
+                                <a href="Internamento.html">Internamento</a>
+                            </li>
+
+
+                            <li>
+                                <a href="ApoioDomiciliario.html">Apoio Domiciliário</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="Saude.html">
+                            <h3>Sáude</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="FormularioConsulta.html">
+                            <h3>Marcação de Consultas</h3>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="form_contacto.html">
+                            <h3>Pedido de Contacto</h3>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="NoticiasGeral.html">
+                            <h3>Noticias</h3>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="painelLateralLogin">
+            <div id="tituloPainelLogin">
+                <b>Iniciar Sessão</b>
+            </div>
+            <div id="utilizadorPainelLogin">
+
+                <div class="login">
+                    <b>Utilizador:</b>
+
+                    <input type="text" id="username" size="20" />
+                </div>
+
+            </div>
+            <div id="passwordPainelLogin">
+                <div class="login">
+                    <b>Password:</b>
+
+                    <input type="password" id="password">
+                </div>
+            </div>
+            <div id="btnLogin">
+                <button type="button" style=' margin:0; width:100%; height:100%'>ENTRAR</button>
+
+            </div>
+            <div id="loginOpcoes">
+                <a href="#"> >Registar </a> <br/>
+                <a href="#"> >Esqueceu a password?</a> 
+                
+            </div>
+
+        </div>
+
+        <div id="painelFim">
+
+       <div id="localizacao">
+                <iframe class="mapa" src="https://maps.google.pt/maps?q=santa+casa+miseric%C3%B3rdia+leiria&amp;ie=UTF8&amp;hq=santa+casa+miseric%C3%B3rdia&amp;hnear=Leiria&amp;t=h&amp;ll=39.740267,-8.802694&amp;spn=0.020385,0.010976&amp;output=embed"></iframe>
+                <br />
+                <small>
+                    <a href="https://maps.google.pt/maps?q=santa+casa+miseric%C3%B3rdia+leiria&amp;ie=UTF8&amp;hq=santa+casa+miseric%C3%B3rdia&amp;hnear=Leiria&amp;t=h&amp;ll=39.740267,-8.802694&amp;spn=0.020385,0.010976&amp;source=embed" style="color:#0000FF;text-align:left"></a>
+                </small>
+            </div>
+
+            <div id="tituloRedeSocial" class="titulosPainelFim">
+                Rede Social
+            </div>
+
+            <div id="tituloPainelFim">
+                Mantenha-se em contacto
+            </div>
+
+            <div id="tituloLocalizacao" class="titulosPainelFim">
+                Localização
+            </div>
+
+            <div id="tituloNewsletter" class="titulosPainelFim">
+                Newsletter
+            </div>
+
+            <div id="registoNewsletter">
+                <form action="demo_form.asp">
+                    Endereço e-mail:
+                    <input type="email" name="email">
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div id="redeSocial">
+                <a href="https://www.facebook.com/santacasaleiria?fref=ts">
+                    <img src="Imagens/facebook_logo.png" alt="Facebook" style='position:absolute; left:0px; top:0px; margin:auto; width:100%; height:100%'>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="rodape">
+        <i>
+            <b>@ Copyright Jorge Ruivo | Rafael Dinis | Rúben Ferreira. All Rights Reserved 2014. DEI-ESTG-IPLEIRIA</b>
+        </i>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Santa Casa da Misericórdia de Leiria</title>
+        <link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/especialidades.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel='shortcut icon' type='image/x-icon' href='css/imgs/favicon.ico' />
+        <script type="text/javascript" src="js/header.js">
+        </script>
+        <script type="text/javascript" src="js/especialidade.js">
+        </script>
+        <script type="text/javascript" src="js/jquery.min.js">
+        </script>
+    </head>
+
+    <body id="especialidades">
+
+
+
+        <div id="barra">
+            <ul id="menubarra">
+                <li><a href="#" accesskey="2" title="" id="loginnav" onmouseover="aparecer()" onmouseout="desaparecer()">Login</a></li>
+                <li><a href="contactos.html" accesskey="2" title="" id="contactosnav">Contactos</a></li>
+                <li><a href="localizacao.html" accesskey="2" title="" id="informacaonav">Localização</a></li>
+                <li><a href="#" accesskey="2" title="" id="newslettermenu">Newsletter</a></li>
+                <li><a href="formcontacto.html" accesskey="2" title="" id="pedidosmenu">Pedidos de Informações/Sugestões</a></li>
+
+            </ul>
+            <div id="arealogin" onmouseover="aparecer()" onmouseout="desaparecer()">
+                <form id="login">
+                    <p><label for="username" id="lblusername">Nome de Utilizador:</label></p>
+                    <p><input type="text" id="username" value="" size="28" /></p>
+                    <p><label for="password" id="lblpassword">Palavra Passe:</label></p>
+                    <p><input type="password" id="password" value="" size="28" /></p>
+                    <p><input type="button" class="submit" onclick="login()" id="submit" value="Entrar" /></p>
+
+                </form>
+            </div>
+
+            <a href="https://www.facebook.com/santacasaleiria"><img src="css/imgs/facebook.png"  alt="Facebook" /></a>
+
+        </div>
+
+
+
+        <div class="header">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html" accesskey="1" title="" id="homenav">Home</a></li>
+                    <li><a href="#" id="irmandadenav">A SCML</a></li>
+                    <li><a href="noticias.html" id="noticiasnav">Noticias</a></li>
+
+                    <li><a href="valencia.html" id="random42">Irmandade</a></li>
+
+                    <li><a href="#" class="servico" id="serviconav">Cuidados Geriátricos</a>
+                        <ul class="dropdown" id="dropdown">
+                            <li><a href="valencia.html" id="random1">Residencial</a></li>
+                            <li><a href="valencia.html" id="random2">Lar</a></li>
+                            <li><a href="valencia.html" id="random3">Internamento</a></li>
+                            <li><a href="valencia.html" id="random4">Apoio Domiciliario</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="saude.html" id="saudenav">Saude</a>
+                        <ul class="dropdown" id="dropdown">
+                            <li><a href="valencia.html" id="random121">Hospital</a></li>
+                            <li><a href="especialidades.html" id="random11">Especialidades</a></li>
+                            <li><a href="corpoclinico.html" id="random22">Corpo Clinico</a></li>
+                            <li><a href="marcacaoconsultas.html" id="random33">Marcação de Consultas</a></li>
+                        </ul></li>
+                    <li><a href="valencia.html" id="random23">Creche</a></li>
+
+                    <li id="ferr"><a href="#" id="aferr">Ferramentas</a>
+                        <ul class="dropdown" id="dropdown">
+                            <li><a href="criarnoticia.html" id="random1">Criar Noticia</a></li>
+
+                        </ul></li>
+
+                </ul>
+            </div>
+            <img src="css/imgs/header-image1.png" id="imagem-header" alt="Header">
+            <div id="changeheader">
+                <a href="#"><img id="seleccionado" src="css/imgs/bolinhaselected.png" onclick='changeImage("1", this);'  alt="Selecionado" /></a>
+                <a href="#"> <img id="naoseleccionado" src="css/imgs/bolinhanaoselected.png" alt="Não Selecionado"  onclick='changeImage("2", this);'/></a>
+                <a href="#"><img id="naoseleccionado" src="css/imgs/bolinhanaoselected.png" onclick='changeImage("3", this);' alt="Não selecionado" /></a>
+            </div>
+            <img src="css/imgs/logo.png" id="imagem-logo" alt="Logótipo">
+        </div>
+
+
+
+
+        <h1>Especialidades</h1>
+
+        <div id="especs">
+
+            <ul>
+                <li class="selecao" id="ativo" onclick="mudar('#acumputura',this)">Acupunctura</li>
+                <li class="naoselecao" id="naoativo" onclick="mudar('#cardiologia',this)">Cardiologia</li>
+                <li class="naoselecao"id="naoativo" >Cirurgia Geral</li>
+                <li class="naoselecao"id="naoativo" >Cirurgia Plástica e Reconstrutiva</li>
+                <li class="naoselecao"id="naoativo" >Cirurgia Vascular</li>
+                <li class="naoselecao"id="naoativo" >Dermatologia</li>
+                <li class="naoselecao"id="naoativo" >Diabetes</li>
+                <li class="naoselecao"id="naoativo" >Dietista</li>
+                <li class="naoselecao"id="naoativo" >Endocrinologia</li>
+                <li class="naoselecao"id="naoativo" >Estomatologia</li>
+                <li class="naoselecao"id="naoativo" >Gastrenterologia</li>
+                <li class="naoselecao"id="naoativo" >Ginecologia</li>
+                <li class="naoselecao"id="naoativo" >Medicina Desportiva</li>
+                <li class="naoselecao"id="naoativo" >Medicina Física e de Reabilitação</li>
+                <li class="naoselecao"id="naoativo" >Mesoterapia</li>
+                <li class="naoselecao"id="naoativo" >Neurocirurgia</li>
+                <li class="naoselecao"id="naoativo" >Neurologia</li>
+                <li class="naoselecao"id="naoativo" >Oftalmologia adulto e infantil</li>
+                <li class="naoselecao"id="naoativo" >Ortopedia</li>
+                <li class="naoselecao"id="naoativo" >Otorrinolaringologia</li>
+                <li class="naoselecao"id="naoativo" >Pneumologia</li>
+                <li class="naoselecao"id="naoativo" >Psicologia Clínica</li>
+                <li class="naoselecao"id="naoativo" >Psiquiatria</li>
+                <li class="naoselecao"id="naoativo" >Reumatologia</li>
+                <li class="naoselecao"id="naoativo" >Urologia</li>
+
+            </ul>
+        </div>
+        <div id="texto">
+            <div class="mostrar" id="acumputura">
+                <h2>Acumputura</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec felis vitae quam egestas interdum. Aliquam congue risus id ipsum tincidunt tempus. Mauris vel ante vitae diam vulputate hendrerit a ac metus. Vestibulum lacinia enim at posuere auctor. Etiam eu elementum erat, vel tristique augue. Vestibulum iaculis dolor in urna tempor ultricies. Sed tincidunt lacus id scelerisque feugiat.
+                </p>
+                <p>
+                    Vestibulum ornare ipsum et arcu viverra auctor. Vivamus ligula turpis, ornare a facilisis id, mattis id turpis. Donec sed neque justo. Phasellus risus metus, ornare non turpis eget, congue laoreet mi. Nam vel quam pharetra augue vehicula rutrum a vitae orci. Duis vitae enim sed ante semper laoreet. Praesent ut urna nisi. In varius bibendum nisl vel ultricies. Maecenas pulvinar non leo eget varius.
+                </p>
+
+                <h1>Médicos:</h1>
+
+                <div class="medicos">
+                    <h3>Medico Exemplo</h3>
+                    <img src="css/imgs/doutor.png"  alt="Imagem Noticia" id="img-doutor" />
+                    <p>
+                        Descrição do médico exemplo aqui
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div id="cardiologia">
+            <h2>Cardiologia</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec felis vitae quam egestas interdum. Aliquam congue risus id ipsum tincidunt tempus. Mauris vel ante vitae diam vulputate hendrerit a ac metus. Vestibulum lacinia enim at posuere auctor. Etiam eu elementum erat, vel tristique augue. Vestibulum iaculis dolor in urna tempor ultricies. Sed tincidunt lacus id scelerisque feugiat.
+            </p>
+            <p>
+                Vestibulum ornare ipsum et arcu viverra auctor. Vivamus ligula turpis, ornare a facilisis id, mattis id turpis. Donec sed neque justo. Phasellus risus metus, ornare non turpis eget, congue laoreet mi. Nam vel quam pharetra augue vehicula rutrum a vitae orci. Duis vitae enim sed ante semper laoreet. Praesent ut urna nisi. In varius bibendum nisl vel ultricies. Maecenas pulvinar non leo eget varius.
+            </p>
+            <h1>Médicos:</h1>
+            <div class="medicos">
+                <h3>Medico Exemplo</h3>
+                <img src="css/imgs/doutor.png"  alt="Imagem Noticia" id="img-doutor" />
+                <p>
+                    Descrição do médico exemplo aqui
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="rodape">
+        <div id="blocksrodape">
+            <div class="blockrodape">
+                <h3>Santa Casa Da Misericórdia de Leiria</h3>
+                <img src="css/imgs/logorod.png"  alt="Logo Rodape" />
+
+            </div>
+
+            <div class="blockrodape"> 
+                <h3>Contactos Principais</h3>
+                <p><b>Santa Casa da Misericórdia de Leiria</b></p>
+
+                <p>Instituição Particular de Solidariedade Social
+                </p>
+                <p><b>Sede:</b>
+                    Rua Trindade Coelho, 8
+                </p>
+                <p>Apartado 1109
+                </p>
+                <p>2401-801 Leiria
+                </p>
+                <p><b>Tel.:</b> 244 106 202 • <b>Fax:</b> 244 106 298
+                </p>
+                <p>geral@misericordiadeleiria.pt</p>
+            </div>  
+            <div class="blockrodape"> 
+                <h3>Próximo Evento</h3>
+                <h4>Caminhada</h4>
+                <img src="css/imgs/cam.png"  alt="Logo Rodape" />
+
+                <h6>17 de Abril de 2014</h6>
+                <h6>Leiria</h6>
+            </div>  
+
+        </div>
+    </div>
+</body>
+
+</html>

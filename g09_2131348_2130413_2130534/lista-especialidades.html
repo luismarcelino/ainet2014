@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link href="styles/estilo.css" rel="stylesheet" type="text/css" />
+	<link href="styles/estilo_especialidades.css" rel="stylesheet" type="text/css" />
+	<link href="styles/menu_lateral_esq.css" rel="stylesheet" type="text/css" />
+	<link href="styles/menu_estilo.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="js/jquery-1.11.0.min.js">
+	</script>
+	<script type="text/javascript">
+	// <![CDATA[ 
+		$(document).ready(function() {
+			var lista_esp = ["Banana", "Orange", "Apple", "Mango"];
+			var apresentacao = "<h1>Unidade Cirúrgica</h1><p>A Unidade Cirúrgica está localizada no piso 1, dispõe de oito camas e dela fazem parte:</p><p>O Bloco Operatório – com duas salas de operações, equipadas e dimensionadas para todos os tipos de cirurgias:</p><ul><li>Uma sala de recobro e reanimação com quatro camas;</li><li>Uma sala de tratamentos/pensos para apoio pós-operatório;</li><li>Uma central de esterilização autónoma, com dois equipamentos a vapor saturado e lavagem mecânica;</li><li>Uma sala de pequena cirurgia.</li></ul>";
+			var corpo_clinico = cria_div_medicos_especialidade("Dr. Médico1",lista_esp,910555432,"antonio@flar.sim")+cria_div_medicos_especialidade("Dr. Médico2",lista_esp,910611061,"kanisso13@gmail.com");
+			var acordos = "<h3>SISTEMAS DE SAÚDE e SEGURADORAS</h3><br/>. AME - Associação Mutualista de Engenheiros;<br/>· SNS (Serviço Nacional de Saúde) – ARS Centro;<br/>· ADSE;<br/>· ADMA;<br/>· ADME;<br/>· ADMFA;<br/>· Generali;<br/>· SAMS Centro;<br/>· SERVIÇOS SOCIAS DA CGD;<br/>· Sindicato dos Funcionários Judiciais;<br/>· Multicare;<br/>· Particular;<br/>· SIB - Sindicato Independente da Banca;<br/>· Servimed (Serviaide);<br/>· ADMG (só para MFR);<br/>· SAD PSP (só para MFR);<br/>· Medis (só para MFR);<br/>· Tranquilidade;<br/>· Zurich.;";
+			var noticias_especialidade = "<p>Noticia1<br/>Noticia2</p>";
+			mudar_conteudo_div(apresentacao,corpo_clinico,acordos,noticias_especialidade);
+			$("#u_cirurgica").click(function(event) {
+				apresentacao = "<h1>Unidade Cirúrgica</h1><p>A Unidade Cirúrgica está localizada no piso 1, dispõe de oito camas e dela fazem parte:</p><p>O Bloco Operatório – com duas salas de operações, equipadas e dimensionadas para todos os tipos de cirurgias:</p><ul><li>Uma sala de recobro e reanimação com quatro camas;</li><li>Uma sala de tratamentos/pensos para apoio pós-operatório;</li><li>Uma central de esterilização autónoma, com dois equipamentos a vapor saturado e lavagem mecânica;</li><li>Uma sala de pequena cirurgia.</li></ul>";
+				corpo_clinico = cria_div_medicos_especialidade("Dr. Médico1",lista_esp,910555432,"antonio@flar.sim")+cria_div_medicos_especialidade("Dr. Médico2",lista_esp,910611061,"kanisso13@gmail.com");
+				//acordos = "";
+				//noticias_especialidade = "<p>Será?</p>";			
+				trocar_classes($(this));
+				mudar_conteudo_div(apresentacao,corpo_clinico,acordos,noticias_especialidade);
+			});	
+			$("#a_cirurgico").click(function(event){
+				apresentacao = "<h1>Atendimento Médico e Cirúrgico</h1>";
+				corpo_clinico = cria_div_medicos_especialidade("Dr. Médico1",lista_esp,925547896,"tafixe@yaho.com");
+				//acordos = "acordos";
+				//noticias_especialidade = "<p>Certo?</p>";				
+				trocar_classes($(this));
+				mudar_conteudo_div(apresentacao,corpo_clinico,acordos,noticias_especialidade);
+			});
+			$("#cons_externas").click(function(event){
+				apresentacao = "<h1>Consultas Externas</h1><h3>Várias especialidades médicas e cirúrgicas:</h3><p>. Acupunctura<br/>. Cardiologia<br/>. Cirurgia Geral<br/>. Cirurgia Plástica e Reconstrutiva<br/>. Cirurgia Vascular<br/>. Dermatologia<br/>. Diabetes<br/>. Dietista<br/>. Endocrinologia<br/>. Estomatologia / Medicina Dentária<br/>. Gastrenterologia<br/>. Ginecologia<br/>. Medicina Desportiva<br/>. Medicina Física e de Reabilitação<br/>. Mesoterapia<br/>. Neurocirurgia<br/>. Neurologia<br/>. Oftalmologia adulto e infantil<br/>. Ortopedia<br/>. Otorrinolaringologia<br/>. Pneumologia<br/>. Psicologia Clínica<br/>. Psiquiatria<br/>. Reumatologia<br/>. Urologia</p>";
+				corpo_clinico = cria_div_medicos_especialidade("Dr. Médico1",lista_esp,925512326,"tae@yahoe.com");
+				//acordos = "Sim";
+				//noticias_especialidade = "<p>Será?</p>";	
+				trocar_classes($(this));
+				mudar_conteudo_div(apresentacao,corpo_clinico,acordos,noticias_especialidade);
+			});
+			$("#m_fisica").click(function(event){
+				apresentacao = "<h1>Medicina Física e de Reabilitação</h1><p>. Electroterapia<br/>. Fototerapia<br/>. Termoterapia<br/>. Hidroterapia<br/>. Mesoterapia<br/>. Massoterapia<br/>. Cinesioterapia<br/>. Ventiloterapia<br/>. Mecanoterapia<br/>. Ensino e treino de doentes, familiares/acompanhantes<br/>. Terapia da Fala<br/>. Terapia Ocupacional<br/>Reabilitação pós-cirúrgica<br/>Reabilitação cardíaca<br/>Reabilitação pélvica<br/>Reabilitação vestibular<br/></p><p>De salientar a existência nesta unidade de uma óptima piscina terapêutica.</p>";
+				corpo_clinico = cria_div_medicos_especialidade("Dr. Médico1",lista_esp,937652326,"agfdgd@gen.pt");
+				//acordos = "tass";
+				//noticias_especialidade = "<p>Será?</p>";	
+				trocar_classes($(this));
+				mudar_conteudo_div(apresentacao,corpo_clinico,acordos,noticias_especialidade);
+			});
+		});
+
+		function cria_div_medicos_especialidade(nome,l_especialidades,tel,email){
+			var lista_esp;
+			if (l_especialidades.length > 0){
+				lista_esp = l_especialidades.join(", ");
+			}else{
+				lista_esp="";
+			}
+			var tagInicio = "<div class=\"medicos_especialidade\">";
+			var tagFim = "</div>";
+			var foto = "<div class=\"foto_medico\"><img id=\"medico150\" src=\"./imagens/medico150x150.png\" alt=\"Foto Medico\"></div>";
+			var nome = "<div class=\"nome_medico\"><p class=\"title_medico\">"+nome+"</p><br/>TEL: "+tel+"<br/>Email: <a href=\"MAILTO:"+email+"\">"+email+"</a></div><br/>"
+			var especialidades = "<div class=\"especilidades_investigacao\"><p>Especialidades: "+lista_esp+"<br/>"
+			var investigacao = "Investigacao: "+lista_esp+"</p></div><br/>";
+			var rodape_detalhes = "<div id=\"rodape_detalhes\"><span id=\"perfil_completo\"><a href=\"medicos.html\">Perfil Completo</a></span><span id=\"marcar_consulta\"><a href=\"marcacao-consultas.html\">Marcar Consulta</a></span></div>";
+			return tagInicio+foto+nome+especialidades+investigacao+rodape_detalhes+tagFim;
+		}
+
+		function mudar_conteudo_div(apresentacao,corpo_clinico,acordos,noticias_especialidade){
+			var selector = $("#apresenta_especialidade");
+			var newList = [apresentacao];
+			selector.html(newList.join(""));
+			selector = $("#corpo_clinico");
+			newList = [corpo_clinico];
+			selector.html(newList.join(""));
+			selector = $("#acordos");
+			newList = [acordos];
+			selector.html("<h1>ACORDOS:<h1>"+newList.join(""));
+			selector = $("#noticias_especialidade");
+			newList = [noticias_especialidade];
+			selector.html("<hr>"+newList.join(""));
+		}
+
+		function trocar_classes(identificador) {
+		    $(".listaclicada").attr("class", "lista");
+		    identificador.attr("class", "listaclicada");
+		 }
+	// ]]>
+	</script>
+	</head>
+
+	<body>
+	<div id="container"> 
+		<!-- CABECALHO -->
+		<header id="cabecalho"> <a href="index.html">
+			<div id="homepage"></div>
+			</a> 
+			<!-- MENU -->
+			<div id="grupo1">
+				<ul class="menu">
+					<li><a href="#pessoal">Pessoal</a></li>
+					<li><a href="#medico">Médico</a></li>
+					<li><a href="#gestao_de_utilizadores">Gestão de	Utilizadores</a></li>
+				</ul>
+			</div>
+			<!-- fim grupo1 -->
+			<div id="grupo2">
+				<ul class="menu">
+					<li><a><span>Saúde</span></a>
+						<ul>
+							<li><a href="lista-especialidades.html">Lista de Especialidades</a></li>
+							<li><a href="corpo-clinico.html">Corpo Clínico</a></li>
+							<li><a href="#artigos_noticias_clinicas">Artigos/Notícias Clínicas</a></li>
+							<li><a href="marcacao-consultas.html">Marcação de Consultas</a></li>
+							<li><a href="#confirmacao-de-marcacoes">Confirmação de Marcações</a></li>
+						</ul>
+					</li>
+					<li><a href="cuidados-geriatricos.html">Cuidados Geriátricos</a></li>
+					<li><a href="creche.html">Creche</a></li>
+					<li><a href="irmandade.html">Irmandade</a></li>
+					<li><a href="contactos.html">Contactos</a></li>
+				</ul>
+			</div>
+			<!-- fim grupo2 --> 
+		</header>
+		<!-- fim cabecalho -->
+		
+		<article id="conteudo">
+			<h1 id="titulo_lista_especialidades">Lista de Especialidades</h1>
+			<!-- BARRA LATERAL ESQUERDA -->
+			<section id="barralateral_esq">
+				<div id="menu_lateral_esq">
+					<ul id="listaespecialidades" class="lista">
+						<li class="listaclicada" id="u_cirurgica">Unidade Cirúrgica</li>
+						<li class="lista" id="a_cirurgico">Atendimento Médico e Cirúrgico</li>
+						<li class="lista" id="cons_externas">Consultas Externas</li>
+						<li class="lista" id="m_fisica">Medicina Física e de Reabilitação</li>
+					</ul>
+				</div>
+			</section>
+			<!-- CENTRO -->
+			<section id="centro">
+				<div id="apresenta_especialidade"></div>
+				<div id="centro_especialidade">
+					<div id="corpo_clinico"></div>
+					<div id="acordos"></div>
+				</div>
+				<div id="noticias_especialidade"></div>
+			</section>
+		</article>
+		<!--RODAPE-->
+		<footer id="rodape">
+			<p>Fábio Santos| João Silva | Pedro Lisboa</p>
+			<p> <strong>Copyright. All Rights Reserved. 2014</strong> </p>
+			<h3>DEI-ESTG-IPLEIRIA</h3>
+		</footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="styles/default.css" rel="stylesheet" type="text/css" media="all" />
+    <script type='text/javascript' charset='utf-8' src='scripts/tinymce/js/tinymce/tinymce.min.js'></script>
+	<script type='text/javascript' charset='utf-8' src='scripts/jquery.js'></script>
+	<script type='text/javascript' charset='utf-8' src='scripts/popbox/popbox.js'></script>
+    <script type="text/javascript">
+    tinymce.init({
+        selector: "textarea",
+        width: '528px'
+    });
+    </script>
+	<script type='text/javascript' charset='utf-8'>
+		$(document).ready(function(){
+			$('.popbox').popbox();
+		});
+	</script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="search">
+            <form action="#" method="get" id="search_noticias">
+                <fieldset>
+                    <input type="image" src="images/search.png" id="searchsubmit" />
+                    <input type="text" name="textSearch" onfocus="if (this.value == 'Pesquisar...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Pesquisar...';}" value="Pesquisar..." id="searchinput" />
+                </fieldset>
+            </form>
+        </div>
+        <div id="logo">
+            <a href="index.html">
+                <img width="200px" src="images/santa_casa.png" alt="logo"></img>
+            </a>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html" accesskey="1" title="">Geral</a>
+                </li>
+                <li class="current_page_item"><a id="selection" href="saude.html" accesskey="2" title="">Saúde</a>
+                    <ul id="submenu">
+                        <li> <a href="especialidades.html"> Especialidades </a>
+                        </li>
+                        <li> <a href="corpo_clinico.html"> Corpo Clinico </a> 
+                        </li>
+                        <li> <a href="artigos.html"> Artigos/ Noticias  </a> 
+                        </li>
+                        <li><a href="marcacao_consultas.html"> Marcação de consultas </a> 
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="cuidadosgeriatricos.html" accesskey="3" title="">Cuidados Geriátricos</a>
+                </li>
+                <li><a href="creche.html" accesskey="4" title="">Creche</a>
+                </li>
+                <li><a href="irmandade.html" accesskey="5" title="">Irmandade</a>
+                </li>
+                <li><a href="contactos.html" accesskey="6" title="">Contactos</a>
+                </li>
+                <li>
+                    <div class="popbox">
+                        <a href="#" class='open'>Area pessoal</a>
+                        <div class='collapse'>
+                            <div class='box'>
+                                <div class='arrow'></div>
+                                <div class='arrow-border'></div>
+                                <form action="#" method="post">
+                                    <fieldset class="login">
+                                        <legend>Iniciar Sessão</legend>
+                                        <label for="username">Nome de Utilizador:</label>
+                                        <input type="text" id="username" />
+                                        <br/>
+                                        <label for="password">Palavra-Passe:</label>
+                                        <input type="password" id="password" />
+                                        <br/>
+                                        <input type="submit" id="submit" class="button" value="Iniciar Sessão" />
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="navegacao">
+            <a href="index.html">Início</a> >
+            <a href="saude.html">Saúde</a> >
+            <a href="artigos.html">Artigos/Noticias </a> > Criar Notícia
+        </div>
+        <div id="criacao_noticia">
+            <h1>Criar Noticia</h1>
+            <form action="#" class="textodetail">
+				<fieldset>
+					<label>Titulo:</label>
+					<br/>
+					<input type="text" name="titulo" style="width: 528px" />
+					<br/>
+					<label>Texto de resumo:</label>
+					<textarea rows="0" cols="0"></textarea>
+<br/>
+					<label>Texto da noticia:</label>
+					<textarea rows="0" cols="0"></textarea>
+
+					<label>Importar ficheiro/ imagem:</label>
+
+					<input name="" type="button" onclick="#" value="Importar" class="button" />
+					<br/>
+					<label>
+						Data Publicação (DD-MM-AAAA):
+					</label>
+					<br/>
+					<input type="text" name="DataPub" style="width: 528px" />
+					<br/>
+					<label>
+						Especialidade/ valência associada:
+					</label>
+					<br/>
+					<select style="width: 528px" name="Especialidade" id="Especialidade_id">
+						<option value="">
+							--- Seleccione ---
+						</option>
+						<option value="65">
+							Acupunctura
+						</option>
+						<option value="66">
+							Cardiologia
+						</option>
+						<option value="13">
+							Cirurgia Geral
+						</option>
+						<option value="20">
+							Cirurgia Plástica e Reconstrutiva
+						</option>
+						<option value="21">
+							Cirurgia Vascular
+						</option>
+						<option value="67">
+							Dermatologia
+						</option>
+						<option value="78">
+							Diabetes
+						</option>
+						<option value="11">
+							Dietista
+						</option>
+						<option value="8">
+							Endocrinologia
+						</option>
+						<option value="23">
+							Estomatologia
+						</option>
+						<option value="68">
+							Gastrenterologia
+						</option>
+						<option value="69">
+							Ginecologia
+						</option>
+						<option value="16">
+							Medicina Desportiva
+						</option>
+						<option value="24">
+							Medicina Física e de Reabilitação
+						</option>
+						<option value="26">
+							Mesoterapia
+						</option>
+						<option value="27">
+							Neurocirurgia
+						</option>
+						<option value="70">
+							Neurologia
+						</option>
+						<option value="71">
+							Oftalmologia adulto e infantil
+						</option>
+						<option value="72">
+							Ortopedia
+						</option>
+						<option value="73">
+							Otorrinolaringologia
+						</option>
+						<option value="74">
+							Pneumologia
+						</option>
+						<option value="10">
+							Psicologia Clínica
+						</option>
+						<option value="9">
+							Psiquiatria
+						</option>
+						<option value="75">
+							Reumatologia
+						</option>
+						<option value="76">
+							Urologia
+						</option>
+					</select>
+					<br/>
+					<input name="" type="button" onclick="#" value="Publicar Noticia" class="button" />
+					<input type="reset" value="Limpar campos" class="button" />
+				</fieldset>	
+            </form>
+        </div>
+
+    </div>
+
+    <div class="conteudo">
+        <label id="footer">
+            2013/2014 - <b>SANTA CASA DA MISERICÓRDIA DE LEIRIA</b> - APLICAÇÕES PARA A INTERNET - <a href="http://www.estg.ipleiria.pt/">ESTG IPLEIRIA</a>
+        </label>
+    </div>
+</body>
+
+</html>

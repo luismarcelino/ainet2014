@@ -1,0 +1,69 @@
+label { 
+	display: inline-block; 
+	width: 200px; 
+	text-align: right; 
+}​
+
+.form{
+	width: 720px;
+}
+
+.campo, .encoste{
+	font-weight: bold;
+	font-size: 14px;
+	text-align: right;
+	display: inline-block;
+	margin: 10px 5px 10px 5px;
+}
+
+.campo{
+	width: 210px;
+}
+
+.encoste{
+	width: 148px;
+}
+
+.little, .middle, .big, .smaller{
+	margin: 5px;
+}
+
+.little{
+	width: 150px;
+}
+
+.smaller{
+	width: 50px;
+}
+
+.middle{
+	width: 300px;
+}
+
+.big{
+	width: 450px;
+}
+
+#check_med, #radio{
+	width: 450px;
+	margin: 5px;
+	float: left;
+}
+
+#campo_check_med, #campo_radio{
+	float: left;
+}
+
+input[type="submit"] , input[type="reset"]{
+	margin: 5px;
+	padding: 5px;
+	height: 35px;
+	border: 1px solid grey;
+	background-color: white;
+	text-align: center;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover{
+	background-color: gray;
+	color: white;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Santa Casa da Misericórdia de Leiria</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link href="styles/estilo.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu_estilo.css" rel="stylesheet" type="text/css" />
+<link href="styles/contactos_form_estilo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+<div id="container"> 
+	<!-- CABECALHO -->
+	<header id="cabecalho"> <a href="index.html">
+		<div id="homepage"></div>
+		</a> 
+		<!-- MENU -->
+		<div id="grupo1">
+			<ul class="menu">
+				<li><a href="#pessoal">Pessoal</a></li>
+				<li><a href="#medico">Médico</a></li>
+				<li><a href="#gestao_de_utilizadores">Gestão de	Utilizadores</a></li>
+			</ul>
+		</div>
+		<!-- fim grupo1 -->
+		<div id="grupo2">
+			<ul class="menu">
+				<li><a><span>Saúde</span></a>
+					<ul>
+						<li><a href="lista-especialidades.html">Lista de Especialidades</a></li>
+						<li><a href="corpo-clinico.html">Corpo Clínico</a></li>
+						<li><a href="#artigos_noticias_clinicas">Artigos/Notícias Clínicas</a></li>
+						<li><a href="marcacao-consultas.html">Marcação de Consultas</a></li>
+						<li><a href="#confirmacao-de-marcacoes">Confirmação de Marcações</a></li>
+					</ul>
+				</li>
+				<li><a href="cuidados-geriatricos.html">Cuidados Geriátricos</a></li>
+				<li><a href="creche.html">Creche</a></li>
+				<li><a href="irmandade.html">Irmandade</a></li>
+				<li><a href="contactos.html">Contactos</a></li>
+			</ul>
+		</div>
+		<!-- fim grupo2 --> 
+	</header>
+	<!-- fim cabecalho -->
+	
+	<article id="conteudo">
+		<section id="formulario">
+			<div>
+				<h1 id="contactos_form_titulo">Formulário de contacto</h1>
+			</div>
+			
+			<!--PARTE 1-->
+			
+			<div id="contactos_partes">
+				<form>
+					<div class="contactos_form_parte" id="contactos_form_parte1">
+						<p><abbr title="Campo Obrigatório"><strong>Tipo de Contacto *</strong></abbr></p>
+						<select id="tipo_contacto" name="tipo_contacto" required>
+							<option value="">---------- Seleccione ----------</option>
+							<option value="contacto">Contacto</option>
+							<option value="emprego">Emprego</option>
+							<option value="insc_irmao">Inscrição como Irmão(ã)</option>
+							<option value="insc_utente">Inscrição de Utentes</option>
+							<option value="outro">Outro</option>
+							<option value="voluntariado">Voluntariado</option>
+						</select>
+						<p><abbr title="Campo Obrigatório"><strong>Nome *</strong></abbr></p>
+						<input type="text" name="nome" id="nome" required>
+						<p><abbr title="Campo Obrigatório"><strong>Sexo *</strong></abbr></p>
+						<input type="radio" name="genero" id="gen_masc" value="masculino" required/>
+						<label for="gen_masc">Masculino</label>
+						<input type="radio" name="genero" id="gen_fem" value="feminino"/>
+						<label for="gen_fem">Feminino</label>
+						<p><abbr title="Campo Obrigatório"><strong>Data de Nascimento *</strong></abbr></p>
+						<input type="date" name="data_nascimento" id="data_nascimento" required>
+					</div>
+					
+					<!--PARTE 2-->
+					
+					<div class="contactos_form_parte" id="contactos_form_parte2">
+						<h4>Morada</h4>
+						<p><abbr title="Campo Obrigatório"><strong>Rua *:</strong></abbr></p>
+						<input type="text" name="morada_rua" id="morada_rua" required>
+						<p><abbr title="Campo Obrigatório"><strong>Localidade *:</strong></abbr></p>
+						<input type="text" name="morada_localidade" id="morada_localidade" required>
+						<p><abbr title="Campo Obrigatório"><strong>Código Postal *:</strong></abbr></p>
+						<input type="text" name="morada_codpostal1" id="morada_codpostal1" required>
+						-
+						<input type="text" name="morada_codpostal2" id="morada_codpostal2" required>
+						<p><abbr title="Campo Obrigatório"><strong>País *:</strong></abbr></p>
+						<input type="text" name="morada_pais" id="morada_pais" required>
+					</div>
+					
+					<!--PARTE 3-->
+					
+					<div class="contactos_form_parte" id="contactos_form_parte3">
+						<p><abbr title="Campo Obrigatório"><strong>Tel./Telem *</strong></abbr></p>
+						<input type="tel" name="tel" id="tel" required>
+						<p><abbr title="Campo Obrigatório"><strong>E-mail *</strong></abbr></p>
+						<input type="email" name="email" id="email" required>
+						<p>Subsídio Sistema de Saúde</p>
+						<input type="text" name="subsidio" id="subsidio">
+						<p>Número de Beneficiário</p>
+						<input type="text" name="num_beneficiario" id="num_beneficiario">
+						<p>Forma preferencial de contacto</p>
+						<select id="forma_contacto" name="forma_contacto">
+							<option value="">---------- Seleccione ----------</option>
+							<option value="tel">Tel./Telem.</option>
+							<option value="email">E-mail</option>
+							<option value="ctt">CTT</option>
+						</select>
+					</div>
+					
+					<!--PARTE 4-->
+					
+					<div class="contactos_form_parte" id="contactos_form_parte4">
+						<p><abbr title="Campo Obrigatório"><strong>Mensagem *</strong></abbr></p>
+						<textarea id="mensagem" name="mensagem" rows="8" cols="40" required></textarea>
+						<div id="contactos_botao">
+							<input type="reset" value="Limpar" id="botao_limpar">
+							<input type="submit" value="Enviar" id="botao_enviar">
+						</div>
+					</div>
+				</form>
+			</div>
+			<footer>
+				<p><strong>Nota:</strong> Estes dados serão tratados com confidencialidade e nos termos da lei aplicável, sendo garantido aos utilizadores o direito ao acesso aos seus dados e respectiva rectificação. Os dados facultados serão tratados única e exclusivamente pela SCML e destinam-se a dar uma maior celeridade aos diferentes tipos de solicitações.</p>
+			</footer>
+		</section>
+	</article>
+	<!--RODAPE-->
+	<footer id="rodape">
+		<p>Fábio Santos| João Silva | Pedro Lisboa</p>
+		<p> <strong>Copyright. All Rights Reserved. 2014</strong> </p>
+		<h3>DEI-ESTG-IPLEIRIA</h3>
+	</footer>
+</div>
+</body>
+</html>

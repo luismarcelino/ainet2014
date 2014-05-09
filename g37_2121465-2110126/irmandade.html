@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ <!-- Author: Joaquim Ley Nr: 2121465 -->
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ 
+<head> 				<!--START of HEAD-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link rel="stylesheet" type="text/css" href="CSS/irmandade_style.css"/>
+	<title>Santa Casa da Misericordia de Leiria</title>
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script> 
+	<script src="js/visual_functions.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+	<!-- Scripts -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  headerAnimation();
+		})
+	</script>
+	<script>
+		function initialize()
+	{
+		var mapProp = {
+  		center:new google.maps.LatLng(039.740706,-8.80267),zoom:17,mapTypeId:google.maps.MapTypeId.ROADMAP
+  	};
+		var map=new google.maps.Map(document.getElementById("mapa"),mapProp);
+	}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+	<!-- END of Scripts -->
+	</head> 			<!--END of HEAD-->
+ 
+<body> 				<!-- Start of Body-->
+		<div id="login">
+
+		<div id="form">
+			<form>
+				utilizador: <input size="20" line-height="5" type="text" name="utilizador" >
+				password: <input size="20" type="password" name="password">
+			</form>
+		</div>
+		<a href="#">
+			<div id="btnLogin">
+				<img src="images\btn_login.png">
+			</div>
+		</a>
+	</div>
+	<div id="menuPrincipal">
+			<div id="logo">
+				<img src="images\above_menu_logo.png" width="100%" height="100%">
+				<div id="titulo1">SANTA CASA DA MISERICORDIA</div>
+			</div>
+			<div id="pesquisar">
+				<form><input type="text" name="pesquisar"></form>
+			</div>
+			<div id="menu">
+				<img src="images\menuBackground.png">
+				<a href="index.html">
+				<div id="home">
+					<img src="images\btn_home.png">
+				</div>
+				</a>
+				<a href="saude.html">
+				<div id="saude">
+					<img src="images\btn_saude.png">
+				</div>
+				</a>
+				<a href="creche.html">
+				<div id="creche">
+					<img src="images\btn_creche.png">
+				</div>
+				</a>
+				<a href="geriatricos.html">
+				<div id="geriatricos">
+					<img src="images\btn_geriatricos.png">
+				</div>
+				</a>
+				<a href="irmandade.html">
+				<div id="irmandade">
+					<img src="images\btn_irmandade.png">
+				</div>
+				</a>
+				<a href="contacto.html">
+				<div id="contactos1">
+					<img src="images\btn_contactos.png">
+				</div>
+				</a>
+			</div>
+			<div id="avisos"></div>
+		<div id="pagina">
+			<div id="menu1">
+				<div id="icon">
+					<img src="images\btn_irmandade_hover.png">
+				</div>
+				<div id="titulo">TETE</div>
+			</div>
+			<div id="conteudo">
+				<div id="texto1"></div>
+				<div id="imagem"></div>
+				<div id="texto2"></div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="logoBaixo">
+				<img src="images\footer_logo.png">
+			</div>
+			<div id="mapa">WHERE IS THE MAP??</div>
+			<div id="sobre1">sobre</div>
+			<div id="sobre2">sobre</div>
+			<div id="morada">morada</div>
+			<div id="contactos">contactos</div>
+		</div>	
+	</div>		
+</body> 			<!-- END of Body-->
+
+</html>				<!-- END of HTML file-->

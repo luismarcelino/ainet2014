@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<title> Santa Casa da Misericórdia</title>
+
+
+	<link rel="stylesheet" href="css/portal.css"/>
+	<link rel="stylesheet" href="css/entrada.css"/>
+	<link rel="stylesheet" href="css/gestaoUtilizadores.css"/>
+	<link rel="stylesheet" href="css/medico.css"/>
+	<link rel="stylesheet" href="css/contactos.css"/>
+	<link rel="stylesheet" href="css/noticia.css"/>
+	<link rel="stylesheet" href="css/geriatricos.css"/>
+	<link rel="stylesheet" href="css/creche.css"/>
+	<link rel="stylesheet" href="css/saude.css"/>
+	<link rel="stylesheet" href="css/pessoal.css"/>
+	<link rel="stylesheet" href="css/irmandade.css"/>
+
+	<!--<link rel="javascript" href="js/listaEspecialidades.js"/>-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="js/listaEspecialidades.js"></script>
+
+
+		<!--<style>
+			table form { margin-bottom: 0; }
+			form ul { margin-left: 0; list-style: none; }
+			.error { color: red; font-style: italic; }
+			body { padding-top: 20px; }
+		</style> -->
+	</head>
+
+	<body>		
+		
+
+		<div id="topo">
+			<a href="inicio.html"><img src="images/logo.png" alt="logotipo" id="logotipo"/></a>
+			
+			<div id="login">
+				<form method="post" action="entradaareasaude.html" accept-charset="UTF-8">
+					<!-- check for login errors flash var 
+				-->
+
+				<!-- username field -->
+				<div id="username"><label for="name">Nome:</label>					
+					<input name="name" type="text" id="name"/></div>
+					<br/>
+
+					<!-- password field -->
+
+					<div id="password"><label for="password">Password:</label>					
+						<input name="password" type="password" value="" id="pass"/></div>
+
+						<!-- submit button -->
+						<br/>
+						<div><input id="botaoLogin" type="submit" value="Login"/></div>
+					</div>
+				</form>		
+			</div>
+		</div>
+
+		<div id="barraNavegacao">
+
+			<ul>
+				<li><a href="inicio.html">In&iacute;cio</a></li>
+				<li>Saúde
+					<ul>
+						<li><a href="listaespecialidades.html">Lista Especialidades</a></li>
+						<li><a href="corpoClinico.html">Corpo Cl&iacute;nico</a></li>
+						<li><a href="noticiassaude.html">Artigos/Not&iacute;cias Cl&iacute;nicas</a></li>
+						<li><a href="marcacao.html">Marca&ccedil;&atilde;o de Consultas</a></li>
+						<li><a href="confirmacaomarcacao.html">Confirma&ccedil;&atilde;o de Marca&ccedil;&otilde;es</a></li>
+					</ul>
+				</li>
+
+				<li><a href="geriatricos.html">Cuidados Geri&aacute;tricos</a>				<ul>
+					<li><a href="residencial.html">Residencial</a></li>
+					<li><a href="lar.html">Lar</a></li>
+					<li><a href="internamento.html">Internamento</a></li>
+					<li><a href="apoiodomiciliario.html">Apoio Domicili&aacute;rio</a></li>
+				</ul>
+			</li>
+
+			<li><a href="creche.html">Creche</a>				<ul>
+				<li><a href="contactocreche.html">Contacte-nos</a></li>
+				<li><a href="noticiascreche.html">Not&iacute;cias Creche</a></li>
+			</ul>
+		</li>
+
+		<li>Irmandade
+			<ul>
+				<li><a href="irmandade.html">Sobre a Irmandade</a></li>
+				<li><a href="noticiasirmandade.html">Not&iacute;cias Irmandade</a></li>
+			</ul>
+		</li>
+
+		<li><a href="contactos.html">Contactos</a></li>
+
+		<li>Pessoal
+			<ul>
+				<li><a href="detalhes.html">Pessoal</a></li>
+				<li> <a href="historico.html">Hist&oacute;rico Actos M&eacute;dicos</a></li>
+			</ul>
+		</li>
+
+		<li><a href="medico.html">M&eacute;dico</a></li>
+
+		<li><a href="lista.html">Gest&atilde;o de Utilizadores</a></li>
+
+	</ul>	
+</div>
+
+<div class="container">
+	<!---->
+
+	<div id="espaco">
+		<h3>Apoio Domiciliário</h3>
+
+		<div class="textoApoioDomiciliario">
+
+
+			<p>
+				Tendo como objectivo a prestação de cuidados ao nível da assistência de utentes impossibilitados de se deslocarem aos Centros de Dia, Lares e outras instituições sociais, a Santa Casa da Misericórdia de Leiria iniciou, em Julho de 2004, o Serviço de Apoio Domiciliário.<br/>
+
+				Este serviço prepara, distribui e administra diariamente refeições, assegurando a prestação de cuidados de higiene pessoal e de conforto habitacional, o tratamento de roupas e a administração de medicamentos. <br/>
+
+				O Serviço de Apoio Domiciliário afigura-se, assim, para quem dele necessita (utentes e respectivas famílias) como uma resposta válida, salientando-se as preocupações dos nossos colaboradores no que toca à compreensão das circunstâncias biopsicossociais de cada indivíduo.<br/>
+
+				Refira-se que esta valência não pretende substituir os laços familiares e de vizinhança, mas antes desenvolver uma acção complementar, privilegiando a vida em família e na comunidade como a forma mais natural e a que melhor satisfaz as necessidades dos indivíduos em geral e da população idosa em particular.<br/>
+			</p>
+		</div>
+
+		<div class="imagemApoioDomiciliario">
+			<img src="images/apoioDomiciliarioImagem.jpg" alt="ApoioDomiciliario" id="imagemApoioDomiciliario" />
+		</div>
+
+		<h3> Notícias Apoio Domiciliário</h3>
+
+		<div class="noticia">
+			<p class="tituloNoticia">Titulo Noticia 1<p>
+				<p class="resumoNoticia">Breve Resumo 1<p>
+					<br>
+					<p class="corpoNoticia">Corpo 1<p>
+						<br>
+						<p class="autordata">Data Autor 1<p>
+							<p>...................................................................................................................................................</p>
+						</div>
+
+						<br/>
+						<div class="noticia">
+							<p class="tituloNoticia">Titulo Noticia 2<p>
+								<p class="resumoNoticia">Breve Resumo 2<p>
+									<br>
+									<p class="corpoNoticia">Corpo 2<p>
+										<br>
+										<p class="autordata">Data Autor 2<p>
+											<p>...................................................................................................................................................</p>
+										</div>
+
+										<br/>
+										<div class="noticia">
+											<p class="tituloNoticia">Titulo Noticia 2<p>
+												<p class="resumoNoticia">Breve Resumo 2<p>
+													<br>
+													<p class="corpoNoticia">Corpo 2<p>
+														<br>
+														<p class="autordata">Data Autor 2<p>
+															<p>...................................................................................................................................................</p>
+														</div>
+													</div>
+													
+												</div>
+
+												<div id="rodape">
+													Santa Casa da Misericórdia de Leiria 2014
+												</div>
+											</body>
+
+											</html>

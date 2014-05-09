@@ -1,0 +1,35 @@
+form{
+    margin-left: 320px;
+     margin-right: 70px;
+}
+
+form textarea{
+    width: 950px;
+    max-width: 950px;
+    height: 400px;
+}
+
+h1{
+        margin-left: 320px;
+        color: #3E8CD2;
+        text-shadow: 0 -1px 0 rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.6);
+
+}
+
+#publicar label{
+    color: #000000;
+}
+
+#span_publicar{
+
+    text-align: right;
+}
+
+#publicar input.button{
+
+    background-color: #3E8CD2;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #FFFFFF;
+    padding-top: 5px;
+    padding-bottom:5px}

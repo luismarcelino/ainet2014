@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Santa Casa da Mesericódia</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
+<script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type='text/javascript' src='js/menu_jquery.js'></script>
+<script type="text/javascript">
+	var step=1;
+			function slideit()
+			{
+				$('img.slide').attr('src','css/img/santacasa'+step+'.jpg');
+				if(step<5)
+					step++;
+				else
+					step=3;
+				setTimeout("slideit()",3000);
+			}
+			slideit();
+</script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div id="header">
+			<div class="left main">
+				<div class="container">
+					<div class="contents">
+						<div id="logo">
+							<img src="css/img/santa_casa100.PNG" alt="logo" />
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+			<div class="center main">
+				<div class="container">
+					<div class="contents">
+						<div id="slide">
+							<p><img src="css/img/santacasa5.jpg" class="slide" width="200" height="120" /></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="content-wrapper-">		
+			<div id="sidebar-left-"> 
+				<div id="cssmenu">
+					<ul>
+					   <li><a id="entrada" href='index.html'><span>Entrada</span></a></li>
+					   <li><a id="saude" href='saude.html'><span>Saude</span></a></li>
+					   <li class='active'><a id="cuidadoGer" href='cuidados.html'><span>Cuidados Geriátricos</span></a></li>
+					   <li><a id="contactos" href='contactos.html'><span>Contactos</span></a></li>
+					   <li><a id="pessoal" href='pessoal.html'><span>Pessoal</span></a></li>
+					   <li><a id="medico" href='medicos.html'><span>Médicos</span></a></li>
+					</ul>	
+				</div>
+			</div>
+			<div id="content-">
+				<div class="painel clearfix"  >			
+					<div id="janelinha" class="grid">
+						<div id="hpage_latest">
+							<div id="hpage_latest ">
+								<h1>Cuidados Geriátricos</h1>
+								<h2>Irmandade</h2>
+								<img src="css/img/santacasa6.jpg" width="250" height="150" alt="" />
+								<p>O antigo hospital de Leiria localizado no centro da cidade, desactivado há largos anos, sofreu extensas obras de remodelação e modernização.
+								Tendo reiniciado funções em Março passado com a abertura da unidade de cuidados continuados,integrada na rede nacional de cuidados continuados.</p>
+								<p class="readmore"><a href="#">Continuar a ler &raquo;</a></p>
+
+								<h2>Creche</h2>
+								<img src="css/img/santacasa7.jpg" width="250" height="150" alt="" />
+								<p>Apostando em elevados padrões de qualidade, quer no que toca à execução da obra física, quer no domínio do equipamento instalado e dos recursos humanos, pretende-se que a creche se assuma em Leiria como um espaço de referência qualitativa na área pueril, contando com uma estrutura de recursos humanos empenhada e com experiência consolidada no domínio infantil.</p>
+								<p class="readmore"><a href="#">Continuar a ler &raquo;</a></p>
+
+								<h2>Lar</h2>
+								<img src="css/img/santacasa8.jpg" width="250" height="150" alt="" />
+								<p>O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados com espaços ajardinados envolventes.</p>
+								<p>O edifício e seu equipamento são considerados do mais moderno e funcional que se tem feito até hoje no nosso país.</p>
+								<p class="readmore"><a href="#">Continuar a ler &raquo;</a></p>
+
+								<h2>Residêncial</h2>
+								<img src="css/img/santacasa9.jpg" width="250" height="150" alt="" />
+								<p>A Residencial XXI é o local ideal para quem pretende uma opção de repouso de cariz familiar,</p>
+								<p>onde a personalidade de cada utente determina o atendimento dos diversos profissionais desta unidade.</p>
+								<p class="readmore"><a href="#">Continuar a ler &raquo;</a></p>
+								<br class="clear" />
+							</div>
+						</div>
+					</div>		
+					<div class="grid_1">&nbsp;</div>		
+				</div> <!-- fechar container_12 //!-->
+			</div>
+			<div id="sidebar-right-">
+				<div id="cssmenu">
+					<ul>
+						<li><a id="irmandade" href='cuidados/irmandade.html'><span>Irmandade</span></a></li>
+						<li><a id="creche" href='cuidados/creche.html'><span>Creche</span></a></li>
+						<li><a id="lar" href='cuidados/lar.html'><span>Lar</span></a></li>
+						<li class="last"><a id="residencia" href='cuidados/residencia.html'><span>Residência</span></a></li>
+					</ul>	
+				</div>
+
+			</div>
+		</div>
+		<div class="footer" id="footer">
+			<p>Santa Casa da Misericórdia Leiria © Bruno Sousa & Marc Bernardo - AINET / Engenharia Informática - ESTG IPLeiria 2013/2014</p>
+		</div>
+		<!-- end #footer -->
+	</div>
+</body>
+</html>

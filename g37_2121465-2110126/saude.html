@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ <!-- Author: Joaquim Ley Nr: 2121465 -->
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ 
+<head> 				<!--START of HEAD-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<link rel="stylesheet" type="text/css" href="CSS/especialidades_style.css"/>
+	<title>Santa Casa da Misericordia de Leiria</title>
+	<!-- Load jQuery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script> 
+	<script src="js/visual_functions.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDY0kkJiTPVd2U7aTOAwhc9ySH6oHxOIYM&sensor=false"></script>
+	<!-- Scripts -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+		  headerAnimation();
+		})
+	</script>
+	<script>
+		function initialize()
+	{
+		var mapProp = {
+  		center:new google.maps.LatLng(039.740706,-8.80267),zoom:17,mapTypeId:google.maps.MapTypeId.ROADMAP
+  	};
+		var map=new google.maps.Map(document.getElementById("mapa"),mapProp);
+	}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+	<!-- END of Scripts -->
+	</head> 			<!--END of HEAD-->
+ 
+<body> 				<!-- Start of Body-->
+		<div id="login">
+
+		<div id="form">
+			<form>
+				utilizador: <input size="20" line-height="5" type="text" name="utilizador" >
+				password: <input size="20" type="password" name="password">
+			</form>
+		</div>
+		<a href="#">
+			<div id="btnLogin">
+				<img src="images\btn_login.png">
+			</div>
+		</a>
+	</div>
+
+	<!-- Menu -->
+	<div id="menuPrincipal">
+			<div id="logo">
+				<img src="images\above_menu_logo.png">
+				<div id="titulo">SANTA CASA DA MISERICORDIA</div>
+			</div>
+			<div id="pesquisar" class="pesquisar">
+				<input type=search results=5 name=Pesquisar value="Pesquisar" onclick="this.value='';">
+			</div>
+	<!-- Menu Wrapper -->
+	<div id="menuWrapper">
+		<div id="menu">	<!-- Menu -->
+			<a href="index.html">
+				<div id="home"></div>
+			</a>
+			<a href="saude.html">
+				<div id="saude"></div>
+			</a>
+			<a href="creche.html">
+				<div id="creche"></div>
+			</a>
+			<a href="geriatricos.html">
+				<div id="geriatricos"></div>
+			</a>
+			<a href="irmandade.html">
+				<div id="irmandade"></div>
+			</a>
+			<a href="contacto.html">
+				<div id="contactos"></div>
+			</a>
+		</div>
+		<div id="subMenu">
+		</div>
+	</div>
+			
+		<div id="pagina">
+			<div id="menu1">
+				<div id="icon">
+					<img src="images\btn_saude_hover.png">
+				</div>
+				<div id="titulo"></div>
+			</div>
+			<div id="conteudo">
+				<div id="texto1"><p>Consultas de especialidade:</p><p>-Cirurgia plástica e reconstrutiva apoiada por<br/>reputados especialistas</p><p>-Cirurgia Geral</p><p>-Cirurgia Vascular</p>
+				<p>-Ortopedia</p><p>-Oftalmologia</p><p>-Urologia</p><p>-Neurologia</p><p>-Neurocirurgia</p><p>-Nutrição</p><p>-Psicologia</p><p>-Psiquiatria</p><p>-Acupunctura</p><p>-Mesoterapia</p><p>-Pneumologia</p><p>-Reumatologia</p></div>
+				<div id="imagem"></div>
+				<div id="texto2"></div>
+			</div>
+		</div>
+		
+		<!-- FOOTER -->
+	<div id="footerWraper">
+		<div id="footer">
+	   		<div id="logoBaixo">
+	    		<img src="images\footer_logo.png">
+	   		</div>
+	   		<div id="mapa">
+	   			
+	   		</div>
+	   		<div id="siteMap">
+	   			<p><a href="index.html">Home</a></p>
+	   			<p><a href="saude.html">Saude</a></p>
+	   			<p><a href="creche.html">Creche</a></p>
+	   			<p><a href="geriatricos.html">Geriatricos</a></p>
+	   			<p><a href="irmandade.html">Irmandade</a></p>
+			</div>
+
+	   		<div id="moradasFooter">
+	   			<p>Hospital D.Manuel de Aguiar</p>
+	   			<p>Residencial Assistida XXI</p>
+	   			<p>Lar Nª Srª Encarnação</p>
+	   			<p>Creche Casa Sanches</p>
+			</div>
+
+	   		<div id="morada">
+	   			<p>Rua Trindade Coelho,8</p>
+	   			<p>Apartado 1109</p>
+	   			<p>2401-801 Leiria</p>
+			</div>
+	   
+	   <div id="contactosFooter">
+			<p>Tel.:244 106 202</p>
+			<p>Fax.:244 106 298</p>
+			<p>geral@misericordialeiria.pt</p>
+		</div>
+	</div>			<!-- END of FOOTER -->
+	</div>		
+</body> 			<!-- END of Body-->
+
+</html>				<!-- END of HTML file-->

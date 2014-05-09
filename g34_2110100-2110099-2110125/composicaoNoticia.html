@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Santa Casa da Misericórdia de Leiria - Início </title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+
+  <script type="text/javascript" src="js/tinymce/tinymce.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/utils.js"></script>
+  <script type="text/javascript">
+    tinymce.init({
+      selector : "textarea",
+      plugins : ["advlist autolink lists link image charmap print preview anchor", "searchreplace visualblocks code fullscreen", "insertdatetime media table contextmenu paste"],
+      toolbar : "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+    });
+
+    $(document).ready(function() {
+      $(".mce-panel").each(function() {
+        $(this).css("background-image", "linear-gradient(to bottom, #fdfdfd, #177B96);");
+      });
+
+      $("#fieldEspecialidade").hide();
+
+      $("#tipoComposicaoNoticia").click(function(){
+
+        var type = $('input[name=typePost]:radio:checked').val();
+
+        if(type=="news"){
+          $("#fieldValenciaAssociada").show();
+          $("#fieldEspecialidade").hide();
+        }else{
+          $("#fieldValenciaAssociada").hide();
+          $("#fieldEspecialidade").show();
+        }
+      });
+    });
+
+  </script>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="full-width">
+      <div id="logo">
+        <div class="center">
+          <img src="./img/logo.png" alt="" />
+          <div id="login-box">
+            <form action="">
+
+              <fieldset>
+
+                <div id="login-box-username">
+                  <label for="username">Username: </label>
+                  <input type="text" name="username" id="username">
+                </div>
+                <div id="login-box-password">
+                  <label for="password">Password: </label>
+                  <input type="password" name="password" id="password">
+                </div>
+                <div id="login-box-button">
+                  <button>
+                    Entrar
+                  </button>
+                </div>
+
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="center">
+          <ul>
+            <li class="activeNav">
+              <a href="index.html">Início</a>
+            </li>
+            <li>
+              <a href="saude.html">Saúde</a>
+            </li>
+            <li>
+              <a href="cuidadosgeriatricos.html">Cuidados Geriátricos</a>
+            </li>
+            <li>
+              <a href="creche.html">Creche</a>
+            </li>
+            <li>
+              <a href="irmandade.html">Irmandade</a>
+            </li>
+            <li>
+              <a href="contactos.html">Contactos</a>
+            </li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+    <div id="welcome_message">
+      <p>
+        Bem Vindo Visitante!
+      </p>
+      <p id="clickToEnter">
+        Clique para autenticar
+      </p>
+    </div>
+    <div id="search_box">
+      <input type="text" id="search_field" name="search_field" placeholder="Search..." />
+      <input type="button" id="search_button" value="Search" />
+    </div>
+  </header>
+  <div id="main">
+    <div class="container">
+      <div class="wrapper">
+
+        <section>
+          <h2 class="category no-margin-bot">Composição de noticia/artigo</h2>
+          <form method="post" action="somepage" id="formComposicaoNoticia">
+            <div>
+              <label for="title" class="bold">Titulo</label>
+              <input name="title" type="text" id="title">
+            </div>
+
+            <fieldset id="tipoComposicaoNoticia">
+              <legend class="bold">Tipo</legend>
+              
+              <input type = "radio"
+              name = "typePost"
+              id = "typeNews"
+              value = "news"
+              checked= "checked"/>
+              <label for="typeNews" class="bold">Noticia</label>
+
+              
+              <input type = "radio"
+              name = "typePost"
+              id = "typeArticle"
+              value = "article"/>
+              <label for="typeArticle" class="bold">Artigo</label>
+            </fieldset>
+
+            <fieldset id="fieldValenciaAssociada">
+
+              <legend class="bold">Valência associada</legend>
+              <input type = "radio"
+              name = "postType"
+              id = "selectResidencial"
+              value = "residencial"/>
+              <label for = "selectResidencial" class="bold">Residencial</label>
+
+              <input type = "radio"
+              name = "postType"
+              id = "selectLar"
+              value = "lar" />
+              <label for = "selectLar" class="bold">Lar</label>
+
+              <input type = "radio"
+              name = "postType"
+              id = "selectInternamento"
+              value = "internamento" />
+              <label for = "selectInternamento" class="bold">Internamento</label>
+
+              <input type = "radio"
+              name = "postType"
+              id = "selectApoio"
+              value = "apoio_domiciliario" />
+              <label for = "selectApoio" class="bold">Apoio domiciliário</label>
+
+            </fieldset>
+
+            <fieldset id="fieldEspecialidade">
+              <legend class="bold">Especialidade</legend>
+              <select name="comboExpertise">
+                <option value="ginecologia">Ginecologia</option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="neurologia">Neurologia</option>
+                <option value="audiologia">Audiologia</option>
+                <option value="radiologia">Radiologia</option>
+              </select>
+            </fieldset>
+
+            <div class="textAreaComposicaoNoticia bold">
+              <label for="summary">Resumo</label>
+              <textarea name="summary" id="summary" style="width:100%"></textarea>
+            </div>
+
+            <div class="textAreaComposicaoNoticia bold">
+              <label for="conteudo">Conteúdo</label>
+              <textarea name="content" id="conteudo" style="width:100%"></textarea> 
+            </div>            
+
+
+            <button id="submitComposicaoNoticia">
+              Submeter
+            </button>
+          </form>
+
+        </section>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="wrapper">
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

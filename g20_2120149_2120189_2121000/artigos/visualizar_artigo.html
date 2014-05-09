@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="../scm-stylesheets/reset.css" type="text/css" />
+    <link rel="stylesheet" href="../scm-stylesheets/layout-style.css" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="../editor_texto/tinymce/tinymce.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#bottom').load('/bottom_content.html');
+        });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function(e) {
+                    $('#imagemCarregada')
+                        .attr('src', e.target.result)
+                        .width(350)
+                        .height(200);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        tinymce.init({
+            menubar: false,
+            selector: "mensagem",
+            resize: false,
+            height: 245,
+            plugins: [
+                "advlist autolink lists link image charmap print preview anchor",
+                "searchreplace visualblocks code fullscreen",
+                "insertdatetime media table contextmenu paste"
+            ],
+            toolbar: "insertfile undo redo | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image"
+        });
+    </script>
+</head>
+
+<body>
+    <div id="top">
+        <div id="logo">
+            <div class="wrapper">
+                <div class="imageholder">
+                    <a href="/index.html">
+                        <img src="/scm-imagens/santa.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="firstnavbar" class="">
+            <div class="wrapper">
+                <div id="imagesholder">
+                    <!-- 2 divs por imagem -->
+                    <a href="/saude/areas-clinicas.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Saúde</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/cuidados/cuidados.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Cuidados Geriátricos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/creche/creche.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Creche</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/irmandade/irmandade.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Irmandade</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/contactos.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Contactos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/areapessoal/areapessoal.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Área Pessoal</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/admin/admin.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Administração</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="secondnavbar" class="chromedframe b_border">
+            <div class="navbar wrapper">
+                <ul id="nav">
+                </ul>
+                <div id="searchholder">
+                    <form class="navbar-search" action="">
+                        <input class="search-box" type="text" placeholder="Procurar" name="search" />
+                        <button class="search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="middle" class="wrapper">
+        <div class="titulo">
+            <h1>Detalhes do Artigo</h1>
+        </div>
+        <div>
+            <div id="container" class="has_shadows b_corners t_corners has_borders">
+                <form>
+                    <div class="content">
+                        <div class="content-row cf">
+                            <div class="content-left perfil">
+                                <img class="portrait" src=" " alt=" " />
+                            </div>
+                            <div class="divider">
+                            </div>
+                            <div class="content-right perfil">
+                                <div class="content-left">
+                                    <fieldset>
+                                        <legend>
+                                            <span>Nome:</span>
+                                        </legend>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>
+                                            <span>Especialidade:</span>
+                                        </legend>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>
+                                            <span>Email:</span>
+                                        </legend>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>
+                                            <span>Valencia Associada:</span>
+                                        </legend>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-row">
+                            <div class="content">
+                                <div class="content">
+                                    <div class="content">
+                                        <div class="content-row">
+                                            <div class="content">
+                                                <div class="content-row cf">
+                                                    <div class="content-left">
+                                                        <fieldset>
+                                                            <legend>
+                                                                <span>Titulo:</span>
+                                                            </legend>
+                                                        </fieldset>
+                                                    </div>
+                                                </div>
+                                                <div class="content-row cf">
+                                                    <div class="content-other">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="content-row">
+                                            <div class="content-left">
+                                            </div>
+
+                                            <div class="content-right">
+                                                <div class="content-right">
+                                                    <fieldset>
+                                                        <legend>
+                                                            <span>Data:</span>
+                                                        </legend>
+                                                    </fieldset>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+#artBody {
+	position: relative;
+	border: 4px solid grey;
+	padding: 10px;
+}
+
+#artBody img {
+	width: 290px;
+	height: 187px;
+	float: left;
+	margin-right: 10px;
+}
+#artBody p {
+	margin: 0px 0px 10px 0px;
+}
+
+#artTitle .headline {
+	display: inline-block;
+	border: 1px solid grey;
+	padding: 5px;
+}
+
+#artBody .byline {
+	font-style: italic;
+	float: right;
+	color: grey;
+}

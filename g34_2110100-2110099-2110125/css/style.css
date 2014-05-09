@@ -1,0 +1,856 @@
+article, aside, body, div, footer, h1, h2, h3, h4, h5, h6, header, nav, ul{
+
+	margin: 0;
+
+}
+
+body { 
+	background:#212222; 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:100%; 
+	color:#242424;
+
+}
+
+p{
+	text-align: justify;
+}
+
+.full-width{
+	width: 100%;
+}
+
+.no-margin-bot{
+	margin-bottom: 0;
+}
+
+
+.center{
+	width:80%;
+	margin: auto;
+}
+
+h2 a{
+	color: #000;
+	text-decoration: none;
+}
+
+.floatLeft{
+	float:left;
+}
+
+/*LOGIN*/
+
+div#login-box{
+	font-size: 70%;
+	position:absolute;
+	right:10%;
+	top:95px;
+}
+
+div#login-box form fieldset{
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+
+div#login-box input[type="text"]{
+	width: 150px;
+	height: 15px;
+}
+
+div#login-box-password{
+	margin-top: 2px;
+	float: right;
+}
+
+div#login-box-button{
+	margin-left: 60px;
+}
+
+div#login-box-button button {
+	margin-top: 2px;
+	background: #a5b8c6;
+	cursor: pointer;
+}
+div#login-box-button button:hover {
+	background: #adbfcb;
+	border-color: #8996a0 #798791 #6c7a85;
+	text-shadow: 0 1px 0 #ced9e0;
+	box-shadow: 0 1px 1px #d3d3d3, inset 0 1px 0 #c2cfd8; 
+}
+
+div#welcome_message{
+	font-size: 70%;
+	position: absolute;
+	right:10%;
+	top: 175px;
+	font-weight: bold;
+	cursor: pointer;
+
+}
+
+div#welcome_message p{
+	line-height: 0.6em;
+	color:#fff;
+}
+
+/*SEARCH BOX*/
+
+div#search_box{
+	position: absolute;
+	top:10px;
+	right:10%;
+}
+
+div#search_box *{
+	padding-left: 8px;
+	border-style: inherit;
+	height:20px;
+
+}
+
+div#search_box :focus{
+	outline: none;
+
+
+}
+div#search_box #search_field { 
+	float:left;
+	margin-right: 0px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+div#search_box #search_button { 
+	/* image replacement */
+	text-indent: -99999px; 
+	width: 30px; 
+	height: 22px; 
+	display: block;
+	background: #EDF9FF url("../img/magnifier.png") no-repeat;
+	float:right;
+	border-left: 1px dotted rgb(231, 228, 228);
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	cursor: pointer; 
+
+
+}
+
+
+/*SLIDER*/
+ul.images{
+	padding: 0;
+}
+ul.images li{
+	list-style-type: none;
+}
+
+ul.images li img{
+	width:100%;
+	margin: 0 auto;
+	display: block;
+	height: 250px;
+}
+ul.images li div{
+	position: absolute;
+	z-index: 100;
+	top:50px;
+	left:1%;
+	background-color: rgba(255, 255, 255, 0.5);
+	max-width: 80%;
+	max-height: 220px;
+	overflow-y: auto;
+
+
+}
+
+
+ul.images li div p{
+	margin: 0.6em;
+}
+ul.trigger{
+	text-align: center;
+	margin: 5px;
+}
+ul.trigger li{
+	display: inline-block;
+	margin: 0 2px;
+	cursor: pointer;
+}
+
+
+/*NOTICIAS*/
+
+
+
+.newsFooter{
+	color: #6E6D6D;
+	margin-top: 2px;
+	font-size: 0.6em;
+	width: 100%;
+}
+
+
+
+.newsImage img {
+	width: 35%;
+	float:left;
+	margin-right: 2%;
+}
+
+
+.newsArticle{
+	width:100%;
+	float:left;
+	margin-top: 5px;
+	border-bottom: 1px dotted black;
+}
+
+.relatedArticle{
+	width: 31%;
+	float: left;
+	border-right: 1px dotted black;
+	margin: 0 auto;
+	padding-right: 5px;
+	
+
+}
+
+.relatedArticle + .relatedArticle{
+	padding-left: 1.8%;
+}
+
+.relatedArticle + .relatedArticle + .relatedArticle{
+	border-right: 0px ;
+}
+
+p#summary{
+	margin-top: 0;
+	font-weight: bold;
+}
+
+
+/*Composição Noticia*/
+
+form > *{
+	margin-top: 5px;
+}
+
+
+
+form fieldset{
+	border-color: #177B96;
+}
+
+form#formComposicaoNoticia .textAreaComposicaoNoticia{
+	margin: 20px auto;
+}
+
+form#formComposicaoNoticia fieldset label{
+	margin-right: 15px;
+}
+
+form#formComposicaoNoticia input[type=text]{
+	width: 50%;
+}
+
+/*marcacaoConsulta*/
+
+form div img{
+	position: relative;
+	top:6px;
+}
+
+form label{
+	color:#177B96;
+}
+
+div.formularioLabel{
+	width:30%;
+	float:left;
+	text-align: right;
+	position: relative;
+	top:3px;
+}
+
+div.formularioInput{
+	width:65%;
+	float:left;
+	margin-left: 5px;
+}
+
+div.formularioField{
+	height:30px;
+	margin-bottom: 5px;
+}
+
+div.formularioSpecial{
+	top: 8px;
+}
+
+form div.margin30{
+	margin-left: 30%;
+	width: 65%;
+}
+
+div.formularioInput textarea{
+	max-height: 75px;
+	max-width: 730px;
+}
+
+form#formComposicaoNoticia *{
+	margin:5px 0;
+}
+
+
+/*thumbnail_image*/
+div.thumbnailImage img{
+	width: 35%;
+	float: left;
+	margin: 16px 8px 0 0;
+}
+
+
+
+
+
+/*nao sei*/
+
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 80%;
+	font-size:.8125em;
+
+}
+
+
+
+header{
+	height:215px;
+	background-image:url('../img/header_back.jpg');
+	background-size: cover;
+}
+
+
+#content {
+	float: left;
+
+}
+.category{
+	color: white;
+	background-color: #177B96;
+	text-align: center;
+}
+#content div.noticia {
+	width: 50%;
+	float: left;
+}
+
+#content div.noticia h2{
+	margin-bottom: 5px;
+}
+
+aside{
+	float: left;
+}
+
+.wrapper { 
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.inside{ padding: 25px 5px 30px; }
+
+
+a {
+	
+	color: #F27F02; 
+	outline:none;
+}
+#listaEspecialidades li a{
+	text-decoration: none;
+	color:rgba(12, 37, 48, 1); 
+	display: inherit;
+}
+
+#listaEspecialidades li:hover a{
+	color:#f27f02; 
+	text-decoration:none;
+}
+
+article h1{
+	font-size: 1.5em;
+	margin-top: 15px;
+}
+
+.wrapper h1, .inside h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size:18px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+h3 {
+	font-size:1em;
+	margin-bottom:6px;
+}
+h3 a { color:#242424; }
+h3 a:hover {
+	text-shadow: 1px 1px 1px #888; 
+}
+#content article{
+	padding-bottom: 15px;
+	padding-right: 15px;
+}
+#main{
+	border-top:5px solid #eaeaea;
+	background:#fff;
+	width:100%;
+}
+
+nav {
+	background: url('../img/slash.png') repeat scroll 0% 0% rgb(23, 123, 150);
+	height: 40px;
+	
+}
+
+
+
+nav ul li {
+	line-height: 40px;
+	padding: 0px 16px;
+	font-size: 14px;
+	display: inline-block;
+	
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li a:hover{
+	color: black;
+}
+.activeNav {
+	background: url('../img/active.png') no-repeat scroll 50% 100% transparent;
+}
+nav.subMenu{
+	background: rgb(23, 123, 150);
+	border-radius: 15px;
+	margin-top: 20px;
+	text-align: center;	
+}
+
+
+#logo{
+	height: 175px;
+}
+
+div.article {;
+	width: 31%;
+	float: left;
+	margin: 0 5px;
+}
+
+
+footer{
+	padding: 20px 0 22px 0;
+	border-top: 5px solid #eee;
+	color:#fff;
+	height: 30px;
+}
+
+#menuSaude div{
+	display: inline-block;
+	width: 24%;
+	text-align: center;
+	cursor: pointer;
+} 
+
+
+
+#main .container .wrapper #tituloEspecialdade div ul li:hover
+{
+	background-color: rgba(42, 114, 132, 1);
+	text-shadow: 2px 1px 1px rgba(52, 49, 111, 1);
+	color: black;
+}
+
+#main .container .wrapper #tituloEspecialdade div ul li.selected{
+	background-color: rgba(42, 114, 132, 1);
+	text-shadow: 2px 1px 1px rgba(52, 49, 111, 1);
+	color: black;
+}
+
+#main .container .wrapper #tituloEspecialdade div ul li.selected{
+	background-color: rgba(42, 114, 132, 1);
+	text-shadow: 2px 1px 1px rgba(52, 49, 111, 1);
+	color: black;
+}
+
+#main .container .wrapper #tituloEspecialdade div ul li.selected a{
+	color: white;
+	
+}
+
+#main .container .wrapper #tituloEspecialdade div ul li 
+{
+	line-height: 40px;
+	border-radius: 8px;
+	background-color: #ADB5B7;
+	margin-bottom: 6px;
+	padding-left: 5px;
+
+}
+
+#main .container .wrapper #tituloEspecialdade div ul li 
+{
+	list-style: none;
+}
+
+#listaEspecialidades
+{
+	float: left;
+	width: 25%;
+}
+
+#descricaoEspecialidade
+{
+	float: right;
+	background-color: #ADB5B7;
+	border-radius: 13px;
+	width: 72%;
+}
+
+#descricaoEspecialidade h3
+{
+	text-align: center;
+}
+
+#tabs {
+	list-style-type: none;
+	margin: 30px 0 0 0;
+	padding: 0 0 0.3em 0;
+}
+
+#tabs li {
+	display: inline;
+}
+
+#tabs li a {
+	color: #42454a;
+	background-color: #dedbde;
+	border: 1px solid #c9c3ba;
+	border-bottom: none;
+	padding: 0.3em;
+	text-decoration: none;
+}
+
+#tabs a:hover {
+	background-color: #f1f0ee;
+}
+
+#tabs li a.selected {
+	color: #000;
+	background-color: #f1f0ee;
+	font-weight: bold;
+	padding: 0.7em 0.3em 0.38em 0.3em;
+}
+
+.tabContent {
+	border: 1px solid #c9c3ba;
+	padding: 0.5em;
+	background-color: #f1f0ee;
+}
+
+.tabContent.hide {
+	display: none;
+}
+
+.bold{
+	font-weight: bold;
+}
+
+.separator{
+	border-top: 1px	dotted black;
+	padding-top: 5px;
+	
+}
+
+.descricaoEspecialidade
+{
+	float: right;
+	background-color: rgba(204, 218, 222, 1);
+	border-radius: 13px;
+	width: 72%;
+	border: solid 3px;
+}
+
+
+.unidade
+{
+	margin: 4px;
+}
+
+#content div .contacto
+{
+	width: 100%;
+
+}
+
+
+.textoEsp
+{
+	text-align: justify;
+	margin: 0px 20px 10px 20px;
+}
+
+.titulosEsp
+{
+	text-transform: uppercase;
+	margin: 15px 20px 15px 20px;
+	border-radius: 13px;
+	background-color: rgba(128, 127, 153, 1);
+	padding: 0.3em;
+}
+
+
+
+.descricaoEsp h4
+{
+	padding: 10px;
+	text-align: center;
+
+}
+
+
+.medico
+{
+	height: 200px;
+	width: 60%;
+	margin: 10px 10px 30px 50px;
+}
+
+.imgMedico
+{
+	width: 35%;
+	float: left;
+	
+}
+
+.infoMedico
+{
+	float: right;
+	text-align: justify;
+	padding: 40px 20px 0px 0px;
+}
+
+.medico > h4
+{
+	text-align: center;
+	padding: 10px 10px 10px 10px;
+}
+
+.listaAcordos
+{
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+
+.noticiasEspecialidade
+{
+	width: 95%;
+	height: 200px;
+	padding: 10px 20px 10px 20px;
+}
+
+.noticiaEsp1
+{
+	width: 48%;
+	float: left;
+	border-right: 2px dotted;
+	
+
+}
+
+.noticiaEsp2
+{
+	width: 48%;
+	float: right;
+
+	
+
+}
+
+
+#news{
+	padding: 8px;
+}
+
+
+#containerImagePerfil{
+	float: left;
+	margin-right: 20px;
+}
+
+#listaAcordos{
+	width:25%;
+	margin-left: 20px;
+}
+
+.importantField{
+	color: red;
+	font-weight: bold;
+}
+#day, #month, #year{
+	width: 30px;
+}
+
+.margin-bottom5px{
+	margin-bottom: 5px;
+	
+}
+
+
+.especialidadeCadaMed
+{
+	float: left;
+	margin-right: 40px;
+}
+
+.especialidadeCadaMed ul li
+{
+	list-style: none;	
+	padding: 5px 0px 5px 5px;
+	margin-left: -15px;
+}
+
+.tabelaAcordosMed
+{
+	border: 2px solid black;
+	padding: 5px;
+	margin: 10px 0px 10px 15px;
+
+}
+
+.tabelaAcordosMed thead 
+{
+	text-align: center;
+}
+
+.espAcordo
+{
+	text-align: center;
+}
+
+.tabelaAcordosMed td
+{
+	padding: 6px;
+}
+
+.tituloTabAcordo
+{
+	font-weight: bold;
+}
+
+#marcarConsulta
+{
+
+	text-decoration: underline;
+	font-size: 1.20em;
+}
+
+.listaSimples li
+{
+	list-style: none;
+	margin: 5px 0px 0px 100px;
+}
+
+.containerImageMedicos > img{
+	float: left;
+	margin-right: 20px;
+	height: 100px;
+}
+
+
+#medicosDir
+{
+	float: right;
+	width: 40%;
+}
+
+#medicosEsq
+{
+	float: left;
+	width: 60%;
+}
+#presentation img{
+	float: right;
+	margin-left: 5px;
+}
+
+#listaInternamento
+{
+	list-style: none;
+}
+
+#listaInternamento li
+{
+	margin: 5px 15px;
+}
+
+
+
+
+
+#contentContactos #contactosEsquerda
+{
+	float: left;
+	width: 50%;
+}
+
+#contentContactos #contactosDireita
+{
+	float: left;
+	width: 50%;
+}
+
+@media screen and (min-width: 600px) and (max-width: 950px) {
+	header{
+		height: 265px;
+	}
+	header nav{
+		height: 90px;
+	}
+
+	header nav div.center{
+		margin-left: 10%;
+		width: 65%;
+	}
+}
+
+@media screen and (min-width: 150px) and (max-width: 600px) {
+	header{
+		height: 450px;
+	}
+	header nav{
+		height: 275px;
+	}
+
+	header nav div.center{
+		margin-left: 10%;
+		width: 65%;
+	}
+
+	div#welcome_message{
+	top: 140px;
+
+}
+}

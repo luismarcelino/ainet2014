@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>Santa Casa da Misericórdia de Leiria</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="styles/estilo_marcacao.css">
+  <link href="styles/estilo.css" rel="stylesheet" type="text/css" />
+  <link href="styles/menu_estilo.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js">
+  </script>
+  <script type="text/javascript">
+  // <![CDATA[
+    var conta_selects=0;
+    var lista_seguros=["ADSE","Multicare","Medis"];
+
+    function nova_adiciona_seguro(){ 
+      var id_select_anterior = "#select_seg"+(conta_selects);
+      if($(id_select_anterior).val() != "null"){
+        if (lista_seguros.length-1 > 0){
+          bloquear_select_anterior();
+          adicionar_novo_select();
+        }else{
+          bloquear_select_anterior();
+          alert("Já tem todos os sistemas/seguros de saúde disponiveis.");
+        }
+      }else{
+        alert("anterior ainda nao selecionado");
+      }
+    }
+
+    function adicionar_novo_select(){
+      var newSelect =[];
+      var newInput;
+      var newSpan;
+      var tagInicio;
+      var tagFim;
+      var tagInicioSpanGeral;
+      var tagFimSpanGeral;
+      conta_selects++;
+      tagInicioSpanGeral = ["<span id=\"span_seg"+conta_selects+"\">"];
+      tagFimSpanGeral = ["</span>"];
+      tagInicio = ["<select name=\"select_seg"+conta_selects+"\" id=\"select_seg"+conta_selects+"\"><option value=\"null\">--- Seleccione ---</option>"];
+      tagFim = ["</select> "];
+      for (var i = 0; i < lista_seguros.length; i++) {
+        newSelect = [newSelect+"<option value=\""+lista_seguros[i]+"\">"+lista_seguros[i]+"</option>"];
+      };
+      newSelect = tagInicio + newSelect + tagFim;
+      newInput = ["<input type=\"text\" id=\"num_seg"+conta_selects+"\" name=\"num_seg"+conta_selects+"\" placeholder=\"Número\">"];
+      newSpan = ["<span class=\"apagar\" id=\"apagar_select"+conta_selects+"\" onclick=\"apaga_select("+conta_selects+")\"></span><br/>"];
+      $("#p_seguros").append(tagInicioSpanGeral+newSelect+newInput+newSpan+tagFimSpanGeral);
+    }
+
+    function bloquear_select_anterior(){
+      var id_select_anterior = "#select_seg"+(conta_selects);
+      var id_input_anterior = "#num_seg"+(conta_selects);
+      var id_span_anterior = "#apagar_select"+(conta_selects);
+      $(id_select_anterior).attr("disabled","true");
+      $(id_input_anterior).attr("disabled","true");
+      $(id_span_anterior).css("visibility","visible");
+      for (var i = 0; i < lista_seguros.length; i++) {
+        if (lista_seguros[i] == $(id_select_anterior).val()){
+          lista_seguros.splice(i,1);
+          break;
+        }
+      }
+    }
+
+    function apaga_select(indice){
+      var p = document.getElementById("p_seguros");
+      var id_select = "#select_seg"+(indice);
+      for (var i = 0; i < p.childNodes.length; i++) {
+        if (p.childNodes[i].id == ("span_seg"+indice)){
+          lista_seguros.push($(id_select).val());
+          p.removeChild(p.childNodes[i]);
+        } 
+      }
+      if(p.lastChild.firstChild.disabled == false){
+        p.removeChild(p.lastChild);
+      } 
+      adicionar_novo_select();
+    }
+  // ]]>>
+  </script>
+  </head>
+
+  <body>
+	<div id="container"> 
+		<!-- CABECALHO -->
+		<header id="cabecalho"> 
+			<a href="index.html">
+				<div id="homepage"></div>
+			</a> 
+			<!-- MENU -->
+			<div id="grupo1">
+				<ul class="menu">
+					<li><a href="#pessoal">Pessoal</a></li>
+					<li><a href="#medico">Médico</a></li>
+					<li><a href="#gestao_de_utilizadores">Gestão de	Utilizadores</a></li>
+				</ul>
+			</div>
+			<!-- fim grupo1 -->
+			<div id="grupo2">
+			<ul class="menu">
+					<li><a><span>Saúde</span></a>
+					<ul>
+							<li><a href="lista-especialidades.html">Lista de Especialidades</a></li>
+							<li><a href="corpo-clinico.html">Corpo Clínico</a></li>
+							<li><a href="#artigos_noticias_clinicas">Artigos/Notícias Clínicas</a></li>
+							<li><a href="marcacao-consultas.html">Marcação de Consultas</a></li>
+							<li><a href="#confirmacao-de-marcacoes">Confirmação de Marcações</a></li>
+						</ul>
+				</li>
+					<li><a href="cuidados-geriatricos.html">Cuidados Geriátricos</a></li>
+					<li><a href="creche.html">Creche</a></li>
+					<li><a href="irmandade.html">Irmandade</a></li>
+					<li><a href="contactos.html">Contactos</a></li>
+				</ul>
+			</div>
+			<!-- fim grupo2 --> 
+		</header>
+		<!-- fim cabecalho -->
+	
+		<article id="conteudo"> 
+			<h1 id="titulo_marcacao_consultas">Marcação de Consultas e Exames</h1>
+			<!-- BARRA LATERAL ESQUERDA -->	
+			<section id="barralateral_esq">
+				<div id="img_lateral_esq"></div>
+			</section>
+			<!-- CENTRO -->
+			<section id="centro">
+				<div id="apresenta_marcacao">
+					<form>
+						<p>"Aqui pode efectuar o pedido de marcação de uma consulta ou de um exame.
+								Este procedimento carece de validação pelo Hospital D. Manuel de Aguiar.
+								Oportuidnte será contactado para confirmação do dia e hora do seu pedido.
+								Obrigado!" </p>
+						<fieldset>
+							<legend>Dados Pessoais</legend>
+							<p class="formulario">
+								<label for="nome">Nome Completo*:</label><br/>
+								<input type="text" id="nome" name="nome" required>
+							</p>
+							<p class="formulario"> Género*:<br/>
+								<input type="radio" name="rad_gen" id="gen_masc" value="masculino" required/>
+								<label for="gen_masc">Masculino</label>
+								<input type="radio" name="rad_gen" id="gen_fem" value="feminino"/>
+								<label for="gen_fem">Feminino</label>
+							</p>
+							<p class="formulario"><label for="data_nascimento">Data de Nascimento*:</label><br/>
+								<input type="date" id="data_nascimento" required>
+							</p>
+							<p class="formulario"><label for="num_ss">Numero da Seg. Social:</label><br/>
+								<input type="text" id="num_ss">
+							</p>
+							<p class="formulario"><label for="num_fiscal">Número Fiscal:</label><br/>
+								<input type="text" id="num_fiscal">
+							</p>
+							<p class="formulario"><label for="num_irmao">Número de Irmão:</label><br/>
+								<input type="text" id="num_irmao">
+							</p>
+							<p class="formulario">Morada*:</p>
+							<ul class="formulario">
+								<li><label for="morada_rua">Rua*:</label><br/>
+									<input type="text" id="morada_rua" required>
+								</li>
+								<li><label for="morada_localidade">Localidade*:</label><br/>
+									<input type="text" id="morada_localidade" required>
+								</li>
+								<li><label for="morada_codpostal1">Código Postal*:</label><br/>
+									<input type="text" id="morada_codpostal1" required>
+									-
+									<input size="3" type="text" id="morada_codpostal2" required>
+								</li>
+								<li><label for="morada_pais">País*:</label><br/>
+									<input type="text" id="morada_pais" required>
+								</li>
+							</ul>
+							<p class="formulario"><label for="num_telefone">Contacto Telefónico*:</label><br/>
+								<input type="text" id="num_telefone" required>
+							</p>
+							<fieldset>
+								<legend>Sistemas/Seguro de Saúde:</legend>
+								<span id="adiciona_drop" onclick="nova_adiciona_seguro()"><strong>Adicionar</strong><span id="img_adicionar"></span></span> <!-- Quando clicado faz a função adiciona_seguro() -->
+								<p class="formulario" id="p_seguros"> </p>
+							</fieldset>
+						</fieldset><br/>
+						<fieldset>
+							<legend>Dados da Consulta</legend>
+							<p class="formulario"><label for="especialidade">Especialidade*:</label><br/>
+								<input type="text" id="especialidade" required>
+							</p>
+							<p class="formulario"><label for="nome_medico">Nome do Médico:</label><br/>
+								<input type="text" id="nome_medico">
+							</p>
+							<p class="formulario"><label for="data_hora_consulta">Data e Hora da Consulta*:</label><br/>
+								<input type="datetime" id="data_hora_consulta" required>
+								<!-- TODO: Ver melhor forma de implementar na 2ª fase--> 
+							</p>
+						</fieldset><br/>
+						<p id="botoes">
+							<input type="reset" value="Limpar">
+							<input type="submit" value="Enviar">
+						</p>
+					</form>
+				</div>
+			</section>
+		</article>
+		<!--RODAPE-->
+		<footer id="rodape">
+			<p>Fábio Santos| João Silva | Pedro Lisboa</p>
+			<p> <strong>Copyright. All Rights Reserved. 2014</strong> </p>
+			<h3>DEI-ESTG-IPLEIRIA</h3>
+		</footer>
+	</div>
+</body>
+</html>

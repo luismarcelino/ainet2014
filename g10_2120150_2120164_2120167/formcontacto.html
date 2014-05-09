@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Santa Casa da Misericórdia de Leiria</title>
+        <link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/formcontactos.css" rel="stylesheet" type="text/css" media="all" />
+        <link rel='shortcut icon' type='image/x-icon' href='css/imgs/favicon.ico' />
+        <script type="text/javascript" src="js/header.js">
+        </script>
+    </head>
+
+    <body id="formcontactos">
+
+       <div id="barra">
+            <ul id="menubarra">
+                <li><a href="#" accesskey="2" title="" id="loginnav" onmouseover="aparecer()" onmouseout="desaparecer()">Login</a></li>
+                <li><a href="contactos.html" accesskey="2" title="" id="contactosnav">Contactos</a></li>
+                <li><a href="localizacao.html" accesskey="2" title="" id="informacaonav">Localização</a></li>
+                <li><a href="#" accesskey="2" title="" id="newslettermenu">Newsletter</a></li>
+                <li><a href="formcontacto.html" accesskey="2" title="" id="pedidosmenu">Pedidos de Informações/Sugestões</a></li>
+
+            </ul>
+            <div id="arealogin" onmouseover="aparecer()" onmouseout="desaparecer()">
+                <form id="login">
+                    <p><label for="username" id="lblusername">Nome de Utilizador:</label></p>
+                    <p><input type="text" id="username" value="" size="28" /></p>
+                    <p><label for="password" id="lblpassword">Palavra Passe:</label></p>
+                    <p><input type="password" id="password" value="" size="28" /></p>
+                    <p><input type="button" class="submit" onclick="login()" id="submit" value="Entrar" /></p>
+
+                </form>
+            </div>
+
+            <a href="https://www.facebook.com/santacasaleiria"><img src="css/imgs/facebook.png"  alt="Facebook" /></a>
+
+        </div>
+
+
+
+        <div class="header">
+            <div id="menu">
+                <ul>
+                    <li><a href="index.html" accesskey="1" title="" id="homenav">Home</a></li>
+                    <li><a href="#" id="irmandadenav">A SCML</a></li>
+                    <li><a href="noticias.html" id="noticiasnav">Noticias</a></li>
+
+                    <li><a href="valencia.html" id="random42">Irmandade</a></li>
+
+                    <li><a href="#" class="servico" id="serviconav">Cuidados Geriátricos</a>
+                        <ul class="dropdown" id="dropdown">
+                            <li><a href="valencia.html" id="random1">Residencial</a></li>
+                            <li><a href="valencia.html" id="random2">Lar</a></li>
+                            <li><a href="valencia.html" id="random3">Internamento</a></li>
+                            <li><a href="valencia.html" id="random4">Apoio Domiciliario</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="saude.html" id="saudenav">Saude</a>
+                        <ul class="dropdown" id="dropdown">
+                            <li><a href="valencia.html" id="random121">Hospital</a></li>
+                            <li><a href="especialidades.html" id="random11">Especialidades</a></li>
+                            <li><a href="corpoclinico.html" id="random22">Corpo Clinico</a></li>
+                            <li><a href="marcacaoconsultas.html" id="random33">Marcação de Consultas</a></li>
+                        </ul></li>
+                    <li><a href="valencia.html" id="random23">Creche</a></li>
+                  
+                  <li id="ferr"><a href="#" id="aferr">Ferramentas</a>
+                    <ul class="dropdown" id="dropdown">
+                            <li><a href="criarnoticia.html" id="random1">Criar Noticia</a></li>
+                          
+                        </ul></li>
+
+                </ul>
+            </div>
+            <img src="css/imgs/header-image1.png" id="imagem-header" alt="Header">
+            <div id="changeheader">
+                <a href="#"><img id="seleccionado" src="css/imgs/bolinhaselected.png" onclick='changeImage("1", this);'  alt="Selecionado" /></a>
+                <a href="#"> <img id="naoseleccionado" src="css/imgs/bolinhanaoselected.png" alt="Não Selecionado"  onclick='changeImage("2", this);'/></a>
+                <a href="#"><img id="naoseleccionado" src="css/imgs/bolinhanaoselected.png" onclick='changeImage("3", this);' alt="Não selecionado" /></a>
+            </div>
+            <img src="css/imgs/logo.png" id="imagem-logo" alt="Logótipo">
+        </div>
+
+
+
+        <div id="formulariocontacto"> 
+            <h2>Formulário de Contacto:</h2> 
+            <form>
+                <p> <label for="tipo">Tipo de Contacto(*):</label>
+                    <select name="tipo" id="tipo">
+                        <option value="Seleccione">Seleccione:</option>
+                        <option  value="1">Contacto</option>
+                        <option  value="4">Emprego</option>
+                        <option  value="5">Inscrição como Irmão (ã)</option>
+                        <option  value="3">Inscrições de Utentes</option>
+                        <option  value="6">Outro</option>
+                        <option  value="2">Voluntariado</option>
+                    </select></p>
+                <p><label for="nome">Nome(*):</label> 
+                    <input type="text" name="nome" id="nome" value=""size="28"  /></p>
+                <p>
+                    <label for="sexo">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                        <option value="1">Masculino</option>
+                        <option  value="2">Feminino</option>
+                    </select>
+                </p><p>
+                <label>Data de Nascimento:</label>
+                </p><p>
+                <laber for="dia">Dia:</label>
+                <select id="dia" name="dia">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+
+                <laber for="mes">Mes:</label>
+                <select id="mes" name="mes">
+                    <option value="jan">Janeiro</option>
+                    <option value="fev">Fevereiro</option>
+                    <option value="mar">Março</option>
+                    <option value="abr">Abril</option>
+                    <option value="mai">Maio</option>
+                    <option value="jun">Junho</option>                
+                    <option value="jul">Julho</option>
+                    <option value="ago">Agosto</option>
+                    <option value="set">Setembro</option>
+                    <option value="out">Outubro</option>
+                    <option value="nov">Novembro</option>
+                    <option value="dez">Dezembro</option>
+                </select>
+                <laber for="ano">Ano:</label>
+                <select id="ano" name="ano">
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>                
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2004">2004</option>
+                    <option value="2003">2003</option>
+                    <option value="2002">2002</option>
+                    <option value="2001">2001</option>
+                    <option value="2000">2000</option>
+                    <option value="1999">1999</option>
+                    <option value="1998">1998</option>
+                    <option value="1997">1997</option>
+                    <option value="1996">1996</option>
+                    <option value="1995">1995</option>
+                    <option value="1994">1994</option>
+                    <option value="1993">1993</option>
+                    <option value="1992">1992</option>
+                    <option value="1991">1991</option>
+                    <option value="1990">1990</option>
+                    <option value="1989">1989</option>
+                    <option value="1988">1988</option>
+                    <option value="1987">1987</option>
+                    <option value="1986">1986</option>
+                    <option value="1985">1985</option>
+                    <option value="1984">1984</option>
+                    <option value="1983">1983</option>
+                    <option value="1982">1982</option>
+                    <option value="1981">1981</option>
+                    <option value="1980">1980</option>
+                    <option value="1979">1979</option>
+                    <option value="1978">1978</option>
+                    <option value="1977">1977</option>
+                    <option value="1976">1976</option>
+                    <option value="1975">1975</option>
+                    <option value="1974">1974</option>
+                    <option value="1973">1973</option>
+                    <option value="1972">1972</option>
+                    <option value="1971">1971</option>
+                    <option value="1970">1970</option>
+                    <option value="1969">1969</option>
+                    <option value="1968">1968</option>
+                    <option value="1967">1967</option>
+                    <option value="1966">1966</option>
+                    <option value="1965">1965</option>
+                    <option value="1964">1964</option>
+                    <option value="1963">1963</option>
+                    <option value="1962">1962</option>
+                    <option value="1961">1961</option>
+                    <option value="1960">1960</option>
+                    <option value="1959">1959</option>
+                    <option value="1958">1958</option>
+                    <option value="1957">1957</option>
+                    <option value="1956">1956</option>
+                    <option value="1955">1955</option>
+                    <option value="1954">1954</option>
+                    <option value="1953">1953</option>
+                    <option value="1952">1952</option>
+                    <option value="1951">1951</option>
+                    <option value="1950">1950</option>
+                    <option value="1949">1949</option>
+                    <option value="1948">1948</option>
+                    <option value="1947">1947</option>
+                    <option value="1946">1946</option>
+                    <option value="1945">1945</option>
+                    <option value="1944">1944</option>
+                    <option value="1943">1943</option>
+                    <option value="1942">1942</option>
+                    <option value="1941">1941</option>
+                    <option value="1940">1940</option>
+                    <option value="1939">1939</option>
+                    <option value="1938">1938</option>
+                    <option value="1937">1937</option>
+                    <option value="1936">1936</option>
+                    <option value="1935">1935</option>
+                    <option value="1934">1934</option>
+                    <option value="1933">1933</option>
+                    <option value="1932">1932</option>
+                    <option value="1931">1931</option>
+                    <option value="1930">1930</option>
+                    <option value="1929">1929</option>
+                    <option value="1928">1928</option>
+                    <option value="1927">1927</option>
+                    <option value="1926">1926</option>
+                    <option value="1925">1925</option>
+                    <option value="1924">1924</option>
+                    <option value="1923">1923</option>
+                    <option value="1922">1922</option>
+                    <option value="1921">1921</option>
+                    <option value="1920">1920</option>
+                    <option value="1919">1919</option>
+                    <option value="1918">1918</option>
+                    <option value="1917">1917</option>
+                    <option value="1916">1916</option>
+                    <option value="1915">1915</option>
+                    <option value="1914">1914</option>
+                    <option value="1913">1913</option>
+                    <option value="1912">1912</option>
+                    <option value="1911">1911</option>
+                    <option value="1910">1910</option>
+                    <option value="1909">1909</option>
+                    <option value="1908">1908</option>
+                    <option value="1907">1907</option>
+                    <option value="1906">1906</option>
+                    <option value="1905">1905</option>
+                    <option value="1904">1904</option>
+                    <option value="1903">1903</option>
+                    <option value="1902">1902</option>
+                    <option value="1901">1901</option>
+                    <option value="1900">1900</option>
+                </select>
+                </p><p>
+                <label for="morada">Morada:</label></p><p>
+                <textarea name="morada" id="morada" value=""  cols="39"></textarea>
+                </p>
+                <p><label for="codPostal">Código Postal:</label> 
+                    <input type="text" name="codPostal" id="codPostal" value="" size="22" /></p>
+                <p>
+
+                    <p><label for="localidade">Localidade:</label> 
+                        <input type="text" name="localidade" id="localidade" value=""  size="25"/></p>
+                <p>
+
+                    <p><label for="telemovel">Telémovel:</label> 
+                        <input type="text" name="telemovel" id="telemovel" value="" size="26" /></p>
+                <p>
+
+                    <p><label for="email">Email:</label> 
+                        <input type="text" name="email" id="email" value="" size="31"/></p>
+                <p>
+                    <p>
+                        <label for="msg">Mensagem:</label></p><p>
+                <textarea name="msg" id="msg" value=""  rows="5" cols="39"></textarea>
+                </p>
+                <p>
+                    <input type="submit" class="button" id="submit" value="Submeter" />
+                    <input type="button" class="button" id="lim" value="Limpar" />
+
+                </p>
+
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+   
+    <div id="rodape">
+        <div id="blocksrodape">
+            <div class="blockrodape">
+                <h3>Santa Casa Da Misericórdia de Leiria</h3>
+                <img src="css/imgs/logorod.png"  alt="Logo Rodape" />
+
+            </div>
+
+            <div class="blockrodape"> 
+                <h3>Contactos Principais</h3>
+                <p><b>Santa Casa da Misericórdia de Leiria</b></p>
+
+                <p>Instituição Particular de Solidariedade Social
+                </p>
+                <p><b>Sede:</b>
+                    Rua Trindade Coelho, 8
+                </p>
+                <p>Apartado 1109
+                </p>
+                <p>2401-801 Leiria
+                </p>
+                <p><b>Tel.:</b> 244 106 202 • <b>Fax:</b> 244 106 298
+                </p>
+                <p>geral@misericordiadeleiria.pt</p>
+            </div>  
+            <div class="blockrodape"> 
+                <h3>Próximo Evento</h3>
+                <h4>Caminhada</h4>
+                <img src="css/imgs/cam.png"  alt="Logo Rodape" />
+
+                <h6>17 de Abril de 2014</h6>
+                <h6>Leiria</h6>
+            </div>  
+
+        </div>
+    </div>
+</body>
+
+</html>

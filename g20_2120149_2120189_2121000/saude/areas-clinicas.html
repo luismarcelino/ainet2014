@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/scm-stylesheets/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/scm-stylesheets/layout-style.css" type="text/css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="/scm-javascripts/sticky-secondbar.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#bottom').load('/bottom_content.html');
+            $('#container').load("./areas-clinicas/1.html");
+            $('#sidebar a').click(function(e) {
+                var allElems = $('#sidebar').children();
+                for (var i = 0; i < allElems.length; i++) {
+                    allElems[i].className = "";
+                }
+                var id = $(this).attr('href');
+                var link = "./areas-clinicas/" + id + ".html";
+                $('#container').empty();
+                $('#container').load(link);
+                this.className = "active";
+                e.preventDefault();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="top">
+        <div id="logo">
+            <div class="wrapper">
+                <div class="imageholder">
+                    <a href="/index.html">
+                        <img src="/scm-imagens/santa.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="firstnavbar" class="">
+            <div class="wrapper">
+                <div id="imagesholder">
+                    <!-- 2 divs por imagem -->
+                    <a class="active" href="/saude/areas-clinicas.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Saúde</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/cuidados/cuidados.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Cuidados Geriátricos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/creche/creche.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Creche</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/irmandade/irmandade.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Irmandade</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/contactos.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Contactos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/areapessoal/areapessoal.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Área Pessoal</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/admin/admin.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Administração</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="secondnavbar" class="b_border">
+            <div class="navbar wrapper">
+                <ul id="nav">
+                    <li class="active">
+                        <a href="/saude/areas-clinicas.html">Áreas Clínicas</a>
+                    </li>
+                    <li>
+                        <a href="/saude/equipa-clinica.html">Equipa Clínica</a>
+                    </li>
+                    <li>
+                        <a href="/saude/marcacao-consulta.html">Marcação de Consulta</a>
+                    </li>
+                </ul>
+                <div id="searchholder">
+                    <form class="navbar-search" action="">
+                        <input class="search-box" type="text" placeholder="Procurar" name="search" />
+                        <button class="search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="middle" class="wrapper">
+        <div class="titulo">
+            <h1>Áreas Clínicas</h1>
+        </div>
+        <div class="has_sidebar">
+            <div id="sidebar">
+                <a href="1" class="active">
+                    <p>Acumpuntura</p>
+                </a>
+                <a href="2">
+                    <p>Audiologia</p>
+                </a>
+                <a href="3">
+                    <p>Cardiologia</p>
+                </a>
+                <a href="4">
+                    <p>Cirurgia Geral</p>
+                </a>
+                <a href="5">
+                    <p>Cirurgia Plástica</p>
+                </a>
+                <a href="6">
+                    <p>Cirurgia Vascular</p>
+                </a>
+                <a href="7">
+                    <p>Clínica Geral</p>
+                </a>
+                <a href="8">
+                    <p>Dermatologia</p>
+                </a>
+                <a href="9">
+                    <p>Doenças Venosas</p>
+                </a>
+                <a href="10">
+                    <p>Eletromiografia</p>
+                </a>
+                <a href="11">
+                    <p>Endocrinologia</p>
+                </a>
+                <a href="12">
+                    <p>Fisiatria</p>
+                </a>
+                <a href="13">
+                    <p>Gastrenterologia</p>
+                </a>
+                <a href="14">
+                    <p>Ginecologia/ Obstetricia</p>
+                </a>
+                <a href="15">
+                    <p>Medicina Dentária</p>
+                </a>
+                <a href="16">
+                    <p>Medicina Desportiva</p>
+                </a>
+                <a href="17">
+                    <p>Medicina Interna</p>
+                </a>
+                <a href="18">
+                    <p>Neurocirurgia</p>
+                </a>
+                <a href="19">
+                    <p>Neurologia</p>
+                </a>
+                <a href="20">
+                    <p>Nutrição</p>
+                </a>
+                <a href="21">
+                    <p>Oftalmologia</p>
+                </a>
+                <a href="22">
+                    <p>Ortopedia</p>
+                </a>
+                <a href="23">
+                    <p>Otorrinolaringologia</p>
+                </a>
+                <a href="24">
+                    <p>Pneumologia</p>
+                </a>
+                <a href="25">
+                    <p>Psicologia</p>
+                </a>
+                <a href="26">
+                    <p>Psiquiatria</p>
+                </a>
+                <a href="27">
+                    <p>Reumatologia</p>
+                </a>
+                <a href="28">
+                    <p>Urologia</p>
+                </a>
+            </div>
+            <div id="container" class="has_shadows b_corners t_corners has_borders">
+
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+    </div>
+</body>
+
+</html>

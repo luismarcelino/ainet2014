@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!--Title with Image-->
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="shortcut icon" href="img/header.png" />
+		
+		<!--Scripts-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="script/scripts.js"></script>
+		<script type="text/javascript" src="script/scriptsJQ.js"></script>
+		
+		<!--Fonts da google-->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'/>
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menuSTYLE.css"/>
+
+	</head>
+
+	<body>
+		<div id="wrapper" class="clearfix">
+			<div id="header" class="clearfix">
+				<div id="headerimg"><a href="index.html"><img src="img/header.png" alt="header"/></a>
+					<p id="saber">O Saber da Experiência</p>
+					<p>500 anos de história</p>
+				</div>
+				
+
+				<div id="loginbox">
+						<a onclick="show()" href="#">Login</a><a href="registar.html">Registar</a>
+				</div>
+
+				<div id="container-login" class="hide">
+					<div>
+						<h1>Login</h1>
+					</div>
+					<div>
+						<form action="login_sucesso.html" method="get">
+							<div id="loginFields">
+								<label>Username:</label><input type="text" name="user"/><br/>
+								<label>Password:</label><input type="password" name="pass"/><br/>
+	
+								<input type="submit" value="Entrar"/>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div id="searchbox">
+					<p><input type="text" value="Procure aqui..." /></p>
+				</div>
+			</div>
+
+			<div id="middle" class="clearfix">
+				<div id="sidebar">
+				 	<!--Menus de navegacao-->
+					<ul id="nav">
+						<li><a href="index.html">Entrada</a></li>
+						<li><a href="#">Saúde</a>
+							<ul>
+								<li><a href="especialidades.html">Especialidades</a></li>	
+								<li><a href="corpoclinico.html">Corpo Clínico</a></li>
+								<li><a href="artEnot.html">Artigos/Notícias Clínicas</a></li>
+								<li><a href="marcar_consulta.html">Marcação de Consultas</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Cuidados Geriátricos</a>
+							<ul>
+								<li><a href="tipoValencia.html">Residencial</a></li>
+								<li><a href="tipoValencia.html">Lar</a></li>
+								<li><a href="tipoValencia.html">Internamento</a></li>
+								<li><a href="tipoValencia.html">Apoio domiciliário</a></li>
+							</ul>
+						</li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="content">
+					<div>
+						<h1>Dra. Joaquina Alves</h1>
+					</div>
+						<div class="nav_esp">
+						<label>Telef:</label>985123648<br/>
+						<label>Area Clinica: </label>Cirurgia Vascular<br/>
+						<label>Especialidade: </label>Angiologia e Cirurgia Vascular<br/>
+						<label>Horario Consulta: </label>Seg - Sext das 10h ás 16h<br/>
+						<a href="marcar_consulta.html"><input type="button" value="Marcar Consulta" /></a>
+					</div>
+					<div class="img_med">
+						<img width="150px" height="150px" src="img/art1.png" alt="medico" />
+					</div>
+					<div class="nav_esp">
+						<h3>Ultimas Noticias</h3>
+						<ul>
+						<li>Medico faz nova descoberta....</li>
+						<li>Medico faz nova descoberta....</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>2014 &#169; Alexandra Pedro, André Tiago e Fábio Santos. <br/> DEI ESTG-IPLEIRIA </p>
+			</div>
+		</div>	
+	</body>
+</html>

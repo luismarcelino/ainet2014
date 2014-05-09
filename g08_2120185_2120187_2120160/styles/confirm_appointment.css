@@ -1,0 +1,93 @@
+
+.more_Appointment_info {
+    display: none;
+}
+
+.Appointment {
+    margin: 10px;
+    border-radius: 10px;
+    padding: auto;
+    position: relative;
+    border: 1px solid #2e2e2e;
+    width: 98%;
+    display: inline-block;
+    vertical-align: top;
+}
+.Appointment img {
+    margin: 1%;
+    width: 25%;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.Appointment p {
+    width: 65%;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.Appointment .more_btn {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Appointment .more_btn:after{
+    content: "==";
+}
+
+#Appointment_list {
+    margin: auto;
+	display: table;
+}
+
+.Appointment .notification {
+    position: absolute;
+    top:0;
+    right:0;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.accept_btn {
+    margin: 0;
+    width: 20%;
+    vertical-align: text-top;
+}
+
+.refuse_btn {
+    margin: 0;
+    width: 20%;
+    vertical-align: text-top;
+}
+
+.Appointment .options button img {
+	margin-right: 3px;
+}
+
+.Appointment .options button * {
+	vertical-align: middle;
+}
+
+#notProcessed {
+    width: 50%;
+    display: inline-block;
+    margin: auto;
+}
+
+#processed {
+    width: 50%; 
+    display: inline-block;
+    vertical-align: top;
+    margin: auto;
+}
+
+#header_consultas > h3 {
+    text-align: center;
+}
+
+

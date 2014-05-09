@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/scm-stylesheets/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/scm-stylesheets/layout-style.css" type="text/css" />
+    <link rel="stylesheet" href="/scm-stylesheets/news-slider.css" type="text/css" />
+    <link rel="stylesheet" href="/scm-stylesheets/presentation-slider.css" type="text/css" />
+    <link rel="stylesheet" href="/scm-stylesheets/publications-slider.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.0.0/animate.min.css" />
+    <script type="text/javascript" src="/scm-javascripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="/scm-javascripts/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/scm-javascripts/jquery.cycle.all.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+    <script type="text/javascript" src="/scm-javascripts/news-slider.js"></script>
+    <script type="text/javascript" src="/scm-javascripts/presentation-slider.js"></script>
+    <script type="text/javascript" src="/scm-javascripts/publicacions-slider.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#bottom').load('bottom_content.html');
+            $('a[href="#"]').click(function(event) {
+                event.preventDefault();
+            });
+            $('#main-slider').liquidSlider({
+                includeTitle: true,
+                minHeight: 100,
+                autoSlide: true,
+                pauseOnHover: true,
+                onload: function() {
+                    this.alignNavigation();
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="top">
+        <div id="logo">
+            <div class="wrapper">
+                <div class="imageholder">
+                    <a href="/index.html">
+                        <img src="/scm-imagens/santa.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="firstnavbar" class="">
+            <div class="wrapper">
+                <div id="imagesholder">
+                    <!-- 2 divs por imagem -->
+                    <a href="/saude/areas-clinicas.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Saúde</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/cuidados/cuidados.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Cuidados Geriátricos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/creche/creche.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Creche</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/irmandade/irmandade.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Irmandade</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/contactos.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Contactos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/areapessoal/areapessoal.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Área Pessoal</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/admin/admin.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Administração</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="secondnavbar" class="b_border">
+            <div class="navbar wrapper">
+                <ul id="nav">
+
+                </ul>
+                <div id="searchholder">
+                    <form class="navbar-search" action="">
+                        <input class="search-box" type="text" placeholder="Procurar" name="search" />
+                        <button class="search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="middle" class="wrapper">
+        <div id="container" class="b_corners t_corners has_shadow">
+            <div class="content-row">
+                <div class="content-row">
+                    <div class="content">
+                        <div class="slideshow_wrapper">
+                            <a href="#" class="slideshow_prev">
+                                <span>Anterior</span>
+                            </a>
+                            <a href="#" class="slideshow_next">
+                                <span>Próximo</span>
+                            </a>
+                            <div class="slideshow_paging"></div>
+
+                            <div class="slideshow_box">
+                                <div class="data"></div>
+                            </div>
+                            <div id="slideshow" class="slideshow">
+                                <div class="slideshow_item">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="photos/2.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="data">
+                                        <h4>
+                                            <a href="#">Título 1</a>
+                                        </h4>
+
+                                    </div>
+                                </div>
+                                <div class="slideshow_item">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="photos/3.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="data">
+                                        <h4>
+                                            <a href="#">Título 2</a>
+                                        </h4>
+
+                                    </div>
+                                </div>
+                                <div class="slideshow_item">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="https://scontent-b-lhr.xx.fbcdn.net/hphotos-prn2/t1.0-9/1625762_647299938640431_1712777326_n.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="data">
+                                        <h4>
+                                            <a href="#">Título 3</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="slideshow_item">
+                                    <div class="image">
+                                        <a href="#">
+                                            <img src="photos/4.jpg" alt="" />
+                                        </a>
+                                    </div>
+                                    <div class="data">
+                                        <h4>
+                                            <a href="#">Título 4</a>
+                                        </h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-row">
+                <div class="content-left">
+                    <div class="content">
+                        <fieldset>
+                            <legend>
+                                <span>Publicações Recentes</span>
+                            </legend>
+                        </fieldset>
+                        <div id="main-slider" class="liquid-slider">
+                            <div>
+                                <h2 class="">
+                                    <i class="icon-inbox"></i>
+                                    <span>Publicação 1</span>
+                                </h2>
+                                <p>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
+                                <p>
+                                    <a href="/artigos/visualizar_artigo.html">
+                                        <strong>Ver mais</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="">Publicação 2</h2>
+                                <p>Proin nec turpis eget dolor dictum lacinia. Nullam nunc magna, tincidunt eu porta in, faucibus sed magna. Suspendisse laoreet ornare ullamcorper. Nulla in tortor nibh. Pellentesque sed est vitae odio vestibulum aliquet in nec leo.</p>
+                                <p>
+                                    <a href="/artigos/visualizar_artigo.html">
+                                        <strong>Ver mais</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="">Publicação 3</h2>
+                                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+                                <p>
+                                    <a href="/artigos/visualizar_artigo.html">
+                                        <strong>Ver mais</strong>
+                                    </a>
+                                </p>
+                            </div>
+                            <div>
+                                <h2 class="">Publicação 4</h2>
+                                <p>Proin nec turpis eget dolor dictum lacinia. Nullam nunc magna, tincidunt eu porta in, faucibus sed magna. Suspendisse laoreet ornare ullamcorper. Nulla in tortor nibh. Pellentesque sed est vitae odio vestibulum aliquet in nec leo.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas metus nulla, commodo a sodales sed, dignissim pretium nunc. Nam et lacus neque. Sed volutpat ante id mauris laoreet vestibulum. Nam blandit felis non neque cursus aliquet. Morbi vel enim dignissim massa dignissim commodo vitae quis tellus. Nunc non mollis nulla. Sed consectetur elit id mi consectetur bibendum. Ut enim massa, sodales tempor convallis et, iaculis ac massa. Etiam suscipit nisl eget lorem pellentesque quis iaculis mi mattis. Aliquam sit amet purus lectus. Maecenas tempor ornare sollicitudin.</p>
+                                <p>
+                                    <a href="/artigos/visualizar_artigo.html">
+                                        <strong>Ver mais</strong>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-right">
+                    <div class="content">
+                        <fieldset>
+                            <legend>
+                                <span>Actualidade</span>
+                            </legend>
+                            <div id="news">
+                                <div class="news-holder cf">
+                                    <div class="news-preview ">
+                                        <div class="news-content top-content">
+                                            <img src="" alt="">
+                                            <p>
+
+                                                <a href="/artigos/visualizar_artigo.html">titulo</a>
+                                            </p>
+
+                                            <p>information</p>
+                                        </div>
+                                        <!-- .news-content -->
+
+                                        <div class="news-content">
+                                            <img src="" alt="">
+                                            <p>
+
+                                                <a href="/artigos/visualizar_artigo.html">titulo2</a>
+                                            </p>
+
+                                            <p>information2</p>
+                                        </div>
+                                        <!-- .news-content -->
+
+                                        <div class="news-content">
+                                            <img src="" alt="">
+                                            <p>
+
+                                                <a href="/artigos/visualizar_artigo.html">titulo3</a>
+                                            </p>
+
+                                            <p>information3</p>
+                                        </div>
+                                        <!-- .news-content -->
+
+                                        <div class="news-content">
+                                            <img src="" alt="">
+                                            <p>
+
+                                                <a href="/artigos/visualizar_artigo.html">titulo4</a>
+                                            </p>
+
+                                            <p>information4</p>
+                                        </div>
+                                    </div>
+                                    <!-- .news-preview -->
+                                    <div class="divider">
+                                    </div>
+                                    <ul class="news-headlines">
+                                        <li class="selected">
+                                            <b>Irmandade</b>: Something
+                                        </li>
+                                        <li>
+                                            <b>Creche</b>: Something
+                                        </li>
+                                        <li>
+                                            <b>Lar</b>: Something
+                                        </li>
+                                        <li>
+                                            <b>Residencial</b>: Something
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="bottom">
+    </footer>
+</body>
+
+</html>

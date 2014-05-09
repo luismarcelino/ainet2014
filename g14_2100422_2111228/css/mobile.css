@@ -1,0 +1,314 @@
+.letra {
+	color: #000000;
+}
+
+body {
+    width:900px;
+	margin: 0;
+	padding: 0;
+	background-image: url("img/corpo.PNG");
+	background-repeat: repeat;
+	font-family: Century Gothic, sans-serif;
+	font-size: 14px;
+	
+	
+}
+
+strong {
+	color: black;
+}
+
+h1,h2,h3 {
+	font-family: Century Gothic, sans-serif;
+	font-weight: normal;
+	color: black;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 2.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+p,ul,ol {
+	margin-top: 0;
+	line-height: 180%;
+}
+
+
+#wrapper {
+	width: 1337px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+/* Header */
+
+
+#header {
+	width: 1000px;
+	
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+}
+
+/* Logo */
+#logo {
+	margin-top: 10px;
+	margin-left: 90px;
+	width: 20px;
+	
+}
+
+#user{
+   margin-left:70px;
+
+}
+
+/* Login */
+
+
+
+
+#slide{
+
+position: absolute;
+margin-top: -70px;
+margin-left: 110px;
+ width:750px;
+
+
+}
+
+#page{
+
+position: relative;
+
+}
+
+#hosp{
+
+position:absolute;
+ top:0;
+ left:0;
+ width:300px;
+ margin-top: 350px;
+ margin-left: 300px;
+ 
+ 
+}
+
+#hosp a{
+text-align: center;
+font-family: Verdana, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color: blue;
+}
+
+#corp{
+
+padding-left:5px;
+padding-right:10px;
+text-align: justify;
+font-family: Verdana;
+font-size: 11px;
+line-height: 1.5em;
+text-decoration: none;
+color: #000000;
+background-color: white
+}
+
+
+#corp img{
+margin-left: 20px;
+
+}
+
+
+#creche{
+
+ position:absolute;
+ top:0;
+ right:0;
+ width:300px;
+margin-top: 450px;
+ margin-right: 400px;
+}
+
+#creche a{
+margin-left: 20px;
+text-align: center;
+font-family: Verdana, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color: blue;
+
+}
+
+#creche #corp p{
+margin-top:30px;
+
+
+}
+
+
+#lar{
+
+ position:absolute;
+ top:0;
+ right:0;
+ width:300px;
+ margin-top: 780px;
+ margin-right: 740px;
+
+}
+
+#lar a{
+margin-left: 10px;
+text-align: center;
+font-family: Verdana, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color: blue;
+
+}
+
+#lar #corp p{
+
+margin-left:5px;
+}
+
+
+#residencial{
+
+ position:absolute;
+ top:0;
+ right:0;
+ width:300px;
+ margin-top: 900px;
+ margin-right: 400px;
+
+}
+
+#residencial a{
+margin-left: 10px;
+text-align: center;
+font-family: Verdana, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color: blue;
+
+}
+
+/* Footer */
+
+#footer {
+position: absolute;
+	width: 1195px;
+	height: 20px;
+	margin-top: 1200px;
+	margin-left: 42px;
+	padding: 15px; 
+	font-family: Century Gothic, sans-serif;
+	
+
+	
+   
+	}
+
+
+#footer p {
+	
+	line-height: normal;
+	font-size: 14px;
+	text-align: center;
+	color: black;
+	font-weight: bold;
+}
+
+#titulo a {
+margin-left: 300px;
+margin-top: -100px;
+position:absolute;
+font-family: Verdana, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-decoration: none;
+color: blue;
+
+}
+
+#hospital{
+ position:absolute;
+ top:0;
+ left:0;
+ width:750px;
+ margin-top: 350px;
+ margin-left: 280px;
+
+
+}
+
+#corpo{
+padding-left:5px;
+padding-right:10px;
+text-align: justify;
+font-family: Verdana;
+font-size: 11px;
+line-height: 1.5em;
+text-decoration: none;
+color: #000000;
+background-color: white
+}
+
+#corpo img{
+
+margin-left:250px;
+
+
+}
+
+#asaude{
+
+background-color:white;
+
+}
+
+#unidadesaude{
+
+margin-left:-200px;
+
+}
+
+#unidadesaude2{
+
+margin-left:150px;
+margin-top:-155px;
+
+}
+
+
+#cirurgicopic{
+
+margin-left:200px;
+
+}
+
+
+#medicinapic{
+margin-top:-100px;
+margin-left:200px;
+}
+
+

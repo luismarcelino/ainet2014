@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(../imagens/background.png);
+	background-repeat: repeat;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-indent: 2em;
+}
+
+#valencias {
+	float: right;
+	width: 760px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-right: 4px;
+	min-height: 400px;
+	background-color: #cdd7e8;
+	text-align: justify;
+	border-radius: 20px;
+	box-shadow: 3px 3px 3px #888888;
+}
+
+#titulo_cuidados_geriatricos {
+	text-align: center;
+	font-size:40px;
+	font-weight:bolder;
+	color:#0F4BA8;
+	text-shadow: 2px 2px 2px #888888;
+	background-color:#d5b366;
+	border-top-left-radius: 50px;
+	box-shadow: 3px 3px 3px #000000;
+	margin-right: 5px;
+}
+
+.imagem {
+	float: right;
+	margin-left: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.imagem_cima {
+	padding-top: 15px;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+img {
+	border-radius: 10px;
+	border: solid 1px black;
+}
+
+.valencia {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	background-color: #B8C2D1;
+	width: 98%;
+	border-radius: 20px;
+	background-color: #b3cded;
+	box-shadow: 3px 3px 3px #888888;
+}
+
+.valencia h3 {
+	text-align: center;
+	background-color: #3E78D2;
+	border-radius: 40px;
+	box-shadow: 3px 3px 3px #676767;
+}
+
+#container {
+	width: 1024px;
+	position: relative;
+	margin: auto;
+}
+
+.noticia {
+	width: 98%;
+}
+
+.contactos_footer {
+	clear: both;
+	padding-top: 15px;
+	font-size: 25px;
+	font-weight: bold;
+	text-align: center;
+}
+
+#contactos_footer_span {
+	padding-right: 70px;
+	background-image: url(../imagens/email_claro.png);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#contactos_footer_span:hover {
+	background-image: url(../imagens/email_escuro.png);
+}
+
+#conteudo {
+	width: 1024px;
+	position: relative;
+	top: 0;
+}
+
+#cabecalho {
+	position: relative;
+	top: 0;
+	height: 200px;
+	width: 1024px;
+	background-image: url(../imagens/menu/Header_peq.png);
+	background-repeat: no-repeat;
+	z-index: 100;
+}
+
+
+#rodape {
+	clear: both;
+	width: 1024px;
+}
+
+p.rodape {
+	font-size: 16px;
+	text-align: center;
+}

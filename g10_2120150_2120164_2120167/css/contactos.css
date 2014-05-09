@@ -1,0 +1,17 @@
+#contactos{
+    position: relative;
+    top: 20px;
+    width: 500px;
+    margin-bottom: 15px;
+    margin-left: 350px;
+}
+
+#contactos a{
+    text-decoration: underline;
+    color: #3E8CD2;
+
+}
+
+strong{
+    color:#3E8CD2;
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="../css/geral.css"/>
+<link rel="stylesheet" type="text/css" href="../css/IndexContainer.css"/>
+<link rel="stylesheet" type="text/css" href="../css/DivsInfoExtra_Entrada.css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+	function mudaNoticia(numN){
+			$('#noticia1').fadeOut(1);
+			$('#noticia2').fadeOut(1);
+			$('#noticia3').fadeOut(1);
+			if(numN == 1){
+				$("#bola").animate({left: '3.8%'}, 300);
+				$('#noticia1').fadeIn(300);
+			}else if(numN == 2){
+				$("#bola").animate({left: '45%'}, 300);
+				$('#noticia2').fadeIn(300);
+			}else if(numN == 3){
+				$("#bola").animate({left: '84.5%'}, 300);
+				$('#noticia3').fadeIn(300);
+			}
+		}
+		
+		function toggleLogin(){
+                $( "#Access>*" ).toggleClass("off");
+        }
+				
+	function moveDiv(){
+		$('#ImportantInfos').fadeOut(500);
+		$('#ImportantInfos2').fadeIn(400);
+	}
+	
+	function moveDivBack(){
+		$('#ImportantInfos2').fadeOut(500);
+		$('#ImportantInfos').fadeIn(400);	
+	}
+
+	$(document).ready(function(e) {
+		
+		$('.linkAcesso').click(function(){
+			alert("Irá ligar à noticia mais recente da respectiva página");
+		});
+		
+		$('#sociais').click(function(){
+			$('#Orgaos').fadeIn(400);
+		});
+		
+		$('#historia').click(function(){
+			$('#hist').fadeIn(400);
+		});
+		
+		$('#voluntariado').click(function(){
+			$('#vol').fadeIn(400);
+		});
+		
+		$('#estatutos').click(function(){
+			$('#estats').fadeIn(400);
+		});
+		
+		$('.fechar').click(function(){
+			$('.infoExtra').fadeOut(300);
+		});
+	
+	});
+//]]>
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Santa Casa da Misericórdia Entrada</title>
+</head>
+
+<body>
+<noscript><p>your browser does not support JavaScript!</p></noscript>
+<nav id="Nav">
+	<ul>
+    	<li><a href="#">Entrada</a></li>
+        <li><a href="saude.html">Saúde</a></li>
+        <li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+        <li><a href="creche.html">Creche</a></li>
+        <li><a href="Irmandade.html">Irmandade</a></li>
+        <li><a href="Contactos.html">Contactos</a></li>
+        <li><a href="Pessoal.html">Pessoal</a></li>
+        <li><a href="Medico.html">Médico</a></li>
+        <li><a href="gestaoUsers.html">Gestão de Utilizadores</a></li>
+    </ul>
+</nav>
+<section id="Header" class="loginDiv">
+	 <div id="Access">
+                <a id="loginButton" class="buttonOn" href="#" onclick="toggleLogin();">Login</a>
+                <form action="#" method="post" class="off">  
+                    <table>
+                        <tr><td>Username:</td><td><input type="text" value="" name="user"/></td></tr>
+                        <tr><td>Password:</td><td><input type="password" value="" name="pass"/></td></tr>
+                        <tr><td><input type="button" value="Exit"  onclick="toggleLogin();"/></td><td><input type="button" value="LogIn" name="enter"/><input type="reset" value="Clear" name="clear"/></td></tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    
+  <div id="Container">
+        <div id="ImportantInfos">        
+               <section class="links">
+                <h4>Conheça a Santa Casa de Leiria!</h4>
+                    <section class="wraperLinks">
+                        <div class="infoLink" onclick="" id="sociais"><b>Órgãos Sociais<span>Clique para ver informações sobre os órgãos sociais da Santa Casa</span></b></div> 
+                        <div class="infoLink" onclick="" id="historia"><b>História<span>Clique para ter acesso a informação sobre a história da Santa Casa</span></b></div>
+                        <div class="infoLink" onclick="" id="estatutos"><b>Estatutos<span>Aqui pode ver os estatutos dentro da Santa Casa</span></b></div>
+                        <div class="infoLink" onclick="" id="voluntariado"><b>Voluntariado<span>Saiba tudo sobre o voluntariado para a Santa Casa</span></b></div>
+                    </section>
+                </section><!--fim div links-->
+                <section id="saude">
+                	<h4>Serviços da Santa Casa</h4>
+                    <p>Na Santa Casa poderá encontrar uma grande variedade de serviços disponiveis para melhorar a sua saúde e bem estar. Desde consultas a cirurgias, estamos prontos para lhe providenciar a melhor experiencia para si e para a sua saúde. Sempre que necessitar de cuidados médicos procure-nos. Deixe que os nossos profissionais cuidem de si.</p>
+                    <ol>
+                    	<li>Serviço de Atendimento Médico</li>
+                        <li>Consulta de Clinica Geral</li>
+                        <li>Tratamento de situações de doença médica aguda</li>
+                        <li>Patologia traumática aguda</li>
+                        <li>Exames complementares de diagnóstico e terapêutica</li>
+                    </ol>             
+                    <img src="../Img/servicesSCML.png" alt="servicosSantaCasa" id="imgServices"/>   
+                </section><!--fim div info services-->
+                <div class="trans"><a class="infoLink" href="#" onclick="moveDiv()"> &gt; <span>Carregar neste botão irá levá-lo à secção de noticias da página Entrada.</span></a></div>
+      </div><!--fim div important-->
+                <div id="ImportantInfos2">
+                <div class="transBack"><a class="infoLink" onClick="moveDivBack()"> &lt; <span>Clicar neste link irá retorná-lo à página de rosto da Entrada da Santa Casa</span></a></div>
+                <section class="links">
+                <section class="wraperLinks">
+                <p>Os links abaixo irão levá-lo às noticias do assunto respectivo. Porque mantê-lo actualizado é da nossa preocupação, para que saiba as últimas revoluções que a Santa Casa tem para contar.</p>
+                	<div class="linkAcesso" id="hospital" onclick=""><b>Hospital</b></div> 
+                    <div onclick="" class="linkAcesso" id="lar"><b>Lar</b></div>
+                	<div onclick="" class="linkAcesso" id="creche"><b>Creche</b></div>
+               	</section>
+                	<div id="mapa">
+                	<p><strong><a class="infoLink" target="_blank" href="https://www.google.pt/maps/place/Santa+Casa+Da+Miseric%C3%B3rdia+De+Leiria/@39.740267,-8.802694,17z/data=!4m2!3m1!1s0x0:0xf3086ce256a0e1c0">Não nos encontra? Encontre-nos por aqui!<span>Carregar neste link irá abrir uma página extra para apresentar o mapa.</span></a></strong></p>
+                </div>
+                </section><!--fim div links-->
+       
+             <div id="notSoImp">
+                <h3>Publicações Médicas</h3>
+                <article class="pubMed">
+                    <div class="conteudoNoticia">
+                        <div class="switcherNoticia" id="noticia1">
+                            Ex noticia 1
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                        <div class="switcherNoticia" id="noticia2">
+                            Ex noticia 2
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                        <div class="switcherNoticia" id="noticia3">
+                            Ex noticia 3
+                            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        </div>
+                        
+                	</div><!--fim div onteudo noticia-->            	
+                    
+                    <a href="#" class="itemNum" onclick="mudaNoticia(2); return false;">2</a>
+                    <a href="#" class="itemNum" onclick="mudaNoticia(3); return false;">3</a>
+                    <a href="#" class="itemNum" onclick="mudaNoticia(1); return false;">1</a>
+                    
+                    <img src="../Img/containerGuideNoticias.png" alt="imagem slider de noticias"/>
+                    <div id="bola"></div>
+                </article><!--fim div noticias medicas-->
+          </div><!--fim div notsoimp-->
+     </div><!--fim div important2-->         
+  </div><!--fim div container-->
+  
+        <div class="pusher">&nbsp;<br /></div>
+<footer id="Footer">
+	<h3>O Saber da experiência.<span>500 anos de história.</span></h3>
+</footer>
+<!--divs de info extra que aparecem no meio do ecra-->
+<article class="infoExtra" id="Orgaos">
+	<div class="fechar"><a>X</a></div>
+    <section>
+	<h2>Orgãos Sociais</h2>
+	<h4>Assembleia-Geral</h4>
+    <ul>
+    	<li>Presidente<ul>
+        	<li>António Martins Ribeiro</li>        
+        </ul></li>
+        
+    	<li>Vice-Presidente<ul>
+        	<li>Padre Mário Marques dos Anjos</li>        
+        </ul></li>
+        
+    	<li>Secretários Efectivos<ul>
+        	<li>Maria Filomena Barros Rosa</li>
+            <li>Artur Pereira de Oliveira</li>        
+        </ul></li>
+        
+        
+    	<li>Secretários Suplentes<ul>
+        	<li>Maria José Viegas Correia</li>
+            <li>Maria Luísa Gameiro</li>        
+        </ul></li>
+    </ul>
+	<h2>Conselho Fiscal</h2>
+	<ul>
+    	<li>Presidente<ul>
+        	<li>Carlos Alberto Gomes Luso</li>
+            <li>Vogais Efectivos</li>
+            <li>Adriano Lopes dos Santos</li>
+            <li>José Almeida Monteiro</li>
+         </ul></li>
+         <li>Vogais Suplentes<ul>
+         	<li>Filipe Jorge Costa Paixão</li>
+            <li>Rui Paulo Oliveira Carreira</li>
+            <li>José Belo Cruel</li></ul>
+         </li>
+         <li>Mesa Administrativa<ul>
+         	<li>Fernando Alberto Lopes dos Santos (Provedor)</li>
+            <li>Vogal efectivo (Vice-provedor)</li>
+            <li>Carlos Alberto Garcia Poço</li>
+            <li>Maria Fernanda da Silva Ferreira (Vogal efectivo)</li>
+            <li>Maria Isabel Almeida Gonçalves (Vogal efectivo)</li>
+            <li>Luis José da Silva Santos</li>
+            <li>Rui António Menezes de Sá Pessoa (Vogal efectivo)</li>
+            <li>Luís Alberto Santos Fernandes (Vogal efectivo)</li></ul>
+         </li>
+         <li>Vogais Suplentes<ul>
+         	<li>Ana Bela Pereira de Sá Pessoa</li>
+            <li>Irene Pina Madeira Monteiro</li>
+            <li>Lucinda Conceição Almeida Belo</li></ul>
+        </li>
+        </ul>
+	</section>
+</article>
+
+<article class="infoExtra" id="hist">
+	<div class="fechar"><a>X</a></div>
+	<section>
+        <h2>Historial da Instituição</h2>
+        <h3>Algumas notas históricas</h3>
+         
+        <p>A Irmandade da Santa Casa da Misericórdia de Leiria foi criada em 1544. Neste mesmo ano, foi instituído o seu primeiro hospital, situado no centro da cidade, com lotação de 12 camas. Em 1610, veio a absorver os hospitais das profissões e as albergarias existentes, à data, na cidade e que tinham sido criadas e mantidas pelos “homens bons” para receber e assistir os doentes, agasalhar os peregrinos e dar de comer aos pobres. Algumas destas instituições datavam de 1222.</p>
+        
+        <p>Das normas e circunstâncias em que fora criada a Irmandade da Misericórdia de Leiria pouco se conhece, porque todo o seu arquivo foi queimado, aquando das invasões francesas, no Século XIX. Era prescrição do Compromisso que a Provedoria fosse ocupada e exercida pelo Bispo da Diocese. Assim se procedeu durante longo tempo. Em 1790, D. Manuel de Aguiar foi nomeado Bispo da Diocese de Leiria e, consequentemente, ficou Provedor da Misericórdia. Foi um dos maiores, senão o maior, responsável por esta instituição.</p>
+        
+        <p>Desde logo, a grandeza e bondade do seu espírito não se compadeceu com a localização, eficiência e exiguidade do Hospital da Misericórdia. De imediato pensou e decidiu construir um novo hospital em lugar apropriado e que fosse capaz de corresponder às necessidades do seu tempo e de mais adiante. Em 1798 deu início à construção do novo hospital no Bairro dos Anjos, onde se situava a capela de Nossa Senhora dos Anjos que, por isso, fora demolida. Em 1800 o Hospital estava concluído e recebia os doentes transferidos do primeiro hospital que depois viria a ser alienado. Após a implantação da República, o Hospital recebeu o nome do seu fundador, Dom Manuel de Aguiar, denominação que ainda hoje conserva. Ficou a ser o único hospital de Leiria e nele foram ministrados os cuidados hospitalares de saúde aos habitantes dos concelhos de Leiria, Marinha Grande, Batalha e Porto de Mós e, de forma suplementar, de Alcobaça e Pomal.</p>
+        
+        <p>Até 1975, o Hospital Dom Manuel de Aguiar foi dirigido e administrado pela Santa Casa da Misericórdia de Leiria. Com a nacionalização dos hospitais e assistência hospitalar passou a ser gerido pela administração do Estado, como Hospital Distrital de Leiria, ficando o imóvel propriedade da Misericórdia. A sua lotação era, à data da transferência, de 113 camas para os internamentos dos serviços de medicina, cirurgia geral e especialidades de ortopedia, obstetrícia, otorrinolaringologia e oftalmologia. Ali funcionavam ainda os serviços de urgência, consultas externas, radiologia, análises clínicas e hematologia. A Misericórdia e Leiria, que sempre e só exerceu a prestação de cuidados hospitalares de saúde, uma vez espoliada do seu hospital e meios de acção, ficou sem actividade. Para guardar o seu arquivo e reinstalar a administração, viu-se na necessidade de arrendar uma pequena sala nas dependências da Sé Catedral de Leiria. As reuniões da Irmandade eram realizadas na Sacristia da Igreja da Misericórdia, sua propriedade cuja reconstrução data do princípio do século XVIII.</p>
+        
+        <p>Materialmente destroçada mas de espírito vivo e aguerrido, porque o amor não morre, antes se intensifica e robustece na luta, a Misericórdia logo decidiu continuar a sua acção benéfica na área da segurança social assistindo aos idosos, carência muito sentida na zona de Leiria. Por isso, concluídos os estudos e acções preliminares, em 1983 arrancou com a construção dum lar para idosos, em terreno seu, situado na cidade no sopé do monte de Nossa Senhora da Encarnação. Toda a construção e apetrechamento foi encargo exclusivo da Misericórdia sem qualquer participação ou ajuda das entidades estatais unicamente porque o plano em vista excedia em qualidade as características legais vigentes. Isto fez com que a conclusão da obra fosse mais difícil e retardada. Posteriormente, a Misericórdia alarga a sua acção ao domicílio com a assistência domiciliária.</p>
+</section>
+</article>
+
+<article class="infoExtra" id="vol">
+	<div class="fechar"><a>X</a></div>
+	<section>
+    	<h2>Voluntariado</h2>
+<blockquote>"Um sorriso significa muito. Enriquece quem o recebe, sem empobrecer quem o oferece; dura apenas um segundo, mas a sua recordação, por vezes, nunca se apaga." Autor desconhecido</blockquote>
+ 
+<p>O Voluntariado é um conjunto de acções de interesse social e comunitário realizadas de forma desinteressada por pessoas, no âmbito de projectos, programas e outras formas de intervenção ao serviço dos indivíduos, das famílias e da comunidade, desenvolvidas sem fins lucrativos por entidades públicas ou privadas.
+O Voluntário é todo o indivíduo que de forma gratuita, livre, desinteressada e responsável, se compromete a exercer acções de voluntariado sem haver qualquer relação de trabalho subordinado ou autónomo.</p>
+
+<p>É dentro destes princípios que se enquadra o Voluntariado da Santa Casa da Misericórdia, como sendo uma actividade inerente ao exercício da cidadania, de forma a garantir o apoio social necessário aos utentes, nomeadamente do Lar N. Sr.ª da Encarnação, Residencial XXI e Unidade de Cuidados Continuados.</p>
+
+<p>Ser Voluntário/a da Santa Casa da Misericórdia de Leiria é desenvolver uma actividade de solidariedade para com aqueles que necessitam da sua ajuda.</p>
+
+<p>Se pode disponibilizar algum do seu tempo livre, trabalho e talento para causas de interesse social e comunitário adira ao Voluntariado da Santa Casa da Misericórdia de Leiria.</p>
+
+<h5>Contacte-nos através do tel. 244 106 202 ou e-mail geral@misericordiadeleiria.pt.</h5>
+    </section>
+</article>
+	
+<article class="infoExtra" id="estats">
+	<div class="fechar"><a>X</a></div>
+    <section>
+    	<p>O link abaixo disponibilizará um PDF onde poderá verificar os estatutos da Santa Casa da Misericórdia.</p>
+        <a href="../documentos/Estatutos.pdf" target="_blank" download="estatutos.pdf">Veja aqui os estatutos da Santa Casa.</a>
+    </section>
+</article>
+</body>
+</html>

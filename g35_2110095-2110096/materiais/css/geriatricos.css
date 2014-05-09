@@ -1,0 +1,115 @@
+.textoResidencial{
+
+	font-size: 16pt;
+	width: 50%;
+	float: left;
+}
+
+.resumovalencia{
+
+	font-style: italic;
+}
+
+.geriatrico{
+
+}
+
+.imagemResidencial{
+	
+	width: 49%;
+	float: right;
+}
+
+#imagemResidencial{
+	width: 200px;
+	height: 680px;
+	min-height: 950px;
+}
+
+.textoLar{
+	width: 50%;
+	float: left;
+	font-size: 16pt;
+}
+
+.imagemLar{
+	
+	width: 49%;
+	float: right;
+}
+
+#imagemLar{
+	width: 220px;
+	height: 1550px;
+	min-height: 2000px;
+}
+
+
+.padd{
+	margin-top: 85%;
+}
+
+.textoInternamento{
+	width: 50%;
+	float: left;
+		font-size: 16pt;
+
+	}
+
+.imagemInternamento{
+	
+	width: 49%;
+	float: right;
+	min-height: 937px;
+}
+
+#imagemInternamento{
+	width: 220px;
+	height: 450px;
+}
+
+.textoApoioDomiciliario{
+	width: 50%;
+	float: left;
+	font-size: 16pt;
+
+
+	}
+
+.imagemApoioDomiciliario{	
+	width: 49%;
+	float: right;
+	min-height: 600px;
+}
+
+#imagemApoioDomiciliario{
+	width: 220px;
+
+
+	height: 152px;
+}
+
+.textoAcordos{
+	
+	font-size: 16pt;
+
+}
+
+#infogeriatricos{
+	float: left;
+	width: 45%;
+}
+
+#contactogeriatricos{
+	float: left;
+
+}
+
+#textocontactogeriatricos{
+	width: 260px;
+}
+
+#imgcontacto{
+	width: 20px;
+	height: 20px;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Santa Casa da Misericórdia de Leiria</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="styles/estilo.css" rel="stylesheet" type="text/css" />
+<link href="styles/menu_estilo.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.dotdotdot.js"></script>
+<script type="text/javascript">
+	// <![CDATA[ 
+	$(document).ready(function() {
+		$(".noticia_med").dotdotdot();
+		$(".apresentacao_impar").dotdotdot();
+		$(".apresentacao_par").dotdotdot();
+		//$(".noticia").dotdotdot();
+
+		//			$('#trigger').hover(function(){
+		//    		$(this).parent().animate({'top':0},500); });
+		//			$('#slider').mouseleave(function(){
+		//  		$(this).animate({'top':-150},500); 
+		//			});
+
+	});
+	// ]]>
+</script>
+<!-- IRMANDADE EXCERTO NOTICIA-->
+<script type="text/javascript">
+	//<![CDATA[		
+	var noticias_1 = [
+			'<h3>Irmandade</h3><p>excerto da primeira notícia vai aparecer aqui</p>',
+			'<h3>Irmandade</h3><p>excerto da segunda notícia vai aparecer aqui</p>',
+			'<h3>Irmandade</h3><p>excerto da terceira notícia vai aparecer aqui</p>' ];
+	var iterador_1 = 0;
+
+	window.setInterval(function() {
+		$('#noticia_1').fadeToggle("fast");
+	}, 4990);
+
+	window.setInterval(function() {
+		$('#noticia_1').fadeToggle("slow").html(noticias_1[iterador_1]);
+		iterador_1 = iterador_1 + 1;
+
+		if (iterador_1 >= noticias_1.length) {
+			iterador_1 = 0;
+		}
+	}, 5000);
+	// ]]>
+</script>
+<!-- CRECHE EXCERTO NOTICIA-->
+<script type="text/javascript">
+	//<![CDATA[		
+	var noticias_2 = [
+			'<h3>Creche</h3><p>excerto da primeira notícia vai aparecer aqui</p>',
+			'<h3>Creche</h3><p>excerto da segunda notícia vai aparecer aqui</p>',
+			'<h3>Creche</h3><p>excerto da terceira notícia vai aparecer aqui</p>',
+			'<h3>Creche</h3><p>excerto da quarta notícia vai aparecer aqui</p>' ];
+	var iterador_2 = 0;
+
+	window.setInterval(function() {
+		$('#noticia_2').fadeToggle("fast");
+	}, 5100);
+
+	window.setInterval(function() {
+		$('#noticia_2').fadeToggle("slow").html(noticias_2[iterador_2]);
+		iterador_2 = iterador_2 + 1;
+
+		if (iterador_2 >= noticias_2.length) {
+			iterador_2 = 0;
+		}
+	}, 5110);
+	// ]]>
+</script>
+<!-- LAR EXCERTO NOTICIA-->
+<script type="text/javascript">
+	//<![CDATA[		
+	var noticias_3 = [
+			'<h3>Lar</h3><p>Oferecemos alojamento temporário ou permanente, em quartos individuais ou duplos, num ambiente acolhedor e familiar, preservando a individualidade e privacidade de cada utente.</p>',
+			'<h3>Lar</h3><p>O Lar Nossa Senhora da Encarnação é uma Estrutura Residencial localizada no centro da cidade de leiria,  que dá apoio a nível  de alojamento  permanente,  temporário  ou  no  domicílio, com estação de  cuidados  personalizados.  Está  disponível  para quando  os  indivíduos  ou  famílias,  por  motivo  de  doença,  ou outro  impedimento,  necessitem  de  apoio  e  não  possam  por  si só, assegurar a satisfação das suas necessidades e promoção da qualidade de vida</p>',
+			'<h3>Lar</h3><p>O  envelhecimento  da  população  é  um  fenómeno  de amplitude  mundial,  não  sendo  Portugal  excepção  a  esta realidade.  O  quadro  atual  do  envelhecimento  caracteriza-se assim  por  um aumento  da  longevidade.</p>',
+			'<h3>Lar</h3><p>O  Cuidar  de  indivíduos  no  seu  processo  de  envelhecimento deve  incluir  o  conhecimento  das  mudanças  que  ocorrem durante  o  seu  ciclo  de  vida,  das  reais  necessidades  sentidas face  à  doença  ou  às  perdas  de  funcionalidade,  mas  também, paralelamente  prevenir  as  perdas  de  autonomia,  valorizando potencialidades  e  promovendo  a  auto  estima.</p>',
+			'<h3>Lar</h3><p>Apoiamos os indivíduos e famílias na satisfação das necessidades e atividades de  vida  diária  no  domicílio,  promovendo  a  sua  saúde,  bem  estar  e integração social.</p>' ];
+	var iterador_3 = 0;
+
+	window.setInterval(function() {
+		$('#noticia_3').fadeToggle("fast");
+	}, 5210);
+
+	window.setInterval(function() {
+		$('#noticia_3').fadeToggle("slow").html(noticias_3[iterador_3]);
+		iterador_3 = iterador_3 + 1;
+
+		if (iterador_3 >= noticias_3.length) {
+			iterador_3 = 0;
+		}
+	}, 5220);
+	// ]]>
+</script>
+<!-- RESIDENCIAL EXCERTO NOTICIA-->
+<script type="text/javascript">
+	//<![CDATA[		
+	var noticias_4 = [
+			'<h3>Residencial</h3><p>excerto da primeira notícia vai aparecer aqui</p>',
+			'<h3>Residencial</h3><p>excerto da segunda notícia vai aparecer aqui</p>',
+			'<h3>Residencial</h3><p>excerto da terceira notícia vai aparecer aqui</p>',
+			'<h3>Residencial</h3><p>excerto da quarta notícia vai aparecer aqui</p>',
+			'<h3>Residencial</h3><p>excerto da quinta notícia vai aparecer aqui</p>',
+			'<h3>Residencial</h3><p>excerto da sexta notícia vai aparecer aqui</p>' ];
+	var iterador_4 = 0;
+
+	window.setInterval(function() {
+		$('#noticia_4').fadeToggle("fast");
+	}, 5320);
+
+	window.setInterval(function() {
+		$('#noticia_4').fadeToggle("slow").html(noticias_4[iterador_4]);
+		iterador_4 = iterador_4 + 1;
+
+		if (iterador_4 >= noticias_4.length) {
+			iterador_4 = 0;
+		}
+	}, 5330);
+	// ]]>
+</script>
+</head>
+
+<!-- BODY -->
+<body>
+<div id="container"> 
+	<!-- CABECALHO -->
+	<header id="cabecalho"> <a href="index.html">
+		<div id="homepage"></div>
+		</a> 
+		<!-- MENU -->
+		<div id="grupo1">
+			<ul class="menu">
+				<li><a href="#pessoal">Pessoal</a></li>
+				<li><a href="#medico">Médico</a></li>
+				<li><a href="#gestao_de_utilizadores">Gestão de	Utilizadores</a></li>
+			</ul>
+		</div>
+		<!-- fim grupo1 -->
+		<div id="grupo2">
+			<ul class="menu">
+				<li><a><span>Saúde</span></a>
+					<ul>
+						<li><a href="lista-especialidades.html">Lista de Especialidades</a></li>
+						<li><a href="corpo-clinico.html">Corpo Clínico</a></li>
+						<li><a href="#artigos_noticias_clinicas">Artigos/Notícias Clínicas</a></li>
+						<li><a href="marcacao-consultas.html">Marcação de Consultas</a></li>
+						<li><a href="#confirmacao-de-marcacoes">Confirmação de Marcações</a></li>
+					</ul>
+				</li>
+				<li><a href="cuidados-geriatricos.html">Cuidados Geriátricos</a></li>
+				<li><a href="creche.html">Creche</a></li>
+				<li><a href="irmandade.html">Irmandade</a></li>
+				<li><a href="contactos.html">Contactos</a></li>
+			</ul>
+		</div>
+		<!-- fim grupo2 --> 
+	</header>
+	<!-- fim cabecalho -->
+	
+	<article id="conteudo"> 
+		<!-- APRESENTACOES -->
+		<section id="apresentacoes">
+			<div class="apresentacao_impar">
+				<h3>Saúde</h3>
+				<p>A Santa Casa da Misericórdia de Leiria, dando continuidade à
+					sua tradição secular de acompanhar as necessidades da sociedade em
+					geral, desenvolveu recentemente uma nova área de apoio na
+					prestação de cuidados de saúde.</p>
+				<p>É neste contexto que surge o Hospital D. Manuel de Aguiar
+					(HDMA), que oferece aos seus utentes uma unidade moderna e
+					tecnologicamente apetrechada, apta para dar uma resposta
+					profissional e competente nas suas diversas áreas de intervenção.</p>
+			</div>
+			<div class="apresentacao_par">
+				<h3>Cuidados Geriátricos</h3>
+				<p>Os nosso Cuidados Geriàtricos subdidivem-se na nossa Residencial, ao Lar , 
+				ao Internamento e Apoio Domiciliário.</p>
+			</div>
+			<div class="apresentacao_impar">
+				<h3>Creche</h3>
+				<p>Nesta infra-estrutura, a Santa Casa da Misericórdia de
+					Leiria vocaciona mais uma importante valência no âmbito das suas
+					competências sociais, com uma capacidade instalada para 33
+					crianças, dos 0 aos 36 meses.</p>
+			</div>
+			<div class="apresentacao_par">
+				<h3>Irmandade</h3>
+				<p>A Irmandade da Santa Casa da Misericórdia de Leiria, fundada
+					no ano de 1544, é uma associação constituída por fiéis,
+					vulgarmente chamados no Compromisso da Irmandade como irmãos.</p>
+				<p>O número de irmãos é ilimitado e são eles que constituem a
+					Assembleia Geral, órgão social responsável pela gestão da Santa
+					Casa da Misericórdia, mediante poderes delegados na Mesa
+					Administrativa e Conselho Fiscal.</p>
+			</div>
+		</section>
+		
+		<!-- NOTICIAS -->
+		<section id="barra_lateral_esq">
+			<div id="noticias">
+				<div class="noticia" id="noticia_1">
+					<h3>Irmandade</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy
+						auctor massa. Pellentesque habitant morbi tristique senectus et
+						netus et malesuada fames ac turpis egestas. Nulla at risus.
+						Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus.
+						Nam mattis, felis ut adipiscing.</p>
+				</div>
+				<div class="noticia" id="noticia_2">
+					<h3>Creche</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy
+						auctor massa. Pellentesque habitant morbi tristique senectus et
+						netus et malesuada fames ac turpis egestas. Nulla at risus.
+						Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus.
+						Nam mattis, felis ut adipiscing.</p>
+				</div>
+				<div class="noticia" id="noticia_3">
+					<h3>Lar</h3>
+					<p>O Lar Nossa Senhora daEncarnação, Instituição Particular de
+						Solidariedade Social, com mais de 20 anos ao serviço da
+						comunidade, está numprocessoderemodelaçãodos seus quartos,
+						espaços comuns e equipamentos, apostando em criar ambientes
+						facilitadores e promotores de autonomia. Pretende cada vez mais
+						acompanhar as necessidades e interesses dos cidadãos, inovando os
+						próprios serviços.</p>
+				</div>
+				<div class="noticia" id="noticia_4">
+					<h3>Residencial</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy
+						auctor massa. Pellentesque habitant morbi tristique senectus et
+						netus et malesuada fames ac turpis egestas. Nulla at risus.
+						Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus.
+						Nam mattis, felis ut adipiscing.</p>
+				</div>
+			</div>
+		</section>
+		
+		<!-- CENTRO -->
+		<section id="centro">
+			<div id="centro_fixo">
+				<div class="noticia_med">
+					<h3>Última Publicação do médicos !</h3>
+					<div class="imagem_index"> <img src="imagens/lar.jpg" alt="imagem noticia 1" /> </div>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy
+						auctor massa. Pellentesque habitant morbi tristique senectus et
+						netus et malesuada fames ac turpis egestas. Nulla at risus.
+						Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus.
+						Nam mattis, felis ut adipiscing.</p>
+				</div>
+				<div class="noticia_med">
+					<h3>Penúltima Publicação do médicos !</h3>
+					<div class="imagem_index"> <img src="imagens/lar.jpg" alt="imagem noticia 2" /> </div>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy
+						auctor massa. Pellentesque habitant morbi tristique senectus et
+						netus et malesuada fames ac turpis egestas. Nulla at risus.
+						Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus.
+						Nam mattis, felis ut adipiscing.</p>
+				</div>
+				<div class="noticia_med">
+					<h3>Antepenúltima Publicação do médicos !</h3>
+					<div class="imagem_index"> <img src="imagens/lar.jpg" alt="imagem noticia 3"/> </div>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+						Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy
+						auctor massa. Pellentesque habitant morbi tristique senectus et
+						netus et malesuada fames ac turpis egestas. Nulla at risus.
+						Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus.
+						Nam mattis, felis ut adipiscing.</p>
+				</div>
+			</div>
+		</section>
+	</article>
+	<footer id="rodape">
+		<p>Fábio Santos| João Silva | Pedro Lisboa</p>
+		<p> <strong>Copyright. All Rights Reserved. 2014</strong> </p>
+		<h3>DEI-ESTG-IPLEIRIA</h3>
+	</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/geral.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/saude.css" />
+        <script src="../JavaScript/showHideDivs.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function mudaNoticia(numN) {
+                alert(numN);
+                if (numN == 1) {
+                    $("#bola").animate({left: '3.8%'}, 300);
+                } else if (numN == 2) {
+                    $("#bola").animate({left: '45%'}, 300);
+                } else if (numN == 3) {
+                    $("#bola").animate({left: '84%'}, 300);
+                }
+            }
+
+            function showNews() {
+                $('#Container div').toggleClass("off");
+            }
+
+            $(document).ready(function(e) {
+
+                $('.linkAcesso').click(function() {
+                    alert("div clicked");
+                });
+            });
+            //]]>
+        </script>
+        <!--<noscript>Client do not support javascript or doesn't have it installed.</noscript>-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Santa Casa da Misericórdia Home</title>
+    </head>
+    <body>
+        <nav id="Nav">
+            <ul>
+                <li><a href="index.html">Entrada</a></li>
+                <li><a href="#">Saúde</a></li>
+                <li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+                <li><a href="creche.html">Creche</a></li>
+                <li><a href="Irmandade.html">Irmandade</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>
+                <li><a href="Pessoal.html">Pessoal</a></li>
+                <li><a href="Medico.html">Médico</a></li>
+                <li><a href="gestaoUsers.html">Gestão de Utilizadores</a></li>
+            </ul>
+        </nav><!--fim nav-->
+        <div id="Header">
+            <div id="Access">
+                <a id="loginButton" class="buttonOn" href="#" onclick="toggleLogin();">Login</a>
+                <form action="#" method="post" class="off">  
+                    <table>
+                        <tr><td>Username:</td><td><input type="text" value="" name="user"/></td></tr>
+                        <tr><td>Password:</td><td><input type="password" value="" name="pass"/></td></tr>
+                        <tr><td><input type="button" value="Exit"  onclick="toggleLogin();"/></td><td><input type="button" value="LogIn" name="enter"/><input type="reset" value="Clear" name="clear"/></td></tr>
+                    </table>
+                </form>
+            </div>
+        </div><!--fim header-->
+        <div id="Container">
+            <div id="news" class="off">
+                <div id="newsHeader" class="off">
+                    <div id="newsTitle" class="off">
+                        <h1>Title</h1>
+                    </div>
+                    <div class="off" id="newsExit">
+                        <a onclick="showNews();"><h1>X</h1></a>
+                    </div>
+                </div>
+                <div id="newsBody" class="off">
+                    <div id="newsText" class="off">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper risus non velit fermentum rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed porttitor consectetur diam non sollicitudin. Sed gravida faucibus nunc, at tempus tortor volutpat quis. Pellentesque ultricies, nisl sit amet aliquam porttitor, massa quam egestas odio, sit amet eleifend tortor est et est. Curabitur aliquam mollis tellus vitae pretium. Ut tincidunt erat non lobortis gravida. Quisque auctor egestas bibendum. Vivamus dapibus lacus facilisis, vehicula felis in, lacinia augue. Aenean quis ipsum nisl.
+
+                            Suspendisse adipiscing condimentum scelerisque. Ut id elit quis ligula condimentum feugiat. Pellentesque iaculis sed justo vitae rhoncus. Curabitur semper turpis sed mollis ultricies. Mauris id dui id enim hendrerit vulputate. Aliquam vitae nulla semper, iaculis neque sed, vehicula sem. Donec non nibh sed felis condimentum molestie ac vitae augue. Donec volutpat hendrerit quam eu ullamcorper. Donec in condimentum orci. Nullam porttitor luctus lorem eget malesuada.
+
+                            Cras ut felis a massa viverra accumsan. Nulla faucibus at sapien eu fermentum. Morbi tincidunt mauris eget libero ultrices pretium. Etiam aliquet velit vel massa fermentum, ut ornare libero convallis. Aliquam condimentum a dui eu lacinia. Nam interdum neque eget ullamcorper mollis. In a dolor sodales, bibendum nunc id, pretium risus. Quisque semper ipsum ut lectus sollicitudin fringilla. Cras posuere convallis nulla, pharetra convallis sem dapibus vitae. Nullam sed quam et augue commodo euismod euismod non felis. Donec semper aliquet congue. Curabitur vulputate mauris neque, vehicula molestie ante semper eget. Pellentesque vel lacus sapien.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper risus non velit fermentum rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed porttitor consectetur diam non sollicitudin. Sed gravida faucibus nunc, at tempus tortor volutpat quis. Pellentesque ultricies, nisl sit amet aliquam porttitor, massa quam egestas odio, sit amet eleifend tortor est et est. Curabitur aliquam mollis tellus vitae pretium. Ut tincidunt erat non lobortis gravida. Quisque auctor egestas bibendum. Vivamus dapibus lacus facilisis, vehicula felis in, lacinia augue. Aenean quis ipsum nisl.
+
+                            Suspendisse adipiscing condimentum scelerisque. Ut id elit quis ligula condimentum feugiat. Pellentesque iaculis sed justo vitae rhoncus. Curabitur semper turpis sed mollis ultricies. Mauris id dui id enim hendrerit vulputate. Aliquam vitae nulla semper, iaculis neque sed, vehicula sem. Donec non nibh sed felis condimentum molestie ac vitae augue. Donec volutpat hendrerit quam eu ullamcorper. Donec in condimentum orci. Nullam porttitor luctus lorem eget malesuada.
+
+                            Cras ut felis a massa viverra accumsan. Nulla faucibus at sapien eu fermentum. Morbi tincidunt mauris eget libero ultrices pretium. Etiam aliquet velit vel massa fermentum, ut ornare libero convallis. Aliquam condimentum a dui eu lacinia. Nam interdum neque eget ullamcorper mollis. In a dolor sodales, bibendum nunc id, pretium risus. Quisque semper ipsum ut lectus sollicitudin fringilla. Cras posuere convallis nulla, pharetra convallis sem dapibus vitae. Nullam sed quam et augue commodo euismod euismod non felis. Donec semper aliquet congue. Curabitur vulputate mauris neque, vehicula molestie ante semper eget. Pellentesque vel lacus sapien.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper risus non velit fermentum rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed porttitor consectetur diam non sollicitudin. Sed gravida faucibus nunc, at tempus tortor volutpat quis. Pellentesque ultricies, nisl sit amet aliquam porttitor, massa quam egestas odio, sit amet eleifend tortor est et est. Curabitur aliquam mollis tellus vitae pretium. Ut tincidunt erat non lobortis gravida. Quisque auctor egestas bibendum. Vivamus dapibus lacus facilisis, vehicula felis in, lacinia augue. Aenean quis ipsum nisl.
+
+                            Suspendisse adipiscing condimentum scelerisque. Ut id elit quis ligula condimentum feugiat. Pellentesque iaculis sed justo vitae rhoncus. Curabitur semper turpis sed mollis ultricies. Mauris id dui id enim hendrerit vulputate. Aliquam vitae nulla semper, iaculis neque sed, vehicula sem. Donec non nibh sed felis condimentum molestie ac vitae augue. Donec volutpat hendrerit quam eu ullamcorper. Donec in condimentum orci. Nullam porttitor luctus lorem eget malesuada.
+
+                            Cras ut felis a massa viverra accumsan. Nulla faucibus at sapien eu fermentum. Morbi tincidunt mauris eget libero ultrices pretium. Etiam aliquet velit vel massa fermentum, ut ornare libero convallis. Aliquam condimentum a dui eu lacinia. Nam interdum neque eget ullamcorper mollis. In a dolor sodales, bibendum nunc id, pretium risus. Quisque semper ipsum ut lectus sollicitudin fringilla. Cras posuere convallis nulla, pharetra convallis sem dapibus vitae. Nullam sed quam et augue commodo euismod euismod non felis. Donec semper aliquet congue. Curabitur vulputate mauris neque, vehicula molestie ante semper eget. Pellentesque vel lacus sapien.
+                        </p>
+                    </div>
+                    <div id="newsImage" class="off">
+
+                    </div>
+
+                </div>
+            </div>
+            <div id="ImportantInfos">
+                <div id="links">
+                    <ul>
+                        <li><a href="#" onclick="showNews();">Noticia 1</a></li>
+                        <li><a href="#">Noticia 2</a></li>
+                        <li><a href="#">Noticia 3</a></li>
+                        <li><a href="#">Noticia 4</a></li>
+                        <li><a href="#">Noticia 4</a></li>
+                        <li><a href="#">Noticia 4</a></li>
+                        <li><a href="#">Noticia 4</a></li>
+                        <li><a href="#">Noticia 4</a></li>
+                        <li><a href="#">Noticia 4</a></li>
+                        <li><a href="#">Noticia 4</a></li>
+                        <li><a href="#">Noticia 4</a></li>
+                    </ul>
+                </div>
+                <div id="notSoImp">
+                    <div class="pubMed">
+                        <div class="conteudoNoticia">
+                            <div class="switcherNoticia" id="noticia1">
+                                <a href="#"  onclick="showNews();">cenas aksgh</a>
+                            </div>
+                            <div class="switcherNoticia" id="noticia2">
+                                cenas 2
+                            </div>
+                            <div class="switcherNoticia" id="noticia3">
+                                cenas 3
+                            </div>
+                        </div>
+                        <a href="#" class="itemNum" onclick="mudaNoticia(2);
+                                return false;">2</a>
+                        <a href="#" class="itemNum" onclick="mudaNoticia(3);
+                                return false;">3</a>
+                        <a href="#" class="itemNum" onclick="mudaNoticia(1);
+                                return false;">1</a>
+                        <img src="../Img/containerGuideNoticias.png" alt="containerGuideNoticias"/>
+                        <div id="bola">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+<footer id="Footer">
+	<h3>O Saber da experiência.<span>500 anos de história.</span></h3>
+</footer>
+    </body>
+</html> 	

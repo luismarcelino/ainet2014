@@ -1,0 +1,429 @@
+﻿body { 
+	background-image:url("img/back.jpg"); 
+	background-position:top left;
+	background-repeat:repeat-x;
+	margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px;
+    padding: 0;
+	font-family:Verdana;
+	text-align:justify;
+
+
+}
+
+#teste1{
+	z-index:1;
+	width:1158px;
+	background-color:red;
+	margin-left:auto;
+	margin-right:auto;
+	clear:both;
+
+}
+
+#carrega{
+	font-weight:bold;
+}
+
+#cabecalho{	
+	float:left;
+	background-color: white;
+	height:222px;
+	width: 1000px;
+	background-image: url(img/txt1.jpg);
+
+}
+#logo{	
+	float:left;
+	margin-left:20px;
+	margin-top:5px;
+}
+
+#slogan{	
+	float:left;
+	margin-top:20px;
+}
+
+
+#corpo{	
+	text-align:center;
+	background-color: #FFFFFF;
+	height:auto;
+	clear:both;
+}
+
+#rodape{	
+	background-color: #FFFFFF;
+	/*clear:both;*/
+	height:25px;
+	float:left;
+	width:950px;
+	text-align:center;
+	color: white;
+	background-color:gray;
+
+
+}
+
+#menuCont{
+	clear:both;
+	border-bottom-style:solid;
+	border-top-style:solid;
+	border-color:#888888;
+	height:25px;
+	width:100%;
+	position:relative;
+	background-image:url("img/d.jpg");
+	background-repeat: repeat-x;
+
+}
+
+#lista{
+	width:auto;
+	float:left;
+}
+
+ul#menu{
+    margin:0;  
+    padding:0;  
+    list-style-type:none; 	
+	height:25px;
+	width:800px;
+}
+
+ul#menu li {
+	float:left;
+	width: 100px;
+	text-align:center;
+	padding-top:7px;
+}
+
+ul#menu li a{
+	color: white;
+	font-family: verdana;
+}
+
+#pesquisa{
+	float:right;	
+	width:auto;
+}
+
+div{	
+	font-family:Verdana;
+	text-align:justify;
+}
+
+#txtPesquisa{   /*porque so 3 "letras" para as cores? -- Resposta simples: copiamos assim de um site >.< (Porque quando são 6 letras iguais basta meter 3)*/
+	float:left;
+	font-family: Arial;
+	height: 22px;
+	color: gray;
+    border: 1px solid #999;
+    background-color: #fff;
+    overflow: hidden;
+	padding-left:3px;
+	/*background-size: 150px 23px;*/
+	background-color:transparent;
+	background-image:url("img/textBox.png");
+	background-repeat:no-repeat;
+	border: 0px solid black;
+	}
+
+	
+	#menuVertical{
+		margin-left:0px;
+		margin-top:40px;
+		float: left;
+		height:400px ;
+		width:194px;
+
+
+	position:absolute;
+	}
+	
+	.cantoInfMV{
+
+		float:left;
+		height:25px;
+		width:25px;
+		background-image:url("img/inf_dir.png");
+		
+	}
+	.login{
+		height:40px;
+		width:100%;
+		background-color:rgb(19,115,161);
+		border-bottom-style:solid;
+		border-color:#888888;
+		text-align:right;	
+	}
+	
+	.txtUsername{
+		padding-left:0px;
+		margin-top:5px;
+		margin-left:10px;
+		float:left;
+		border: 0px solid black;
+		height:25px;
+		width:150px;
+		/*background-size: 160px 25px;*/
+		background-color:transparent;
+		background-image:url("img/textBox.png");
+		background-repeat:no-repeat;
+	}
+	
+	.txtPassword{
+		padding-left:0px;
+		margin-top:5px;
+		margin-left:10px;
+		float:left;
+		border: 0px solid black;
+		height:25px;
+		width:150px;
+		/*background-size: 160px 25px;*/
+		background-color:transparent;
+		background-image:url("img/textBox.png");
+		background-repeat:no-repeat;
+	}
+	
+	.loginIMG{
+		margin-left:15px;
+		margin-top:7px;
+		float:left;
+		 height:35px; 
+		 width:90px;
+		 background-image:url("img/LOGIN.jpg");
+		 /*background-size: 90px 25px;*/
+		 background-repeat:no-repeat;
+		 /*overflow-x:auto;
+		overflow-y:auto;*/
+	}
+	
+	.loginText{
+		
+		padding-top:2px;
+		float:right;
+		text-align:left;
+		width:470px;
+	}
+	
+
+
+	.cantoSupMV{
+		height:25px;
+		width:25px;
+		float:left;
+		background-image:url("img/sup_dir.png");
+	}	
+
+	.barraVMV{
+		float:left;
+		background-color:rgb(19,115,161);
+		height:45px;
+		width:22px;
+		border-right-style:solid;
+		border-color:#888888;
+	}
+	
+	.barraHMV{
+		float:left;
+		background-color:rgb(19,115,161);
+		height:22px;
+		width:169px;
+		border-bottom-style:solid;
+		border-color:#888888;
+	}
+	
+	.opcoesMenuV{
+		border-right-style:solid;
+		border-color:#888888;
+		float:left;
+		background-color:rgb(19,115,161);
+		height:305px ;
+		width:191px;
+	}
+	
+	.paddingMenu{
+		border-top-style:solid;
+		border-color:#888888;
+		float:left;
+		padding-top:30px;
+		padding-left:30px;
+		padding-bottom:10px;
+		width:139px;
+		height:27px;
+		font-family:Verdana;
+		text-align:left;
+		font-size:18px;
+		font-weight:bold;
+		color: #FFFFFF;
+		background-color:rgb(19,115,161);
+	}
+	
+	.canto{
+		width:104px;
+		height:25px;
+		float:left;
+		background-image:url("img/cantoE.png");		
+	}
+	
+	.cantoR{
+		width:104px;
+		height:25px;
+		
+		background-image:url("img/cantoR.png");
+		float:left;
+
+	}
+	.rodapeCont{
+		width:1158px;
+		margin-left:auto;
+		margin-right:auto;
+		font-size:13px;
+
+	}
+	
+	.opcaoTexto{
+		text-align:right;
+		height:0px;
+		width:170px;
+		/*float:bottom;*/
+		font-size:18px;
+		font-family: Verdana;
+		color: white;
+		position: relative; bottom: 5px;left: 0;
+	}
+	
+	#opcaoTextoPequeno{
+	position: relative; bottom: 3px;left: 0;
+		font-size:15px;
+	}
+	
+
+	.opcaoMenuVertical{
+		padding-top:5px;
+		background-image: url("img/opcaoMenu.png");
+		background-repeat:no-repeat;
+		width:210px;
+		height:30px;
+	}
+	
+	
+		.paddingOpcaoMenuVertical{
+		padding-top:5px;
+
+		background-color:transparent;
+		width:210px;
+		height:30px;
+	}
+	
+	.opcaoMenuVerticalSeleccionado{
+		padding-top:5px;
+		background-image: url("img/opcaoMenu.png");
+		background-repeat:no-repeat;
+		width:210px;
+		height:30px;			
+	}
+	
+	.opcaoTextoSelecionado{
+		text-align:right;
+		height:0px;
+		width:170px;
+		/*float:bottom;*/
+		font-size:18px;
+		font-family: Verdana;
+		color: white;
+		position: relative; bottom: 5px;left: 0;
+		text-decoration:underline;
+	}
+	
+	.opcaoMenuVerticalSeleccionado:hover{
+		background-image: url("img/opcaoMenuOver.png");
+	}
+	
+	.opcaoMenuVerticalSeleccionado:active{
+		background-image: url("img/opcaoMenuClick.png");
+	}
+	
+	.opcaoMenuVertical:hover{
+		background-image: url("img/opcaoMenuOver.png");
+	}
+	
+	.opcaoMenuVertical:active{
+		background-image: url("img/opcaoMenuClick.png");
+	}
+	
+	.subOpcaoMenuVertical{
+		padding-top:7px;
+		background-image: url("img/subOpcaoMenu.png");
+		background-repeat:no-repeat;
+		/*background-size: 180px 25px;*/
+		width: 180px;
+		height:25px;
+
+	}
+	.subOpcaoMenuVertical:hover{
+		background-image: url("img/subOpcaoMenuOver.png");
+	}
+	
+	.subOpcaoMenuVertical:active{
+		background-image: url("img/subOpcaoMenuClick.png");
+	}
+	
+	.subOpcaoTexto{
+		padding-top:0;
+		text-align:right;
+		padding-right:10px;
+		height:0px;
+		width:145px;
+		/*float:bottom;*/
+		font-size:14px;
+		font-family: Verdana;
+		color: white;
+		position: relative; bottom: 5px;left: 0;
+	}
+	
+	
+	.conteudo{
+		padding-left:240px;
+		padding-top:60px;
+		padding-right:40px;
+		text-align:justify;
+	}
+	
+	.opcaoMenuHorizontal{
+		height:35px;
+		position: relative; bottom: 5px;
+		text-decoration:none;
+	}
+	
+	.opcaoMenuHorizontalSeleccionado{
+		height:35px;
+		position: relative; bottom: 5px;
+		text-decoration:underline;
+	}
+	
+		ul#menu  :hover{
+			background-image:url("img/ed.jpg");
+
+	}
+	.imgMarcacao{
+		float: right;
+		background-image:url("img/marcação.png");
+		height:63px;
+		width:169px;
+		background-repeat:no-repeat;
+	}
+	
+	.imgMarcacao:hover{
+		background-image:url("img/marcaçãoHover.png");
+	}
+	
+
+	
+	#imgPesquisa{
+		height:24px;
+		width:24px;
+		float:left;
+		padding-left:5px;
+		padding-right:5px;
+	}

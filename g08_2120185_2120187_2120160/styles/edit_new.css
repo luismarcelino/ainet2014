@@ -1,0 +1,86 @@
+#edit_content {
+	margin-top: 30px;
+}
+
+#title_text {
+	width: 50%;
+}
+
+#resume {
+	width: 100%;
+}
+
+/* Resume */
+#head_image_control {
+	position: relative;
+	width: 150px;
+	display: inline-block;
+}
+
+#head_image_control > img {
+	border: 1px solid #000;
+}
+
+#head_image_control > button {
+	width: 100%;
+}
+
+#resume_content {
+	height: 146px;
+	display: inline-block;
+	vertical-align: top;
+	
+	width: 84.3%;
+	max-width: 84.3%;
+}
+
+/* Tool bar*/
+#edit_tools {
+	width: 100%;
+	border: 1px solid #a3a3a3;
+	margin: 5px 0 5px 0;
+}
+
+#edit_tools button {
+	margin-left: 1;
+	margin-right: -3px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#edit_tools > * {
+	vertical-align: middle;
+}
+
+#edit_tools button img {
+	vertical-align: middle;
+	margin-bottom: 2px;
+	margin-top: 2px;
+}
+
+#edit_tools input[type="number"] {
+	margin-right: -2px;
+}
+
+#edit_tools label {
+	margin-left: 4px;
+}
+
+.vertical_separator {
+	border-left: 1px solid #a3a3a3;
+	display: inline-block;
+	margin-left: 8px;
+	margin-right: 3px;
+	width: 0;
+	margin-top: 2px;
+	height: 22px;
+	padding: 0;
+	vertical-align: middle;
+	outline: none;
+	overflow: hidden;
+	position: relative;
+}
+
+#edit_content > button {
+	float: right;
+}

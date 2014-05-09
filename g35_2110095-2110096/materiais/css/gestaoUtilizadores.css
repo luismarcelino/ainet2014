@@ -1,0 +1,40 @@
+
+
+
+.tabela {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+.tabela th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+
+.tabela td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
+}
+
+.nomeTabela{
+	width: 89%;
+}
+
+#form-novo{
+	margin-left: 15%;
+}
+
+#novouser{
+	width: 16px;
+	height: 16px;
+}

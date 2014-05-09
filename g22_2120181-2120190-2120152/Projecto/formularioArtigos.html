@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	
+	<style type="text/css">
+		#sombraE{
+			background-image: url("img/shadow6E.png");
+			float:left;
+			height:1000px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+
+		#sombra{
+			background-image: url("img/shadow6.png");
+			float:left;
+			height:1000px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+		#content {
+			width:1000px;
+			height:1000px;
+			background-color:white;
+			margin:auto;
+			position:relative;
+			float:left;
+		}
+		
+		#formularioCont{
+		
+			padding-top:40px;
+			margin-left:300px;
+			padding-left:10px;
+			padding-right: 40px;
+			height:auto;
+		
+		}
+		
+		td{
+		
+		font-size:13px;
+		}
+	</style>
+	
+	<script type="text/javascript">
+	//<![CDATA[ 
+		
+		function limparCaixa() {
+			var caixa = document.getElementById("txtPesquisa");
+			caixa.value="";
+			caixa.style.color="black";
+	}
+	
+	function preencheCaixa() {
+		var caixa = document.getElementById("txtPesquisa");
+		var string = caixa.value.replace(/\s+/g, '');
+		if(string=="") {
+			caixa.value="Pesquisar";
+			caixa.style.color="gray";
+		}
+	}
+		//]]> 
+	</script>
+</head>
+
+<body>
+
+<div id="teste1">
+
+<div id="sombraE"> </div>
+
+
+	<div id="content">			
+		<div class="login">
+			<div class="loginText">
+				<form action="">
+					<div>
+					<input type="text" class="txtUsername" name="username" value="Username" onclick="" />
+					<input type="password" class="txtPassword" name ="password" value="Password" onclick="" />
+					<div class="loginIMG"> </div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="cabecalho">
+			<div id="logo"> <img src="img/logo2.jpg" alt="logotipo SCML"/> </div>
+			<div id="slogan"> <img src="img/slogan.png" alt="slogan SCML"/> </div>
+
+		</div>
+
+		<div id="menuCont" >
+			<div id="lista"> 
+				<ul id="menu"> <!-- ver os atributos style!!!!! -->
+					<li id="inicio">  <a href="index.html" class="opcaoMenuHorizontal" > Início </a> </li>
+					<li id="noticias"> <a href="noticias.html" class="opcaoMenuHorizontalSeleccionado" > Notícias </a> </li>
+					<li id="saude"> <a href="saudePub.html" class="opcaoMenuHorizontal">   Saúde </a> </li>
+					<li id="valencias"> <a href="valencias.html" class="opcaoMenuHorizontal" > Valências </a> </li>
+					<li id="contactos"> <a href="contactos.html" class="opcaoMenuHorizontal" > Contactos </a> </li>
+
+
+				</ul>
+			</div>
+			<div id="pesquisa">
+				<input type="text" id="txtPesquisa" name="pesquisa" value="Pesquisar" onclick="limparCaixa()" onblur="preencheCaixa()" />
+				<input type="image" id="imgPesquisa" src="img/search.png" />
+			</div>
+		</div>
+		<div id="corpo">
+		<div id = "menuVertical">
+					<div class="paddingMenu" > MENU</div> <div class ="cantoSupMV"> </div><div class= "barraVMV"> </div>
+					<div class="opcoesMenuV">
+						<div class = "opcaoMenuVertical" onclick="location.href='noticias.html'" > <div class = "opcaoTexto" >Irmandade </div></div>
+						<div class = "opcaoMenuVertical" onclick="location.href='noticias.html'" > <div class = "opcaoTexto">Lar </div></div>
+						<div class = "opcaoMenuVertical" onclick="location.href='noticias.html'" > <div class = "opcaoTexto">Creche </div></div>
+						<div class = "opcaoMenuVertical" onclick="location.href='noticias.html'" > <div class = "opcaoTexto" >Residencial </div></div>
+					<div class = "paddingOpcaoMenuVertical">  </div>
+					<div class = "opcaoMenuVertical" onclick="location.href='formularioArtigos.html'" > <div class = "opcaoTexto" >Criar Noticia </div></div>
+
+					</div>
+					<div class= "barraHMV"> </div><div class ="cantoInfMV"> </div>
+		</div>
+			<div id="formularioCont">
+				
+				<form action="">
+				<table>
+				<tr> 
+					<td class="coluna" >Título:<br/><input type="text" name="Titulo" size="62" /></td>
+				</tr>
+				<tr> 
+					<td class="coluna">Imagem ou ficheiro pdf:<br/><input type="text" name="imagem" size="62"/></td>
+				</tr>
+					<tr><td class="coluna">Texto de resumo:<br/><textarea name="resumo" rows="3" cols="48"> 
+				</textarea></td>
+				</tr>
+					<tr><td class="coluna">Corpo de texto:<br/><textarea name="artigo" rows="10" cols="48"> 
+				</textarea></td>
+				</tr>
+				<tr> 
+					<td class="coluna">Data da publicação:(dd-mm-aaaa)<br/><input type="text" name="data" size="62"/></td>
+				</tr>
+				<tr><td class="coluna"> Especialidade:<br/><select name="especialidade">
+				<option value="Lar">Lar</option>
+				<option value="Irmandade">Irmandade</option> 
+				<option value="Creche">Creche</option> 
+				<option value="Residencial">Residencial</option> 
+				</select></td>
+				</tr>
+				
+				<tr> 
+					<td class="coluna">Autor:<br/><input type="text" name="autor" size="62"/></td>
+				</tr>
+			
+				<tr><td class="coluna" align="center"><input type="submit" name="btnEnviar" value="Enviar"/>
+				<input type="reset" name="btnLimpar" value="Limpar"/></td>
+				</tr>
+				
+				</table>	
+
+				</form>
+			</div>
+		</div> <!-- corpo -->
+	</div> <!-- container -->
+	
+	<div id = "sombra" > </div>
+	
+</div> <!-- teste1 -->
+	<div class="rodapeCont">
+		<div class="canto"> </div>
+		<div id="rodape"> Aplicações para a Internet - Beatriz Franco - David Mendes - Diogo Alves - 2013/2014</div>
+		<div class="cantoR"> </div>
+	</div>
+</body>
+</html>

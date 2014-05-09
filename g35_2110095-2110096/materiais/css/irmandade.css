@@ -1,0 +1,21 @@
+#imagemIrmandade{
+
+	width: 290px;
+	height: 187px;
+}
+
+.textoIrmandade{
+	width: 55%;
+	float: left;
+	font-size: 16pt;
+
+
+	}
+
+.imagemIrmandade{
+	
+	width: 44%;
+	float: right;
+	min-height: 350px;
+}
+

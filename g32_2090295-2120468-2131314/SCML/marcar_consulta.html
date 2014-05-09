@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		
+		<!--Title with Image-->
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="shortcut icon" href="img/header.png" />
+		
+		<!--Scripts-->
+		<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+		<script type="text/javascript" src="script/scripts.js"></script>
+		<script type="text/javascript" src="script/scriptsJQ.js"></script>	
+		
+		<!--Fonts da google-->
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'/>
+
+		<!--CSS-->
+		<link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
+		<link rel="stylesheet" type="text/css" href="css/menuSTYLE.css"/>
+		<link rel="stylesheet" type="text/css" href="css/registar.css"/>
+
+	</head>
+
+	<body>
+		<div id="wrapper" class="clearfix">
+			<div id="header" class="clearfix">
+				<div id="headerimg"><a href="index.html"><img src="img/header.png" alt="header" /></a>
+					<p id="saber">O Saber da Experiência</p>
+					<p>500 anos de história</p>
+				</div>
+				
+
+				<div id="loginbox">
+						<a onclick="show()" href="#">Login</a><a href="registar.html">Registar</a>
+				</div>
+
+				<div id="container-login" class="hide">
+					<div>
+						<h1>Login</h1>
+					</div>
+					<div>
+						<form action="login_sucesso.html" method="get">
+							<div id="loginFields">
+								<label>Username:</label><input type="text" name="user"/><br/>
+								<label>Password:</label><input type="password" name="pass"/><br/>
+	
+								<input type="submit" value="Entrar"/>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div id="searchbox">
+					<p><input type="text" value="Procure aqui..." /></p>
+				</div>
+			</div>
+
+			<div id="middle" class="clearfix">
+				<div id="sidebar">
+				 	<!--Menus de navegacao-->
+					<ul id="nav">
+						<li><a href="index.html">Entrada</a></li>
+						<li><a href="#">Saúde</a>
+							<ul>
+								<li><a href="especialidades.html">Especialidades</a></li>	
+								<li><a href="corpoclinico.html">Corpo Clínico</a></li>
+								<li><a href="artEnot.html">Artigos/Notícias Clínicas</a></li>
+								<li><a href="marcar_consulta.html">Marcação de Consultas</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Cuidados Geriátricos</a>
+							<ul>
+								<li><a href="tipoValencia.html">Residencial</a></li>
+								<li><a href="tipoValencia.html">Lar</a></li>
+								<li><a href="tipoValencia.html">Internamento</a></li>
+								<li><a href="tipoValencia.html">Apoio domiciliário</a></li>
+							</ul>
+						</li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</div>
+
+				<div id="content">
+					<div>
+						<h1>Marcar consulta</h1>
+					</div>
+					<div class="form_marcar_consulta">
+						<form action="index.html">							
+							<div>
+								<label class="campo">Nome Completo:</label>
+								<input class="big" type="text" name="marc_nome" />
+							</div>
+							<div>
+								<label id="campo_radio" class="campo">Género:</label>
+								<div id="radio">
+									<input type="radio" id="gen_masc" name="marc_gen" />Masculino<br />
+									<input type="radio" id="gen_fem" name="marc_gen" />Feminino
+								</div>
+							</div>
+							<div>
+								<label class="campo">Data de Nascimento:</label>
+								<input class="little" type="text" name="marc_data_nasc" />
+							</div>
+							<div>
+								<label class="campo">Número de Segurança Social:</label>
+								<input class="little" type="text" name="marc_nss" />
+							</div>
+							<div>
+								<label class="campo">Sistemas/Seguro de Saúde:</label>
+								<select class="little" name="ss">
+									<option value="ADSE">ADSE</option>
+									<option value="Medis">Medis</option>
+									<option value="Multicare">Multicare</option>
+								</select>
+							</div>
+							<div>
+								<label class="campo">Número Fiscal:</label>
+								<input class="little" type="text" name="marc_fisc" />
+							</div>
+							<div>
+								<label class="campo">Contacto Telefónico:</label>
+								<input class="little" type="text" name="marc_tele" />
+							</div>
+							<div>
+								<label class="campo">Morada:</label>
+								<input class="big" type="text" name="marc_morada" />
+							</div>
+							<div>
+								<label class="campo">Localidade:</label>
+								<input class="little" type="text" name="marc_local" />
+								<label class="encoste">Código Postal:</label>
+								<input class="smaller" type="text" name="marc_codpost_1" /><b>-</b><input class="smaller" type="text" name="marc_codpost_2" />
+							</div>
+							<div>
+								<label class="campo">País:</label>
+								<input class="little" type="text" name="marc_pais" />
+							</div>
+							<div>
+								<label class="campo">Nº de Irmão:</label>
+								<input class="little" type="text" name="marc_num_irmao" />
+							</div>
+							<div>
+								<label class="campo">Email:</label>
+								<input class="middle" type="text" name="marc_email" />
+							</div>
+							<div>
+								<label class="campo">Palavra-passe:</label>
+								<input class="middle" type="text" name="marc_password" />
+							</div>
+							<div>
+								<label id="campo_check_med" class="campo">Médico:</label>
+								<div id="check_med">
+									<input type="checkbox" name="noti_autor" value="Dr. André Tiago" />Dr. André Tiago<br />
+									<input type="checkbox" name="noti_autor" value="Drª. Alexandra Pedro" />Drª. Alexandra Pedro<br />
+									<input type="checkbox" name="noti_autor" value="Drª. Joaquina Alves" />Drª. Joaquina Alves<br />
+									<input type="checkbox" name="noti_autor" value="Dr. Fábio Santos" />Dr. Fábio Santos
+								</div>
+							</div>
+							<div>
+								<label class="campo">Especialidade:</label>
+								<select class="little" name="noti_esp">
+									<option value="Acupuntura">Acupuntura</option>
+									<option value="Cardiologia">Cardiologia</option>
+									<option value="Cirurgia Geral">Cirurgia Geral</option>
+									<option value="Cirurgia Plástica">Cirurgia Plástica</option>
+									<option value="Cirurgia Vascular">Cirurgia Vascular</option>
+									<option value="Clínica Geral">Clínica Geral</option>
+									<option value="Consulta da Dor">Consulta da Dor</option>
+									<option value="Dermatologia">Dermatologia</option>
+									<option value="Doenças Venosas">Doenças Venosas</option>
+									<option value="Eletromiografia">Eletromiografia</option>
+									<option value="Fisiatria">Fisiatria</option>
+									<option value="Gastrenterologia">Gastrenterologia</option>
+									<option value="Ginecologia / Obstetricia">Ginecologia / Obstetricia</option>
+									<option value="Medicina Dentária">Medicina Dentária</option>
+									<option value="Medicina Desportiva">Medicina Desportiva</option>
+									<option value="Medicina Interna">Medicina Interna</option>
+									<option value="Neurocirurgia">Neurocirurgia</option>
+									<option value="Neurologia">Neurologia</option>
+									<option value="Nutrição">Nutrição</option>
+									<option value="Oftamologia">Oftamologia</option>
+									<option value="Ortopedia">Ortopedia</option>
+									<option value="Otorrinolaringologia">Otorrinolaringologia</option>
+									<option value="Pneumologia">Pneumologia</option>
+									<option value="Psicologia">Psicologia</option>
+									<option value="Psiquiatria">Psiquiatria</option>
+									<option value="Reumatologia">Reumatologia</option>
+									<option value="Urologia">Urologia</option>
+								</select>
+							</div>
+							<div>
+								<label class="campo">Data e hora da marcação:</label>
+								<input class="little" type="text" name="marc_data" /><b>às</b><input class="little" type="text" name="marc_hora" />
+							</div>
+							<div>
+								<div class="campo">
+									<input type="reset" value="Limpar" />
+								</div>
+								<input type="submit" value="Marcar Consulta" />
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div id="footer">
+				<p>2014 &#169; Alexandra Pedro, André Tiago e Fábio Santos. <br/> DEI ESTG-IPLEIRIA </p>
+			</div>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	
+	<style type="text/css">		
+		#sombraE{
+			background-image: url("img/shadow6E.png");
+			float:left;
+			height:2050px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+
+		#sombra{
+			background-image: url("img/shadow6.png");
+			float:left;
+			height:2050px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+		#content {
+			width:1000px;
+			height:2050px;
+			background-color:white;
+			margin:auto;
+			position:relative;
+			float:left;
+		}
+		
+		#rodape{
+			font-size:13px;
+		}
+		
+		.titulo{
+			text-align:left;
+			padding-left:50px;
+			color:#132254;
+		}
+		
+		#apresentacaoCont{
+			clear:both;
+			width:auto;
+			height:auto;
+			margin:0px 20px;
+		}
+		
+		#apresentacaoCont p{
+			padding: 0px 75px;
+			text-align:justify;
+			font-size:13px;
+		}
+		
+		#noticiasCont{
+			clear:both;
+			width:auto;
+			height:700px;
+			margin:0px 20px;
+			border-top: solid 1px;
+			border-color:#B4B4B4;
+		}
+
+		.noticia{
+			width:auto;
+			height:auto;
+			float:left;
+			text-align:justify;
+			padding:0px 15px;
+			margin:3px;
+		}
+		
+		.imgNoticia{
+			float:left;
+			width:250px;
+		}
+		
+		.imgNoticia img{
+			 width:200px;
+		}
+			
+		.textoNoticia{
+			width:auto;
+			height:auto;
+			padding: 5px 20px;
+			text-align:justify;
+			font-size:13px;
+		}
+		
+		#publicacoesCont{
+			clear:both;
+			width:auto;
+			height:200px;
+			margin:0px 20px;
+			border-top:solid 1px;
+			border-color:#B4B4B4;
+		}
+		
+		.publicacao{
+			width:309px;
+			height:300px;
+			margin:5px 5px 5px 5px;
+			float:left;
+			border-right:solid 1px;
+			border-color:#B4B4B4;
+		 }
+		 
+		 #publicacao3{
+			border:none;
+		 }
+		 
+		 .imgPublicacao{
+			width:100%;
+		 }		 
+		 .imgPublicacao img{
+			width:150px;
+		 }
+		 .textoPublicacao{
+			width:auto;
+			height:auto;
+			padding: 10px 20px;
+			text-align:justify;
+			font-size:13px;
+		 }
+		 
+		 
+		
+	</style>
+	
+	<script type="text/javascript">
+		//<![CDATA[ 
+		
+		function limparCaixa() {
+			var caixa = document.getElementById("txtPesquisa");
+			caixa.value="";
+			caixa.style.color="black";
+	}
+	
+	function preencheCaixa() {
+		var caixa = document.getElementById("txtPesquisa");
+		var string = caixa.value.replace(/\s+/g, '');
+		if(string=="") {
+			caixa.value="Pesquisar";
+			caixa.style.color="gray";
+		}
+	}
+	//]]> 
+	</script>
+	
+</head>
+
+<body>
+
+<div id="teste1">
+
+	<div id="sombraE"> </div>
+
+
+	<div id="content">			
+		<div class="login">
+			<div class="loginText">
+				<form action="">
+					<div>
+					<input type="text" class="txtUsername" name="username" value="Username" onclick="" />
+					<input type="password" class="txtPassword" name ="password" value="Password" onclick="" />
+					<div class="loginIMG"> </div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="cabecalho">
+			<div id="logo"> <img src="img/logo2.jpg" alt="logotipo SCML"/> </div>
+			<div id="slogan"> <img src="img/slogan.png" alt="slogan SCML"/> </div>
+			
+		</div> <!-- cabecalho -->
+
+		<div id="menuCont" >
+			<div id="lista">
+				<ul id="menu"> <!-- ver os atributos style!!!!! -->
+					<li id="inicio">  <a href="index.html" class="opcaoMenuHorizontalSeleccionado" > Início </a> </li>
+					<li id="noticias"> <a href="noticias.html" class="opcaoMenuHorizontal" > Notícias </a> </li>
+					<li id="saude"> <a href="saudePub.html" class="opcaoMenuHorizontal" >   Saúde </a> </li>
+					<li id="valencias"> <a href="valencias.html" class="opcaoMenuHorizontal" > Valências </a> </li>
+					<li id="contactos"> <a href="contactos.html" class="opcaoMenuHorizontal" > Contactos </a> </li>
+				</ul>
+			</div>
+			<div id="pesquisa">
+				<input type="text" id="txtPesquisa" name="pesquisa" value="Pesquisar" onclick="limparCaixa()" onblur="preencheCaixa()" />
+				<input type="image" id="imgPesquisa" src="img/search.png" />
+			</div>
+			
+		</div> <!-- menuCont -->
+			
+		<div id="corpo">
+			<div id="apresentacaoCont">
+				<h1 class="titulo">Apresentação</h1>
+				<h2 class="titulo">&bull; <a href="tipoValencia.html">Cuidados Geriátricos</a></h2>
+				<p>
+					É constituido por várias categorias como: lar, internamento, residencial e apoio ao domiciliário.
+				</p>
+				<h2 class="titulo">&bull; <a href="tipoValencia.html">Creche "Casa Sanchez"</a></h2>
+				<p>
+					É conhecida a importância que a primeira infância assume no desenvolvimento da criança. 
+					O modelo de funcionamento da Creche Casa Sanchez tem provado o principio instituido pela segurança social.
+				</p>
+				<h2 class="titulo">&bull; <a href="tipoValencia.html">Irmandade</a></h2>
+					<p>
+					A Irmandade da Santa Casa da Misericórdia de Leiria é uma associação constituída por fiéis.</p>
+
+					<p>O número de fiéis é ilimitado e são eles que constituem a Assembleia Geral mediante poderes delegados na Mesa Administrativa 
+					e Conselho Fiscal.</p>
+
+					<p>A admissão dos fiéis é feita mediante proposta subscrita por dois fiéis e pelo próprio candidato e aprovada em Mesa 
+					Administrativa por maioria absoluta dos votos dos seus membros presentes na respectiva votação.</p>
+			
+			</div>
+			<div id="noticiasCont">
+				<h1 class="titulo">Noticias</h1>
+				<div id="noticia1" class="noticia">
+					 <h3>Irmandade: <a href="noticia1.html">Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia </a> </h3>
+					<div class="imgNoticia"> <a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem noticia"/> </a> </div>
+					<div class="textoNoticia"><p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes
+					instalações, com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado.
+					</p></div>
+				</div>
+				<div id="noticia2" class="noticia">
+					<h3>Creche: <a href="noticia1.html"> Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia </a> </h3>
+					<div class="imgNoticia"> <a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem noticia"/> </a> </div>
+					<div class="textoNoticia"><p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes
+					instalações, com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado.
+					</p></div>
+				</div>
+				<div id="noticia3" class="noticia">
+					<h3>Lar: <a href="noticia1.html"> Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia </a> </h3>
+					<div class="imgNoticia"> <a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem noticia"/> </a> </div>
+					<div class="textoNoticia"><p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes
+					instalações, com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado.
+					</p></div>
+				</div>
+				<div id="noticia4" class="noticia">
+					<h3>Residencial: <a href="noticia1.html"> Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia </a> </h3>
+					<div class="imgNoticia"> <a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem noticia"/> </a> </div>
+					<div class="textoNoticia"><p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes
+					instalações, com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado.
+					</p></div>
+				</div>
+			</div> <!-- noticiasCont -->
+			<div id="publicacoesCont">
+				<h1 class="titulo">Publicações de Médicos</h1>
+				<div id="publicacao1" class="publicacao">
+					<div class="imgPublicacao"> <a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem publicacao" /> </a> </div>
+					<div class="textoPublicacao"><p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes
+					instalações, com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado.
+					</p></div>
+				</div>
+				<div id="publicacao2" class="publicacao">
+					<div class="imgPublicacao"> <a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem publicacao" /> </a> </div>
+					<div class="textoPublicacao"><p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes
+					instalações, com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado.
+					</p></div>
+				</div>
+				<div id="publicacao3" class="publicacao">
+					<div class="imgPublicacao"> <a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem publicacao"/> </a> </div>
+					<div class="textoPublicacao"><p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes
+					instalações, com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado.
+					</p></div>
+				</div>
+			</div> <!-- publicacoesCont -->
+		</div> <!-- corpo -->
+		
+	</div> <!-- content -->
+</div> <!-- teste1 -->
+	<div id = "sombra" > </div>
+	<div class="rodapeCont">
+		<div class="canto"> </div>
+		<div id="rodape"> Aplicações para a Internet - Beatriz Franco - David Mendes - Diogo Alves - 2013/2014</div>
+		<div class="cantoR"> </div>
+	</div>
+</body>
+</html>

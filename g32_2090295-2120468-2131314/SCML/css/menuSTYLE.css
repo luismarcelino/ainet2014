@@ -1,0 +1,49 @@
+#nav {
+	float: left;
+	width: 210px;
+    list-style: none;
+    padding: 0px;
+	font-weight: bold;
+}
+
+#nav a {
+    display: block;
+    padding: 10px 15px;
+    color: #000;
+}
+
+#nav a:hover{
+	background-color: #C8C8C8;
+	color: white;
+}
+
+#nav li ul {
+	font-weight: normal;
+    display: none;
+}
+
+#nav li ul li a {
+    padding: 10px 25px;
+}
+
+.nav_esp{
+    float:left;
+    width: 230px;
+}
+
+.content_esp{
+    padding-top: 200px;
+}
+
+.text_area{
+    padding-right: 10px;
+}
+.acordo{
+    float: right;
+    padding-right: 10px;
+}
+
+.noticias{
+    float: left;
+    padding-right: 50px;
+}

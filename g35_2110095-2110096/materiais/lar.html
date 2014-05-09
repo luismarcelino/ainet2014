@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+	<title> Santa Casa da Misericórdia</title>
+
+
+	<link rel="stylesheet" href="css/portal.css"/>
+	<link rel="stylesheet" href="css/entrada.css"/>
+	<link rel="stylesheet" href="css/gestaoUtilizadores.css"/>
+	<link rel="stylesheet" href="css/medico.css"/>
+	<link rel="stylesheet" href="css/contactos.css"/>
+	<link rel="stylesheet" href="css/noticia.css"/>
+	<link rel="stylesheet" href="css/geriatricos.css"/>
+	<link rel="stylesheet" href="css/creche.css"/>
+	<link rel="stylesheet" href="css/saude.css"/>
+	<link rel="stylesheet" href="css/pessoal.css"/>
+	<link rel="stylesheet" href="css/irmandade.css"/>
+
+	<!--<link rel="javascript" href="js/listaEspecialidades.js"/>-->
+	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	<script type="text/javascript" src="js/listaEspecialidades.js"></script>
+
+
+		<!--<style>
+			table form { margin-bottom: 0; }
+			form ul { margin-left: 0; list-style: none; }
+			.error { color: red; font-style: italic; }
+			body { padding-top: 20px; }
+		</style> -->
+	</head>
+
+	<body>		
+		
+
+		<div id="topo">
+			<a href="inicio.html"><img src="images/logo.png" alt="logotipo" id="logotipo"/></a>
+			
+<div id="login">
+				<form method="post" action="entradaareasaude.html" accept-charset="UTF-8">
+					<!-- check for login errors flash var 
+				-->
+
+				<!-- username field -->
+				<div id="username"><label for="name">Nome:</label>					
+					<input name="name" type="text" id="name"/></div>
+					<br/>
+
+					<!-- password field -->
+
+					<div id="password"><label for="password">Password:</label>					
+						<input name="password" type="password" value="" id="pass"/></div>
+
+						<!-- submit button -->
+						<br/>
+						<div><input id="botaoLogin" type="submit" value="Login"/></div>
+					</div>
+				</form>		
+			</div>
+		</div>
+
+		<div id="barraNavegacao">
+
+			<ul>
+				<li><a href="inicio.html">In&iacute;cio</a></li>
+				<li>Saúde
+					<ul>
+						<li><a href="listaespecialidades.html">Lista Especialidades</a></li>
+						<li><a href="corpoClinico.html">Corpo Cl&iacute;nico</a></li>
+						<li><a href="noticiassaude.html">Artigos/Not&iacute;cias Cl&iacute;nicas</a></li>
+						<li><a href="marcacao.html">Marca&ccedil;&atilde;o de Consultas</a></li>
+						<li><a href="confirmacaomarcacao.html">Confirma&ccedil;&atilde;o de Marca&ccedil;&otilde;es</a></li>
+					</ul>
+				</li>
+
+				<li><a href="geriatricos.html">Cuidados Geri&aacute;tricos</a>				<ul>
+					<li><a href="residencial.html">Residencial</a></li>
+					<li><a href="lar.html">Lar</a></li>
+					<li><a href="internamento.html">Internamento</a></li>
+					<li><a href="apoiodomiciliario.html">Apoio Domicili&aacute;rio</a></li>
+				</ul>
+			</li>
+
+			<li><a href="creche.html">Creche</a>				<ul>
+				<li><a href="contactocreche.html">Contacte-nos</a></li>
+				<li><a href="noticiascreche.html">Not&iacute;cias Creche</a></li>
+			</ul>
+		</li>
+
+		<li>Irmandade
+			<ul>
+				<li><a href="irmandade.html">Sobre a Irmandade</a></li>
+				<li><a href="noticiasirmandade.html">Not&iacute;cias Irmandade</a></li>
+			</ul>
+		</li>
+
+		<li><a href="contactos.html">Contactos</a></li>
+
+		<li>Pessoal
+			<ul>
+				<li><a href="detalhes.html">Pessoal</a></li>
+				<li> <a href="historico.html">Hist&oacute;rico Actos M&eacute;dicos</a></li>
+			</ul>
+		</li>
+
+		<li><a href="medico.html">M&eacute;dico</a></li>
+
+		<li><a href="lista.html">Gest&atilde;o de Utilizadores</a></li>
+
+	</ul>	
+</div>
+
+<div class="container">
+	<!---->
+
+	<div id="espaco">
+		<h3>Lar</h3>
+
+		<div class="textoLar">
+			<p>
+				O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados com espaços ajardinados envolventes.
+
+				O edifício e seu equipamento são considerados do mais moderno e funcional que se tem feito até hoje no nosso país.
+
+				<h4>Descrição sumária do Lar:</h4>
+
+				43 Quartos com 2 camas<br/>
+				2 Enfermarias com 2 camas<br/>
+				1 Gabinete médico<br/>
+				5 Salas de estar e convívio<br/>
+				1 Cozinha geral<br/>
+				1 Lavandaria<br/>
+				2 Refeitórios com zonas de estar<br/>
+				1 Bar<br/>
+				3 Garagens<br/>
+				1 Cave para arrumos<br/>
+				1 Capela<br/>
+				e ainda, aquecimento central eléctrico, posto de transformação eléctrico com gerador de
+				emergência, sistema de aquecimento de águas, etc.<br/>
+
+				<h4>Caracterização da população utente</h4>
+
+				O Lar Nossa Senhora da Encarnação recebe pessoas idosas, de ambos os sexos, com dificuldades ou ausência de inserção no meio social e familiar e que expressam vontade em serem admitidas nesta instituição.
+
+				Uma vez integradas no Lar, pretendemos que aos nossos utentes seja prestado acolhimento e auxílio de qualidade, respeitando-se a Pessoa e o Indivíduo.
+
+				Apostando numa estratégia de combate ao isolamento, que envolve uma vasta área de actuação por parte dos profissionais que colaboram connosco, o nosso objectivo é proporcionar aos nossos idosos um equilíbrio biopsicosocial, assegurando-lhes os cuidadosde saúde e o seu tratamento integral
+
+				<h4>Actividades desenvolvidas pelos utentes do Lar N. S. da Encarnação</h4>
+
+				No Lar da Santa Casa da Misericórdia de Leiria, os nossos utentes participam em inúmeras
+				actividades de animação sócio-educativa. Para além de visitas a locais de interesse
+				histórico, promovem-se inúmeras iniciativas ligadas à arte e ao espírito criador dos nossos
+				utentes, tendo como principal objectivo contribuir para o seu bem-estar psíquico e físico.
+
+				<h4>O terreno</h4>
+
+				O terreno onde foi edificado o Lar N. S. da Encarnação (antiga praça de touros), pertenceu outrora a uma Associação Cultural e Recreativa de Leiria que por força dos seus estatutos quando da sua extinção ou inactividade o mesmo seria entregue à Santa Casa da Misericórdia de Leiria o que ocorreu nos finais dos anos trinta.
+
+				<h4>Antecedentes à Construção</h4>
+
+				A actividade da Santa Casa da Misericórdia de Leiria esteve até 1975 concentrada na gestão do Hospital de Leiria de sua propriedade.
+
+				Quando da estatização hospitalar a Santa Casa da Misericórdia sentiu-se na obrigação de encarar outra actividade com fins de apoio aos mais carenciados.
+
+				Assim, nasceu a ideia de construir um Lar para idosos no terreno mais adequado (antiga praça de touros).
+
+				Como a Misericórdia não dispunha de fundos para tal foi obrigada a vender alguns terrenos de legados e contar apenas com a renda do edifício do Hospital
+
+				<h4>A construção</h4>
+
+				A construção do lar foi iniciada em 1 de Fevereiro de 1983 e concluída em 1989.
+
+			</p></div>
+
+			<div class="imagemLar">
+				<img src="images/imagemLar.jpg" alt="Lar" id="imagemLar" />
+			</div>
+
+
+
+			<div class="padd"><h3> Notícias Lar</h3>
+
+				<div class="noticia">
+					<p class="tituloNoticia">Titulo Noticia 1<p>
+						<p class="resumoNoticia">Breve Resumo 1<p>
+							<br>
+							<p class="corpoNoticia">Corpo 1<p>
+								<br>
+								<p class="autordata">Data Autor 1<p>
+									<p>...................................................................................................................................................</p>
+								</div>
+
+							<br/>
+							<div class="noticia">
+								<p class="tituloNoticia">Titulo Noticia 2<p>
+									<p class="resumoNoticia">Breve Resumo 2<p>
+										<br>
+										<p class="corpoNoticia">Corpo 2<p>
+											<br>
+											<p class="autordata">Data Autor 2<p>
+												<p>...................................................................................................................................................</p>
+											</div>
+
+										<br/>
+										<div class="noticia">
+											<p class="tituloNoticia">Titulo Noticia 2<p>
+												<p class="resumoNoticia">Breve Resumo 2<p>
+													<br>
+													<p class="corpoNoticia">Corpo 2<p>
+														<br>
+														<p class="autordata">Data Autor 2<p>
+															<p>...................................................................................................................................................</p>
+														</div>
+													</div>
+												</div>
+												
+											</div>
+
+											<div id="rodape">
+												Santa Casa da Misericórdia de Leiria 2014
+											</div>
+										</body>
+
+										</html>

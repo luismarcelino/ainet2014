@@ -1,0 +1,22 @@
+#slide {
+    height: 450px;
+    position: relative;
+    margin-top: 20px;
+}
+#slide img {
+    width: 100%;
+    height: inherit;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.go_down img {
+    height: 150px;
+    margin: auto;
+    display: table-cell;
+}
+/* Professionals posts */
+
+#profissional_posts {
+    margin-top: 60px;
+}

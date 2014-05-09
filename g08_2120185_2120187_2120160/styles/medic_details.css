@@ -1,0 +1,33 @@
+.medic_data {
+    width: 44%;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 5%;
+}
+.medic_apresentation {
+    width: 30%;
+    float: left;
+}
+#medic_speciality {
+    width: 70%;
+    display: inline-block;
+    float: left;
+}
+#medic_image {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+    padding: 0;
+    margin-bottom: 30px;
+}
+#medic_name {
+    text-align: center;
+}
+#articles > article {
+    width: 29%;
+    margin: 1%;
+    display: inline-block;
+}
+.content_div_title {
+    width: 100%;
+}

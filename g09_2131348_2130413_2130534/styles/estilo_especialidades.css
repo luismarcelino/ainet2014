@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+#titulo_lista_especialidades{
+	text-align: center;
+	font-size:40px;
+	font-weight:bolder;
+	color:#0F4BA8;
+	text-shadow: 2px 2px 2px #888888;
+	background-color:#d5b366;
+	border-top-left-radius: 50px;
+	box-shadow: 3px 3px 3px #000000;
+	margin-right: 5px;
+	}
+#apresenta_especialidade {
+	float:left;
+	width: 640px;
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-right: 15px;
+	min-height: 200px;
+	padding:10px;
+	background-color: #6ba2dc;
+	/*CSS3*/
+	border-radius: 5px 5px 0 0;
+	box-shadow: 3px 3px 3px #888888;
+}
+
+#corpo_clinico {
+	float:left;	
+	width: 420px;
+}
+#acordos {
+	float:right;
+	width: 200px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#centro_especialidade {
+	float:left;
+	margin-left: 10px;
+	margin-right: 15px;
+	width: 640px;
+	min-height: 300px;
+	padding:10px;
+	background-color: #6ba2dc;
+	/*CSS3*/
+	box-shadow: 3px 3px 3px #888888;
+}
+#noticias_especialidade {
+	float:left;
+	width: 640px;
+	margin-left: 10px;
+	min-height: 200px;
+	background-color: #6ba2dc;
+	padding:10px;
+	/*CSS3*/
+	border-radius: 0 0 5px 5px;
+	box-shadow: 3px 3px 3px #888888;
+}
+div.medicos_especialidade {
+	float:left;
+	background-color: #ffffff;
+	width: 380px;
+	min-height: 150px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left:15px;
+	padding: 10px;
+	/*CSS3*/
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #676767;
+}
+div.foto_medico{
+	float:left;
+	width:150px;
+	height:150px;
+	margin-right:10px;
+}
+div.nome_medico{
+	float:left;
+	width:215px;
+	height:150px;
+}
+div.especilidades_investigacao{
+	clear:both;
+	width:300px;
+}
+p.title_medico{
+	margin:0;
+	padding:0;
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+#rodape_detalhes{
+	float:right;
+	width: 400px;
+	text-align: center;
+}
+#perfil_completo{
+	background-color: #3E78D2;
+	margin-right:10px;
+	padding:3px;
+	/*CSS3*/
+	box-shadow: 3px 3px 3px #676767;
+	border-radius: 5px;
+}
+#perfil_completo:hover{
+	background-color: #b3cded;
+	cursor:pointer;
+}
+#marcar_consulta{
+	background-color: #3E78D2;
+	margin-left:10px;
+	padding:3px;
+	/*CSS3*/
+	box-shadow: 3px 3px 3px #676767;
+	border-radius: 5px;
+}
+#marcar_consulta:hover{
+	background-color: #b3cded;
+	cursor:pointer;
+}
+span a{
+	text-decoration: none;
+	color: #1c2f43;
+}
+span a:hover{
+	color:#ffffff;
+}
+#medico150{
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 1px;
+}

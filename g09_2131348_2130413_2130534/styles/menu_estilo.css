@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+#grupo1 {
+	text-align: center;
+	display: block;
+	width: auto;
+	position: absolute;
+	/*Para não desformatar ou se dá "espaço" desta div do 
+	limite da pagina ou aumenta-se o width da div para um 
+	valor grande e com folga*/
+	left: 713px;
+	top: 82px;
+}
+#grupo2 {
+	text-align: center;
+	display: block;
+	width: auto;
+	position: absolute;
+	left: 525px;
+	top: 139px;
+}
+/* Esconde o sub-menu quando não tem o rato por cima */
+ul.menu ul {
+	display: none;
+}
+/* Mostra o sub-menu quando tem o rato por cima */
+ul.menu li:hover>ul {
+	display: block
+}
+ul.menu ul {
+	position: absolute;
+}
+/* Formatacao da área do menu */
+ul.menu, ul.menu ul {
+	margin: 0px;
+	width: auto;
+	list-style: none;
+	padding: 5px 5px 5px 5px;
+	/*Cor de Fundo*/
+	border-width: 0px;
+	border-style: solid;
+}
+ul.menu {
+	display: block;
+	float: left;
+}
+/* tamanho horizontal do ul que expande para baixo*/
+ul.menu ul {
+	width: 195px;
+}
+ul.menu li {
+	display: block;
+	margin: 2px 0px 0px 2px;
+	font-size: 0px;
+	box-shadow: 2px 2px 2px #888888;
+}
+/* Efeito quando se pressiona*/
+ul.menu a:active, ul.menu a:focus {
+	outline-style: groove;
+}
+ul.menu a {
+	display: block;
+	vertical-align: middle;
+	background-color: #3E78D2;
+	border-width: 1px;
+	border-color: #6BA2DC;
+	border-style: solid;
+	text-align: center;
+	text-decoration: none;
+	/* dedinicoes de cada "celula" */
+	padding: 2px 10px 2px 10px;
+	_padding-left: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #1c2f43;
+	cursor: pointer;
+	width: 70px;
+	height: 35px;
+}
+ul.menu span {
+	overflow: hidden;
+}
+ul.menu li {
+	float: left;
+}
+ul.menu ul li {
+	float: none;
+}
+ul.menu ul a {
+	text-align: left;
+	width: auto;
+	height: auto;
+	white-space: nowrap;
+}
+/* Efeito  quando se passa o rato sobre os menus*/
+ul.menu li a:hover {
+	position: relative;
+	background-color: #6ba2dc;
+	border-color: #3E78D2;
+	border-style: solid;
+	font-family: 'Lato', sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+ul.menu a:hover ul {
+	display: block
+}
+/* Organização da imagem (seta) com o span*/
+ul.menu span {
+	display: block;
+	background-image: url(../imagens/menu/seta_normal.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	padding-right: 12px;
+}
+/* Coloca a seta para baixo quando tem o rato */
+ul.menu li:hover>a>span {
+	background-image: url(../imagens/menu/seta_baixo.gif);
+}

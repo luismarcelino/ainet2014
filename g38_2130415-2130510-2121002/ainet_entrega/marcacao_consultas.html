@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metadata -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> SCM Leiria </title>
+	
+	<!-- CSS Imports -->
+	<link rel="stylesheet" type="text/css" href="./css/index.css" />
+	<link rel="stylesheet" type="text/css" href="./css/modulos.css" />
+	<link rel="stylesheet" type="text/css" href="./css/clearfix.css" />
+	
+	<!-- Scripts -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./js/SCMLApp.js"></script>
+	<script type="text/javascript" src="./js/index.js"></script>
+</head>
+
+
+<body>
+	<div id="topbar">
+		<div>
+			<div id="logo"></div>
+			<div id="title">
+				<h1> O Saber da Experiência </h1>
+				<h3> 500 Anos de História </h3>
+			</div>
+		</div>
+	</div>
+	<div id="root">
+		<header>
+			<!-- because using margin doesn't work -->
+			<div class="banner-spacer">
+				<div id="font-control">
+					<div id="shrinkFont">
+						-
+						<div class="font-caption">
+							Diminuir o tamanho da letra
+						</div>
+					</div>
+					<div id="resetFont">
+						A
+						<div class="font-caption">
+							Repor o tamanho da letra
+						</div>
+					</div>
+					<div id="enlargeFont">
+						+
+						<div class="font-caption">
+							Aumentar o tamanho da letra
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<nav class="menu-tab" id="scml">
+					A SCML
+				</nav>
+				<nav class="menu-tab" id="saude">
+					Saúde
+				</nav>
+				<nav class="menu-tab" id="geriatria">
+					Geriatria
+				</nav>
+				<nav class="menu-tab" id="creche">
+					Creche
+				</nav>
+				<nav class="menu-tab" id="admin">
+					Administração
+				</nav>
+			</nav>
+		</header>
+		<nav>
+			<nav id="sub-scml" class="sub-menu-nav">
+				<span class="noscript">A SCML</span>
+				<a class="sub-menu-link" href="./quem_somos.html" id="home-link">Quem Somos</a>
+				<a class="sub-menu-link" href="./artigos_noticias.html">Artigos/Noticias</a>
+				<a class="sub-menu-link" href="./contactos.html">Contactos</a>
+				<a class="sub-menu-link" href="./formulario_contacto.html">Formulário de Contacto</a>
+				<a class="sub-menu-link" href="./irmandade.html">A Irmandade</a>
+			</nav>
+			<nav id="sub-saude" class="sub-menu-nav">
+				<span class="noscript">Saúde</span>
+				<a class="sub-menu-link" href="./lista_especialidades.html">Lista de Especialidades</a>
+				<a class="sub-menu-link" href="./corpo_clinico.html">Corpo Clínico</a>
+				<a class="sub-menu-link" href="./marcacao_consultas.html">Marcação de Consultas</a>
+			</nav>
+			<nav id="sub-geriatria" class="sub-menu-nav">
+				<span class="noscript">Geriatria</span>
+				<a class="sub-menu-link" href="./geriatria.html">Geriatria</a>
+				<a class="sub-menu-link" href="./residencial.html">Residencial</a>
+				<a class="sub-menu-link" href="./lar.html">Lar</a>
+				<a class="sub-menu-link" href="./internamento.html">Internamento</a>
+				<a class="sub-menu-link" href="./apoio_domiciliario.html">Apoio Domiciliário</a>
+			</nav>
+			<nav id="sub-creche" class="sub-menu-nav">
+				<span class="noscript">Creche</span>
+				<a class="sub-menu-link" href="./creche.html">Creche</a>
+				
+			</nav>
+			<nav id="sub-admin" class="sub-menu-nav">
+				<span class="noscript">Administração</span>
+				<a class="sub-menu-link active" href="./criar_artigo.html">Criar Artigo/Notícia</a>
+			</nav>
+		</nav>
+		<div id="content">
+			<h1>Marcação de Consultas</h1>
+<form>
+<div class = "menu_table clearfix">
+	<div class = "fifty_fifty">			
+			
+			<div class = "float_right">
+				<div class = "sameline">
+					<label for ="nome">Nome *</label>
+				</div>
+				<div class = "sameline" >
+					<input  type = "text" id = "nome" />
+				</div>
+			</div>
+			
+			<div class = "float_right">
+				<div class = "sameline">
+					<label for ="dataNasc">Data de Nascimento *</label>
+				</div>
+				<div class = "sameline" >
+					<input  type = "date" id = "dataNasc" />
+				</div>
+			</div>
+			
+			<div class = "float_right">
+				<div>
+					<label for ="morada">Morada</label>
+				</div>
+				<div class = "float_right" >
+					<textarea id = "morada" >
+						
+					</textarea>
+				</div>
+			</div>
+			
+			<div class = "float_right">
+				<div class = "sameline">
+					<label for ="tel">Tel./Telem *</label>
+				</div>
+				<div class = "sameline" >
+					<input  type = "text" id = "tel" />
+				</div>
+		</div>
+			
+		
+	</div>
+	
+	<div class = "fifty_fifty ">
+		
+		
+		
+		<div class = "float_right">
+				<div class = "sameline">
+					<label for ="email">Email </label>
+				</div>
+				<div class = "sameline" >
+					<input  type = "text" id = "email" />
+				</div>
+		</div>
+		
+		<div class = "float_right ">
+				<div class = "sameline">
+					<label for ="sistema">Subsistema de Saúde *</label>
+				</div>
+				<div class = "sameline" >
+					<select id="sistema">
+						<option value="10">ADMG (só para MFR)</option>
+						<option value="1">ADSE</option>
+						<option value="5">IASFA (ADMA, ADME, ADMFA)</option>
+						<option value="12">Medis (só para MFR)</option>
+						<option value="7">Multicare</option>
+						<option value="13">Particular</option>
+						<option value="8">Planicare</option>
+						<option value="11">SAD PSP (só para MFR)</option>
+						<option value="2">SAMS Centro</option>
+						<option value="6">Serviços Sociais da CGD</option>
+						<option value="9">Servimed</option>
+						<option value="3">Sindicato dos Funcionários Judiciais</option>
+						<option value="4">SNS</option>
+					</select>
+				</div>
+		</div>
+		
+		<div class = "float_right">
+				<div class = "sameline">
+					<label for ="numero">Número de Benificiário</label>
+				</div>
+				<div class = "sameline" >
+					<input  type = "text" id = "numero" />
+				</div>
+		</div>
+		
+		<div class = "float_right ">
+				<div class = "sameline">
+					<label for ="consulta">Consulta</label>
+				</div>
+				<div class = "sameline" >
+					<select id="consulta" >
+						<option value="42">Anatomia Patológica</option>
+						<option value="3">Análises Clínicas</option>
+						<option value="51">Audiometria</option>
+						<option value="1">Cardiologia</option>
+						<option value="45">Colonoscopia</option>
+						<option value="4">Dermatologia</option>
+						<option value="48">Doppler a cores, transesofágico</option>
+						<option value="62">Eco-Doppler</option>
+						<option value="47">Ecocardiografia Modo M, 2D</option>
+						<option value="61">Ecografia</option>
+						<option value="43">Ecografia Geral e Vascular</option>
+						<option value="49">Electrocardiograma simples</option>
+						<option value="44">Endoscopia alta</option>
+						<option value="19">Gastrenterologia</option>
+						<option value="5">Ginecologia</option>
+						<option value="57">Imagiologia</option>
+						<option value="54">Impedânciometria</option>
+						<option value="63">Mamografia Digital</option>
+						<option value="28">Neurologia</option>
+						<option value="32">Oftalmologia</option>
+						<option value="33">Ortopedia</option>
+						<option value="64">Osteodensitometria</option>
+						<option value="37">Otorrinolaringologia</option>
+						<option value="2">Pneumologia</option>
+						<option value="53">Posturografia dinâmica e computorizada</option>
+						<option value="56">Provas funcionais respiratórias</option>
+						<option value="46">Rectosigmoidoscopia</option>
+						<option value="58">Reumatologia</option>
+						<option value="60">Rx-Digital</option>
+						<option value="59">TAC</option>
+						<option value="55">Timpanometria</option>
+						<option value="29">Urologia</option>
+						<option value="52">Videonistagmografia</option>
+					</select>
+				</div>
+		</div>
+		
+		<div class = "float_right ">
+				<div class = "sameline">
+					<label for ="exame">Exame</label>
+				</div>
+				<div class = "sameline" >
+					<select id="exame">
+						<option value="exame1">Análises Clínicas</option> 
+						<option value="exame2">Ecografia</option> 
+						<option value="exame3">TAC</option> 
+						
+					</select>
+				</div>
+		</div>
+		
+		<div class = "float_right">
+				<div class = "sameline">
+					<label for ="dataPret">Data Pretendida</label>
+				</div>
+				<div class = "sameline" >
+					<input  type = "date" id = "dataPret" />
+				</div>
+			</div>	
+				
+			
+	</div>	
+	<div class = "float_right">				
+				<div class = "sameline" >
+					<input  type = "button" name = "enviar" value = "Enviar" />
+				</div>
+		</div>
+</div>
+</form>		</div>
+		<footer>
+			&copy;2014 Santa Casa da Misericórdia de Leiria
+		</footer>
+	</div>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			$("#saude").click();
+		});
+	</script>
+	</body>
+</html>

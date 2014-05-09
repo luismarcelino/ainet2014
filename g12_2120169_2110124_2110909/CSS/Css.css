@@ -1,0 +1,477 @@
+.imagem{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    width: 240px;
+    height: 240px;
+}
+.loginEntrar{
+    position: absolute;
+    left: 10px;
+    top: 75px;
+    width: 180px;
+    height: 180px;
+}
+
+body{
+    background-color: #87CEFF;
+}
+
+#menuTopo {
+    position: absolute;
+    top: 200px;
+    left: 260px;
+    list-style-type:none;
+    padding: 0px; 
+    border: 0.5mm solid #000;
+    z-index: 1;
+}
+#menuTopo > li {
+    float: left;
+    text-align: left;
+    border: 0.5mm solid #000;
+}
+#menuTopo li a {
+    display: block;
+    height: 20px;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+}
+#menuTopo ul {
+    position: absolute;
+    display: none;
+}
+#menuTopo ul li a {
+    width: 80px;
+}
+#menuTopo li:hover ul {
+    display: block;
+}
+
+#menuTopo {
+    font-family: Arial;
+    font-size: 12px;
+    background: #63B8FF;
+}
+#menuTopo > li > a {
+    color: #fff;
+    font-weight: bold;
+}
+#menuTopo > li:hover > a {
+    background: #5CACEE;
+    color: #000;
+}
+ 
+/* Submenu
+------------------------------------------*/
+#menuTopo ul {
+    background: #5CACEE;
+    list-style-type:none;
+    padding: 0px;
+    margin: 0px;
+    border: 0.5mm solid #000;
+}
+#menuTopo ul li a {
+    color: #000000;
+    width: 100px;
+    list-style-type:none;
+    border: 0.5mm solid #000;
+}
+#menuTopo ul li:hover a {
+    background: #36648B;
+}
+
+
+/*Topo*/
+
+.divT{
+
+    width: auto;
+
+    border:5px groove #DAA520;
+    padding: 5px 5px 5px 5px;
+    height: 235px;
+}
+.procurar{
+position:absolute;
+right:10px;
+width:300px;
+top: 5px;
+color: white;
+
+}
+.Login{
+    position: absolute;
+    right: 30px;
+    top: 215px;
+    background-color: #ccc;
+    color: #444;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    border: 2px;
+    border-color: grey;
+	text-align: center;
+}
+
+
+#centro, .centro{
+width: 940px;
+height: auto;
+position: absolute;
+margin: auto;
+background-color: #7EC0EE;
+left:260px;
+top: 280px;
+z-index: 0;
+border:5px groove #DAA520;
+ }
+.login{
+width: 500px;
+height: 250px;
+position: absolute;
+margin: auto;
+background-color: #EEC900;
+left:360px;
+top: 280px;
+z-index: 0;
+border:5px groove #DAA520;
+text-align: center;
+ }
+ 
+#login input.user
+{
+    position:absolute;
+    left:170px;
+    top:23px;
+    width:425px;
+}
+
+
+ #Irmandade,#Lar,#Creche,#Residencial,.medico {
+height: auto;
+margin: 5px 5px 5px 5px;
+padding: 5px 5px 5px 5px;
+border: 2px solid #00688B;
+}
+
+.tituloEsp{
+    position: static;
+    top: -20px;
+    margin: 1px 1px 1px 1px;
+    border: 2px solid #B8860B;
+    font-weight: bold;
+    font-style: italic;
+}
+.especialidades{
+position: static;
+top: 275px;
+margin: 0;
+padding: 0;
+width: 200px;
+height: auto;
+}
+
+.especialidades ul{ 
+list-style: none;
+}
+
+.especialidades li{ 
+padding:0px;
+margin: 0;
+border-bottom: #999999 thin inset;
+}
+
+.especialidades a{
+display: block;
+text-decoration: none;
+padding: 6px;
+background-color: #B8860B;
+font-family:Verdana, Arial, Helvetica, sans-serif;
+font-size: 14px;
+font-weight: 400;
+color: #FFFFFF;
+}
+
+.especialidades :hover{
+background-color: #DAA520;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+.especialidades li.btnultimo{
+border-bottom: none;}
+
+/*Formulario*/
+#area
+{
+    width: 700px;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    left:260px;
+    top: 280px;
+    z-index: 0;
+    
+
+}
+#area #formulario
+{
+    position:absolute;
+    display:block; 
+     
+}
+/*caixa do form*/
+fieldset
+{
+    background-color:#DCDCDC;
+    width:800px;
+    height:850px;
+    border-color:#4682B4;
+}
+legend
+{
+    font-weight:bold;
+    font-family: "Segoe UI","Arial","Times New Roman";
+}
+#formulario label
+{
+    position:absolute;
+    left:19px;
+    margin-right:5px;
+}
+#formulario input.nome
+{
+    position:absolute;
+    left:170px;
+    top:23px;
+    width:425px;
+}
+#formulario input.data
+{  
+
+    position:absolute;
+    left:170px;
+    margin-top:1px;
+    width:225px;
+}
+#formulario input.social
+{  
+
+    position:absolute;
+    left:170px;
+    margin-top:1px;
+    width:225px;
+}
+#formulario input.saude
+{  
+    
+    position:absolute;
+    left:170px;
+    margin-top:2px;
+    width:225px;
+}
+#formulario input.fiscal
+{  
+    
+    position:absolute;
+    left:170px;
+    margin-top:2px;
+    width:225px;
+}
+#formulario input.contacto
+{  
+  
+    position:absolute;
+    left:170px;
+    margin:2px 2px 2px 2px;
+    width:225px;
+}
+#formulario input.horario
+{  
+  
+    position:absolute;
+    left:170px;
+    margin-top:2px;
+    width:225px;
+}
+#formulario input.especializacao
+{  
+  
+    position:absolute;
+    left:170px;
+    margin-top:2px;
+    width:225px;
+}
+#formulario input.titulonovo
+{  
+  
+    position:absolute;
+    left:170px;
+    margin-top:2px;
+    width:225px;
+}
+#formulario input.ficheiro
+{  
+  
+    position:absolute;
+    left:170px;
+    margin-top:2px;
+    width:295px;
+}
+#formulario input.autores
+{  
+  
+    position:absolute;
+    left:170px;
+    margin-top:2px;
+    width:225px;
+}
+}
+#formulario input.noticia
+{  
+    position:absolute;
+    left:170px;
+    margin-top:2px;
+    width:225px;
+}
+#formulario input.btn
+{
+    width: 80px; 
+    height: 40px
+    
+}
+
+
+/*Noticias*/
+
+
+#divCenter {
+    z-index: -1;
+    width: 700px;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    left:260px;
+    top: 280px;
+}
+
+.titulo {
+    
+    border-bottom: 1px #B8860B;
+    font-family: Copperplate / Copperplate Luz gótico, sans-serif; 
+}
+.titulo:hover{color:#4682B4}
+
+.divNoticias {
+    margin-top: 20px;
+    display:inline;
+    width:00%;
+    position:auto;
+    height: 260px;
+}
+
+
+.divNTitulo {   
+    margin-left: 35px;
+}
+
+.divIcon{
+    margin-top: 5px;
+    float: left;
+}
+
+.divNTitulo {   
+    margin-left: 35px;
+}
+
+.divNTitulo a {
+    text-decoration: none;
+    font-family:  "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;    
+    color: #666;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+.divNTitulo a:hover {
+    color: #B0E0E6;
+}
+
+.divImagem {
+    margin: 10px 0 10px 0;  
+    height: 180px;
+    width: 220px;
+    float:left;
+        
+}
+
+.divImagem img {
+    height: 160px;
+    width: auto;    
+    
+}
+
+.divConteudo {
+    margin: 10px 50px 40px 300px;
+    width: 450px;
+    height: 280px;
+    
+}
+.divConteudoCompleto {
+    margin: 50px 10px 10px 35px;
+    width: 650px;
+    height: 300px;
+    
+}
+
+.divConteudo  p {
+    font-family: “Palatino Linotype” “Book Antiqua”, Palatino, serif; 
+    font-size: 20px;
+    text-align: justify;
+}
+.divConteudoCompleto p{
+    font-family: “Palatino Linotype” “Book Antiqua”, Palatino, serif; 
+    font-size: 17px;
+    text-align: justify;
+}
+.divNoticiasData {
+    border-bottom-style:outset;
+}
+
+.divNoticiasData p {
+    text-align: left;
+    margin-top: 5px;    
+    font-family:  "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #B8860B;
+}
+.iconB{
+    width: 25px;
+    height: 25px;
+    }
+.ontext{
+font-size:5px;
+
+position:relative;
+text-align:right;}
+
+.ontext i p{display:none;}
+
+.ontext i:hover p{
+
+margin:-2px 0 0 730px;
+color:red;
+background:#00008B;
+position:absolute;
+text-align:right;
+display:block;
+border-top:0;
+width:5%;
+padding:2px 2%;
+font-style:normal;
+}

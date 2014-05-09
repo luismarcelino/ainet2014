@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-family: 'Lato';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Lato Regular'), local('Lato-Regular'),  url(../Fonts/Lato-Regular.ttf) format('truetype');
+}
+body {
+	background-image: url(../imagens/background.png);
+	background-repeat: repeat;
+	margin: 0px;
+	font-family: 'Lato', sans-serif;
+	color: #353535;
+}
+
+.imagem_index {
+	float: right;
+	margin-left: 10px;
+	height: 150px;
+	text-align: center;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+img {
+	border-radius: 10px;
+	border: solid 1px black;
+}
+
+#container {
+	width: 1024px;
+	margin: auto;
+	position: relative;
+}
+#homepage {
+	width: 512px;
+	height: 200px;
+	background-image: url(../imagens/menu/Header_peq.png);
+	background-repeat: no-repeat;
+}
+#cabecalho {
+	height: 200px;
+	width: 100%;
+	position: relative;
+	z-index: 100;
+}
+#centro {
+	float: right;
+	width: 665px;
+	height: auto;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 10px;
+/*	background-color: #80C8FE;
+	box-shadow: 3px 3px 3px #888888;*/
+	margin-bottom: 5px;
+}
+#centro_fixo {
+	width: 100%;
+	height: auto;
+	overflow-y: auto;
+}
+#barra_lateral_esq {
+	float: left;
+	width: 300px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 10px;
+	background-color: #3E78D2;
+	box-shadow: 3px 3px 3px #888888;
+	margin-left: 5px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 10px;
+}
+#conteudo {
+	overflow: hidden;
+	width: 1024px;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 0px;
+}
+#apresentacoes {
+	/* truque para jogar com as divs float lá dentro */
+	overflow: hidden;
+	width: 1024px;
+	padding-top: 0px;
+	padding-bottom: 15px;
+	height: auto;
+}
+.apresentacao_impar {
+	width: 231px;
+	height: 228px;
+	float: left;
+	text-align: center;
+	margin-right: 5px;
+	background-color: #82A8DB;
+	box-shadow: 3px 3px 3px #888888;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 35px;
+	padding-top: 5px;
+	border-top-left-radius: 40px;
+}
+.apresentacao_par {
+	width: 231px;
+	height: 229px;
+	float: left;
+	text-align: center;
+	background-color: #3E78D2;
+	box-shadow: 3px 3px 3px #888888;
+	margin-right: 5px;
+	padding-bottom: 35px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 5px;
+	border-top-left-radius: 40px;
+}
+.apresentacao_par p {
+	text-align: justify;
+	text-indent: 2em;
+}
+
+.apresentacao_par h3 {
+	background-color:#d5b366;
+	border-top-left-radius: 50px;
+	box-shadow: 3px 3px 3px #000000;
+}
+
+.apresentacao_impar h3 {
+	background-color:#d5b366;
+	border-top-left-radius: 50px;
+	box-shadow: 3px 3px 3px #000000;
+}
+.apresentacao_impar p {
+	text-align: justify;
+	text-indent: 2em;
+}
+#noticias {
+	width: 100%;
+}
+.noticia_med {
+	width: 650px;
+	height: 210px;
+	border-radius: 5px;
+	background-color: #ffffff;
+	padding-top: 5px;
+	padding-bottom: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	box-shadow: 3px 3px 3px #888888;
+	/*NAO APAGAR - má alternativa comparada ao plugin pois só dá para single line
+	text-overflow: ellipsis;
+	white-space: pre-wrap;
+  	overflow: hidden;*/
+}
+.noticia_med p {
+	text-indent: 2em;
+	text-align: justify;
+}
+.noticia_med h3 {
+	text-align: left;
+}
+.noticia {
+	width: 290px;
+	text-align: justify;
+	background-color: #82A8DB;
+	padding-top: 5px;
+	padding-bottom: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #676767;
+	min-height: 90px;
+}
+
+.noticia h3 {
+	text-align:center;
+	background-color: #d5b366;
+	border-radius: 40px;
+	box-shadow: 2px 2px 2px #000000;
+	}
+.noticia p {
+	text-indent: 2em;
+	text-align: justify;
+}
+#rodape {
+	/*clear: both;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	width: 1024px;
+}
+
+/*p.apresentacao{
+	font-size: 10px;
+	text-align: justify;
+	color: #ffff00;
+}
+
+p.rodape{
+	font-size: 16px;
+	text-align: center;
+}*/

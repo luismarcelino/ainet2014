@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <script type="text/javascript" src="js/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <link rel="stylesheet" style="text/css" href="styles/geral.css" />
+    <link rel="stylesheet" style="text/css" href="styles/medic_details.css" />
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="div_logo">
+                <a href="index.html">
+                    <img id="logo" src="images/santa_casa1000_transparent2.png" alt="Santa Casa da Misericórdia de Leiria" />
+                    <img id="title" src="images/text_title.png" alt="Santa Casa da Misericórdia de Leiria" />
+                </a>
+            </div>
+            <div id="login">
+                <div id="login_box">
+                    <p>Bem-vindo Visitante!&nbsp;</p>
+                    <a href="">Entrar</a>
+                </div>
+            </div>
+            <div id="menu_div">
+                <nav id="menu">
+                    <a href="index.html">
+                        <img src="images/santa_casa40_transparent.png">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span>Início</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a>
+                                <span>Saúde</span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="specialities.html">
+                                        <span>Especialidades</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="medics.html">
+                                        <span>Corpo Cliníco</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="new.html">
+                                        <span>Notícias</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="make_appointment.html">
+                                        <span>Marcar Consulta</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>
+                                <span>Serviços</span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li class="have_sub_sub_menu">
+                                    <a href="geriatric_care_details.html">
+                                        <span>Cuidados Geriátricos</span>
+                                    </a>
+                                    <ul class="sub_sub_menu">
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Residencial</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Lar</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Internamento</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Apoio domiciliário</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="valency_details.html">
+                                        <span>Irmandade</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="valency_details.html">
+                                        <span>Creche</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="contacts.html">
+                                <span>Contactos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Gestão</span>
+                            </a>
+                            <!-- Menu disponivivel (e opções) apenas a utilizadores com priviligiados -->
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="edit_new.html">
+                                        <span>Notícias</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>Utilizadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>Pedidos Marcação</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div>
+            <h1 id="medic_name">João Couto</h1>
+        </div>
+        <div id="medic_content">
+            <div class="medic_apresentation">
+                <img src="images/medicoB.jpg" alt="" id="medic_image" />
+                <a class="content_div_title">Marcar Consulta</a>
+            </div>
+            <div id="medic_speciality">
+                <div class="medic_data">
+                    <h2 class="content_title">Especialidades</h2>
+                    <div>
+                        <span class="bold">Cardiologia</span>
+                        <br/>Acordos:
+                        <ul>
+                            <li>AME - Associação Mutualista de Engenheiros;</li>
+                            <li>ADSE;</li>
+                        </ul>
+                        <br/>Horarios:
+                        <ul>
+                            <li>segundas 10h-13h, semanalmente;</li>
+                            <li>quartas 14h-18h de 2 em 2 semanas;</li>
+                        </ul>
+                        <span class="bold">Cirurgia Geral</span>
+                        <br/>Acordos:
+                        <ul>
+                            <li>Medis;</li>
+                            <li>Generali;</li>
+                        </ul>
+                        <br/>Horarios:
+                        <ul>
+                            <li>terças 10h-13h, semanalmente;</li>
+                            <li>quintas 14h-18h de 2 em 2 semanas;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="medic_data">
+                    <h2 class="content_title">Investigação</h2>
+                    <div>
+                        <span class="bold">Cardiologia</span>
+                        <p>
+                            A Santa Casa da Misericórdia de Leiria – instituição com 500 anos de história – renova-se e actualiza-se diariamente. A presença num meio como a Internet é disto um bom exemplo. Com este site, pretende a Misericórdia de Leiria dar a conhecer a todos aqueles que nos visitam as suas valências sociais e os projectos em que estamos envolvidos. Esperamos que aprecie este endereço.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#articles" style="text-decoration: none">
+            <h2 class="content_title">Publicações de João Couto</h2>
+        </a>
+        <div id="articles">
+            <article class="post">
+                <div class="img_post">
+                    <img id="img2" src="images/miolo.JPG">
+                </div>
+                <div class="text_post">
+                    <h3>Título</h3>
+                    <p>A Santa Casa da Misericórdia de Leiria – instituição com 500 anos de história – renova-se e actualiza-se diariamente. A presença num meio como a Internet é disto um bom exemplo. Com este site, pretende a Misericórdia de Leiria dar a conhecer a todos aqueles que nos visitam as suas valências sociais e os projectos em que estamos envolvidos. Esperamos que aprecie este endereço.</p>
+                </div>
+            </article>
+            <article class="post">
+                <div class="img_post">
+                    <img id="img2" src="images/no_image.jpg">
+                </div>
+                <div class="text_post">
+                    <h3>Título</h3>
+                    <p>A Santa Casa da Misericórdia de Leiria – instituição com 500 anos de história – renova-se e actualiza-se diariamente. A presença num meio como a Internet é disto um bom exemplo. Com este site, pretende a Misericórdia de Leiria dar a conhecer a todos aqueles que nos visitam as suas valências sociais e os projectos em que estamos envolvidos. Esperamos que aprecie este endereço.</p>
+                </div>
+            </article>
+            <article class="post">
+                <div class="img_post">
+                    <img id="img2" src="images/Capa_Hospital.jpg">
+                </div>
+                <div class="text_post">
+                    <h3>Título</h3>
+                    <p>A Santa Casa da Misericórdia de Leiria – instituição com 500 anos de história – renova-se e actualiza-se diariamente. A presença num meio como a Internet é disto um bom exemplo. Com este site, pretende a Misericórdia de Leiria dar a conhecer a todos aqueles que nos visitam as suas valências sociais e os projectos em que estamos envolvidos. Esperamos que aprecie este endereço.</p>
+                </div>
+            </article>
+        </div>
+        <footer class="clearfix">
+            <div class="footer_divs">
+                <h2>Saúde</h2>
+                <a href="specialities.html">Especialidades</a>
+                <br />
+                <a href="medics.html">Corpo Clínico</a>
+                <br />
+                <a href="#">Notícias</a>
+                <br />
+                <a href="make_appointment.html">Marcar Consulta</a>
+            </div>
+            <div class="footer_divs">
+                <h2>Serviços</h2>
+                <a href="geriatric_care_details.html">Cuidados Geriátricos</a>
+                <div id="tab">
+                    <a href="valency_details.html">Residêncial</a>
+                    <br />
+                    <a href="valency_details.html">Lar</a>
+                    <br />
+                    <a href="valency_details.html">Internamento</a>
+                    <br />
+                    <a href="valency_details.html">Apoio Domiciliário</a>
+                </div>
+                <a href="medics.html">Irmandade</a>
+                <br />
+                <a href="#">Creche</a>
+                <br />
+            </div>
+            <div id="footer_contacts" class="footer_divs">
+                <h2>Contactos</h2>
+                <a href="contacts.html">Localização e Acessos</a>
+                <br />
+                <a href="contacts.html">Contacto-nos</a>
+                <br />
+                <div id="facebook">
+                    <a href="https://www.facebook.com/MisericordiadeLeiria?fref=ts" target="_blank">
+                        <img src="images/facebook_black_button.png" id="img_face">Siga-nos
+                    </a>
+                </div>
+            </div>
+            <div class="footer_divs">
+                <address>
+                    <b>Santa Casa da Misericórdia de Leiria</b>
+                    <br/>Rua Trindade Coelho, 8
+                    <br />Apartado 1109
+                    <br/>2401-801 Leiria
+                    <br/>Tel.: 244 106 202
+                    <br/>Fax: 244 106 298
+                    <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+                </address>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+#noticia_edit {
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	width: 994px;
+	overflow: hidden;
+	border-radius: 20px;
+	background-color: #7DB1E8;
+	box-shadow: 3px 3px 3px #888888;
+	text-align: justify;
+}
+
+#editar_titulo {
+	text-align: center;
+	font-size:40px;
+	font-weight:bolder;
+	color:#0F4BA8;
+	text-shadow: 2px 2px 2px #888888;
+	background-color:#d5b366;
+	border-top-left-radius: 50px;
+	box-shadow: 3px 3px 3px #000000;
+	margin-right: 5px;
+}
+
+#btn_submit {
+	float: right;
+}

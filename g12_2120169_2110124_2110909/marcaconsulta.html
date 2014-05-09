@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Santa Casa da Misericórdia de Leiria </title>
+		<link rel="stylesheet" type="text/css" href="CSS/css.css" />
+
+	</head>
+ <body>
+ <div class="divT" id="divT" style="background-image: url('Imagens/fundo.jpg');">
+		<p><img src="Imagens/SantaC.png" alt="Logo" class="imagem" /></p>
+
+		<div class="procurar">
+			<p><img src="Imagens/Lupa.png" alt="Logo" height="20" width="20" />Procurar:
+			<input type="text" name="procurar" value="" size="30" maxlength="30" /></p>		
+		</div>
+		<form method="post" action="login.html">
+			<p><input  type="submit" id="login" name="login" value="Login" size="100" class="Login" maxlength="30" /></p>
+		</form>
+		<ul id="menuTopo">
+			<li><a href="portal.html">Página Principal</a>
+	    	<li><a href="#" >Notícias</a>
+	    		<ul>
+			            <li><a href='CriarNoticia.html'>Criar</a></li>
+			            <li><a href='Noticias.html'>Visualizar</a></li>
+			    </ul>
+			</li>
+	    	<li><a href="saude.html">Saúde</a></li>
+		    <li><a href="#">Cuidados Geriátricos</a>
+		    		<ul>
+			            <li><a href='#'>Residencial</a></li>
+						<li><a href='#'>Lar</a></li>
+						<li><a href='#'>Internamento</a></li>
+						<li><a href='#'>Apoio domiciliário</a></li>
+			        </ul>
+		  	</li>
+			<li><a href="#">Irmandade</a></li>
+			<li><a href="creche.html">Creche</a></li>
+			<li><a href="marcaconsulta.html">Marcação Consulta</a></li>
+			<li><a href="contactos.html">Contactos</a></li>
+		</ul>
+	</div>
+	<div id="centro" class="centro">	
+            <fieldset>
+				<legend>Marcar consulta:</legend>
+                <label>Nome Completo:</label><input class="nome" type="text" name="nome" value="" size="0" maxlength="70"><br><br> 
+                	<label>Género:</label><p><input type="radio" name="sexo" value="masculino" checked="checked">Masculino
+        									<input type="radio" name="sexo" value="feminino">Feminino</p>
+      
+                <label>Data de Nascimento:</label> <input class="data" type="text" name="data" value="" size="40" maxlength="50"><br><br>
+                <label>Número da Seg.Social:</label> <input class="social" type="text" name="social" value="" size="40" maxlength="50"><br><br>
+				<label>Seguro de Saúde:</label> <input class="saude" type="text" name="saude" value="" size="40" maxlength="50"><br><br>
+				<label>Número Fiscal:</label> <input class="fiscal" type="text" name="fiscal" value="" size="40" maxlength="50"><br><br>
+				<label>Contacto:</label> <input class="contacto" type="text" name="contacto" value="" size="40" maxlength="50"><br><br>
+				<label>Nome do medico:</label>
+				<select class="medico">
+				  <option value="Medico 1">Medico 1</option>
+				  <option value="Medico 2">Medico 2</option>
+				  <option value="Medico 3">Medico 3</option>
+				  <option value="Medico 4">Medico 4</option>
+				</select><br><br>
+				<label>Data de consulta:</label><select class="dia">
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				</select>
+				<select class="mes">
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				</select>
+				<select class="ano">
+				  <option value="1">1</option>
+				  <option value="2">2</option>
+				  <option value="3">3</option>
+				  <option value="4">4</option>
+				</select><br>
+				<br>
+
+				<label>Horário de Atendimento:</label><input class="horario" type="text" name="horario" value="" size="40" maxlength="50"><br>
+				<br>
+				<label>Especialização:</label><input class="especializacao" type="text" name="especialidade" value="" size="40" maxlength="50"><br><br>
+				
+				<div class="btn"><input class="btn" name="" type="button" onClick="" value="Enviar"><input class="btn" name="" type="button" onClick="" value="Cancelar"></div>
+            </fieldset>
+	</div>
+	
+</body>
+</html>
+

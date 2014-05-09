@@ -1,0 +1,83 @@
+#wraper{
+	width:98%;
+	height:95%;
+	margin:auto;
+	position:relative;
+	background-color:#66CCFF;
+	box-shadow:4px 4px 2px #333;	
+	top:2%;
+}
+
+#ContactForm{
+	width:55%;
+	height:90%;
+	position:relative;
+	padding:10px;	
+	top:2%;
+	left:2%;
+	color:#FFF;
+	text-align:left;
+}
+
+#formulario{
+	width:100%;
+	height:70%;
+	position:relative;
+	padding:10px;	
+	top:2%;
+	left:2%;
+}
+
+#formulario table {
+	width:100%;
+	height:100%;
+	position:relative;
+	margin:auto;
+	margin-top:8%;
+}
+
+#infoText{
+	width:40%;
+	height:90%;
+	color:#FFF;
+	position:relative;
+	float:right;
+	top:-90%;
+	right:0;
+	font-size:1em;	
+	padding:4px;
+	overflow:auto;
+	background-color:#39F;
+	border:1px solid #999;
+	border-radius:8px;
+	box-shadow:1px 2px 1px #333;
+}
+
+#infoText ul li a{
+	color:#FFF;	
+}
+
+table td:first-child {
+	text-align:right;
+	vertical-align:text-top;
+}
+
+.rua{
+	list-style-image:url(../Img/rua.jpg);	
+}
+
+ul li .email{
+	list-style-image:url(../Img/email.png);
+}
+
+.tel{
+	list-style-image:url(../Img/email.png);
+}
+
+.fax{
+	list-style-image:url(../Img/fax.png);
+}
+
+* form textarea{
+	resize:none;	
+}

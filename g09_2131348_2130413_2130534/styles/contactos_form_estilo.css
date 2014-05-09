@@ -1,0 +1,135 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contactos_form_parte {
+	width: 487px;
+	height: 410px;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	background-color: #6ba2dc;
+	text-align: center;
+}
+
+#contactos_form_titulo {
+	font-size:40px;
+	font-weight:bolder;
+	color:#0F4BA8;
+	text-shadow: 2px 2px 2px #888888;
+	background-color:#d5b366;
+	border-top-left-radius: 50px;
+	box-shadow: 3px 3px 3px #000000;
+	margin-right: 5px;
+	}
+
+#contactos_form_parte1 {
+	border-radius: 0px 0px 200px 0px;
+	box-shadow: 3px 3px 3px #888888;
+}
+#contactos_form_parte2 {
+	border-radius: 0px 0px 0px 200px;
+	box-shadow: 3px 3px 3px #888888;
+	-webkit-box-shadow: 3px 3px 3px #888888;
+}
+#contactos_form_parte2 ul {
+	list-style: none;
+}
+#contactos_form_parte3 {
+	border-radius: 0px 200px 0px 0px;
+	box-shadow: 3px 3px 3px #888888;
+}
+#contactos_form_parte4 {
+	border-radius: 200px 0px 0px 0px;
+	box-shadow: 3px 3px 3px #888888;
+}
+#formulario footer {
+	text-align: center;
+	clear: both;
+	background-color: #6ba2dc;
+	border-radius: 0px 0px 30px 30px;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	margin-left: 5px;
+	margin-right: 5px;
+	box-shadow: 3px 3px 3px #888888;
+	margin-bottom: 5px;
+}
+
+#morada_codpostal1, #morada_codpostal2 {
+	width: 70px;
+}
+#morada_rua {
+	width: 200px;
+	height: 50px;
+}
+#morada_localidade {
+	width: 200px;
+}
+#morada_pais {
+	width: 200px;
+}
+#tipo_contacto {
+	width: 200px;
+}
+#nome {
+	width: 200px;
+}
+#data_nascimento {
+	width: 200px;
+}
+#tel {
+	width: 200px;
+}
+#email {
+	width: 200px;
+}
+#subsidio {
+	width: 200px;
+}
+#num_beneficiario {
+	width: 200px;
+}
+#forma_contacto {
+	width: 200px;
+}
+#formulario {
+	text-align: center;
+}
+#formulario h1 {
+	font-size: 40px;
+	font-weight: bolder;
+	color: #0F4BA8;
+	text-shadow: 2px 2px 2px #888888;
+}
+#contactos_partes {
+	overflow: hidden;
+	padding-right: 5px;
+	padding-left: 5px;
+	padding-top: 5px;
+	background-image: url(../imagens/telefone_grande.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#contactos_botao {
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	top: 1041px;
+	left: 681px;
+}
+#botao_enviar {
+	height: 40px;
+	width: 80px;
+}
+#botao_limpar {
+	height: 40px;
+	width: 80px;
+}

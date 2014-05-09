@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css"  href="../css/geral.css"/>
+<link rel="stylesheet" type="text/css" href="../css/contactos.css"/>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript">
+	function toggleLogin(){
+        $( "#Access>*" ).toggleClass("off");
+    }
+	
+	function ShowInfo(){
+		var name = "João";
+		var email = "lelo@exemplo.com"
+		var phoneNumber = "123456789";
+		var accType = "utente";
+		var birthday = "1/1/1";
+		
+		document.getElementById("infoForm").nome.value = name;
+		document.getElementById("infoForm").email.value = email;
+		document.getElementById("infoForm").tele.value = phoneNumber;
+		document.getElementById("infoForm").dataN.value = birthday;
+		document.getElementById("infoForm").tipoC.value = accType;
+	}
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Santa Casa da Misericórdia Gestão de Utilizadores</title>
+</head>
+
+<body>
+<noscript><p>Client do not support javascript or doesn't have it installed.</p></noscript>
+<nav id="Nav">
+	<ul>
+    	<li><a href="index.html">Entrada</a></li>
+        <li><a href="saude.html">Saúde</a></li>
+        <li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+        <li><a href="creche.html">Creche</a></li>
+        <li><a href="Irmandade.html">Irmandade</a></li>
+        <li><a href="Contactos.html">Contactos</a></li>
+        <li><a href="Pessoal.html">Pessoal</a></li>
+        <li><a href="Medico.html">Médico</a></li>
+        <li><a href="#">Gestão de Utilizadores</a></li>
+    </ul>
+</nav>
+
+<section id="Header" class="loginDiv">
+	 <div id="Access">
+ 	    <a id="loginButton" class="buttonOn" href="#" onclick="toggleLogin();">Login</a>
+	        <form action="#" method="post" class="off">  
+	            <table>
+	                <tr><td>Username:</td><td><input type="text" value="" name="user"/></td></tr>
+                    <tr><td>Password:</td><td><input type="password" value="" name="pass"/></td></tr>
+                    <tr><td><input type="button" value="Exit"  onclick="toggleLogin();"/></td><td><input type="button" value="LogIn" name="enter"/><input type="reset" value="Clear" name="clear"/></td></tr>
+                </table>
+            </form>
+     </div>
+</section>    
+<div id="Container">
+	<div id="wraper">
+        <div id="ContactForm">
+            <div id="formulario">
+            <h2>Nome Utilizador</h2>            
+                <form action="#" method="post"  id="infoForm">
+                    <table>
+                        <tr><td>Nome:</td><td><input type="text" value="" name="nome"/></td></tr>
+                        <tr><td>Email:</td><td><input type="text" value="" name="email"/></td></tr>
+                        <tr><td>Telemóvel:</td><td><input type="text" value="" name="tele"/></td></tr>
+                        <tr><td>Data de Nascimento:</td><td><input type="text" value="" name="dataN"/></td></tr>
+                        <tr><td>Tipo Utilizador:</td><td><select name="tipoC">
+                        <option value="utente">Utente</option>
+                        <option>Irmao</option>
+                        <option>Medico</option>
+                        <option>Administrativo</option>
+                        <option>Administrador</option>
+                        </select></td></tr>
+                        <tr><td></td><td><input type="button" name="send" value="Enviar"/><input type="reset" value="Limpar" name="clear"/></td></tr>
+                    </table>   
+                </form>	
+            </div>
+        </div><!--contact form end-->
+    	<article id="infoText">
+        <ul>
+            <li><b>Utilizadores</b><ul>
+                <li><a href="#" onclick="ShowInfo();">utilizador normal 1</a></li>
+                <li>utilizador normal 2</li>
+                </ul></li><!--lista utilizadores-->
+            <li><b>Irmãos</b><ul>
+            	<li>utilizador normal 1</li>
+                <li>utilizador normal 2</li>
+            </ul></li><!--fim irmaos list-->
+          	<li><b>Medicos</b><ul>
+            	<li>exemplo medico 1</li>
+                <li>exemplos medico 2</li>
+            </ul></li>
+            <li><b>Administradores</b><ul>
+            	<li>exemplo admin 1</li>
+            </ul></li>
+        </ul>
+        </article>    
+    </div>
+	<div class="pusher">&nbsp;<br /></div>
+</div>
+<footer id="Footer">
+	<h3>O Saber da experiência.<span>500 anos de história.</span></h3>
+</footer>
+</body>
+</html>

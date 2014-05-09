@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Santa Casa da Misericórdia de Leiria - Marcação Consultas </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+		<link rel="stylesheet" href="css/smoothness/jquery-ui-1.10.4.custom.min.css" type="text/css" media="all">
+
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+		<script src="js/utils.js"></script>
+
+		<script>
+			$(document).ready(function() {
+				var d = new Date();
+
+				var ano = d.getFullYear();
+
+				$("#dataNascimento").datepicker({
+					changeMonth : true,
+					changeYear : true,
+					showOn : "button",
+					buttonImage : "img/calendar.png",
+					buttonImageOnly : true,
+					yearRange : '1900:' + ano,
+					monthNamesShort : ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+					dayNamesMin : ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"]
+				});
+
+				$("#dataPretendida").datepicker({
+					showOn : "button",
+					buttonImage : "img/calendar.png",
+					buttonImageOnly : true,
+					monthNames : ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"],
+					dayNamesMin : ["Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"]
+				});
+
+				$("#login-box").hide();
+
+				var flag = 0;
+
+				$("#welcome_message").click(function() {
+					if (flag == 0) {
+						$("#login-box").show();
+						flag = 1;
+					} else {
+						$("#login-box").hide();
+						flag = 0;
+					}
+				});
+
+			});
+		</script>
+
+	</head>
+
+	<body>
+
+		<header>
+			<div class="full-width">
+				<div id="logo">
+					<div class="center">
+						<img src="./img/logo.png" alt="" />
+						<div id="login-box">
+							<form action="">
+
+								<fieldset>
+
+									<div id="login-box-username">
+										<label for="username">Username: </label>
+										<input type="text" name="username" id="username">
+									</div>
+									<div id="login-box-password">
+										<label for="password">Password: </label>
+										<input type="password" name="password" id= "password">
+									</div>
+									<div id="login-box-button">
+										<button>
+											Entrar
+										</button>
+									</div>
+
+								</fieldset>
+							</form>
+						</div>
+					</div>
+				</div>
+				<nav>
+					<div class="center">
+						<ul>
+							<li>
+								<a href="index.html">Início</a>
+							</li>
+							<li class="activeNav">
+								<a href="saude.html">Saúde</a>
+							</li>
+							<li>
+								<a href="cuidadosgeriatricos.html">Cuidados Geriátricos</a>
+							</li>
+							<li>
+								<a href="creche.html">Creche</a>
+							</li>
+							<li>
+								<a href="residencial.html">Irmandade</a>
+							</li>
+							<li>
+								<a href="contactos.html">Contactos</a>
+							</li>
+						</ul>
+
+					</div>
+				</nav>
+			</div>
+			<div id="welcome_message">
+				<p>
+					Bem Vindo Visitante!
+				</p>
+				<p id="clickToEnter">
+					Clique para autenticar
+				</p>
+			</div>
+			<div id="search_box">
+				<input type="text" id="search_field" name="search_field" placeholder="Search..." />
+				<input type="button" id="search_button" value="Search" />
+			</div>
+		</header>
+		<div id="main">
+			<div class="container">
+				<nav class="subMenu">
+					<ul>
+						<li>
+							<a href="listaEspecialidades.html">Lista de Especialidades</a>
+						</li>
+						<li>
+							<a href="corpoClinico.html">Corpo Clinico</a>
+						</li>
+						<li class="activeNav">
+							<a href="marcacaoConsulta.html">Marcação Consultas</a>
+						</li>
+						<li>
+							<a href="#">Confirmação de Marcações</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="wrapper">
+					<h2 class="category">Marcação de Consulta</h2>
+					<div>
+						<form>
+							<div class="formuarioField">
+								<div class="formularioLabel">
+									<span class="importantField">*</span><label class="bold " for="fullname">Nome Completo:</label>
+								</div>
+
+								<div class="formularioInput">
+									<input type="text" id="fullname" name="fullname" />
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+
+								<div class="formularioLabel">
+									<span class="importantField">*</span><label class="bold">Género: </label>
+								</div>
+
+								<div class="formularioInput">
+									<label for="male">Masculino</label>
+									<input type="radio" name="genre" id="male" value="male" checked="checked"/>
+									<label for="female">Feminino</label>
+									<input type="radio" name="genre" id="female" value="female" />
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel formularioSpecial">
+									<span class="importantField">*</span><label class="bold" for="data_nascimento" >Data de Nascimento: </label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="data_nascimento" name="data_nascimento" />
+
+									<span class="fieldLegend">(Dia/Mês/Ano)</span>
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel bold">
+									<label for="morada">Morada</label>
+								</div>
+								<div class="formularioInput">
+									<textarea id="morada"></textarea>
+</div>
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel bold">
+									<span class="importantField">*</span><label for="telefone">Telefone</label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="telefone">
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel bold" >
+									<label for="email">E-Mail</label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="email">
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel bold">
+									<label for="comboSeguros">Subsistema ou seguro saúde</label>
+								</div>
+								<div class="formularioInput">
+									<select id = "comboSeguros">
+										<option value = "adse">ADSE</option>
+										<option value = "multicare">Multicare</option>
+										<option value = "particular">Particular</option>
+										<option value = "servimed">Servimed</option>
+									</select>
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel bold">
+									<label for="comboConsulta">Consulta</label>
+								</div>
+								<div class="formularioInput">
+									<select id = "comboConsulta">
+										<option value = "cardiologia">Cardiologia</option>
+										<option value = "neurologia">Neurologia</option>
+										<option value = "ginecologia">Ginecologia</option>
+										<option value = "ortopedia">Ortopedia</option>
+									</select>
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel bold">
+									<label for="comboExame">Exame</label>
+								</div>
+								<div class="formularioInput">
+									<select id = "comboExame">
+										<option value = "endoscopia_alta">Endoscopia Alta</option>
+										<option value = "audiometria">Audiometria</option>
+										<option value = "cardiologia">Cardiologia</option>
+										<option value = "imagiologia">Imagiologia</option>
+									</select>
+								</div>
+
+							</div>
+
+							<div class="formularioField">
+								<div class="formularioLabel formularioSpecial">
+									<span class="importantField">*</span><label class="bold" >Data Pretendida: </label>
+								</div>
+								<div class="formularioInput">
+									<input type="text" id="dataPretendida" name="data_pretendida" />
+									<span class="fieldLegend">(Dia/Mês/Ano)</span>
+
+								</div>
+
+							</div>
+
+							<div class="margin30">
+								<span class="importantField">*</span><span> - Campo obrigatório </span>
+							</div>
+							<div class="margin30">
+								<button>
+									Confirmar
+								</button>
+							</div>
+
+						</form>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+		<footer>
+			<div class="container">
+				<div class="wrapper">
+
+				</div>
+			</div>
+		</footer>
+
+	</body>
+</html>

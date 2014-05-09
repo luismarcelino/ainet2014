@@ -1,0 +1,60 @@
+.noticias-pag{
+    position: relative;
+    top: 20px;
+    width: 1000px;
+    margin-bottom: 15px;
+    background-size: 1000px 220px;
+    background-repeat: no-repeat;
+    margin-left: 320px;
+}
+
+.noticias-pag p{
+    color: #000000;
+    font-family: "Segoe UI Light";
+    margin-left: 10px;
+    width: 750px;
+    text-align: justify;
+    vertical-align: top;
+    display: inline-block;
+
+
+}
+
+.noticias-pag h3{
+    font-family: "Segoe UI Light";
+    font-weight: 400;
+    color: #3E8CD2;
+    margin-left: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.6);
+
+}
+
+.noticias-pag h6{
+    font-family: "Century Gothic";
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+
+.img-noticia{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+#span-titulo{
+    text-align: center;
+}
+
+.titulo-noticia{
+    font-family: "Segoe UI Light";
+    font-weight: 450;
+    color: #3E8CD2;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-shadow: 0 -1px 0 rgba(0,0,0,.2), 0 1px 0 rgba(255,255,255,.6);
+}

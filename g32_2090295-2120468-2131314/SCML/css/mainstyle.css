@@ -1,0 +1,264 @@
+body {
+	background-color: #E8E8E8;
+	font-family: 'PT Sans', 'sans-serif';
+}
+
+a, a:visited, a:link {
+	text-decoration: none;
+	color: black;
+}
+
+p{
+	text-align: justify;
+}
+
+#wrapper {
+	width: 960px; /*definido por stor*/
+	margin: 10px auto;
+}
+
+#header {
+	background-color: #1C5BC7;
+	background-image: url(../img/banner.png);
+	position: relative;
+}
+#headerimg img {
+	margin: 20px;
+	width: 160px;
+	height: 150px;
+	border: 3px solid grey;
+	float: left;
+}
+
+#headerimg p {
+	width: 500px;
+	display: inline-block;
+	background-color: white;
+	border: 1px solid grey;
+	font-family: 'Pinyon Script', 'cursive';
+	padding: 5px;
+}
+
+#saber {
+	color: #0F1833;
+	display: inline-block;
+	font-size: 57px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+#loginbox {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	background-color: white;
+	width: 174px;
+}
+
+#loginbox a {
+	display: inline-block;
+	padding: 5px;
+	border: 1px solid grey;
+	width: 75px;
+	text-align: center;
+}
+
+#loginbox a:hover{
+	background-color: #C8C8C8;
+	color: white;
+}
+
+#container-login {
+	width: 300px;
+	height: 150px;
+	background-color: white;
+	border: 3px solid grey;
+	position: fixed;
+	top:0px;
+	left: 50%;
+	margin-top:150px;
+	margin-left: -150px;
+}
+
+#container-login h1 {
+	margin: 0px;
+	margin-bottom: 5px;
+	padding: 0px;
+	text-align: center;
+}
+
+#loginFields, #loginFields input[type="submit"] {
+	text-align: center;
+	margin: 5px;
+	padding: 0px;
+}
+
+#loginFields label {
+	display: inline-block;
+	width: 74px;
+}
+
+#loginFields input[type="submit"] {
+	width: 75px;
+	height: 35px;
+	border: 1px solid grey;
+	background-color: white;
+}
+
+#searchbox {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 0px;
+}
+
+#searchbox p {
+	margin: 0px;
+}
+
+#searchbox input[type="text"] {
+	background: white url(../img/search.png) left no-repeat;
+	padding: 2px 0px 2px 21px;
+	margin: 0px;
+	border-bottom: 1px solid grey;
+	border-right: 1px solid grey;
+}
+
+#middle {
+	margin-top: 20px;
+	background-color: white;
+	padding-top: 15px;
+}
+
+#sidebar {
+	float: left;
+	margin-right: 10px;
+	margin-left: 20px;
+	width: 210px;
+	text-align: left;
+}
+
+#sidebar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0px;
+}
+
+#content {
+	float: left;
+	width: 710px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.contentLabel {
+	display: inline-block;
+	margin: 0px;
+	font-size: 20px;
+	border: 1px solid grey;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.np {
+	display: inline-block;
+	margin: 0px;
+	font-size: 18px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.contentblock {
+	padding: 10px;
+	border: 4px solid grey;
+	margin-bottom: 20px;
+	margin-right: 20px;
+	position: relative;
+}
+
+.contentblock img {
+	float: left;
+	margin-right: 10px;
+	width: 290px;
+	height: 187px;
+}
+
+#newsContainer, #artrecent, #info {
+	height: 185px;
+	width: 670px;
+	overflow: hidden;
+}
+
+.tabs {
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	margin: 0px;
+}
+
+.tabs li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+}
+
+.news, .art {
+	width: inherit;
+	display: inline-block;
+	background-color: white;
+}
+
+.headline {
+	margin: 0px;
+	font-weight: bold;
+
+}
+
+#footer p{
+	text-align: center;
+	background-color: #E8E8E8;
+	font-size: 12px;
+}
+
+/*Clearfixes*/
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+/*Auxiliary*/
+#container-login.hide{
+	visibility: hidden;
+	z-index:-1;
+}
+
+#container-login.show{
+	visibility: visible;
+	z-index:105;
+}
+
+.hiden {
+	display: none;
+}
+
+.selTab {
+	background-color: grey;
+	color: white;
+}
+
+.selTab a:link, .selTab a:visited, .selTab a:hover, .selTab a:active {
+	color: white;
+}
+
+.img_med{
+	padding-left: 40%;
+	float: left;
+	padding-right: 15px;
+}

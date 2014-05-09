@@ -1,0 +1,177 @@
+#ImportantInfos{
+    top:2.5%;
+    position:relative;
+    width:97.5%;
+    height:95%;
+    background-color:#CCC;
+    margin:auto;
+    box-shadow:4px 4px 2px #333;	
+}
+
+#links{
+    width:30%;
+    height:50%;
+    position:relative;
+    left:10%;
+    top:20%;
+    padding:2px;
+    border:2px solid #333;
+    background-color:#6CF;
+    float:left;
+    overflow:auto;
+}
+
+#notSoImp{
+    width:40%;
+    height:96%;
+    border-left:1px solid #FFF;
+    position:relative;
+    top:2%;
+    float:right;
+}
+
+#notSoImp h3{
+    color:#FFFFFF;
+    text-shadow:4px 4px 2px #333;
+    width:40%;
+    position:relative;
+    margin:auto;
+    border-bottom:1px solid #666;	
+    text-align:center;
+}
+
+/*Estilo referente ao container das noticias e animação dos seus conteudos*/
+.pubMed{
+    position:relative;
+    width:70%;
+    height:85%;
+    margin:2% auto;
+    background-color:#f8f8f8;
+    box-shadow:4px 4px 2px #333;
+    border:1px solid #CCC;
+    border-radius:10px;
+}
+
+.pubMed img{
+    position:absolute;
+    bottom:0;
+    width:98%;
+    height:15%;
+    z-index:4;	
+}
+
+/*bola animada que transita entre os lugares estabelecidos*/
+#bola{
+    display:block;
+    position:absolute;
+    bottom:3%;
+    left:3.8%;
+    width:10%;
+    height:10%;		
+    background:url(../Img/bolaGuide.png) no-repeat;
+}
+
+.itemNum{
+    display:block;
+    position:absolute;
+    width:10%;
+    height:10%;
+    font-size:1.3em;
+    text-align:center;
+    text-decoration:none;
+    color:#bababa;
+    bottom:1%;
+    left:3.8%;	
+    z-index:5;
+}
+
+/*estilo numeração notica medicos - posicionamento correcto*/
+.itemNum:nth-child(1){
+    left:3.8%;	
+}
+
+.itemNum:nth-child(2){
+    left:45%;	
+}
+
+.itemNum:nth-child(3){
+    left:84%;	
+}
+
+/*estilo pagina noticia*/
+
+.conteudoNoticia{
+    width:90%;
+    height:70%;
+    position:absolute;
+    top:2%;
+    margin:auto;
+    font-size:18px;
+    font-family:Arial, Helvetica, sans-serif;	
+}
+
+.switcherNoticia{
+    display:none;	
+}
+
+.switcherNoticia:first-child{
+    display:block;	
+}
+
+
+/*---------------------------------------------------------------------------------------------------------------
+                                                                                referente ao toogle e estilo news e important info
+-------------------------------------------------------------------------------------------------------------------*/
+
+#news{
+    top:2.5%;
+    position:relative;
+    width:97.5%;
+    height:95%;
+    background-color:#CCC;
+    margin:auto;
+    box-shadow:4px 4px 2px #333;		
+}
+
+.off{
+    display:none;	
+}
+
+#newsHeader{
+    height: 20%;
+    margin: auto;
+    width: 97.5%;
+}
+
+#newsTitle{
+    width: 92.5%;
+    position: relative;
+    float: left;
+}
+
+#newsExit{
+    width: 5%;
+    position: relative;
+    float: right;
+}
+
+#newsBody{
+    height: 77.5%;
+    width: 97.5%;
+    position: relative;
+    margin: auto;
+}
+
+#newsText{
+    width: 65%;
+    height: 97.5%;
+    position: relative;
+    float: left;
+    overflow: scroll;
+}
+
+#newsImage{
+    width: 32.5%;
+    position: relative;
+    float: right;
+}

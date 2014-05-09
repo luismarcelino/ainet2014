@@ -1,0 +1,77 @@
+@charset "utf-8";
+/* CSS Document */
+#apresenta_marcacao {
+	width: 560px;
+	min-height: 200px;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 20px;
+	background-color: #6ba2dc;
+	/*CSS3*/
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px #888888;
+}
+p.formulario{
+	padding-left: 40px;
+}
+ul.formulario{
+	margin-left: 70px;
+	margin-right: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	list-style: none;
+	border-width: 1px;
+	border-style:solid;
+}
+span.apagar{
+	background-image: url(../imagens/cruz_vermelha_escura_peq.png);
+	background-repeat: no-repeat;
+	padding-right: 30px;
+	visibility: hidden;
+	background-position:right;
+}
+span.apagar:hover{
+	background-image: url(../imagens/cruz_vermelha_clara_peq.png);
+}
+#img_lateral_esq {
+	float:left;
+	width: 276px;
+	height: 381px;
+	background-image: url(../imagens/bata300_sem_fundo.png);
+	background-repeat: no-repeat;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+#titulo_marcacao_consultas{
+	text-align: center;
+	font-size:40px;
+	font-weight:bolder;
+	color:#0F4BA8;
+	text-shadow: 2px 2px 2px #888888;
+	background-color:#d5b366;
+	border-top-left-radius: 50px;
+	box-shadow: 3px 3px 3px #000000;
+	margin-right: 5px;
+}
+#adiciona_drop{
+	background-color: #3E78D2;
+	margin-right:10px;
+	padding:3px;
+	color:#1c2f43;
+	/*CSS3*/
+	box-shadow: 3px 3px 3px #676767;
+	border-radius: 5px;
+}
+#adiciona_drop:hover{
+	background-color: #b3cded;
+	cursor:pointer;
+}
+#img_adicionar{
+	background-image: url("../imagens/botao_adicionar_preto20.png");
+	padding-left:23px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+#botoes{
+	text-align: center;
+}

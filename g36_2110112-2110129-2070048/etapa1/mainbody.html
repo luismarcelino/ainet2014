@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<title>Santa Casa da Misericórdia de Leiria</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/easySlider1.7.js"></script>
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<script type="text/javascript">
+$(document).ready(function(){	
+	$("#slider").easySlider({
+		auto: true, 
+		continuous: true,
+		numeric: true
+	});
+});	
+
+$(document).ready(function(){
+	$("#menu li").bind("mouseenter mouseleave", function (){
+		$(this).toggleClass("over");
+	});
+});
+</script>
+
+</head>
+
+<body>
+	<div id="full">
+		<div id="headTop">
+			<div id="logo">
+				<a href="head.html"><img src="imagens\santa_casa1000.png" alt="logo" height="225" width="250"/></a>
+			</div>
+
+			<div id="casaMerci">
+				<img src="imagens\santaCasa.jpg" alt="casa" height="200" width="500"/>
+			</div>
+
+			<div id="login">
+				<form method="post" action="" id="formLogin">
+					<fieldset>
+						<legend>Autenticação:</legend>
+						<table>
+							<tr>
+								<td><label for="user">Username:</label></td>
+								<td><input type="text" id="user" name="user"/></td>
+							</tr>
+							<tr>
+								<td><label for="pass">Password:</label></td>
+								<td><input type="password" id="pass" name="pass" /></td>
+							</tr>
+
+							<tr><td colspan="2"><input type="submit" value="Login" /> <input type="submit" value="Registar" /></td></tr>
+						</table>
+					</fieldset>
+
+				</form>
+			</div>
+		</div>
+		<div id="menu">
+			<p>________________________________________________________________________________________________________________________________________</p>
+			<ul id="barraNav">
+				<li>
+					<a href="mainbody.html"><span>Entrada</span></a>
+				</li>
+				<li>
+
+					<a href=""><span>Saúde</span></a>
+					<ul >
+						<li>
+							<a href="Saude\index.html"><span>Lista de Especialidades</span></a>
+						</li>
+
+						<li>
+							<a href="medico.html"><span>Corpo Clinico</span></a>
+						</li>
+						<li>
+							<a href="noticia.html"><span>Artigos/Notícias Clínicas</span></a>
+						</li>
+						<li>
+							<a href="Marcar Consulta.html"><span>Marcação de Consultas</span></a>
+						</li>
+						<li>
+							<a href=""><span>Confirmação Marcações</span></a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="valência.html"><span>Creche</span></a>
+				</li>
+				<li>
+					<a href=""><span>Cuidados  <br /> Geriátricos</span></a>
+					<ul >
+						<li>
+							<a href="valência.html"><span>Residencial</span></a>
+						</li>
+						<li>
+							<a href="valência.html"><span>Lar</span></a>
+						</li>
+						<li>
+							<a href="valência.html"><span>Internamento</span></a>
+						</li>
+						<li>
+							<a href="valência.html"><span>Apoio Domiciliário</span></a>
+						</li>
+					</ul>
+				</li>
+
+				<li>
+					<a href="valência.html"><span>Irmandade</span></a>
+				</li>
+				<li>
+					<a href="contactos.html" id="refcontacts"><span>Contactos</span></a>
+				</li>
+				<li>
+					<a><span class="negado">Pessoal</span></a>
+				</li>
+				<li>
+					<a><span class="negado">Médico</span></a>
+				</li>
+				<li>
+					<a><span class="negado">Gestão de <br /> Utilizadores</span></a>
+				</li>
+			</ul>
+			<p>________________________________________________________________________________________________________________________________________</p>
+		</div>
+		<div id="container">
+
+			<div id="excertoPai">
+
+				<div id="slider">
+					<ul>				
+						<li><a><img src="imagens/santaCasaB.jpg" alt="Css Template Preview" /></a></li>
+						<li><a><img src="imagens/santaCasaB.jpg" alt="Css Template Preview" /></a></li>
+						<li><a><img src="imagens/santaCasaB.jpg" alt="Css Template Preview" /></a></li>
+						<li><a><img src="imagens/santaCasaB.jpg" alt="Css Template Preview" /></a></li>		
+					</ul>
+				</div>
+			</div>
+
+			<div id="publicacaoContainer">
+				<div id="publicacao1" class="pub">
+					<h2>Excerto Teste</h2>
+					<span>Texto de Teste</span>
+					<a href="#" class="border">Ver Mais...</a>
+				</div>
+				<div id="publicacao2" class="pub">
+					<h2>Excerto Teste</h2>
+					<span>Texto de Teste</span>
+					<a href="#" class="border">Ver Mais...</a>
+				</div>
+
+				<div id="publicacao3" class="pub">
+					<h2>Excerto Teste</h2>
+					<span>Texto de Teste</span>
+					<a href="#" class="border">Ver Mais...</a>
+				</div>
+			</div>
+
+			<div id="apresentacaoPai">
+				<div id="apresentacao" class="ap">
+					<h2>Apresentação:</h2>
+				</div>
+				<div id="valencias" class="ap">
+					<h2>Valências:</h2>
+				</div>
+			</div>
+		</div>
+
+
+		<div  class="rodape">
+			<div  class="rodape_esq">
+				<a href="rodape.html">Newsletter</a>
+				<br/>
+				<a>Localização</a>
+				<br/>
+				<a>Noticias</a>
+				<br/>
+				<a>Mapa do Site</a>
+				<br/>
+			</div>
+			<div class="rodape_cen">
+				<span>Contactos</span>
+				<br/>
+				<span>Geral: 123456789</span>
+				<br/>
+				<a href="rodape.html"><span>Ver Todos</span></a>
+			</div>
+			<div class="rodape_dir">
+				<a>Desenvolvido por:<br/>
+					André Cristiano 2110112<br/>
+					Ricardo Ribeiro 2110129<br/>
+					Rodrigo Desidério 2070048<br/>
+					Todos os direitos reservados, 2014</a>
+				</div>
+
+			</div>
+		</div>
+	</body>
+	</html>

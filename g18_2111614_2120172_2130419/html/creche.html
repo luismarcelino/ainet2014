@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/geral.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/creche.css"/>
+        <script src="../JavaScript/showHideDivs.js"></script>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">
+            //<![CDATA[
+            function mudaNoticia(numN) {
+                alert(numN);
+                if (numN == 1) {
+                    $("#bola").animate({left: '3.8%'}, 300);
+                } else if (numN == 2) {
+                    $("#bola").animate({left: '45%'}, 300);
+                } else if (numN == 3) {
+                    $("#bola").animate({left: '84%'}, 300);
+                }
+            }
+            function mudaNoticia(numN) {
+                alert(numN);
+                if (numN == 1) {
+                    $("#bola").animate({left: '3.8%'}, 300);
+                    document.getElementById("noticia1").className = "";
+                    document.getElementById("noticia2").className = "off";
+                    document.getElementById("noticia3").className = "off";
+                } else if (numN == 2) {
+                    $("#bola").animate({left: '45%'}, 300);
+                    document.getElementById("noticia1").className = "off";
+                    document.getElementById("noticia2").className = "";
+                    document.getElementById("noticia3").className = "off";
+                } else if (numN == 3) {
+                    $("#bola").animate({left: '84%%'}, 300);
+                    document.getElementById("noticia1").className = "off";
+                    document.getElementById("noticia2").className = "off";
+                    document.getElementById("noticia3").className = "";
+                }
+            }
+
+            function moveDiv() {
+                $('#Container div').toggleClass("off");
+            }
+
+            $(document).ready(function(e) {
+
+                $('.linkAcesso').click(function() {
+                    alert("div clicked");
+                });
+
+
+
+            });
+            //]]>
+        </script>
+        <!--<noscript>Client do not support javascript or doesn't have it installed.</noscript>-->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Santa Casa da Misericórdia Home</title>
+    </head>
+
+    <body>
+        <nav id="Nav">
+            <ul>
+                <li><a href="index.html">Entrada</a></li>
+                <li><a href="saude.html">Saúde</a></li>
+                <li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+                <li><a href="#">Creche</a></li>
+                <li><a href="Irmandade.html">Irmandade</a></li>
+                <li><a href="Contactos.html">Contactos</a></li>
+                <li><a href="Pessoal.html">Pessoal</a></li>
+                <li><a href="Medico.html">Médico</a></li>
+                <li><a href="gestaoUsers.html">Gestão de Utilizadores</a></li>
+            </ul>
+        </nav>
+        <div id="Header">
+            <div id="Access">
+                <a id="loginButton" class="buttonOn" href="#" onclick="toggleLogin();">Login</a>
+                <form action="#" method="post" class="off">  
+                    <table>
+                        <tr><td>Username:</td><td><input type="text" value="" name="user"/></td></tr>
+                        <tr><td>Password:</td><td><input type="password" value="" name="pass"/></td></tr>
+                        <tr><td><input type="button" value="Exit"  onclick="toggleLogin();"/></td><td><input type="button" value="LogIn" name="enter"/><input type="reset" value="Clear" name="clear"/></td></tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+        <div id="Container">
+            <div id="ImportantInfos">
+                <div id="links">
+                    <h4>Pedido de informação</h4>
+                    <div id="pedidoInformacao">
+                        <form action="#" method="post">
+                            <p><input type="text" value="Assunto" /></p>
+                            <p><textarea rows="6" cols="70">Informação que deseja</textarea></p>
+                            <p><input type="submit" value="Submeter"/></p>
+                        </form>
+                    </div>
+                    <h4>Notícias relacionadas</h4>
+                    <div id="linksLista">
+                        <ul>
+                            <li><a href="#">Noticia 1</a></li>
+                            <li><a href="#">Noticia 1</a></li>
+                            <li><a href="#">Noticia 1</a></li>
+                            <li><a href="#">Noticia 1</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div id="notSoImp">
+                    <h3>Notícias mais recentes</h3>
+                    <div class="pubMed">
+                        <div class="conteudoNoticia">
+                            <div class="switcherNoticia" id="noticia1">
+                                cenas
+                            </div>
+                            <div class="switcherNoticia off" id="noticia2">
+                                cenas 2
+                            </div>
+                            <div class="switcherNoticia off" id="noticia3">
+                                cenas 3
+                            </div>
+
+                        </div>            	
+
+                        <a href="#" class="itemNum" onclick="mudaNoticia(2);
+                                return false;">2</a>
+                        <a href="#" class="itemNum" onclick="mudaNoticia(3);
+                                return false;">3</a>
+                        <a href="#" class="itemNum" onclick="mudaNoticia(1);
+                                return false;">1</a>
+
+                        <img src="../Img/containerGuideNoticias.png" alt="containerGuideNoticias"/>
+                        <div id="bola"></div>
+                        <div class="trans"><a href="#" onclick="moveDiv()"> > </a></div>
+                    </div>
+                    <div id="ImportantInfos2" class="off">
+                        cenas 2
+                        <div class="trans"><a href="#" onclick="moveDiv()"> > </a></div>
+                    </div>
+                </div> 
+            </div>
+            <div class="pusher">&nbsp;<br /></div>
+        </div>
+
+<footer id="Footer">
+	<h3>O Saber da experiência.<span>500 anos de história.</span></h3>
+</footer>
+    </body>
+</html>

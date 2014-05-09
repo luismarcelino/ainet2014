@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>Santa Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	
+	<link rel="stylesheet" type="text/css" href="main.css" />
+	<style type="text/css">
+		#sombraE{
+			background-image: url("img/shadow6E.png");
+			float:left;
+			height:1300px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+
+		#sombra{
+			background-image: url("img/shadow6.png");
+			float:left;
+			height:1300px;
+			width:79px;
+			background-repeat:repeat-y;
+		}
+		#content {
+			width:1000px;
+			height:1300px;
+			background-color:white;
+			margin:auto;
+			position:relative;
+			float:left;
+		}
+		
+		#publicacoesCont{
+			width:auto;
+			height:auto;
+			margin-top:0px;
+			margin-left:225px;
+			padding-left:10px;
+			padding-right: 40px;
+		}
+
+		.autor{
+			width:300px;
+			margin-left: 200px;
+			clear:both;
+			
+		}
+		
+		.autor img{
+			flaot:right;
+		}
+		
+		.autor h6{
+			text-align:right;
+			float:left;
+		}
+		
+		.publicacao{
+			border-top: solid 1px;
+			height:auto;
+			width:600px;
+			margin-left:auto;
+			margin-right:auto;
+			border-color: #B4B4B4;
+			clear:both;
+		}
+		
+		#publicacao1{
+			padding-top:10px;
+			border-top: none;
+		}
+
+	</style>
+	
+	<script type="text/javascript">
+		//<![CDATA[ 
+		
+		function limparCaixa() {
+			var caixa = document.getElementById("txtPesquisa");
+			caixa.value="";
+			caixa.style.color="black";
+	}
+	
+	function preencheCaixa() {
+		var caixa = document.getElementById("txtPesquisa");
+		var string = caixa.value.replace(/\s+/g, '');
+		if(string=="") {
+			caixa.value="Pesquisar";
+			caixa.style.color="gray";
+		}
+	}
+	//]]> 
+	</script>
+</head>
+
+<body>
+
+<div id="teste1">
+
+<div id="sombraE"> </div>
+
+
+	<div id="content">			
+		<div class="login">
+			<div class="loginText">
+				<form action="">
+					<div>
+					<input type="text" class="txtUsername" name="username" value="Username" onclick="" />
+					<input type="password" class="txtPassword" name ="password" value="Password" onclick="" />
+					<div class="loginIMG"> </div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="cabecalho">
+			<div id="logo"> <img src="img/logo2.jpg" alt="imagem logo"/> </div>
+			<div id="slogan"> <img src="img/slogan.png" alt="imagem slogan"/> </div>
+		</div>
+		
+		<div id="menuCont" >
+			<div id="lista">
+				<ul id="menu"> <!-- faltava fechar as ancoras (</a>)!!! como estava, tudo o que estava depois do item contactos ficava tambem com um link para a pagina contactos -->
+					<li id="inicio">  <a href="index.html" class="opcaoMenuHorizontal" > Início </a> </li>
+					<li id="noticias"> <a href="noticias.html" class="opcaoMenuHorizontal" > Notícias </a> </li>
+					<li id="saude"> <a href="saudePub.html" class="opcaoMenuHorizontalSeleccionado" >   Saúde </a> </li>
+					<li id="valencias"> <a href="valencias.html" class="opcaoMenuHorizontal"> Valências </a> </li>
+					<li id="contactos"> <a href="contactos.html" class="opcaoMenuHorizontal"> Contactos </a> </li>
+				</ul>
+			</div>
+			<div id="pesquisa">
+				<input type="text" id="txtPesquisa" name="pesquisa" value="Pesquisar" onclick="limparCaixa()" onblur="preencheCaixa()" />
+				<input type="image" id="imgPesquisa" src="img/search.png" />
+			</div>
+		</div>
+		<div id="corpo">
+		
+			<div id = "menuVertical">
+					<div class="paddingMenu" > MENU</div> <div class ="cantoSupMV"> </div><div class= "barraVMV"> </div>
+					<div class="opcoesMenuV">
+						<div class = "opcaoMenuVerticalSeleccionado" onclick= "location.href='saudePub.html';"> <div class = "opcaoTextoSelecionado">Publicações </div></div>
+						<div class = "opcaoMenuVertical" onclick= "location.href='saudeListaPerfil.html';"> <div class = "opcaoTexto">Corpo Clínico </div></div>
+						<div class = "opcaoMenuVertical" onclick= "location.href='formularioMarcacoes.html';"> <div class = "opcaoTexto">Marcações </div></div>
+						<div class = "opcaoMenuVertical" onclick= "location.href='saudeEspe.html';"> <div class = "opcaoTexto">Especialidades </div></div>
+						
+					
+					</div>
+					<div class= "barraHMV"> </div><div class ="cantoInfMV"> </div>
+			</div>
+		
+			<div id="publicacoesCont">
+				<div id="publicacao1" class="publicacao">
+					<h4><a href="noticia1.html">Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia</a></h4>
+					<a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem da noticia1"/> </a>
+					<p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, 
+					onde poderá efectuar exames da mais variada ordem, em excelentes instalações,
+					com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado. 
+					</p>
+					<div class="autor">
+						<a href="saudePerfil1.html"><img src="img/autor2.jpg" alt="imagem da publicacao2" width="50" height="50"/></a>
+						<h6><a href="saudePerfil1.html">"Região de Leiria"</a></h6>
+					</div>
+				</div>
+				<div id="publicacao2" class="publicacao">
+					<h4><a href="noticia1.html">Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia</a></h4>
+					<a href="noticia1.html"> <img src="img/imgNoticia1.jpg" alt="imagem da noticia2"/> </a>
+					<p>
+					Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, 
+					onde poderá efectuar exames da mais variada ordem, em excelentes instalações,
+					com acesso a tecnologia digital moderna e um atendimento humanizado e diferenciado. 
+					</p>
+					<div class="autor">
+						<a href="saudePerfil1.html"><img src="img/autor2.jpg" alt="imagem da publicacao2" width="50" height="50"/></a>
+						<h6><a href="saudePerfil1.html">"Região de Leiria"</a></h6>
+					</div>
+				</div>
+			</div> <!-- publicacoesCont -->
+		</div> <!-- corpo -->
+	</div> <!-- content -->
+
+</div> <!-- teste1 -->
+	
+	<div id = "sombra" > </div>
+	<div class="rodapeCont">
+	<div class="canto"> </div>
+		<div id="rodape"> Aplicações para a Internet - Beatriz Franco - David Mendes - Diogo Alves - 2013/2014</div>
+		<div class="cantoR"> </div>
+	</div>
+</body>
+</html>

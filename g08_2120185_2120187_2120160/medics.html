@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+    <script type="text/javascript" src="js/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="js/functions.js">
+    </script>
+    <link rel="stylesheet" style="text/css" href="styles/geral.css" />
+    <link rel="stylesheet" style="text/css" href="styles/medics.css" />
+    <script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <header id="header">
+            <div id="div_logo">
+                <a href="index.html">
+                    <img id="logo" src="images/santa_casa1000_transparent2.png" alt="Santa Casa da Misericórdia de Leiria" />
+                    <img id="title" src="images/text_title.png" alt="Santa Casa da Misericórdia de Leiria" />
+                </a>
+            </div>
+            <div id="login">
+                <div id="login_box">
+                    <p>Bem-vindo Visitante!&nbsp;</p>
+                    <a href="">Entrar</a>
+                </div>
+            </div>
+            <div id="menu_div">
+                <nav id="menu">
+                    <a href="index.html">
+                        <img src="images/santa_casa40_transparent.png">
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span>Início</span>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a>
+                                <span>Saúde</span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="specialities.html">
+                                        <span>Especialidades</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="medics.html">
+                                        <span>Corpo Cliníco</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="new.html">
+                                        <span>Notícias</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="make_appointment.html">
+                                        <span>Marcar Consulta</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>
+                                <span>Serviços</span>
+                            </a>
+                            <ul class="sub_menu">
+                                <li class="have_sub_sub_menu">
+                                    <a href="geriatric_care_details.html">
+                                        <span>Cuidados Geriátricos</span>
+                                    </a>
+                                    <ul class="sub_sub_menu">
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Residencial</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Lar</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Internamento</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="valency_details.html">
+                                                <span>Apoio domiciliário</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="valency_details.html">
+                                        <span>Irmandade</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="valency_details.html">
+                                        <span>Creche</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="contacts.html">
+                                <span>Contactos</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span>Gestão</span>
+                            </a>
+                            <!-- Menu disponivivel (e opções) apenas a utilizadores com priviligiados -->
+                            <ul class="sub_menu">
+                                <li>
+                                    <a href="edit_new.html">
+                                        <span>Notícias</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>Utilizadores</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <span>Pedidos Marcação</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div>
+            <h2 class="content_title">Os nossos profissionais</h2>
+            <div id="info_container">
+                <p>
+                    A SCML coloca à disposição dos seus doentes o seu prestigiado corpo clínico e a sua capacidade tecnológica visando a promoção da saúde, apostando no bem-estar de quem nos procura, numa relação ética e deontológica com estes e com os seus médicos referenciadores, na humanização dos cuidados prestados e numa constante actualização científica e tecnológica, com o fim último de alcançar um serviço de excelência. A Cardiologia da SCML está equipada com os mais modernos e sofisticados meios tecnológicos para prevenção, diagnóstico e tratamento das doenças do coração.
+                </p>
+                <div id="search_bar">
+                    <div>
+                        <form>
+                            <label for="medic">Pesquisar por Medico</label>
+                            <input type="search" name="medic" id="medic">
+                            <input type="submit" value="Pesquisar">
+                        </form>
+                    </div>
+                    <div>
+                        <form>
+                            <label for="specialty">Pesquisar por Especialidade</label>
+                            <input type="search" name="specialty" id="specialty">
+                            <input type="submit" value="Pesquisar">
+                        </form>
+                    </div>
+                </div>
+                <div id="medics_list">
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>João Couto</h2>
+                            <p>
+                                <span class="bold">Tel:</span>239 096900
+                                <br/>
+                                <span class="bold">Email:</span>uhc@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>Manuel Albertino</h2>
+                            <p>
+                                <span class="bold">Tel:</span>249 854792
+                                <br/>
+                                <span class="bold">Email:</span>oaw@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>Paula Rebelo</h2>
+                            <p>
+                                <span class="bold">Tel:</span>235 654829
+                                <br/>
+                                <span class="bold">Email:</span>iok@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>Carolina Costa</h2>
+                            <p>
+                                <span class="bold">Tel:</span>249 854792
+                                <br/>
+                                <span class="bold">Email:</span>oaw@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>João Caetano</h2>
+                            <p>
+                                <span class="bold">Tel:</span>249 854792
+                                <br/>
+                                <span class="bold">Email:</span>oaw@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>Mariana Lopes</h2>
+                            <p>
+                                <span class="bold">Tel:</span>249 854792
+                                <br/>
+                                <span class="bold">Email:</span>oaw@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>Luis Almeida</h2>
+                            <p>
+                                <span class="bold">Tel:</span>249 854792
+                                <br/>
+                                <span class="bold">Email:</span>oaw@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>Fabio Henriques</h2>
+                            <p>
+                                <span class="bold">Tel:</span>249 854792
+                                <br/>
+                                <span class="bold">Email:</span>oaw@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>Paulo Gonçalves</h2>
+                            <p>
+                                <span class="bold">Tel:</span>249 854792
+                                <br/>
+                                <span class="bold">Email:</span>oaw@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="professional_medic">
+                        <div class="professional_gui">
+                            <img src="images/default_doctor.png" alt="Medico" />
+                            <a class="content_div_title" href="make_appointment.html">Marcar Consulta</a>
+                        </div>
+                        <div>
+                            <h2>Horácio De Jesus</h2>
+                            <p>
+                                <span class="bold">Tel:</span>249 854792
+                                <br/>
+                                <span class="bold">Email:</span>oaw@SCML.pt
+                                <br/>
+                                <span class="bold">Especialidade:</span>Cardiologia
+                            </p>
+                            <a class="content_div_title" href="Medic_details.html">Detalhes</a>
+
+                        </div>
+                        <div class="medic_details">
+                            <p>
+                                <span class="bold">Nome Clinico:</span>Dr. Horacio Jesus.
+                                <br />
+                                <span class="bold">Especialidade:</span>Cardiologia.
+                                <span class="bold">Acordos:</span>Acordo1, Acordo2.
+                                <span class="bold">Investigação:</span>Investigação1.
+                                <br />
+                                <a>Artigos publicados</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page_numbers">
+                <ul>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">6</a>
+                    </li>
+                    <li>
+                        <a href="#">7</a>
+                    </li>
+                    <li>
+                        <a href="#">8</a>
+                    </li>
+                    <li>
+                        <a href="#">>></a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <footer class="clearfix">
+            <div class="footer_divs">
+                <h2>Saúde</h2>
+                <a href="specialities.html">Especialidades</a>
+                <br />
+                <a href="medics.html">Corpo Clínico</a>
+                <br />
+                <a href="#">Notícias</a>
+                <br />
+                <a href="make_appointment.html">Marcar Consulta</a>
+            </div>
+            <div class="footer_divs">
+                <h2>Serviços</h2>
+                <a href="geriatric_care_details.html">Cuidados Geriátricos</a>
+                <div id="tab">
+                    <a href="valency_details.html">Residêncial</a>
+                    <br />
+                    <a href="valency_details.html">Lar</a>
+                    <br />
+                    <a href="valency_details.html">Internamento</a>
+                    <br />
+                    <a href="valency_details.html">Apoio Domiciliário</a>
+                </div>
+                <a href="medics.html">Irmandade</a>
+                <br />
+                <a href="#">Creche</a>
+                <br />
+            </div>
+            <div id="footer_contacts" class="footer_divs">
+                <h2>Contactos</h2>
+                <a href="contacts.html">Localização e Acessos</a>
+                <br />
+                <a href="contacts.html">Contacto-nos</a>
+                <br />
+                <div id="facebook">
+                    <a href="https://www.facebook.com/MisericordiadeLeiria?fref=ts" target="_blank">
+                        <img src="images/facebook_black_button.png" id="img_face">Siga-nos
+                    </a>
+                </div>
+            </div>
+            <div class="footer_divs">
+                <address>
+                    <b>Santa Casa da Misericórdia de Leiria</b>
+                    <br/>Rua Trindade Coelho, 8
+                    <br />Apartado 1109
+                    <br/>2401-801 Leiria
+                    <br/>Tel.: 244 106 202
+                    <br/>Fax: 244 106 298
+                    <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+                </address>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

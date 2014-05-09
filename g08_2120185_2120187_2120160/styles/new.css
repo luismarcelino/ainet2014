@@ -1,0 +1,32 @@
+/* News */
+
+#news {
+    margin-top: 20px;
+    width: 70%;
+}
+.new {
+    width: 90%;
+    background-color: #e8e8e8;
+    padding: 5px;
+    cursor: pointer;
+    margin: 20px;
+    overflow: hidden;
+}
+.new:hover{
+     background-color: #d8d8d8;
+}
+.new_resume {
+    overflow: hidden;
+}
+.img_new {
+    width: 250px;
+    height: 220px;
+    float: left;
+    margin-right: 2%;
+}
+/* Extra Content*/
+
+.extra {
+    width: 20%;
+    margin: 20px 0 0 5%;
+}

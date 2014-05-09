@@ -1,0 +1,20 @@
+Divisão de Tarefas (1ª parte):
+
+Diogo Santo:
+	->Entrada;
+	->Contactos;
+	->Gestão Utilizadores;
+	->Layout Trabalho(2/3)
+	
+
+Jorge Gonçalves:
+	->saude;
+	->creche;
+	->cuidados Geriátricos;
+	->Layout Trabalho (1/3)
+
+
+Hugo Caseiro:
+	->Irmandade;
+	->Médico;
+	->Pessoal;

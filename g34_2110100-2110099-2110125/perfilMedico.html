@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Santa Casa da Misericórdia de Leiria - Início </title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<script src="js/jquery.js"></script>
+	<script src="js/utils.js"></script>
+</head>
+
+<body>
+
+	<header>
+		<div class="full-width">
+			<div id="logo">
+				<div class="center">
+					<img src="./img/logo.png" alt="" />
+					<div id="login-box">
+						<form action="">
+
+							<fieldset>
+
+								<div id="login-box-username">
+									<label for="username">Username: </label>
+									<input type="text" name="username" id="username">
+								</div>
+								<div id="login-box-password">
+									<label for="password">Password: </label>
+									<input type="password" name="password" id="password">
+								</div>
+								<div id="login-box-button">
+									<button>
+										Entrar
+									</button>
+								</div>
+
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<div class="center">
+					<ul>
+						<li>
+							<a href="index.html">Início</a>
+						</li>
+						<li>
+							<a href="saude.html">Saúde</a>
+						</li>
+						<li>
+							<a href="cuidadosgeriatricos.html">Cuidados Geriátricos</a>
+						</li>
+						<li>
+							<a href="creche.html">Creche</a>
+						</li>
+						<li>
+							<a href="irmandade.html">Irmandade</a>
+						</li>
+						<li class="activeNav">
+							<a href="contactos.html">Contactos</a>
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</div>
+		<div id="welcome_message">
+			<p>
+				Bem Vindo Visitante!
+			</p>
+			<p id="clickToEnter">
+				Clique para autenticar
+			</p>
+		</div>
+		<div id="search_box">
+			<input type="text" id="search_field" name="search_field" placeholder="Search..." />
+			<input type="button" id="search_button" value="Search" />
+		</div>
+	</header>
+	<div id="main">
+		<div class="container">
+			<h2 class="category">Médico: João Pereira</h2>
+			<div class="inside">
+				<div class="wrapper">
+
+					<div id="containerImagePerfil">
+
+						<img src="./img/default.jpg" alt="" />
+					</div>
+					<p id="perfilDetalheMedico">
+						<span class="bold">Nome Clínico: </span> José Pacheco Silva Costa
+					</p>
+					<div class="especialidadeCadaMed">
+
+						<span class="bold">Especialidades:</span>
+
+						<ul>
+							<li>
+								Especialidade 1
+							</li>
+							<li>
+								Especialidade 2
+							</li>
+							<li>
+								Especialidade 3
+							</li>
+						</ul>
+
+					</div>
+
+					<div id="tabelaAcordosMed">
+						<table class="tabelaAcordosMed">
+							<thead>
+								<tr>
+									<td class="tituloTabAcordo">Especialidade</td>
+									<td class="tituloTabAcordo">CIGIC</td>
+									<td class="tituloTabAcordo">CGD</td>
+									<td class="tituloTabAcordo">BES</td>
+									<td class="tituloTabAcordo">TOTTA</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Especialidade1</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+								</tr>
+								<tr>
+									<td>Especialidade2</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+								</tr>
+								<tr>
+									<td>Especialidade3</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+									<td class="espAcordo">X</td>
+								</tr>
+							</tbody>
+
+						</table>
+					</div>
+					<div>
+						<a href="#" id="marcarConsulta">Marcar Consulta</a>
+					</div>
+
+					<section>
+						<h2 class="category">Últimos Artigos / Notícias do Médico</h2>
+						<div>
+							<div class="article">
+								<h3><a href="#">Sed ut perspiciatis unde</a></h3>
+								<address class="newsFooter">
+									Autores: Manuel, Afonso, Rui
+								</address>
+								<div class="thumbnailImage">
+									<img src="img/default.jpg" alt="">
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus dolor ante, ac lacinia ante commodo at. Vestibulum nec vulputate magna, non tincidunt mi. Donec vitae massa a felis cursus rutrum ut ac magna. Phasellus eu vulputate nibh, non pharetra metus. Suspendisse tellus ligula, commodo ut est eget, sagittis luctus velit. Nam quis ornare massa. Sed suscipit neque ac ullamcorper lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut malesuada tortor. Nulla nec diam velit. Donec turpis erat, volutpat sed venenatis in, molestie vel mauris. Etiam nec dui justo. Vivamus tortor lacus, mattis interdum euismod non, tristique ac lorem. Quisque condimentum suscipit ante, quis porta nibh laoreet pretium. Nullam viverra tortor ac porta varius.
+								</p>
+								<p>
+									<a href="#">Ler Mais...</a>
+								</p>
+
+							</div>
+							<div class="article">
+								<h3><a href="#">Totam rem aperiam</a></h3>
+								<address class="newsFooter">
+									Autores: Manuel, Afonso, Rui
+								</address>
+								<div class="thumbnailImage">
+									<img src="img/default.jpg" alt="">
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus dolor ante, ac lacinia ante commodo at. Vestibulum nec vulputate magna, non tincidunt mi. Donec vitae massa a felis cursus rutrum ut ac magna. Phasellus eu vulputate nibh, non pharetra metus. Suspendisse tellus ligula, commodo ut est eget, sagittis luctus velit. Nam quis ornare massa. Sed suscipit neque ac ullamcorper lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut malesuada tortor. Nulla nec diam velit. Donec turpis erat, volutpat sed venenatis in, molestie vel mauris. Etiam nec dui justo. Vivamus tortor lacus, mattis interdum euismod non, tristique ac lorem. Quisque condimentum suscipit ante, quis porta nibh laoreet pretium. Nullam viverra tortor ac porta varius.
+								</p>
+								<p>
+									<a href="#">Ler Mais...</a>
+								</p>
+							</div>
+							<div class="article">
+								<h3><a href="#">Inventore veritatis et quasi</a></h3>
+								<address class="newsFooter">
+									Autores: Medico1
+								</address>
+								<div class="thumbnailImage">
+									<img src="img/medico1.png" alt="">
+								</div>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce cursus dolor ante, ac lacinia ante commodo at. Vestibulum nec vulputate magna, non tincidunt mi. Donec vitae massa a felis cursus rutrum ut ac magna. Phasellus eu vulputate nibh, non pharetra metus. Suspendisse tellus ligula, commodo ut est eget, sagittis luctus velit. Nam quis ornare massa. Sed suscipit neque ac ullamcorper lacinia. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Ut ut malesuada tortor. Nulla nec diam velit. Donec turpis erat, volutpat sed venenatis in, molestie vel mauris. Etiam nec dui justo. Vivamus tortor lacus, mattis interdum euismod non, tristique ac lorem. Quisque condimentum suscipit ante, quis porta nibh laoreet pretium. Nullam viverra tortor ac porta varius.
+								</p>
+								<p>
+									<a href="#">Ler Mais...</a>
+								</p>
+							</div>
+
+							<div class="floatLeft">
+								<h3><a href="#">Mais Publicações </a></h3>
+							</div>
+						</div>
+					</section>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="wrapper">
+
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

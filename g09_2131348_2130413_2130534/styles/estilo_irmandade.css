@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+#descricao .titulo {
+	text-align: center;
+}
+
+h1 {
+	text-align: center;
+}
+
+.imagem {
+	float: right;
+	margin-left: 10px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+img {
+	border-radius: 10px;
+	border: solid 1px black;
+	width: 400px;
+}
+
+p {
+	text-indent: 2em;
+}
+
+#irmandade {
+	padding: 25px 10px 25px 10px;
+	min-height: 400px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	text-align: justify;
+	border-radius: 20px;
+	background-color: #cdd7e8;
+	box-shadow: 3px 3px 3px #888888;
+	
+}
+
+.noticia {
+	text-indent: 2em;
+}
+
+
+#descricao {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	background-color: #b3cded;
+	width: 98%;
+	border-radius: 15px;
+	box-shadow: 3px 3px 3px #888888;
+}
+
+.noticia {
+	width: 99%;
+}
+
+a:link,a:visited {
+	text-decoration: none;
+}
+
+a:hover,a:active {
+	text-decoration: underline;
+}
+
+a:link {
+	color: #2558A8;
+}
+
+a:visited {
+	color: #5B4A97;
+}
+
+a:hover {
+	color: #7797D8;
+}
+
+a:active {
+	color: #7797D8;
+}
+
+#container {
+	width: 1024px;
+	position: relative;
+	margin: auto;
+}
+
+#conteudo {
+	width: 1024px;
+	position: relative;
+	top: 0;
+}
+
+#cabecalho {
+	position: relative;
+	top: 0;
+	height: 200px;
+	width: 1024px;
+	background-image: url(../imagens/menu/Header_peq.png);
+	background-repeat: no-repeat;
+	z-index: 100;
+}
+
+#rodape {
+	clear: both;
+	width: 1024px;
+}
+
+p.rodape {
+	font-size: 16px;
+	text-align: center;
+}
+
+ul.lista {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-size: 14px;
+}
+
+li.lista {
+	background-color: #3E78D2;
+	margin-top: 10px;
+	border-style: solid;
+	border-color: #3E78D2;
+	border-width: 1px;
+}
+
+li.listaclicada {
+	background-color: #6ba2dc;
+	margin-top: 10px;
+	color: #FFFFFF;
+	border-style: solid;
+	border-color: #3E78D2;
+	border-width: 1px;
+}
+
+li.lista:hover {
+	background-color: #6ba2dc;
+	margin-top: 10px;
+	cursor: pointer;
+	color: #FFFFFF;
+	border-style: solid;
+	border-color: #3E78D2;
+	border-width: 1px;
+}
+
+#titulo_irmandade {
+
+	text-align: center;
+	font-size:40px;
+	font-weight:bolder;
+	color:#0F4BA8;
+	text-shadow: 2px 2px 2px #888888;
+	background-color:#d5b366;
+	border-top-left-radius: 50px;
+	box-shadow: 3px 3px 3px #000000;
+	margin-right: 5px;
+	}

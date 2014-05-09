@@ -1,0 +1,112 @@
+.box {min-height:1px;}
+.box:after {display:block; visibility:hidden; clear:both; line-height:0; font-size:0; content:".";}
+
+.relative {position:relative;}
+
+.clear {clear:both;}
+
+.f-left {float:left !important;} img.f-left {float:left; margin-right:10px;}
+.f-right {float:right !important;} img.f-right {float:right; margin-left:10px;}
+
+.t-left {text-align:left !important;}
+.t-center {text-align:center !important;}
+.t-right {text-align:right !important;}
+.t-justify {text-align:justify !important;}
+
+.va-top {vertical-align:top;}
+.va-middle {vertical-align:middle;}
+.va-bottom {vertical-align:bottom;}
+
+.nom {margin:0 !important;}
+.nomt {margin-top:0 !important;}
+.nomb {margin-bottom:0 !important;}
+
+.noscreen {display:none;}
+
+
+#main {
+	width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+    #header {position:relative; height:180px; }
+    
+		#logo {position:absolute; top:45px; left:220px; margin:0; font-size:350%; letter-spacing:-1px; font-weight:normal;}
+        #logo span {font-weight:bold;}
+        #logo a {text-decoration:none;}
+		#imagemLogo {position:absolute; top:-40px; left:20px; font-weight:normal;}
+        
+}
+#nav {
+      float:left;
+	  margin:50px;
+}
+#nav ul {
+        font:16px arial,tahoma,verdana;
+		list-style:none;
+		margin:0;
+		padding:0;
+}
+#nav ul li {
+	float: left;
+	position: inherit;
+	display: block;
+}
+#nav ul li a {
+           color:#555;
+		   background:#fff;
+		   text-decoration:none;
+		   margin:0 1px;
+		   padding:15px 20px;
+		   border-top:1px solid #555;
+		   display:block;
+}
+#nav li ul {
+          display:none;
+}
+#nav ul li a:hover {
+                 background:#066;
+				 color:#fff;
+}
+#nav li:hover ul {
+               display:block;
+			   position:relative;
+}
+#nav li:hover li {
+              float:none;
+			  font-size:12px;
+}
+#nav li:hover a {
+              background:#333;
+			  color:#fff;
+}
+#nav li:hover li a:hover {
+                      background:#222;
+}
+
+   
+	     #aside {
+	float: left;
+	width: 280px;
+	}
+	
+	
+	 #content {float:right; width:900px;}
+        
+         #perex {margin-left:5px; padding:15px;}
+		#perex p {margin:0;}
+
+
+  #footer {
+	width: 1160px;
+	height: 40px;
+	padding: 20px 20px 0 20px;
+
+}
+    #footer p {margin:0;}
+           
+
+}#main #content #content-title center strong {
+	font-size: 25pt;
+}

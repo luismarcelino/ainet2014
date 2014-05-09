@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>Santa Casa da Misericórdia de Leiria</title>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <link href="styles/estilo.css" rel="stylesheet" type="text/css" />
+  <link href="styles/estilo_corpos.css" rel="stylesheet" type="text/css" />
+  <link href="styles/menu_lateral_esq.css" rel="stylesheet" type="text/css" />
+  <link href="styles/menu_estilo.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js/jquery-1.11.0.min.js">
+  </script>
+  <script type="text/javascript">
+  // <![CDATA[ 
+    $(document).ready(function() {
+      var nome;
+      var tel;
+      var email;
+      var investigacao;
+      var lista_especialidades;
+      //Eventos para os botoes
+      $("#medico1").click(function(event) {
+        nome = "medico1";
+        tel = "910611061";
+        email = "qualquercoisa";
+        investigacao = "feio";
+        lista_especialidades = ["Banana", "Orange", "Apple", "Mango"];
+        lista_artigos = ["Quais?","Tem muitos"];
+        trocar_classes($(this));
+        mudar_conteudo(nome,tel,email,investigacao,lista_especialidades); 
+      }); 
+      $("#medico2").click(function(event){   
+        nome = "medico2";
+        tel = "910789633";
+        email = "qualquer";
+        investigacao = "bichos";
+        lista_especialidades = ["Banana", "Orange", "Apple", "Mango"];
+        lista_artigos = ["NADA"];      
+        trocar_classes($(this));
+        mudar_conteudo(nome,tel,email,investigacao,lista_especialidades);
+      });
+      $("#medico3").click(function(event){
+        nome = "medico3";
+        tel = "925555098";
+        email = "coisa@com.pt";
+        investigacao = "na velhice";
+        lista_especialidades = ["Banana", "Orange", "Apple", "Mango"];
+        lista_artigos = ["Quais?","LOL"];      
+        trocar_classes($(this));
+        mudar_conteudo(nome,tel,email,investigacao,lista_especialidades);
+      });
+    });
+
+  function mudar_conteudo(nome,tel,email,investigacao,lista_especialidades){
+    // Esta função muda o conteudo dos spans e divs necessários
+    var lista_esp;
+    var lista;
+    var string;
+    if (lista_especialidades.length > 0){
+      lista_esp = lista_especialidades.join(", ");
+    }else{
+      lista_esp="";
+    }
+    $("#nome_medico").text(nome); //Muda o conteudo da span #nome_medico, usa o argumento nome
+    $("#telemovel").text(tel); //Muda o conteudo da span #telemovel, usa o argumento tel
+    $("#email").html("<a href=\"MAILTO:\""+email+">"+email+"</a>"); //Muda o conteudo da span #email, usa o argumento email
+    $("#especialidades").text(lista_esp); //Muda o conteudo da span #especialidades, usa o argumento especialidades
+    $("#investigacao").text(lista_esp); //Muda o conteudo da span #investigacao, usa o argumento investigacao
+    $("#li1").text("Artigo tal e coisas"); //Muda o conteudo da span #li1
+    $("#li2").text("Noticia de médico"); //Muda o conteudo da span #li2
+    $("#li3").text("Artigo sobre investigação"); //Muda o conteudo da span #li3
+  }
+
+  function trocar_classes (identificador) {
+    $(".listaclicada").attr("class", "lista");
+    identificador.attr("class", "listaclicada");
+  }
+  // ]]>
+  </script>
+  </head>
+
+  <body>
+	<div id="container"> 
+		<!-- CABECALHO -->
+		<header id="cabecalho"> <a href="index.html">
+			<div id="homepage"></div>
+			</a> 
+				<!-- MENU -->
+				<div id="grupo1">
+				<ul class="menu">
+						<li><a href="#pessoal">Pessoal</a></li>
+						<li><a href="#medico">Médico</a></li>
+						<li><a href="#gestao_de_utilizadores">Gestão de	Utilizadores</a></li>
+					</ul>
+			</div>
+				<!-- fim grupo1 -->
+				<div id="grupo2">
+				<ul class="menu">
+						<li><a><span>Saúde</span></a>
+						<ul>
+								<li><a href="lista-especialidades.html">Lista de Especialidades</a></li>
+								<li><a href="corpo-clinico.html">Corpo Clínico</a></li>
+								<li><a href="#artigos_noticias_clinicas">Artigos/Notícias Clínicas</a></li>
+								<li><a href="marcacao-consultas.html">Marcação de Consultas</a></li>
+								<li><a href="#confirmacao-de-marcacoes">Confirmação de Marcações</a></li>
+							</ul>
+					</li>
+						<li><a href="cuidados-geriatricos.html">Cuidados Geriátricos</a></li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+			</div>
+				<!-- fim grupo2 --> 
+		</header>
+		<!-- fim cabecalho -->
+	
+		<article id="conteudo">
+			<h1 id="titulo_corpo_clinico">Corpo Clínico</h1>
+			<!-- BARRA LATERAL ESQUERDA -->
+			<section id="barralateral_esq">
+				<div id="menu_lateral_esq">
+					<ul id="listaespecialidades" class="lista">
+						<li class="listaclicada" id="medico1">medico1</li>
+						<li class="lista" id="medico2">medico2</li>
+						<li class="lista" id="medico3">medico3</li>
+					</ul>
+				</div>
+			</section>
+			<!-- CENTRO -->
+			<section id="centro">
+				<div id="centro_corpo_clinico">
+					<div id="apresenta_medico">
+						<div id="foto_medico"></div>
+						<div id="detalhes_medico"> <span id="nome_medico">medico1</span><br/>
+							<span class="detalhes_medico">TEL: <span id="telemovel">910611061</span></span><br/>
+							<span class="detalhes_medico">Email: <span id="email"><a href="MAILTO:qualquercoisa">qualquercoisa</a></span></span><br/>
+							<span class="detalhes_medico">Especialidades: <span id="especialidades">Banana, Orange, Apple, Mango</span></span><br/>
+							<span class="detalhes_medico">Investigacao: <span id="investigacao">Banana, Orange, Apple, Mango</span></span> Artigos/Noticias:
+							<ul id="artigos_noticias">
+								<li><span id="li1">Artigo tal e coisas</span></li>
+								<li><span id="li2">Noticia de médico</span></li>
+								<li><span id="li3">Artigo sobre investigação</span></li>
+							</ul>
+						</div>
+						<div id="rodape_detalhes"><span id="perfil_completo"><a class="botao" href="medicos.html">Perfil Completo</a></span></div>
+						<div id="rodape_marcar"><span id="marcar_consulta"><a class="botao" href="marcacao-consultas.html">Marcar Consulta</a></span></div><br/>
+					</div>
+				</div>
+			</section>
+		</article>
+		<!--RODAPE-->
+		<footer id="rodape">
+				<p>Fábio Santos| João Silva | Pedro Lisboa</p>
+				<p> <strong>Copyright. All Rights Reserved. 2014</strong> </p>
+				<h3>DEI-ESTG-IPLEIRIA</h3>
+		</footer>
+	</div>
+</body>
+</html>

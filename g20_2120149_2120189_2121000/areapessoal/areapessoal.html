@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Santa Casa da Misericórdia de Leiria</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/scm-stylesheets/reset.css" type="text/css" />
+    <link rel="stylesheet" href="/scm-stylesheets/layout-style.css" type="text/css" />
+    <script type="text/javascript" src="/scm-javascripts/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#bottom').load('bottom_content.html');
+            $('a[href="#"]').click(function(event) {
+                event.preventDefault();
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <div id="top">
+        <div id="logo">
+            <div class="wrapper">
+                <div class="imageholder">
+                    <a href="/index.html">
+                        <img src="/scm-imagens/santa.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="firstnavbar" class="">
+            <div class="wrapper">
+                <div id="imagesholder">
+                    <!-- 2 divs por imagem -->
+                    <a href="/saude/areas-clinicas.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Saúde</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/cuidados/cuidados.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Cuidados Geriátricos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/creche/creche.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Creche</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/irmandade/irmandade.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Irmandade</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/contactos.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Contactos</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="active" href="/areapessoal/areapessoal.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Área Pessoal</h1>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/admin/admin.html">
+                        <div class="imageholder">
+                            <div>
+                                <h1>Administração</h1>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="secondnavbar" class="b_border">
+            <div class="navbar wrapper">
+                <ul id="nav">
+                    <li>
+                        <a href="/artigos/novo_artigo.html">Novo/Editar Artigo</a>
+                    </li>
+                </ul>
+                <div id="searchholder">
+                    <form class="navbar-search" action="">
+                        <input class="search-box" type="text" placeholder="Procurar" name="search" />
+                        <button class="search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="middle" class="wrapper">
+        <div id="container" class="b_corners t_corners has_shadow">
+        </div>
+    </div>
+    <footer id="bottom">
+    </footer>
+</body>
+
+</html>

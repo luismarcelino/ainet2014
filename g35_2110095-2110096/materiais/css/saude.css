@@ -1,0 +1,70 @@
+#especialidades{
+	width: 100%
+}
+
+#listaEsq{
+
+	float: left;
+  width: 45%;	
+}
+
+#descricaoEsp{
+	float: right;
+	width: 49%;
+}
+
+.fotoMedico{
+	height: 230px;
+	float: left;
+}
+
+.infoMedico{
+	float: right;
+	width: 85%;
+}
+
+.perfilMedico{
+
+	width: 100%;
+}
+
+#listaEsp{
+	list-style-type: none;
+  width: 250px;	
+}
+
+#listaEsp li{
+  list-style-type:none;
+  margin:0 0 0 4px;
+  padding:0 0 0 10px ;
+  border-bottom:1px solid #999;
+  background:url(images/tabgrey.gif) #c0c0c0 top left no-repeat;
+}
+
+#listaEsp li a{
+  color:#191919;	
+  background:url(tabgrey.gif) transparent top right no-repeat;
+  display:block;
+  padding:0 10px 0 0;
+  text-decoration: none;
+}
+
+#listaEsp li.currEsp,
+#listaEsp li.over,
+#listaEsp li:hover
+{
+  background:url(tabblue.gif) #3375b2 top left no-repeat;
+  border-bottom:1px solid #036;
+}
+
+#listaEsp li strong,
+ul#listaEsp li.currEsp a,
+ul#listaEsp li.over a,
+ul#listaEsp li:hover a
+{
+  display:block;
+  color:#fff;
+  padding:0 10px 0 0;
+  text-decoration:none;
+  background:url(tabblue.gif) transparent top right no-repeat;
+}
