@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>SCML - Santa Casa da Misericórdia de Leiria</title>
+<link type="text/css" rel="stylesheet" href="../Styles/layout.css" />
+
+<script>
+	function pesquisa() {
+		alert("olá");
+	}
+
+	img = new Array('1', '2', '3', '4');
+
+	indice = 0;
+
+	setInterval("mudaImg()", 3000);
+
+	function mudaImg(i) {
+
+		if (i == 0 || i == 1 || i == 2 || i == 3) {
+			indice = i;
+
+		} else {
+			if (indice == img.length - 1) {
+				indice = 0;
+			} else {
+				indice++;
+			}
+		}
+		document.getElementById("banner_img_1").setAttribute("class", "");
+		document.getElementById("banner_img_2").setAttribute("class", "");
+		document.getElementById("banner_img_3").setAttribute("class", "");
+		document.getElementById("banner_img_4").setAttribute("class", "");
+		document.getElementById("banner_img_" + img[indice]).setAttribute(
+				"class", "hover");
+		document.getElementById("banner_img").innerHTML = "<img src='../images/"
+				+ img[indice]
+				+ ".jpg' width='100%' height='300' border='0' alt='Banner'>";
+
+	}
+</script>
+
+
+
+
+
+</head>
+<body>
+	<div class="container">
+		<a href="./IndexSantaCasa.html"><img id="logo"
+			src="../images/santa_casa15.png" alt="logo" /> </a> 
+		<div class="row1">
+			<div class="border_left"></div>
+			<div class="header"></div>
+
+
+
+
+
+
+			<div class="search_button">
+				<input id="url" type="text" /> <img src="../images/botaoLupa.png"
+					onclick="pesquisa()" alt="search" />
+			</div>
+
+			<div class="border_right"></div>
+		</div>
+
+		<div class="row2">
+
+
+			<div class="menu">
+				<ul class="menu_ul">
+					<li class="menu_botao"><a href="./Saude.html"> Sa&uacutede</a></li>
+
+					<li class="menu_botao"><a href="./Marcacoes.html">Marca&ccedil&otildees</a></li>
+					<li class="menu_botao"><a href="./Noticias.html">Not&iacutecias</a></li>
+					<li class="menu_botao"><a href="./cuidadosgeriatricos.html">Geriatria</a></li>
+					<li class="menu_botao"><a href="./Creche.html">Creche</a></li>
+					<li class="menu_botao"><a href="./Irmandade.html">Irmandade</a></li>
+					<li class="menu_botao"><a href="./Contactos.html">Contactos</a></li>
+				</ul>
+			</div>
+
+		</div>
+
+
+		<div id="banner" class="banner">
+
+			<div id="banner_img">
+				<img src="../images/1.jpg" width="100%" height="300px" border="0"
+					alt="Banner">
+			</div>
+
+
+
+
+
+			<div id="botoes">
+				<a href="javascript:void(0);" id="banner_img_1" class="hover"
+					onclick="mudaImg('0');">1</a> <a href="javascript:void(0);"
+					id="banner_img_2" onclick="mudaImg('1');">2</a> <a
+					href="javascript:void(0);" id="banner_img_3"
+					onclick="mudaImg('2');">3</a> <a href="javascript:void(0);"
+					id="banner_img_4" onclick="mudaImg('3');">4</a>
+			</div>
+
+		</div>
+		<div class="Conteudo" style="margin-bottom: 20px">
+
+
+			<div class="apresentacao">
+				<h2>Apresentacao</h2>
+				<p>
+					A Irmandade da Santa Casa da Misericórdia de Leiria foi criada em
+					1544. Neste mesmo ano, foi instituído o seu primeiro hospital,
+					situado no centro da cidade, com lotação de 12 camas. Em 1610, veio
+					a absorver os hospitais das profissões e as albergarias existentes,
+					à data, na cidade e que tinham sido criadas e mantidas pelos
+					“homens bons” para receber e assistir os doentes, agasalhar os
+					peregrinos e dar de comer aos pobres. Algumas destas instituições
+					datavam de 1222. Actualmente, a Santa Casa da Misericórdia de
+					Leiria conta com uma vasta gama de valências sociais e projectos em
+					que está envolvida. Esta página pretende dar a conhecer a todos os
+					visitantes, cliente e amigos, os nossos serviços, instalações,
+					projectos e valencias sociais de modo a podermos chegar mais
+					depressa a todos vós. <b><br /> <br />Bem Haja!<br /> <br />
+					</b>
+				</p>
+			</div>
+
+
+			<div class="noticias">
+				<h2>Ultimas Noticias</h2>
+				<h4>Creche</h4>
+				<p>O Hospital O Hospital Como chegar Equipa Infra-estruturas
+					Galeria Destaques Eventos e Formação Parcerias Política da
+					Qualidade, Ambiente e Segurança Trabalhe connosco O hospital CUF
+					Descobertas O hospital CUF Descobertas iniciou o seu caminho em
+					2001 como uma unidade inovadora altamente diferenciada, com todas
+					as valências médicas estruturadas, uma dimensão humanizada,
+					funcional e acolhedora para doentes e colaboradores. Esta moderna
+					unidade hospitalar tem um papel fundamental na formação de quadros
+					técnicos especializados, e na definição de modelos de melhores
+					práticas. Hoje, é líder reconhecido na prestação privada e continua
+					a inovar e a desenvolver um projeto clínico de excelência.</p>
+				<h4>Irmandade</h4>
+				<p>O hospital CUF Descobertas foi delineado para constituir uma
+					alternativa abrangente na prestação de cuidados de saúde de
+					excelência centrados no doente. No mesmo espaço físico,
+					disponibiliza diferentes vertentes de cuidados, desde a medicina
+					geral e familiar à especialização médica ou cirúrgica, com o apoio
+					da tecnologia mais recente, e mantendo a relação privilegiada com o
+					doente.</p>
+				<h4>Lar</h4>
+				<p>Um dia no hospital CUF Descobertas traduz-se em 1.100
+					consultas, 1.500 exames, 300 urgências, 45 doentes operados, 11
+					partos e 45 doentes saídos. O seu movimento assistencial e produção
+					são superiores aos de alguns hospitais públicos centrais.</p>
+				<h4>Residencial</h4>
+				<p>Mais recentemente, o hospital envolveu-se no projecto SINAS
+					(Sistema Nacional de Avaliação em Saúde), projecto pelo qual a
+					Entidade Reguladora de Saúde tem como objetivo avaliar diversos
+					hospitais do país, criando uma classificação nacional entre
+					especialidades hospitalares.</p>
+			</div>
+
+			<div class="publicacoesMedicos">
+		<h2>Publicacoes Medicos</h2>
+				<div class="Artigo">
+					<div class="Titulo"></div>
+					<div class="ArtigoImagem">
+						<a href="Publicacao1.html"></a><a> <img
+							src="../images/publicacao 1.jpg"></a>
+					</div>
+					<div class="Accoes ">
+						<a class="LerMais" href="Publicacao1.html">Ler mais</a>
+					</div>
+				</div>
+
+
+				<div class="Artigo">
+					<div class="Titulo"></div>
+					<div class="ArtigoImagem">
+						<a href="Publicacao2.html"></a><a> <img
+							src="../images/publicacao 2.jpg"></a>
+					</div>
+					<div class="Accoes ">
+						<a class="LerMais" href="Publicacao2.html">Ler mais</a>
+					</div>
+				</div>
+
+				<div class="Artigo">
+					<div class="Titulo"></div>
+					<div class="ArtigoImagem">
+						<a href="Publicacao3.html"></a><a> <img
+							src="../images/publicacao 3.jpg"></a>
+					</div>
+					<div class="Accoes ">
+						<a class="LerMais" href="Publicacao3.html">Ler mais</a>
+					</div>
+				</div>
+				<br /> <br />
+			</div>
+
+		</div>
+
+
+		<div class="footer">
+			<div class="footer_left">
+				<p>
+					<b>Santa Casa da Miseric&oacuterdia de Leiria
+						Institui&ccedil&atildeo Particular de Solidariedade Social </b><br>Sede:
+						Rua Trindade Coelho, 8 Apartado 1109 2401-801 Leiria <br>Tel.:
+							244 106 202 . Fax: 244 106 298 <a
+							href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+					<br><br><b>Lar Nossa Sra. da Encarna&ccedil&atildeo</b></br>
+						Rua Nossa Sra. da Encarna&ccedil&atildeo 2414-004 LEIRIA 
+					<br>Tel.: 244 827 400 . Fax: 244 823 980 <a
+						href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+					<br> <br> <b>Cl&iacutenica M&eacutedica e de
+								Reabilita&ccedil&atildeo</b></br> Rua Nossa Sra. da
+						Encarna&ccedil&atildeo 2414-004 LEIRIA </br>Tel.: 244 824 484 . Fax:
+						244 823 980 <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+				</p>
+			</div>
+			<div class="footer_center">
+				<p>
+					<b>Hospital Dom Manuel de Aguiar</b></br> Rua Conde Ferreira 2410-189
+					LEIRIA</b><br> Tel.: 244 100 009 . Fax: 244 106 299 <a
+						href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+					<br> <br> <b>Unidade Cir&uacutergica</b> </br>Tel.: 244 106
+						203 </br> <b>Unidade Cuidados Continuados</b> <br> Tel.: 244 106
+						204 (24 HORAS)<br> <b>Recep&ccedil&atildeo Administrativa
+								Central </b>
+					<br>Tel.: 244 106 201 <br><br><b>Creche "Casa
+									Sanches"</b></br> Rua Trindade Coelho, 10 2410-189 LEIRIA 
+					<br>Tel.: 244 100 009 . Tm: 915 190 685 . Fax: 244 106 298 <a
+						href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+				</p>
+			</div>
+			<div class="footer_right">
+				<p>
+					<b>Residencial XXI </b></br>Rua do Lis 2410-126 LEIRIA </br> Tel.: 244 106
+					300 <br />Fax: 244 106 298 </br><a
+						href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+				</p>
+			</div>
+			<div class="footer_bottom"></div>
+
+
+		</div>
+	</div>
+</body>
+</html>

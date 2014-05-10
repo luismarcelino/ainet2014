@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-pt">
+    <head>
+        <meta charset="utf-8">             
+        <meta name="author" content="João nascimento">
+        <!--<meta name="viewport" content="width=device-width">-->
+        <link href="css.css" rel="stylesheet" type="text/css" />
+        <!--        <script src="assets/js/jsIndex.js"></script>-->
+        <title>Santa Casa Misericordia Leiria</title>  
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script> // <![CDATA[
+            $(document).ready(function() {
+                $("#login").mousedown(function() {
+                    if ($("#membro").css('display') === "none") {
+                        $("#membro").css("display", "block");
+                    } else {
+                        $("#membro").css("display", "none");
+                    }
+
+                });
+
+            });
+            // ]]></script>              
+        <script src="assets/js/gmaps.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="assets/js/jsIndex.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.11&sensor=false" type="text/javascript"></script>
+        <script type="text/javascript">
+            // check DOM Ready
+            $(document).ready(function() {
+                // execute
+                (function() {
+                    // map options
+                    var options = {
+                        zoom: 19,
+                        center: new google.maps.LatLng(39.744165, -8.804938),
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                        mapTypeControl: false
+                    };
+
+                    // init map
+                    var map = new google.maps.Map(document.getElementById('map'), options);
+                })();
+            });
+        </script>
+    </head>
+    <body >
+        <div class="status">
+            <!--            <img id="logo" src="assets/images/santa_casa100.png" alt="Logo" >        -->
+            <a id="login" >LOGIN AREA</a>        
+            <div id="membro" >
+                <form>
+                    <label for="email">Email</label>
+                    <input name="email" type="text" placeholder="Email">
+                    <label for="pass">Password</label>
+                    <input name="pass" type="password" placeholder="Password">
+                    <input id="log" type="submit" value="LOG IN">
+                </form>
+
+            </div>
+        </div>
+
+        <div class="intro">
+            <img id="logo" src="assets/images/santa_casa100.png" alt="Logo" >  
+            <div class="texto">
+                <h3>Santa Casa da Misericordia</h3>
+                <p>500 anos de experiencia</p>
+            </div>
+            <!--<div class="imgG">-->              
+            <img  src=" assets/images/residencial.JPG"  alt="Capture"/>
+            <!--</div>-->
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="saude.html">Saude</a>
+                    <ul>
+                        <li><a href="especialidades.html">Especialidades</a></li>
+                        <li><a href="corpoClinico.html">Corpo Clínico</a></li>
+                        <li><a href="artigosNoticias.html">Artigos/Notícias</a></li>
+                        <li><a href="marcacaoConsultas.html">Marcação de Consultas</a></li>                        
+                    </ul>
+                </li> 
+                <li><a href="medico.html">Médico</a>
+                </li>
+                <li><a href="cuidados.html">Cuidados geriatricos</a>
+                    <ul>
+                        <li><a href="residencial.html">Residencial</a></li>
+                        <li><a href="lar.html">Lar</a></li>                        
+                        <li><a href="Internamento.html">Internato</a></li>     
+                        <li><a href="Apoio.html">Apoio Domiciliario</a></li>     
+                    </ul>
+                </li> 
+                <li><a href="cresce.html">Cresce</a></li> 
+                <li><a href="irmandade.html">Irmandade</a></li>
+                <li><a href="contatos.html">Contactos</a></li>
+                <li>
+                    <form class="search" method="post" action="index.html">
+                        <input type="text" name="search" placeholder="Search...">
+                    </form>
+                </li>
+
+            </ul>
+        </nav>
+        <div id="menuEspec">
+            <ul class="menuEspecialidades">
+                <li><a class="button" id="acupunctura">Acupunctura</a></li>
+                <li><a class="button" id="audiologia">Audiologia</a></li>
+                <li><a class="button" id="cardiologia">Cardiologia</a></li>
+                <li><a class="button" id="cirurgiaGeral">Cirurgia Geral</a></li>
+                <li><a class="button" id="cirurgiaPlastica">Cirurgia Plástica</a></li>
+                <li><a class="button" id="cirurgiaVascular">Cirurgia Vascular</a></li>
+                <li><a class="button" id="clinicaGeral">Clinica Geral</a></li>
+                <li><a class="button" id="dermatologia">Dermatologia</a></li>
+                <li><a class="button" id="doencasVenosas">Doenças Venosas</a></li>
+                <li><a class="button" id="eletromiografia">Eletromiografia</a></li>
+                <li><a class="button" id="endocrinologia">Endocrinologia</a></li>
+                <li><a class="button" id="estomatologia">Estomatologia</a></li>
+                <li><a class="button" id="fisiatria">Fisiatria</a></li>
+                <li><a class="button" id="gastrenterologia">Gastrenterologia</a></li>
+                <li><a class="button" id="ginecologiaObstreticia">Ginecologia/Obstreticia</a></li>
+                <li><a class="button" id="medicinaDentaria">Medicina Dentária</a></li>
+                <li><a class="button" id="medicinaDesportiva">Medicina Desportiva</a></li>
+                <li><a class="button" id="medicinaInterna">Medicina Interna</a></li>
+                <li><a class="button" id="mesoterapia">Mesoterapia</a></li>
+                <li><a class="button" id="neurocirurgia">Neurocirurgia</a></li>
+                <li><a class="button" id="neurologia">Neurologia</a></li>
+                <li><a class="button" id="nutricao">Nutrição</a></li>
+                <li><a class="button" id="oftalmologia">Oftalmologia</a></li>
+                <li><a class="button" id="otorrinolaringologia">Otorrinolaringologia</a></li>
+                <li><a class="button" id="ortopedia">Ortopedia</a></li>
+                <li><a class="button" id="pneumologia">Pneumologia</a></li>
+                <li><a class="button" id="psicologia">Psicologia</a></li>
+                <li><a class="button" id="psiquiatria">Psiquiatria</a></li>
+                <li><a class="button" id="reumatologia">Reumatologia</a></li>
+                <li><a class="button" id="urologia">Urologia</a></li>
+            </ul>
+        </div>
+        <div id="containerEspecialidades">
+            <div id="about-acupunctura">
+                <h2>Acupunctura</h2>
+                <div>
+                    <p>A acupuntura (do latim acus - agulha e punctura - colocação1 ) é um ramo da medicina tradicional 
+                        chinesa e, de acordo com a nova terminologia da OMS - Organização Mundial da Saúde, 
+                        um método de tratamento complementar.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-audiologia">
+                <h2>Audiologia</h2>
+                <div>
+                    <p>Desenvolvimento de actividades no âmbito da prevenção e conservação da audição, 
+                        do diagnóstico e da reabilitação auditiva, bem como no domínio da funcionalidade 
+                        vestibular</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-cardiologia">
+                <h2>Cardiologia</h2>
+                <div>
+                    <p>Cardiologia (em grego: Καρδιολογία lit. Estudo do Coração) é a especialidade médica 
+                        que se ocupa do diagnóstico e tratamento das doenças que acometem o coração bem 
+                        como os outros componentes do sistema circulatório.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SNS</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-cirurgiaGeral">
+                <h2>Cirurgia Geral</h2>
+                <div>
+                    <p>Cirurgia geral é a especialidade médica cuja área de atuação compreende: Cirurgia 
+                        Abdominal, Cirurgia videolaparoscópica e Cirurgia do trauma.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SIGIC</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-cirurgiaPlastica">
+                <h2>Cirurgia Plástica</h2>
+                <div>
+                    <p>A cirurgia plástica tem por objetivo a reconstituição de uma parte do corpo humano por razões médicas ou estéticas.
+                        A cirurgia plástica se desenvolve sob duas facetas: a cirurgia plástica reparadora e a cirurgia plástica estética.
+                        A cirurgia plástica reparadora tem como objetivo corrigir lesões deformantes, defeitos congênitos ou adquiridos. É considerada tão necessária quanto qualquer outra intervenção cirúrgica.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-cirurgiaVascular">
+                <h2>Cirurgia Vascular</h2>
+                <div>
+                    <p>Cirurgia vascular é a especialidade médica que se ocupa do tratamento cirúrgico de 
+                        doenças das artérias, veias e vasos linfáticos. Atua junto à Angiologia, 
+                        especialidade responsável pelo estudo clínico dessas doenças.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SIGIC</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-clinicaGeral">
+                <h2>Clinica Geral</h2>
+                <div>
+                    <p>é a especialidade médica que trata de pacientes adultos, atuando principalmente em 
+                        ambiente hospitalar.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-dermatologia">
+                <h2>Dermatologia</h2>
+                <div>
+                    <p>Dermatologia é a especialidade médica que se ocupa do diagnóstico e tratamento 
+                        clínico-cirúrgico das doenças que acometem o maior órgão do corpo humano – a pele, 
+                        tendo em média 2 metros quadrados de área em um indivíduo adulto. A especialidade 
+                        engloba ainda as doenças que acometem os anexos cutâneos: cabelos e unhas, bem 
+                        como as mucosas (ex: boca e genitais). Outra denominação é a dermatovenerologia já 
+                        que a especialidade tem importante atuação no contexto das doenças sexualmente 
+                        transmissíveis (doenças venéreas).</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-doencasVenosas">
+                <h2>Doenças Venosas</h2>
+                <div>
+                    <p>A doença venosa resulta de uma alteração estrutural do sistema venoso dos membros 
+                        inferiores, em que as veias perdem a função de transportar o sangue venoso, 
+                        já usado, para o coração.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+
+            <div class="hide" id="about-eletromiografia">
+                <h2>Eletromiografia</h2>
+                <div>
+                    <p>A Eletromiografia é uma técnica de monitoramento da atividade elétrica das 
+                        membranas excitáveis das celulas musculares, representando os potencias de ação 
+                        deflagrados por meio da leitura da tensao eletrica (voltagem em função do tempo). 
+                        O sinal eletromiográfico (EMG) é o somatório algébrico de todos os sinais 
+                        detectados sob a área de alcance dos eletrodos, podendo ser afetado por 
+                        propriedades musculares, anatômicas e fisiológicas, assim como pelo controle do 
+                        sistema nervoso periférico e a instrumentação utilizada para a aquisção dos sinais.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS CENTRO</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-endocrinologia">
+                <h2>Endocrinologia</h2>
+                <div>
+                    <p>Endocrinologia e metabologia é uma especialidade médica que estuda as ordens do 
+                        sistema endócrino e suas secreções específicas, chamadas de secreções 
+                        fisiológicas.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-estomatologia">
+                <h2>Estomatologia</h2>
+                <div>
+                    <p>O dentista, especialista em estomatologia, é um profissional que previne, 
+                        diagnostica e trata as enfermidades relacionadas com a boca (e todo aparelho 
+                        estomatognático). O aparelho estomatognático é constituído pelos lábios, dentes, 
+                        mucosa oral, glândulas salivares, tonsilas palatinas e faringeas e demais 
+                        estruturas da orofaringe.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-fisiatria">
+                <h2>Fisiatria</h2>
+                <div>
+                    <p>A Medicina Física e Reabilitação ou Fisiatria é uma especialidade médica que se 
+                        ocupa do diagnóstico e terapêutica de diferentes entidades tais como as 
+                        subsequentes a patologias traumática, a lesões do sistema nervoso central e 
+                        periférico, orto-traumatológicas, cardio-respiratórias, reumatológicas, vasculares 
+                        periféricas, pediátricas entre outras.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SNS</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-gastrenterologia">
+                <h2>Gastrenterologia</h2>
+                <div>
+                    <p>A Gastroenterologia ou Gastrenterologia (do grego gastro =estômago + entero = 
+                        intestino), é a especialidade médica que se ocupa do estudo, diagnóstico e 
+                        tratamento clínico das doenças do aparelho digestivo. O tratamento cirúrgico de 
+                        tais patologias é abordado pela Cirurgia do Aparelho Digestivo.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-ginecologiaObstreticia">
+                <h2>Ginecologia / Obstreticia</h2>
+                <div>
+                    <p>A ginecologia literalmente significa "a ciência da mulher", mas na medicina é a 
+                        especialidade que trata de doenças do sistema reprodutor feminino, útero, 
+                        vagina e ovários. A obstetrícia é o ramo da medicina que estuda a reprodução 
+                        na mulher. Investiga a gestação, o parto e o puerpério nos seus aspectos 
+                        fisiológicos e patológicos.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SIGIC</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-medicinaDentaria">
+                <h2>Medicina Dentária</h2>
+                <div>
+                    <p>Medicina dentária é a área da saúde humana que estuda e trata o sistema 
+                        estomatognático - compreende a face, pescoço e cavidade bucal, abrangendo ossos, 
+                        musculatura mastigatória, articulações, dentes e tecidos.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-medicinaDesportiva">
+                <h2>Medicina Desportiva</h2>
+                <div>
+                    <p>Medicina Desportiva é uma especialidade médica que inclui segmentos teóricos e 
+                        práticos da medicina com o objetivo de investigar a influência do exercício, do 
+                        treinamento e do desporto sobre as pessoas sadias ou doentes, com a finalidade de 
+                        prevenir, tratar e reabilitar. Desta maneira, ocupa-se de avaliar e acompanhar os 
+                        praticantes de atividade físico-desportiva antes, durante e após a prática desta 
+                        atividade. Por outro lado, a Medicina Desportiva está direcionada não só a atletas 
+                        de alto nível mas, também, pessoas não atletas que procuram utilizar a atividade 
+                        física como meio de melhorar sua saúde.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-medicinaInterna">
+                <h2>Medicina Interna</h2>
+                <div>
+                    <p>Medicina Interna, é a especialidade médica que trata de pacientes adultos, atuando 
+                        principalmente em ambiente hospitalar. Inclui o estudo das doenças de adultos, 
+                        não cirúrgicas, não obstétricas e não ginecológicas, sendo a especialidade médica 
+                        a partir da qual se diferenciaram todas as outras áreas clínicas como Cardiologia, 
+                        Reumatologia, Oncologia, Alergologia, Endocrinologia, Gastroenterologia, 
+                        Hematologia, Nefrologia e Pneumologia.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-mesoterapia">
+                <h2>Mesoterapia</h2>
+                <div>
+                    <p>A Mesoterapia consiste na aplicação de medicamentos sob a pele. É majoritariamente 
+                        usada em clinicas de estética e é realizada por médicos, biomédicos e enfermeiros 
+                        com formação especifica na área. Inclui a administração de fármacos por meio de 
+                        múltiplas injecções intra-cutâneas, em determinadas zonas anatômicas, com objetivo 
+                        maior de tratar doenças e proporcionar a eliminação de sinais e/ou sintomas 
+                        associados.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-neurocirurgia">
+                <h2>Neurocirurgia</h2>
+                <div>
+                    <p>Neurocirurgia é a especialidade médica que se ocupa do tratamento de adultos e 
+                        crianças portadores de doenças do sistema nervoso central e periférico, assim 
+                        (como tumores, doenças vasculares, degenerativas), traumas crânio-encefálicos e 
+                        lesões raqui-medulares passíveis de abordagem cirúrgica. Recentemente, também 
+                        passou a tratar da substituição de órgãos sensoriais (olho e ouvido interno) 
+                        disfuncionais por dispositivos artificiais.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SIGIC</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-neurologia">
+                <h2>Neurologia</h2>
+                <div>
+                    <p>Neurologia é a especialidade médica que trata dos distúrbios estruturais do sistema
+                        nervoso 1 . Especificamente, ela lida com o diagnóstico e tratamento de todas as 
+                        categorias de doenças que envolvem os sistemas nervoso central, periférico e 
+                        autônomo, incluindo os seus revestimentos, vasos sanguíneos, e todos os tecidos 
+                        efetores, como os músculos.2 O correspondente cirúrgico da especialidade é a 
+                        neurocirurgia.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-nutricao">
+                <h2>Nutrição</h2>
+                <div>
+                    <p>No domínio da saúde e medicina, a nutrição é o estudo das 
+                        relações entre os alimentos ingeridos e doença ou o bem-estar do homem.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>SERVIMED</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-oftalmologia">
+                <h2>Oftalmologia</h2>
+                <div>
+                    <p>A oftalmologia (grego: ophthalmós (olho) + logos (estudo): estudo do olho) é uma 
+                        especialidade da medicina que estuda e trata as doenças relacionadas à visão, à 
+                        refração e aos olhos e seus anexos. O médico oftalmologista realiza cirurgias, 
+                        prescreve tratamentos e correções para os distúrbios de visão. A oftalmologia tem 
+                        várias sub-especialidades, entre elas a oftalmo-pediatria, a plástica ocular, 
+                        doenças orbitárias, doenças das vias lacrimais, o estrabismo, o glaucoma, a 
+                        cirurgia refrativa, retina,córnea, etc.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SIGIC</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-otorrinolaringologia">
+                <h2>Otorrinolaringologia</h2>
+                <div>
+                    <p>A otorrinolaringologia (ORL) é uma especialidade médica com características 
+                        clínicas e cirúrgicas. Seu campo de atuação envolve as doenças do ouvido, do 
+                        nariz e seios paranasais, faringe, laringe, cabeça e pescoço.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SIGIC</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-ortopedia">
+                <h2>Ortopedia</h2>
+                <div>
+                    <p>A ortopedia é a especialidade médica que cuida das doenças e deformidades dos 
+                        ossos, músculos, ligamentos, articulações, enfim, elementos relacionados ao 
+                        aparelho locomotor. A traumatologia é a especialidade médica que lida com o 
+                        trauma do aparelho músculo-esquelético.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SIGIC</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-pneumologia">
+                <h2>Pneumologia</h2>
+                <div>
+                    <p>Pneumologia é a especialidade médica a qual é responsável pelo tratamento das 
+                        patologias das vias aéreas inferiores.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-psicologia">
+                <h2>Psicologia</h2>
+                <div>
+                    <p>Psicologia (do grego Ψυχολογία, transl. psykhologuía, de ψυχή, psykhé, "psique", 
+                        "alma", "mente" e λόγος, lógos, "palavra", "razão" ou "estudo") "é o estudo do 
+                        comportamento e dos processos mentais (experiências subjetivas inferidas através 
+                        do comportamento)". O principal foco da psicologia se encontra no indivíduo, em 
+                        geral humano, mas o estudo do comportamento animal para fins de pesquisa e 
+                        correlação, na área da psicologia comparada, também desempenha um papel 
+                        importante.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>SERVIMED</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-psiquiatria">
+                <h2>Psiquiatria</h2>
+                <div>
+                    <p>Psiquiatria é uma especialidade da Medicina que lida com a prevenção, atendimento, 
+                        diagnóstico, tratamento e reabilitação das diferentes formas de sofrimentos 
+                        mentais, sejam elas de cunho orgânico ou funcional, com manifestações 
+                        psicológicas severas. São exemplos: a depressão, o transtorno bipolar, a 
+                        esquizofrenia, a demência e os transtornos de ansiedade. Os médicos 
+                        especializados em psiquiatria são em geral designados por psiquiatras 
+                        (até meados do século XX foi também comum a designação alienistas).</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-reumatologia">
+                <h2>Reumatologia</h2>
+                <div>
+                    <p>Reumatologia é a área do conhecimento médico que se ocupa do estudo das doenças que 
+                        acometem os tecidos conjuntivos.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>SERVIMED</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+            <div class="hide" id="about-urologia">
+                <h2>Urologia</h2>
+                <div>
+                    <p>Urologia é uma especialidade cirúrgica da medicina que trata do trato urinário de 
+                        homens e de mulheres e do sistema reprodutor dos homens. Os médicos que possuem 
+                        especialização nesta área são os urologistas, sendo treinados para diagnosticar, 
+                        tratar e acompanhar pacientes com distúrbios urológicos. Os órgãos estudados 
+                        pelos urologistas incluem os rins, ureteres, bexiga urinária, uretra e os órgãos 
+                        do sistema reprodutor masculino (testículos, epidídimos, ducto deferente, 
+                        vesículas seminais, próstata e pênis). As adrenais acabaram entrando na 
+                        especialidade devido ao aspecto cirúrgico das doenças tumorais das supra-renais. 
+                        Quando tem indicação cirúrgica de tumor de supra-renal o endocrinologista 
+                        encaminha para o urologista.</p>
+                </div>
+                <div>
+                    <h2>Corpo Clínico</h2>
+                </div>
+                <div>
+                    <h2>Acordos Disponiveis</h2>
+                    <ul>
+                        <li>SIGIC</li>
+                        <li>ADSE</li>
+                        <li>ADM</li>
+                        <li>SAMS QUADROS</li>
+                        <li>SAMS CENTRO</li>
+                        <li>SAMS SIB</li>
+                        <li>CGD</li>
+                        <li>SFJ</li>
+                        <li>MULTI</li>
+                        <li>SERVIMED</li>
+                        <li>SAD/GNR</li>
+                        <li>SAD/PSP</li>
+                        <li>MEDIS</li>
+                        <li>AME</li>
+                        <li>ACP</li>
+                        <li>MEDICARE</li>
+                        <li>ACILIS</li>
+                        <li>PRIV.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Notícias/Artigos</h2>
+                </div>
+                <div>
+                    <h2>Marcar Consulta</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <footer >
+            <div id="map"></div>
+        </footer>
+    </body>        

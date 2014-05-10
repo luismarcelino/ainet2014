@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="pt-pt">
+    <head>
+        <meta charset="utf-8">             
+        <meta name="author" content="João nascimento">
+        <!--<meta name="viewport" content="width=device-width">-->
+        <link href="css.css" rel="stylesheet" type="text/css" />
+        <script src="assets/js/jsIndex.js"></script>
+        <title>Santa Casa Misericordia Leiria</title>  
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script> // <![CDATA[
+            $(document).ready(function() {
+                $("#login").mousedown(function() {
+                    if ($("#membro").css('display') === "none") {
+                        $("#membro").css("display", "block");
+                    } else {
+                        $("#membro").css("display", "none");
+                    }
+
+                });
+
+            });
+            // ]]></script>              
+        <script src="assets/js/gmaps.js"></script>
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.11&sensor=false" type="text/javascript"></script>
+        <script type="text/javascript">
+        // check DOM Ready
+        $(document).ready(function() {
+            // execute
+            (function() {
+                // map options
+                var options = {
+                    zoom: 19,
+                    center: new google.maps.LatLng(39.744165, -8.804938), 
+                    mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    mapTypeControl: false
+                };
+
+                // init map
+                var map = new google.maps.Map(document.getElementById('map'), options);                
+            })();
+        });
+        </script>
+    </head>
+    <body >
+        <div class="status">
+<!--            <img id="logo" src="assets/images/santa_casa100.png" alt="Logo" >        -->
+            <a id="login" >LOGIN AREA</a>        
+            <div id="membro" >
+                <form>
+                    <label for="email">Email</label>
+                    <input name="email" type="text" placeholder="Email">
+                    <label for="pass">Password</label>
+                    <input name="pass" type="password" placeholder="Password">
+                    <input id="log" type="submit" value="LOG IN">
+                </form>
+
+            </div>
+        </div>
+
+        <div class="intro">
+            <img id="logo" src="assets/images/santa_casa100.png" alt="Logo" >  
+            <div class="texto">
+                <h3>Santa Casa da Misericordia</h3>
+                <p>500 anos de experiencia</p>
+            </div>
+            <!--<div class="imgG">-->              
+            <img  src=" assets/images/residencial.JPG"  alt="Capture"/>
+            <!--</div>-->
+        </div>
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="saude.html">Saude</a>
+                    <ul>
+                        <li><a href="especialidades.html">Especialidades</a></li>
+                        <li><a href="corpoClinico.html">Corpo Clínico</a></li>
+                        <li><a href="artigosNoticias.html">Artigos/Notícias</a></li>
+                        <li><a href="marcacaoConsultas.html">Marcação de Consultas</a></li>                        
+                    </ul>
+                </li> 
+                <li><a href="medico.html">Médico</a>
+                </li>
+                <li><a href="cuidados.html">Cuidados geriatricos</a>
+                    <ul>
+                        <li><a href="residencial.html">Residencial</a></li>
+                        <li><a href="lar.html">Lar</a></li>                        
+                        <li><a href="Internamento.html">Internato</a></li>     
+                        <li><a href="Apoio.html">Apoio Domiciliario</a></li>     
+                    </ul>
+                </li> 
+                <li><a href="cresce.html">Cresce</a></li> 
+                <li><a href="irmandade.html">Irmandade</a></li>
+                <li><a href="contatos.html">Contactos</a></li>
+                <li>
+                  <form class="search" method="post" action="index.html">
+                       <input type="text" name="search" placeholder="Search...">
+                  </form>
+                </li>
+            
+            </ul>
+        </nav>
+        <div>
+            <img src="assets/images/page-under-construction1.jpg" alt="puc"/>
+        </div>
+        <div class="clearfix"></div>
+        
+     
+        <footer >
+            <div id="map"></div>
+        </footer>
+    </body>        

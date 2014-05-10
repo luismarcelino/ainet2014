@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>SCML - Santa Casa da Misericórdia de Leiria</title>
+<link type="text/css" rel="stylesheet" href="../Styles/layout.css" />
+<style>
+html,body {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+#map-canvas{
+height: 400px;
+width: 100%;
+
+position: relative;
+align: center;
+}
+</style>
+<script
+	src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&language=pt"></script>
+<script>
+	function initialize() {
+		var posicao = new google.maps.LatLng(39.7401345,-8.8028103);
+		var mapOptions = {
+			zoom : 16,
+			center : posicao,
+		};
+		var map = new google.maps.Map(document.getElementById('map-canvas'),
+				mapOptions);
+		
+		var marker = new google.maps.Marker({
+			position: posicao,
+			map: map,
+			title:'Santa Casa'
+		}) 
+	}
+
+	google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+
+
+
+
+
+<script>
+	function pesquisa() {
+		alert("olá");
+	}
+</script>
+</head>
+<body>
+
+	<div class="container">
+		<a href="./IndexSantaCasa.html"><img id="logo"
+			src="../images/santa_casa15.png" alt="logo" /> </a> <img class="slogan"
+			src="../images/slogan2_4ae1df41702d5.PNG" alt="Slogan" />
+		<div class="row1">
+			<div class="border_left"></div>
+			<div class="header"></div>
+
+
+
+
+
+
+			<div class="search_button">
+				<input id="url" type="text" /> <img src="../images/botaoLupa.png"
+					onclick="pesquisa()" alt="search" />
+			</div>
+
+			<div class="border_right"></div>
+		</div>
+
+		<div class="row2">
+
+
+			<div class="menu">
+				<ul class="menu_ul">
+					<li class="menu_botao"><a href="./Saude.html"> Sa&uacutede</a></li>
+					
+					<li class="menu_botao"><a href="./Marcacoes.html">Marca&ccedil&otildees</a></li>
+					<li class="menu_botao"><a href="./Noticias.html">Not&iacutecias</a></li>
+					<li class="menu_botao"><a href="./cuidadosgeriatricos.html">Geriatria</a></li>
+					<li class="menu_botao"><a href="./Creche.html">Creche</a></li>
+					<li class="menu_botao"><a href="./Irmandade.html">Irmandade</a></li>
+					<li class="menu_botao"><a href="./Contactos.html">Contactos</a></li>
+
+				</ul>
+			</div>
+
+		</div>
+		
+		<div id="map-canvas"></div>
+
+
+		<div class="Contactos">
+			<h2>Contactos</h2>
+			<p>
+				<strong>Santa Casa da Miseric&oacute;rdia de Leiria</strong><br />Institui&ccedil;&atilde;o
+				Particular de Solidariedade Social<br />Sede:<br />Rua Trindade
+				Coelho, 8<br />Apartado 1109<br />2401-801 Leiria<br />Tel.: 244
+				106 202 &bull; Fax: 244 106 298<br /> <a
+					href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+			</p>
+			<p>
+				<strong>Lar Nossa Sra. da Encarna&ccedil;&atilde;o</strong><br />Rua
+				Nossa Sra. da Encarna&ccedil;&atilde;o<br />2414-004 LEIRIA<br />Tel.:
+				244 827 400 &bull; Fax: 244 823 980<br /> <a
+					href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+			</p>
+			<p>
+				<strong><br />Cl&iacute;nica M&eacute;dica e de
+					Reabilita&ccedil;&atilde;o</strong><br />Rua Nossa Sra. da
+				Encarna&ccedil;&atilde;o<br />2414-004 LEIRIA<br />Tel.: 244 824
+				484 &bull; Fax: 244 823 980<br /> <a
+					href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+			</p>
+			<p>
+				<br /> <strong>Hospital Dom Manuel de Aguiar</strong><br />Rua
+				Conde Ferreira<br />2410-189 LEIRIA<br />Tel.: 244 100 009 &bull;
+				Fax: 244 106 299<br /> <a
+					href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+
+
+
+				<br /> <br /> <strong>&nbsp;&nbsp;&nbsp;Unidade
+					Cir&uacute;rgica </strong> <br />&nbsp;&nbsp;&nbsp;Tel.: 244 106 203 <br />
+				<strong>&nbsp;&nbsp;&nbsp;Unidade Cuidados Continuados</strong> <br />&nbsp;&nbsp;&nbsp;Tel.:
+				244 106 204 ( <u>24 HORAS</u>) <br /> <strong>&nbsp;&nbsp;&nbsp;Recep&ccedil;&atilde;o
+					Administrativa Central</strong> <br />&nbsp;&nbsp;&nbsp;Tel.: 244 106 201
+
+			</p>
+			<p>
+				<strong>Creche &quot;Casa Sanches&quot;</strong><br />Rua Trindade
+				Coelho, 10<br />2410-189 LEIRIA<br />Tel.: 244 100 009 &bull; Tm:
+				915 190 685 &bull; Fax: 244 106 298<br /> <a
+					href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+			</p>
+			<p>
+				<br /> <strong>Residencial XXI</strong><br />Rua do Lis<br />2410-126
+				LEIRIA<br />Tel.: 244 106 300 &bull; Fax: 244 106 298<br /> <a
+					href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+			</p>
+
+		</div>
+
+
+		<div class="footer">
+			<div class="footer_left">
+				<p>
+					<b>Santa Casa da Miseric&oacuterdia de Leiria
+						Institui&ccedil&atildeo Particular de Solidariedade Social </b><br>Sede:
+						Rua Trindade Coelho, 8 Apartado 1109 2401-801 Leiria <br>Tel.:
+							244 106 202 . Fax: 244 106 298 <a
+							href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+					<br><br><b>Lar Nossa Sra. da Encarna&ccedil&atildeo</b></br>
+						Rua Nossa Sra. da Encarna&ccedil&atildeo 2414-004 LEIRIA 
+					<br>Tel.: 244 827 400 . Fax: 244 823 980 <a
+						href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+					<br> <br> <b>Cl&iacutenica M&eacutedica e de
+								Reabilita&ccedil&atildeo</b></br> Rua Nossa Sra. da
+						Encarna&ccedil&atildeo 2414-004 LEIRIA </br>Tel.: 244 824 484 . Fax:
+						244 823 980 <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+				</p>
+			</div>
+			<div class="footer_center">
+				<p>
+					<b>Hospital Dom Manuel de Aguiar</b></br> Rua Conde Ferreira 2410-189
+					LEIRIA</b><br> Tel.: 244 100 009 . Fax: 244 106 299 <a
+						href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+					<br> <br> <b>Unidade Cir&uacutergica</b> </br>Tel.: 244 106
+						203 </br> <b>Unidade Cuidados Continuados</b> <br> Tel.: 244 106
+						204 (24 HORAS)<br> <b>Recep&ccedil&atildeo Administrativa
+								Central </b>
+					<br>Tel.: 244 106 201 <br><br><b>Creche "Casa
+									Sanches"</b></br> Rua Trindade Coelho, 10 2410-189 LEIRIA 
+					<br>Tel.: 244 100 009 . Tm: 915 190 685 . Fax: 244 106 298 <a
+						href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+				</p>
+			</div>
+			<div class="footer_right">
+				<p>
+					<b>Residencial XXI </b></br>Rua do Lis 2410-126 LEIRIA </br> Tel.: 244 106
+					300 <br />Fax: 244 106 298 </br><a
+						href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a>
+				</p>
+			</div>
+			<div class="footer_bottom"></div>
+
+
+		</div>
+	</div>
+
+
+</body>
+</html>

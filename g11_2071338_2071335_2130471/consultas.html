@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+  <meta charset="UTF-8">
+	<title>Santa Casa da Miseric&oacute;rdia de Leiria</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<header>
+    <div id="logo_header">
+        <object class="logo_svg" type="image/svg+xml" data="img/santa_casa.svg" >
+  </object>
+    </div>
+
+</header>
+<nav>
+	<ul>
+		<li><a href="index.html" >Entrada</a>
+			<ul>
+				<li><a href="index.html#news">Not&iacute;cias</a></li>
+				<li><a href="index.html#articles">Publica&ccedil;&otilde;es</a></li>
+			</ul>
+		</li>
+		<li><a href="saude.html">Sa&uacute;de</a>
+			<ul>
+                <li><a href="especialidades.html">Especialidades</a></li>
+                <li><a href="clinico.html">Corpo&nbsp;Cl&iacute;nico</a></li>
+                <li><a href="saude.html">Publica&ccedil;&otilde;es&nbsp;/&nbsp;Not&iacute;cias</a></li>
+				<li><a href="consultas.html">Marca&ccedil;&atilde;o&nbsp;de&nbsp;Consultas</a></li>
+				<li><a href="confirma_consulta.html">Confirma&ccedil;&atilde;o&nbsp;de&nbsp;Marca&ccedil;&atilde;o</a></li>
+				<li><a href="medico.html">M&eacute;dico</a></li>
+			</ul>
+		</li>
+		<li><a href="geriatrico.html">Cuidados&nbsp;Geri&aacute;tricos</a>
+			<ul>
+				<li><a href="geriatrico.html#residencial">Residencial</a></li>
+				<li><a href="geriatrico.html#lar">Lar&nbsp;&nbsp;</a></li>
+				<li><a href="geriatrico.html#internamento">Internamento</a></li>
+				<li><a href="geriatrico.html#domiciliario">Apoio&nbsp;Domicili&aacute;rio</a></li>
+				<li><a href="geriatrico.html#contacto">Contacte-nos</a></li>
+			</ul>
+		</li>
+		<li><a href="creche.html">Creche</a>
+			<ul>
+				<li><a href="creche.html#news">Not&iacute;cias&nbsp;&nbsp;&nbsp;</a></li>
+				<li><a href="creche.html#contacto">Contacte-nos</a></li>
+			</ul>
+		</li>
+		<li><a href="irmandade.html">Irmandade</a>
+			<ul>
+				<li><a href="irmandade.html#news">Not&iacute;cias</a></li>
+				<li><a href="irmandade.html#creche">Irmandade&nbsp;</a></li>
+				<li><a href="irmandade.html#irmao">Irm&atilde;o</a></li>
+				<li><a href="irmandade.html#direitos">Direitos</a></li>
+				<li><a href="irmandade.html#deveres">Deveres</a></li>
+				<li><a href="irmandade.html#exclusao">Exclus&atilde;o</a></li>
+				<li><a href="irmandade.html#contacto">Contacte-nos</a></li>
+			</ul>
+		</li>
+		<li><a href="contacto.html">Contactos</a>
+			<ul>
+				<li><a href="contacto.html#lar">Lar&nbsp;Nossa&nbsp;Sra.&nbsp;da&nbsp;Encarna&ccedil;&atilde;o </a></li>
+				<li><a href="contacto.html#clinica">Cl&iacute;nica&nbsp;M&eacute;dica&nbsp;e&nbsp;de&nbsp;Reabilita&ccedil;&atilde;o</a></li>
+				<li><a href="contacto.html#hospital">Hospital&nbsp;Dom&nbsp;Manuel&nbsp;de&nbsp;Aguiar</a></li>
+				<li><a href="contacto.html#creche">Creche&nbsp"Casa&nbspSanches"&nbsp;&nbsp;</a></li>
+				<li><a href="contacto.html#residencial">Residencial&nbsp;XXI</a></li>
+				<li><a href="contacto.html#insittuicao">Institui&ccedil;&atilde;o&nbsp;Particular&nbsp;de&nbsp;Solidariedade&nbsp;Social</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+
+<form method="post" enctype="application/x-www-form-urlencoded">
+<section>
+<h1>Pedido de Marca�&atilde;o</h1>
+
+<p><label>Nome Completo:</label>
+<input name="authors" placeholder="Introduza o nome completo" required></input>
+</p>
+
+<p><label>Sexo:</label>
+	
+<input type="radio" name="sex" value="male">Male</input>
+
+	<input type="radio" name="sex" value="female">Female</input>
+</p>
+
+<p><label>Data de Nascimento:</label>
+<input type="date" required></input>
+</p>
+
+<p><label>Sistema de Sa&uacute;de:</label>
+<input name="healthsystem" placeholder="Introduza a sua especilidade" list="healthsystemlist" required></input>
+
+		<datalist id="healthsystemlist">
+			<option value="0" label="ADSE"/>
+
+			<option value="1" label="Medis"/>
+
+			<option value="2" label="Multicare"/>
+		</datalist>
+	</p>
+
+<p><label>N�mero fiscal:</label><br/>
+<input name="taxnumber" maxlength="9" placeholder="Introduza o n&uacute;mero fiscal" required></input></p>
+
+<p><label>Contato telef�nico:</label><br/>
+<input name="phone" maxlength="9" placeholder="Introduza o n&uacute;mero telef&oacute;ne" required></input>
+</p>
+<hr/>
+<p><label>Morada</labe></p>
+  
+	<p><label>Rua:</label><br/>
+
+	    <input class="input" name="street" placeholder="Introduza o nome da rua" required></p>
+
+	<p><label>Localidade:</label><br/>
+
+	    <input class="input" name="locality" placeholder="Introduza o nome da localidade" required></p>
+
+	<p><label>C�digo Postal:</label><br/>
+
+	    <input name="1frstnumeber" size="2" maxlength="4">-<input name="2scdtnumeber" size="2" maxlength="3" required></p>
+
+	<p><label>Pa�s:</label><br/>
+
+	    <input class="input" name="country" placeholder="Introduza o pa&iacute;s" required></p>
+
+<p><label> N�mero de Irm�o:</label><br/>
+ <input name="numberfraternity" placeholder="Introduza o n&uacute;mero de Irm&atilde;o" required></input>
+</p>
+
+<p><label>E-mail:</label><br/>
+
+    <input type="email" class="input" name="email" placeholder="Introduza o e-mail" required></input></p>
+
+<p><label>Palavra Passe:</label><br/>
+<input type="password" name="password"  placeholder="Introduza a password" required> </p>
+<hr/>
+<p><label>Especialidade:</label><br/>
+<input name="spcialty" placeholder="Introduza a sua especilidade" list="spcialtylist" required></input>
+
+		<datalist id="spcialtylist">
+
+			<option value="Dentista" label="Dentista"/>
+
+			<option value="Ortodentista" label="Ortodentista"/>
+
+		</datalist>
+
+	</p>
+
+<p><label>Nome do m&eacute;dico:</label><br/>
+<input class="input" name="doctor" autocomplete="on" placeholder="Introduza o nome do m&eacute;dico" required></input></label></p>
+
+<p><label>Data :</label><br/>
+<input type="date" required></input></p>
+
+<p><label>Hora :</label><br/>
+<input type="time" required></input></p>
+<hr/>
+
+<p><input type="submit" value="Enviar"/></p>
+<p><INPUT TYPE="reset" value="Limpar"/></p>	
+
+</form>
+
+</section>
+<ul class="scroll-top">
+  <li><a href="#" title="Scroll to top">d</a></li>
+</ul>
+
+<footer>
+	 Copyright  &copy; 2014 Santa Casa da Miseric&oacute;rdia de Leiria
+</footer>
+</body>
+
+
+</html>
