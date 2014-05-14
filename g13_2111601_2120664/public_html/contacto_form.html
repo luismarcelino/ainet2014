@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Formulário de contacto</title>
+		<link type="text/css" href="css/style.css" rel="stylesheet"/>
+	</head>
+	<body>
+            <div id="backheader">
+                <div id="topheader">
+                    <form>
+                            <label for="username">Utilizador:</label>
+                            <input type="text" id="username" name="username" value="" size="12"/>
+                            <label for="passwd">Palavra chave:</label>
+                            <input type="password" id="passwd" name="passwd" value="" size="12"/>
+                            <input type="submit" value="Entrar"/>
+                    </form>
+                </div>
+                <div id="header">
+                    <div id="leftheader">
+                        <div id="logo"></div>
+                    </div>
+
+                    <div id="divmainmenu">
+			<ul class="mainmenu">
+                            <li class="mainmenuitem"><a href="entrada.html">Início</a></li>
+                            <li class="mainmenuitem"><a href="contactos.html">Contactos</a></li>
+                            <li class="mainmenuitem"><a href="localizacao.html">Localização</a></li>
+			</ul>
+                        <div id="bottomheader">
+                            <h2>Formulário de contacto</h2>
+                        </div>
+                    </div>
+                    <div id="rightheader">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="leftbanner">
+                
+            </div>
+            <div id="content">
+                <br/>
+                <form>
+                    <div class="formaggregate">
+                        <p>Tipo de contacto<br/>
+                            <select id="tipoc">
+                                <option value="geral">Geral</option>
+                                <option value="emprego">Emprego</option>
+                              <option value="inscrirmao">Inscriçao como irmão</option>
+                              <option value="inscrutente">Inscrição como utente</option>
+                              <option value="voluntariado">Voluntariado</option>
+                            </select>
+                        </p>
+                        <p>Nome<br/><input type="text" id="nome" name="nome" value="" size="50"/></p>
+                        <p>Sexo<br/>
+                            <select id="sexo">
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                            </select>
+                        </p>
+                        <p>
+                            Data de nascimento<input type="date" id="dnasc" name="dnasc" value=""/>
+                        </p>
+                        <p>Morada<br/><textarea id="morada" name="morada" rows="4" cols="40"></textarea></p>                     
+                        <p>Localidade<br/><input type="text" id="localidade" name="localidade" value="" size="50"/></p>
+                        <p>Código postal<br/><input type="text" id="cpostal" name="cpostal" value="" size="50"/></p>
+                    </div>
+                    <div class="formaggregate">
+                        <p>Telef.<input type="tel" id="telef" name="telef" value=""/></p>
+                        <p>Email<input type="email" id="email" name="email" value=""/></p>
+                            
+                        <p>Subsistema ou Seguro de Saúde<br/>
+                            <select id="subsistema">
+                                <option value="ADSE">ADSE</option>
+                                <option value="SNS">SNS</option>
+                              <option value="SAMS">SAMS Centro</option>
+                              <option value="Particular">Particular</option>
+                              <option value="Medis">Medis</option>
+                            </select>
+                        </p>
+                        
+                        <p>Nº de beneficiário<br/><input type="text" id="numbene" name="numbene" value="" size="50"/></p>
+                        <p>Mensagem<br/><textarea id="mensagem" name="mensagem" rows="4" cols="40"></textarea></p> 
+                        <p>Forma preferencial de contacto<br/>
+                            <select id="contactopref">
+                                <option value="telef">Telefone</option>
+                                <option value="email">Email</option>
+                                <option value="ctt">CTT</option>
+                            </select>
+                        </p>
+                    </div>
+
+                    <div class="formaggregateclear">
+                        <input type="reset" value="Limpar"/>
+                        <input type="submit" value="Submeter"/>                     
+                    </div>
+                    
+                </form>
+                <div class="formaggregateclear">
+                        <p>
+                            Nota: Estes dados serão tratados com confidencialidade e nos termos da lei aplicável, sendo garantido aos utilizadores o direito ao acesso aos seus dados e respectiva rectificação. Os dados facultados serão tratados única e exclusivamente pela SCML e destinam-se a dar uma maior celeridade aos diferentes tipos de solicitações.
+                        </p>
+                    </div>  
+            </div>
+            
+            <div id="footer">
+                <div>                  
+                    <div class="leftcontent">
+                        <p><img src="images/santacasaicon.png" alt="santacasa"/> Misericórdia de Leiria<br/>
+                        <img src="images/phone.png" alt="phone"/> Tel.: 244106202 • Fax: 244106298</p>
+                        
+                    </div>
+                               
+                    <div class="rightcontent">
+                        <p> <a href="https://www.facebook.com/santacasaleiria"><img src="images/facebook.png" alt="facebook"/> Facebook</a><br/>
+                         <img src="images/mail.png" alt="mail"/><a href="mail:to"> geral@misericordiadeleiria.pt</a></p>
+                    </div>
+                </div>
+            </div>
+            
+	</body> 
+</html>

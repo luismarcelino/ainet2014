@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Saúde</title>
+		<link type="text/css" href="css/style.css" rel="stylesheet"/>
+	</head>
+	<body>
+            <div id="backheader">
+                <div id="topheader">
+                    <form>
+                            <label for="username">Utilizador:</label>
+                            <input type="text" id="username" name="username" value="" size="12"/>
+                            <label for="passwd">Palavra chave:</label>
+                            <input type="password" id="passwd" name="passwd" value="" size="12"/>
+                            <input type="submit" value="Entrar"/>
+                    </form>
+                </div>
+                <div id="header">
+                    <div id="leftheader">
+                        <div id="logo"></div>
+                    </div>
+
+                    <div id="divmainmenu">
+			<ul class="mainmenu">
+                            <li class="mainmenuitem"><a href="entrada.html">Início</a></li>
+                            <li class="mainmenuitem"><a href="especialidades.html">Especialidades</a></li>
+                            <li class="mainmenuitem"><a href="medicos.html">Médicos</a></li>
+			</ul>
+                        <div id="bottomheader">
+                            <h2>Marcação de consulta</h2>
+                        </div>
+                    </div>
+                    <div id="rightheader">
+                        
+                    </div>
+                </div>
+            </div>
+            <div id="leftbanner">
+                
+            </div>
+            <div id="content">
+                <br/>
+                <form>
+                    <div class="formaggregate">
+                        <p>Nome<br/><input type="text" id="nome" name="nome" value="" size="50"/></p>
+                        <p>Morada<br/><textarea id="morada" name="morada" rows="4" cols="50"></textarea></p>                     
+                        <p>
+                            Data de nascimento<input type="date" id="dnasc" name="dnasc" value=""/>
+                            Email<input type="email" id="email" name="email" value=""/>
+                        </p>
+                    </div>
+                    <div class="formaggregate">
+                        <p>Subsistema ou Seguro de Saúde<br/>
+                            <select id="subsistema">
+                                <option value="ADSE">ADSE</option>
+                                <option value="SNS">SNS</option>
+                              <option value="SAMS">SAMS Centro</option>
+                              <option value="Particular">Particular</option>
+                              <option value="Medis">Medis</option>
+                            </select>
+                        </p>
+                        <p>Consulta<br/>
+                            <select id="consulta">
+                                <option value="Acupunctura">Acupunctura</option>
+                                <option value="Cardiologia">Cardiologia</option>
+                                <option value="Cirurgia">Cirurgia Geral</option>
+                                <option value="CirurgiaPl">Cirurgia Plástica</option>
+                                <option value="Dermatologia">Dermatologia</option>
+                                <option value="Endocrinologia">Endocrinologia</option>
+                                <option value="Ortopedia">Ortopedia</option>
+                            </select>
+                        </p>
+                        <p>Exame<br/>
+                            <select id="exame">
+                                <option value="Analises">Análises Clínicas</option>
+                                <option value="Audiometria">Audiometria</option>
+                              <option value="Cardiologia">Cardiologia</option>
+                              <option value="Colonoscopia">Colonoscopia</option>
+                              <option value="Ecografia">Ecografia</option>
+                            </select>
+                        </p>
+                        <p>Data pretendida<input type="date" id="dpret" name="dpret" value=""/></p>
+                    </div>
+
+                    <div class="formaggregateclear">
+                        <input type="reset" value="Limpar"/>
+                        <input type="submit" value="Submeter"/>                     
+                    </div>
+
+                </form>
+            </div>
+            
+            <div id="footer">
+                <div>                  
+                    <div class="leftcontent">
+                        <p><img src="images/santacasaicon.png" alt="santacasa"/> Misericórdia de Leiria<br/>
+                        <img src="images/phone.png" alt="phone"/> Tel.: 244106202 • Fax: 244106298</p>
+                        
+                    </div>
+                               
+                    <div class="rightcontent">
+                        <p> <a href="https://www.facebook.com/santacasaleiria"><img src="images/facebook.png" alt="facebook"/> Facebook</a><br/>
+                         <img src="images/mail.png" alt="mail"/><a href="mail:to"> geral@misericordiadeleiria.pt</a></p>
+                    </div>
+                </div>
+            </div>
+            
+	</body> 
+</html>
