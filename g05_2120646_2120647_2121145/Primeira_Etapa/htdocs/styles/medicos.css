@@ -1,0 +1,77 @@
+  .container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 1400px;
+	border-bottom: 2px solid #d9ced2;
+	margin-bottom: 15px;
+	width: 1024px;
+  }
+
+strong {
+	color: #145189;
+}
+.info_medico .foto {
+	width: 100px;
+	height: 120px;
+	float: left;
+	text-align: center;
+	
+}
+.container .info_medico {
+	float: left;
+	width: 979px;
+	height: auto;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-color: #CCCCCC;
+	border-bottom-style: solid;
+	margin-left: 15px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+}
+.info_medico .dados_medico {
+	float: left;
+	color: #333333;
+	font-size: 14px;
+	text-align: justify;
+	width: 500px;
+	padding-left: 10px;
+}
+.container .info_medico h3 {
+	color: #a64114;
+	font-weight: 400;
+}
+.info_medico .dados_medico ul li {
+	list-style-image: url(../images/check_14px_blue.png);
+}
+.info_medico .dados_medico ul {
+	float: left;
+	margin-top: 0px;
+
+}
+.container .info_medico .foto img {
+	width: auto;
+	height: 120px;
+}
+.container .info_medico .dados_medico p {
+	margin-top: 0px;
+	margin-bottom: 10px;
+
+}
+.container .info_medico .dados_medico p .label {
+	font-weight: bold;
+}
+.container .info_medico a {
+	text-decoration: none;
+	background-color: #3e8cd2;
+	color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	float: right;
+	margin-right: 25px;
+}
+

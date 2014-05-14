@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>SCMLeiria - Marcação de Consultas</title>
+    <!-- Para controlo do botão Topo -->
+    <script type="text/javascript" src="js/scrolltopcontrol.js"> </script>
+    <script type="text/javascript" src="js/jquery.js"> </script> 
+    <script type="text/javascript"> 
+	  // <![CDATA[ 
+	  <!-- Script para validação do formulário de marcação de consultas -->
+	  function validateForm(evt) {
+		var form = evt.target;
+		var nome = form.nome.value || "";
+		if (nome.length == 0) {
+		  alert("Tem de introduzir um nome válido.");
+		  form.nome.focus();
+		  return false;
+		}
+
+		var email = form.email.value || "";
+		if (!email.match(/^\w{3,2}@\w{2}\.\w{2}$/g)) {
+		  alert("Email inválido. Condição mínima: xx@xx.xx");
+		  form.email.focus();
+		  return false;					
+		}
+				
+		var telefone = form.telefone.value || "";
+		if (!telefone.match(/^\d{9}$/)) {
+		  alert("O telefone tem de possuir 9 digitos.");
+		  form.telefone.focus();
+		  return false;					
+		}
+		return true;
+	  }
+	
+	  <!-- Script para fixa barra de menu superior, após scroll -->
+	  $(document).ready(function() {
+		  var s = $('#sup_fixada');
+		  var pos = s.position();                    
+		  $(window).scroll(function() {
+		    var windowpos = $(window).scrollTop();
+		    if (windowpos >= pos.top) {
+			  s.addClass('fixada');
+		    } else {
+			  s.removeClass('fixada'); 
+		    }
+		  });
+		  $("#form").submit(validateForm);
+	  });	
+	  // ]]>
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="cab_fixo">
+		  <div id="logo">
+		    <a href="index.html"><img src="img/logo.jpg" alt="SCML - Santa Casa da Misericórdia de Leiria" /></a>
+		  </div>		 
+		  <div id="menu">
+			<ul>
+			  <li>|</li>
+			  <li><a href="cchegar.html">Como chegar</a>|</li>
+			  <li><a href="index.html">English</a>|</li>
+			  <li><a href="faqs.html">Perguntas Frequentes</a>|</li>
+			  <li><a href="contactos.html">Contactos</a>|</li>
+		    </ul>
+		    <div id="area_login">
+			  <a href="login.html"><img src="img/login.png" alt="Área do Utente" /></a>
+		    </div>
+		  </div>
+		  <div id="texto_cab">
+		    <p><br/>O saber da experiência.<br/>500 anos de história.</p>
+		  </div>
+	    </div>
+		<div id="content_cor">
+	      <div id="sup_fixada">
+		    <p>| <a href="index.html">Início</a>
+			| <a href="consultas.html">Marcação de Consultas</a>
+			| <a href="saude.html">Saúde</a>
+			| <a href="cuidadosg.html">Cuidados Geriátricos</a>
+			| <a href="creche.html">Creche</a>
+			| <a href="irmandade.html">Irmandade</a> | </p>
+	      </div>
+	      <div id="content_in">
+			<div style="clear:both"></div>
+		    <div id="body">
+			  <h4>Marcação de Consultas</h4>
+			  <img src="img/blank.png" alt=""/>
+			  <form id="form" action="menviada.html" method="post" >
+			    <div id="labels">				
+				  <p><label for="nome">Nome: *</label></p>
+				  <p><label for="genero">Género: *</label></p>
+				  <p><label for="datanasc">Data Nascimento: *</label></p>
+				  <p><label for="numss">Número S.Social:</label></p>
+				  <p><label for="sistema">Sistema de Saúde: *</label></p>
+				  <p><label for="contribuinte">Contribuinte:</label></p>
+				  <p><label for="telefone">Telefone: *</label></p>
+				  <p><label for="morada">Morada: *</label></p>
+				  <p><label for="numirmao">Número de Irmão:</label></p>
+				  <p><label for="email">Email:</label></p>
+				  <p></p><p></p><p></p>
+				  <p><label for="especialidade">Especialidade: *</label></p>
+				  <p><label for="nmedico">Nome do médico:</label></p>
+				  <p><label for="datahora">Data e Hora:</label></p>
+				  <p>* Campos obrigatórios.</p>
+			    </div>
+			    <div id="inputs">
+			      <p><input type="text" name="nome" id="nome" value="" size="50" /></p>
+				  <select size="1" name="generos">
+						<option value="Masculino">Masculino</option>
+						<option value="Feminino">Feminino</option>
+				  </select>
+			      <p><input type="text" name="genero" id="genero" value="" list="generos"/></p>
+			      <p><input type="text" name="datanasc" id="datanasc" value="" /></p>
+			      <p><input type="text" name="numss" id="numss" value="" /></p>
+				  <select size="1" name="sistemas">
+						<option value="SNS">SNS</option>
+						<option value="ADSE">ADSE</option>
+						<option value="ADM">ADM</option>
+						<option value="SAMS CENTRO">SAMS CENTRO</option>
+						<option value="SS CGD">SS CGD</option>
+						<option value="SF JUDICIAIS">SF JUDICIAIS</option>
+						<option value="MULTICARE">MULTICARE</option>
+						<option value="PLANICARE">PLANICARE</option>
+						<option value="PARTICULAR">PARTICULAR</option>
+						<option value="SERVIMED">SERVIMED</option>
+						<option value="ADMG (MFR)">ADMG (MFR)</option>
+						<option value="SAD PSP (MFR)">SAD PSP (MFR)</option>
+						<option value="MEDIS">MEDIS</option>
+						<option value="TRANQUILIDADE">TRANQUILIDADE</option>
+						<option value="ZURICH">ZURICH</option>
+						<option value="GENERALI">GENERALI</option>
+						<option value="SAMS/SIB">SAMS/SIB</option>
+						<option value="ASS MUT ENGS">ASS MUT ENGS</option>
+			      </select>
+			      <p><input type="text" name="sistema" id="sistema" value="" list="sistemas"/></p>
+			      <p><input type="text" name="contribuinte" id="contribuinte" value="" /></p>
+			      <p><input type="text" name="telefone" id="telefone" value="" /></p>
+			      <p><input type="text" name="morada" id="morada" value="" size="50" /></p>
+			      <p><input type="text" name="numirmao" id="numirmao" value="" /></p>
+			      <p><input type="text" name="email" id="email" value="" /></p>
+			      <p></p><p></p>
+				  <select size="1" name="especialidades">
+						<option value="Acupunctura">Acupunctura</option>
+						<option value="Cirurgia Geral">Cirurgia Geral</option>
+						<option value="Cirurgia Plástica">Cirurgia Plástica</option>
+						<option value="Cirurgia Vascular">Cirurgia Vascular</option>
+						<option value="Dermatologia">Dermatologia</option>
+						<option value="Estomatologia">Estomatologia</option>
+						<option value="Fisiatria">Fisiatria</option>
+						<option value="Ginecologia/Obstetricia">Ginecologia/Obstetricia</option>
+						<option value="Mesoterapia">Mesoterapia</option>
+						<option value="Neurocirurgia">Neurocirurgia</option>
+						<option value="Neurologia">Neurologia</option>
+						<option value="Nutrição">Nutrição</option>
+						<option value="Oftalmologia">Oftalmologia</option>
+						<option value="Ortopedia">Ortopedia</option>
+						<option value="Pneumologia">Pneumologia</option>
+						<option value="Psicologia">Psicologia</option>
+						<option value="Psiquiatria">Psiquiatria</option>
+						<option value="Reumatologia">Reumatologia</option>
+						<option value="Urulogia">Urulogia</option>
+			      </select>
+			      <p><input type="text" name="especialidade" id="especialidade" value="" list="especialidades"/></p>
+			      <p><input type="text" name="nmedico" id="nmedico" value="" /></p>
+			      <p><input type="text" name="datahora" id="datahora" value="" /></p>
+			      <br/><br/><br/>
+			      <input type="submit" value="Enviar" style="width:80px;" />
+			      <input type="reset" value="Limpar" style="width:80px;"/>
+			      <p></p>
+			    </div>
+			  </form>
+		      <div style="clear:both"></div>
+	        </div>
+	      </div>
+		  <div style="clear:both"></div>
+        </div>
+	  </div>
+	  <div id="footer2">
+        <div id="footer2_tam">
+		    <p id="esq">©2014 Santa Casa da Misericórdia de Leiria. Todos os direitos reservados.</p>
+		    <p id="dir"><a href="avisosl.html">Avisos Legais</a> | <a href="politicap.html">Política de Privacidade</a></p>
+		    <div style="clear:both"></div>
+          </div>
+        <div style="clear:both"></div>
+      </div>
+	</div>
+  </body>
+</html>

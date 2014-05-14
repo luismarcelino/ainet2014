@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html><head>
+        <title>Santa Casa da Misericordia de Leiria</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <!-- base href="http://localhost/ProjetoAplica-oesInternet/" -->
+        <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript" src="ComporNoticia_files/jquery-2.js"></script>
+        <script type="text/javascript">
+           
+         
+                     
+   $(document).ready(function (){
+      
+       
+       $("#submenuLogin").hide(); 
+       
+                $("#mostraMenuLogin").click(function (event){
+                    //$(this).parent().children("ul").toggle();
+                    $submenu=$("#submenuLogin");
+                    if($submenu.is(":visible")){
+                        $submenu.slideUp();
+                    }else{
+                        $submenu.slideDown();
+                    }
+                   
+                });
+    });
+          
+            
+           
+        </script>
+        
+    <link href="ComporNoticia_files/skin.css" rel="stylesheet"></head>
+
+    <body>
+        <nav id="navBar">
+       
+           
+            <div id="menuTopo"> 
+                <ul> 
+                    
+                    <li class="noSub"> 
+                        <a href="http://localhost/ProjetoAplica-oesInternet/index.php/Home/index">
+                        <span>Entrada</span>
+                        </a>
+                    </li> 
+                     
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/ProjetoAplica-oesInternet/index.php/Noticias/index">
+                        <span>Notícias</span>
+                        </a>
+                    </li> 
+                     
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/ProjetoAplica-oesInternet/index.php/Irmandade">
+                        <span>Irmandade</span>
+                        </a>
+                    </li> 
+                    
+                   
+                    <li class="haveSub">
+                        <span>Saúde</span>
+                        <ul class="sub">
+                            
+                            <li>
+                                <a href="http://localhost/ProjetoAplica-oesInternet/index.php/Saude/CorpoClinico">
+                               <span>Corpo Clinico</span>
+                               </a>
+                            </li> 
+                            
+                             
+                            <li>
+                                <a href="http://localhost/ProjetoAplica-oesInternet/index.php/Saude/especialidades">
+                               <span>Especialidades</span>
+                               </a>
+                            </li> 
+                            
+                            
+                            <li>
+                                <a href="http://localhost/ProjetoAplica-oesInternet/index.php/ComporNoticia/index">
+                                <span>submenu3</span>
+                                </a>
+                            </li> 
+                            
+                        </ul>
+                    </li> 
+                   
+                   
+                    <li class="noSub">
+                         <a href="">
+                        <span>Localização</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/ProjetoAplica-oesInternet/index.php/Contactos/index">
+                        <span>Contactos</span>
+                        </a>
+                    </li> 
+                    
+                </ul> 
+            </div> 
+            
+            <div id="menuTopo2">
+                <div id="search">
+                    <input placeholder="Procurar" id="caixaTexto" type="text">
+                  
+                        
+                   
+                    
+                    
+                </div> 
+                
+                <div id="login"> 
+<!--                    <ul>
+                        <li id="mostraMenuLogin">
+                            <span>Entrar</span>
+                              
+                            
+                            <div id="subLogin">
+                                <ul id="submenuLogin" >
+                                    <li>
+                                        <h3>Entra com a tua conta:</h3>
+                                    
+                                </li>
+                                <li>
+                                    
+                                    
+                                    
+                                </li>
+                                 <li>
+                                    
+                                     
+                                   
+                                     
+                                </li>
+                                <li>
+                                      
+                                </li>
+                                <li id="linha">
+                                    
+                                </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                    </ul>-->
+                    
+<div id="mostraMenuLogin">
+    <span>Entrar</span>
+</div>
+<div style="display: none;" id="submenuLogin">
+     <h3>Entra com a tua conta:</h3>
+     <input class="loginTextFild" placeholder="Utilizador" type="text">
+     <input class="loginTextFild" placeholder="Password" type="password"><br>
+     <input value="Entrar" type="button">
+     <div id="linha"></div>
+     
+     
+     <a href="">Criar Conta</a> 
+    
+</div>
+                    
+                </div> 
+                
+            </div>
+        </nav>
+        <div id="IconTopo"> 
+            <!--        <img src="../../Styles/Images/image.png"alt="logotipo"></img>-->
+        </div>
+        
+           
+
+    
+        
+        
+       
+        <div id="conteudoCentro">
+           
+           
+             
+           <div id="imagemFundo">
+               
+               <img src="ComporNoticia_files/santa_casa.svg" alt="Logotipo da SCML">
+                <table id="tabela">
+                    
+                    <tbody><tr>
+                        <td>
+                             <a href="">
+                                 <img src="ComporNoticia_files/especialidades.png" alt="especialidades" class="imagemDoIcon">
+                            <p>Especialidades</p>
+                             </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="ComporNoticia_files/stethoscope-icon.png" alt="Consultas" class="imagemDoIcon">
+                            <p>Consultas</p>
+                            </a>
+                        </td>
+                        <td>
+                              <a href="http://localhost/ProjetoAplica-oesInternet/index.php/CuidadosGeriatricos/index">
+                                  <img src="ComporNoticia_files/seniors-icon.png" alt="cuidados geriatricos" class="imagemDoIcon">
+                          <p>Cuidados Geriatricos</p>
+                              </a>
+                           
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <img src="ComporNoticia_files/User-Group-icon.png" alt="voluntariado" class="imagemDoIcon">
+                            <p>Voluntariado</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://localhost/ProjetoAplica-oesInternet/index.php/Creche">
+                                <img src="ComporNoticia_files/family-icon.png" alt="Creche" class="imagemDoIcon">
+                            <p>Creche</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="ComporNoticia_files/Doctor-icon.png" alt="Corpo clinico" class="imagemDoIcon">
+                            <p>Corpo Clinico</p>
+                            </a>
+                            
+                        </td>
+                       
+                    </tr>
+                </tbody></table> 
+              
+                
+                
+            </div>
+            
+<script src="ComporNoticia_files/tinymce.js"></script>
+<script>
+        tinymce.init({selector:'textarea',plugins: "image"});
+</script>
+
+
+
+<h1 class="titulo">ComporNoticia</h1>
+<div id="formulario">
+    <form method="POST">
+        
+        
+        <div id="corpoNoticia">
+        <div style="visibility: hidden; border-width: 1px;" id="mce_15" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application"><div id="mce_15-body" class="mce-container-body mce-stack-layout"><div style="border-width: 0px 0px 1px;" id="mce_16" class="mce-container mce-menubar mce-toolbar mce-first mce-stack-layout-item" role="menubar"><div id="mce_16-body" class="mce-container-body mce-flow-layout"><div aria-haspopup="true" role="menuitem" id="mce_17" class="mce-widget mce-btn mce-menubtn mce-first mce-flow-layout-item" tabindex="-1" aria-labelledby="mce_17"><button id="mce_17-open" role="presentation" type="button" tabindex="-1"><span>File</span> <i class="mce-caret"></i></button></div><div aria-haspopup="true" role="menuitem" id="mce_18" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item" tabindex="-1" aria-labelledby="mce_18"><button id="mce_18-open" role="presentation" type="button" tabindex="-1"><span>Edit</span> <i class="mce-caret"></i></button></div><div aria-haspopup="true" role="menuitem" id="mce_19" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item" tabindex="-1" aria-labelledby="mce_19"><button id="mce_19-open" role="presentation" type="button" tabindex="-1"><span>Insert</span> <i class="mce-caret"></i></button></div><div aria-haspopup="true" role="menuitem" id="mce_20" class="mce-widget mce-btn mce-menubtn mce-flow-layout-item" tabindex="-1" aria-labelledby="mce_20"><button id="mce_20-open" role="presentation" type="button" tabindex="-1"><span>View</span> <i class="mce-caret"></i></button></div><div aria-haspopup="true" role="menuitem" id="mce_21" class="mce-widget mce-btn mce-menubtn mce-last mce-flow-layout-item" tabindex="-1" aria-labelledby="mce_21"><button id="mce_21-open" role="presentation" type="button" tabindex="-1"><span>Format</span> <i class="mce-caret"></i></button></div></div></div><div id="mce_22" class="mce-toolbar-grp mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group"><div id="mce_22-body" class="mce-container-body mce-stack-layout"><div id="mce_23" class="mce-container mce-toolbar mce-first mce-last mce-stack-layout-item" role="toolbar"><div id="mce_23-body" class="mce-container-body mce-flow-layout"><div role="group" id="mce_24" class="mce-container mce-first mce-flow-layout-item mce-btn-group"><div id="mce_24-body"><div aria-disabled="true" aria-label="Undo" role="button" id="mce_1" class="mce-widget mce-btn mce-first mce-disabled" tabindex="-1" aria-labelledby="mce_1"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-undo"></i></button></div><div aria-disabled="true" aria-label="Redo" role="button" id="mce_2" class="mce-widget mce-btn mce-last mce-disabled" tabindex="-1" aria-labelledby="mce_2"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-redo"></i></button></div></div></div><div role="group" id="mce_25" class="mce-container mce-flow-layout-item mce-btn-group"><div id="mce_25-body"><div aria-haspopup="true" role="button" id="mce_3" class="mce-widget mce-btn mce-menubtn mce-first mce-last" tabindex="-1" aria-labelledby="mce_3"><button id="mce_3-open" role="presentation" type="button" tabindex="-1"><span>Formats</span> <i class="mce-caret"></i></button></div></div></div><div role="group" id="mce_26" class="mce-container mce-flow-layout-item mce-btn-group"><div id="mce_26-body"><div aria-label="Bold" role="button" id="mce_4" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mce_4"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bold"></i></button></div><div aria-label="Italic" role="button" id="mce_5" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mce_5"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-italic"></i></button></div></div></div><div role="group" id="mce_27" class="mce-container mce-flow-layout-item mce-btn-group"><div id="mce_27-body"><div aria-label="Align left" role="button" id="mce_6" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mce_6"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignleft"></i></button></div><div aria-label="Align center" role="button" id="mce_7" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mce_7"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-aligncenter"></i></button></div><div aria-label="Align right" role="button" id="mce_8" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mce_8"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignright"></i></button></div><div aria-label="Justify" role="button" id="mce_9" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mce_9"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-alignjustify"></i></button></div></div></div><div role="group" id="mce_28" class="mce-container mce-flow-layout-item mce-btn-group"><div id="mce_28-body"><div aria-label="Bullet list" role="button" id="mce_10" class="mce-widget mce-btn mce-first" tabindex="-1" aria-labelledby="mce_10"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-bullist"></i></button></div><div aria-label="Numbered list" role="button" id="mce_11" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mce_11"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-numlist"></i></button></div><div aria-label="Decrease indent" role="button" id="mce_12" class="mce-widget mce-btn" tabindex="-1" aria-labelledby="mce_12"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-outdent"></i></button></div><div aria-label="Increase indent" role="button" id="mce_13" class="mce-widget mce-btn mce-last" tabindex="-1" aria-labelledby="mce_13"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-indent"></i></button></div></div></div><div role="group" id="mce_29" class="mce-container mce-last mce-flow-layout-item mce-btn-group"><div id="mce_29-body"><div aria-label="Insert/edit image" role="button" id="mce_14" class="mce-widget mce-btn mce-first mce-last" tabindex="-1" aria-labelledby="mce_14"><button role="presentation" type="button" tabindex="-1"><i class="mce-ico mce-i-image"></i></button></div></div></div></div></div></div></div><div style="border-width: 1px 0px 0px;" id="mce_30" class="mce-edit-area mce-container mce-panel mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group"><iframe style="width: 100%; height: 407px; display: block;" title="Rich Text Area. Press ALT-F9 for menu. Press ALT-F10 for toolbar. Press ALT-0 for help" allowtransparency="true" src='javascript:""' id="mce_0_ifr" frameborder="0"></iframe></div><div style="border-width: 1px 0px 0px;" id="mce_31" class="mce-statusbar mce-container mce-panel mce-last mce-stack-layout-item" hidefocus="1" tabindex="-1" role="group"><div id="mce_31-body" class="mce-container-body mce-flow-layout"><div id="mce_32" class="mce-path mce-first mce-flow-layout-item"><div role="button" class="mce-path-item mce-last" data-index="0" tabindex="-1" id="mce_32-0" aria-level="0">p</div></div><div id="mce_33" class="mce-last mce-flow-layout-item mce-resizehandle"><i class="mce-ico mce-i-resize"></i></div></div></div></div></div><textarea aria-hidden="true" style="display: none;" id="mce_0">Corpo da Noticia Aqui!</textarea>
+    </div>
+        
+        <div id="formularioDireito">
+            
+        <p>
+        <label>Titulo</label>
+        <input type="text">
+        </p>
+         <p>
+        <label>Especialidade</label>
+        <select name="especialidades">
+            <option selected="selected" value="volvo">Clinica geral</option>
+            <option value="saab">Psicologia</option>
+            <option value="fiat">Neurologia</option>
+            <option value="audi">Reumatologia</option>
+        </select>
+        </p>
+        
+        <p>
+            <label>Imagem</label>
+            <input type="file">    
+        </p>
+        
+        <p>
+            <label>Resumo:</label>
+            <input type="text">    
+        </p>
+        
+        <div id="publicar">
+            <input value="Publicar" type="submit"> 
+        </div>
+        </div>
+        
+        
+    </form>
+    </div>
+    
+</div>
+
+<div id="conteudoFundo">
+
+
+
+    <div id="parteCimaFoot">
+        <div id="footLeft">
+            <ul>
+                <li><p> <a href=""> Encontre um médico </a></p></li>
+                <li> <a href=""> Marcações </a> </li>
+                <li> <a href="">  Acordos </a> </li>
+                <li> <a href=""> Irmandade </a> </li>
+                <li> <a href="">O Hospital </a> </li>
+                <li><p><a href=""> Como Chegar </a> </p></li>
+            </ul>        
+        </div>         
+        <div id="footCenter">
+            <ul>
+                <li> Morada: </li>
+                <li> Rua Nossa Senhora da Encarnação </li>
+                <li>  Leiria </li>
+                <li> 2410 Leiria </li>
+                <li><p> <a href=""> Contactos </a> </p> </li> 
+            </ul>
+
+        </div>
+        <div id="footRight">
+            <ul>
+                <li> Certificações: </li>
+                <li> <img src="ComporNoticia_files/google-icon.png" alt="Logo" class="imagemDoIcon"></li>
+                <li><p> Sites Tematicos </p>  </li>
+                <li>  Oncologia </li>
+                <li> Desporto </li>
+                <li>Internacional </li>
+               
+            </ul>
+                    <div id="redesSociais">
+                        <p>Siga-nos </p>
+            <a href=""><img src="ComporNoticia_files/google-icon.png" alt="google"></a>
+            <a href=""><img src="ComporNoticia_files/facebook-icon.png" alt="FACEBOOK"></a>
+        </div>
+           
+            
+        </div>
+    </div>
+
+    <div id="parteBaixoFoot">
+        <ul>
+            <li><a href=""> Avisos Legais </a> | <a href=""> Política de Privacidade </a></li>
+            <li>© 2014 Todos os direitos reservados - Desenvolvido por ESTG</li>
+            
+        </ul>
+    </div>
+
+</div>
+
+</body></html>

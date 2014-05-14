@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>Santa Casa Misericordia Leiria</title>
+        <meta name="description" content="GNT group"/>
+        <meta name="keywords" content="Santa Casa, Misericordia, Leiria, Hospital, Clínica, Lar, Cuidados Domiciliários, Irmandade, Creche, Consultas, Geriatria" />
+        <link rel="icon" href="images/icon.gif" type="image/gif" />
+        <meta name="author" content="Gabriel Tiago Natanael">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" href="./styles/index.css" >
+        <!-- JQuery -->
+        <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+        <script src="./js/libs/tinymce/js/tinymce/tinymce.min.js"></script>
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.min.js"></script>
+        <!-- <script type="text/javascript" src="js/jcarousel/jquery_v1.10.2.js"></script>
+         <script type="text/javascript" src="js/jcarousel/jcarousellite_1.0.1.js"></script> -->
+        <script src="./js/libs/modernizr/modernizr.js"></script>
+        <script type="text/javascript" src="./js/js.js"></script>
+    </head>
+    <body>
+        <noscript>Este browser não suporta, ou não tem activo, JavaScript!</noscript>
+        <div id="dialogLogin" title="Login" hidden> <!-- div escondida que contém o conteudo do popup-->
+            <form id="formLogin">
+                <label for="popUsername"> <br />Nome Utilizador:<br /> </label>
+                <input id="popUsername" type="email" size="45" required autofocus placeholder="Insira o seu Email" /> <br />
+                <label for="popPass">Palavra-Chave:<br /> </label>
+                <input id="popPass" type="text" size="45" required autofocus placeholder="Insira o seu username"/> <br />
+                <span id="msgErroPopupLogin" class="Erro"></span>
+            </form>
+        </div>
+        <header id="cabecalho">
+            <a href="http://www.misericordiadeleiria.pt/index.php" >		
+                <div id="headerLeft" class="subHeader">
+                </div> 
+            </a>
+            <div id="headerRight" class="subHeader">
+                <div id="btnAreaReservada" class="pilha">
+                    <!--<input  type="button" value="Area Reservada" />-->
+                    <p id="textoBotao">área reservada</p>
+                </div>
+                <div id="txtPesquisa" class="pilha" >
+                    <input id="zonaPesquisa" type="search" />
+                    <div id="btnPesquisa" onclick="pesquisaPortal()"></div>
+                </div>
+                <nav class="pilha" id="navbar">
+                    <ul>
+                        <li>
+                            <a href="#"><span>&nbsp; scml&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="hospital.html"> <span>&nbsp;hospital&nbsp;</span> </a>
+                        </li> 
+                        <li>
+                            <a href="apoioSocial.html"><span>&nbsp; apoio social&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="creche.html"><span>&nbsp;creche&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="irmandade.html"><span>&nbsp;irmandade&nbsp;</span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main"> 
+            <div class="carousel">
+                <div class="buttons">
+                    <a href="#" id="prev"><div id="btnPrev"></div></a>
+                </div>
+                <div id="slides"> 
+                    <ul>
+                        <li><img src="images/hospital_banner.png" alt="banner a" width="944" height="300" ></li>
+                        <li><img src="images/banner_B.jpg" alt="banner b" width="944" height="300" ></li>
+                        <li><img src="images/banner_C.jpg" alt="banner c" width="944" height="300" ></li>
+                        <li><img src="images/banner_A.jpg" alt="banner c" width="944" height="300" ></li>
+                        <li><img src="images/banner_Radiologia.png" alt="banner c" width="944" height="300" ></li>
+                        <!--<li><div id="divBanner">
+                                <p>Div teste Texto</p></div>
+                            <img src="images/Residencial.png" alt="banner c" width="944" height="300" >
+                        </li>-->
+                    </ul>
+                </div>
+                <div class="buttons">
+                    <a href="#" id="next"><div id="btnNext" ></div></a>
+                </div>
+            </div>
+
+
+            <div id="servicosMain">
+                <div  class="titServicos">
+                    <h2>Serviços SCML</h2>
+                </div>
+                <div id="divServicos01" >
+                    <div id="servLinha10" class="linhaServicos">
+                        <div id="cxConsulta" class="caixasFinas"> 
+                            <a href="formularioConsulta.html">
+                                <h3>marcar consulta </h3>
+                            </a>
+                        </div>
+                        <div id="cxEspecialidades" class="caixasFinas caixasCentrais">
+                            <a href="especialidades.html">
+                                <h3>especialidades </h3>
+                            </a>
+                        </div>                    
+                        <div id="cxFindMedico" class="caixasFinas">
+                            <a href="encontrarMedico.html">
+                                <h3>encontrar médico </h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="servLinha11" class="linhaServicos">
+                        <div id="cxExame" class="caixasFinas"> 
+                            <a href="formularioConsulta.html">
+                                <h3>agendar exame </h3>
+                            </a>
+                        </div>
+                        <div id="cxAnalises" class="caixasFinas caixasCentrais">
+                            <a href="formularioConsulta.html">
+                                <h3>análises </h3>
+                            </a>
+                        </div>                    
+                        <div id="cxFisioterapia" class="caixasFinas">
+                            <a href="formularioConsulta.html">
+                                <h3>med. física e reabilitação </h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="divServicos02" class="servicos">
+                    <div id="servLinha01" class="linhaServicos servicosHospital">
+                        <div id="caixa01" class="caixas"> 
+                            <h3>atendimento médico permanente </h3>
+                            <figure>
+                                <img src="images/atendimentoPermanente_small.png" alt="atendimento permanente" >
+                                <figcaption> Das 16h às 20h, todos os dia da semana<br/>
+                                    - Patologia agudos<br/>
+                                    - Traumatimos
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div id="caixa02" class="caixas caixasCentrais">
+                            <h3>unidade cuidados continuados </h3>
+                            <figure>
+                                <img src="images/cuidadosContinuados.png" alt="atendimento permanente" >
+                                <figcaption> Unidade de Cuidados Continuados Integrados<br/>
+                                    - Unidade de Média Duração e Reabilitação<br/>
+                                    - Unidade de Longa Duração e Manutenção
+                                </figcaption>
+                            </figure>
+                        </div>                    
+                        <div id="caixa03" class="caixas">
+                            <h3>unidade privada </h3>
+                            <figure>
+                                <img src="images/internamentoPrivado.png" alt="atendimento permanente" >
+                                <figcaption> Internamento Privado<br/>
+                                    - Atendimento personalizado e multidisciplinar<br/>
+                                    - Capacidade: 9 camas
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div  class="titServicos">
+                        <h2>outros serviços scml</h2>
+                    </div>
+                    <div id="servLinha02" class="linhaServicos">
+                        <div id="caixa04" class="caixas">
+                            <h3>lar nª srª encarnação</h3>
+                            <figure>
+                                <img src="images/lar2.jpg" alt="centro de eventos" >
+                                <figcaption> Um dos mais modernos e funcionais<br/>
+                                    lares do nosso país.<br/>
+                                    Com 43 quartos de 2 camas ...
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div id="caixa05" class="caixas caixasCentrais">
+                            <h3>residencial xxi </h3>
+                            <figure>
+                                <img src="images/residencialXXI.jpg" alt="centro de eventos" >
+                                <figcaption> A Residencial XXI é o local ideal para<br/>
+                                    quem pretende uma opção de repouso <br/>
+                                    de cariz familiar
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div id="caixa06" class="caixas">
+                            <h3>apoio domiciliário </h3>
+                            <figure>
+                                <img src="images/apoio-domiciliário.jpg" alt="centro de eventos" >
+                                <figcaption> Apoio a utentes que não possam<br/>
+                                    frequentar o Centro de Dia ou o Lar. <br/>
+                                    Cuidados com alimentação, roupa, casa ...
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div id="servLinha03" class="linhaServicos">
+                        <div id="caixa07" class="caixas">
+                            <h3>casa sanches (creche) </h3>
+                            <figure>
+                                <img src="images/creche.jpg" alt="centro de eventos" >
+                                <figcaption> Capacidade para 33 crianças<br/>
+                                    - Dos 0 aos 36 meses <br/>
+                                    - Com subsidiaridade da Seg. Social ...
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div id="caixa08" class="caixas caixasCentrais">
+                            <h3>centro de eventos </h3>
+                            <figure>
+                                <img src="images/centroEventos.jpg" alt="centro de eventos" >
+                                <figcaption> Apoiamos o seu Evento<br/>
+                                    - Auditório para 70 pessoas<br/>
+                                    - Com óptimas condições técnicas
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div id="caixa09" class="caixas">
+                            <h3>irmandade </h3>
+                            <figure>
+                                <img src="images/irmandade.jpg" alt="centro de eventos" >
+                                <figcaption> A Irmandade da SCML é uma associação<br/>
+                                    formada por irmãos que<br/>
+                                    constituem a Assembleia Geral...
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="caixaInformacoes">
+                    <div id="caixaArtigos" class="caixaInformacoes">
+                        <h2>Artigos</h2>
+                        <ul>
+                            <li>
+                                <h4>Papel da Hemoglobina Glicosilada na DMII</h4>
+                                <p class="resumoArtigo">Foi recentemente publicado um estudo que dá conta da importância que tem o estudo com comportamento da...</p>
+                                <a href="noticia_artigo.html">... Ler +</a>
+                                <div >
+                                    <img id="imgMedicoArtigo01" class="autorArtigo imgAutor" src="images/medico_anonimo.png" alt="foto de um anonimo"/>
+                                    <p id="nomeMedico01" class="autorArtigo">Dr Manuel de Aguiar <br/>Endocrinologista</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Papel da Hemoglobina Glicosilada na DMII</h4>
+                                <p class="resumoArtigo">Foi recentemente publicado um estudo que dá conta da importância que tem o estudo com comportamento da...</p>
+                                <a href="noticia_artigo.html">... Ler +</a>
+                                <div >
+                                    <img id="imgMedicoArtigo02" class="autorArtigo imgAutor" src="images/medico_anonimo.png" alt="foto de um anonimo"/>
+                                    <p id="nomeMedico02" class="autorArtigo">Dr Manuel de Aguiar <br/>Endocrinologista</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Papel da Hemoglobina Glicosilada na DMII</h4>
+                                <p class="resumoArtigo">Foi recentemente publicado um estudo que dá conta da importância que tem o estudo com comportamento da...</p>
+                                <a href="noticia_artigo.html">... Ler +</a>
+                                <div >
+                                    <img id="imgMedicoArtigo03" class="autorArtigo imgAutor" src="images/medico_anonimo.png" alt="foto de um anonimo"/>
+                                    <p id="nomeMedico03" class="autorArtigo">Dr Manuel de Aguiar <br/>Endocrinologista</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div id="caixaNoticias" class="caixaInformacoes">
+                        <h2>Notícias</h2>
+                        <ul>
+                            <li>
+                                <h4>Cidade em Movimento</h4>
+                                <p class="resumoArtigo">Foi recentemente publicado um estudo que dá conta da importância que tem o estudo com comportamento da...</p>
+                                <a href="noticia_artigo.html">... Ler +</a>
+                                <div >
+                                    <img id="imgAutorArtigo01" class="autorArtigo imgAutor" src="images/noticia04.png" alt="foto de um anonimo"/>
+                                    <p id="nomeAutor01" class="autorArtigo">Dr Manuel de Aguiar <br/>Endocrinologista</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Caminhadas SCML</h4>
+                                <p class="resumoArtigo">Foi recentemente publicado um estudo que dá conta da importância que tem o estudo com comportamento da...</p>
+                                <a href="noticia_artigo.html">... Ler +</a>
+                                <div >
+                                    <img id="imgAutorArtigo02" class="autorArtigo imgAutor" src="images/noticia03.png" alt="foto de um anonimo"/>
+                                    <p id="nomeAutor02" class="autorArtigo">Dr Manuel de Aguiar <br/>Endocrinologista</p>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Semana da Prevenção Rodoviária</h4>
+                                <p class="resumoArtigo">Foi recentemente publicado um estudo que dá conta da importância que tem o estudo com comportamento da...</p>
+                                <a href="noticia_artigo.html">... Ler +</a>
+                                <div >
+                                    <img id="imgAutorArtigo03" class="autorArtigo imgAutor" src="images/newspaper.png" alt="foto de um anonimo"/>
+                                    <p id="nomeAutor03" class="autorArtigo">Dr Manuel de Aguiar <br/>Endocrinologista</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="emColunas">
+                <div class="coluna">
+                    <img src="./images/logoSCML_PB_200x100.png" alt="logo SCML"/>
+                    <h6>Sede:</h6>
+                    <p>
+                        Rua Trindade Coelho, 8<br/>
+                        Apartado 1109<br/>
+                        2401-801 Leiria<br/>
+                        Tel.: 244 106 202<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6 >
+                        Recepção Administrativa Central
+                    </h6>
+                    <p>
+                        Tel.: 244 106 201 <br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Lar Nossa Sra. da Encarnação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 827 400<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Clínica Médica e de Reabilitação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 824 484<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Hospital Dom Manuel de Aguiar </h6>
+                    <p>
+                        Rua Conde Ferreira<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 299<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6>
+                        Unidade Cirúrgica 
+                    </h6>
+                    <p>
+                        Tel.: 244 106 203<br/>
+                    </p>
+                    <h6 >
+                        Unidade Cuidados Continuados
+                    </h6>
+                    <p >
+                        Tel.: 244 106 204<br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Creche "Casa Sanches" </h6>
+                    <p>
+                        Rua Trindade Coelho<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Residencial XXI </h6>
+                    <p>
+                        Rua do Lis<br/>
+                        2410-126 LEIRIA<br/>
+                        Tel.: 244 106 300<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+            </div>
+            <div id="linhaRodape">
+                <p>
+                    &copy; Copyright  by Gabriel, Tiago, Natanael   --  ESTG - 2014
+                </p>
+            </div>
+
+        </footer>
+    </body>
+</html>

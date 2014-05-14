@@ -1,0 +1,357 @@
+body {
+	margin:0;
+	padding:0;
+	text-align:justify;
+}
+
+html {
+	padding:0;
+	margin:0;
+}
+/* main principal, toda a área */
+#main {
+	margin:0;
+	padding:0;
+}
+/* Barra cabeçalho superior */
+#cab_fixo {
+	height:148px;
+	background:#0085C2;
+}
+/* Posição logotipo */
+#logo {
+	width:140px;
+	margin:0 auto;
+	padding:0 0 0 50px;
+	float:left;
+}
+/* barra menu superior */
+#menu {
+	width:550px;
+	height:40px;
+	float:right;
+}
+/* Definições para menu cabeçalho */
+#menu ul{
+	text-align:center;
+	list-style:none;
+	border:0;
+}
+#menu ul li{
+	border:0;
+	float:left;
+}
+#menu ul li a{
+	margin:0px 10px 10px 10px;
+	float:left;
+	color:#fff;
+	font:normal 14px Segoe UI;
+	text-decoration:none;
+}
+#menu ul li a:hover {
+  color:#011;
+}
+/* Texto cabeçalho */
+#texto_cab p {
+	float:left;
+	font:italic 28px Segoe UI;
+	color:#fff;
+	padding:0 0 0 50px;
+	margin:0; 
+}
+/* Área do Utente - Login */
+#area_login {
+	float:right;
+	margin:15px 65px 0 0;
+}
+/* Fundo para o Conteúdo - Content */
+#content_cor {
+    background:#F8F8F8;
+	padding:0 0 5px;
+}
+/* Definições para o Conteúdo - Content */
+#content_in {
+	float:center;
+    width:965px;
+	margin:0 auto;
+	background:#fff;
+}
+
+/* Definições para barra superior fixada */
+#sup_fixada {
+	float:center;
+	width:100%;
+	margin:0;
+	background-color:#ACDBFC;
+	border-bottom:1px solid #0085C2;
+	z-index:999;
+}
+.fixada {
+    position:fixed;
+	top:0px;
+}
+
+#sup_fixada p {
+	text-align:center;
+	font:normal 13px Segoe UI;
+	padding:5px;
+	margin:0;
+}
+
+#sup_fixada a{
+	color:#000;
+	text-decoration:none;
+}
+#sup_fixada a:hover{
+	color:#999;
+}
+
+/* Zona de slider */
+#slider {
+	float:center;
+	width:965px;
+	height:200px;
+	margin:0;
+}
+#body {
+	margin:2px auto;
+	padding:0;
+	width:960px;
+}
+
+#body h2 {
+	font:normal 22px Segoe UI;
+	color:#000;
+	padding:5px;
+	margin:1px 0 5px 0;
+}
+
+#body h2 a {
+	color:#000;
+}
+
+#body h3 {
+	font:normal 18px Segoe UI;
+	color:#000;
+	margin:5px 0 0 0;
+}
+
+#body h4 {
+	font: 24px Segoe UI;
+	color:#000;
+	margin:5px 0 0 5px;
+	text-align:center;
+}
+
+#bloco_0{
+	margin:2px auto;
+	padding:0;
+	width:260px;
+	height:400px;
+	float:left;
+}
+
+#body  #bloco_0 a :hover{
+	color:FF0000
+}
+
+#body p {
+	font:normal 14px Segoe UI;
+	color:#6d6d6d;
+	padding:5px;
+	margin:0;
+	line-height:1.8em;
+}
+
+#body_p1,#body_p2,#body_p3{
+	font:normal 13px Segoe UI;
+	color:#6d6d6d;
+	margin:0;
+	float:left;
+	padding: 0 100px 0 0;
+}
+
+#body img {
+	float:left;
+	margin:5px;
+	padding:0;
+}
+
+#body a{
+	color:#000;
+	text-decoration:none;
+}
+
+#body a:hover{
+	color:#999;
+}
+
+#contactos_esq {
+	width:460px;
+	float:left;
+	padding:10px;
+	margin:0 0 0 20px;
+}
+
+#contactos_dir {
+	width:460px;
+	float:right;
+	padding:0px;
+	margin:55px 0 0 0;
+}
+
+/* Coluna esquerda */
+#esquerda {
+	text-align:justify;
+	float:left;
+	width:610px;
+	height:300px;
+	margin:2px 0 0 0;
+	padding:10px;
+	background:#fff;
+}
+
+/* coluna direita */
+#direita {
+	float:right;
+	width:300px;
+	height:300px;
+	margin:2px 0 0 0;
+	padding:10px;
+	background:#fff;
+}
+
+/* Definições para o primeiro footer0 */
+
+#footer0 {
+	float:center;
+    width:965px;
+	margin:0 auto;
+	background:#F0F0F0;
+	border-top:1px solid #0085C2;
+}
+#footer0_titulo {
+	text-align:center;
+	width:965px;
+	border-bottom:1px solid #0085C2;
+}
+#footer0 h1{
+	color:#000;
+	font:normal 18px Segoe UI;
+	margin:10px 0;
+}
+#footer0 a{
+	color:#000;
+	text-decoration:none;
+}
+
+#footer0 a:hover{
+	color:#999;
+}
+#footer0 h2{
+	color:#000;
+	font:normal 15px Segoe UI;
+	padding:0;
+	margin:5px 0 10px 0;
+}
+
+#footer0 p {
+	text-align:justify;
+	color:#000;
+	font:normal 13px Segoe UI;
+	padding:1px 5px;
+	margin:0;
+}
+
+#bloco_f0_1, #bloco_f0_2, #bloco_f0_3, #bloco_f0_4 {
+	width:220px;
+	height:110px;
+	float:left;
+	padding:10px;
+	margin:0;
+}
+
+/* Definições para rodapé acima do rodapé final (footer2) - footer1 */
+#footer1_cor {
+	background:#ACDBFC;
+	border-top:1px solid #0085C2;
+}
+#footer1 {
+	margin:0 auto;
+	padding:0 20px;
+	width:960px;
+}
+#footer1_titulo {
+	text-align:center;
+	width:965px;
+	border-bottom:1px solid #0085C2;
+}
+#footer1 h1{
+	color:#000;
+	font:normal 18px Segoe UI;
+	margin:10px 0;
+}
+#footer1 a{
+	color:#000;
+	text-decoration:none;
+}
+
+#footer1 a:hover{
+	color:#999;
+}
+#footer1 h2{
+	color:#000;
+	font:normal 15px Segoe UI;
+	padding:0;
+	margin:5px 0 10px 0;
+}
+
+#footer1 p {
+	text-align:justify;
+	color:#000;
+	font:normal 13px Segoe UI;
+	padding:1px 5px;
+	margin:0;
+}
+
+#bloco_f1_1, #bloco_f1_2, #bloco_f1_3 {
+	width:300px;
+	height:110px;
+	float:left;
+	padding:10px;
+	margin:0;
+}
+/* Definições do rodapé final - footer2 */
+#footer2_tam {
+	margin:0 auto;
+	padding:0;
+	width:974px;
+}
+#footer2 {
+	padding:5px 0;
+	margin:0 auto;
+	border-top:1px solid #0085C2;
+	background:#ffffff;
+	font:normal 13px Segoe UI;
+}
+#footer2 p a{
+	color:#000;
+	text-decoration:none;
+}
+
+#footer2 p a:hover{
+	color:#999;
+}
+#esq {
+	float:left;
+}
+#dir {
+	float:right;
+}
+
+#labels {
+	float:left;
+}
+#inputs {
+	float:left;
+}

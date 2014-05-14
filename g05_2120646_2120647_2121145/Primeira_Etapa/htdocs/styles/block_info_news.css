@@ -1,0 +1,127 @@
+.container .block_info {
+	width: 240px;
+	float: left;
+	height: 580px;
+}
+.container .block_info .last_news {
+	height: 300px;
+	width: 240px;
+	margin-top: 20px;
+}
+
+ 
+.container .block_info .testimonials {
+	width: 240px;
+	height: 230px;
+	background-color: #EDEDED;
+}
+.last_news ul.list time {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    line-height: 18px;
+    margin-top: 2px;
+    text-align: center;
+    margin-right: 20px;
+    width: 60px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    float: left;
+    background-color: #AFCFED;
+}
+.last_news ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.last_news ul.list .title {
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+
+.last_news ul.list {
+    padding-top: 3px;
+}
+.container .block_info .last_news ul.list time span {
+    display: block;
+    border-top: 1px solid #c4e7d7;
+    margin: 5px 2px 0;
+}
+
+
+
+.container .block_info .last_news h2 {
+	color: #3E8CD2;
+	font-size: 15px;
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+
+}
+.container .block_info .last_news .list li .content_new {
+	overflow: hidden;
+	color: #333333;
+	margin-bottom: 15px;
+	font-size: 13px;
+}
+
+
+.container .block_info .last_news ul.list li {
+    overflow: hidden;
+    line-height: 18px;
+}
+.container .block_info .last_news .list li .content_new .title_new a {
+	text-decoration: none;
+	color: #333333;
+	font-weight: bold;
+}
+.title_block {
+	background-color: #3E8CD2;
+	float: none;
+	height: 20px;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.title_block_large {
+	height: 50px;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #3E8CD2;
+	padding-top: 20px;
+	font-size: 14px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.citacao {
+	color: #333333;
+	font-style: italic;
+	font-size: 16px;
+	text-align: left;
+	line-height: 20px;
+	margin-left: 10px;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+.assinatura {
+	text-align: right;
+	margin-right: 10px;
+	color: #333333;
+	font-style: normal;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+#read_mode_news {
+	text-align: right;
+	text-decoration: none;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #3E8CD2;
+	font-weight: bold;
+	margin-right: 10px;
+	float: right;
+}

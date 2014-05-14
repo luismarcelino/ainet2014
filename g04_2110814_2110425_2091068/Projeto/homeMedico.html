@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html><head>
+        <title>Anaaa XHTML 1.0 Strict standard template</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <!-- base href="http://localhost/aulas/ProjetoAplica-oesInternet/" -->
+        <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript" src="homeMedico_ficheiros/jquery-2.js"></script>
+        <script type="text/javascript">
+           
+         
+                     
+   $(document).ready(function (){
+      
+       
+       $("#submenuLogin").hide(); 
+       
+                $("#mostraMenuLogin").click(function (event){
+                    //$(this).parent().children("ul").toggle();
+                    $submenu=$("#submenuLogin");
+                    if($submenu.is(":visible")){
+                        $submenu.slideUp();
+                    }else{
+                        $submenu.slideDown();
+                    }
+                   
+                });
+    });
+          
+            
+           
+        </script>
+        
+    </head>
+
+    <body>
+        <nav id="navBar">
+       
+           
+            <div id="menuTopo"> 
+                <ul> 
+                    
+                    <li class="noSub"> 
+                        <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Home/index">
+                        <span>Entrada</span>
+                        </a>
+                    </li> 
+                     
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Noticias/index">
+                        <span>Notícias</span>
+                        </a>
+                    </li> 
+                     
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Irmandade">
+                        <span>Irmandade</span>
+                        </a>
+                    </li> 
+                    
+                   
+                    <li class="haveSub">
+                        <span>Saúde</span>
+                        <ul class="sub">
+                            
+                            <li>
+                                <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Saude/CorpoClinico">
+                               <span>Corpo Clinico</span>
+                               </a>
+                            </li> 
+                            
+                             
+                            <li>
+                                <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Saude/especialidades">
+                               <span>Especialidades</span>
+                               </a>
+                            </li> 
+                            
+                            
+                            <li>
+                                <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/ComporNoticia/index">
+                                <span>submenu3</span>
+                                </a>
+                            </li> 
+                            
+                        </ul>
+                    </li> 
+                   
+                   
+                    <li class="noSub">
+                         <a href="">
+                        <span>Localização</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Contactos/index">
+                        <span>Contactos</span>
+                        </a>
+                    </li> 
+                    
+                </ul> 
+            </div> 
+            
+            <div id="menuTopo2">
+                <div id="search">
+                    <input placeholder="Procurar" id="caixaTexto" type="text">
+                  
+                        
+                   
+                    
+                    
+                </div> 
+                
+                <div id="login"> 
+<!--                    <ul>
+                        <li id="mostraMenuLogin">
+                            <span>Entrar</span>
+                              
+                            
+                            <div id="subLogin">
+                                <ul id="submenuLogin" >
+                                    <li>
+                                        <h3>Entra com a tua conta:</h3>
+                                    
+                                </li>
+                                <li>
+                                    
+                                    
+                                    
+                                </li>
+                                 <li>
+                                    
+                                     
+                                   
+                                     
+                                </li>
+                                <li>
+                                      
+                                </li>
+                                <li id="linha">
+                                    
+                                </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                    </ul>-->
+                    
+<div id="mostraMenuLogin">
+    <span>Entrar</span>
+</div>
+<div style="display: none;" id="submenuLogin">
+     <h3>Entra com a tua conta:</h3>
+     <input class="loginTextFild" placeholder="Utilizador" type="text">
+     <input class="loginTextFild" placeholder="Password" type="password"><br>
+     <input value="Entrar" type="button">
+     <div id="linha"></div>
+     
+     
+     <a href="">Criar Conta</a> 
+    
+</div>
+                    
+                </div> 
+                
+            </div>
+        </nav>
+        <div id="IconTopo"> 
+            <!--        <img src="../../Styles/Images/image.png"alt="logotipo"></img>-->
+        </div>
+        
+           
+
+    
+        
+        
+       
+        <div id="conteudoCentro">
+           
+           
+             
+           <div id="imagemFundo">
+               
+               <img src="homeMedico_ficheiros/santa_casa.svg" alt="Logotipo da SCML">
+                <table id="tabela">
+                    
+                    <tbody><tr>
+                        <td>
+                             <a href="">
+                                 <img src="homeMedico_ficheiros/especialidades.png" alt="especialidades" class="imagemDoIcon">
+                            <p>Especialidades</p>
+                             </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="homeMedico_ficheiros/stethoscope-icon.png" alt="Consultas" class="imagemDoIcon">
+                            <p>Consultas</p>
+                            </a>
+                        </td>
+                        <td>
+                              <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/CuidadosGeriatricos/index">
+                                  <img src="homeMedico_ficheiros/seniors-icon.png" alt="cuidados geriatricos" class="imagemDoIcon">
+                          <p>Cuidados Geriatricos</p>
+                              </a>
+                           
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <img src="homeMedico_ficheiros/User-Group-icon.png" alt="voluntariado" class="imagemDoIcon">
+                            <p>Voluntariado</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Creche">
+                                <img src="homeMedico_ficheiros/family-icon.png" alt="Creche" class="imagemDoIcon">
+                            <p>Creche</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="homeMedico_ficheiros/Doctor-icon.png" alt="Corpo clinico" class="imagemDoIcon">
+                            <p>Corpo Clinico</p>
+                            </a>
+                            
+                        </td>
+                       
+                    </tr>
+                </tbody></table> 
+              
+                
+                
+            </div>
+             
+<h1 class="titulo">Pagina Pessoal</h1>
+
+<div id="contentor">
+<div id="InformacaoPessoalMedico">
+       
+    <img src="homeMedico_ficheiros/medico.png" alt="foto medico" id="fotomedico">
+    <h4>Medico: João Crespo</h4>
+    <h4>Nome: João Antonio Constantino Crespo</h4>
+    <img src="homeMedico_ficheiros/telefone.png" alt="telefone">
+    <h4>Telefone: 9122345765</h4>
+    
+    <img src="homeMedico_ficheiros/email.png" alt="email">
+    <h4>Joao.Crespo@hotnail.com</h4>
+    
+    </div>
+    <div id="NoticiasPessoalMedico">
+  
+        <div class="noticiaPessoal">
+            <img src="homeMedico_ficheiros/abertura.jpg" alt="email" class="imagemDaNoticiaHomeMedico">
+            <div class="corponoticiapessoalmedico">
+            <h5>Ambulância avariou a caminho de hospital</h5>
+            <p><span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines..</span><a href="">Ler Mais</a></p>
+            </div>
+        </div>
+         <div class="noticiaPessoal">
+             <img src="homeMedico_ficheiros/medicin_1.jpg" alt="email" class="imagemDaNoticiaHomeMedico">
+            <div class="corponoticiapessoalmedico">
+            <h5>Ambulância avariou a caminho de hospital</h5>
+            <p><span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines..</span><a href="">Ler Mais</a></p>
+            </div>
+        </div>
+         <div class="noticiaPessoal">
+             <img src="homeMedico_ficheiros/medicin_2.jpg" alt="email" class="imagemDaNoticiaHomeMedico">
+            <div class="corponoticiapessoalmedico">
+            <h5>Ambulância avariou a caminho de hospital</h5>
+            <p><span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines..</span><a href="">Ler Mais</a></p>
+            </div>
+        </div>
+         <div class="noticiaPessoal">
+             <img src="homeMedico_ficheiros/medicin_3.jpg" alt="email" class="imagemDaNoticiaHomeMedico">
+            <div class="corponoticiapessoalmedico">
+            <h5>Ambulância avariou a caminho de hospital</h5>
+            <p><span>Um navio chinês envolvido na busca do Boeing 777 da Malaysia Airlines..</span><a href="">Ler Mais</a></p>
+            </div>
+        </div>
+         
+    </div>
+    <div id="EspecialidadesPessoalMedico">
+        <h4>Especialidades</h4>
+        
+        <div id="DiasConsultasPessoalMedico"></div>
+    </div>
+    
+    
+    </div>
+   
+
+
+
+</div>
+
+
+<div id="conteudoFundo">
+
+
+
+    <div id="parteCimaFoot">
+        <div id="footLeft">
+            <ul>
+                <li><p> <a href=""> Encontre um médico </a></p></li>
+                <li> <a href=""> Marcações </a> </li>
+                <li> <a href="">  Acordos </a> </li>
+                <li> <a href=""> Irmandade </a> </li>
+                <li> <a href="">O Hospital </a> </li>
+                <li><p><a href=""> Como Chegar </a> </p></li>
+            </ul>        
+        </div>         
+        <div id="footCenter">
+            <ul>
+                <li> Morada: </li>
+                <li> Rua Nossa Senhora da Encarnação </li>
+                <li>  Leiria </li>
+                <li> 2410 Leiria </li>
+                <li><p> <a href=""> Contactos </a> </p> </li> 
+            </ul>
+
+        </div>
+        <div id="footRight">
+            <ul>
+                <li> Certificações: </li>
+                <li> <img src="homeMedico_ficheiros/google-icon.png" alt="Logo" class="imagemDoIcon"></li>
+                <li><p> Sites Tematicos </p>  </li>
+                <li>  Oncologia </li>
+                <li> Desporto </li>
+                <li>Internacional </li>
+               
+            </ul>
+                    <div id="redesSociais">
+                        <p>Siga-nos </p>
+            <a href=""><img src="homeMedico_ficheiros/google-icon.png" alt="google"></a>
+            <a href=""><img src="homeMedico_ficheiros/facebook-icon.png" alt="FACEBOOK"></a>
+        </div>
+           
+            
+        </div>
+    </div>
+
+    <div id="parteBaixoFoot">
+        <ul>
+            <li><a href=""> Avisos Legais </a> | <a href=""> Política de Privacidade </a></li>
+            <li>© 2014 Todos os direitos reservados - Desenvolvido por ESTG</li>
+            
+        </ul>
+    </div>
+
+</div>
+
+</body></html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>SCMLeiria - Contactos</title>
+	<!-- Para controlo do botão Topo -->
+    <script type="text/javascript" src="js/scrolltopcontrol.js"> </script>
+    <script type="text/javascript" src="js/jquery.js"> </script> 
+    <script type="text/javascript"> 
+	  // <![CDATA[ 
+	  <!-- Script para fixa barra de menu superior, após scroll -->
+	  $(document).ready(function() {
+		var s = $('#sup_fixada');
+		var pos = s.position();                    
+		$(window).scroll(function() {
+		  var windowpos = $(window).scrollTop();
+		  if (windowpos >= pos.top) {
+		    s.addClass('fixada');
+		  } else {
+		    s.removeClass('fixada'); 
+		  }
+		});
+	  });
+	  // ]]>
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="cab_fixo">
+		  <div id="logo">
+		    <a href="index.html"><img src="img/logo.jpg" alt="SCML - Santa Casa da Misericórdia de Leiria" /></a>
+		  </div>		 
+		  <div id="menu">
+		    <ul>
+			  <li>|</li>
+			  <li><a href="cchegar.html">Como chegar</a>|</li>
+			  <li><a href="index.html">English</a>|</li>
+			  <li><a href="faqs.html">Perguntas Frequentes</a>|</li>
+			  <li><a href="contactos.html">Contactos</a>|</li>
+		    </ul>
+		    <div id="area_login">
+			  <a href="login.html"><img src="img/login.png" alt="Área do Utente" /></a>
+		    </div>
+		  </div>
+		  <div id="texto_cab">
+		    <p><br/>O saber da experiência.<br/>500 anos de história.</p>
+		  </div>
+	    </div>
+		<div id="content_cor">
+	      <div id="sup_fixada">
+		    <p>| <a href="index.html">Início</a>
+			| <a href="consultas.html">Marcação de Consultas</a>
+			| <a href="saude.html">Saúde</a>
+			| <a href="cuidadosg.html">Cuidados Geriátricos</a>
+			| <a href="creche.html">Creche</a>
+			| <a href="irmandade.html">Irmandade</a> | </p>
+	      </div>
+	      <div id="content_in">
+		    <div style="clear:both"></div>
+		    <div id="body">
+			  <h4>Contactos Santa Casa da Misericórdia de Leiria</h4>
+			  <div id="contactos_esq">
+				<h3>Instituição Particular de Solidariedade Social</h3>
+				<p><a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt</a></p>
+				<h3>Sede:</h3>
+				<p>Rua Trindade Coelho, 8</p>
+				<p>Apartado 1109</p>
+				<p>2401-801 Leiria</p>
+				<p>Tel.: 244 106 202 • Fax: 244 106 298</p>
+
+				<h3>Lar Nossa Sra. da Encarnação</h3>
+				<p>Rua Nossa Sra. da Encarnação</p>
+				<p>2414-004 LEIRIA</p>
+				<p>Tel.: 244 827 400 • Fax: 244 823 980</p>
+
+				<h3>Clínica Médica e de Reabilitação</h3>
+				<p>Rua Nossa Sra. da Encarnação</p>
+				<p>2414-004 LEIRIA</p>
+				<p>Tel.: 244 824 484 • Fax: 244 823 980</p>
+		
+				<h3>Hospital Dom Manuel de Aguiar</h3>
+				<p>Rua Conde Ferreira</p>
+				<p>2410-189 LEIRIA</p>
+				<p>Tel.: 244 100 009 • Fax: 244 106 299</p>
+			  </div>
+			  <div id="contactos_dir">
+				<h3>Unidade Cirúrgica</h3>
+				<p>Tel.: 244 106 203</p>
+				<p>Unidade Cuidados Continuados</p>
+				<p>Tel.: 244 106 204 (24 HORAS)</p>
+				<p>Recepção Administrativa Central</p>
+				<p>Tel.: 244 106 201</p>
+
+				<h3>Creche "Casa Sanches"</h3>
+				<p>Rua Trindade Coelho, 10</p>
+				<p>2410-189 LEIRIA</p>
+				<p>Tel.: 244 100 009 • Tm: 915 190 685 • Fax: 244 106 298</p>
+
+				<h3>Residencial XXI</h3>
+				<p>Rua do Lis</p>
+				<p>2410-126 LEIRIA</p>
+				<p>Tel.: 244 106 300 • Fax: 244 106 298</p>
+
+	          </div>
+			  <div style="clear:both"></div>
+			  <img src="img/blank.png" alt=""/>
+			  <form id="form" action="menviada.html" method="post" >
+			  <h2>Formulário de contacto</h2>
+			    <div id="labels">		
+				  <p><label for="nome">Nome:</label></p>
+				  <p><label for="telefone">Telefone:</label></p>
+				  <p><label for="email">Email:</label></p>
+				  <p><label for="mensagem">Mensagem:</label></p>
+			    </div>
+			    <div id="inputs">
+				  
+			      <p><input type="text" name="nome" id="nome" value="" size="60" /></p>
+			      <p><input type="text" name="telefone" id="telefone" value="" /></p>
+			      <p><input type="text" name="email" id="email" value="" /></p>
+				  <p><textarea name="mensagem" id="mensagem" rows="12" cols="46"></textarea></p>
+			      <input type="submit" value="Enviar" style="width:80px;" />
+			      <input type="reset" value="Limpar" style="width:80px;"/>
+			      <br/>
+			    </div>
+			  </form>
+		    </div>   	 
+		    <div style="clear:both"></div>
+		    <div id="footer2">
+		      <div id="footer2_tam">
+			    <p id="esq">©2014 Santa Casa da Misericórdia de Leiria. Todos os direitos reservados.</p>
+			    <p id="dir"><a href="avisosl.html">Avisos Legais</a> | <a href="politicap.html">Política de Privacidade</a></p>
+			    <div style="clear:both"></div>
+		      </div>
+		      <div style="clear:both"></div>
+		    </div>
+	      </div>
+		</div>
+	  </div>
+	</div>
+  </body>
+</html>

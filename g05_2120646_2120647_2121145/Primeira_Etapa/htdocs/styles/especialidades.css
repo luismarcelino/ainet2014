@@ -1,0 +1,959 @@
+	.container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 2000px;
+	border-bottom: 2px solid #d9ced2;
+	margin-bottom: 15px;
+	width: 1024px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	
+	
+	}
+
+ 
+
+ .slideshow {
+
+	height: 165px;
+
+	clear: both;
+
+	margin-left: auto;
+
+	margin-right: auto;
+
+	margin-top: 25px;
+
+	margin-bottom: 25px;
+
+	width: 940px;
+
+	position: relative;
+
+	}
+
+	
+
+.slideshow #slide {
+
+	float: right;
+
+	border-radius: 2px;
+
+	}
+
+
+
+.container #consultas {
+
+	background-image: linear-gradient(260deg,rgba(255,255,255,1.00) 0%,rgba(62,140,210,1.00) 100%);
+
+	height:50px;
+
+	color:#1D198D;
+
+	font-size:25px;
+
+	text-align:center;
+
+	padding-top:20px;
+
+	border-radius:3px;
+
+	}
+
+	
+
+.container #especialidade {
+
+	padding-top:12px;
+
+	font-weight:bold;
+
+	background-color:#FFFFFF;
+
+	height:35px;
+
+	color:#1D198D;
+
+	font-size:15px;
+
+	text-align:left;
+
+	text-indent:8px;
+
+	}
+
+	
+
+.container #menu {
+	height: 1250px;
+	border-radius: 3px;
+	padding-top: 25px;
+	padding-right: 25px;
+	bottom: 50px;
+	background-image: -webkit-gradient(linear, 100.00% 41.18%, 0.00% 58.82%, color-stop( 0% , rgba(255,255,255,1.00)),color-stop( 100% , rgba(231,235,240,1.00)));
+	background-image: -webkit-linear-gradient(190deg,rgba(255,255,255,1.00) 0%,rgba(231,235,240,1.00) 100%);
+	background-image: linear-gradient(260deg,rgba(255,255,255,1.00) 0%,rgba(231,235,240,1.00) 100%);
+
+	}
+
+	
+
+.container #menu #tipos {
+
+	width: 330px;
+
+	height: 1200px;
+
+	}
+
+
+
+.container #menu #especialidades {
+
+	list-style:none;
+
+	text-indent:8px;
+
+	font-size:14px;
+
+	}
+
+
+
+.container #menu #info {
+	width: 650px;
+	height: 1200px;
+	background-color: #FFFFFF;
+	float: right;
+	border-radius: 10px;
+
+	}
+
+
+
+
+
+	
+
+.container #menu #info #acupunctura {
+
+	border:none;
+
+	height: 1180px;
+
+	}
+
+
+
+.container #menu #info #acupunctura #p1 {
+
+	text-indent:10px;
+
+	font-size: 28px;
+
+	font-variant: small-caps;
+
+	letter-spacing:1pt;
+
+	word-spacing:2.5pt;
+
+	line-height:1;
+
+	color:#1D198D;
+
+	}
+
+
+
+.container #menu #info #acupunctura p {
+
+	font-size:15px;
+
+	line-height:1.2;
+
+	text-align:justify;
+
+	color:#333333;
+
+	
+
+	margin-left:20px;
+
+	margin-right:20px;
+
+	margin-top: 25px;
+
+	margin-bottom: 15px;
+
+	}
+
+	
+
+.container #menu #info #acupunctura div {
+
+	font-size:12px;
+
+	height: 220px;
+
+	border:1px solid;
+
+	border-color:#cccccc;
+
+	border-radius:3px;
+
+	
+
+	margin-top: 25px;
+
+	margin-left:20px;
+
+	margin-right:20px;
+
+	}
+	
+.container #menu #info #acupunctura #especialista1 {
+	
+	position: relative;
+	
+	height:160px;
+
+	}
+
+.container #menu #info #acupunctura #especialista1 #nomeDoutor1 {
+	
+	position: absolute;
+	
+	color:#1D198D;
+
+	font-size:20px;
+
+	bottom: 110px;
+
+	width: 380px;
+
+	left: 135px;
+
+	}
+
+.container #menu #info #acupunctura #especialista1 #lblTel1 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	left: 155px;
+	
+	top: 60px;
+	
+	}
+
+.container #menu #info #acupunctura #especialista1 #lblEmail1 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	left: 370px;
+	
+	top: 60px
+	
+	}
+
+.container #menu #info #acupunctura #especialista1 #lblArea1 {
+
+	position: absolute;
+	
+	font-weight: bold;
+
+	font-size: 12px;
+	
+	left: 155px;
+
+	top: 95px;
+	
+	}
+
+
+.container #menu #info #acupunctura #especialista1 #lblEsp1 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	font-size: 12px;
+	
+	left: 155px;
+	
+	top: 130px;
+	}
+
+
+.container #menu #info #acupunctura #especialista1 #lblMyTelTemp1 {
+	
+	position: absolute;
+	
+	left: 180px;
+	
+	top: 60px;
+	}
+
+.container #menu #info #acupunctura #especialista1 #lblMyAreaTemp1 {
+	
+	position: absolute;
+	
+	left: 230px;
+
+	top: 95px;
+	}
+	
+	
+.container #menu #info #acupunctura #especialista1 #lblMyEspTemp1 {
+	
+	position: absolute;
+	
+	left: 242px;
+	
+	top: 130px;
+	}
+
+
+.container #menu #info #acupunctura #especialista2 {
+	
+	position: relative;
+	
+	height:160px;
+
+	}
+
+.container #menu #info #acupunctura #especialista2 #nomeDoutor2 {
+	
+	position: absolute;
+	
+	color:#1D198D;
+
+	font-size:20px;
+
+	bottom: 110px;
+
+	width: 380px;
+
+	left: 135px;
+
+	}
+
+.container #menu #info #acupunctura #especialista2 #lblTel2 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	left: 155px;
+	
+	top: 60px;
+	
+	}
+
+.container #menu #info #acupunctura #especialista2 #lblEmail2 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+		
+	left: 370px;
+	
+	top: 60px
+	
+	}
+
+.container #menu #info #acupunctura #especialista2 #lblArea2 {
+
+	position: absolute;
+	
+	font-weight: bold;
+
+	font-size: 12px;
+	
+	left: 155px;
+
+	top: 95px;
+	
+	}
+
+
+.container #menu #info #acupunctura #especialista2 #lblEsp2 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	font-size: 12px;
+	
+	left: 155px;
+	
+	top: 130px;
+	}
+
+
+.container #menu #info #acupunctura #especialista2 #lblMyTelTemp2 {
+	
+	position: absolute;
+	
+	left: 180px;
+	
+	top: 60px;
+	}
+
+.container #menu #info #acupunctura #especialista2 #lblMyAreaTemp2 {
+	
+	position: absolute;
+	
+	left: 230px;
+
+	top: 95px;
+	}
+	
+	
+.container #menu #info #acupunctura #especialista2 #lblMyEspTemp2 {
+	
+	position: absolute;
+	
+	left: 242px;
+	
+	top: 130px;
+	}
+
+.container #menu #info #acupunctura #especialista3 {
+	
+	position: relative;
+	
+	height:160px;
+
+	}
+
+.container #menu #info #acupunctura #especialista3 #nomeDoutor3 {
+	
+	position: absolute;
+	
+	color:#1D198D;
+
+	font-size:20px;
+
+	bottom: 110px;
+
+	width: 380px;
+
+	left: 135px;
+
+	}
+
+.container #menu #info #acupunctura #especialista3 #lblTel3 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	left: 155px;
+	
+	top: 60px;
+	
+	}
+
+.container #menu #info #acupunctura #especialista3 #lblEmail3 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	left: 370px;
+	
+	top: 60px
+	
+	}
+
+.container #menu #info #acupunctura #especialista3 #lblArea3 {
+
+	position: absolute;
+	
+	font-weight: bold;
+
+	font-size: 12px;
+	
+	left: 155px;
+
+	top: 95px;
+	
+	}
+
+
+.container #menu #info #acupunctura #especialista3 #lblEsp3 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	font-size: 12px;
+	
+	left: 155px;
+	
+	top: 130px;
+	}
+
+
+.container #menu #info #acupunctura #especialista3 #lblMyTelTemp3 {
+	
+	position: absolute;
+	
+	left: 180px;
+	
+	top: 60px;
+	}
+
+.container #menu #info #acupunctura #especialista3 #lblMyAreaTemp3 {
+	
+	position: absolute;
+	
+	left: 230px;
+
+	top: 95px;
+	}
+	
+	
+.container #menu #info #acupunctura #especialista3 #lblMyEspTemp3 {
+	
+	position: absolute;
+	
+	left: 242px;
+	
+	top: 130px;
+	}
+
+
+.container #menu #info #acupunctura .linkMail {
+	
+	position: absolute;
+
+	color:#6EAEE9;
+
+	font-size:13px;
+
+ 	left: 410px;
+	
+	top:58px;
+	
+	}
+	
+.container #menu #info #acupunctura	.linkSaberMais{
+	
+	position: absolute;
+
+	color:#6EAEE9;
+
+	font-size:13px;
+
+ 	left: 440px;
+	
+	top:95px;
+	
+	}
+	
+	
+	
+	.container #menu #info #cardiologia {
+
+	border:none;
+
+	height: 1180px;
+
+	}
+
+
+
+.container #menu #info #cardiologia #p2 {
+
+	text-indent:10px;
+
+	font-size: 28px;
+
+	font-variant: small-caps;
+
+	letter-spacing:1pt;
+
+	word-spacing:2.5pt;
+
+	line-height:1;
+
+	color:#1D198D;
+
+	}
+
+
+
+.container #menu #info #cardiologia p {
+
+	font-size:15px;
+
+	line-height:1.2;
+
+	text-align:justify;
+
+	color:#333333;
+
+	
+
+	margin-left:20px;
+
+	margin-right:20px;
+
+	margin-top: 25px;
+
+	margin-bottom: 15px;
+
+	}
+
+	
+
+.container #menu #info #cardiologia div {
+
+	font-size:12px;
+
+	height: 220px;
+
+	border:1px solid;
+
+	border-color:#cccccc;
+
+	border-radius:3px;
+
+	
+
+	margin-top: 25px;
+
+	margin-left:20px;
+
+	margin-right:20px;
+
+	}
+	
+.container #menu #info #cardiologia #especialista4 {
+	
+	position: relative;
+	
+	height:160px;
+
+	}
+
+.container #menu #info #cardiologia #especialista4 #nomeDoutor4 {
+	
+	position: absolute;
+	
+	color:#1D198D;
+
+	font-size:20px;
+
+	bottom: 110px;
+
+	width: 380px;
+
+	left: 135px;
+
+	}
+
+.container #menu #info #cardiologia #especialista4 #lblTel4 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	left: 155px;
+	
+	top: 60px;
+	
+	}
+
+.container #menu #info #cardiologia #especialista4 #lblEmail4 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	left: 370px;
+	
+	top: 60px
+	
+	}
+
+.container #menu #info #cardiologia #especialista4 #lblArea4 {
+
+	position: absolute;
+	
+	font-weight: bold;
+
+	font-size: 12px;
+	
+	left: 155px;
+
+	top: 95px;
+	
+	}
+
+
+.container #menu #info #cardiologia #especialista4 #lblEsp4 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	font-size: 12px;
+	
+	left: 155px;
+	
+	top: 130px;
+	}
+
+
+.container #menu #info #cardiologia #especialista4 #lblMyTelTemp4 {
+	
+	position: absolute;
+	
+	left: 180px;
+	
+	top: 60px;
+	}
+
+.container #menu #info #cardiologia #especialista4 #lblMyAreaTemp4 {
+	
+	position: absolute;
+	
+	left: 230px;
+
+	top: 95px;
+	}
+	
+	
+.container #menu #info #cardiologia #especialista4 #lblMyEspTemp4 {
+	
+	position: absolute;
+	
+	left: 242px;
+	
+	top: 130px;
+	}
+
+
+.container #menu #info #cardiologia #especialista5 {
+	
+	position: relative;
+	
+	height:160px;
+
+	}
+
+
+
+.container #menu #info #cardiologia #especialista5 #nomeDoutor5 {
+	
+	position: absolute;
+	
+	color:#1D198D;
+
+	font-size:20px;
+
+	bottom: 110px;
+
+	width: 380px;
+
+	left: 135px;
+
+	}
+
+.container #menu #info #cardiologia #especialista5 #lblTel5 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	left: 155px;
+	
+	top: 60px;
+	
+	}
+
+.container #menu #info #cardiologia #especialista5 #lblEmail5 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+		
+	left: 370px;
+	
+	top: 60px
+	
+	}
+
+.container #menu #info #cardiologia #especialista5 #lblArea5 {
+
+	position: absolute;
+	
+	font-weight: bold;
+
+	font-size: 12px;
+	
+	left: 155px;
+
+	top: 95px;
+	
+	}
+
+
+.container #menu #info #cardiologia #especialista5 #lblEsp5 {
+	
+	position: absolute;
+	
+	font-weight: bold;
+	
+	font-size: 12px;
+	
+	left: 155px;
+	
+	top: 130px;
+	}
+
+
+.container #menu #info #cardiologia #especialista5 #lblMyTelTemp5 {
+	
+	position: absolute;
+	
+	left: 180px;
+	
+	top: 60px;
+	}
+
+.container #menu #info #cardiologia #especialista5 #lblMyAreaTemp5 {
+	
+	position: absolute;
+	
+	left: 230px;
+
+	top: 95px;
+	}
+	
+	
+.container #menu #info #cardiologia #especialista5 #lblMyEspTemp5 {
+	
+	position: absolute;
+	
+	left: 242px;
+	
+	top: 130px;
+	}
+
+
+
+.container #menu #info #cardiologia .linkMail {
+	
+	position: absolute;
+	
+	color:#6EAEE9;
+
+	font-size:13px;
+
+ 	left: 410px;
+	
+	top:58px;
+	
+	}
+	
+.container #menu #info #cardiologia	.linkSaberMais{
+	
+	position: absolute;
+
+	color:#6EAEE9;
+
+	font-size:13px;
+
+ 	left: 440px;
+	
+	top:95px;
+	
+	}
+
+
+
+.button {
+
+	box-shadow:inset 0px 4px 0px 0px #DEEAEF;
+
+	border-radius:8px;
+
+	height:45px;
+
+	line-height:45px;
+
+	width:270px;
+
+	background-color:#6EAEE9;
+
+	color:#FFFFFF;
+
+	}
+
+
+
+.button:hover {
+
+	background-image: linear-gradient(260deg,rgba(255,255,255,1.00) 0%,rgba(62,140,210,1.00) 100%);
+
+	cursor:pointer;
+
+	}
+
+
+
+.button:active {
+
+	position: relative;
+
+	}
+	
+.btn_medicos {
+	
+	position: absolute;
+	
+	width: 150px;
+	
+	height: 25px;
+	
+	top: 120px;
+	
+	left: 440px;
+	
+	background-color: #FFFFFF;
+	
+	color: #6EAEE9;
+	
+	border-color: #6EAEE9;
+	
+	border-radius: 4px;
+	
+	}
+	
+.btn_medicos:hover {
+	color: #1D198D;
+	cursor: pointer;
+}
+	
+.photoDimension {
+	width: 90px;
+	position: relative;
+	
+	top: 14px;
+    left: 14px;
+}
+
+.title_top {
+	margin-bottom: 20px;
+}

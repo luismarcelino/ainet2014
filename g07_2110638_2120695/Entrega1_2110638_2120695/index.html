@@ -1,0 +1,167 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>SCMLeiria</title>
+    <script type="text/javascript" src="js/jquery.js"></script> 
+      <!-- jQuery library (served from Google) -->
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <!-- bxSlider Javascript file -->
+      <script type="text/javascript" src="slider/jquery.bxslider.min.js"></script>
+      <!-- bxSlider CSS file -->
+      <link href="slider/jquery.bxslider.css" rel="stylesheet" />
+      <!-- Para controlo do botão Topo -->
+      <script type="text/javascript" src="js/scrolltopcontrol.js"> </script>
+    <script type="text/javascript"> 
+	  // <![CDATA[ 
+	  <!-- Script para rollover sobre os 3 links de imagens da direita -->
+	  var mover = function(evt) {
+		evt.target.src = "img/" + evt.target.id + "_over.jpg"; }
+	  var mout = function(evt) {
+		evt.target.src = "img/" + evt.target.id + ".jpg"; }
+	  var mclick = function(evt) {
+		evt.target.src = "img/" + evt.target.id + "_click.jpg"; }
+	  <!-- Script para fixa barra de menu superior, após scroll -->
+	  $(document).ready(function() {
+		var s = $('#sup_fixada');
+		var pos = s.position();                    
+		$(window).scroll(function() {
+		  var windowpos = $(window).scrollTop();
+		  if (windowpos >= pos.top) {
+			s.addClass('fixada');
+		  } else {
+			s.removeClass('fixada'); 
+		  }
+		});
+	  });
+      <!-- Script para o Slider de imagens -->
+	  $(document).ready(function(){
+		$('#bxslider').bxSlider({
+		  auto: true,
+		});
+		  $('#direita img').hover(mover, mout).mousedown(mclick).mouseup(mout);		
+	  });
+	  // ]]>
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="cab_fixo">
+		  <div id="logo">
+		    <a href="index.html"><img src="img/logo.jpg" alt="SCML - Santa Casa da Misericórdia de Leiria" /></a>
+		  </div>		 
+		  <div id="menu">
+		    <ul>
+			  <li>|</li>
+			  <li><a href="cchegar.html">Como chegar</a>|</li>
+			  <li><a href="index.html">English</a>|</li>
+			  <li><a href="faqs.html">Perguntas Frequentes</a>|</li>
+			  <li><a href="contactos.html">Contactos</a>|</li>
+		    </ul>
+		    <div id="area_login">
+			  <a href="login.html"><img src="img/login.png" alt="Área do Utente" /></a>
+		    </div>
+		  </div>
+		  <div id="texto_cab">
+		    <p><br/>O saber da experiência.<br/>500 anos de história.</p>
+		  </div>
+	    </div>
+		<div id="content_cor">
+	      <div id="sup_fixada">
+		    <p>| <a href="index.html">Início</a>
+			| <a href="consultas.html">Marcação de Consultas</a>
+			| <a href="saude.html">Saúde</a>
+			| <a href="cuidadosg.html">Cuidados Geriátricos</a>
+			| <a href="creche.html">Creche</a>
+			| <a href="irmandade.html">Irmandade</a> | </p>
+	      </div>
+	      <div id="content_in">
+		    <div id="slider">
+			  <!-- Slider -->
+			  <ul id="bxslider">
+				<li><a href="clinicar.html"><img src="slider/4images/slide1.jpg" alt=""/></a></li>
+				<li><a href="lar.html"><img src="slider/4images/slide2.jpg" alt=""/></a></li>
+				<li><a href="residencia.html"><img src="slider/4images/slide3.jpg" alt=""/></a></li>
+				<li><a href="creche.html"><img src="slider/4images/slide4.jpg" alt=""/></a></li>
+			  </ul>
+			</div>
+			<div style="clear:both"></div>
+		    <div id="body">
+			  <div id="esquerda">
+			    <h2>Apresentação</h2>
+			    <p>A Irmandade da Santa Casa da Misericórdia de Leiria, fundada no ano de 1544, é uma associação constituída por fiéis vulgarmente chamados, no Compromisso da Irmandade, de irmãos.<br />
+				Uma instituição com 500 anos de história, renova-se e actualiza-se diariamente com uma presença constante na <i>Internet</i>. - Este <i>site </i>pretende dar a conhecer, a todos aqueles que o visitam, as suas valências sociais e os projectos em que a Santa Casa da Misericórdia está envolvida. <br />
+				Esta instituição através do Hospital D. Manuel de Aguiar também centra a sua acção, na introdução de conceitos inovadores tais como consolas Nintendo Wii na facilitação de terapias.<br />
+				</p>
+			  </div>
+			  <div id="direita">
+			    <h2>Ligações úteis</h2>
+		 	    <a href="consultas.html"><img id="consultas" src="img/consultas.jpg" alt="Consultas"/></a>
+			    <a href="saude.html"><img id="especialidades" src="img/especialidades.jpg" alt="Especialidades"/></a>
+			    <a href="cclinico.html"><img id="medicos" src="img/medicos.jpg" alt="Médicos"/></a>
+			  </div>
+		      <div style="clear:both"></div>
+	        </div>
+
+      </div>
+	  <div id="footer0">
+			<div id="footer0_titulo">
+				<h1>Últimas notícias</h1>
+			</div>  
+		<div id="bloco_f0_1">
+		  <h2>Título notícia 1</h2>
+		  <p><a href="noticia.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa erat, nibh dapibus adipiscing...</a></p>
+		</div>
+        <div id="bloco_f0_2">
+          <h2>Título notícia 2</h2>
+          <p><a href="noticia.html">Dolor sit amet, consectetur adipiscing elit semper erat. Ut massa semper erat. Ut massa erat, nibh dapibus adipiscing...</a></p>
+        </div>
+      <div id="bloco_f0_3">
+        <h2>Título notícia 3</h2>
+        <p><a href="noticia.html">Dipiscing elpsum dolor sit amet, consectetur adipiscing elpsum dolor sit amet, consectetur adipiscing elit semper erat...</a></p>
+      </div>
+	  <div id="bloco_f0_4">
+        <h2>Título notícia 4</h2>
+        <p><a href="noticia.html">Dipiscing elpsum dolor sit amet, consectetur adipiscing elpsum dolor sit amet, consectetur adipiscing elit semper erat...</a></p>
+      </div>
+      <div style="clear:both"></div>
+      </div>
+	 </div> 
+	 </div> 
+	 </div>  
+	   <div id="footer1_cor">
+        <div id="footer1">
+			<div id="footer1_titulo">
+				<h1>Publicações mais recentes dos médicos</h1>
+			</div>  
+		<div id="bloco_f1_1">
+		  <h2>Título notícia 1 (<a href="drma.html">Dr. Manuel António</a>)</h2>
+		  <p><a href="noticiam.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut massa erat, nibh dapibus adipiscing...</a></p>
+		</div>
+        <div id="bloco_f1_2">
+          <h2>Título notícia 2 (<a href="draaa.html">Dra. Ana Afonso</a>)</h2>
+          <p><a href="noticiam.html">Dolor sit amet, consectetur adipiscing elit semper erat. Ut massa semper erat. Ut massa erat, nibh dapibus adipiscing...</a></p>
+        </div>
+      <div id="bloco_f1_3">
+        <h2>Título notícia 3 (<a href="drjs.html">Dr. João Silva</a>)</h2>
+        <p><a href="noticiam.html">Dipiscing elpsum dolor sit amet, consectetur adipiscing elpsum dolor sit amet, consectetur adipiscing elit semper erat...</a></p>
+      </div>
+      <div style="clear:both"></div>
+      </div>
+	 </div>
+      <div style="clear:both"></div>
+      <div id="footer2">
+        <div id="footer2_tam">
+          <p id="esq">©2014 Santa Casa da Misericórdia de Leiria. Todos os direitos reservados.</p>
+          <p id="dir"><a href="avisosl.html">Avisos Legais</a> | <a href="politicap.html">Política de Privacidade</a></p>
+          <div style="clear:both"></div>
+        </div>
+        <div style="clear:both"></div>
+      </div>
+  </body>
+</html>

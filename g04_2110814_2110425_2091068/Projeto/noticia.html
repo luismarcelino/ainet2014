@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html><head>
+        <title>Anaaa XHTML 1.0 Strict standard template</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <!-- base href="http://localhost/aulas/ProjetoAplica-oesInternet/" -->
+        <link rel="stylesheet" type="text/css" href="Styles/EstiloIndex.css">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script type="text/javascript" src="noticia_ficheiros/jquery-2.js"></script>
+        <script type="text/javascript">
+           
+         
+                     
+   $(document).ready(function (){
+      
+       
+       $("#submenuLogin").hide(); 
+       
+                $("#mostraMenuLogin").click(function (event){
+                    //$(this).parent().children("ul").toggle();
+                    $submenu=$("#submenuLogin");
+                    if($submenu.is(":visible")){
+                        $submenu.slideUp();
+                    }else{
+                        $submenu.slideDown();
+                    }
+                   
+                });
+    });
+          
+            
+           
+        </script>
+        
+    </head>
+
+    <body>
+        <nav id="navBar">
+       
+           
+            <div id="menuTopo"> 
+                <ul> 
+                    
+                    <li class="noSub"> 
+                        <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Home/index">
+                        <span>Entrada</span>
+                        </a>
+                    </li> 
+                     
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Noticias/index">
+                        <span>Notícias</span>
+                        </a>
+                    </li> 
+                     
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Irmandade">
+                        <span>Irmandade</span>
+                        </a>
+                    </li> 
+                    
+                   
+                    <li class="haveSub">
+                        <span>Saúde</span>
+                        <ul class="sub">
+                            
+                            <li>
+                                <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Saude/CorpoClinico">
+                               <span>Corpo Clinico</span>
+                               </a>
+                            </li> 
+                            
+                             
+                            <li>
+                                <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Saude/especialidades">
+                               <span>Especialidades</span>
+                               </a>
+                            </li> 
+                            
+                            
+                            <li>
+                                <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/ComporNoticia/index">
+                                <span>submenu3</span>
+                                </a>
+                            </li> 
+                            
+                        </ul>
+                    </li> 
+                   
+                   
+                    <li class="noSub">
+                         <a href="">
+                        <span>Localização</span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="noSub">
+                        <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Contactos/index">
+                        <span>Contactos</span>
+                        </a>
+                    </li> 
+                    
+                </ul> 
+            </div> 
+            
+            <div id="menuTopo2">
+                <div id="search">
+                    <input placeholder="Procurar" id="caixaTexto" type="text">
+                  
+                        
+                   
+                    
+                    
+                </div> 
+                
+                <div id="login"> 
+<!--                    <ul>
+                        <li id="mostraMenuLogin">
+                            <span>Entrar</span>
+                              
+                            
+                            <div id="subLogin">
+                                <ul id="submenuLogin" >
+                                    <li>
+                                        <h3>Entra com a tua conta:</h3>
+                                    
+                                </li>
+                                <li>
+                                    
+                                    
+                                    
+                                </li>
+                                 <li>
+                                    
+                                     
+                                   
+                                     
+                                </li>
+                                <li>
+                                      
+                                </li>
+                                <li id="linha">
+                                    
+                                </li>
+                                </ul>
+                            </div>
+                            
+                        </li>
+                    </ul>-->
+                    
+<div id="mostraMenuLogin">
+    <span>Entrar</span>
+</div>
+<div style="display: none;" id="submenuLogin">
+     <h3>Entra com a tua conta:</h3>
+     <input class="loginTextFild" placeholder="Utilizador" type="text">
+     <input class="loginTextFild" placeholder="Password" type="password"><br>
+     <input value="Entrar" type="button">
+     <div id="linha"></div>
+     
+     
+     <a href="">Criar Conta</a> 
+    
+</div>
+                    
+                </div> 
+                
+            </div>
+        </nav>
+        <div id="IconTopo"> 
+            <!--        <img src="../../Styles/Images/image.png"alt="logotipo"></img>-->
+        </div>
+        
+           
+
+    
+        
+        
+       
+        <div id="conteudoCentro">
+           
+           
+             
+           <div id="imagemFundo">
+               
+               <img src="noticia_ficheiros/santa_casa.svg" alt="Logotipo da SCML">
+                <table id="tabela">
+                    
+                    <tbody><tr>
+                        <td>
+                             <a href="">
+                                 <img src="noticia_ficheiros/especialidades.png" alt="especialidades" class="imagemDoIcon">
+                            <p>Especialidades</p>
+                             </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="noticia_ficheiros/stethoscope-icon.png" alt="Consultas" class="imagemDoIcon">
+                            <p>Consultas</p>
+                            </a>
+                        </td>
+                        <td>
+                              <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/CuidadosGeriatricos/index">
+                                  <img src="noticia_ficheiros/seniors-icon.png" alt="cuidados geriatricos" class="imagemDoIcon">
+                          <p>Cuidados Geriatricos</p>
+                              </a>
+                           
+                        </td>
+                       
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="">
+                                <img src="noticia_ficheiros/User-Group-icon.png" alt="voluntariado" class="imagemDoIcon">
+                            <p>Voluntariado</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://localhost/aulas/ProjetoAplica-oesInternet/index.php/Creche">
+                                <img src="noticia_ficheiros/family-icon.png" alt="Creche" class="imagemDoIcon">
+                            <p>Creche</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="noticia_ficheiros/Doctor-icon.png" alt="Corpo clinico" class="imagemDoIcon">
+                            <p>Corpo Clinico</p>
+                            </a>
+                            
+                        </td>
+                       
+                    </tr>
+                </tbody></table> 
+              
+                
+                
+            </div>
+            
+
+
+<!--<script> 
+$(document).ready(function(){
+  $("#noticiaRelacionadasTitle").hover(function(){
+    $(this).slideUp(){
+      left:'250px',
+      
+   });
+ });
+  , function (){
+      $(this).slideDown()({
+      left:'250px',
+      
+    });
+  });
+});</script>-->
+
+<!--<script> 
+$(document).ready(function(){
+    
+  $("#titleBnoticia").hover(
+          function(){
+             $("#titleBnoticia").css({font: 25px 'Trebuchet MS';});  
+         },
+          function (){
+             $("#titleBnoticia").css({font: 15px 'Trebuchet MS';}); 
+          }  
+        
+        
+    
+   );
+ });
+
+</script>-->
+
+
+
+<div id="noticiaGrande">
+    <div id="noticiaGesq">
+        <div id="titleBnoticia">
+            <h2>
+                TITULOOOOOOO
+            </h2>
+    </div>
+    <div id="noticiaGimg">
+        <img id="imgNoticiaBig" src="noticia_ficheiros/n_.jpg"> 
+    </div>
+    <div id="txtNoticeGrande">
+        <span>Morreu o professor e empresário Manuel Forjaz, que, nos 
+últimos cinco anos, viveu uma intensa batalha contra um cancro no 
+pulmão, noticiou a TVI. Morreu neste domingo de manhã, aos 50 anos, em 
+casa, Lisboa.
+
+Na sua página no Facebook , os dois filhos revelaram as instruções que 
+deixou para o funeral. Na sua página no Facebook, os dois filhos 
+revelaram as instruções que deixou para o funeral: “Não quero que 
+chorem. Não quero ninguém vestido de preto. Não quero caixão aberto e 
+quero uma cerimónia simples e alegre”. Para a despedida escolheu a 
+música Don’t Stop Believing, dos Journey, e o padre João Seabra. O corpo
+ está, neste domingo, a partir das 18h, na capela da Igreja da 
+Encarnação, ao Chiado. É aqui que amanhã se realiza uma missa, pelas 
+13h30, após a qual  o corpo segue para o cemitério do Alto de São João.
+
+Manuel Forjaz tinha um programa semanal na TVI24 conduzido por José 
+Alberto de Carvalho. Intitulado "28 Minutos e Sete Segundos de Vida", 
+analisava o país, os portugueses e a sua própria vida. A última emissão 
+foi transmitida quarta-feira à noite. A sua página no Facebook conta com
+ 76 mil seguidores.
+
+Fazia palestras onde partilhava a sua luta. Recusou sempre baixar os 
+braços e lançou um livro, Nunca Te Distraias da Vida, em que falava da 
+sua experiência pessoal na luta contra o cancro. Numa entrevista dada no
+ mês passado à Notícias Magazine, declarou:  “Posso morrer de cancro, 
+mas o cancro nunca me matará. Se tenho dores, tomo compri­dos. Continuo a
+ trabalhar, a dar aulas, a viajar, com vida social. Há dias difíceis, 
+pós-químio, em que não consigo levantar-me. A maior parte das pessoas 
+não sabe que estou doente”.
+
+Ontem, num dos seus últimos posts no Facebook, comentava com acutilância
+ a polémica em torno do papel desempenhado por Vítor Constâncio quando 
+era governador do Banco de Portugal e não detectou o que se passava no 
+BPN: "São bastante evidentes as semelhanças entre Vítor Constâncio e uma
+ ostra, sendo a mais importante o facto de serem os dois acéfalos".
+Foi um dos fundadores do Instituto de Empreendedorismo Social e padrinho
+ do projecto Lig@-te, uma parceria entre a ANJE e uma extensa lista de 
+entidades. Neste contexto, desempenhou o papel de mentor de 
+empreendedores em situação de desemprego ou dificuldades sociais, que 
+fizeram formação para criarem o seu próprio negócio no Centro de 
+Desenvolvimento Comunitário da Ameixoeira. Foi aqui que, em 2009, 
+conheceu Vera Lúcia, com 27 anos e a dar os primeiros passos para fundar
+ o E-Beleza, um serviço de cabeleireiro, manicure e estética a idosos. 
+Na altura, ao PÚBLICO, Manuel Forjaz dizia que a Vera não era “o 
+empreendedor típico que aparece nos jornais, académico”. “Mas devia ser.
+ É o futuro do empreendedorismo”, defendeu, acrescentando que o 
+importante é passar a mensagem de que, com vontade e determinação, a 
+criação de um negócio pode estar ao alcance de qualquer um, 
+independentemente da condição social.
+
+    
+    
+    </span></div>
+    <div id="noticiaGdata_autor">
+        <div id="NGdata">
+            <span>06/03/2014</span>
+        </div>
+        <div id="NGespecialidade">
+            <span>medico</span>
+        </div>
+        <div id="NGautor">
+            <span>ricardo francisco</span>
+        </div>
+    </div>
+    </div>
+    <div id="noticiaGdir">
+        <header id="noticiaRelacionadasTitle">
+                <h3>Notícias relacionadas...</h3>
+        </header>
+        <div id="noticiaRelacionadas">
+            <div class="campoNoticiaLitle">
+                <img id="imgNoticiaLitle" src="noticia_ficheiros/n_.jpg">
+                <div id="titleNoticiaLitle">
+                    <p>titulo da noticia</p>
+                </div>
+            </div>
+            
+            <div class="campoNoticiaLitle">
+                <img id="imgNoticiaLitle" src="noticia_ficheiros/n_.jpg">
+                <div id="titleNoticiaLitle">
+                    <p>titulo da noticia</p>
+                </div>
+            </div>
+            
+            <div class="campoNoticiaLitle">
+                <img id="imgNoticiaLitle" src="noticia_ficheiros/n_.jpg">
+                <div id="titleNoticiaLitle">
+                    <h4>titulo da noticia</h4>
+                </div>
+            </div>
+            
+            <div class="campoNoticiaLitle">
+                <img id="imgNoticiaLitle" src="noticia_ficheiros/n_.jpg">
+                <div id="titleNoticiaLitle">
+                    <h4>titulo da noticia</h4>
+                </div>
+            </div>
+            
+                        <div class="campoNoticiaLitle">
+                <img id="imgNoticiaLitle" src="noticia_ficheiros/n_.jpg">
+                <div id="titleNoticiaLitle">
+                    <h4>titulo da noticia</h4>
+                </div>
+            </div>
+            
+            <div class="campoNoticiaLitle">
+                <img id="imgNoticiaLitle" src="noticia_ficheiros/n_.jpg">
+                <div id="titleNoticiaLitle">
+                    <h4>titulo da noticia</h4>
+                </div>
+            </div>
+     </div>
+    </div>
+      
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div id="conteudoFundo">
+
+
+
+    <div id="parteCimaFoot">
+        <div id="footLeft">
+            <ul>
+                <li><p> <a href=""> Encontre um médico </a></p></li>
+                <li> <a href=""> Marcações </a> </li>
+                <li> <a href="">  Acordos </a> </li>
+                <li> <a href=""> Irmandade </a> </li>
+                <li> <a href="">O Hospital </a> </li>
+                <li><p><a href=""> Como Chegar </a> </p></li>
+            </ul>        
+        </div>         
+        <div id="footCenter">
+            <ul>
+                <li> Morada: </li>
+                <li> Rua Nossa Senhora da Encarnação </li>
+                <li>  Leiria </li>
+                <li> 2410 Leiria </li>
+                <li><p> <a href=""> Contactos </a> </p> </li> 
+            </ul>
+
+        </div>
+        <div id="footRight">
+            <ul>
+                <li> Certificações: </li>
+                <li> <img src="noticia_ficheiros/google-icon.png" alt="Logo" class="imagemDoIcon"></li>
+                <li><p> Sites Tematicos </p>  </li>
+                <li>  Oncologia </li>
+                <li> Desporto </li>
+                <li>Internacional </li>
+               
+            </ul>
+                    <div id="redesSociais">
+                        <p>Siga-nos </p>
+            <a href=""><img src="noticia_ficheiros/google-icon.png" alt="google"></a>
+            <a href=""><img src="noticia_ficheiros/facebook-icon.png" alt="FACEBOOK"></a>
+        </div>
+           
+            
+        </div>
+    </div>
+
+    <div id="parteBaixoFoot">
+        <ul>
+            <li><a href=""> Avisos Legais </a> | <a href=""> Política de Privacidade </a></li>
+            <li>© 2014 Todos os direitos reservados - Desenvolvido por ESTG</li>
+            
+        </ul>
+    </div>
+
+</div>
+
+</body></html>

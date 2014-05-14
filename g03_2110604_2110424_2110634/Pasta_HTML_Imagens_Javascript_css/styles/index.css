@@ -1,0 +1,967 @@
+body {
+    /*background-color: green;*/
+    min-width: 1024px;
+    min-height: 1024px;
+    width: 1024px;
+    /*height:768px;*/
+    height: 1850px;
+    margin: 0 auto;
+    font-family: "Arial", "Helvetica", "Sans-Serif";
+}
+
+.Erro{
+    color: red;
+    font-size: 12px;
+}
+
+/*para mudar a cor da barra de titulo dos popups*/
+.ui-dialog > .ui-widget-header {background: lightskyblue;} 
+
+/* -------------------------------------------------------- ZONA DE CONFIGURAÇÂO DO CABEÇALHO ----------------------------------*/
+#cabecalho{
+    /*background-color: red;*/
+    width: 100%;
+    height: 150px;
+    border-bottom: 2px solid rgb(64,140,210);
+}
+
+#headerLeft{
+    /*background-color: blue;*/
+    background-image: url("../images/santa_casa1000.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    float:left;
+}
+
+#headerRight{
+    /*background-color: yellow;*/
+    position: relative;
+    width: 874px;
+    height: 150px;
+    float:right;
+
+}
+
+#btnAreaReservada {
+    width: 200px;
+    height: 40px;
+    background-image: url("../images/lockArea.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    position:absolute;
+    right: 5px;
+    top: 10px;
+}
+
+#textoBotao{
+    text-transform: uppercase;
+    font-size: 10px;
+    alignment-adjust: central;
+    position: relative;
+    left: 40px;
+    top: 3px;
+}
+
+#txtPesquisa {
+    width: 200px;
+    height: 40px;
+    background-image: url("../images/searchArea1.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    position:absolute;
+    right: 5px;
+    top: 52px;
+}
+#btnPesquisa {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url("../images/searchArea2.png");
+    background-repeat: no-repeat;
+    background-size:contain;
+    right: 20px;
+    top: 0px;
+}
+#btnPesquisa:hover, #btnAreaReservada:hover{
+    cursor: pointer;
+}
+
+#zonaPesquisa {
+    width: 130px;
+    position: relative;
+    top: 6px;
+    left: 5px;
+}
+
+#navbar {
+    position:absolute;
+    right: 240px;
+    top: 75px;
+}
+
+#navbar span {
+    text-transform: uppercase;
+    font-family: "Arial Narrow", "Arial", "Sans-Serif";
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: rgb(62, 140, 210);
+}
+
+#navbar span:hover {
+    color: #CC9900;
+    border-bottom: 8px solid #CC9900;
+}
+
+.pilha {
+    display: block;
+
+}
+li {
+    display: inline;
+}
+
+/* ------------------------------------------------ FIM CONFIGURAÇÂO DO CABEÇALHO -----------------------------------*/
+
+#main {
+    width: 100%;
+    height: 1780px;
+}
+
+#div_caminho{
+    font-size: 13px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0 0 10px;
+    width: 100%;
+    height: 30px;
+}
+
+#lista_caminho a {
+    position: relative;
+    text-decoration: none;
+    font-family: "Arial Narrow", "Arial", "Sans-Serif";
+    font-weight: bold;
+}
+/*  apaguei -- passou para o carousel
+#banner01 {
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/hospital.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+
+/* ------------------------------------------------ CONFIG RODAPÉ -------------------------------------------------- */
+footer {
+
+    background-color: #888888;
+    width: 100%;
+    height: 323px;
+    bottom: 0;
+    -moz-border-bottom-left-radius: 25px;
+    -moz-border-bottom-right-radius: 25px;
+    -webkit-border-bottom-left-radius: 25px;
+    -webkit-border-bottom-right-radius: 25px;
+
+}
+
+footer .emColunas{
+    width: 100%;
+    display:table;    
+}
+
+footer .coluna{ 
+    display:table-cell;
+}
+
+footer h6{
+    margin-bottom: 0em;
+    margin-top: 1.50em;
+    margin-left: 10px;
+}
+footer p{
+    margin-top: 1em;
+    margin-left: 10px;
+    font-size: 10px;
+    margin-bottom: 0em;
+
+}
+
+footer #linhaRodape {
+    margin-top: 1em;
+    text-align: center;
+
+}
+
+/* ------------------------------------------------ CONFIG PÁGINA USER -------------------------------------------------- */
+
+#main_user {
+    position: relative;
+    width: 100%;
+    height: 950px;   
+}
+
+#foto_dados_user div{
+    display: inline-block;
+}
+
+#foto_dados_user{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    background-image: url("../images/back_medico.jpg");
+    background-repeat: no-repeat;
+}
+
+#foto_user{
+    position: relative;
+    top: -105px;
+    left: 0;
+    width: 155px;
+    height: 155px;
+    background-image: url("../images/medico.jpg");
+    background-repeat: no-repeat;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border: solid 2px;
+}
+
+#dados_user{
+    position: relative;
+    top: -20px;
+    left: -40px;
+    padding: 20px 20px 20px 50px;
+    width: 500px;
+    height: 300px;
+}
+
+#dados_user p{
+    font-size: large;
+}
+
+#escreverArtigo{
+    background-color: lightskyblue;  
+}
+
+#tinyMce{
+    margin: 0 auto;
+    width: 802px;
+    height: 400px;
+}
+
+#divHistoricoArtigos{
+    width: 420px;
+}
+
+#tabelaArtigos .col1{
+    width: 100px;
+}
+
+#tabelaArtigos .col2{
+    width: 300px;
+}
+
+#tabelaArtigos .linha:hover {
+    background-color: lightgray;
+}
+
+#headerTabela{
+    background-color: lightskyblue;
+}
+
+
+/* ------------------------------------------------ CONFIG PÁGINA NOTICIA -------------------------------------------------- */
+#main_noticia {
+    position: relative;
+    width: 100%;
+    height: 570px;
+}
+#foto_dados_noticia{
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+#foto_dados_noticia div{
+    display: inline-block;
+}
+#foto_noticia{
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 350px;
+    height: 500px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    background-image: url('../images/noticia.jpg');
+    background-repeat: no-repeat;
+
+}
+#texto_noticia{
+    position: relative;
+    top: 0px;
+    left: 20px;
+    width: 600px;
+    height: 500px;
+    background-image: url('../images/back_noticia.jpg');
+    background-repeat: no-repeat;
+    font-size: 20px;
+    overflow:scroll;
+}
+/* ------------------------------------------------ CONFIG PÁGINA FORMULÁRIO -------------------------------------------------- */
+#main_formulario {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+}
+
+#morada{
+    position: relative;
+    width: 475px;
+    height: 150px;
+    border: 2px solid grey;
+}
+
+.notas{
+    font-size: 10px;
+}
+
+.comboBox{
+    width: 265px;
+}
+
+#div_formulario {
+    background-image: url("../images/contact.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+#pMorada{
+    margin-bottom: 0px;
+}
+
+/* ------------------------------------ CONFIG PáGINA IRMANDADE -------------------------------------------------------------------*/
+#mainIrmandade {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#mainIrmandade h1 {
+    font-family: "Old English Text MT" ,"Arial Narrow", "Arial", "Sans-Serif";
+    color: #CC9900;
+}
+
+#mainIrmandade p {
+    font-size: 24px;
+
+}
+
+/* ------------------------------- CONFIG PáGINA CRECHE ------------------------------------------------------------------------- */
+#mainCreche {
+    height: 1570px;
+}
+#mainCreche .separador {
+    clear: both;
+    height: 1px;
+    background-image: url('../images/linha_divisoria.png'); 
+    position: relative;
+}
+
+#btnSaverMaisCreche {
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+#mainCreche .banners {
+    position: relative;
+}
+#divImgCreche01, #divTxtCreche01, #divImgCreche02, #divTxtCreche02, #divImgCreche03, #divTxtCreche03, #divImgCreche04, #divTxtCreche04{
+    display: inline-block;
+}
+.crecheDivs {
+    height: 350px;
+    width: 412px;
+    margin: 10px 20px; 
+    position: absolute;
+}
+
+#divImgCreche01 {
+    background-image: url("../images/casa_sanches.png");
+    top: 0;
+    left: 0;
+}
+#divTxtCreche01 {
+    top: 60px;
+    right: 0;
+}
+/*S1 = separador*/
+#s1 {
+    top: 370px;
+}
+#divImgCreche02 {
+    background-image: url("../images/crecheBanner01.png");
+    top: 380px;
+    right: 0;
+}
+#divTxtCreche02 {
+    top: 400px;
+    left: 0;
+}
+#s2 {
+    top: 755px;
+}
+#divImgCreche03 {
+    background-image: url("../images/outraCreche02.jpg");
+    top: 800px;
+    left: 0;
+}
+#divTxtCreche03 {
+    top: 765px;
+    right: 0;
+}
+#s3{
+    top:1170px;
+}
+#divImgCreche04 {
+    background-image: url("../images/outraCreche02.jpg");
+    top: 1190px;
+    right: 0;
+}
+#divTxtCreche04 {
+    top: 1180px;
+    left: 0;
+}
+#divImgCreche01, #divImgCreche02, #divImgCreche03, #divImgCreche04 {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#mainCreche p {
+    font-family: "Arial", "Helvetica", "Sans-Serif";
+    text-align: justify;
+    font-size: 22px;
+
+}
+
+/* ------------------------------- CONFIG PáGINA APOIOSOCIAL -------------------- algumas alterações em relação à CRECHE que é a base --------------------------------------------- */
+#sobreElevado {
+    vertical-align: super;
+    font-size: 12px;
+}
+
+#divImgLar01, #divTxtCreche01, #divImgLar02, #divTxtCreche02, #divImgLar03, #divTxtCreche03, #divImgLar04, #divTxtCreche04{
+    display: inline-block;
+}
+#divImgLar01{
+    background-image: url("../images/lar_img01.jpg");
+    background-size: 80%;
+}
+
+#divImgLar02 {
+    background-image: url("../images/lar_2.jpg");
+    top: 400px;
+    right: 0;
+}
+
+#divImgLar03 {
+    background-image: url("../images/Residencial.png");
+    top: 800px;
+    left: 0;
+}
+
+#divImgLar04 {
+    background-image: url("../images/academia.jpg");
+    top: 1190px;
+    right: 0;
+}
+
+#divImgLar01, #divImgLar02, #divImgLar03, #divImgLar04 {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#btnSaverMaisLar02{
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 300px;
+}
+
+#btnSaverMaisLar03{
+    height: 30px;
+    margin-left: 180px;
+    margin-top: 270px;
+}
+
+#btnSaverMaisLar04{
+    height: 30px;
+    margin-left: 180px;
+    margin-top: 0px;
+}
+
+/* ------------------------------- CONFIG PáGINA INDEX -------------------- ZONA CENTRAL --------------------------------------------- */
+
+#caixaInformacoes {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin-top: 10px;
+}
+
+.caixaInformacoes {
+    width: 510px;
+    height: 475px;
+    vertical-align: baseline;
+    display: inline-block;
+}
+.caixaInformacoes h2{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+#caixaArtigos {
+    background-color: #2c3e50;
+}
+#caixaNoticias {
+    background-color: #6B96C9;
+    float: right;
+}
+
+.caixaInformacoes h4 {
+    color: #6B96C9;
+    margin-bottom: 0em;
+}
+#caixaNoticias h4 {
+    color: #2c3e50;
+    margin-bottom: 0em;
+}
+.caixaInformacoes p {
+    color: white;;
+    font-style: italic;
+    text-align: justify;
+    margin-top: 0em;
+    height: 42px;
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+.resumoArtigo {
+    width: 420px;
+}
+.nomeAutor p {
+    width: 75px;
+}
+.caixaInformacoes a{
+    color: white;
+    float: right;
+    margin-right: 20px;
+}
+#nomeMedico {
+    font-size: 12px;
+    width: 200px;
+}
+.autorArtigo{
+    display: inline-block;
+}
+
+.imgAutor {
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 1000px;
+    -webkit-border-radius: 1000px
+}
+figcaption {
+    text-align: center;
+}
+
+/* ----------------- CAROUSEL ----------------------*/
+#carousel {
+    width:1024px;
+    height:300px;	
+    margin:0 auto;
+}
+
+#slides {
+    overflow:hidden;
+    /* fix ie overflow issue */
+    position:relative;
+    width:934px;
+    height:300px;
+    /*border:1px solid #ccc;*/
+}
+
+/* remove the list styles, width : item width * total items */	
+#slides ul {
+    position:relative;
+    left:0;
+    top:0;
+    list-style:none;
+    margin:0;
+    padding:0;	
+    width:2832px;	/* 3 img = 3x944  */		
+}
+
+/* width of the item, in this case I put 250x250x gif */
+#slides li {
+    width:934px;
+    height:290px;	
+    /*float:left;*/
+}
+
+#slides li img {
+    padding:5px;
+}
+
+/* Styling for prev and next buttons 
+.buttons {
+        padding:0 0 5px 0;	
+        float:right;
+}
+*/
+.buttons, #btnPrev, #btnNext {
+    /*display:block; */
+    width:40px; 
+    height:300px;
+    /*text-indent:-999em;
+float:left;
+outline:0;
+margin: auto 0;*/
+
+}
+
+#btnPrev{
+    background:url("../images/arrow-left_blue.png") no-repeat; 
+    background-position: center;
+}
+
+#btnNext{
+    background:url("../images/arrow-right_blue.png") no-repeat; 
+    background-position: center;
+}
+
+.clear {clear:both}
+
+.buttons, #slides {
+    display: inline-block;
+}
+
+#divBanner{
+    background-image: url("../images/anonimo.png");
+}
+
+
+/* =======================  CONFIG HOMEPAGE  SERVIÇOS =========================*/
+#servicosMain {
+    width: 1024px;
+    height: 1080px;
+}
+.linhaServicos .caixasFinas {
+    width: 323px;
+    height: 55px;
+    margin: 5px 0px;
+
+
+    background-color: rgb(62, 140, 210);
+}
+.linhaServicos .caixas {
+    width: 331px;
+    height: 250px;
+    margin: 5px 0px;
+    background-color: #CCFF66;
+}
+.linhaServicos .caixasCentrais {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.servicosHospital .caixas{
+    background-color: white;
+    font-size: 14px;
+}
+.linhaServicos div {
+    display: inline-block;
+}
+
+.caixas h3 , .caixasFinas h3{
+    font-family: "Arial Narrow", "Arial", "Sans-Serif";
+    text-transform: uppercase;
+    padding-left: 7px;
+    border-left: 8px solid rgb(62,140,210);
+}
+.caixasFinas h3{
+    padding-left: 40px;
+    color: white;
+}
+.caixas h3{
+    color: rgb(62,140,210); 
+}
+
+.caixasFinas a{
+    text-decoration: none;
+}
+.caixasFinas{
+    border-left: 8px solid #CC9900;
+}
+#cxConsulta , #cxExame{
+    background-image: url("../images/date_task.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 10px center;
+    background-size: 10%;
+
+}
+
+#cxFindMedico {
+    background-image: url("../images/stethoscope.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 10px center;
+    background-size: 10%;
+
+}
+#cxAnalises {
+    background-image: url("../images/injection.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 10px center;
+    background-size: 10%;
+
+}
+#cxEspecialidades {
+    background-image: url("../images/health.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 10px center;
+    background-size: 10%;
+
+}
+#cxFisioterapia {
+    background-image: url("../images/user_medical.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 10px center;
+    background-size: 10%;
+    font-size:15px;
+}
+
+.titServicos h2 {
+    text-align: right;
+    color: #CC9900;
+    padding-right: 45px;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "Arial Narrow", "Arial", "Sans-Serif";
+}
+.titServicos {
+    border-bottom: 4px solid rgb(62,140,210);
+}
+
+.caixas figure {
+    margin: 0 auto;
+    width: 310px;
+    height: 180px;
+}
+
+.caixas figure * {
+    padding-left: 5px;
+}
+
+/* ----------- Página Hospital -------*/
+#bannerHospital {
+    background-image: url("../images/bannerPrincipalHospital.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1024px;
+    height: 200px;
+}
+#mainHospital {
+    height: 1460px;
+}
+
+/* ---------- Especialidades --------*/
+#tituloEspecialidades h2{
+    text-align: left;
+    padding-left: 45px;
+    padding-top: 10px;
+}
+
+#titulo_especialidade {
+    font-family: "Arial Narrow", "Arial", "Sans-Serif";
+    text-transform: uppercase;
+    color: white;
+    background-color: #71B9E8;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    padding-left: 20px;
+    width: 90%;
+}
+
+#t_especialidades td{
+    border: 1px solid black;
+}
+
+#t_especialidades .colunaEsq {
+    width: 250px;
+    height: 35px;
+    padding-left: 15px;
+    background-color: rgb(64, 140, 210);  
+    font-family: "Arial Narrow", "Arial", "Sans-Serif";
+    font-weight: bold;
+}
+
+#t_especialidades .colunaEsq:hover{
+    background-color: #CC9900;
+}
+
+#t_especialidades .colunaDta {
+    width: 774px;
+    vertical-align: top;
+    padding-left: 40px;  
+}
+
+.caixaListaMedicos {
+    margin-top: 20px;
+    border: 1px dotted black;
+    width: 90%;
+    height: 150px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.imgMedico, .infoMedico {
+    display: inline-block;;
+    float: left;
+    width: 70%;
+    padding-left: 20px;
+}
+.caixaListaMedicos .imgMedico {
+    width: 100px;
+    height: 130px;
+    margin: 10px;
+    background-image: url("../images/anonimo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0% 50%;
+    float: left;
+}
+
+.infoMedico p{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+.infoMedico span {
+    font-weight: normal;
+}
+.infoMedico h3 {
+    margin-bottom: 0px;
+    color: #CC9900;
+}
+
+.infoMedico .linkMarcarConsulta {
+    float: right;
+}
+
+/* ---------------- página encontrarMedico ---------------------- */
+.findDoctor {
+    display: inline-block;
+}
+#mainFindDoctor {
+    height: 500px;
+    width: 100%;
+}
+.findDoctor:after {
+    clear: both;
+}
+#findDoctorLeft{
+    float:left;
+    padding-left: 15px;
+    font-family: "Arial Narrow", "Arial", "Sans-Serif";
+    text-transform: uppercase;
+}
+
+#findDoctorRight{
+    float: right;
+    width: 70%;
+}
+
+#findDoctorLeft h4{
+    margin-bottom: 0px;
+}
+#findDoctorLeft input {
+    height: 25px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border: 2px solid #C0C0C0;
+}
+
+#paginacao a{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 3px;
+}
+
+#paginacao div{
+    //border: 1px solid #C0C0C0;
+    font-size: 12px;
+    width: 20px;
+    display: inline;
+    margin: 0 auto;
+
+}
+
+#paginacao div:hover{
+    background-color: lightgray;
+}
+
+#paginacao {
+    margin-top: 15px;
+    text-align: center;
+}
+
+#findDoctorLeft img{
+    position: relative;
+    top: 8px;
+}
+#findDoctorLeft img:hover{
+    cursor: pointer;
+}
+/* ----------- Página Médico Geral -------*/
+
+#curriculo .titulo, #historicoArtigos .titulo{
+    background-color: lightskyblue;
+}
+
+#curriculo p{
+    line-height: 10px;
+}
+
+#curriculo #percursoAcademico, #ActividadeClinica, #ActividadeCientifica {
+    
+    background-image: url("../images/doctor_symbol.png");
+    background-repeat: no-repeat;
+    
+}
+
+#main_medico_geral {
+    position: relative;
+    width: 100%;
+    height: 1460px;   
+}
+
+#foto_medico_geral{
+    position: relative;
+    top: -50px;
+    left: 0;
+    width: 155px;
+    height: 155px;
+    background-image: url("../images/medico.jpg");
+    background-repeat: no-repeat;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border: solid 2px;
+}

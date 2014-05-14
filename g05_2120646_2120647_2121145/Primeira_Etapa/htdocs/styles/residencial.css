@@ -1,0 +1,44 @@
+  .container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 1100px;	
+	border-bottom: 2px solid #d9ced2;
+	
+	margin-bottom: 15px;
+	width: 1024px;
+  }
+
+strong {
+	color: #145189;
+}
+.container .title_residencial #logo {
+	float: left;
+}
+.container .title_residencial {
+	height: 140px;
+}
+.container .content_residencial {
+	float: left;
+	clear: both;
+	margin-top: 25px;
+	width: 1024px;
+}
+.container .content_residencial #foto {
+	float: right;
+}
+.container .content_residencial #text_content {
+	width: 530px;
+	float: left;
+	color: #333333;
+	text-align: justify;
+	font-size: 14px;
+}
+.container .content_residencial #text_content .span_bold {
+	font-weight: bold;
+}
+.container .content_residencial .block_info {
+	float: right;
+	clear: none;
+}

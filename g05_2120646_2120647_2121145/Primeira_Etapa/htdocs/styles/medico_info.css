@@ -1,0 +1,115 @@
+  .container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 1400px;
+	border-bottom: 2px solid #d9ced2;
+	margin-bottom: 15px;
+	width: 1024px;
+  }
+
+strong {
+	color: #145189;
+}
+.info_medico .foto {
+	width: 160px;
+	height: 180px;
+	float: left;
+	text-align: center;
+	
+}
+.container .info_medico {
+	float: left;
+	width: 979px;
+	height: 900px;
+	border-bottom-color: #CCCCCC;
+	border-bottom-style: solid;
+	margin-left: 15px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.info_medico .dados_medico {
+	float: left;
+	color: #333333;
+	font-size: 14px;
+	text-align: justify;
+	width: 500px;
+	padding-left: 10px;
+}
+.container .info_medico h3 {
+	color: #a64114;
+	font-weight: 400;
+}
+.info_medico .dados_medico ul li {
+	list-style-image: url(../images/check_14px_blue.png);
+}
+.info_medico .dados_medico ul {
+	float: left;
+	margin-top: 0px;
+
+}
+.container .info_medico .foto img {
+	width: auto;
+	height: 180px;
+}
+.container .info_medico .dados_medico p {
+	margin-top: 0px;
+	margin-bottom: 10px;
+
+}
+.container .info_medico .dados_medico p .label {
+	font-weight: bold;
+}
+.container .title_top_back a {
+	text-decoration: none;
+	background-color: #3e8cd2;
+	color: #FFFFFF;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	float: left;
+	margin-right: 25px;
+}
+.title_top_back {
+	width: 994px;
+	float: left;
+	margin-left: 15px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #CCCCCC;
+}
+.container .info_medico .block_info {
+	float: right;
+}
+.medic_info {
+	width: 600px;
+	float: left;
+	margin-top: 15px;
+	clear: both;
+}
+.medic_info .title_medic_info {
+	float: left;
+	width: 100%;
+	height: 30px;
+	padding-top: 0px;
+	color: #145189;
+	font-weight: bold;
+	font-size: 14px;
+}
+.medic_info .content_medic_info {
+	float: left;
+	clear: both;
+	margin-left: 10px;
+	color: #333333;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: justify;
+}
+.container .info_medico #left_block_medic {
+	float: left;
+	width: 600px;
+	clear: left;
+}

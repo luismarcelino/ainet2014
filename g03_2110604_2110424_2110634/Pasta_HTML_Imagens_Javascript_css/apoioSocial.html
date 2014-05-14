@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>SCML - Apoio Social</title>
+        <meta name="description" content="GNT group"/>
+        <meta name="keywords" content="Santa Casa, Misericordia, Leiria, Hospital, Clínica, Lar, Cuidados Domiciliários, Irmandade, Creche, Consultas, Geriatria" />
+        <link rel="icon" href="images/icon.gif" type="image/gif" />
+        <meta name="author" content="Gabriel Tiago Natanael">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" href="./styles/index.css" >
+        <script src="./js/libs/tinymce/js/tinymce/tinymce.min.js"></script>
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="./js/libs/modernizr/modernizr.js"></script>
+        <script type="text/javascript" src="./js/js.js"></script> 
+    </head>
+    <body>
+        <noscript>Este browser não suporta, ou não tem activo, JavaScript!</noscript>
+        <div id="dialogLogin" title="Login" hidden> <!-- div escondida que contém o conteudo do popup-->
+            <form id="formLogin">
+                <label for="popUsername"> <br />Nome Utilizador:<br /> </label>
+                <input id="popUsername" type="email" size="45" required autofocus placeholder="Insira o seu Email" /> <br />
+                <label for="popPass">Palavra-Chave:<br /> </label>
+                <input id="popPass" type="text" size="45" required autofocus placeholder="Insira o seu username"/> <br />
+                <span id="msgErroPopupLogin" class="Erro"></span>
+            </form>
+        </div>        <header id="cabecalho">
+            <a href="index.html" >		
+                <div id="headerLeft" class="subHeader">
+                </div> 
+            </a>
+            <div id="headerRight" class="subHeader">
+                <div id="btnAreaReservada" class="pilha">
+                    <!--<input  type="button" value="Area Reservada" />-->
+                    <p id="textoBotao">área reservada</p>
+                </div>
+                <div id="txtPesquisa" class="pilha" >
+                    <input id="zonaPesquisa" type="search" />
+                    <div id="btnPesquisa" onclick="pesquisaPortal()"></div>
+                </div>
+
+                <nav class="pilha" id="navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html"><span>&nbsp; scml&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="hospital.html"> <span>&nbsp;hospital&nbsp;</span> </a>
+                        </li> 
+                        <li>
+                            <a href="#"><span>&nbsp; apoio social&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="creche.html"><span>&nbsp;creche&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="irmandade.html"><span>&nbsp;irmandade&nbsp;</span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="div_caminho">
+            <ul id="lista_caminho">
+                <li> <a href="index.html"> Home ► </a> </li>
+                <li> <a href="#"> Apoio Social </a> </li>
+            </ul>
+        </div>
+
+        <!-- ::::::::::::::::::::::::::: ZONA DE CONTEÚDOS APOIO SOCIAL ::::::::::::::::::::::::::::::   -->
+
+        <div id="mainCreche">
+            <div id="creche01" class="banners">
+                <div id="divImgLar01" class="crecheDivs">
+                </div>
+                <div id="divTxtCreche01" class="crecheDivs divTexto">
+                    <h1>Lar Nª Srª Encarnação ...</h1>
+                    <p class="p_par">
+                        Com uma área de cerca de 5000 m<span id="sobreElevado">2</span>, é considerado dos mais modernos e funcionais do nosso país.
+                        Oferece um total de 43 quartos (86 camas), aliados a um enorme espaço ajardinado.
+                    </p>
+                    <a href="formularioContacto.html" > <img id="btnSaverMaisCreche" src="./images/btnSaberMais.png" alt="Botão saber mais" /> </a>    
+                </div>
+
+            </div>
+            <div id="s1" class="separador"></div>
+            <div id="creche02" class="banners">
+                <div id="divTxtCreche02" class="crecheDivs divTexto">
+                    <h1>Apoio Domiciliário ...</h1>
+                    <p class="p_impar">
+                        Tendo como objectivo a prestação de cuidados ao nível da assistência de utentes impossibilitados de se deslocarem aos Centros de Dia.<br/>
+                        Este serviço prepara, distribui e administra diariamente refeições, assegurando a prestação de cuidados de higiene pessoal e de conforto habitacional, o tratamento de roupas e a administração de medicamentos. 
+                    </p>
+                </div>
+                <div id="divImgLar02" class="crecheDivs">
+                    <a href="formularioContacto.html" > <img id="btnSaverMaisLar02" src="./images/btnSaberMais.png" alt="Botão saber mais" /> </a>     
+                </div>
+
+            </div>
+            <div id="s2" class="separador"></div>
+            <div id="creche03" class="banners">
+                <div id="divImgLar03" class="crecheDivs">
+                    <a href="formularioContacto.html" > <img id="btnSaverMaisLar03" src="./images/btnSaberMais.png" alt="Botão saber mais" /> </a> 
+                </div>
+                <div id="divTxtCreche03" class="crecheDivs divTexto">
+                    <h1>Residencial XXI ...</h1>
+                    <p class="p_par">
+                        A Residencial XXI é o local ideal para quem pretende uma opção de repouso de cariz familiar, onde a personalidade de cada utente determina o atendimento dos diversos profissionais desta unidade.
+                        Com uma oferta de 33 camas, a Residencial XXI proporciona aos utentes um espaço de qualidade acima da média e um serviço de excelência, no acompanhamento que presta a cada utente.
+                    </p>
+                </div>
+
+            </div>
+            <div id="s3" class="separador"></div>
+            <div id="creche04" class="banners">
+                <div id="divTxtCreche04" class="crecheDivs divTexto">
+                    <h1>Academia Cultural ...</h1>
+                    <p class="p_impar">
+                        Um local para ocupação de tempos livres, com o foco na aquisição de conhecimentos. Desde História, Filosofia, Arte Musical, Animação de Textos, 
+                        Psicologia e Cuidados de Saúde, entre outros, tudo serve de tema para debates, peças de teatro, palestras e muitas outras actividades.
+                    </p>
+                    <a href="formularioContacto.html" > <img id="btnSaverMaisLar04" src="./images/btnSaberMais.png" alt="Botão saber mais" /></a> 
+                </div>
+                <div id="divImgLar04" class="crecheDivs">
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <footer>
+            <div class="emColunas">
+                <div class="coluna">
+                    <img src="./images/logoSCML_PB_200x100.png" alt="logo SCML"/>
+                    <h6>Sede:</h6>
+                    <p>
+                        Rua Trindade Coelho, 8<br/>
+                        Apartado 1109<br/>
+                        2401-801 Leiria<br/>
+                        Tel.: 244 106 202<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6 >
+                        Recepção Administrativa Central
+                    </h6>
+                    <p>
+                        Tel.: 244 106 201 <br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Lar Nossa Sra. da Encarnação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 827 400<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Clínica Médica e de Reabilitação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 824 484<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Hospital Dom Manuel de Aguiar </h6>
+                    <p>
+                        Rua Conde Ferreira<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 299<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6>
+                        Unidade Cirúrgica 
+                    </h6>
+                    <p>
+                        Tel.: 244 106 203<br/>
+                    </p>
+                    <h6 >
+                        Unidade Cuidados Continuados
+                    </h6>
+                    <p >
+                        Tel.: 244 106 204<br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Creche "Casa Sanches" </h6>
+                    <p>
+                        Rua Trindade Coelho<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Residencial XXI </h6>
+                    <p>
+                        Rua do Lis<br/>
+                        2410-126 LEIRIA<br/>
+                        Tel.: 244 106 300<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+            </div>
+            <div id="linhaRodape">
+                <p>
+                    &copy; Copyright  by Gabriel, Tiago, Natanael   --  ESTG - 2014
+                </p>
+            </div>
+
+        </footer>
+    </body>
+</html>

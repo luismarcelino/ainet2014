@@ -1,0 +1,26 @@
+  .container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 1124px;
+	border-bottom: 2px solid #d9ced2;
+	margin-bottom: 15px;
+	width: 1024px;
+  }
+
+strong {
+	color: #145189;
+}
+.container .text_content {
+	width: 650px;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: left;
+	clear: both;
+}
+.container img {
+	float: right;
+	margin-top: 50px;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>SCML - Médico</title>
+        <meta name="description" content="GNT group"/>
+        <meta name="keywords" content="Santa Casa, Misericordia, Leiria, Hospital, Clínica, Lar, Cuidados Domiciliários, Irmandade, Creche, Consultas, Geriatria" />
+        <link rel="icon" href="images/icon.gif" type="image/gif" />
+        <meta name="author" content="Gabriel Tiago Natanael">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" href="./styles/index.css" >
+        <script src="./js/libs/tinymce/js/tinymce/tinymce.min.js"></script>
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="./js/libs/modernizr/modernizr.js"></script>
+        <script type="text/javascript" src="./js/js.js"></script>
+    </head>
+    <body>
+        <noscript>Este browser não suporta, ou não tem activo, JavaScript!</noscript>
+        <div id="dialogLogin" title="Login" hidden> <!-- div escondida que contém o conteudo do popup-->
+            <form id="formLogin">
+                <label for="popUsername"> <br />Nome Utilizador:<br /> </label>
+                <input id="popUsername" type="email" size="45" required autofocus placeholder="Insira o seu Email" /> <br />
+                <label for="popPass">Palavra-Chave:<br /> </label>
+                <input id="popPass" type="text" size="45" required autofocus placeholder="Insira o seu username"/> <br />
+                <span id="msgErroPopupLogin" class="Erro"></span>
+            </form>
+        </div>
+        <header id="cabecalho">
+            <a href="index.html" >
+                <div id="headerLeft" class="subHeader">
+                </div>
+            </a>
+            <div id="headerRight" class="subHeader">
+                <div id="btnAreaReservada" class="pilha">
+                    <!--<input  type="button" value="Area Reservada" />-->
+                    <p id="textoBotao">área reservada</p>
+                </div>
+                <div id="txtPesquisa" class="pilha" >
+                    <input id="zonaPesquisa" type="search" />
+                    <div id="btnPesquisa" onclick="pesquisaPortal()"></div>
+                </div>
+
+                <nav class="pilha" id="navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html"><span>&nbsp; scml&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="hospital.html"> <span>&nbsp;hospital&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="apoioSocial.html"><span>&nbsp; apoio social&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="creche.html"><span>&nbsp;creche&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="irmandade.html"><span>&nbsp;irmandade&nbsp;</span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="main_medico_geral">
+            <div id="div_caminho">
+                <ul id="lista_caminho">
+                    <li> <a href="index.html"> Home ► </a> </li>
+                    <li> <a href="#"> Médico </a> </li>
+                </ul>
+            </div>
+            <div id="foto_dados_user">
+                <div id="foto_medico_geral">
+                </div>
+                <div id="dados_user">
+                    <p>Dr. <var id="nomeDoc">José Martins</var></p>
+                    <p>Especialidade: <var id="espDoc">Ortopedia</var></p>
+                    <p>Telefone: <var id="telDoc">255330167</var></p>
+                    <p>E-mail: <var id="mailDoc">joseMartins@scml.com</var></p>
+                    <p>Peridodos de Consulta: <var id="periodosDoc">segundas 10h-13h, semanalmente; quartas 14h-18h de 2 em 2 semanas</var></p>
+                </div>
+            </div>
+            <div id="curriculo">
+                <div id="percursoAcademico">
+                    <div class="titulo">
+                        <h3>Percurso Académico</h3>
+                    </div>
+                    <p> 1999-2000 - Foi Presidente da Direcção do Colégio da Especialidade de Cirurgia Maxilofacial </p>
+                    <p> 1993-2006 - Foi Membro da Direcção do Colégio da Especialidade de Cirurgia Maxilofacial </p>
+                    <p>  Docente Convidado do Mestrado em Cirurgia Oral do ISCS - Norte - CESPU </p>
+                    <p>  Docente Convidado do Pós-graduado e Mestrado em Ortodontia da Faculdade de Medicina Dentária da Universidade do Porto </p>
+                    <p>  Ex Director do Serviço de Cirurgia Maxilofacial do Hospital Pedro Hispano </p>
+                    <p>  Chefe de Serviço Hospitalar de Cirurgia Maxilofacial </p>
+                    <p>  1996 - Member of the European Board for Oro-Maxillofacial Surgery (Prestou provas publicas em Zurich) </p>
+                    <p>  1993 - Especialista em Cirurgia Maxilofacial pela Ordem dos Médicos (Membro Fundador da especialidade) </p>
+                    <p>  1982 - Especialista em Estomatologia pela Ordem dos Médicos </p>
+                    <p>  1974 - Licenciado em Medicina e Cirurgia pela Fac. de Medicina da U. do Porto </p>
+                </div>
+                <div id="ActividadeClinica">
+                    <div class="titulo">
+                        <h3>Actividade Clínica</h3>
+                    </div>
+                    <p> Dedicado essencialmente à Cirurgia Ortognática </p>
+                    <p> Patologia Disfuncional da Articulação Temporomandibular (ATM) (tratamento médico e cirúrgico)</p>
+                    <p> Cirurgia aberta da ATM </p>
+                    <p> Autor da técnica de artroplastia interposicional da ATM com retalho de fascia temporal </p>
+                    <p> Autor da primeira intervenção Cirúrgica no país de meniscopexia temporomandibular com implante condiliano em titânio </p>
+                    <p> Cirurgia por Artroscopia da ATM </p>
+                    <p> Iniciador no País da Cirurgia Artroscópica da articulação temporomandibular </p>
+                    <p> Osteogénese por Distracção do esqueleto craniofacial </p>
+                    <p> 1997 - Autor da primeira intervenção Cirúrgica no país de Distracção óssea mandibular </p>
+                    <p> Cirurgia das Glândulas salivares </p>
+                </div>
+                <div id="ActividadeCientifica">
+                    <div class="titulo">
+                        <h3>Actividade Científica</h3>
+                    </div>
+                    <p> Dedicado essencialmente à Cirurgia Ortognática </p>
+                    <p> Patologia Disfuncional da Articulação Temporomandibular (ATM) (tratamento médico e cirúrgico) </p>
+                    <p> Cirurgia aberta da ATM </p>
+                    <p> Autor da técnica de artroplastia interposicional da ATM com retalho de fascia temporal </p>
+                    <p> Autor da primeira intervenção Cirúrgica no país de meniscopexia temporomandibular com implante condiliano em titânio </p>
+                    <p> Cirurgia por Artroscopia da ATM </p>
+                    <p> Iniciador no País da Cirurgia Artroscópica da articulação temporomandibular </p>
+                    <p> Osteogénese por Distracção do esqueleto craniofacial </p>
+                    <p> 1997 - Autor da primeira intervenção Cirúrgica no país de Distracção óssea mandibular </p>
+                    <p> Cirurgia das Glândulas salivares </p>
+                </div>
+            </div>
+            <div id="historicoArtigos">
+                <div class="titulo">
+                    <h3>Histórico de Artigos Publicados </h3>
+                </div>
+                <div id="divHistoricoArtigos">
+                    <table id="tabelaArtigos">
+                        <thead id="headerTabela">
+                            <tr>
+                                <td>Data</td>
+                                <td>Assunto</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="linha">
+                                <td class="col1">15/10/2013</td>
+                                <td class="col2"> <a href="noticia_artigo.html">Os efeitos do Colesterol </a></td>
+                            </tr>
+                            <tr class="linha">
+                                <td class="col1">10/10/2013</td>
+                                <td class="col2"> <a href="noticia_artigo.html">Os efeitos do Açucar em excesso </a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div id="paginacao">
+                        <div><a href="#"> &lt; </a></div>
+                        <div><a href="#"> 1 </a></div>
+                        <div><a href="#"> 2 </a></div>
+                        <div><a href="#"> 3 </a></div>
+                        <div><a href="#"> > </a></div>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="emColunas">
+                <div class="coluna">
+                    <img src="./images/logoSCML_PB_200x100.png" alt="logo SCML"/>
+                    <h6>Sede:</h6>
+                    <p>
+                        Rua Trindade Coelho, 8<br/>
+                        Apartado 1109<br/>
+                        2401-801 Leiria<br/>
+                        Tel.: 244 106 202<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6 >
+                        Recepção Administrativa Central
+                    </h6>
+                    <p>
+                        Tel.: 244 106 201 <br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Lar Nossa Sra. da Encarnação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 827 400<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Clínica Médica e de Reabilitação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 824 484<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Hospital Dom Manuel de Aguiar </h6>
+                    <p>
+                        Rua Conde Ferreira<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 299<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6>
+                        Unidade Cirúrgica
+                    </h6>
+                    <p>
+                        Tel.: 244 106 203<br/>
+                    </p>
+                    <h6 >
+                        Unidade Cuidados Continuados
+                    </h6>
+                    <p >
+                        Tel.: 244 106 204<br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Creche "Casa Sanches" </h6>
+                    <p>
+                        Rua Trindade Coelho<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Residencial XXI </h6>
+                    <p>
+                        Rua do Lis<br/>
+                        2410-126 LEIRIA<br/>
+                        Tel.: 244 106 300<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+            </div>
+            <div id="linhaRodape">
+                <p>
+                    &copy; Copyright  by Gabriel, Tiago, Natanael   --  ESTG - 2014
+                </p>
+            </div>
+
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,90 @@
+  .container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 1900px;
+	border-bottom: 2px solid #d9ced2;
+	margin-bottom: 15px;
+	width: 1024px;
+  }
+strong {
+	color: #145189;
+}
+.container #sub_container #text_intro ul li {
+	list-style-image: url(../images/check_14px_blue.png);
+	color: #333333;
+	font-size: 14px;
+}
+
+.container #sub_container {
+	width: 1024px;
+	height: auto;
+	float: left;
+	margin-top: 20px;
+}
+.container #sub_container #div_marcacoes {
+	float: left;
+}
+.container #sub_container .block_info {
+	float: right;
+	position: relative;
+
+}
+.container #sub_container #text_intro p {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: #333333;
+	font-size: 14px;
+
+}
+.container #sub_container #text_intro {
+	float: left;
+}
+.sub_container_photo .photo_info {
+	width: 298px;
+	height: 298px;
+	float: right;
+}
+.sub_container_photo {
+	float: left;
+	clear: both;
+	width: 750px;
+	margin-top: 15px;
+
+}
+.sub_container_photo .text_info {
+	float: left;
+	width: 400px;
+}
+.container #sub_container .sub_container_photo .text_info h2 {
+}
+.sub_container_photo .text_info h2 {
+	color: #145189;
+	font-size: 18px;
+	margin-left: 20px;
+}
+.container #sub_container #subs_info_hospital {
+	width: 750px;
+	float: left;
+}
+.sub_container_photo .text_info h3 {
+	color: #6eaee9;
+	margin-left: 25px;
+	font-size: 16px;
+}
+.sub_container_photo .text_info p {
+	margin-left: 25px;
+	color: #333333;
+	font-size: 14px;
+}
+.sub_container_photo .text_info ul li .bold_text {
+	font-weight: bold;
+}
+.sub_container_photo .text_info li {
+	list-style-image: url(../images/check_16px_blue.png);
+	color: #333333;
+	font-size: 16px;
+	padding-bottom: 10px;
+
+}

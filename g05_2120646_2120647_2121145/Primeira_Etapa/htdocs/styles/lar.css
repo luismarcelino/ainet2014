@@ -1,0 +1,98 @@
+ .container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 2150px;
+	border-bottom: 2px solid #d9ced2;
+	margin-bottom: 15px;
+	width: 1024px;
+}
+
+strong {
+	color: #145189;
+}
+.container .content_lar h3 {
+	color: #FFFFFF;
+	text-indent: 10px;
+	background-image: -webkit-gradient(linear, 100.00% 41.18%, 0.00% 58.82%, color-stop( 0% , rgba(255,255,255,1.00)),color-stop( 100% , rgba(116,191,224,1.00)));
+	background-image: -webkit-linear-gradient(190deg,rgba(255,255,255,1.00) 0%,rgba(116,191,224,1.00) 100%);
+	background-image: linear-gradient(260deg,rgba(255,255,255,1.00) 0%,rgba(116,191,224,1.00) 100%);
+	font-weight: normal;
+	font-size: 16px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	clear: both;
+}
+.container .content_lar p {
+	color: #333333;
+	font-size: 14px;
+	text-align: justify;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.container .content_lar {
+	margin-top: 30px;
+}
+.container .content_lar h4 {
+	color: #145189;
+	text-align: center;
+}
+.container .content_lar ul li {
+	list-style-image: url(../images/lar/check_14px.png);
+	font-size: 12px;
+	line-height: 30px;
+	font-weight: bold;
+	color: #333333;
+}
+.container .content_lar ul {
+	float: left;
+	display: block;
+	width: 213px;
+
+
+}
+.container .content_lar .note {
+	font-size:12px;
+	clear: both;
+	font-weight: bold;
+}
+.container .content_lar img {
+	vertical-align: top;
+
+}
+.container .content_lar .text_div {
+	width: 700px;
+	float: left;
+}
+.container .content_lar .img_div {
+	width: 300px;
+	float: right;
+	text-align: right;
+}
+.container .content_lar .sub_content {
+	width: 1024px;
+	height: auto;
+	float: left;
+	margin-bottom: 15px;
+}
+#apoio_header {
+	background-image: -webkit-gradient(linear, 100.00% 41.18%, 0.00% 58.82%, color-stop( 0% , rgba(255,255,255,1.00)),color-stop( 100% , rgba(255,211,149,1.00)));
+	background-image: -webkit-linear-gradient(190deg,rgba(255,255,255,1.00) 0%,rgba(255,211,149,1.00) 100%);
+	background-image: linear-gradient(260deg,rgba(255,255,255,1.00) 0%,rgba(255,211,149,1.00) 100%);
+}
+#div_historia {
+	width: 1024px;
+	float: left;
+	clear: both;
+	height: auto;
+}
+#div_historia .div_block_historia {
+	float: left;
+	width: 320px;
+	margin-left: 15px;
+	margin-right: 0px;
+}
+#div_historia h2   {
+	color: #145189;
+}

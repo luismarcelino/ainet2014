@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>SCML - Especialidade</title>
+        <meta name="description" content="GNT group"/>
+        <meta name="keywords" content="Santa Casa, Misericordia, Leiria, Hospital, Clínica, Lar, Cuidados Domiciliários, Irmandade, Creche, Consultas, Geriatria" />
+        <link rel="icon" href="images/icon.gif" type="image/gif" />
+        <meta name="author" content="Gabriel Tiago Natanael">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" href="./styles/index.css" >
+        <script src="./js/libs/tinymce/js/tinymce/tinymce.min.js"></script>
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="./js/libs/modernizr/modernizr.js"></script>
+        <script type="text/javascript" src="./js/js.js"></script>
+    </head>
+    <body>
+        <noscript>Este browser não suporta, ou não tem activo, JavaScript!</noscript>
+        <div id="dialogLogin" title="Login" hidden> <!-- div escondida que contém o conteudo do popup-->
+            <form id="formLogin">
+                <label for="popUsername"> <br />Nome Utilizador:<br /> </label>
+                <input id="popUsername" type="email" size="45" required autofocus placeholder="Insira o seu Email" /> <br />
+                <label for="popPass">Palavra-Chave:<br /> </label>
+                <input id="popPass" type="text" size="45" required autofocus placeholder="Insira o seu username"/> <br />
+                <span id="msgErroPopupLogin" class="Erro"></span>
+            </form>
+        </div>
+        <header id="cabecalho">
+            <a href="index.html" >		
+                <div id="headerLeft" class="subHeader">
+                </div> 
+            </a>
+            <div id="headerRight" class="subHeader">
+                <div id="btnAreaReservada" class="pilha">
+                    <!--<input  type="button" value="Area Reservada" />-->
+                    <p id="textoBotao">área reservada</p>
+                </div>
+                <div id="txtPesquisa" class="pilha" >
+                    <input id="zonaPesquisa" type="search" />
+                    <div id="btnPesquisa" onclick="pesquisaPortal()"></div>
+                </div>
+
+                <nav class="pilha" id="navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html"><span>&nbsp; scml&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="hospital.html"> <span>&nbsp;hospital&nbsp;</span> </a>
+                        </li> 
+                        <li>
+                            <a href="apoioSocial.html"><span>&nbsp; apoio social&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="creche.html"><span>&nbsp;creche&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="irmandade.html"><span>&nbsp;irmandade&nbsp;</span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="mainEspecialidades">  
+            <div id="div_caminho">
+                <ul id="lista_caminho">
+                    <li> <a href="index.html"> Home ► </a> </li>
+                    <li> <a href="hospital.html"> Hospital ►</a> </li>
+                    <li> <a href="#"> Especialidades </a> </li>
+                </ul>
+            </div>
+            <div id="tituloEspecialidades" class="titServicos">
+                <h2>especialidades</h2>
+            </div>
+            <div>
+                <table id="t_especialidades">
+                    <tr> 
+                        <td id="celulaA1" class="colunaEsq">ACUMPUNTURA</td> 
+                        <td id="celulaB1" rowspan="28" class="colunaDta">
+                            <div id="insideTable">
+                                <h2 id="titulo_especialidade">Titulo</h2>
+                                <div id="introEspecialidade">
+                                    <p> Esta especialidade está vocacionada para o tratamento .....</p>
+                                </div>
+                                <h3 id="listaMedicosDaEspecialidade">Corpo Clínico:</h3>
+                                <div class="caixaListaMedicos">
+                                    <a href="medico.html"><div class="imgMedico"></div></a>
+                                    <div class="infoMedico">
+                                        <h3>Dr. Manuel de Aguiar</h3>
+                                        <p>Especialidade: <span class="infoEspecialidade">Ortopedia</span></p>  
+                                        <p>Telefone: <span class="infoTelefone">255330167 &nbsp;&nbsp;&nbsp;</span> e-Mail: <span class="infoEmail">manuel.aguiar@scml.com</span></p>
+
+                                        <input class="linkMarcarConsulta" type="button" value="Marcar Consulta" onclick="marcarConsulta()"/>                                            
+
+                                    </div>                                    
+                                </div>
+                                <div class="caixaListaMedicos">
+                                    <a href="medico.html"><div class="imgMedico"></div></a>
+                                    <div class="infoMedico">
+                                        <h3>Dr. Manuel de Aguiar</h3>
+                                        <p>Especialidade: <span class="infoEspecialidade">Ortopedia</span></p>  
+                                        <p>Telefone: <span class="infoTelefone">255330167</span> e-Mail: <span class="infoEmail">manuel.aguiar@scml.com</span></p>
+
+                                        <input class="linkMarcarConsulta" type="button" value="Marcar Consulta" onclick="marcarConsulta()"/>                                            
+
+                                    </div>                                    
+                                </div>
+                            </div>
+                        </td> 
+                    </tr> 
+                    <tr> <td id="celulaA2" class="colunaEsq">AUDIOLOGIA</td> </tr> 
+                    <tr> <td id="celulaA3" class="colunaEsq">CARDIOLOGIA</td> </tr> 
+                    <tr> <td id="celulaA4" class="colunaEsq">CIRURGIA GERAL</td> </tr> 
+                    <tr> <td id="celulaA5" class="colunaEsq">DOENÇAS VENOSAS </td> </tr> 
+                    <tr> <td id="celulaA6" class="colunaEsq">CIRURGIA PLÁSTICA </td> </tr> 
+                    <tr> <td id="celulaA7" class="colunaEsq">CIRURGIA VASCULAR </td></tr>
+                    <tr> <td id="celulaA8" class="colunaEsq">CLÍNICA GERAL </td> </tr> 
+                    <tr> <td id="celulaA9" class="colunaEsq">DERMATOLOGIA</td> </tr> 
+                    <tr> <td id="celulaA10" class="colunaEsq">ENDOCRINOLOGIA</td> </tr> 
+                    <tr> <td id="celulaA11" class="colunaEsq">MEDICINA DENTÁRIA</td> </tr> 
+                    <tr> <td id="celulaA12" class="colunaEsq">FISIATRIA</td> </tr>  
+                    <tr> <td id="celulaA13" class="colunaEsq">GASTRENTEROLOGIA</td> </tr> 
+                    <tr> <td id="celulaA14" class="colunaEsq">GINECOLOGIA / OBSTETRICIA </td> </tr> 
+                    <tr> <td id="celulaA15" class="colunaEsq">MEDICINA INTERNA</td> </tr> 
+                    <tr> <td id="celulaA16" class="colunaEsq">MEDICINA DESPORTIVA</td> </tr> 
+                    <tr> <td id="celulaA17" class="colunaEsq">NEUROCIRURGIA</td> </tr> 
+                    <tr> <td id="celulaA18" class="colunaEsq">NEUROLOGIA</td> </tr> 
+                    <tr> <td id="celulaA19" class="colunaEsq">NUTRIÇÃO</td> </tr> 
+                    <tr> <td id="celulaA20"  class="colunaEsq">OFTALMOLOGIA</td> </tr> 
+                    <tr> <td id="celulaA21" class="colunaEsq">OTORRINOLARINGOLOGIA </td> </tr> 
+                    <tr> <td id="celulaA22" class="colunaEsq">ORTOPEDIA </td> </tr> 
+                    <tr> <td id="celulaA23" class="colunaEsq">PNEUMOLOGIA</td> </tr> 
+                    <tr> <td id="celulaA24" class="colunaEsq">PSICOLOGIA</td> </tr> 
+                    <tr> <td id="celulaA25" class="colunaEsq">PSIQUIATRIA</td> </tr> 
+                    <tr> <td id="celulaA26" class="colunaEsq">REUMATOLOGIA</td> </tr> 
+                    <tr> <td id="celulaA27" class="colunaEsq">UROLOGIA</td> </tr> 
+                    <tr> <td id="celulaA28" class="colunaEsq">ELETROMIOGRAFIA</td> </tr> 
+                </table>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="emColunas">
+                <div class="coluna">
+                    <img src="./images/logoSCML_PB_200x100.png" alt="logo SCML"/>
+                    <h6>Sede:</h6>
+                    <p>
+                        Rua Trindade Coelho, 8<br/>
+                        Apartado 1109<br/>
+                        2401-801 Leiria<br/>
+                        Tel.: 244 106 202<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6 >
+                        Recepção Administrativa Central
+                    </h6>
+                    <p>
+                        Tel.: 244 106 201 <br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Lar Nossa Sra. da Encarnação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 827 400<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Clínica Médica e de Reabilitação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 824 484<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Hospital Dom Manuel de Aguiar </h6>
+                    <p>
+                        Rua Conde Ferreira<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 299<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6>
+                        Unidade Cirúrgica 
+                    </h6>
+                    <p>
+                        Tel.: 244 106 203<br/>
+                    </p>
+                    <h6 >
+                        Unidade Cuidados Continuados
+                    </h6>
+                    <p >
+                        Tel.: 244 106 204<br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Creche "Casa Sanches" </h6>
+                    <p>
+                        Rua Trindade Coelho<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Residencial XXI </h6>
+                    <p>
+                        Rua do Lis<br/>
+                        2410-126 LEIRIA<br/>
+                        Tel.: 244 106 300<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+            </div>
+            <div id="linhaRodape">
+                <p>
+                    &copy; Copyright  by Gabriel, Tiago, Natanael   --  ESTG - 2014
+                </p>
+            </div>
+
+        </footer>
+    </body>
+</html>

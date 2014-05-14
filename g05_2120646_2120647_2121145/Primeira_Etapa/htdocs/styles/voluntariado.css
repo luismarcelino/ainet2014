@@ -1,0 +1,29 @@
+  .container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: auto;	
+	border-bottom: 2px solid #d9ced2;
+
+	margin-bottom: 15px;
+	width: 1024px;
+  }
+
+strong {
+	color: #145189;
+}
+.mensagem {
+	margin-top: 25px;
+	color: #145189;
+	font-style: italic;
+	font-size: 16px;
+	text-align: justify;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+}
+#contactus {
+	color: #E14F42;
+}

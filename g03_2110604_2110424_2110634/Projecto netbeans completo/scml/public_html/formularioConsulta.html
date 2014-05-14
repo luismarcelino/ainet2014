@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="utf-8">
+        <title>SCML - Marcar Consulta</title>
+        <meta name="description" content="GNT group"/>
+        <meta name="keywords" content="Santa Casa, Misericordia, Leiria, Hospital, Clínica, Lar, Cuidados Domiciliários, Irmandade, Creche, Consultas, Geriatria" />
+        <link rel="icon" href="images/icon.gif" type="image/gif" />
+        <meta name="author" content="Gabriel Tiago Natanael">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+        <link rel="stylesheet" href="./styles/index.css" >
+        <script src="./js/libs/tinymce/js/tinymce/tinymce.min.js"></script>
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.css">
+        <link rel="stylesheet" href="./js/libs/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.custom.min.css">
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.js"></script>
+        <script src="./js/libs/jquery-ui-1.10.4/js/jquery-ui-1.10.4.custom.min.js"></script>
+        <script src="./js/libs/modernizr/modernizr.js"></script>
+        <script type="text/javascript" src="./js/js.js"></script>
+    </head>
+    <body>
+        <noscript>Este browser não suporta, ou não tem activo, JavaScript!</noscript>
+        <div id="dialogLogin" title="Login" hidden> <!-- div escondida que contém o conteudo do popup-->
+            <form id="formLogin">
+                <label for="popUsername"> <br />Nome Utilizador:<br /> </label>
+                <input id="popUsername" type="email" size="45" required autofocus placeholder="Insira o seu Email" /> <br />
+                <label for="popPass">Palavra-Chave:<br /> </label>
+                <input id="popPass" type="text" size="45" required autofocus placeholder="Insira o seu username"/> <br />
+                <span id="msgErroPopupLogin" class="Erro"></span>
+            </form>
+        </div>
+        <header id="cabecalho">
+            <a href="index.html" >		
+                <div id="headerLeft" class="subHeader">
+                </div> 
+            </a>
+            <div id="headerRight" class="subHeader">
+                <div id="btnAreaReservada" class="pilha">
+                    <!--<input  type="button" value="Area Reservada" />-->
+                    <p id="textoBotao">área reservada</p>
+                </div>
+                <div id="txtPesquisa" class="pilha" >
+                    <input id="zonaPesquisa" type="search" />
+                    <div id="btnPesquisa" onclick="pesquisaPortal()"></div>
+                </div>
+                <nav class="pilha" id="navbar">
+                    <ul>
+                        <li>
+                            <a href="index.html"><span>&nbsp; scml&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="hospital.html"> <span>&nbsp;hospital&nbsp;</span> </a>
+                        </li> 
+                        <li>
+                            <a href="apoioSocial.html"><span>&nbsp; apoio social&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="creche.html"><span>&nbsp;creche&nbsp;</span> </a>
+                        </li>
+                        <li>
+                            <a href="irmandade.html"><span>&nbsp;irmandade&nbsp;</span></a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <div id="main_formulario">
+            <div id="div_caminho">
+                <ul id="lista_caminho">
+                    <li> <a href="index.html"> Home ► </a> </li>
+                    <li> <a href="#"> Marcar Consulta </a> </li>
+                </ul>
+            </div>
+            <div id="div_formulario">
+                <form id="myform" method="post" action="">
+                    <div id="descricao_form">
+                        <div>
+                            <h2>Marcação de Consultas e Exames</h2>
+                            <h4>"Aqui pode efectuar o pedido de marcação de uma consulta ou de um exame. 
+                                Este procedimento carece de validação pelo Hospital D. Manuel de Aguiar.
+                                Oportunamente será contactado para confirmação do dia e hora do seu pedido.
+                                Obrigado!" </h4>
+                        </div>
+                    </div>						
+                    <label for="nome">Nome * <br /> </label>
+                    <input id="nome" type="text" size="70" required autofocus placeholder="Insira o seu nome"/> <br />
+                    <p id="pMorada"> Morada  </p>
+                    <div id="morada">
+                        <label for="rua">Rua <br /> </label>
+                        <input id="rua" type="text" size="70" placeholder="Insira a sua rua" />
+                        <label for="localidade"> <br /> Localidade <br /> </label>
+                        <input id="localidade" type="text" size="40" placeholder="Insira a sua Localidade" />
+                        <label for="codPostal"> <br /> Código Postal <br /></label>
+                        <input id="codPostal" type="text" size="40" placeholder="Insira o seu Código Postal" />
+                    </div>
+                    <label for="DataNasc"> <br /> Data de Nascimento *  <img src="./images/calendar.gif" alt="selecionar data"> <br />  </label>
+                    <input id="DataNasc" class="datePicker" type="text" required autofocus />
+                    <label for="telefone"> <br /> <br /> Telefone * <br /> </label>
+                    <input id="telefone" type="tel" size="40" required autofocus placeholder="Insira o seu Telefone" />
+                    <label for="email"> <br /> <br /> Email * <br /> </label>
+                    <input id="email" type="email" size="40" required autofocus placeholder="Insira o seu Email" />
+                    <label for="sistema_saude"> <br /> <br /> Sistema de Saúde  <br /> </label>
+                    <select id="sistema_saude" class="comboBox">
+                        <option value="">--- Seleccione ---</option>
+                        <option value="10">ADMG (só para MFR)</option>
+                        <option value="1">ADSE</option>
+                        <option value="5">IASFA (ADMA, ADME, ADMFA)</option>
+                        <option value="12">Medis (só para MFR)</option>
+                        <option value="7">Multicare</option>
+                        <option value="13">Particular</option>
+                        <option value="8">Planicare</option>
+                        <option value="11">SAD PSP (só para MFR)</option>
+                        <option value="2">SAMS Centro</option>
+                        <option value="6">Serviços Sociais da CGD</option>
+                        <option value="9">Servimed</option>
+                        <option value="3">Sindicato dos Funcionários Judiciais</option>
+                        <option value="4">SNS</option>
+                    </select>
+                    <label for="consulta"> <br /> <br /> Consulta <span class="notas"> (Obrigatório se não selecionar Exame)</span><br /> </label>
+                    <select id="consulta" required class="comboBox" >
+                        <option value="">--- Seleccione ---</option>
+                        <option value="65">Acupunctura</option>
+                        <option value="66">Cardiologia</option>
+                        <option value="13">Cirurgia Geral</option>
+                        <option value="20">Cirurgia Plástica e Reconstrutiva</option>
+                        <option value="21">Cirurgia Vascular</option>
+                        <option value="67">Dermatologia</option>
+                        <option value="78">Diabetes</option>
+                        <option value="11">Dietista</option>
+                        <option value="8">Endocrinologia</option>
+                        <option value="23">Estomatologia</option>
+                        <option value="68">Gastrenterologia</option>
+                        <option value="69">Ginecologia</option>
+                        <option value="16">Medicina Desportiva</option>
+                        <option value="24">Medicina Física e de Reabilitação</option>
+                        <option value="26">Mesoterapia</option>
+                        <option value="27">Neurocirurgia</option>
+                        <option value="70">Neurologia</option>
+                        <option value="71">Oftalmologia adulto e infantil</option>
+                        <option value="72">Ortopedia</option>
+                        <option value="73">Otorrinolaringologia</option>
+                        <option value="74">Pneumologia</option>
+                        <option value="10">Psicologia Clínica</option>
+                        <option value="9">Psiquiatria</option>
+                        <option value="75">Reumatologia</option>
+                        <option value="76">Urologia</option>
+                    </select>
+                    <label for="exame"> <br /> <br /> Exame <span class="notas"> (Obrigatório se não selecionar Consulta)</span><br /> </label>
+                    <select id="exame" class="comboBox">
+                        <option value="">--- Seleccione ---</option>
+                        <option value="42">Anatomia Patológica</option>
+                        <option value="3">Análises Clínicas</option>
+                        <option value="51">Audiometria</option>
+                        <option value="1">Cardiologia</option>
+                        <option value="45">Colonoscopia</option>
+                        <option value="4">Dermatologia</option>
+                        <option value="48">Doppler a cores, transesofágico</option>
+                        <option value="62">Eco-Doppler</option>
+                        <option value="47">Ecocardiografia Modo M, 2D</option>
+                        <option value="61">Ecografia</option>
+                        <option value="43">Ecografia Geral e Vascular</option>
+                        <option value="39">Electrocardiograma com prova de esforço em tapete rolante</option>
+                        <option value="49">Electrocardiograma simples</option>
+                        <option value="44">Endoscopia alta</option>
+                        <option value="19">Gastrenterologia</option>
+                        <option value="5">Ginecologia</option>
+                        <option value="57">Imagiologia</option>
+                        <option value="54">Impedânciometria</option>
+                        <option value="63">Mamografia Digital</option>
+                        <option value="50">MAPA (medição ambulatória da pressão arterial)</option>
+                        <option value="28">Neurologia</option>
+                        <option value="32">Oftalmologia</option>
+                        <option value="33">Ortopedia</option>
+                        <option value="64">Osteodensitometria</option>
+                        <option value="37">Otorrinolaringologia</option>
+                        <option value="2">Pneumologia</option>
+                        <option value="53">Posturografia dinâmica e computorizada</option>
+                        <option value="56">Provas funcionais respiratórias</option>
+                        <option value="46">Rectosigmoidoscopia</option>
+                        <option value="58">Reumatologia</option>
+                        <option value="60">Rx-Digital</option>
+                        <option value="59">TAC</option>
+                        <option value="55">Timpanometria</option>
+                        <option value="29">Urologia</option>
+                        <option value="52">Videonistagmografia</option>
+                    </select>
+                    <label for="DataPretendida"> <br /> <br /> Data Pretendida * <img src="./images/calendar.gif" alt="selecionar data"> <br /> </label>
+                    <input id="DataPretendida" class="datePicker" type="text" required autofocus />
+                    <br /> <br />
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="emColunas">
+                <div class="coluna">
+                    <img src="./images/logoSCML_PB_200x100.png" alt="logo SCML"/>
+                    <h6>Sede:</h6>
+                    <p>
+                        Rua Trindade Coelho, 8<br/>
+                        Apartado 1109<br/>
+                        2401-801 Leiria<br/>
+                        Tel.: 244 106 202<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6 >
+                        Recepção Administrativa Central
+                    </h6>
+                    <p>
+                        Tel.: 244 106 201 <br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Lar Nossa Sra. da Encarnação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 827 400<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Clínica Médica e de Reabilitação </h6>
+                    <p>
+                        Rua Nossa Sra. da Encarnação<br/>
+                        2414-004 LEIRIA<br/>
+                        Tel.: 244 824 484<br/>
+                        Fax: 244 823 980<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Hospital Dom Manuel de Aguiar </h6>
+                    <p>
+                        Rua Conde Ferreira<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 299<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6>
+                        Unidade Cirúrgica 
+                    </h6>
+                    <p>
+                        Tel.: 244 106 203<br/>
+                    </p>
+                    <h6 >
+                        Unidade Cuidados Continuados
+                    </h6>
+                    <p >
+                        Tel.: 244 106 204<br/>
+                    </p>
+                </div>
+                <div class="coluna">
+                    <h6> Creche "Casa Sanches" </h6>
+                    <p>
+                        Rua Trindade Coelho<br/>
+                        2410-189 LEIRIA<br/>
+                        Tel.: 244 100 009<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                    <h6> Residencial XXI </h6>
+                    <p>
+                        Rua do Lis<br/>
+                        2410-126 LEIRIA<br/>
+                        Tel.: 244 106 300<br/>
+                        Fax: 244 106 298<br/>
+                        <a href="mailto:geral@misericordiadeleiria.pt">geral@misericordiadeleiria.pt </a><br/>
+                    </p>
+                </div>
+            </div>
+            <div id="linhaRodape">
+                <p>
+                    &copy; Copyright  by Gabriel, Tiago, Natanael   --  ESTG - 2014
+                </p>
+            </div>
+
+        </footer>
+    </body>
+</html>

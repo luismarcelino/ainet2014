@@ -1,0 +1,488 @@
+  body{
+font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	  }
+
+  .menu_main{
+	height: 40px;
+	margin-right: 2px;
+	text-align: right;
+	margin-top: 80px;
+	list-style: none;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	font-size: 9px;
+	line-height: 10px;
+	text-transform: uppercase;
+	float: right;
+	  }
+	  
+  .menu_main li {
+	  margin: 0;
+	  padding: 0;
+	  list-style: none;
+	  display: inline;
+	  border-left: 1px solid #d9ced2;  
+  }
+  .menu_main a {
+	  background: #FFFFFF;
+	 
+	  color: #313538;
+	  margin: 0;	
+	  padding: 8px 12px;
+	  text-decoration: none;
+	  font-weight: normal;
+  }
+  .header .div_btns {
+	float: right;
+	margin-top: 30px;
+	height: 26px;
+	width: 140px;
+  }
+  
+  .login {
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-color: #FFFFFF;
+	background-color: #E14F42;
+	color: #FFFFFF;
+	float: left;
+	height: 21px;
+	padding-top: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	
+	  }
+	 .login:hover{
+	background: #AFCFED;
+	color: #FFFFFF;
+	  }
+  .menu_main a:hover {
+	  background: #3e8cd2 ;
+	  color: #fff;
+	  padding-bottom: 8px;
+  }
+  
+  .footer {
+	width: 100%;
+	height: 230px;
+	bottom: 0;
+	clear: both;
+	background-color: #CDCBCB;
+	position: relative;
+	min-width: 1024px;
+	margin-top: 50px;
+	
+  }
+  .header{
+	width: 1024px;
+	z-index: inherit;
+	height: 120px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	border-bottom: 1px solid #CCCCCC;
+	  }
+  .header .logo {
+	  width: 120px;
+	  float: left;
+	  border-color: #E14F42;
+	  border-radius: 4px 0px 4px 4px / 4px;
+	  border-width: 1px;
+	  font-weight: bold;
+  }
+  .copyrigth {
+	color: #999999;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+	font-size: small;
+  }
+  .footer .left {
+	float: left;
+	border-right-color: #FFFFFF;
+	border-right-style: inset;
+	background-color: #CDCBCB;
+	position: absolute;
+	width: 48%;
+	text-align:left;
+	height: 230px;
+  }
+  .bottom .go_top {
+	  width: 40px;
+	  height: 40px;
+	  float: right;
+	  margin-top: 2px;
+	  margin-right: 15px;
+	  color: #F1F1F1;
+	  background-color: #3e8cd2;
+  }
+  .bottom .go_top:hover {
+	  background-color:#AFCFED;
+  }
+  .bottom .copyrigth {
+	  width: 500px;
+	  float: left;
+	  font-size:9px;
+  }
+  .bottom {
+	  width:70%;
+	  height: 70px;
+	  clear: both;
+	  margin-left:auto;
+	  margin-right:auto;
+	  margin-top: 15px;
+  }
+  
+   .btn_blue_news {
+	  width:100px;
+	margin-top: 25px;
+	color: #fff;
+	font-size: 12px;
+	line-height: 20px;
+	padding: 5px;
+	background-color: #3e8cd2;
+	border: none;
+	margin-right: 60px;
+	
+	clear:both;
+	float:right;
+  }
+  .btn_blue_news:hover {
+   background-color:#AFCFED;
+  }
+  
+  #text2{
+	   font-style: italic;
+	  color: #626161;
+	  }
+  .block_newsletter {
+	width: 490px;
+	float: right;
+  
+  }
+  .footer .left .block_newsletter #text1 {
+	   color: #626161;
+  }
+  
+  #email_news {
+	border: 1px solid #bbafaf;
+	width:430px;
+	margin-right:20px;
+	background-color: #fff;
+	color: #a3a1a1;
+	font: italic 14px/20px 'Open Sans', sans-serif;
+	height: 37px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-bottom: 9px;
+	padding-left: 16px;
+	padding-right: 16px;
+	float:left;
+	padding-top: 8px;
+  }
+
+
+    .input_std{
+border: 1px solid #bbafaf;
+width:170px;
+	background-color: #fff;
+	color: #a3a1a1;
+	font: italic 14px/20px 'Open Sans', sans-serif;
+	height: 37px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-bottom: 9px;
+	padding-left: 16px;
+	padding-right: 16px;
+	padding-top: 8px;
+	margin-left:15px;
+	margin-right:15px;
+	margin-top:20px;
+		
+  }
+.footer .right {
+	left: 50%;
+	float: left;
+	padding-left: 0px;
+	padding-top: 0px;
+	width: 48%;
+	clear: none;
+	position: absolute;
+	height: 230px;
+	top: 1px;
+	
+  }
+	
+.more_contacts_menu{
+	margin-top: 2px;
+	clear: both;
+	}
+.footer .more_contacts_menu ul li {
+	display: inline;
+	color: #333333;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: 13px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	margin-left:10px;
+	font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, Sans-Serif;
+}
+
+.footer .right .more_contacts_menu ul li .initial_letter {
+	color: #FFFFFF;
+	background-color: #3E8CD2;
+	padding-top: 1px;
+	padding-right: 4px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	font-size: 14px;
+	margin-right: 5px;
+}
+
+#btn_scml{
+	display:none;
+	}
+.footer .right .more_contacts_menu ul li .initial_letter_main {
+	color: #FFFFFF;
+	background-color: #E14F42;
+	
+	padding-top: 1px;
+	padding-right: 4px;
+	padding-bottom: 1px;
+	padding-left: 4px;
+	font-size: 14px;
+	margin-right: 5px;
+}
+.footer .right .more_contacts_menu ul li a {
+	text-decoration: none;
+	text-shadow: 0px 0px;
+	color: #333333;
+}
+.footer .right .more_contacts_menu ul {
+   margin:0;
+    padding:0;
+}
+.footer .right .more_contacts_menu ul li:hover {
+    background-color:#AFCFED;
+}
+.footer .right div .div_more_contact #title_other_contacts {
+	color: #333333;
+	font-weight: bold;
+	font-size: 11px;
+	padding:2px;
+}
+
+.footer .right .contact_lar {
+	display: none;
+	height: 160px;
+}
+.footer .right .contact_santa_casa {
+	height: 160px;
+	
+}
+
+.footer .right .contact_hospital .info_contact_hospital {
+	float: left;
+	height: 160px;
+	margin-right: 15px;
+	width: 250px;
+}
+.footer .right .contact_hospital .other_contact_hospital {
+	padding-top:3px;
+	width: auto;
+	height: 160px;
+}
+.footer .right .contact_clinica {
+	display: none;
+	height: 160px;
+}
+.footer .right  .contac_info {
+	color: #626161;
+	font-size: 11px;
+	padding-bottom: 0px;
+}
+.footer .right  .contact_title {
+	color: #626161;
+	font-weight: bold;
+	font-size: 12px;
+	padding-bottom: 0px;
+}
+.footer .right .contact_hospital {
+	height: 160px;
+	display:none;
+}
+.footer .right .contact_creche {
+	display: none;
+	height: 160px;
+}
+.footer .right .contact_residencial {
+	display: none;
+	height: 160px;
+}
+.footer .right .contact_navi {
+	margin-bottom: 10px;
+	bottom: 10px;
+	clear: both;
+	min-width: 512px;
+}
+.footer .right .contact_navi .div_more_contact {
+	margin-top: 10px;
+}
+.div_search{
+	width: 200px;
+	height: 130px;
+	background-color: #999999;
+	margin-left: 824px;
+	z-index: 20;
+	position: absolute;
+	margin-top: 53px;
+	opacity: 0.9;
+	border-radius: 4px;
+	display: none;
+	border: 2px solid #FFFFFF;
+	}
+	
+
+.div_login  {
+	width: 200px;
+	height: 200px;
+	background-color: #999999;
+	margin-left: 824px;
+	z-index: 20;
+	position: absolute;
+	margin-top: 53px;
+	opacity: 0.9;
+	border-radius: 4px;
+	display: none;
+	border: 2px solid #FFFFFF;
+}
+.contac_info .address .block {
+	width: 200px;
+	height: 100px;
+	float: left;
+}
+.contac_info .address .block_morada_hospital {
+	width: 160px;
+	height: 100px;
+	float: left;
+}
+.block_phone {
+	width: 130px;
+	height: 100px;
+	float: left;
+}
+.block_phone_hospital {
+	width: 200px;
+	height: 100px;
+	float: left;
+}
+.contac_info .address .title{
+	color: #3E8CD2;
+	font-size: 13px;
+	line-height: 25px;
+
+}.contac_info  img {
+	margin-right: 10px;
+}
+.footer .right .contact_santa_casa .contac_info .address {
+	float: left;
+	min-width: 600px;
+}
+
+.title_top {
+	height: 30px;
+	color: #FFFFFF;
+	text-indent: 20px;
+	line-height: 28px;	
+	background-image: linear-gradient(260deg,rgba(255,255,255,1.00) 0%,rgba(62,140,210,1.00) 100%);
+}
+.block_title {
+	color: #FFFFFF;
+	background-color: #6eaee9;
+	text-indent: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	padding-right: 0px;
+}
+.header .div_btns img {
+	vertical-align: middle;
+	width: 26px;
+	height: 26px;
+	margin-left: 5px;
+}
+.header .div_btns .login a {
+  	text-decoration: none;
+	color: #FFFFFF;
+}
+#map_canvas {
+        width: 500px;
+        height: 400px;
+}
+
+.floatDiv {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+ display:none;
+}
+.floatDiv:target {
+  opacity:1;
+
+}
+
+.floatDiv > div {
+  width: 500px;
+  height: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 15px 20px 13px 20px;
+  border-radius: 10px;
+  background: #fff;
+  background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999);
+}
+
+.close {
+  background: #606061;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+  cursor:pointer;
+}
+
+.close:hover { background: #3E8CD2; }
+
+.link_mapa {
+	text-decoration: none;
+	font-weight: bold;
+	color: #666666;
+	
+}

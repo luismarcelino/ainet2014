@@ -1,0 +1,24 @@
+  .container{
+	clear: both;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	height: 650px;	
+	border-bottom: 2px solid #d9ced2;
+
+	margin-bottom: 15px;
+	width: 1024px;
+  }
+.orgao {
+	float: left;
+	width: 30%;
+	margin-left: 25px;
+	margin-top: 30px;
+}
+.container .orgao h4 {
+	color: #145189;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-top: 15px;
+	margin-bottom: 3px;
+}

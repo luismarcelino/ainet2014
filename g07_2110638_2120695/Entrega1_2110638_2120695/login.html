@@ -1,0 +1,103 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+  <head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+    <title>SCMLeiria - Autenticação</title>
+    <!-- Para controlo do botão Topo -->
+    <script type="text/javascript" src="js/scrolltopcontrol.js"> </script>
+    <script type="text/javascript" src="js/jquery.js"> </script> 
+    <script type="text/javascript"> 
+	  // <![CDATA[ 
+		<!-- Script para fixa barra de menu superior, após scroll -->
+		$(document).ready(function() {
+		  var s = $('#sup_fixada');
+		  var pos = s.position();                    
+		  $(window).scroll(function() {
+			var windowpos = $(window).scrollTop();
+			if (windowpos >= pos.top) {
+			  s.addClass('fixada');
+			} else {
+			  s.removeClass('fixada'); 
+			}
+		  });
+	    });
+	  // ]]>
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+  </head>
+  <body>
+    <div id="main">
+      <div id="header">
+        <div id="cab_fixo">
+		  <div id="logo">
+			<a href="index.html"><img src="img/logo.jpg" alt="SCML - Santa Casa da Misericórdia de Leiria" /></a>
+		  </div>		 
+		  <div id="menu">
+			<ul>
+			  <li>|</li>
+			  <li><a href="cchegar.html">Como chegar</a>|</li>
+			  <li><a href="index.html">English</a>|</li>
+			  <li><a href="faqs.html">Perguntas Frequentes</a>|</li>
+			  <li><a href="contactos.html">Contactos</a>|</li>
+		    </ul>
+		    <div id="area_login">
+			  <a href="login.html"><img src="img/login.png" alt="Área do Utente" /></a>
+		    </div>
+		  </div>
+		  <div id="texto_cab">
+		    <p><br/>O saber da experiência.<br/>500 anos de história.</p>
+		  </div>
+	    </div>
+		<div id="content_cor">
+	      <div id="sup_fixada">
+		    <p>| <a href="index.html">Início</a>
+			| <a href="consultas.html">Marcação de Consultas</a>
+			| <a href="saude.html">Saúde</a>
+			| <a href="cuidadosg.html">Cuidados Geriátricos</a>
+			| <a href="creche.html">Creche</a>
+			| <a href="irmandade.html">Irmandade</a> | </p>
+	      </div>
+	      <div id="content_in">
+		    <div style="clear:both"></div>
+		    <div id="body">
+			  <h4>Área do Utente</h4>
+			  <img src="img/blank.png" alt=""/>
+				<p>Dados de autenticação:</p>
+				<br/>
+				<form id="form" action="#" method="post" >
+					<div id="labels">				
+						<p><label for="username">Nome de utilizador: *</label></p>
+						<p><label for="password">Senha: *</label></p>
+						<p>* Campos obrigatórios.</p>
+					</div>
+					<div id="inputs">
+						<p><input type="text" name="username" id="username" value="" /></p>
+						<p><input type="password" name="password" id="password" value="" /></p>
+						<br />
+						<br />
+						<input type="submit" value="Validar" onclick="alert('Função não implementada');" style="width: 80px;" />
+						<input type="reset" value="Limpar" style="width: 80px;" />
+					</div>
+				</form>
+		    <div style="clear:both"></div>
+	      </div>
+	    </div>   	 
+	 
+
+  <div style="clear:both"></div>
+  <div id="footer2">
+    <div id="footer2_tam">
+      <p id="esq">©2014 Santa Casa da Misericórdia de Leiria. Todos os direitos reservados.</p>
+      <p id="dir"><a href="avisosl.html">Avisos Legais</a> | <a href="politicap.html">Política de Privacidade</a></p>
+      <div style="clear:both"></div>
+    </div>
+    <div style="clear:both"></div>
+  </div>
+</div>
+</div>
+</div>
+</body>
+</html>
