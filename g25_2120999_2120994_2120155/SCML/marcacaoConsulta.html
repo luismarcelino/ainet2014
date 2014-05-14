@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ 
+<head> 
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="style/style.css" />
+<script type="text/javascript" src="js/jquery.min.js"> </script>
+<script type='text/javascript' src='js/menu_jquery.js'></script>
+
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css"> 
+ <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+ <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+ <script type='text/javascript' src='js/verificaForm.js'></script>
+
+
+<script type="text/javascript">
+
+
+
+
+</script>
+
+<title>SCML - Santa Casa da Misericórdia de Leiria</title> 
+
+</head> 
+
+
+<body> 
+
+<div id="head">
+	<a href="index.html"><img src="imagens/banner.png" width="1335" height="155"/></a>
+</div>
+<div id="menu">
+  <!-- MENUS -->
+  <div id='cssmenu'>
+  <ul>
+     <li class='active'><a href='index.html'><span>Home</span></a></li>
+     <li class='has-sub'><a href='#'><span>Saúde</span></a>
+        <ul>
+           <li><a href='listaEspecialidades.html'><span>Lista de Especialidades</span></a></li>
+           <li><a href='corpoClinico.html'><span>Corpo Clínico</span></a></li>
+           <li><a href='artigosNoticias.html'><span>Artigos/Noticias</span></a></li>
+           <li><a href='marcacaoConsulta.html'><span>Marcação Consultas</span></a></li>
+           <li class='last'><a href='confirmarMarcacoes.html'><span>Confirmação de Marcações</span></a></li>
+        </ul>
+     </li>
+     <li class='has-sub'><a href='#'><span>Cuidados Geriátricos</span></a>
+        <ul>
+           <li><a href='lar.html'><span>Lar</span></a></li>
+           <li><a href='residencial.html'><span>Residencial</span></a></li>
+           <li><a href='creche.html'><span>Creche</span></a></li>
+           <li class='last'><a href='irmandade.html'><span>Irmandade</span></a></li>
+        </ul>
+     </li>
+     <li><a href='contactos.html'><span>Contactos</span></a></li>
+     <li class='has-sub last'><a href='#'><span>Gestão</span></a>
+         <ul>
+           <li><a href='pessoal.html'><span>Pessoal</span></a></li>
+           <li><a href='medico.html'><span>Médico</span></a></li>
+           <li class='last'><a href='users.html'><span>Gestão Utilizadores</span></a></li>
+        </ul>
+     </li>
+      <li><a href='login.html'><span>Login</span></a></li>
+  </ul>
+  </div>
+</div>
+</br>
+<div id="main">
+	<div id="top">
+		<div id="cse" class="canto"></div>
+		<div id="csd" class="canto"></div>
+	</div>
+	<div id="content" class="clearfix">
+		<div id="container">
+  			<div id="center" class="column">
+
+  				 <form id="formulario">
+                  <table id="tableForm"><textBody>
+                     
+                        <tr>
+                           <td >
+                              <label for="Nome">Primeiro nome:</label>
+                           </td>
+                           <td>
+                              <input class="textoInput" id="nome" type="text" name="name" value=""/> 
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <label for ="Apelido">Apelido:</label>
+                           </td>
+                           <td>
+                              <input type="text" class ="textoInput" name="UltimoNome" id ="apelido"/> 
+                           </td>
+                        </tr>
+                        <tr>
+                           <td>
+                              <label for ="Nascimento">Data de nascimento:
+                                 </label>
+                              </td>
+                              <td>
+                                 <input type="text" class="textoInput" id="datepicker" name="age" /> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <label for="Sexo">Sexo:</label>
+                              </td>
+                              <td>
+                                 Masculino<input type="radio" name="Nome" value="Masculino" checked/> Feminino<input type="radio" name="Nome" value="Feminino"/>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <label for="Especialidade">Especialidade:</label>
+                              </td>
+                              <td>
+                                 <selectPart>
+                                    <select name=especialidade id="especialidade">
+                                       <option value="algo">Tratamento 1 de algas marinhas </option>
+                                       <option value="algo">Tratamento 2  </option>
+                                       <option value="algo">Tratamento 3  </option>
+                                    </select>
+                                 </selectPart>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <label for ="dataMarcacao">Data pretendida:</label>
+                              </td>
+                              <td>
+                                 <input type="text" class="textoInput" id="datepicker1" name="data"/>
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <label for="telefone">Contacto:</label>
+                              </td>
+                              <td>
+                                 <input class="textoInput" type="text" name="phone" id="phone"/> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <label for="email"> Email:</label>
+                              </td>
+                              <td>
+                                 <input type="text" class="textoInput" name ="email" id="email" value=""/> 
+                              </td>
+                           </tr>
+                           <tr>
+                              <td>
+                                 <label for="Observacoes">Observações adicionais:</label></br>
+                              </td>
+                              <td>
+                                 <textarea id="area" name="observações" class="textoInput"/> 
+                              </textarea> 
+                              <input type="reset" name="reset" class="botao" value="Reset" />
+                              <input type ="submit" class="botao" name="submit" value="Submeter"/>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td></td>
+                           <td align="right">
+                              
+                           </td>
+                        </tr>
+                     
+                     </table></textBody>
+                 
+               </form>
+  				
+  			</div>
+  			<div id="left" class="column">
+
+  				<textHeader> </br> Marcar Consulta </textHeader>
+  				<textBody> </br> </br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+  					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+  					Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  				</textBody>
+
+  				</br>
+  				</br>
+  				<textBody>Button</textBody></br></br>
+  				<textBody>Button</textBody></br></br>
+  				<textBody>Button</textBody></br></br>
+  				<textBody>Button</textBody></br></br>
+  			</br>
+
+  			</div>
+  			<div id="right" class="column">
+
+  				<h1> YOLO Swag R</h1>
+  				<img src="imagens/banner.png" width="150" height="150"/>
+
+  			</div>
+  		
+		</div>
+	</div>
+	<div id="bottom">
+		<div id="cie" class="canto"></div>
+		<div id="cid" class="canto"></div>
+	</div>
+
+</div>
+<div id="footer">
+		<p> 2014 | Santa Casa da Misericórdia de Leiria | AINET - ESTG - IPLEIRIA</p>
+</div>
+
+
+
+
+
+
+</body> 
+
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Santa Casa da Misericórdia de Leiria - Corpo Clínico</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Include page header -->
+    <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fserver46.serveftp.com%2FAInet%2FProjeto%2Fpublic%2F">Validate Page!</a>
+
+    <!-- Header Begin -->
+    <div class="mainHeader">
+        <div class="topLinks">
+            <ul>
+                <li><a href="#" title="Login">Entrar</a>
+                </li>
+                <li>|</li>
+                <li><a href="#" title="Registar">Registar</a>
+                </li>
+                <li>|</li>
+                <li><a href="#" title="Mapa">Como chegar</a> 
+                </li>
+                <li>|</li>
+                <li><a href="#" title="English">English</a>
+                </li>
+            </ul>
+        </div>
+        <div id="search">
+            <input type="search" name="pesquisa">
+            <img src="../img/icLupa.png" alt="lupa">
+        </div>
+        <div id="logo">
+            <a href="../index.html">
+                <img src="../img/logo_santa_casa.png" alt="Santa Casa da Misericórdia de leiria">
+            </a>
+        </div>
+        <div id="slogan">
+            <img src="../img/slogan.png" alt="Santa Casa da Misericórdia de leiria">
+        </div>
+        <div class="navigationBar">
+            <ul>
+                <li><a class="" href="../index.html">Início</a>
+                </li>
+                <li><a class="" href="../Saude/saude.html">Saúde</a>
+                </li>
+                <li><a class="" href="../CuidadosGeriatricos/cuidados_geriatricos.html">Cuidados Geriátricos</a>
+                </li>
+                <li><a class="" href="../Creche/creche.html">Creche</a>
+                </li>
+                <li><a class="" href="../Irmandade/irmandade.html">Irmandade</a>
+                </li>
+                <li><a class="" href="../Contactos/contactos.html">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Main Content Begin -->
+    <div class="mainContent">
+
+        <div id="pathState" class="insideContent">
+            <a class="" href="../index.html">Página inicial</a>
+            <span>&#47;</span>
+            <span>Formul&aacute;rio de contacto</span>
+        </div>
+
+        <div class="insideContent">
+            <h1>Formul&aacute;rio de contacto</h1>
+
+            <div id="residencialInfoCuidadosGeriatricos">
+                <br/>
+                <p><b>"Aqui pode efectuar o pedido de contacto por parte dos nossos serviços. 
+				Oportunamente será contactado para responder à sua questão.
+				Obrigado!"</b>
+                </p>
+
+
+                <form method="post" action="index.php" id="frm" name="frm" onsubmit="return valida();" enctype="multipart/form-data">
+                    <input type="hidden" name="contacto_id" id="contacto_id" value="" />
+                    <input type="hidden" name="_modo" id="_modo" value="new" />
+                    <input type="hidden" name="_step" id="_step" value="ins" />
+
+                    <table class="formulario">
+
+                        <tr>
+                            <td class="descricao">
+                                <label for="tipo_id">Tipo Contacto *</label>
+                            </td>
+                            <td class="valor">
+
+                                <select name="tipo_id" id="tipo_id">
+                                    <option value="">--- Seleccione ---</option>
+                                    <option value="1">Contacto</option>
+                                    <option value="4">Emprego</option>
+                                    <option value="5">Inscrição como Irmão (ã)</option>
+                                    <option value="3">Inscrições de Utentes</option>
+                                    <option value="6">Outro</option>
+                                    <option value="2">Voluntariado</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="descricao">
+                                <label for="nome">Nome *</label>
+                            </td>
+                            <td class="valor">
+
+                                <input type="text" name="nome" id="nome" value="" size="40" maxlength="150" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="sexo">Sexo *</label>
+                            </td>
+                            <td class="valor">
+
+                                <select name="sexo" id="sexo">
+                                    <option value="">--- Seleccione ---</option>
+                                    <option value="Masculino">Masculino</option>
+                                    <option value="Feminino">Feminino</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="data_nascimento">Data de Nascimento *</label>
+                                <div class="legendacampo">aaaa-mm-dd</div>
+                            </td>
+                            <td class="valor">
+
+                                <input type="text" name="data_nascimento" id="data_nascimento" value="" size="10" maxlength="10" />
+                                <img src="classes//images/cal.gif" border="0" id="cal_data_nascimento" alt="Calend�rio" />
+
+                                <script type="text/javascript">
+                                Calendar.setup({
+                                    inputField: "data_nascimento", // ID of the input field
+                                    ifFormat: "%Y-%m-%d", // the date format
+                                    weekNumbers: true,
+                                    button: "cal_data_nascimento" // ID of the button
+                                });
+                                </script>
+
+                                <noscript>
+                                    � necess�rio ter activo o suporte para javascript.
+                                </noscript>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="morada">Morada</label>
+                            </td>
+                            <td class="valor">
+
+                                <textarea name="morada" id="morada" rows="4" cols="40"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="cp">C&oacute;digo Postal</label>
+                            </td>
+                            <td class="valor">
+
+                                <input type="text" name="cp" id="cp" value="" size="20" maxlength="8" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="localidade">Localidade</label>
+                            </td>
+                            <td class="valor">
+
+                                <input type="text" name="localidade" id="localidade" value="" size="40" maxlength="80" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="telef">Tel./Telem *</label>
+                            </td>
+                            <td class="valor">
+
+                                <input type="text" name="telef" id="telef" value="" size="20" maxlength="20" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="email">E-mail *</label>
+                            </td>
+                            <td class="valor">
+
+                                <input type="text" name="email" id="email" value="" size="40" maxlength="100" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="sistema_saude">Susbsistema de Sa&uacute;de</label>
+                            </td>
+                            <td class="valor">
+
+                                <input type="text" name="sistema_saude" id="sistema_saude" value="" size="40" maxlength="80" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="num_beneficiario">N&uacute;mero de Benefici&aacute;rio</label>
+                            </td>
+                            <td class="valor">
+
+                                <input type="text" name="num_beneficiario" id="num_beneficiario" value="" size="40" maxlength="50" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="mensagem">Mensagem *</label>
+                            </td>
+                            <td class="valor">
+
+                                <textarea name="mensagem" id="mensagem" rows="4" cols="40"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="forma_contacto">Forma preferencial de contacto</label>
+                            </td>
+                            <td class="valor">
+
+                                <select name="forma_contacto" id="forma_contacto">
+                                    <option value="">--- Seleccione ---</option>
+                                    <option value="1">Tel./Telem</option>
+                                    <option value="2">E-mail</option>
+                                    <option value="3">CTT</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="descricao">
+                                <label for="security_code"></label>
+                                <div class="legendacampo">Escreva os caracteres mostrados</div>
+                            </td>
+                            <td class="valor">
+                                <img src="classes//captcha/CaptchaSecurityImages.php" />
+                                <br />
+                                <!--<label for="security_code">Security Code: </label>-->
+                                <input id="security_code" name="security_code" type="text" />
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+
+                    <!--<br /><br />-->
+                    <table class="botoesform">
+                        <tr>
+                            <td align="center">
+                                <input type="reset" value="Limpar" class="btn">
+                            </td>
+                            <!--  Bot�o de enviar -->
+                            <td align="center">
+                                <input type="submit" value="Enviar" class="btn">
+                            </td>
+                        </tr>
+
+                        <tr>
+
+                            <input type="hidden" name="_comp" value="" />
+                            <input type="hidden" name="id" value="1636" />
+                </form>
+                <script type="text/javascript">
+                function valida() {
+                    var grava = true;
+                    if (_strip_whitespace(document.getElementById('tipo_id').value) == '') {
+                        alert('Tem de introduzir (Tipo Contacto)!');
+                        grava = false;
+                    } else if (_strip_whitespace(document.getElementById('nome').value) == '') {
+                        alert('Tem de introduzir (Nome)!');
+                        grava = false;
+                    } else if (_strip_whitespace(document.getElementById('sexo').value) == '') {
+                        alert('Tem de introduzir (Sexo)!');
+                        grava = false;
+                    } else if (_strip_whitespace(document.getElementById('data_nascimento').value) == '') {
+                        alert('Tem de introduzir (Data de Nascimento)!');
+                        grava = false;
+                    } else if (_strip_whitespace(document.getElementById('telef').value) == '') {
+                        alert('Tem de introduzir (Tel./Telem)!');
+                        grava = false;
+                    } else if (_strip_whitespace(document.getElementById('email').value) == '') {
+                        alert('Tem de introduzir (E-mail)!');
+                        grava = false;
+                    } else if (_strip_whitespace(document.getElementById('email').value) != '' && !valida_email(document.getElementById('email').value)) {
+                        alert('O campo (E-mail) tem de ser v�lido!');
+                        grava = false;
+                    } else if (_strip_whitespace(document.getElementById('mensagem').value) == '') {
+                        alert('Tem de introduzir (Mensagem)!');
+                        grava = false;
+                    }
+                    return grava;
+                }
+                </script>
+                <noscript>
+                    � necess�rio ter activo o suporte para javascript.
+                </noscript>
+                <p><b>Nota:</b> Estes dados ser&atilde;o tratados com confidencialidade e nos termos da lei aplic&aacute;vel, sendo garantido aos utilizadores o direito ao acesso aos seus dados e respectiva rectifica&ccedil;&atilde;o. Os dados facultados ser&atilde;o tratados &uacute;nica e exclusivamente pela SCML e destinam-se a dar uma maior celeridade aos diferentes tipos de solicita&ccedil;&otilde;es.</p>
+
+
+
+                </tr>
+
+
+                </table>
+
+                </form>
+
+            </div>
+
+
+
+
+
+        </div>
+
+    </div>
+    <!-- Main Content End -->
+
+    <!-- Footer Begin -->
+    <div class="footer">
+        <p id="footerTitle">Contactos:</p>
+        <p id="footerContacts">Santa Casa da Misericórdia de Leiria
+            <br>Instituição Particular de Solidariedade Social
+            <br>Sede:
+            <br>Rua Trindade Coelho, 8
+            <br>Apartado 1109
+            <br>2401-801 Leiria
+            <br>Tel.: 244 106 202 • Fax: 244 106 298
+            <br>geral@misericordiadeleiria.pt
+        </p>
+
+        <div id="footerContent">
+            <p>(C)2013/2014 <b>Aplicações para Internet</b> - Diurno</p>
+        </div>
+    </div>
+    <!-- Footer End -->
+</body>
+
+</html>

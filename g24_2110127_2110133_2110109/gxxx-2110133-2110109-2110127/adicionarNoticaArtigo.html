@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Santa casa da Misericórdia de Leiria: SCML">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="David, Eurico, Olavo">
+		<meta charset="UTF-8">
+		
+		<title>Santa casa da Misericórdia de Leiria: SCML</title>
+		
+		<script src="script/jquery.js"></script>
+		<script src="script/base.js"></script>
+		<script src="script/addNoticiaArtigo.js"></script>
+		
+		<link rel="shortcut icon" href="images/santa_casa100.png">
+		
+		<link rel="stylesheet" href="styles/estilo.css"/>
+		<link rel="stylesheet" href="styles/estiloMenu.css"/>
+	</head>
+	<body>
+		<div id="pagina">
+			<div id="paginaTopo">
+				<div id="paginaTopoTopo"></div>
+				<div id="paginaTopoConteudo">
+					<div id="paginaTopoCentro">
+						<div id="imagemcabecalho"></div>
+						<div id="imagemCentroCabecalho"></div>
+						<div id="pesquisaLogin">
+							<div id="divLogin" style="display:none">
+								User Name:<input type="text" name="userName"/><br>
+								Pass:<input type="text" name="userName"/><br>
+								<button type="button">Login</button> 
+							</div>
+							<input id="btnLogin" type="button" value="Login" onclick="login()"/> 
+							
+							<input id="searchBox" type="text" name="procurar"/>
+							<div id="find"><input type="image" src="images/search.png" alt="procurar"/></div>
+						</div>
+					</div>
+						<div id="cssmenu">
+							<ul>
+								<li><a href="index.html">Ínicio</a></li>
+								<li><a href="saude.html">Saúde</a></li>
+								<li><a href="marcacaoConsulta.html">Marcação Consulta</a></li>
+								<li><a href="cuidadosGeriatricos.html">Cuidados Geriátricos</a></li>
+								<li><a href="creche.html">Creche</a></li>
+								<li><a href="irmandade.html">Irmandade</a></li>
+								<li><a href="contactos.html">Contactos</a></li>
+					
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div id="paginaPrincipal">
+				<div id="paginaPrincipalTopo"></div>
+				<div id="paginaPrincipalConteudo">
+					<div id= "conteudo">
+						<div id="conteudoTopo">
+							<h1>Adicionar noticia/artigo</h1>
+							<div class="textoIntrodutorio"><p>Aqui pode adicionar uma notícia ou um artigo</p></div>
+							<hr class="linha">
+							<div class="textoIntrodutorio"><p>(*) campos obrigatórios</p></div>
+						</div>
+						<div id="CriarNoticiaArtigo">			
+							<form name="noticiaArtigo"  action="" onsubmit="return validateForm();" method="post">				
+								<table class="table_center">
+									<tr>
+										<td><label>Título*:</label></td>
+										<td><input class="elementosInputFormulario" type="text" name="titulo"/></td>
+									</tr>
+
+									<tr>
+										<td><label>Texto de resumo*:</label></td>
+										<td><textarea class="elementosInputFormularioPequenaTextArea" name="textoResumo"></textarea></td>
+									</tr>
+
+									<tr>
+										<td><label>Corpo de texto*:</label></td>
+										<td><textarea class="elementosInputFormularioGrandeTextArea" name="text"></textarea></td>
+									</tr>
+									
+									<tr>
+										<td><label>Foto*:</label></td>
+										<td><input class="elementosInputFormularioFile" type="file" onchange="onFileSelected(event)" name="file"></td>
+									</tr>
+
+									<tr>
+										<td><label>Data de publicação*:</label></td>
+										<td><input class="elementosInputFormulario" type="text" name="data"/> (exemplo:21/1/2003)</td>
+									</tr>
+									<tr>
+										<td><label>Autor*:</label></td>
+										<td><input class="elementosInputFormulario" type="text" name="autor"/></td>
+									</tr>
+									<tr>
+										<td><label>Tipo:</label></td>
+										<td>
+											<input class="elementosInputFormularioCheck" type="radio" name="tipo" value="valencia" onclick="mostrarValencias();" checked />Valência
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<input class="elementosInputFormularioCheck" type="radio" name="tipo" value="especialidade" onclick="mostrarEspecialidades();" />Especialidade
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<div id="tipoNoticiaArtigo"></div>
+										</td>
+									</tr>
+									<tr>
+										<td><br>
+										</td>
+										<td><br>
+										</td>
+									</tr>
+									<tr>
+									
+										<td colspan="2" class="td_aligned_right">
+											<input type="submit" name="adicionar" value="Adicionar">
+											<input type="reset" value="Limpar">
+										</td>
+									</tr>
+								</table>
+							</form>
+
+							<div id="error"></div>
+							<img id="image" src="" alt="">
+						</div>	
+
+					</div>
+				</div>
+				<div id="paginaPrincipalFundo"></div>
+			</div>
+			<div id="paginaRodape">
+					<div id="paginaRodapeConteudo">
+					<a href="https://www.facebook.com/santacasaleiria?ref=ts&amp;fref=ts"><img src="images/facebook_logo.png" alt="facebookLink"></a>2014 © | Desenvolvimento: David Adrião, Eurico Sousa e Olavo Machado 
+					</div>
+					<div id="paginaRodapeFundo"></div>
+			</div>
+		</div>
+	</body>
+</html>

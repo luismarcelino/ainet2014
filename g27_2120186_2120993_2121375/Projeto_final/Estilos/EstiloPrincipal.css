@@ -1,0 +1,342 @@
+body{
+	background-color: black;
+    font-family: Ubuntu;
+}
+
+html, body {
+    height:100%;
+    background: white;
+
+}
+
+
+/*Estilo dos botoes de login*/
+button {
+    color: white;
+    padding: 5px 15px;
+    border: solid 1px #0076a3; border-right:0px;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    border-radius: 5px 5px;
+}
+
+button:hover{
+    text-decoration: none;
+    background: #007ead;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+}
+
+
+#LogRegBtn{
+    float: right;
+    border: solid 1px #82CAFA;
+}
+
+/*Div do meio que irá conter acessos, noticias etc*/
+#container{
+	width: 80%;
+	margin: 0 auto; 
+    position: relative;
+    height: 150%;
+    background: rgb(218, 220, 221);
+}
+
+/*Div que irá conter slideshow e noticias!*/
+#containerSup{
+    width: 100%;
+    position: relative;
+    height: 30%;
+}
+
+/*Container para o slideshow*/
+#containerSupEsq{
+    margin-top: 4%;
+    margin-left: 2%;
+    width: 60%;
+    float: left;
+    height: 100%;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    -moz-box-shadow:    0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    border-radius: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+/*contentor que irá conter o titulo do contentor #containerSupEsq*/
+#containerSupEsqTittle{
+    position: relative;
+    width: 100%;
+    height: 5%;
+}
+
+/*Estilo dos paragrafos do contentos #containerSupEsqTittle*/
+#containerSupEsqTittle > p{
+
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/*Container que irá ser conter as noticias!*/
+#containerSupEsqBody{
+    width: 100%;
+    position: relative;
+    height: 94%;
+    margin-top: 5px;
+} 
+
+/*Estilo das divs que irão conter as noticias!*/
+#containerSupEsqBody > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.pNoticias{
+    height: 20%;
+    display: inline-block;
+}
+
+#imgSlide{
+ margin-left: 20px;
+ margin-top: 10px;
+} 
+
+.nextSlide{
+    display: none;
+}
+
+/*Container para as noticias!*/
+#containerSupDir{
+    margin-top: 4%;
+    margin-left: 2%;
+    width: 34%;
+    height: 100%;
+    float: left;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    -moz-box-shadow:    0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    border-radius: 20px;
+    border: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#containerSupDirTittle{
+    position: relative;
+    width: 100%;
+    height: 5%;
+
+}
+
+#containerSupDirTittle > p{
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#containerSupDirBody{
+    width: 92%;
+    position: relative;
+    height: 94%;
+    margin-top: 5px;
+}
+
+#containerSupDirBody > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#formPesquisa{
+  float:right;
+}
+
+.inputPesquisa{
+  margin: 0;
+  padding: 5px 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:14px;
+  border:1px solid #0076a3; border-right:0px;
+  border-top-left-radius: 5px 5px;
+  border-bottom-left-radius: 5px 5px;
+}
+
+.buttonPesquisa{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 15px;
+  font-size:14px;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  border: solid 1px #0076a3; border-right:0px;
+  background: #0095cd;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+  background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  margin-right: 2px;
+}
+
+.buttonPesquisa:hover {
+    text-decoration: none;
+    background: #007ead;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+}
+
+/*Div que irá conter menus*/
+#containerInf{
+    margin-top: 5%;
+    width: 100%;
+    position: relative;
+    height: 69.1%;
+}
+
+/*Estilo da div inserida no container*/
+#menu{
+    width: 25%;
+    height: 65%;
+    float: left;
+    margin-left: 6%;
+    margin-right: 0.5%;
+    margin-top: 5%;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    background: #0095cd;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    -moz-box-shadow:    0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+}
+
+#menu > h3{
+    text-align: center;
+    font-size: 150%;
+}
+
+#menu > p{
+    text-align: center;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.menuList {
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
+
+
+
+.btnMenus {
+    border: solid;
+    border-width: 1px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 24px;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+    background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+    background-color:#3d94f6;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.15);
+    height: auto;
+    width: 15%;
+    width: 70%;
+    background: #0fb5e7;
+    -webkit-box-shadow: 0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    -moz-box-shadow:    0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+    box-shadow:         0px 0px 21px 0px rgba(50, 50, 50, 0.57);
+}
+
+.btnMenus:hover{
+    text-decoration: none;
+    background: #007ead;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+    background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+}
+
+.btnMenus:active{
+    position:relative;
+    top:1px;
+}
+.btnMenus:link  {
+    color: white; text-decoration: none;
+}
+.btnMenus:visited  {
+    color: white; text-decoration: none;
+}
+
+
+/*Div de topo que irá conter imagem representativa, "logotipo" e caixa de pesquisa*/
+#top{
+    position: relative;
+    top: 0;
+    width: 79.6%;
+    height: 100px;
+    background: white;
+    left: 10%;
+    border: solid;
+    border-color: rgb(218, 220, 221);
+
+}
+
+/*Div que irá conter a imagem representativa*/
+#logotipo{
+    background-image: url('../Material/santa_casa100.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    float: left;
+}
+
+/*Div do topo para o titulo e outros itens*/
+#topTittle{
+    background-image: url(../Material/rsz_2slogan.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-left: 10%;
+    float: left;
+    height: 100px;
+    width: 80%;
+}
+
+
+/*Div do fundo irá conter creditos, etc*/
+#footer {
+    clear: both;
+    position: relative;
+    z-index: 10;
+    height: 10%;
+    background: rgb(218, 220, 221);
+    width: 80%;
+    display: inline-block;
+    left: 10%;
+}
+
+#footer > p{
+    color: white;
+}
+
+
+/*Classe usada para a imagem*/
+.imagem{
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}

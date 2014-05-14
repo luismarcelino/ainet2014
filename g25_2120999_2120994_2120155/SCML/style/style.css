@@ -1,0 +1,810 @@
+body {
+
+	background-color: white;
+}
+
+
+#head{
+
+	width: 100%;
+	height: 155px;
+	margin: auto; 
+	background-color : white;
+	text-align: center;
+	position: relative;
+	min-width: 900px;
+
+}
+
+#menu{
+
+	width: 90%;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto; 
+	/*background-color : black;**/
+	text-align: center;
+	position: relative;
+	min-width: 900px;
+
+
+	/*color: white;*/
+
+}
+
+#main{
+
+	width: 90%;
+	height: 450px;
+	margin: auto; 
+	background-color : #EBFAFA;
+	text-align: left;
+	position: relative;
+	min-width: 900px;
+}
+
+#container {
+  padding-left: 230px;   
+  padding-right: 230px;  
+}
+#container .column {
+  position: relative;
+  float: left;
+}
+#center {
+  width: 100%;
+}
+#left {
+  width: 200px;          
+  right: 200px;          
+  margin-left: -100%;
+}
+#right {
+  width: 150px;          
+  margin-right: -150px;  
+}
+
+
+/* ESTILOS */
+
+textHeader{
+  font-size: 22px;
+  font-family: arial;
+  font-weight: bold;
+  color: black;
+}
+
+textBody{
+ font-size: 12px;
+ font-family: arial;
+ color: black;
+ font-weight: normal;
+
+}
+/*************************************************************************************/
+
+#bottom{
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+
+#footer p{
+	
+	margin: 0;
+	background-color: grey;
+	width: 100%;
+	height: 22px;
+	text-align: center;
+	position: relative;
+ 	bottom:0;
+ 	left:0;
+  right 0;
+  clear: both;
+
+ 	color: white;
+ 	font-size: 13px;
+ 	font-family: arial;
+
+}
+
+
+
+.canto{
+
+	width: 25px;
+	height: 25px;
+	z-index: -1;
+}
+/* Canto Superior Esquerdo */
+#cse{
+
+	background-image: url("../imagens/cse.png");
+	background-repeat: no-repeat;
+	background-position: top left;
+	float: left;
+}
+/* Canto Superior Direito */
+#csd{
+
+	background-image: url("../imagens/csd.png");
+	background-repeat: no-repeat;
+	background-position: top right;
+	float: right;
+}
+
+/* Canto Inferior Esquerdo */
+#cie{
+
+	background-image: url("../imagens/cie.png");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	float: left;
+}
+
+/* Canto Inferior Direito */
+#cid{
+
+	background-image: url("../imagens/cid.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	float: right;
+}
+
+.clearfix: after{
+
+	content="";
+	display = block;
+	clear: both;
+}
+
+#content_right img{
+
+	width: 225px;
+	height: 150px;
+	padding: 20px;
+}
+
+h2{
+	
+	font-family: "Palatino Linotype", "Tahoma";
+	color: #8A0018;
+}
+
+#content_left p{
+
+	text-align: justify;
+	font-family: Arial;
+}
+
+.lista{
+
+	list-style-image: url("../imagens/bullet.gif");
+	padding: 20px;
+}
+
+a{
+
+	color: grey;
+}
+
+a:visited{
+	
+	color: blue;
+}
+
+a:hoover{
+
+	color: black;
+}
+
+a:active{
+
+	color: red;
+}
+
+
+/*MENU*/
+
+#cssmenu {
+  position: relative;
+  height: 44px;
+  background: #ffffff;
+  width: auto;
+}
+#cssmenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+#cssmenu > ul {
+  position: relative;
+  display: block;
+  background: #ffffff;
+  height: 32px;
+  width: 100%;
+  z-index: 500;
+}
+#cssmenu > ul > li {
+  display: block;
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu > ul > #menu-button {
+  display: none;
+}
+#cssmenu ul li a {
+  display: block;
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+}
+#cssmenu > ul > li > a {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 15px 20px;
+  color: #7a8189;
+  text-transform: uppercase;
+  -webkit-transition: color 0.25s ease-out;
+  -moz-transition: color 0.25s ease-out;
+  -ms-transition: color 0.25s ease-out;
+  -o-transition: color 0.25s ease-out;
+  transition: color 0.25s ease-out;
+}
+#cssmenu > ul > li.has-sub > a {
+  padding-right: 32px;
+}
+#cssmenu > ul > li:hover > a {
+  color: #000000;
+}
+#cssmenu li.has-sub::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+#cssmenu > ul > li.has-sub::after {
+  right: 10px;
+  top: 20px;
+  border: 5px solid transparent;
+  border-top-color: #7a8189;
+}
+#cssmenu > ul > li:hover::after {
+  border-top-color: #000000;
+}
+#indicatorContainer {
+  position: absolute;
+  height: 12px;
+  width: 100%;
+  bottom: 0px;
+  overflow: hidden;
+  z-index: -1;
+}
+#pIndicator {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  border: 12px solid transparent;
+  border-top-color: #2b2f3a;
+  z-index: -2;
+  -webkit-transition: left .25s ease;
+  -moz-transition: left .25s ease;
+  -ms-transition: left .25s ease;
+  -o-transition: left .25s ease;
+  transition: left .25s ease;
+}
+#cIndicator {
+  position: absolute;
+  height: 0;
+  width: 100%;
+  border: 12px solid transparent;
+  border-top-color: #2b2f3a;
+  top: -12px;
+  right: 100%;
+  z-index: -2;
+}
+#cssmenu ul ul {
+  position: absolute;
+  left: -9999px;
+  top: 70px;
+  opacity: 0;
+  -webkit-transition: opacity .3s ease, top .25s ease;
+  -moz-transition: opacity .3s ease, top .25s ease;
+  -ms-transition: opacity .3s ease, top .25s ease;
+  -o-transition: opacity .3s ease, top .25s ease;
+  transition: opacity .3s ease, top .25s ease;
+  z-index: 1000;
+}
+#cssmenu ul ul ul {
+  top: 37px;
+  padding-left: 5px;
+}
+#cssmenu ul ul li {
+  position: relative;
+}
+#cssmenu > ul > li:hover > ul {
+  left: auto;
+  top: 44px;
+  opacity: 1;
+}
+#cssmenu ul ul li:hover > ul {
+  left: 170px;
+  top: 0;
+  opacity: 1;
+}
+#cssmenu ul ul li a {
+  width: 130px;
+  border-bottom: 1px solid #eee;
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #0095ff;
+  background: #fff;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+#cssmenu ul ul li:hover > a {
+  background: #f6f6f6;
+  color: #003f70;
+}
+#cssmenu ul ul li:last-child > a,
+#cssmenu ul ul li.last > a {
+  border-bottom: 0;
+}
+.submenuArrow {
+  border: 6px solid transparent;
+  width: 0;
+  height: 0;
+  border-bottom-color: #fff;
+  position: absolute;
+  top: -12px;
+}
+#cssmenu ul ul li.has-sub::after {
+  border: 4px solid transparent;
+  border-left-color: #0095ff;
+  right: 10px;
+  top: 12px;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease, right 0.2s ease;
+}
+#cssmenu ul ul li.has-sub:hover::after {
+  border-left-color: #fff;
+  right: -5px;
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+  #cssmenu {
+    width: auto;
+  }
+  #cssmenu ul {
+    width: auto;
+  }
+  #cssmenu .submenuArrow,
+  #cssmenu #indicatorContainer {
+    display: none;
+  }
+  #cssmenu > ul {
+    height: auto;
+    display: block;
+  }
+  #cssmenu > ul > li {
+    float: none;
+  }
+  #cssmenu li,
+  #cssmenu > ul > li {
+    display: none;
+  }
+  #cssmenu ul ul,
+  #cssmenu ul ul ul,
+  #cssmenu ul > li:hover > ul,
+  #cssmenu ul ul > li:hover > ul {
+    position: relative;
+    left: auto;
+    top: auto;
+    opacity: 1;
+    padding-left: 0;
+  }
+  #cssmenu ul .has-sub::after {
+    display: none;
+  }
+  #cssmenu ul li a {
+    padding: 12px 20px;
+  }
+  #cssmenu ul ul li a {
+    border: 0;
+    background: none;
+    width: auto;
+    padding: 8px 35px;
+  }
+  #cssmenu ul ul li:hover > a {
+    background: none;
+    color: #003f70;
+  }
+  #cssmenu ul ul ul a {
+    padding: 8px 50px;
+  }
+  #cssmenu ul ul ul ul a {
+    padding: 8px 65px;
+  }
+  #cssmenu ul ul ul ul ul a {
+    padding: 8px 80px;
+  }
+  #cssmenu ul ul ul ul ul ul a {
+    padding: 8px 95px;
+  }
+  #cssmenu > ul > #menu-button {
+    display: block;
+    cursor: pointer;
+  }
+  #cssmenu #menu-button > a {
+    padding: 14px 20px;
+  }
+  #cssmenu ul.open li,
+  #cssmenu > ul.open > li {
+    display: block;
+  }
+  #cssmenu > ul.open > li#menu-button > a {
+    color: #fff;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.1);
+  }
+  #cssmenu #menu-button::after {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #7a8189;
+    border-bottom: 2px solid #7a8189;
+    right: 20px;
+    top: 15px;
+  }
+  #cssmenu #menu-button::before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 22px;
+    border-top: 2px solid #7a8189;
+    right: 20px;
+    top: 25px;
+  }
+  #cssmenu ul.open #menu-button::after,
+  #cssmenu ul.open #menu-button::before {
+    border-color: #fff;
+  }
+}
+
+
+    #tableForm{
+    table-border:0px;
+        border-collapse:separate;
+        border-spacing:3px 15px;
+  }
+
+  /*Area texto observações*/
+    #area{
+  width:250px; 
+  height:50px;
+   }
+
+    /* Estilo de botões */
+
+   .botao {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+  background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+  background-color:#ededed;
+  -webkit-border-top-left-radius:8px;
+  -moz-border-radius-topleft:8px;
+  border-top-left-radius:8px;
+  -webkit-border-top-right-radius:8px;
+  -moz-border-radius-topright:8px;
+  border-top-right-radius:8px;
+  -webkit-border-bottom-right-radius:8px;
+  -moz-border-radius-bottomright:8px;
+  border-bottom-right-radius:8px;
+  -webkit-border-bottom-left-radius:8px;
+  -moz-border-radius-bottomleft:8px;
+  border-bottom-left-radius:8px;
+  text-indent:0;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#777777;
+  font-family:arial;
+  font-size:15px;
+  font-weight:bold;
+  font-style:normal;
+  height:25px;
+  line-height:25px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #ffffff;
+}
+.botao:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+  background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+  background-color:#dfdfdf;
+}.botao:active {
+  position:relative;
+  top:1px;
+}
+   <!-- Estilo de botões -->
+   select {
+    padding:3px;
+    margin: 0;
+    -webkit-border-radius:5px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    -webkit-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    box-shadow: 0 3px 0 #ccc, 0 -1px #fff inset;
+    background: #f8f8f8;
+    color:#888;
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    select {padding-right:18px}
+}
+
+selectPart {position:relative}
+selectPart:after {
+    content:'<>';
+    font:11px "Consolas", monospace;
+    color:#aaa;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:2px;
+    padding:0 0 3px;
+    border-bottom:1px solid #ddd;
+    position:absolute;
+    pointer-events:none;
+}
+selectPart:before {
+    content:'';
+    right:6px; top:0px;
+    width:15px; height:20px;
+    background:#f8f8f8;
+    position:absolute;
+    pointer-events:none;
+    display:block;
+}
+   .textoInput { 
+    background: white; 
+    border: 1px solid #DDD; 
+    border-radius: 1px; 
+    box-shadow: 0 0 3px #DDD inset; 
+    color: #666; 
+    outline: none; 
+    height:20px; 
+    width: 250px; 
+    padding:2px;
+   } 
+
+.cal_calendar
+{
+        border:1px solid black;
+        padding:1px;
+        background-color:#4594ff;
+        width:300px;
+        margin:auto;
+        height:246px;
+        background-image:url('http://www.webestools.com/ftp/ybouane/scripts_tutorials/javascript/calendar/bak-300-250.gif');
+}
+.cal_calendar th
+{
+        border:1px solid black;
+        background-color:#ffffff;
+                width:36px;
+}
+.cal_calendar td
+{
+        border:1px solid black;
+        background-color:#ffffff;
+        text-align:center;
+                width:36px;
+                height:36px;
+}
+.cal_today
+{
+        color:#ff0000;
+                font-weight:bold;
+}
+.cal_days_bef_aft
+{
+        color:#5a779e;
+}
+
+/* MENU DE ESPECIALIDADES */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700);
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);
+@charset 'UTF-8';
+/* Base Styles */
+#cssmenu2,
+#cssmenu2 ul,
+#cssmenu2 li,
+#cssmenu2 a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-weight: normal;
+  text-decoration: none;
+  line-height: 1;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  position: relative;
+}
+#cssmenu2 {
+  width: 800px;
+  border-bottom: 4px solid #656659;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+#cssmenu2 a {
+  line-height: 1.3;
+}
+#cssmenu2 > ul > li:first-child {
+  background: #66665e;
+  background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
+  background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
+  background: linear-gradient(#66665e 0%, #45463d 100%);
+  border: 1px solid #45463d;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+#cssmenu2 > ul > li:first-child > a {
+  padding: 15px 10px;
+  background: url(imagens/pattern.png) top left repeat;
+  border: none;
+  border-top: 1px solid #818176;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  text-shadow: 0 -1px 1px #000000;
+}
+#cssmenu2 > ul > li:first-child > a > span {
+  padding: 0;
+}
+#cssmenu2 > ul > li:first-child:hover {
+  background: #66665e;
+  background: -moz-linear-gradient(#66665e 0%, #45463d 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #66665e), color-stop(100%, #45463d));
+  background: -webkit-linear-gradient(#66665e 0%, #45463d 100%);
+  background: linear-gradient(#66665e 0%, #45463d 100%);
+}
+#cssmenu2 > ul > li {
+  background: #b5b5b5;
+  background: -moz-linear-gradient(#b5b5b5 0%, #9c9c9c 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b5b5b5), color-stop(100%, #9c9c9c));
+  background: -webkit-linear-gradient(#b5b5b5 0%, #9c9c9c 100%);
+  background: linear-gradient(#b5b5b5 0%, #9c9c9c 100%);
+}
+#cssmenu2 > ul > li:hover {
+  background: #adadad;
+  background: -moz-linear-gradient(#adadad 0%, #949494 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #adadad), color-stop(100%, #949494));
+  background: -webkit-linear-gradient(#adadad 0%, #949494 100%);
+  background: linear-gradient(#adadad 0%, #949494 100%);
+}
+#cssmenu2 > ul > li > a {
+  font-size: 12px;
+  display: block;
+  background: url(../imagens/pattern.png) top left repeat;
+  color: #ffffff;
+  border: 1px solid #8f8f8f;
+  border-top: none;
+  text-shadow: 0 -1px 1px #696969;
+}
+#cssmenu2 > ul > li > a > span {
+  display: block;
+  padding: 12px 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+#cssmenu2 > ul > li > a:hover {
+  text-decoration: none;
+}
+#cssmenu2 > ul > li.active {
+  border-bottom: none;
+}
+#cssmenu2 > ul > li.has-sub > a span {
+  background: url(../imagens/icon_plus.png) 96% center no-repeat;
+}
+#cssmenu2 > ul > li.has-sub.active > a span {
+  background: url(../imagens/icon_minus.png) 96% center no-repeat;
+}
+/* Sub menu */
+#cssmenu2 ul ul {
+  display: none;
+  background: #fff;
+  border-right: 1px solid #a2a194;
+  border-left: 1px solid #a2a194;
+}
+#cssmenu2 ul ul li {
+  padding: 0;
+  border-bottom: 1px solid #d4d4d4;
+  border-top: none;
+  background: #f7f7f7;
+  background: -moz-linear-gradient(#f7f7f7 0%, #ececec 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #ececec));
+  background: -webkit-linear-gradient(#f7f7f7 0%, #ececec 100%);
+  background: linear-gradient(#f7f7f7 0%, #ececec 100%);
+}
+#cssmenu2 ul ul li:last-child {
+  padding: 10px 25px 10px 25px;
+  border-bottom: none;
+  font-size: 15px;
+}
+#cssmenu2 ul ul a {
+  padding: 10px 10px 10px 25px;
+  display: block;
+  color: #676767;
+  font-size: 12px;
+  font-weight: normal;
+}
+#cssmenu2 ul ul a:before {
+  content: '»';
+  position: absolute;
+  left: 10px;
+  color: #b5b5b5;
+}
+#cssmenu2 ul ul a:hover {
+  color: #b5b5b5;
+}
+
+#container2{ 
+ width: 700px; 
+ height: 300px;
+ margin-top:50px;
+ margin-bottom: 50px;
+ }
+ 
+ #content-left2{
+ width:50%;
+ float:left;
+ }
+ 
+ #container-right2{ 
+ width:50%;
+ float:right;
+ margin-right:15px;
+ }

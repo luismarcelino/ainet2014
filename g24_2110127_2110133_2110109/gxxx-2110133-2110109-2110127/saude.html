@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Santa casa da Misericórdia de Leiria: SCML">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="David, Eurico, Olavo">
+		<meta charset="UTF-8">
+		
+		<title>Santa casa da Misericórdia de Leiria: SCML</title>
+		
+		<script src="script/jquery.js"></script>
+		<script src="script/base.js"></script>
+		<script src="script/saude.js"></script>
+		
+		<link rel="shortcut icon" href="images/santa_casa100.png">
+		
+		<link rel="stylesheet" href="styles/estilo.css" />
+		<link rel="stylesheet" href="styles/estiloMenu.css" />
+	</head>
+	<body>
+		<div id="pagina">
+			<div id="paginaTopo">
+				<div id="paginaTopoTopo"></div>
+				<div id="paginaTopoConteudo">
+					<div id="paginaTopoCentro">
+						<div id="imagemcabecalho"></div>
+						<div id="imagemCentroCabecalho"></div>
+						<div id="pesquisaLogin">
+							<div id="divLogin" style="display:none">
+								User Name:<input type="text" name="userName"/><br>
+								Pass:<input type="text" name="userName"/><br>
+								<button type="button">Login</button> 
+							</div>
+							<input id="btnLogin" type="button" value="Login" onclick="login()"/> 
+							
+							<input id="searchBox" type="text" name="procurar"/>
+							<div id="find"><input type="image" src="images/search.png" alt="procurar"/></div>
+						</div>
+					</div>
+						<div id="cssmenu">
+							<ul>
+								<li><a href="index.html">Ínicio</a></li>
+								<li><a href="saude.html">Saúde</a></li>
+								<li><a href="marcacaoConsulta.html">Marcação Consulta</a></li>
+								<li><a href="cuidadosGeriatricos.html">Cuidados Geriátricos</a></li>
+								<li><a href="creche.html">Creche</a></li>
+								<li><a href="irmandade.html">Irmandade</a></li>
+								<li><a href="contactos.html">Contactos</a></li>
+					
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div id="paginaPrincipal">
+				<div id="paginaPrincipalTopo"></div>
+				<div id="paginaPrincipalConteudo">
+					<div id= "conteudo">
+						<div id="conteudoTopo">
+							<h1>Áreas Clínicas</h1>
+							<div class="textoIntrodutorioLargo"><p>A Saúde é o nosso ideal e para o alcançar a Idealmed procurou congregar neste hospital o maior número de especialidades clínicas, num leque alargado de profissionais, que pudessem dar a resposta mais adequada a quem nos procura.
+Consideramos que respostas isoladas não são o melhor meio para a promoção da saúde pelo que desenvolvemos unidades funcionais e programas integrados que possam corresponder às reais necessidades de quem nos procura e que pode observar nesta página.</p></div>
+						</div>
+						<div id="conteudoEsquerda">
+							<ul id="nav">
+
+								<li><a href="javascript:mostrarEspecialidade(0);">Alergologia e Pneumologia</a></li>
+								<li><a href="javascript:mostrarEspecialidade(1);">Análises Clínicas</a></li>
+								<li><a href="javascript:mostrarEspecialidade(2);">Anatomia Patológica</a></li>
+								<li><a href="javascript:mostrarEspecialidade(3);">Anestesiologia e Medicina da Dor</a></li>
+								<li><a href="javascript:mostrarEspecialidade(4);">Cardiologia</a></li>
+								<li><a href="javascript:mostrarEspecialidade(5);">Centro de Dermoestética</a></li>
+								<li><a href="javascript:mostrarEspecialidade(6);">Centro de Diabetes</a></li>
+								<li><a href="javascript:mostrarEspecialidade(7);">Centro de Tratamento da Obesidade</a></li>
+								<li><a href="#">Centro Oncologia Médica</a></li>
+								<li><a href="#">Cirurgia Geral</a></li>
+								<li><a href="#">Cirurgia Maxilo-Facial</a></li>
+								<li><a href="#">Cirurgia Pediátrica</a></li>
+								<li><a href="#">Cirurgia Plástica</a></li>
+								<li><a href="#">Cirurgia Torácica</a></li>
+								<li><a href="#">Cirurgia Vascular</a></li>
+								<li><a href="#">Clinica do Sono</a></li>
+								<li><a href="#">Departamento de Imagem Médica</a></li>
+								<li><a href="#">Dermatologia e Venereologia</a></li>
+								<li><a href="#">Endocrinologia - Nutrição</a></li>
+								<li><a href="#">Gastroenterologia</a></li>
+								<li><a href="#">Ginecologia e Obstetrícia</a></li>
+								<li><a href="#">Instituto Materno Infantil de Coimbra</a></li>
+								<li><a href="#">Medicina da Reprodução</a></li>
+								<li><a href="#">Medicina Dentária</a></li>
+								<li><a href="#">Medicina Física e de Reabilitação</a></li>
+								<li><a href="#">Medicina Geral e Familiar</a></li>
+								<li><a href="#">Medicina Interna</a></li>
+								<li><a href="#">Neurocirurgia</a></li>
+								<li><a href="#">Neurofisiologia</a></li>
+								<li><a href="#">Neurologia</a></li>
+								<li><a href="#">Neuropediatria</a></li>
+								<li><a href="#">Nutrição Clínica</a></li>
+								<li><a href="#">Oftalmologia</a></li>
+								<li><a href="#">Oftalmologia - UOC</a></li>
+								<li><a href="#">Ortopedia</a></li>
+								<li><a href="#">Otorrinolaringologia</a></li>
+								<li><a href="#">Pediatria</a></li>
+								<li><a href="#">Psiquiatria e Psicologia</a></li>
+								<li><a href="#">Reumatologia</a></li>
+								<li><a href="#">Saúde Ocupacional e Med no Trabalho</a></li>
+								<li><a href="#">Urologia</a></li>
+								
+							</ul>
+						</div>
+						<div id="conteudoDireita">
+							<div id="conteudoDireitaTopo">
+								<div id="conteudoPrincipal">
+									<div class="titulo"></div>
+									<div class="descricao"></div>
+								</div>
+								
+								<div id="contactos">
+									<div class="subTituloCurto"><h3>Contactos</h3></div>
+									<div class="telefone"></div>
+									<div class="email"></div>
+								</div>
+							</div>
+							<div id="conteudoDireitaBot">
+								<div id="corpoClinico">
+									<div class="subTitulo"><h3>Corpo Clínico</h3></div>
+									<div id="medicos">
+									</div>
+								</div>
+								<div id="acordos">
+									<div class="subTituloCurto"><h3>Acordos</h3></div>
+									<div id="listaAcordos">
+										<div class="acordo"><a href="index.html">ADSE</a></div>
+										<div class="acordo"><a href="index.html">ADSE 2</a></div>
+										<div class="acordo"><a href="index.html">ADSE 3</a></div>
+									</div>
+								</div>
+							</div>
+						</div>	
+								
+						<div id="noticiasEspecialidade">
+							<div class="tipo"><h3>Noticias da Especialidade</h3></div>
+							<div class="noticiaConteudo"></div>
+							<div class="noticiaImagem"></div>
+							<div class="noticiaLink"></div>
+							<div class="noticiaScroll"></div>
+						</div>
+						
+					</div>
+				</div>
+				<div id="paginaPrincipalFundo"></div>
+			</div>
+			<div id="paginaRodape">
+					<div id="paginaRodapeConteudo">
+					<a href="https://www.facebook.com/santacasaleiria?ref=ts&amp;fref=ts"><img src="images/facebook_logo.png" alt="facebookLink"></a>2014 © | Desenvolvimento: David Adrião, Eurico Sousa e Olavo Machado 
+					</div>
+					<div id="paginaRodapeFundo"></div>
+			</div>
+		</div>
+	</body>
+</html>

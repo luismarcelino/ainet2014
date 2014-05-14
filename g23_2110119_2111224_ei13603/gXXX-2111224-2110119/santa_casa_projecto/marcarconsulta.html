@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>SCML - Santa Casa da Misericórdia de Leiria</title> 
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+ </head>
+ <body>
+
+ 	<!-- Código de Estrutura de div de trás para prevenir desformação da página quando em resoluções superiores a 1366*667 #secção 1 -->
+
+ 	<div id="divBase">
+ 		<div id="divBaseTopo"></div>
+ 		<div id="divBaseMeio"></div>
+ 		<div id="divBaseBaixo"></div>
+ 	</div>
+
+ 	<!-- Fim #secção 1 -->
+
+ 	<!-- Código de estrutura principal #secção 2 -->
+
+ 	<div id="divPrincipal">
+		<div id="divPrincipalTopo">
+			<div id="menu_Confidencial">
+               	<nav>
+                    <ul>
+                        <li><a href="#">Pessoal</a></li>
+                        <li><a href="#">Médico</a></li>
+                        <li><a href="#">Gestão Utilizador</a></li>
+                        <li><a href="criar_noticia.html">Criar Notícia</a></li>
+                    </ul>
+                </nav>
+            </div>
+			<div id="menu_principal">
+				<nav>
+					<ul>
+						<li><a href="index.html">Entrada</a></li>
+						<li><a href="saude.html" class="seleccionado">Saúde</a></li>
+						<li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</nav>
+			</div>
+			<section id="procura_section">
+				<form id="procura" method="post" action="index.html" >
+		 			<input type="text" name="q" placeholder="Search..." />
+		 		</form>
+			</section>
+            <section id="area_login">
+                <nav>
+                    <div id="login"><a href="login.html">Login</a> | <a href="#">Registar</a></div>
+                </nav>
+            </section>
+			<img id="logo" src="imagens/logo.png" alt="SCML - Santa Casa da Misericórdia de Leiria"/>
+		</div>
+
+		<div id="divPrincipalMeio">
+			<div id="conteudo_formcontacto">
+				<nav>
+					<h4>Marcar Consulta</h4>
+					<div id="saude_submenu">
+						<nav>
+							<a href="listaespecialidades.html">Lista de Especialidades</a>
+							<a href="corpoclinico.html">Corpo Clínico</a>
+							<a href="listagemcompleta.html">Notícias Clínicas</a>
+							<a href="marcarconsulta.html"  class="seleccionado">Marcação de Consultas</a>
+						</nav>
+					</div>
+					<div id="formulario_contacto">
+						<form action="#" method="post">
+							<label><b>Primeiro Nome: </b></label><br>
+							<input type="text" name="firstname" /><br><br>
+							<label><b> Ultimo Nome:</b></label><br>
+							<input type="text" name="lastname" /><br><br>
+							<label><b>Sexo:</b></label><br>
+							<select name="sexo">
+								<option value="">--- Seleccione ---
+								<option value="Masculino">Masculino
+								<option value="Feminino">Feminino
+							</select><br><br>
+							<label><b>Data de Nascimento:</b></label><br>
+							<input type="text" name="data_nascimento" placeholder="dd-mm-aaaa"/><br><br>
+							<label><b>Tel./Telem.:</b></label><br>
+							<input type="text" name="telefone"/><br><br>
+							<label><b>Email:</b></label><br>
+							<input type="text" name="email" />
+							<div id="formulario_contacto2">
+								<label><b>Morada:</b></label><br>
+								<textarea name="morada" rows="5" cols="26"></textarea><br><br>
+								<label><b>Código Postal:</b></label><br>
+								<input type="text" name="codpostal" /><br><br>
+								<label><b>Localidade:</b></label><br>
+								<input type="text" name="localidade" /><br><br>
+								<label><b>Especialidade:</b></label><br>
+								<select name="especialidade">
+									<option value="">--- Seleccione ---
+									<option value="CirugiaGeral">Cirugia Geral
+									<option value="CirugiaVascular">Cirugia Vascular
+									<option value="Ortopedia">Ortopedia
+									<option value="Oftalmologia">Oftalmologia
+									<option value="Urologia">Urologia
+									<option value="Neurologia">Neurologia
+									<option value="Neurocirugia">Neurocirugia
+									<option value="Nutrição">Nutrição
+									<option value="Psicologia">Psicologia
+									<option value="Psiquiatria">Psiquiatria
+									<option value="Acunpunctura">Acunpunctura
+									<option value="Mesoterapia">Mesoterapia
+									<option value="Pneumologia">Pneumologia
+									<option value="Reumatologia">Reumatologia
+									<option value="Dermatologia">Dermatologia
+									<option value="Estomatologia">Estomatologia
+									<option value="Fisiatria">Fisiatria
+									<option value="GinecologiaObstetricia">Ginecologia/Obstetricia
+								</select><br><br>
+								<label><b>Data:</b></label><br>
+								<input type="text" name="data_consulta" placeholder="dd-mm-aaaa (Opcional)"/><br><br>
+							</div>
+							<div id="formulario_contacto3">
+								<label><b>Hora:</b></label><br>
+								<select name="hora">
+									<option value="">--- Seleccione (opcional) ---
+									<option value="9h">9 Horas
+									<option value="10h">10 Horas
+									<option value="11h">11 Horas
+									<option value="12h">12 Horas
+									<option value="13h">13 Horas
+									<option value="14h">14 Horas
+									<option value="15h">15 Horas
+									<option value="16h">16 Horas
+									<option value="17h">17 Horas
+									<option value="18h">18 Horas
+									<option value="19h">19 Horas
+									<option value="20h">20 Horas
+									<option value="21h">21 Horas
+								</select><br><br>
+								<label><b>Número de Beneficiário:</b></label><br>
+								<input type="text" name="beneficiario" /><br><br>
+								<label><b>Nome do médico:</b></label><br>
+								<input type="text" name="nome_medico" placeholder="Opcional" /><br><br>
+								<label><b>Forma preferencial de contacto:</b></label><br>
+								<select name="modo_contacto">
+								<option value="">--- Seleccione ---
+								<option value="modo_telefone">Tel./Telem.
+								<option value="modo_email">E-Mail
+								<option value="modo_ctt">CTT
+							</select><br><br>
+							</div>
+							<div id="formulario_contacto4">
+								<input type="submit" value="Enviar"/><br>
+								<input type="reset" value="Limpar"/>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div id="divPrincipalBaixo">
+			<div id="copyright">2014 © | Desenvolvimento: Hugo Borga & Tiago Duarte | Design: Hugo Borga & Tiago Duarte</div>
+            <div id="info"><a href="#">Mapa do Site</a> | <a href="#">Localização</a></div>
+		</div>
+	</div>
+
+	<!-- Fim #secção 2 -->
+
+ </body>
+</html>

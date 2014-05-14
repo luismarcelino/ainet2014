@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>SCML - Santa Casa da Misericórdia de Leiria</title> 
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+ </head>
+ <body>
+
+ 	<!-- Código de Estrutura de div de trás para prevenir desformação da página quando em resoluções superiores a 1366*667 #secção 1 -->
+
+ 	<div id="divBase">
+ 		<div id="divBaseTopo"></div>
+ 		<div id="divBaseMeio"></div>
+ 		<div id="divBaseBaixo"></div>
+ 	</div>
+
+ 	<!-- Fim #secção 1 -->
+
+ 	<!-- Código de estrutura principal #secção 2 -->
+
+ 	<div id="divPrincipal">
+		<div id="divPrincipalTopo">
+			<div id="menu_Confidencial">
+               	<nav>
+                    <ul>
+                        <li><a href="#">Pessoal</a></li>
+                        <li><a href="#">Médico</a></li>
+                        <li><a href="#">Gestão Utilizador</a></li>
+                        <li><a href="criar_noticia.html">Criar Notícia</a></li>
+                    </ul>
+                </nav>
+            </div>
+			<div id="menu_principal">
+				<nav>
+					<ul>
+						<li><a href="index.html">Entrada</a></li>
+						<li><a href="saude.html">Saúde</a></li>
+						<li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</nav>
+			</div>
+			<section id="procura_section">
+				<form id="procura" method="post" action="index.html" >
+		 			<input type="text" name="q" placeholder="Search..." />
+		 		</form>
+			</section>
+            <section id="area_login">
+                <nav>
+                    <div id="login"><a href="login.html">Login</a> | <a href="#">Registar</a></div>
+                </nav>
+            </section>
+			<img id="logo" src="imagens/logo.png" alt="SCML - Santa Casa da Misericórdia de Leiria"/>
+		</div>
+
+		<div id="divPrincipalMeio">
+			<div id="conteudo_formcontacto">
+				<nav>
+					<h4>Formulário de Contacto</h4>
+					<div id="formulario_contacto">
+						<form action="#" method="post">
+							<label><b>Tipo de Contacto:</b></label><br>
+							<select name="tipo_contacto">
+								<option value="">--- Seleccione ---
+								<option value="Contacto">Contacto
+								<option value="Emprego">Emprego
+								<option value="Irmandade">Inscrição como Irmão (ã)
+								<option value="Utente">Insrições de Utentes
+								<option value="Voluntariado">Voluntariado
+								<option value="Outro">Outro
+							</select><br><br>
+							<label><b>Primeiro Nome: </b></label><br>
+							<input type="text" name="firstname" /><br><br>
+							<label><b> Ultimo Nome:</b></label><br>
+							<input type="text" name="lastname" /><br><br>
+							<label><b>Sexo:</b></label><br>
+							<select name="sexo">
+								<option value="">--- Seleccione ---
+								<option value="Masculino">Masculino
+								<option value="Feminino">Feminino
+							</select><br><br>
+							<label><b>Data de Nascimento:</b></label><br>
+							<input type="text" name="data_nascimento" placeholder="dd-mm-aaaa"/><br><br>
+							<label><b>Tel./Telem.:</b></label><br>
+							<input type="text" name="telefone"/>
+							<div id="formulario_contacto2">
+								<label><b>Morada:</b></label><br>
+								<textarea name="morada" rows="5" cols="26"></textarea><br><br>
+								<label><b>Código Postal:</b></label><br>
+								<input type="text" name="codpostal" /><br><br>
+								<label><b>Localidade:</b></label><br>
+								<input type="text" name="localidade" /><br><br>
+								<label><b>Email:</b></label><br>
+								<input type="text" name="email" /><br><br>
+								<label><b>Subsistema de Saúde:</b></label><br>
+								<input type="text" name="subsistema" /><br><br>
+							</div>
+							<div id="formulario_contacto3">
+								<label><b>Número de Beneficiário:</b></label><br>
+								<input type="text" name="beneficiario" /><br><br>
+								<label><b>Mensagem:</b></label><br>
+								<textarea name="morada" rows="9" cols="50"></textarea><br><br>
+								<label><b>Forma preferencial de contacto:</b></label><br>
+								<select name="modo_contacto">
+								<option value="">--- Seleccione ---
+								<option value="modo_telefone">Tel./Telem.
+								<option value="modo_email">E-Mail
+								<option value="modo_ctt">CTT
+							</select><br><br>
+							</div>
+							<div id="formulario_contacto4">
+								<input type="submit" value="Enviar"/><br>
+								<input type="reset" value="Limpar"/>
+							</div>
+						</form>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div id="divPrincipalBaixo">
+			<div id="copyright">2014 © | Desenvolvimento: Hugo Borga & Tiago Duarte | Design: Hugo Borga & Tiago Duarte</div>
+            <div id="info"><a href="#">Mapa do Site</a> | <a href="#">Localização</a></div>
+		</div>
+	</div>
+
+	<!-- Fim #secção 2 -->
+
+ </body>
+</html>

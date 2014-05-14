@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Santa casa da Misericórdia de Leiria: SCML">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="David, Eurico, Olavo">
+		<meta charset="UTF-8">
+		
+		<title>Santa casa da Misericórdia de Leiria: SCML</title>
+		
+		<script src="script/jquery.js"></script>
+		<script src="script/base.js"></script>
+		<script src="script/noticiasPublicacoes.js"></script>
+		
+		<link rel="shortcut icon" href="images/santa_casa100.png">
+		
+		<link rel="stylesheet" href="styles/estilo.css" />
+		<link rel="stylesheet" href="styles/estiloMenu.css" />
+	</head>
+	<body>
+		<div id="pagina">
+			<div id="paginaTopo">
+				<div id="paginaTopoTopo"></div>
+				<div id="paginaTopoConteudo">
+					<div id="paginaTopoCentro">
+						<div id="imagemcabecalho"></div>
+						<div id="imagemCentroCabecalho"></div>
+						<div id="pesquisaLogin">
+							<div id="divLogin" style="display:none">
+								User Name:<input type="text" name="userName"/><br>
+								Pass:<input type="text" name="userName"/><br>
+								<button type="button">Login</button> 
+							</div>
+							<input id="btnLogin" type="button" value="Login" onclick="login()"/> 
+							
+							<input id="searchBox" type="text" name="procurar"/>
+							<div id="find"><input type="image" src="images/search.png" alt="procurar"/></div>
+						</div>
+					</div>
+						<div id="cssmenu">
+							<ul>
+								<li><a href="index.html">Ínicio</a></li>
+								<li><a href="saude.html">Saúde</a></li>
+								<li><a href="marcacaoConsulta.html">Marcação Consulta</a></li>
+								<li><a href="cuidadosGeriatricos.html">Cuidados Geriátricos</a></li>
+								<li><a href="creche.html">Creche</a></li>
+								<li><a href="irmandade.html">Irmandade</a></li>
+								<li><a href="contactos.html">Contactos</a></li>
+					
+							</ul>
+						</div>
+				</div>
+			</div>
+				<div id="paginaPrincipalTopo"></div>
+				<div id="paginaPrincipalConteudo">
+					<div id= "conteudo">
+						<div class="textoIntrodutorioLargoIndex"><p>A Santa Casa da Misericórdia de Leiria – instituição com 500 anos de história – renova-se e actualiza-se diariamente. A presença num meio como a Internet é disto um bom exemplo.
+						Com este site, pretende a Misericórdia de Leiria dar a conhecer a todos aqueles que nos visitam as suas valências sociais e os projectos em que estamos envolvidos.
+						Esperamos que aprecie este endereço.</p></div><br>
+
+							<div class="subTituloIndex"><h3><a href="saude.html">Saúde</a></h3></div>
+							<div class="textoIntrodutorioLargoIndex"><p>A Saúde é o nosso ideal e para o alcançar a Idealmed procurou congregar neste hospital o maior número de especialidades clínicas, num leque alargado de profissionais, que pudessem dar a resposta mais adequada a quem nos procura. Consideramos que respostas isoladas não são o melhor meio para a promoção da saúde pelo que desenvolvemos unidades funcionais e programas integrados que possam corresponder às reais necessidades de quem nos procura e que pode observar nesta página</p></div><br>
+							<div class="subTituloIndex"><h3><a href="lar.html">Lar</a></h3></div>
+							<div class="textoIntrodutorioLargoIndex"><p>O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados com espaços ajardinados envolventes. O edifício e seu equipamento são considerados do mais moderno e funcional que se tem feito até hoje no nosso país. </p></div><br>
+							<div class="subTituloIndex"><h3><a href="residencial.html">Residencial</a></h3></div>
+							<div class="textoIntrodutorioLargoIndex"><p>Já se encontra em funcionamento, sob a alçada da Santa Casa da Misericórdia de Leiria, a Residencial Assistida XXI.</p></div><br>
+							<div class="subTituloIndex"><h3><a href="apoioDomiciliario.html">Apoio Domiciliário</a></h3></div>
+							<div class="textoIntrodutorioLargoIndex"><p>Tendo como objectivo a prestação de cuidados ao nível da assistência de utentes impossibilitados de se deslocarem aos Centros de Dia, Lares e outras instituições sociais, a Santa Casa da Misericórdia de Leiria iniciou, em Julho de 2004, o Serviço de Apoio Domiciliário. </p></div><br>
+							<div class="subTituloIndex"><h3><a href="internamento.html">Internamento</a></h3></div>
+							<div class="textoIntrodutorioLargoIndex"><p>Num edifício totalmente recuperado para o efeito e cumprindo todas as disposições legais, encontra-se já em funcionamento a Creche Casa Sanches. Com esta infra-estrutura, a Santa Casa da Misericórdia de Leiria vocaciona mais uma importante valência no âmbito das suas competências sociais, com uma capacidade instalada para 33 crianças, dos 0 aos 36 meses</p></div><br>
+						<div id="noticiasIndex"><h1>Noticias</h1></div>
+						
+						<div id="noticiasIrmandade">
+							<div class="tipo"><a href="irmandade.html"><h3>Irmandade</h3></a></div>
+							<div class="noticiaConteudo">Noticia nao definida</div>
+							<div class="noticiaImagem"></div>
+							<div class="noticiaLink"></div>
+							<div class="noticiaScroll"></div>
+						</div>
+						<div id="noticiasCreche">
+							<div class="tipo"><a href="creche.html"><h3>Creche</h3></a></div>
+							<div class="noticiaConteudo">Noticia nao definida</div>
+							<div class="noticiaImagem"></div>
+							<div class="noticiaLink"></div>
+							<div class="noticiaScroll"></div>
+						</div>
+						<div id="noticiasLar">
+							<div class="tipo"><a href="lar.html"><h3>Lar</h3></a></div>
+							<div class="noticiaConteudo">Noticia nao definida</div>
+							<div class="noticiaImagem"></div>
+							<div class="noticiaLink"></div>
+							<div class="noticiaScroll"></div>
+						</div>
+						<div id="noticiasResidencial">
+							<div class="tipo"><a href="residencial.html"><h3>Residencial</h3></a></div>
+							<div class="noticiaConteudo">Noticia nao definida</div>
+							<div class="noticiaImagem"></div>
+							<div class="noticiaLink"></div>
+							<div class="noticiaScroll"></div>
+						</div>
+						
+						<div id="publicacoesIndex"><h1>Publicações</h1></div>	
+						<div id="publicacoes">
+							<div class="nomeEPublicacoes"></div>
+							<div class="publicacaoImagem"></div>
+							<div class="autorEPublicacaoData"></div>
+							<div class="autorEPublicacaoData"></div>
+							<div id="scrollPublicacoes" class="noticiaScroll"></div>
+						</div>
+
+						
+						<br>
+					</div>
+				</div>
+				<div id="paginaPrincipalFundo"></div>
+			<div id="paginaRodape">
+					<div id="paginaRodapeConteudo">
+					<a href="https://www.facebook.com/santacasaleiria?ref=ts&amp;fref=ts"><img src="images/facebook_logo.png" alt="facebookLink"></a>2014 © | Desenvolvimento: David Adrião, Eurico Sousa e Olavo Machado 
+					</div>
+					<div id="paginaRodapeFundo"></div>
+			</div>
+		</div>
+	</body>
+</html>

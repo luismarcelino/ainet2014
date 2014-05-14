@@ -1,0 +1,1863 @@
+/* CSS Document */
+
+body {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	font-family:"Verdana", "Arial", "Trebuchet MS";
+	width: 100%;
+	height: 100%;
+}
+
+/* Posição das div's principais e base */
+
+#divBase {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	float: left;
+}
+
+#divBaseTopo {
+	position: absolute;
+	height: 180.09px;
+	/*height: 27%;*/
+	/*height: 166.75px;*/
+	width: 100%;
+	float: left;
+	/*background-image: url("../imagens/capa.png");*/
+	background-color: #00A5D6;
+}
+
+#divBaseMeio {
+	position: relative;
+	top: 180.09px;
+	/*top:27%;*/
+	height: 466.9px;
+	height: 70%;
+	width: 100%;
+	float: left;
+	background-color:#EFEFFF;
+}
+
+#divBaseBaixo {
+	position: absolute;
+	top: 649.99px;
+	/*top:97%;*/
+	bottom:0px;
+	width: 100%;
+	float: left;
+	background-color:#00698C;
+}
+
+#divPrincipal {
+	position: relative;
+	min-height: 667px;
+	min-width: 1366px;
+	/*min-height: 800px;
+	min-width: 1280px;*/
+	max-height: 1080px;
+	max-width: 1920px;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+
+#divPrincipalTopo {
+	position: absolute;
+	height: 27%;
+	width: 100%;
+	float: left;
+	/*background-image: url("../imagens/capa.png");*/
+	background-color: #00A5D6;
+}
+
+#divPrincipalMeio {
+	position: absolute;
+	top: 27%;
+	height: 70%;
+	width: 100%;
+	float: left;
+	background-color:#EFEFFF;
+}
+
+#divPrincipalBaixo {
+	position: absolute;
+	top: 97%;
+	height: 3%;
+	width: 100%;
+	float: left;
+	background-color:#00698C;
+}
+
+/*
+#00A5D6 - azul escuro
+#4AD6FF - azul claro
+*/
+
+/* Fim da Posição das div's principais e base */
+
+#logo {
+	margin:0px auto;
+	display:block;
+	height: 85%;
+	width:12%;
+	border:0px solid;
+	border-radius:25px;
+}
+
+#logo {
+	position: absolute;
+	margin:-172px 60px;
+	display:block;
+	height: 99%;
+	width:15%;
+	border:0px solid;
+	border-radius:25px;
+}
+/* Menu Principal*/
+
+#menu_principal {
+	position: absolute;
+	left:21.5%;
+	top:84%;
+	font-size: 12px;
+	text-align: center;
+	color: white;
+	background-color: #00698C;
+	border-radius: 5px;
+	padding: 3px;
+	width: 57%;
+}
+
+#menu_principal ul li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 34px;
+}
+
+#menu_principal ul {
+	padding-left: 10px;
+	margin-top: 5px;
+}
+
+#menu_principal ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+#menu_principal ul li a:hover {
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+/* Fim do menu principal*/
+
+#copyright {
+	position: absolute;
+	font-size: 10px;
+	color: white;
+	text-align: right;
+	right:15px;
+	bottom: 3px;
+	width: 100%;
+}
+
+#procura_section { 
+	margin-top: 145px;
+}
+
+#procura {
+	position: relative;
+    margin: 0 86%;
+    width: 10%;
+}
+
+#procura input {
+    height: 26px;
+    width: 100%;
+    padding: 0 12px 0 25px;
+    background: white url("../imagens/search.png") 8px 6px no-repeat;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #a8acbc #babdcc #c0c3d2;
+    border-radius: 5px;
+    box-shadow: inset 0 1px #e5e7ed, 0 1px 0 #fcfcfc;
+}
+
+#area_login {
+	position: absolute;
+	margin-top:-177px;
+	/*margin-left: 1190px;*/
+	right: 5%;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	background-color: #00698C;
+	border-radius: 5px;
+	padding: 3px;
+	width: 10%;
+}
+
+#area_login a {
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+
+#area_login a:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+#info {
+	position: absolute;
+	color: white;
+	font-size: 10px;
+	bottom: 3px;
+	left: 15px;
+}
+
+#info a {
+	
+	color: white;
+	font-size: 10px;
+}
+
+#conteudo_contactos1 {
+	position: relative;
+	top: 5%;
+	background-color: white;
+	/*padding: auto;*/
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border-radius: 5px;
+}
+
+#conteudo_contactos1 h4 {
+	margin:auto;
+	padding: 10px;
+	background-color:#00698C;
+	color:white;
+	border-radius: 5px;
+}
+
+#conteudo_contactos1 p {
+	padding-left: 10px;
+	font-size: 11px;
+}
+
+#conteudo_contactos2 {
+	position: absolute;
+	left:25%;
+	top:9%;
+}
+
+.conteudo_adicional {
+	left:60%;
+	font-family: verdana;
+}
+
+#conteudo_contactos_2 {
+	margin-left: 25px;
+	font-family: "Verdana", "Arial", "Trebuchet MS";
+	font-size: 11px;
+}
+
+#conteudo_contactos3 {
+	position: absolute;
+	left:55%;
+	top:9%;
+}
+
+#form_contacto {
+	position: absolute;
+	top:85%;
+	left: 80%;
+	width: 190px;
+}
+
+#form_contacto a {
+	background-color:#00698C;
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+#form_contacto a:hover {
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+#conteudo_formcontacto {
+	position: relative;
+	top: 5%;
+	background-color: white;
+	/*padding: auto;*/
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border-radius: 5px;	
+}
+
+#conteudo_formcontacto h4 {
+	margin:auto;
+	padding: 10px;
+	background-color:#00698C;
+	color:white;
+	border-radius: 5px;
+}
+
+#formulario_contacto {
+	font-size: 12px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+#formulario_contacto input {
+	border-radius: 5px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #a8acbc #babdcc #c0c3d2;
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 200px;
+}
+
+#formulario_contacto button {
+	border-radius: 5px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #a8acbc #babdcc #c0c3d2;
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 100px;
+}
+
+
+#formulario_contacto select {
+	border-radius: 5px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #a8acbc #babdcc #c0c3d2;
+    padding: 5px 7px;
+    font-size: 12px;   
+}
+
+#formulario_contacto2 {
+	position: absolute;
+	font-size: 12px;
+	left: 250px;
+	top: 48px;
+}
+
+#formulario_contacto2 textarea {
+	resize: none;
+	border-radius: 5px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #a8acbc #babdcc #c0c3d2;
+    padding: 5px 7px;
+    font-size: 12px; 
+}
+
+#formulario_contacto3 {
+	position: absolute;
+	font-size: 12px;
+	left: 500px;
+	top: 48px;
+}
+
+#formulario_contacto3 textarea {
+	resize: none;
+	border-radius: 5px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #a8acbc #babdcc #c0c3d2;
+    padding: 5px 7px;
+    font-size: 12px; 
+}
+
+#formulario_contacto4 {
+	position: absolute;
+	font-size: 12px;
+	left: 750px;
+	top: 48px;
+}
+
+#formulario_contacto4 {
+	position: absolute;
+	font-size: 12px;
+	top:80%;
+	left: 80%;
+}
+
+#formulario_contacto4 input{
+	background-color:#00698C;
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight:bold;
+}
+
+#formulario_contacto4 input:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+#conteudo_saude {
+	position: relative;
+	top: 5%;
+	background-color: white;
+	/*padding: auto;*/
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border-radius: 5px;
+	overflow: auto;
+}
+
+#conteudo_saude h4 {
+	margin:auto;
+	padding: 10px;
+	background-color:#00698C;
+	color:white;
+	border-radius: 5px;
+}
+
+#saude_submenu {
+	position: absolute;
+	left: 25%;
+	top: 2.3%;
+}
+
+#saude_submenu a{
+	background-color:#00698C;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight:bold;
+	margin-right: 30px;
+}
+
+#saude_submenu a:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+.seleccionado {
+	background-color: #EFEFFF !important;
+	color: #00698C !important;
+	text-decoration: none !important;
+}
+
+#conteudo_saude_2 {
+	position: absolute;
+	top: 10%;
+	left:5%;
+	text-align: justify;
+	width: 70%;
+	font-size: 14px;
+}
+
+#img_saude {
+	position: absolute;
+	height: 50%;
+	width: 30%;
+	top:27%;
+	right: -33%;
+}
+
+.avatar {
+	position: absolute;
+	border-radius: 5px;
+	border-width: 1px;
+    border-style: solid;
+    border-color:#A4A4A4;
+    height: 80px;
+    width: 80px;
+    right:5%;
+}
+
+#medico1 {
+	position: absolute;
+	top:12%;
+	left:2.5%;
+	border-radius: 5px;
+	border-width: 2px;
+    border-style: solid;
+    border-color:#A4A4A4; 
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 350px;
+    text-align: justify;
+    background-color:#EFEFFF;
+}
+
+#medico1 a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+#medico1 a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+#medico2 {
+	position: absolute;
+	top:55%;
+	left:2.5%;
+	border-radius: 5px;
+	border-width: 2px;
+    border-style: solid;
+    border-color:#A4A4A4; 
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 350px;
+    text-align: justify;
+    background-color:#EFEFFF;
+}
+
+#medico2 a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+#medico2 a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+#medico3 {
+	position: absolute;
+	top:12%;
+	left:35%;
+	border-radius: 5px;
+	border-width: 2px;
+    border-style: solid;
+    border-color:#A4A4A4; 
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 350px;
+    text-align: justify;
+    background-color:#EFEFFF;
+}
+
+#medico3 a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+#medico3 a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+#medico4 {
+	position: absolute;
+	top:55%;
+	left:35%;
+	border-radius: 5px;
+	border-width: 2px;
+    border-style: solid;
+    border-color:#A4A4A4; 
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 350px;
+    text-align: justify;
+    background-color:#EFEFFF;
+}
+
+#medico4 a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+#medico4 a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+#medico5 {
+	position: absolute;
+	top:12%;
+	right: 2.5%;
+	border-radius: 5px;
+	border-width: 2px;
+    border-style: solid;
+    border-color:#A4A4A4; 
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 350px;
+    text-align: justify;
+    background-color:#EFEFFF;
+}
+
+#medico5 a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+#medico5 a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+#medico6 {
+	position: absolute;
+	top:55%;
+	right:2.5%;
+	border-radius: 5px;
+	border-width: 2px;
+    border-style: solid;
+    border-color:#A4A4A4; 
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 350px;
+    text-align: justify;
+    background-color:#EFEFFF;
+}
+
+#medico6 a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+#medico6 a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+#avatar_perfil {
+	position: relative;
+	border-radius: 5px;
+	border-width: 1px;
+    border-style: solid;
+    border-color:#A4A4A4;
+    height: 120px;
+    width: 120px;
+    left: 2.5%;
+}
+
+#medico_perfil {
+	position: absolute;
+	top:12%;
+	left: 5%;
+	font-size: 12px;
+}
+
+#nome_medico {
+	position: relative;
+	display:block;
+	top: -140px;
+	left: 220px;
+	font-size: 20px;
+	border-width: 1px;
+    border-style: solid;
+    border-color:#A4A4A4;
+	padding: 9px;
+	border-radius: 5px;
+	color: black;
+}
+
+#medico_especialidades {
+	position: absolute;
+	display: block;
+	left: 2.5%;
+	top: 160px;
+	font-size: 15px;
+	border-width: 1px;
+    border-style: solid;
+    border-color:#A4A4A4;
+    padding: 9px;
+	border-radius: 5px;
+}
+
+#medico_investigacao {
+	position: absolute;
+	display: block;
+	left: 220px;
+	width: 600px;
+	height: 200px;
+	top: 90px;
+	font-size: 13px;
+	border-width: 1px;
+    border-style: solid;
+    border-color:#A4A4A4;
+    padding: 9px;
+	border-radius: 5px;
+	text-align: justify;
+}
+
+#medico_botoes {
+	position: absolute;
+	top:80%;
+	right:2%;
+	width: 170px;
+}
+
+#medico_botoes a {
+	display: block;
+	background-color:#00698C;
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#medico_botoes a:hover {
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+#conteudo_login {
+	position: relative;
+	top: 5%;
+	background-color: white;
+	/*padding: auto;*/
+	height: 60%;
+	width: 30%;
+	margin: auto;
+	border-radius: 5px;	
+}
+
+#conteudo_login h4 {
+	margin:auto;
+	padding: 10px;
+	background-color:#00698C;
+	color:white;
+	border-radius: 5px;
+}
+
+#formulario_login {
+	font-size: 12px;
+	padding-left: 25%;
+	padding-top: 10px;
+}
+
+#formulario_login input {
+	border-radius: 5px;
+	border-width: 1px;
+    border-style: solid;
+    border-color: #a8acbc #babdcc #c0c3d2;
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 200px;
+}
+
+#formulario_login1 {
+	position: absolute;
+	font-size: 12px;
+	left: 750px;
+	top: 48px;
+}
+
+#formulario_login1 {
+	position: absolute;
+	font-size: 12px;
+	top:63%;
+	left: 27%;
+}
+
+#formulario_login1 input{
+	background-color:#00698C;
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight:bold;
+}
+
+#formulario_login1 input:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+#conteudo_especialidades {
+	position: absolute;
+	background-color: #00698C;
+	left: 2.5%;
+	top: 60px;
+	margin-bottom: 19px;
+	border-width: 1px;
+    border-style: solid;
+    border-color:#A4A4A4;
+    padding: 6px;
+    padding-bottom: 2px;
+	border-radius: 5px;
+
+	/*background-color: #EFEFFF */
+}
+
+#conteudo_especialidades a{
+	display: block;
+	background-color:#00698C;
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight:bold;
+}
+
+#conteudo_especialidades a:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+#descricao_especialidade {
+	position: absolute;
+	left: 23%;
+	margin-top: 16px;
+	text-align: justify;
+	margin-right: 30px;
+	font-size: 13px;
+}
+
+#especialidade_medico1 {
+	position: absolute;
+	margin-top: 30px;
+	border-radius: 5px;
+	border-width: 2px;
+    border-style: solid;
+    border-color:#A4A4A4; 
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 350px;
+    text-align: justify;
+    background-color:#EFEFFF;
+}
+
+#especialidade_medico1 a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+#especialidade_medico1 a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+#especialidade_medico2 {
+	position: absolute;
+	margin-top: 220px;
+	border-radius: 5px;
+	border-width: 2px;
+    border-style: solid;
+    border-color:#A4A4A4; 
+    padding: 5px 7px;
+    font-size: 12px;
+    width: 350px;
+    text-align: justify;
+    background-color:#EFEFFF;
+}
+
+#especialidade_medico2 a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+#especialidade_medico2 a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+#acordos_especialidade {
+	position: absolute;
+	display: block;
+	margin-top: 30px;
+	right: 35%;
+	font-size: 13px;
+}
+
+#especialidades_botoes {
+	position: absolute;
+	margin-top: 35px;
+	right: 5px;
+}
+
+#especialidades_botoes a{
+	display: block;
+	background-color:#00698C;
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight:bold;
+	text-align: center;
+}
+
+#especialidades_botoes a:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+
+/* CSS Borga */
+
+
+
+#divNoticiasValencia{
+	position:relative;
+	
+	margin: 0 0 5px 0;
+	padding: 0;
+	border: 0;
+	
+	top:0;
+	left:0;
+	
+	width:100%;
+	height:15%;
+	
+	min-width: 665px;
+	min-height: 180px;
+
+	font-size: 12px;
+
+	
+	/*background-color: #000000;*/
+}
+
+.divNoticiasValencia{
+	position:relative;
+	float:left;
+	
+	margin:13px 1% 2px 1%;
+	padding:0;
+	border:1px solid;
+	border-color:#00698C;
+	
+	border-radius:5px;
+	
+	left:6%;
+	
+	width:20%;
+	height:80%;
+	
+	min-height:130px;
+	
+	
+	background-color:#FFFFFF;
+	/*background-color:#ECECEC;*/
+}
+
+.divNoticiasValencia h1{
+	border-radius:2px;
+	
+	margin-top:0;
+	
+	text-align:center;
+	
+	background-color:#00698C;
+	
+	color:#FFFFFF;
+}
+
+.divNoticiasValencia h3{
+	text-align:left;
+	
+	font-weight:bold;
+	
+	color:#00698C;
+
+	margin-left: 4px;
+}
+
+.divNoticiasValencia p{
+	text-align:left;
+	margin-left: 6px;
+	
+	color:#000000;
+}
+
+/*---------------- Area artigos Medicos --------------------------*/
+
+#divNoticiasArtigosMedicos{
+	position:relative;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:1px;
+	left:0;
+	
+	width:100%;
+	height:40%;
+	
+	min-width:665px;
+	min-height:256px;
+
+	font-size: 12px;
+
+	/*background-color: #000000;*/
+}
+
+.divNoticiasArtigosMedicos{
+	position:relative;
+	
+	margin:5px 0 0 0;
+	padding:0;
+	
+	border:1px solid;
+	border-color:#00698C;
+	
+	border-radius:5px;
+	
+	top:5px;
+	left:20%;
+	
+	width:60%;
+	height:15%;
+	
+	min-width:465.5px;
+	min-height:75px;
+
+	font-size: 12px;
+
+	background-color:#FFFFFF;
+	/*background-color:#ECECEC;*/
+}
+
+.divNoticiasArtigosMedicos img{
+	position:relative;
+	float:left;
+	
+	padding:0;
+	border:2px solid #00698C;
+	
+	border-radius:5px;
+	
+	margin:2px 2px 2px 2px;
+	
+	width:15%;
+	height:26%;
+	
+	
+	max-width:85px;
+	/*max-height:90px;*/
+	
+	min-width:70px;
+	min-height:60px;
+}
+
+#divNoticiasArtigosMedicosTitulo{
+	position:relative;
+	float:left;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:0;
+	left:0;
+	
+	width:80%;
+	height:3%;
+	
+	font-size:16px;
+	
+	color:#00698C;
+	/*background-color:#2AFF00;*/
+}
+
+.divNoticiasArtigosMedicosTitulo{
+	position:relative;
+	float:left;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:0;
+	left:0;
+	
+	width:80%;
+	height:3%;
+	margin-top: 3px;
+	margin-left: 3px;
+	
+	font-size:14px;
+	
+	color:#00698C;
+}
+
+.divNoticiasArtigosMedicospNoticia{
+	position:relative;
+	float:left;
+	
+	margin:10px;
+	padding:0;
+	border:0;
+	
+	top:0;
+	left:0;
+	
+	width:80%;
+	height:15%;
+	
+	
+	
+	color:#000000;
+	/*background-color:#FFDD00;*/
+	
+	font-size:12px;
+}
+
+.divDados{
+	position:relative;
+	float:left;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:0;
+	left:0;
+	
+	width:80%;
+	height:15px;
+	
+	/*background-color:#FF0003;*/
+}
+
+#divDados{
+	position:relative;
+	float:left;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:0;
+	left:0;
+	
+	width:80%;
+	height:15px;
+	
+	/*background-color:#FF0003;*/
+}
+
+.nomeMedico{
+	position:relative;
+	float:right;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:0;
+	
+	color:#00698C;
+	/*background-color:#FFDD00;*/
+	
+	font-weight:bold;
+	font-size:12px;
+	
+	color:BLACk;
+}
+
+.dataArtigo{
+	position:relative;
+	float:right;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:0;
+	
+	color:#00698C;
+	/*background-color:#FFDD00;*/
+	
+	font-weight:bold;
+	font-size:12px;
+	
+	color:BLACk;
+}
+
+
+/*----------------------------------*/
+#divInformacaoEstatica{
+	position:relative;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:10px;
+	
+	width:100%;
+	height:15%;
+
+	font-size: 12px;
+	
+	/*background-color:#000000;*/
+}
+
+
+.divInformacaoEstatica{
+	position:relative;
+	float:left;
+	
+	margin:2px 1% 0 1%;
+	padding:0;
+	
+	border:1px solid;
+	border-color:#00698C;
+	
+	border-radius:5px;
+
+	left:10%;
+	
+	width:25%;
+	height:90%;
+	
+	background-color:#FFFFFF;
+	font-size: 12px;
+}
+
+.divInformacaoEstatica h3{
+	margin:0;
+	padding:0;
+	border:0;
+	
+	text-align:center;
+	margin-top: 2px;
+	font-size:14px;
+	font-weight:bold;
+	color:#00698C;
+	top:0;
+}
+
+.divInformacaoEstatica p{
+	margin:0;
+	padding:0;
+	border:0;
+	
+	text-align:left;
+	font-size:12px;
+	top:5px;
+	margin-left: 6px;
+	margin-top: 2px;
+}
+
+#divNoticiasCreche{
+	position:absolute;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:1%;
+	left:1%;
+	
+	width:50%;
+	height:80%;
+
+	font-size: 12px;
+	
+	/*background-color:#FF0004;
+	background-color:#EFEFFF;*/
+}
+
+.divNoticiaCreche{
+	position:relative;
+	
+	margin:1% 0 0 0;
+	padding:0;
+	border:2px solid;
+	
+	border-radius:5px;
+	border-color:#00698C;
+	
+	top:1%;
+	left:1%;
+	
+	width:90%;
+	height:25%;
+
+	font-size: 12px;
+	
+	/*background-color:#EFEFEF;*/
+	background-color:#FFFFFF;
+}
+
+/* Menu confidencial apenas utilizadores logados e com permição conseguem ver este Menu */
+#menu_Confidencial{
+	position:absolute;
+	font-size: 12px;
+
+	text-align: center;
+	
+	border-radius: 5px;
+	padding: 3px;
+	left:30%;
+	top:68%;
+	/*
+	width:665px;
+	height:25px;*/
+	
+	width:40%;
+	
+	
+	background-color: #4AD6FF;
+}
+
+#menu_Confidencial ul li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 34px;
+}
+
+#menu_Confidencial ul {
+	padding-left: 10px;
+	margin-top: 5px;
+}
+
+#menu_Confidencial ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 3px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+#menu_Confidencial ul li a:hover {
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+/*------------------------------- CONTEUDO VISIVEL NO SEPARADOR CRECHE DA PAGINA -------------------------------*/
+#divNoticiasCreche{
+	position:absolute;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:11%;
+	left:1%;
+	
+	width:50%;
+	height:80%;
+	
+	/*background-color:#FF0004;
+	background-color:#EFEFFF;*/
+}
+
+.divNoticiaCreche{
+	position:relative;
+	
+	margin:1% 0 0 0;
+	padding:0;
+	border:2px solid;
+	
+	border-radius:5px;
+	border-color:#00698C;
+	
+	top:1%;
+	left:1%;
+	
+	width:90%;
+	height:30%;
+	
+	/*background-color:#EFEFEF;*/
+	background-color:#FFFFFF;
+}
+
+.divNoticiaCreche:hover{
+	position:relative;
+	
+	margin:1% 0 0 0;
+	padding:0;
+	border:2px solid;
+	
+	border-radius:5px;
+	border-color:#00698C;
+	
+	top:1%;
+	left:1%;
+	
+	width:90%;
+	height:30%;
+	
+	background-color:#F1F1F1;
+	/*background-color:#C9C9C9;*/	
+	
+}
+
+
+
+.hTituloNoticia{
+	position:relative;
+	
+	margin:0 0 2px 0;
+	padding:0;
+	border:0;
+	
+	left:1%;
+	
+	width:98%;
+	height:20%;
+	
+	color:#00698C;
+}
+
+.hTituloNoticia a{
+
+	text-decoration: none;
+	color:#00698C;
+}
+
+.hTituloNoticia a:hover{
+
+	text-decoration: underline;
+
+}
+
+#divApresentacao{
+	position:absolute;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	top:11%;
+	right:1%;
+	
+	width:50%;
+	height:80%;
+	
+	/*background-color:#FF0004;
+	background-color:BLACK;*/
+}
+
+.divApresentacao{
+	position:relative;
+	
+	margin:1% 0 0 0;
+	padding:0;
+	border:2px solid;
+	
+	border-radius:5px;
+	border-color:#00698C;
+	font-size: 14px;
+	text-align: justify;
+
+	
+	top:1%;
+	right:1%;
+	
+	width:90%;
+	height:96%;
+	
+	/*background-color:#EFEFEF;*/
+	background-color:#FFFFFF;
+}
+
+#creche_texto {
+	padding: 7px;
+}
+
+.divApresentacao:hover{
+	
+	background-color:#F1F1F1;
+	
+}
+
+.imagemApresentacao{
+	position:relative;
+	
+	margin:5px 0 0 0;
+
+	border:2px solid;
+	
+	border-radius:5px;
+	border-color:#00698C;
+	
+	left:5%;
+	
+	width:90%;
+	height:50%;	
+}
+
+.divApresentacao h2{
+	color:#00698C;	
+}
+
+
+.pResumoNoticia{ /* -----------------------------------------------------------------FALTA limitr isto para poucos caracteres*/
+	position:relative;
+	
+	margin:0 0 3px 0;
+	padding:0;
+	border:0;	
+	
+	left:1%;
+	
+	width:98%;
+	height:60%;
+	
+	text-align:justify;
+}
+
+.divDadosNoticia{
+	position:relative;
+	
+	margin:0;
+	padding:0;
+	border:0;
+	
+	left:1%;
+	
+	width:98%;
+	height:15%;
+	
+	text-align:right;
+	font-weight:bold;
+}
+
+.pDadosNoticia{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.divbtnFormularioContato{
+	position:absolute;
+	
+	top:93%;
+	left:48.5%;
+	
+	width: 170px;
+}
+
+.divbtnListagem {
+	position:absolute;
+	
+	top:93%;
+	left:32.5%;
+	
+	width: 170px;
+}
+
+.divbtnListagem a{
+	display: block;
+	background-color:#00698C;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight:bold;
+	text-align: center;
+}
+
+.divbtnListagem a:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+.btnFormularioContacto{
+	background-color:#4AD6FF;
+}
+
+.divbtnFormularioContato a{
+	display: block;
+	background-color:#00698C;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight:bold;
+	text-align: center;
+}
+
+.divbtnFormularioContato a:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}
+
+
+
+
+#conteudo_entrada {
+	position: relative;
+	top: 5%;
+	background-color: white;
+	/*padding: auto;*/
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border-radius: 5px;
+	overflow: auto;
+	font-size: 12px !important;
+}
+
+.barra_index {
+	margin:auto;
+	padding: 10px;
+	background-color:#00698C;
+	color:white;
+	border-radius: 5px;
+}
+
+#conteudo_creche {
+	position: relative;
+	top: 5%;
+	background-color: white;
+	/*padding: auto;*/
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border-radius: 5px;
+	
+}
+
+#conteudo_creche h4 {
+	margin:auto;
+	padding: 10px;
+	background-color:#00698C;
+	color:white;
+	border-radius: 5px;
+}
+
+#irmandade_texto {
+	padding-left: 7px;
+
+}
+
+#conteudo_listagem {
+	position: relative;
+	top: 5%;
+	background-color: white;
+	/*padding: auto;*/
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	border-radius: 5px;
+}
+
+#conteudo_listagem h4 {
+	margin:auto;
+	padding: 10px;
+	background-color:#00698C;
+	color:white;
+	border-radius: 5px;
+}
+
+#divNoticiasLista{
+	position:absolute;
+	margin:0;
+	padding:0;
+	border:0;
+	top:11%;
+	left:1%;
+	width:50%;
+	height:60%;
+}
+
+.divNoticiaLista{
+	position:relative;
+	margin:1% 0 0 0;
+	padding:0;
+	border:2px solid;
+	border-radius:5px;
+	border-color:#00698C;
+	top:1%;
+	left:1%;
+	width:90%;
+	height:30%;
+	background-color:#FFFFFF;
+}
+
+.divNoticiaLista:hover{
+	position:relative;
+	margin:1% 0 0 0;
+	padding:0;
+	border:2px solid;
+	border-radius:5px;
+	border-color:#00698C;
+	top:1%;
+	left:1%;
+	width:90%;
+	height:30%;
+	background-color:#F1F1F1;
+}
+
+
+
+.hTituloNoticiaLista{
+	position:relative;
+	margin:0 0 2px 0;
+	padding:0;
+	border:0;
+	left:1%;
+	width:98%;
+	height:20%;
+	color:#00698C;
+	font-size: 14px;
+}
+
+.hTituloNoticiaLista a{
+	position:relative;
+	margin:0 0 2px 0;
+	padding:0;
+	border:0;
+	left:1%;
+	width:98%;
+	height:20%;
+	color:#00698C;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.hTituloNoticiaLista a:hover{
+	
+	text-decoration: underline;
+}
+
+.pDadosNoticiaLista{
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+.pResumoNoticiaLista{ /* -----------------------------------------------------------------FALTA limitr isto para poucos caracteres*/
+	position:relative;
+	margin:0 0 3px 0;
+	padding-top:5px;
+	border:0;	
+	left:1%;
+	width:98%;
+	height:60%;
+	text-align:justify;
+	font-size: 12px;
+}
+
+.divDadosNoticiaLista{
+	position:absolute;
+	margin:0;
+	padding:0;
+	border:0;
+	left:1%;
+	width:98%;
+	top:74%;
+	height:15%;
+	text-align:right;
+	font-weight:bold;
+	font-size: 12px;
+}
+
+#divNoticiasLista2{
+	position:absolute;
+	margin:0;
+	padding:0;
+	border:0;
+	top:11%;
+	left:50%;
+	width:50%;
+	height:60%;
+}
+
+.divNoticiaLista2{
+	position:relative;
+	margin:1% 0 0 0;
+	padding:0;
+	border:2px solid;
+	border-radius:5px;
+	border-color:#00698C;
+	top:1%;
+	left:1%;
+	width:90%;
+	height:30%;
+	background-color:#FFFFFF;
+}
+
+#noticia_corpo {
+	font-size: 13px;
+	text-align: justify;
+	padding: 7px;
+}
+
+#noticia_corpo a{
+	color: black;
+}
+
+.pDadosCuidados{
+	margin:0;
+	padding:0;
+	border:0;
+	color: #00698C;
+}
+
+.pDadosCuidados a{
+	color: #00698C;
+	text-decoration: none;
+}
+
+.pDadosCuidados a:hover{
+	color: #00698C;
+	text-decoration: underline;
+}
+
+.btnFormularioContacto{
+	background-color:#4AD6FF;
+}
+
+.divbtnFormularioContatoCuidados{
+	position:absolute;
+	
+	top:94%;
+	left:43%;
+	
+	width: 170px;
+}
+
+.divbtnFormularioContatoCuidados a{
+	display: block;
+	background-color:#00698C;
+	font-size: 12px;
+	text-decoration: none;
+	color: white;
+	padding: 5px;
+	border-radius: 5px;
+	font-weight:bold;
+	text-align: center;
+}
+
+.divbtnFormularioContatoCuidados a:hover{
+	background-color: #EFEFFF;
+	color: #00698C;
+	text-decoration: none;
+}

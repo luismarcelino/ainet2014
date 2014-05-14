@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0"/> 
+    <title>SCML - Marcar Consulta/Exame</title>
+
+    <link rel="stylesheet" href="../style/style.css" type="text/css" media="screen"/>
+</head>
+
+<body>
+    <header>
+        <h1>Santa Casa da Misericórdia de Leiria</h1>
+        <p>500 ANOS DE HISTÓRIA</p>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Página Principal</a></li>
+                <li><a href="../saude/saude.html">Saúde</a></li>
+                <li><a href="../geriatria/geriatria.html">Geriatria</a></li>
+                <li><a href="../creche/creche.html">Creche</a></li>
+                <li><a href="../irmandade/irmandade.html">Irmandade</a></li>
+                <li><a href="../contactos/contactos.html">Contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br/>
+    <aside id="login" id="top">
+        <form id="login_form" method="post" action="index.html">
+            <p><input type="text" name="login" value="" placeholder="Username ou Email"></p>
+            <p><input type="password" name="password" value="" placeholder="Password"></p>
+            <p class="submit"><input type="submit" name="commit" value="Entrar"></p>
+        </form>
+    </aside>
+    <aside id="logo">
+        <img src="../imagens/logo.png">
+    </aside>
+    <section id="spacer"></section>
+
+    <section id="noticia_completa">
+        <h2>Marcar Consulta / Exame</h2>
+        
+        <form class="artigo_ou_noticia">
+            <p>Os campos marcados com * são de preenchimento obrigatório.</p>
+            <p> 
+                <label for="nome">Nome *</label>              
+                <input type="text" name="nome" placeholder="Nome" required>
+            </p>
+            <p>
+                <label for="apelido">Apelido *</label>
+                <input type="text" name="apelido" placeholder="Apelido" required>
+            </p>
+            <p>
+                <label for="morada">Morada</label>
+                <input type="text" name="morada" placeholder="Morada">
+            </p>
+            <label for="data_nascimento">Data Nascimento *</label>
+            <input type="date" name="data_nascimento">
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="exemplo@email.com">
+            </p>
+            <p>
+                <label for="telefone">Telefone *</label>
+                <input type="tel" name="telefone" placeholder="Telefone" required>
+            </p>
+            <label>Consulta / Exame</label><br/>
+            <input type="radio" name="consulta" value="consulta">
+            <label for="consulta">Consulta</label><br>
+            <input type="radio" name="exame" value="exame">
+            <label for="exxame">Exame</label>
+            <p>
+                <label for="opcoes_consulta">Consulta *</label>
+                <select name="opcoes_consulta" id="dropdown_list">
+                    <option value="selecionar"></option>
+                    <option value="Opcao1">Opcao 1</option>
+                    <option value="Opcao2">Opcao 2</option>
+                    <option value="Opcao3">Opcao 3</option>
+                    <option value="Opcao4">Opcao 4</option>
+                    <option value="Opcao5">Opcao 5</option>
+                    <option value="Opcao6">Opcao 6</option>
+                    <option value="Opcao7">Opcao 7</option>
+                    <option value="Opcao8">Opcao 8</option>
+                    <option value="Opcao9">Opcao 9</option>
+                    <option value="Opcao10">Opcao 10</option>
+                </select>
+            </p>
+            <p>
+                <label for="opcoes_exame">Exame *</label>
+                <select name="opcoes_exame" class="dropdown_list">
+                    <option value="selecionar"></option>
+                    <option value="Opcao1">Opcao 1</option>
+                    <option value="Opcao2">Opcao 2</option>
+                    <option value="Opcao3">Opcao 3</option>
+                    <option value="Opcao4">Opcao 4</option>
+                    <option value="Opcao5">Opcao 5</option>
+                    <option value="Opcao6">Opcao 6</option>
+                    <option value="Opcao7">Opcao 7</option>
+                    <option value="Opcao8">Opcao 8</option>
+                    <option value="Opcao9">Opcao 9</option>
+                    <option value="Opcao10">Opcao 10</option>
+                </select>
+            </p>
+            <p>
+                <label for="data_marcacao">Data Marcação *</label>
+                <input type="date" name="data_marcacao" required></p>
+                <p>
+                    <label for="subsistema">Sistema/Seguro de Saude</label>
+                    <select name="subsistema" id="subsistema">
+                        <option value="selecionar"></option>
+                        <option value="Opcao1">Opcao 1</option>
+                        <option value="Opcao2">Opcao 2</option>
+                        <option value="Opcao3">Opcao 3</option>
+                        <option value="Opcao4">Opcao 4</option>
+                        <option value="Opcao5">Opcao 5</option>
+                        <option value="Opcao6">Opcao 6</option>
+                        <option value="Opcao7">Opcao 7</option>
+                        <option value="Opcao8">Opcao 8</option>
+                        <option value="Opcao9">Opcao 9</option>
+                        <option value="Opcao10">Opcao 10</option>
+                    </select>
+                </p>
+
+                <button type="submit" formmethod="post">Enviar</button>
+            </form>
+            <br class="clear"/>
+        </section>
+    </body>
+    </html>

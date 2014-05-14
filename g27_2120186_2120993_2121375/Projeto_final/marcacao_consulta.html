@@ -1,0 +1,327 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SCML - Santa Casa da Misericórdia de Leiria</title> 
+  <link rel="stylesheet" type="text/css" href="Estilos/estilo_base.css" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script type="text/javascript" src="../JQUERY/js/jquery.min.js"> </script> 
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script type="text/javascript"> 
+
+
+// <![CDATA[ 
+  $(function() {
+
+        $('#btnSaude').click(function() {
+
+            $('#containerSupMenuSaude').slideToggle('fast');
+            $('#containerSupMenuMedico').hide('normal');
+            $('#containerSupMenuNoticias').hide('normal');
+            $('#containerSupMenuCuidados').hide('normal');
+            $('#containerSupMenuOutros').hide('normal');
+
+        });
+
+        $('#btnMedico').click(function() {
+
+            $('#containerSupMenuMedico').slideToggle('fast');
+            $('#containerSupMenuSaude').hide('normal');
+            $('#containerSupMenuNoticias').hide('normal');
+            $('#containerSupMenuCuidados').hide('normal');
+            $('#containerSupMenuOutros').hide('normal');
+
+        });
+
+        $('#btnNoticias').click(function() {
+
+            $('#containerSupMenuNoticias').slideToggle('fast');
+            $('#containerSupMenuSaude').hide('normal');
+            $('#containerSupMenuMedico').hide('normal');
+            $('#containerSupMenuCuidados').hide('normal');
+            $('#containerSupMenuOutros').hide('normal');
+
+        });
+
+        $('#btnCuidados').click(function() {
+
+            $('#containerSupMenuCuidados').slideToggle('fast');
+            $('#containerSupMenuNoticias').hide('normal');
+            $('#containerSupMenuSaude').hide('normal');
+            $('#containerSupMenuMedico').hide('normal');
+            $('#containerSupMenuOutros').hide('normal');
+
+        });
+
+        $('#btnOutros').click(function() {
+
+            $('#containerSupMenuOutros').slideToggle('fast');
+            $('#containerSupMenuNoticias').hide('normal');
+            $('#containerSupMenuSaude').hide('normal');
+            $('#containerSupMenuMedico').hide('normal');
+            $('#containerSupMenuCuidados').hide('normal');
+
+        });
+
+    $( "#datepicker , #datepicker1" ).datepicker({
+        dateFormat: 'dd/mm/yy',
+        dayNames: ['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'],
+        dayNamesMin: ['D','S','T','Q','Q','S','S','D'],
+        dayNamesShort: ['Dom','Seg','Ter','Qua','Qui','Sex','Sáb','Dom'],
+        monthNames: ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'],
+        monthNamesShort: ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'],
+        nextText: 'Próximo',
+        prevText: 'Anterior'
+
+    });
+});
+
+// ]]> 
+</script>
+
+
+</head>
+
+
+<body>
+    <div id="top">
+      <a href="Principal.html">
+       <div id="logotipo" class="imagem" href = "Principal.html">  </div>   
+   </a> 
+   <div id="topTittle">
+    <button id="LogRegBtn" type="button" value="Registar">Registar</button>
+    <button id="LogRegBtn" type="button" value="Login">Entrar</button>
+    <br>
+    <br>
+    <form id="formPesquisa" method="get" action="http://www.google.com">
+        <input type="text" class="inputPesquisa" name="q" size="21" maxlength="120"><input type="submit" value=">" class="buttonPesquisa">
+    </form>
+</div>
+</div>
+<div id="container">
+
+
+    <div id="containerSup">  
+
+        <ul class="menuList">
+            <li>
+                <a href="#" id="btnSaude" class="btnMenus"> Saúde</a>
+            </li>
+            <li>
+                <a href="#" id="btnCuidados" class="btnMenus"> Cuidados Geriátricos</a>
+            </li>
+             <li>
+                <a href="#" id="btnNoticias" class="btnMenus"> Notícias</a>
+            </li>
+            <li>
+                <a href="#" id="btnOutros" class="btnMenus"> Outros</a>
+            </li>
+        </ul>
+    </div> 
+
+    <div id = "containerSupMenuSaude">
+
+        <ul class="subMenuList">
+        </br>
+        <li><a class="subMenuList" href="marcacao_consulta.html"> Marcar Consulta</a></li>
+        <li><a class="subMenuList" href="especialidades.html"> Especialidades</a></li>
+        <li><a class="subMenuList" href="medicos.html"> Profissionais </a></li>
+        <li><a class="subMenuList" href="ver_noticia.html"> Artigos/Notícias Clínicas</a></li>
+    </ul>   
+
+
+</div>
+
+<div id = "containerSupMenuNoticias">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="ver_noticia.html"> Ver Notícias</a></li>
+    <li><a class="subMenuList" href="criar_noticia.html"> Criar Notícia</a></li>
+</ul>   
+
+
+</div>
+
+<div id = "containerSupMenuCuidados">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="cuidados_geriatricos.html"> Residencial</a></li>
+    <li><a class="subMenuList" href="cuidados_geriatricos.html"> Lar</a></li>
+    <li><a class="subMenuList" href="cuidados_geriatricos.html"> Internamento</a></li>
+    <li><a class="subMenuList" href="cuidados_geriatricos.html"> Apoio domiciliário</a></li>
+</ul>   
+
+
+</div>
+
+<div id = "containerSupMenuOutros">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="creche.html"> Creche</a></li>
+    <li><a class="subMenuList" href="irmandade.html"> Irmandade</a></li>
+    <li><a class="subMenuList" href="contactos.html"> Contactos</a></li>
+</ul>   
+
+
+</div>
+
+
+<div id="containerInf"> 
+
+   <div id="containerInfDirForm">
+
+    <form id = "form" action="#" method="post">
+        <table>
+            <tr>
+                <td>Nome:</td>
+                <td><input type="text" name="nome" value="" /></td> <br />
+            </tr>
+            <tr>
+                <td>Morada:</td>  
+                <td><textarea name="comments" rows="5" cols="30"> </textarea> </td> <br/>
+            </tr>   
+
+            <tr>
+                <td>Data de Nascimento:</td>
+                <td><input type="text" id="datepicker"></td>
+
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="text" name="email" value="" /></td><br/>
+                
+            </tr>
+            <tr>
+                <td>Telefone</td>
+                <td><input type="text" name="telef" value="" /></td><br/>
+                
+            </tr>
+            <tr>
+                <td>Subsistema ou Seguro de Saúde:</td> 
+                <td><select name="SubsOuSeguro">
+                    <option value="">--- Seleccione ---</option>
+                    <option value="ADMG">ADMG (só para MFR)</option>
+                    <option value="ADSE">ADSE</option>
+                    <option value="IASFA">IASFA (ADMA, ADME, ADMFA)</option>
+                    <option value="Medis">Medis (só para MFR)</option>
+                    <option value="Multicare">Multicare</option>
+                    <option value="Particular">Particular</option>
+                    <option value="Planicare">Planicare</option>
+                    <option value="SADPSP">SAD PSP (só para MFR)</option>
+                    <option value="SAMS">SAMS Centro</option>
+                    <option value="SSCGD">Serviços Sociais da CGD</option>
+                    <option value="Servimed">Servimed</option>
+                    <option value="SFJ">Sindicato dos Funcinários Judiciais</option>
+                    <option value="SNS">SNS</option>
+
+
+                </select></td><br/>
+            </tr>
+            <tr>
+                <td>Consulta:</td> 
+                <td><select name="Consulta">
+                    <option value="">--- Seleccione ---</option>
+                    <option value="Acupunctura">Acupunctura</option>
+                    <option value="Cardiologia">Cardiologia</option>
+                    <option value="Cirurgia Geral">Cirurgia Geral</option>
+                    <option value="Cirurgia Plastica">Cirurgia Plástica e Reconstrutiva</option>
+                    <option value="Cirurgia Vascular">Cirurgia Vascular</option>
+                    <option value="Dermatologia">Dermatologia</option>
+                    <option value="Diabetes">Diabetes</option>
+                    <option value="Dietista">Dietista</option>
+                    <option value="Endocrinologia">Endocrinologia</option>
+                    <option value="Estomatologia">Estomatologia</option>
+                    <option value="Gastrenterologia">Gastrenterologia</option>
+                    <option value="Ginecologia">Ginecologia</option>
+                    <option value="Medicina Desportiva">Medicina Desportiva</option>
+                    <option value="Medicina Física e de Reabilitação">Medicina Física e de Reabilitação</option>
+                    <option value="Mesoterapia">Mesoterapia</option>
+                    <option value="Neurologia">Neurologia</option>
+                    <option value="OftalmologiaAdultoInfantil">Oftalmologia Adulto ou Infantil</option>
+                    <option value="Ortopedia">Ortopedia</option>
+                    <option value="Otorrinolaringologia">Otorrinolaringologia</option>
+                    <option value="Pneumologia">Pneumologia</option>
+                    <option value="PsicologiaClinica">Psicologia Clínica</option>
+                    <option value="Psiquiatria">Psiquiatria</option>
+                    <option value="Reumatologia">Reumatologia</option>
+                    <option value="Urologia">Urologia</option>
+
+
+                </select></td><br/>
+                <tr>
+                    <td>Exame:</td> 
+                    <td><select name="Exame:">
+                        <option value="">--- Seleccione ---</option>
+                        <option  value="42">Anatomia Patológica</option>
+                        <option  value="3">Análises Clínicas</option>
+                        <option  value="51">Audiometria</option>
+                        <option  value="1">Cardiologia</option>
+                        <option  value="45">Colonoscopia</option>
+                        <option  value="4">Dermatologia</option>
+                        <option  value="48">Doppler a cores, transesofágico</option>
+                        <option  value="62">Eco-Doppler</option>
+                        <option  value="47">Ecocardiografia Modo M, 2D</option>
+                        <option  value="61">Ecografia</option>
+                        <option  value="43">Ecografia Geral e Vascular</option>
+                        <option  value="39">Electrocardiograma com prova de esforço em tapete rolante</option>
+                        <option  value="49">Electrocardiograma simples</option>
+                        <option  value="44">Endoscopia alta</option>
+                        <option  value="19">Gastrenterologia</option>
+                        <option  value="5">Ginecologia</option>
+                        <option  value="57">Imagiologia</option>
+                        <option  value="54">Impedânciometria</option>
+                        <option  value="63">Mamografia Digital</option>
+                        <option  value="50">MAPA (medição ambulatória da pressão arterial)</option>
+                        <option  value="28">Neurologia</option>
+                        <option  value="32">Oftalmologia</option>
+                        <option  value="33">Ortopedia</option>
+                        <option  value="64">Osteodensitometria</option>
+                        <option  value="37">Otorrinolaringologia</option>
+                        <option  value="2">Pneumologia</option>
+                        <option  value="53">Posturografia dinâmica e computorizada</option>
+                        <option  value="56">Provas funcionais respiratórias</option>
+                        <option  value="46">Rectosigmoidoscopia</option>
+                        <option  value="58">Reumatologia</option>
+                        <option  value="60">Rx-Digital</option>
+                        <option  value="59">TAC</option>
+                        <option  value="55">Timpanometria</option>
+                        <option  value="29">Urologia</option>
+                        <option  value="52">Videonistagmografia</option>
+                    </select>
+                </td> <br />
+            </tr>
+            <tr>
+                <td>Data Pretendida:</td><br/>
+                <td><input type="text" id="datepicker1"></td>
+            </tr>
+
+            <tr>
+                <td> </br></td>
+                <td> </br></td>
+
+            </tr>        
+
+            <tr>
+
+                <td></td>
+                <td><input type="submit" id="LogRegBtn"/><input type="reset" id="LogRegBtn"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+</div>
+
+
+<div id="footer"> 
+    <p> This is footer</p>
+</div>
+
+</body>
+
+</html>

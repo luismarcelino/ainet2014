@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+	<title>SCML - Santa Casa da Misericórdia de Leiria</title> 
+	<link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon"/>
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+ </head>
+ <body>
+
+ 	<!-- Código de Estrutura de div de trás para prevenir desformação da página quando em resoluções superiores a 1366*667 #secção 1 -->
+
+ 	<div id="divBase">
+ 		<div id="divBaseTopo"></div>
+ 		<div id="divBaseMeio"></div>
+ 		<div id="divBaseBaixo"></div>
+ 	</div>
+
+ 	<!-- Fim #secção 1 -->
+
+ 	<!-- Código de estrutura principal #secção 2 -->
+
+ 	<div id="divPrincipal">
+		<div id="divPrincipalTopo">
+			<div id="menu_Confidencial">
+               	<nav>
+                    <ul>
+                        <li><a href="#">Pessoal</a></li>
+                        <li><a href="#">Médico</a></li>
+                        <li><a href="#">Gestão Utilizador</a></li>
+                        <li><a href="criar_noticia.html">Criar Notícia</a></li>
+                    </ul>
+                </nav>
+            </div>
+			<div id="menu_principal">
+				<nav>
+					<ul>
+						<li><a href="index.html" class="seleccionado">Entrada</a></li>
+						<li><a href="saude.html">Saúde</a></li>
+						<li><a href="cuidados.html">Cuidados Geriátricos</a></li>
+						<li><a href="creche.html">Creche</a></li>
+						<li><a href="irmandade.html">Irmandade</a></li>
+						<li><a href="contactos.html">Contactos</a></li>
+					</ul>
+				</nav>
+			</div>
+			<section id="procura_section">
+				<form id="procura" method="post" action="index.html" >
+		 			<input type="text" name="q" placeholder="Search..." />
+		 		</form>
+			</section>
+            <section id="area_login">
+                <nav>
+                    <div id="login"><a href="login.html">Login</a> | <a href="#">Registar</a></div>
+                </nav>
+            </section>
+            <img id="logo" src="imagens/logo.png" alt="SCML - Santa Casa da Misericórdia de Leiria"/>
+
+
+            
+		</div>
+
+		<div id="divPrincipalMeio">
+			<div id="conteudo_entrada">
+				<h4 class="barra_index">Bem-Vindo</h4>
+				<div id="divNoticiasValencia" >         
+					<section>
+                        <nav>
+                            <a href="">
+                                <div id="divNoticaIrmandade" class="divNoticiasValencia">
+                                    <h1>Irmandade</h1>                              
+                                      <article>
+                                        <h3>Convivo</h3>
+                                        <p>Próximo Sábado vai realizar-se um convivio de irmão. A en...</p>
+                                      </article>
+                                </div>
+                            </a>
+                            
+                            <a href="">
+                                <div id="divNoticiaCreche" class="divNoticiasValencia">
+                                    <h1>Creche</h1>                               
+                                      <article>
+                                        <h3>Renovação de espaço</h3>
+                                        <p>Após 3 meses de espera, amanhã reali...</p>
+                                      </article>
+                                </div>
+                            </a>
+                            
+                            <a href="">
+                                <div id="divNoticiaLar" class="divNoticiasValencia">
+                                <h1>Lar</h1>
+                                  <article>
+                                    <h3>Promoção</h3>
+                                    <p>Este mês deixe os seus familiarias exrimentarem ...</p>
+                                  </article>                    	
+                                </div>
+                            </a>
+                            
+                            <a href="">
+                                <div id="divNoticiaResidencial" class="divNoticiasValencia">
+                                <h1>Residêncial</h1>
+                                  <article>
+                                    <h3>Novos Quartos</h3>
+                                    <p>A residêncial dispõem agora de novos quartos ...</p>
+                                  </article>                    	
+                                </div> 
+                            </a>                
+                        </nav>
+                	</section>
+        		</div>
+
+        		<div id="divNoticiasArtigosMedicos">       
+                    <section>
+                        <nav>
+                            <div id="divNoticaArtigo1" class="divNoticiasArtigosMedicos">
+                            	<a href="">
+                                <img src="imagens/corpoclinico/coracao/cirugiao/Rosa_Mota_2111222/Rosa_Mota_2111222.png" alt="Rosa_Mota_2111222">
+                                </a>
+                                <a href="">
+                                  <article>
+                                    <h2 class="divNoticiasArtigosMedicosTitulo">Titulo artigo 1</h2>
+                                    <p class="divNoticiasArtigosMedicospNoticia">Aqui fica o Resumo do artigo 1, Aqui fica o Resumo do artigo 1 ...</p>
+                                    <div class="divDados">
+                                   	<p class="dataArtigo">, data do artigo 1</p><h4 class="nomeMedico">Nome do Medico 1</h4>
+                                    </div>
+                                  </article>
+                                </a>
+                            </div>
+                            
+                            <div id="divNoticaArtigo2" class="divNoticiasArtigosMedicos">
+                            	<a href="">
+                                <img src="imagens/corpoclinico/coracao/anestesista/Eduardo_Martins_2333111/Eduardo_Martins_2333111.png" alt="Eduardo_Martins_2333111">
+                                </a>
+                                <a href="">
+                                  <article>
+                                    <h2 class="divNoticiasArtigosMedicosTitulo">Titulo Artigo 2</h2>
+                                    <p class="divNoticiasArtigosMedicospNoticia">Aqui fica o Resumo do artigo 2, Aqui fica o Resumo do artigo 2 ...</p>
+                                  	<div class="divDados">
+                                   	<p class="dataArtigo">, data do artigo 2</p><h4 class="nomeMedico">Nome do Medico 2</h4>
+                                    </div>
+                                  </article>
+                                </a>
+                            </div>
+                           
+                            
+                            
+                            <div id="divNoticaArtigo3" class="divNoticiasArtigosMedicos">
+                            	<a href="">
+                                <img src="imagens/corpoclinico/olhos/medico/Maria_Pereira_2110110/Maria_Pereira_2110110.png" alt="Maria_Pereira_2110110">
+                                </a>
+                                <a href="">
+                                  <article>
+                                    <h2 class="divNoticiasArtigosMedicosTitulo">Titulo Artigo 3</h2>
+                                    <p class="divNoticiasArtigosMedicospNoticia">Este mês deixe os seus familiares exprimentarem ...</p>
+                                    <div class="divDados">
+                                   	<p class="dataArtigo">, data do artigo 3</p><h4 class="nomeMedico">Nome do Medico 3</h4>
+                                    </div>
+                                  </article>
+                                  </a>
+                            </div>
+                                           
+                        </nav>
+                    </section>
+        		</div>
+                
+                <div id="divInformacaoEstatica">
+                    <div class="divInformacaoEstatica">
+                        <h3>Area da Saude</h3>
+                        <p id="pAreaSaude">Aqui fica uma sinopse da area de saude</p>
+                    </div>
+                    
+                    <div class="divInformacaoEstatica">
+                        <h3>Internamento</h3>
+                        <p id="pInternamento">Aqui fica uma sinopse da area de Internamento</p>
+                    </div>
+                    
+                    <div class="divInformacaoEstatica">
+                        <h3>Apoio Domiciliario</h3>
+                        <p id="pApoioDomiciliario">Aqui fica uma sinopse da area de Apoio domiciliario</p>
+                    </div>
+              	</div>
+            </div>
+			
+		</div>
+		<div id="divPrincipalBaixo">
+			<div id="copyright">2014 © | Desenvolvimento: Hugo Borga & Tiago Duarte | Design: Hugo Borga & Tiago Duarte</div>
+            <div id="info"><a href="#">Mapa do Site</a> | <a href="#">Localização</a></div>
+		</div>
+	</div>
+
+	<!-- Fim #secção 2 -->
+
+ </body>
+</html>

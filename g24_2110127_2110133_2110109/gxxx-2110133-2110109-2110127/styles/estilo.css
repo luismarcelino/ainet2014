@@ -1,0 +1,933 @@
+﻿/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ CSS GLOBAL +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+body {
+	background:#4396E8 url('../images/background-image3.jpg') no-repeat center; 
+	background-attachment: fixed;
+}
+
+#pagina {
+	width: 990px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p {
+	text-align: left;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	margin-left:10px;
+	margin-top:15px;
+	margin-bottom:15px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 22pt;
+	color:#003366;
+	padding-top: 10px;
+	padding-bottom: 3px;	
+	text-align:center;	
+}
+
+h3{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+textarea{
+	resize: none
+}
+
+iframe {
+	width:400px; 
+	height:300px; 
+	border:0px;
+}
+
+.conteudoEsquerda{
+	float:left;
+	width:200px;
+}
+
+.conteudoDireita{
+	float:right;
+	width:680px;
+}
+
+.table_center {
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.td_aligned_right {
+	text-align:right;
+}
+
+.linha {
+	width:80%;
+}
+
+.textoIntrodutorio {
+	width:80%;
+	margin:auto;
+}
+
+.textoIntrodutorioLargo {
+	width:90%;
+	margin:auto;
+}
+
+#conteudoDireita, #conteudoMedico, #nav li a, .acordo a, .subTitulo, .subTituloMedio, .subTituloCurto, .medico, .noticia, .contacto, .conteudoValencia, #noticiasEspecialidade,
+#noticiasIrmandade, #noticiasLar, #noticiasCreche, #noticiasResidencial, #publicacoes, .subTituloMedioArtigoTitulo, #noticiasMedico, .butaoPagina, .valencia, .subTituloIndex, .valenciaIndex  {
+	border-radius:10px;
+	-moz-border-radius:10px;
+	/* Firefox, etc */
+	-khtml-border-radius:10px;
+	/* Konqueror, etc */
+	-webkit-border-radius:10px;
+	/* Safari, Google Chrome, etc */
+	-opera-border-radius:10px;
+}
+
+#error .error {
+	color:red;
+}
+
+.divPaginacao {
+	text-align:center;
+	padding-bottom:15px;
+}
+
+ul{
+	margin:0px;
+}
+
+/*------------------TOP---------------------------*/
+#paginaTopoTopo {	
+	height:22px;
+	background-image: url('../images/index_24.png');
+}
+
+#paginaTopoConteudo {
+	background-image: url('../images/index_23.png');
+	position: relative;
+}
+
+#imagemCentroCabecalho{
+	margin-bottom:10px;
+	height: 150px;
+	width:530px;
+	background-image: url('../images/slogan.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	float:left;
+}
+
+#imagemcabecalho{
+	margin-left:20px;
+	height: 150px;
+	width:190px;
+	background-image: url('../images/santa_casa100.png');
+	background-repeat: no-repeat;
+	background-position: left;
+	float:left;
+}
+
+#pesquisaLogin{
+	text-align:right;
+	margin-top:105px;
+	margin-right:20px;
+	margin-bottom:10px;
+	height: 50px;
+	width:220px;
+	float:right;
+}
+#btnLogin{
+	margin-bottom:5px;
+	margin-left:100px;
+}
+
+#find{
+	width:25px;
+	height:25px;
+	float:right;
+}
+#searchBox{
+	border-radius: 11px;
+}
+#divLogin{
+	border-radius: 10px;
+	position:absolute;
+	background: none repeat scroll 0 0 #F0F0F0;
+	height:80px;	
+	top:0px;
+	margin-top:5px;
+	padding-top:5px; 
+	padding-bottom:5px; 
+	padding-right:5px; 
+	padding-left:5px; 
+}
+
+#divLogin input{
+	border-radius: 11px;
+	width:130px;
+}
+
+/*-------------------------------MID------------------*/
+#paginaPrincipal {
+	width: 990px;
+	position: relative;
+}
+#paginaPrincipalTopo{
+	height:10px;
+	background-image: url('../images/index_16.png');
+}
+#paginaPrincipalConteudo {
+	width:990px;
+	background-image: url('../images/index_23.png');
+	display: table-cell;
+}
+
+#conteudo{
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:20px;
+	margin-bottom:20px;
+}	
+
+#image{
+	max-width:950px;
+}
+
+#paginaPrincipalFundo{
+	height:29px;
+	background-image: url('../images/index_19.png');
+	clear: both;
+}
+
+#conteudoEsquerda {
+	display: table-cell;
+	float:left;
+	width:260px;
+}
+
+#conteudoDireita {
+	margin-right:20px;
+	float:right;
+	height:auto;
+	width:647px;
+	background:#F0F0F0 ;
+}
+
+#conteudoMedico{
+	margin-right:20px;
+	float:right;
+	height:auto;
+	width:650px;
+	background:#F0F0F0 ;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+
+#conteudoEsquerda ul li {
+	padding:3px;
+	margin-top:4px;
+}
+
+#nav {
+    margin:0px;
+    padding:0px;
+    float:left;	
+}
+
+#nav li {
+	text-align:center;
+    list-style:none;
+	line-height:30px;
+	
+	color:#14396a;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	text-shadow:1px 1px 0px #7cacde; 
+}
+
+#nav li a {
+	min-height:30px;
+	width: 240px;
+	-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
+	background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
+	background-color:#63b8ee;
+	text-indent:0;
+	border:1px solid #3866a3;
+	display:inline-block;
+	text-decoration:none;
+}
+
+#nav li a:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee) );
+	background:-moz-linear-gradient( center top, #468ccf 5%, #63b8ee 100% );
+}
+
+#conteudoDireitaTopo {
+	display:table-cell;
+}
+
+#conteudoDireitaBot {
+	display:block;
+}
+
+#conteudoPrincipal {
+	float:left;
+	width:480px;
+	margin:10px 10px 10px 10px;	
+}
+
+#contactos {
+	float:right;
+	margin:70px 10px 10px 10px;
+	width:125px;
+}
+
+#corpoClinico {
+	float:left;
+	width:480px;
+	margin:10px 10px 10px 10px;
+
+}
+
+#acordos {
+	float:right;
+	margin:10px 10px 10px 10px;
+	width:125px;
+}
+
+.acordo a{
+	text-align:center;
+	padding:2px;
+	margin:10px 10px 10px 10px;
+	width:115px;
+	border-radius:10px;	
+	word-wrap: break-word;
+}
+
+.subTitulo, .subTituloMedio, .subTituloCurto {
+	background:#D8D8D8;
+	text-align:center;
+	margin:10px 10px 10px 10px;
+}
+
+.subTituloMedio {
+	width:250px;
+}
+
+.subTituloCurto {
+	width:115px;
+}
+
+.telefone {
+	width:115px;
+}
+
+.email {
+	width:115px;
+	height:auto;
+	word-wrap: break-word;
+}
+
+.medico {
+	background:#FFFFFF;
+	text-align:center;
+	margin:20px 5px 20px 5px;
+	padding-bottom:10px;
+}
+
+.noticia {
+	min-height:140px;
+	height:auto;
+	background:#FFFFFF;
+	margin:10px 10px 20px 10px;
+}
+
+.foto img{
+	max-width:100px;
+	max-height:100px;
+}
+.foto {
+	float:left;
+	width:120px;
+	min-height:120px;
+}
+
+.nomeClinico {
+	float:right;
+	width:350px;
+	color:#FF9933;
+	font-size:30px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.especialidadeClinico, .emailClinico, .telefoneClinico, .areaClinica {
+	float:right;
+	width:350px;
+	padding-top:3px;
+	padding-bottom:5px;
+}
+
+.linkVerMais a:link {
+
+	text-indent:0;
+	display:inline-block;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	width:100px;
+	text-decoration:none;
+	text-align:center;
+	color:black;
+}
+
+.noticiaTitulo, .noticiaDescricao {
+	width:900px;
+}
+
+.titulo {
+	padding-top:10px;
+}
+
+.noticiaTitulo {
+	padding-top:10px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PAGINA CONTACTOS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#contacto{
+	float:left;
+	width:450px;
+	margin:15px;
+}
+
+.contactoTitulo{
+	margin:5px;
+}
+
+.contacto{
+	height:auto;
+	background:none repeat scroll 0 0 #F0F0F0;
+	padding:15px;
+	margin-bottom:20px;
+}
+
+.subContacto{
+	background:#FFFFFF;
+	padding:5px;
+	margin-bottom:5px;
+	margin-left:20px;
+	margin-top:5px;
+	margin-right:5px;
+}
+
+#localizacao {
+	float:right;
+	width:430px;
+	margin:15px;
+}
+
+#localizacao h3 {
+	float:left;
+	padding-bottom:15px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PAGINA CUIDADOS GERIATRICOS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+#conteudoTopo, #conteudoBot {
+	width:910px;
+	padding:10px;
+}
+
+#conteudoTopo {
+	display:table-cell;
+}
+
+#conteudoBot {
+	display:block;
+}
+
+#residencial, #lar, #internamento, #apoioDomiciliario {
+	width:440px;
+	padding-left:5px;
+}
+
+
+#residencial {
+	float:left;
+	display:table-cell;
+}
+
+#lar {
+	float:right;
+	display:table-cell;
+}
+
+#internamento {
+	float:left;
+	display:block;
+}
+
+#apoioDomiciliario {
+	float:right;
+	display:block;
+}
+
+#residencial h1, #lar h1, #internamento h1, #apoioDomiciliario h1 {
+	text-align:left;
+}
+
+.conteudoValencia p {
+	padding:20px;
+}
+
+.conteudoValencia {
+	width:450px;
+	margin-right:2px;
+	padding:2px;
+	height:auto;
+	background:#F0F0F0;
+}
+
+.divBotao, .divBotaoVerMais {
+	clear:both;
+	text-align:right;
+	padding:10px;
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PAGINA DE CADA VALENCIA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.valencia {
+	width:930px;
+	margin-right:2px;
+	padding:2px;
+	height:auto;
+	background:#F0F0F0;
+}
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PAGINA SAUDE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#noticiasEspecialidade {
+	margin:20px 20px;
+	float:right;
+	height:auto;
+	width:650px;
+	background:#F0F0F0 ;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+
+#noticiasEspecialidade .tipo, #noticiasEspecialidade .noticiaConteudo, #noticiasEspecialidade .noticiaImagem, #noticiasEspecialidade .noticiaLink {
+	padding:10px;
+}
+
+#noticiasEspecialidade .noticiaConteudo{
+	width:400px;
+}
+
+#noticiasEspecialidade .tipo h3 {
+	font-size:30px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PAGINA INDEX ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.textoIntrodutorioLargoIndex {
+	width:90%;
+	margin:auto;
+	padding-top:15px;
+}
+
+#noticiasIndex h1, #publicacoesIndex h1  {
+	clear:both;
+	text-align:left;
+	padding-left:10px;
+}
+
+#noticiasIrmandade, #noticiasLar, #noticiasCreche, #noticiasResidencial{
+	height:auto;
+	margin-top:20px;
+	width:440px;
+	background-color:#F0F0F0;
+	background:#F0F0F0 ;
+}
+
+#publicacoes {
+	height:auto;
+	margin-top:20px;
+	margin:auto;
+	width:910px;
+	background-color:#F0F0F0;
+	background:#F0F0F0 ;
+}
+
+
+#noticiasIrmandade,  #noticiasLar {
+	float:right;
+	margin-right:20px;
+}
+
+#noticiasCreche, #noticiasResidencial{
+	margin-left:20px;
+	float:left;
+}
+.noticiaConteudo{
+	text-align: justify;
+	margin-left:5px;
+	float:left;
+	height:180px;
+	width:230px;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.tipo {
+	padding:10px;
+	font-size:25px;
+}
+
+.noticiaImagem{
+	width:195px;
+	height:180px;
+	float:right;
+	margin-right:5px;
+	word-wrap: break-word;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.noticiaScroll{
+	text-align:center;
+	height:25px;
+	padding:10px;
+}
+
+.noticiaLink{
+	clear: both;
+	text-align:center;
+	height:20px;
+	padding:10px;
+
+}
+		
+#publicacaoMedico{
+	margin-top:10px;
+	clear: both;
+}
+
+.nomeEPublicacoes{
+	margin-left:15px;
+	margin-top:15px;
+	width:68%;
+	float:left;
+	height:120px;
+}
+
+.publicacaoImagem{
+	margin-right:15px;
+	margin-top:15px;
+	width:28%;
+	float:right;
+	word-wrap: break-word;
+	background-repeat: no-repeat;
+	background-position: center;
+	height:160px;
+}			
+
+.autorEPublicacaoData{
+	margin-left:15px;
+	height:20px;
+	width:70%;
+	float:left;
+}
+
+#scrollPublicacoes{
+	clear:both;
+}
+
+.subTituloIndex{
+	background:#9BCDFF;
+	text-align:center;
+	margin:10px 10px 10px 10px;
+	width:250px;
+}
+
+
+
+/**++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PAGINA NOTICIA/ARTIGO ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.noticiaArtigoTitulo {
+	width:900px;
+	color:#003300;
+	font-size:30px;
+}
+
+.subTituloMedioArtigoTitulo{
+	background:#D8D8D8;
+	text-align:center;
+	margin:10px 10px 10px 10px;
+	width:250px;
+}
+
+.noticiaArtigoTexto {
+	width:850px;
+	margin-left:15px;
+}
+
+#textoResumo, #texto {
+	width:90%;
+	margin:auto;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ PAGINA MEDICO +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+#noticiasMedico {
+	margin-right:20px;
+	float:right;
+	height:auto;
+	width:650px;
+	background:#F0F0F0 ;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	clear:both;
+}
+
+#nomeMedico {
+	float:right;
+	width:350px;
+	color:#FF9933;
+	display:table-cell;
+	width:900px;
+	padding:10px;
+}
+
+#nomeMedico h1 {
+	color:#FF9933;
+}
+
+
+#noticiasMedico .tipo, #noticiasMedico .noticiaConteudo, #noticiasMedico .noticiaLink, #noticiasMedico .noticiaImagem {
+	padding:10px;
+}
+
+#noticiasMedico .noticiaConteudo{
+	width:400px;
+}
+
+#noticiasMedico .tipo h3 {
+	font-size:30px;
+}
+
+#opcoesMedico{
+	margin:20px 20px 15px 0px;
+	height:auto;
+	width:250px;
+	padding-bottom:15px;
+	clear:both;
+}
+
+.opcao a .butaoOpcaoMedico {
+	margin:auto;
+}
+
+.nomeMedico h1{
+	width:350px;
+	color:#FF9933;
+	margin:auto;
+	padding-bottom:30px;
+}
+
+.genero, .dataNascimento, .numeroSegSocial, .SistemasSeguroSaude, .numeroFiscal, .emailMedico, .morada, .numeroIrmao, .especialidades, .numeroTelefone{
+	padding:2px 0px 2px 20px;
+	
+}
+
+/*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ BOTOES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+.butao, .marcarConsultaMedico, .butaoContactar, .butaoContactarX, .butaoPagina, .butaoOpcaoMedico {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	box-shadow:inset 0px 1px 0px 0px #bee2f9;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
+	background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
+	background-color:#63b8ee;
+	text-indent:0;
+	border:1px solid #3866a3;
+	display:inline-block;
+	color:#14396a;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	font-style:normal;
+	height:30px;
+	line-height:30px;
+	width:150px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #7cacde;
+}
+
+.butao:hover, .marcarConsultaMedico:hover, .butaoContactar:hover, .butaoContactarX:hover, .butaoPagina:hover, .butaoOpcaoMedico:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #468ccf), color-stop(1, #63b8ee) );
+	background:-moz-linear-gradient( center top, #468ccf 5%, #63b8ee 100% );
+}
+
+.butao {
+	width:100px;
+	margin-top:10px;
+}
+
+.marcarConsultaMedico {
+	width:100px;
+	margin-top:10px;
+	margin-left:20px;
+}
+
+.butaoContactarX {
+	margin-right:18px;
+}
+
+.butaoPagina {
+	width:30px;
+}
+
+.butaoOpcaoMedico {
+	width:150px;
+	margin:4px 10px 4px 40px;
+}
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ FORMULARIOS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+.elementosInputFormulario {
+    width:150px;
+    height:20px;
+}
+
+.elementosInputFormularioGrandeTextArea {
+	width:290px;
+    height:70px;
+}
+
+.elementosInputFormularioPequenaTextArea {
+	width:290px;
+    height:30px;
+}
+
+.elementosInputFormularioFile {
+	width:290px;
+}
+
+.elementosInputFormularioCheck {
+	width:70px;
+}
+
+.elementosInputFormularioSelect {
+	width:155px;
+    height:25px;
+}
+
+/*-------------------------------BOT------------------*/
+#paginaRodape {
+	clear: both;
+	width: 990px;
+	text-align: right;
+	height: 20px;
+}
+
+#paginaRodapeConteudo {
+	background-image: url('../images/index_20.png');
+	padding-right:20px;
+}
+#paginaRodapeConteudo a {
+	float:left;
+	padding-left:20px;
+
+}
+
+#paginaRodapeFundo {
+	height:22px;
+	background-image: url('../images/index_22.png');
+}
+/*-------------------------------Links------------------*/
+
+a:link    {color:white;}
+a:visited {color:white;}
+a:hover   {color:#E0E0E0;}
+a:active  {color:white;}
+
+.nomeClinico a:link {color:#194319;text-decoration:none}
+.nomeClinico a:visited {color:#194319;text-decoration:none}
+.nomeClinico a:hover {text-decoration:underline;}
+
+.noticiaLink a:link, .contacto a:link{color:#3D5C00;}
+.noticiaLink a:visited, .contacto a:visited{color:#3D5C00;}
+.noticiaLink a:hover, .contacto a:hover{color:#009900;}
+.noticiaLink a:active, .contacto a:active{color:#009900;}
+
+.subTituloIndex a:link{
+	color:black;
+	text-decoration:none;
+}
+.subTituloIndex a:visited{
+	color:black;
+	text-decoration:none;
+}
+.subTituloIndex a:hover{
+	color:black;
+	text-decoration:underline;
+}
+.subTituloIndex a:active{
+	color:black;
+	text-decoration:underline;
+}
+
+
+.subTituloIndex a
+
+#noticiasMedico .noticiaLink a:link, #noticiasIrmandade .noticiaLink a:link, #noticiasLar .noticiaLink a:link, #noticiasCreche .noticiaLink a:link, #noticiasResidencial .noticiaLink a:link, #noticiasEspecialidade .noticiaLink a:link, .divBotaoVerMais a:link, .linkVerMais a:link{
+	color:#6699FF;
+}
+#noticiasMedico .noticiaLink a:visited, #noticiasIrmandade .noticiaLink a:visited, #noticiasLar .noticiaLink a:visited, #noticiasCreche .noticiaLink a:visited, #noticiasResidencial .noticiaLink a:visited, #noticiasEspecialidade .noticiaLink a:visited, .divBotaoVerMais a:visited, .linkVerMais a:visited{
+	color:#6699FF;
+}
+#noticiasMedico .noticiaLink a:hover, #noticiasIrmandade .noticiaLink a:hover, #noticiasLar .noticiaLink a:hover, #noticiasCreche .noticiaLink a:hover, .divBotaoVerMais a:hover, #noticiasResidencial .noticiaLink a:hover, #noticiasEspecialidade .noticiaLink a:hover, .linkVerMais a:hover{
+	color:#3366CC;
+}
+#noticiasMedico .noticiaLink a:active, #noticiasIrmandade .noticiaLink a:active, #noticiasLar .noticiaLink a:active, #noticiasCreche .noticiaLink a:active, #noticiasResidencial .noticiaLink a:active, #noticiasEspecialidade .noticiaLink a:active, .divBotaoVerMais a:active, .linkVerMais a:active{
+	color:#3366CC;
+}
+
+
+.tipo a:link{
+	color:#194319;
+	text-decoration:none
+}
+.tipo a:visited{
+	color:#194319;
+	text-decoration:none
+}
+.tipo a:hover{
+	text-decoration:underline;
+}
+.tipo a:active{
+	text-decoration:underline;
+}
+
+.acordo a {
+	display:block;
+	background:#B0B0B0;
+	text-decoration:none;
+}
+
+.acordo a:hover {
+	background:#CC9900;
+}

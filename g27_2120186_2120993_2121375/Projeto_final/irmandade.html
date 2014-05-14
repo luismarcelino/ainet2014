@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SCML - Santa Casa da Misericórdia de Leiria</title> 
+  <link rel="stylesheet" type="text/css" href="Estilos/estilo_base.css" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script type="text/javascript" src="../JQUERY/js/jquery.min.js"> </script> 
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script type="text/javascript"> 
+
+
+// <![CDATA[ 
+  $(function() {
+
+    $('#btnSaude').click(function() {
+
+        $('#containerSupMenuSaude').slideToggle('fast');
+        $('#containerSupMenuMedico').hide('normal');
+        $('#containerSupMenuNoticias').hide('normal');
+        $('#containerSupMenuCuidados').hide('normal');
+        $('#containerSupMenuOutros').hide('normal');
+
+    });
+
+    $('#btnMedico').click(function() {
+
+        $('#containerSupMenuMedico').slideToggle('fast');
+        $('#containerSupMenuSaude').hide('normal');
+        $('#containerSupMenuNoticias').hide('normal');
+        $('#containerSupMenuCuidados').hide('normal');
+        $('#containerSupMenuOutros').hide('normal');
+
+    });
+
+    $('#btnNoticias').click(function() {
+
+        $('#containerSupMenuNoticias').slideToggle('fast');
+        $('#containerSupMenuSaude').hide('normal');
+        $('#containerSupMenuMedico').hide('normal');
+        $('#containerSupMenuCuidados').hide('normal');
+        $('#containerSupMenuOutros').hide('normal');
+
+    });
+
+    $('#btnCuidados').click(function() {
+
+        $('#containerSupMenuCuidados').slideToggle('fast');
+        $('#containerSupMenuNoticias').hide('normal');
+        $('#containerSupMenuSaude').hide('normal');
+        $('#containerSupMenuMedico').hide('normal');
+        $('#containerSupMenuOutros').hide('normal');
+
+    });
+
+    $('#btnOutros').click(function() {
+
+        $('#containerSupMenuOutros').slideToggle('fast');
+        $('#containerSupMenuNoticias').hide('normal');
+        $('#containerSupMenuSaude').hide('normal');
+        $('#containerSupMenuMedico').hide('normal');
+        $('#containerSupMenuCuidados').hide('normal');
+        
+
+    });
+
+});
+
+// ]]> 
+</script>
+
+
+</head>
+
+
+<body>
+    <div id="top">
+      <a href="Principal.html">
+         <div id="logotipo" class="imagem" href = "Principal.html">  </div>   
+     </a> 
+     <div id="topTittle">
+        <button id="LogRegBtn" type="button" value="Registar">Registar</button>
+        <button id="LogRegBtn" type="button" value="Login">Entrar</button>
+        <br>
+        <br>
+        <form id="formPesquisa" method="get" action="http://www.google.com">
+            <input type="text" class="inputPesquisa" name="q" size="21" maxlength="120"><input type="submit" value=">" class="buttonPesquisa">
+        </form>
+    </div>
+</div>
+<div id="container">
+
+
+    <div id="containerSup">  
+
+        <ul class="menuList">
+            <li>
+                <a href="#" id="btnSaude" class="btnMenus"> Saúde</a>
+            </li>
+            <li>
+                <a href="#" id="btnCuidados" class="btnMenus"> Cuidados Geriátricos</a>
+            </li>
+             <li>
+                <a href="#" id="btnNoticias" class="btnMenus"> Notícias</a>
+            </li>
+            <li>
+                <a href="#" id="btnOutros" class="btnMenus"> Outros</a>
+            </li>
+        </ul>
+    </div> 
+
+    <div id = "containerSupMenuSaude">
+
+        <ul class="subMenuList">
+        </br>
+        <li><a class="subMenuList" href="marcacao_consulta.html"> Marcar Consulta</a></li>
+        <li><a class="subMenuList" href="especialidades.html"> Especialidades</a></li>
+        <li><a class="subMenuList" href="medicos.html"> Profissionais </a></li>
+        <li><a class="subMenuList" href="ver_noticia.html"> Artigos/Notícias Clínicas</a></li>
+    </ul>   
+
+
+</div>
+
+<div id = "containerSupMenuNoticias">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="ver_noticia.html"> Ver Notícias</a></li>
+    <li><a class="subMenuList" href="criar_noticia.html"> Criar Notícia</a></li>
+</ul>   
+
+
+</div>
+
+<div id = "containerSupMenuCuidados">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="cuidados_geriatricos.html"> Residencial</a></li>
+    <li><a class="subMenuList" href="cuidados_geriatricos.html"> Lar</a></li>
+    <li><a class="subMenuList" href="cuidados_geriatricos.html"> Internamento</a></li>
+    <li><a class="subMenuList" href="cuidados_geriatricos.html"> Apoio domiciliário</a></li>
+</ul>   
+
+
+</div>
+
+<div id = "containerSupMenuOutros">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="creche.html"> Creche</a></li>
+    <li><a class="subMenuList" href="irmandade.html"> Irmandade</a></li>
+    <li><a class="subMenuList" href="contactos.html"> Contactos</a></li>
+</ul>   
+
+
+</div>
+
+
+<div id="containerInf"> 
+
+       <div id = "containerInfDirIrmandade">
+
+        <h2>Irmandade</h2>
+
+
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+
+
+            <div id="containerNoticiasCuidados"> 
+
+             <div id="noticiaResumo">
+                 <h3>Titulo da Noticia</h3>
+                 <p>Resumo Noticia</p>
+
+                 <a href="">Ver Noticia Completa</a>
+
+             </div>
+             <div id="noticiaResumo">
+
+                <h3>Titulo da Noticia</h3>
+                <p>Resumo Noticia</p>
+                <a href="">Ver Noticia Completa</a> 
+            </div>
+            <div id="noticiaResumo">
+
+                <h3>Titulo da Noticia</h3>
+                <p>Resumo Noticia</p>
+                <a href="">Ver Noticia Completa</a> 
+            </div>
+
+    </div>
+
+</div>
+
+</div>
+
+
+
+
+
+<div id="footer"> 
+    <p> This is footer</p>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,428 @@
+/*GLOBAL*/
+
+body
+{
+    border-top: 5px solid #2687C4;
+    background: #ebe8de;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+p
+{
+    margin: 5px 0;
+    line-height: 25px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+    transition: color .5s ease;
+
+}
+
+a:hover
+{
+    color: #E56038;
+}
+
+strong
+{
+    font-weight: bold;
+}
+
+/*HEADER*/
+
+header
+{
+    position: relative;
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto 20px auto;
+}
+
+header h1
+{
+    margin: 35px 0 0 0;
+    font-size: 50px;
+    color: #2687C4;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header p
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #2687C4;
+    margin-left:100px;
+}
+
+#login
+{
+    position: absolute;
+    right: 0;   
+    top: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+#logo
+{
+    position: absolute;
+    left: 0;   
+    top: 0;
+    padding-top: 5px;
+    padding-right: 20px;
+}
+
+header nav{
+    width: auto;
+    max-width: 900px;
+}
+
+nav ul
+{
+    list-style:none;
+    padding-bottom: 5px;
+    margin: 0 auto;
+}
+
+
+nav ul li
+{
+    display:block;
+    float:left;
+    padding:3px 15px;
+}
+
+
+nav ul li a
+{
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    transition: all .25s ease;
+}
+
+#spacer
+{
+    width: auto;
+    height: 10px;
+    background-color: #2687C4;
+}
+
+/*PÁGINA PRINCIPAL*/
+
+#pp_noticias
+{
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#pp_noticias article
+{
+    position: relative;
+    width: 300px;
+    float: left;
+    padding-left: 100px;   
+}
+
+#pp_noticias h2
+{
+    font-size: 20px;
+    border-bottom: 1px solid #2687C4;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#pp_publicacoes_medicos
+{
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 70px 0 45px 0;
+}
+
+#pp_publicacoes_medicos h2
+{
+    font-size: 20px;
+    border-bottom: 1px solid #2687C4;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#pp_publicacoes_medicos article
+{
+    float: left;
+    width: 250px;
+    margin-right: 45px;
+    font-size: 14px;
+}
+
+#pp_publicacoes_medicos article h3
+{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 75px;
+}
+
+#pp_publicacoes_medicos article img
+{
+    float:left;
+}
+
+#pp_publicacoes_medicos article p
+{
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 75px;
+}
+
+#pp_valencias
+{
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#pp_valencias h2
+{
+    font-size: 20px;
+    border-bottom: 1px solid #2687C4;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#pp_valencias article
+{
+    position: relative;
+}
+
+/*SAÚDE*/
+
+#lista_esp
+{ 
+    width: auto;
+    float: left;
+    background: #ACDBFC;
+    top: 0px;
+    bottom: 0px;
+    height: 200px;
+    padding: 10px;
+    position: relative;
+}
+
+#esp
+{
+    padding-left: 350px;
+}
+
+#nav_saude
+{
+    position: relative;
+    margin: 0 auto;
+    width: auto;
+    max-width: 900px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+#corpo
+{
+    position: relative;
+}
+
+#corpo table
+{
+    width: 850px;
+    margin: 0 auto;
+}
+
+#corpo table, #corpo td, #corpo th
+{
+    border: 1px solid black;
+    text-align: center; 
+    height: 40px;
+}
+
+#medico
+{
+    position: relative;
+    padding-left: 200px;
+}
+
+#medico table
+{
+    width: 850px;
+}
+
+#medico table, #medico td, #medico th
+{
+    border: 1px solid black;
+    text-align: center; 
+    height: 40px;
+}
+
+.titulo
+{
+    width: auto;
+    max-width: 900px;   
+    margin: 0 auto;
+    font-size: 20px;
+    border-bottom: 1px solid #2687C4;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*CONTACTOS*/
+
+#contactos
+{
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#contactos h2
+{
+    font-size: 20px;
+    border-bottom: 1px solid #2687C4;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contactos article
+{
+    float: left;
+    width: 300px;
+    font-size: 14px;
+    border: 0 30px;
+}
+
+#contactos article h3
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
+
+#contactos ul
+{
+    list-style:none;
+}
+
+/*NOTICIA COMPLETA*/
+.artigo_ou_noticia
+{
+    width: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    /*padding: 70px 0 45px 0;*/
+}
+
+#artigo_completo h2, #noticia_completa h2
+{
+    font-size: 20px;
+    border-bottom: 1px solid #2687C4;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.artigo_ou_noticia article
+{
+    /*float: left;*/
+    width: 800px;
+    margin-right: 45px;
+    font-size: 14px;
+}
+
+.artigo_ou_noticia article h3
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 75px;
+}
+
+.artigo_ou_noticia article img
+{
+    float:left;
+    margin: 6px 20px 0 75px;
+}
+
+.artigo_ou_noticia article p
+{
+    text-align: justify;
+    line-height: 25px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 75px;
+}
+
+/*GERIATRIA*/
+.geriatria
+{
+    width: auto;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.geriatria h2
+{
+    font-size: 20px;
+    border-bottom: 1px solid #2687C4;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.geriatria article h3
+{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*CRIAR/EDITAR NOTICIA/ARTIGO*/
+#editor {
+    width: auto;
+    height: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#editor textarea {
+    width: 100%;
+    height: 400px;
+}
+
+/*NAVEGACAO GERIATRIA*/
+.second_nav ul{
+    display:  table;
+    margin: 0 auto;
+}
+
+.second_nav ul li {
+    display: table-cell;
+}
+
+/*MISC*/
+.clear
+{
+    clear: both;
+}
+
+.hidden
+{
+    position: absolute;
+    clip: rect(1px 1px 1px 1px); /* IE6 & 7 */
+    clip: rect(1px, 1px, 1px, 1px);
+}

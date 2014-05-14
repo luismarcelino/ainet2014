@@ -1,0 +1,232 @@
+body {
+    background-image: url(../img/background.jpg);
+    font-family:"Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    min-width: 1100px;
+}
+.frameArea {
+    margin: 10px;
+    padding: 10px;
+    background-color: #E5FFDF;
+    border: 1px solid #C7DBFF;
+    overflow-x: hidden;
+}
+#pathTree {
+    margin: 15px 0px 25px 0px;
+}
+.endLink {
+    width: 100%;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border: 1px solid #C7DBFF;
+    clear: both;
+    font-weight: bold;
+}
+.endLink:hover {
+    background-color: #fff;
+    border: 2px solid #C7DBFF;
+}
+.endLink:hover a {
+    display: block;
+}
+p {
+    line-height: 150%;
+}
+a {
+    color: #08c;
+    text-decoration: none;
+}
+a:hover {
+    color: #3ABDFF;
+}
+ul {
+    list-style-type: none;
+}
+/* Buttons CSS */
+ .button {
+    display: inline-block;
+    background-color: #08c;
+    border-radius: 15px;
+    /* hor,ver,smo,dim*/
+    box-shadow: 0 0 8px 5px #888;
+}
+.button a {
+    display: block;
+    padding: 5px 15px 5px 15px;
+    color: #fff;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: #007dbb;
+    box-shadow: 0 0 4px 5px #888;
+}
+.button:active {
+    background-color: #8CB5EB;
+    box-shadow: 0 0 5px 5px #888;
+}
+.insideContent {
+    padding: 0px 30px 0px 30px;
+    margin: 8px;
+}
+.insideContent h1 {
+    padding: 0px 0px 15px 0px;
+}
+/* Header Style Begin */
+ .mainHeader {
+    width: 95%;
+    margin: 30px auto 0px auto;
+    padding: 0px;
+    overflow: auto;
+    border-top-left-radius:2em;
+    border-top-right-radius:2em;
+    box-shadow: 0 0 10px 3px #888;
+    background-color: #D7E4F3;
+}
+#formContacto {
+    width: 94%;
+    font-size: 1.5em;
+    padding: 20px 0px 20px 0px;
+    margin: 20px auto 20px auto;
+}
+.topLinks {
+    float: right;
+    margin-right: 50px;
+}
+.topLinks ul li {
+    display: inline;
+    padding: 3px;
+}
+#search {
+    clear: right;
+    float: right;
+    margin: 30px 40px 0px 0px;
+}
+#search img {
+    margin-left: 10px;
+}
+input[type=search] {
+    color: blue;
+    text-align: right;
+    height: 30px;
+    width: 180px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: 4px;
+    text-shadow: 0 0 2px black;
+}
+.navigationBar {
+    background-color: #8CB5EB;
+    border-radius: 12px;
+    margin: 0px 25px 30px 25px;
+    box-shadow: 0 0 10px 3px #888;
+    overflow-x: hidden;
+}
+.navigationBar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.navigationBar ul li {
+    float: left;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.navigationBar a {
+    padding: 10px;
+    width: 170px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+}
+.navigationBar a:hover, .active {
+    background-color: #08c;
+    box-shadow: 0 0 10px 3px #888;
+    color: white !important;
+}
+#logo {
+    display: inline-block;
+    padding: 10px 0px 10px 20px;
+}
+#slogan {
+    position: absolute;
+    display: inline-block;
+    padding: 20px 0px 0px 20px;
+}
+/* Slide Style Begin */
+ .slidePanel {
+    width: 70%;
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0 0 4px 4px #888;
+    border: 5px solid #fff;
+}
+/* Main Content Style Begin */
+ .pageContent {
+    width: 95%;
+    margin: 0px auto 0px auto;
+    padding: 0px;
+    background-color: white;
+    box-shadow: 0 0 10px 3px #888;
+    overflow: auto;
+}
+.mainContent {
+    width: 71%;
+    margin-top: 20px;
+}
+.mainContent p {
+    text-indent: 50px;
+}
+.pageContent .slidePanel {
+    width: 70%;
+}
+/* Side Content */
+ .rightSideContent {
+    float: right;
+    width: 29%;
+    height: 1385px;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+/* News */
+ .newsPanel {
+    width: 100%;
+    margin: 20px 0px 30px 0px;
+    padding: 0px;
+    background-color: white;
+    overflow-x: hidden;
+}
+.news {
+    float: left;
+    padding: 20px;
+}
+.newsSpan3 {
+    width: 30%;
+}
+.newsSpan4 {
+    width: 20%;
+}
+/* Footer Style Ending */
+ .footer {
+    width: 95%;
+    border: 1px solid #232323;
+    border-bottom-left-radius:2em;
+    border-bottom-right-radius:2em;
+    margin: 0px auto 0px auto;
+    box-shadow: 0 0 10px 3px #888;
+    background: url(../img/footer_background.jpg);
+    text-align: center;
+    color: white;
+}
+/* Footer Style Ending */
+ @media only screen and (min-width: 158px) and (max-width: 600px) {
+    .body {
+        width: 98%;
+        font-size: 95%;
+    }
+}

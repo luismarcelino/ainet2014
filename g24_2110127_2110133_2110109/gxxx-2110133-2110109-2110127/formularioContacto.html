@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Santa casa da Misericórdia de Leiria: SCML">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="David, Eurico, Olavo">
+		<meta charset="UTF-8">
+		
+		<title>Santa casa da Misericórdia de Leiria: SCML</title>
+		
+		<script src="script/jquery.js"></script>
+		<script src="script/base.js"></script>
+		<script src="script/contactos.js"></script>
+
+		<link rel="shortcut icon" href="images/santa_casa100.png">
+		
+		<link rel="stylesheet" href="styles/estilo.css" />
+		<link rel="stylesheet" href="styles/estiloMenu.css" />
+	</head>
+	<body>
+		<div id="pagina">
+			<div id="paginaTopo">
+				<div id="paginaTopoTopo"></div>
+				<div id="paginaTopoConteudo">
+					<div id="paginaTopoCentro">
+						<div id="imagemcabecalho"></div>
+						<div id="imagemCentroCabecalho"></div>
+						<div id="pesquisaLogin">
+							<div id="divLogin" style="display:none">
+								User Name:<input type="text" name="userName"/><br>
+								Pass:<input type="text" name="userName"/><br>
+								<button type="button">Login</button> 
+							</div>
+							<input id="btnLogin" type="button" value="Login" onclick="login()"/> 
+							
+							<input id="searchBox" type="text" name="procurar"/>
+							<div id="find"><input type="image" src="images/search.png" alt="procurar"/></div>
+						</div>
+					</div>
+						<div id="cssmenu">
+							<ul>
+								<li><a href="index.html">Ínicio</a></li>
+								<li><a href="saude.html">Saúde</a></li>
+								<li><a href="marcacaoConsulta.html">Marcação Consulta</a></li>
+								<li><a href="cuidadosGeriatricos.html">Cuidados Geriátricos</a></li>
+								<li><a href="creche.html">Creche</a></li>
+								<li><a href="irmandade.html">Irmandade</a></li>
+								<li><a href="contactos.html">Contactos</a></li>
+					
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div id="paginaPrincipal">
+				<div id="paginaPrincipalTopo"></div>
+				<div id="paginaPrincipalConteudo">
+					<div id= "conteudo">
+						<div id="conteudoTopo">
+							<h1>Pedido de Contacto</h1>
+							<div class="textoIntrodutorio"><p>Através do preenchimento deste formulário é possivel entrar em contacto conosco</p></div>
+							<hr class="linha">
+							<div class="textoIntrodutorio"><p>(*) campos obrigatórios</p></div>
+						</div>
+						<div id="CriarNoticiaArtigo">			
+							<form name="contactoForm"  action="" onsubmit="return validateForm();" method="post">				
+								<table class="table_center">
+									<tr>
+										<td><label>Nome*:</label></td>
+										<td><input class="elementosInputFormulario" type="text" name="nome"/></td>
+									</tr>
+
+									<tr>
+										<td><label>Tipo:</label></td>
+										<td>
+											<input class="elementosInputFormularioCheck" type="radio" name="tipo" value="informacao" checked />Informação
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<input class="elementosInputFormularioCheck" type="radio" name="tipo" value="reclamacao"/>Reclamação
+										</td>
+									</tr>
+									<tr>
+										<td><label>Assunto*:</label></td>
+										<td><textarea class="elementosInputFormularioPequenaTextArea" name="assunto"></textarea></td>
+									</tr>
+									<tr>
+										<td><label>Texto*:</label></td>
+										<td><textarea class="elementosInputFormularioGrandeTextArea" name="texto" ></textarea></td>
+									</tr>
+									<tr>
+										<td><label>Preferência de Contacto:</label></td>
+										<td>
+											<input class="elementosInputFormularioCheck" type="radio" name="tipoContacto" value="email" onclick="mostrarEmail();" checked />Email
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<input class="elementosInputFormularioCheck" type="radio" name="tipoContacto" value="telefone" onclick="mostrarTelefone();" />Telefone
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td>
+											<input class="elementosInputFormularioCheck" type="radio" name="tipoContacto" value="morada" onclick="mostrarMorada();" />Correio
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div id="contactoLabel"></div>
+										</td>
+										<td>
+											<div id="contactoInput"></div>
+										</td>
+									</tr>
+									<tr>
+										<td><br>
+										</td>
+										<td><br>
+										</td>
+									</tr>
+									<tr>
+									
+										<td colspan="2" class="td_aligned_right">
+											<input type="submit" name="enviar" value="Enviar">
+											<input type="reset" value="Limpar" onclick="resetForm()">
+										</td>
+									</tr>
+								</table>
+							</form>
+
+							<div id="error"></div>
+							<img id="image" src="" alt="">
+						</div>	
+
+					</div>
+				</div>
+				<div id="paginaPrincipalFundo"></div>
+			</div>
+			<div id="paginaRodape">
+					<div id="paginaRodapeConteudo">
+					<a href="https://www.facebook.com/santacasaleiria?ref=ts&amp;fref=ts"><img src="images/facebook_logo.png" alt="facebookLink"></a>2014 © | Desenvolvimento: David Adrião, Eurico Sousa e Olavo Machado 
+					</div>
+					<div id="paginaRodapeFundo"></div>
+			</div>
+		</div>
+	</body>
+</html>

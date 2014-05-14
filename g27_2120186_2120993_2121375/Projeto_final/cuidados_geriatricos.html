@@ -1,0 +1,358 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SCML - Santa Casa da Misericórdia de Leiria</title> 
+  <link rel="stylesheet" type="text/css" href="Estilos/estilo_base.css" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+  <script type="text/javascript" src="../JQUERY/js/jquery.min.js"> </script> 
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <script type="text/javascript"> 
+
+  
+// <![CDATA[ 
+  $(function() {
+
+
+
+    $('#btnSaude').click(function() {
+
+        $('#containerSupMenuSaude').slideToggle('fast');
+        $('#containerSupMenuMedico').hide('normal');
+        $('#containerSupMenuNoticias').hide('normal');
+        $('#containerSupMenuCuidados').hide('normal');
+        $('#containerSupMenuOutros').hide('normal');
+
+    });
+
+    $('#btnMedico').click(function() {
+
+        $('#containerSupMenuMedico').slideToggle('fast');
+        $('#containerSupMenuSaude').hide('normal');
+        $('#containerSupMenuNoticias').hide('normal');
+        $('#containerSupMenuCuidados').hide('normal');
+        $('#containerSupMenuOutros').hide('normal');
+
+    });
+
+    $('#btnNoticias').click(function() {
+
+        $('#containerSupMenuNoticias').slideToggle('fast');
+        $('#containerSupMenuSaude').hide('normal');
+        $('#containerSupMenuMedico').hide('normal');
+        $('#containerSupMenuCuidados').hide('normal');
+        $('#containerSupMenuOutros').hide('normal');
+
+    });
+
+    $('#btnCuidados').click(function() {
+
+        $('#containerSupMenuCuidados').slideToggle('fast');
+        $('#containerSupMenuNoticias').hide('normal');
+        $('#containerSupMenuSaude').hide('normal');
+        $('#containerSupMenuMedico').hide('normal');
+        $('#containerSupMenuOutros').hide('normal');
+
+    });
+
+    $('#btnOutros').click(function() {
+
+        $('#containerSupMenuOutros').slideToggle('fast');
+        $('#containerSupMenuNoticias').hide('normal');
+        $('#containerSupMenuSaude').hide('normal');
+        $('#containerSupMenuMedico').hide('normal');
+        $('#containerSupMenuCuidados').hide('normal');
+
+    });
+
+
+    $("#btnLar").click(function(){
+        $("#containerInfDirInternamento").fadeOut('normal');
+        $("#containerInfDirApoio").fadeOut('normal');
+        $("#containerInfDirResidencial").fadeOut('normal');
+        $("#containerInfDirLar").fadeIn('slow');
+    });
+    
+    
+    $("#btnApoio").click(function(){
+        $("#containerInfDirInternamento").fadeOut('normal');
+        $("#containerInfDirResidencial").fadeOut('normal');
+        $("#containerInfDirLar").fadeOut('normal');
+        $("#containerInfDirApoio").fadeIn('slow');
+    });
+
+    $("#btnInternamento").click(function(){
+        $("#containerInfDirApoio").fadeOut('normal');
+        $("#containerInfDirResidencial").fadeOut('normal');
+        $("#containerInfDirLar").fadeOut('normal');
+        $("#containerInfDirInternamento").fadeIn('slow');
+    });
+    
+    $("#btnResidencial").click(function(){
+        $("#containerInfDirApoio").fadeOut('normal');
+        $("#containerInfDirLar").fadeOut('normal');
+        $("#containerInfDirInternamento").fadeOut('normal');
+        $("#containerInfDirResidencial").fadeIn('slow');
+    });
+
+});
+
+// ]]> 
+</script>
+
+
+</head>
+
+
+<body>
+    <div id="top">
+      <a href="Principal.html">
+         <div id="logotipo" class="imagem" href="Principal.html">  </div>   
+     </a> 
+     <div id="topTittle">
+        <button id="LogRegBtn" type="button" value="Registar">Registar</button>
+        <button id="LogRegBtn" type="button" value="Login">Entrar</button>
+        <br>
+        <br>
+        <form id="formPesquisa" method="get" action="http://www.google.com">
+            <input type="text" class="inputPesquisa" name="q" size="21" maxlength="120"><input type="submit" value=">" class="buttonPesquisa">
+        </form>
+    </div>
+</div>
+<div id="container">
+
+
+    <div id="containerSup">  
+
+        <ul class="menuList">
+            <li>
+                <a href="#" id="btnSaude" class="btnMenus"> Saúde</a>
+            </li>
+            <li>
+                <a href="#" id="btnCuidados" class="btnMenus"> Cuidados Geriátricos</a>
+            </li>
+             <li>
+                <a href="#" id="btnNoticias" class="btnMenus"> Notícias</a>
+            </li>
+            <li>
+                <a href="#" id="btnOutros" class="btnMenus"> Outros</a>
+            </li>
+        </ul>
+    </div> 
+
+    <div id = "containerSupMenuSaude">
+
+        <ul class="subMenuList">
+        </br>
+        <li><a class="subMenuList" href="marcacao_consulta.html"> Marcar Consulta</a></li>
+        <li><a class="subMenuList" href="especialidades.html"> Especialidades</a></li>
+        <li><a class="subMenuList" href="medicos.html"> Profissionais </a></li>
+        <li><a class="subMenuList" href="ver_noticia.html"> Artigos/Notícias Clínicas</a></li>
+    </ul>   
+
+
+</div>
+
+<div id = "containerSupMenuNoticias">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="ver_noticia.html"> Ver Notícias</a></li>
+    <li><a class="subMenuList" href="criar_noticia.html"> Criar Notícia</a></li>
+</ul>   
+
+
+</div>
+
+<div id = "containerSupMenuCuidados">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="#" id="btnResidencial"> Residencial</a></li>
+    <li><a class="subMenuList" href="#" id="btnLar"> Lar</a></li>
+    <li><a class="subMenuList" href="#" id="btnInternamento"> Internamento</a></li>
+    <li><a class="subMenuList" href="#" id="btnApoio"> Apoio domiciliário</a></li>
+</ul>   
+
+
+</div>
+
+<div id = "containerSupMenuOutros">
+
+    <ul class="subMenuList">
+    </br>
+    <li><a class="subMenuList" href="creche.html"> Creche</a></li>
+    <li><a class="subMenuList" href="irmandade.html"> Irmandade</a></li>
+    <li><a class="subMenuList" href="contactos.html"> Contactos</a></li>
+</ul>   
+
+
+</div>
+
+
+<div id="containerInf"> 
+
+    <div id = "containerInfDirResidencial">
+
+        <h2>Residencial</h2>
+
+        <p>Já se encontra em funcionamento, sob a alçada da Santa Casa da Misericórdia de Leiria, a Residencial Assistida XXI. O edifício, localizado na Rua do Lis junto às instalações do Hospital Dom Manuel de Aguiar, proporciona aos seus utentes elevados padrões de qualidade ao nível dos serviços que presta.<br>
+            <br>
+            A funcionalidade das instalações e o atendimento personalizado são os seus principais atributos. Com uma localização privilegiada e detentora de vistas soberbas sobre Leiria, nomeadamente para dois dos principais símbolos desta cidade, o Rio Lis e o Castelo, a Residencial XXI assume-se como uma referência de qualidade no domínio dos perfis de acolhimento dos seus utentes.<br>
+            <br>
+            <strong>A Residencial XXI é o local ideal para quem pretende uma opção de repouso de cariz familiar, onde a personalidade de cada utente determina o atendimento dos diversos profissionais desta unidade.</strong><br>
+            <br>
+            Nos três pisos que compõem a Residencial Assistida XXI, existem diversos espaços destinados ao convívio e ao lazer, destacando-se um refeitório, bar, salas de leitura e um salão de jogos.<br>
+            <br>
+            Com uma oferta de 33 camas, a Residencial XXI proporciona aos utentes um espaço de qualidade acima da média e um serviço de excelência, no acompanhamento que presta a cada utente.<br>
+            <br>
+            Todos os quartos estão equipados com telefone, televisão por cabo e ar condicionado, apresentado, em complemento, uma cuidada decoração e proporcionando excelente conforto.<br>
+            <br>
+            Os utentes da Residencial Assistida XXI beneficiam ainda de apoio médico, enfermagem, psicologia clínica e de animação cultural, fisioterapia, terapeuta ocupacional, dietista e serviços ecuménicos</p>
+
+            <div id="containerNoticiasCuidados"> 
+
+             <div id="noticiaResumo">
+                 <h3>Titulo da Noticia</h3>
+                 <p>Resumo Noticia</p>
+
+                 <a href="">Ver Noticia Completa</a>
+
+             </div>
+             <div id="noticiaResumo">
+
+                <h3>Titulo da Noticia</h3>
+                <p>Resumo Noticia</p>
+                <a href="">Ver Noticia Completa</a> 
+            </div>
+            <div id="noticiaResumo">
+
+                <h3>Titulo da Noticia</h3>
+                <p>Resumo Noticia</p>
+                <a href="">Ver Noticia Completa</a> 
+            </div>
+
+
+        </div>
+
+    </div> 
+
+    <div id = "containerInfDirLar">
+
+      <h2>Lar</h2>
+
+
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+
+      <div id="containerNoticiasCuidados"> 
+
+         <div id="noticiaResumo">
+             <h3>Titulo da Noticia</h3>
+             <p>Resumo Noticia</p>
+
+             <a href="">Ver Noticia Completa</a>
+
+         </div>
+         <div id="noticiaResumo">
+
+            <h3>Titulo da Noticia</h3>
+            <p>Resumo Noticia</p>
+            <a href="">Ver Noticia Completa</a> 
+        </div>
+        <div id="noticiaResumo">
+
+            <h3>Titulo da Noticia</h3>
+            <p>Resumo Noticia</p>
+            <a href="">Ver Noticia Completa</a> 
+        </div>
+
+
+    </div>
+</div>
+
+
+<div id = "containerInfDirApoio">
+
+    <h2>Apoio Domiciliário</h2>
+
+    <p>Tendo como objectivo a prestação de cuidados ao nível da assistência de utentes impossibilitados de se deslocarem aos Centros de Dia, Lares e outras instituições sociais, a Santa Casa da Misericórdia de Leiria iniciou, em Julho de 2004, o Serviço de Apoio Domiciliário.<br>
+        <br>
+        Este serviço prepara, distribui e administra diariamente refeições, assegurando a prestação de cuidados de higiene pessoal e de conforto habitacional, o tratamento de roupas e a administração de medicamentos. <br>
+        <br>
+        O Serviço de Apoio Domiciliário afigura-se, assim, para quem dele necessita (utentes e respectivas famílias) como uma resposta válida, salientando-se as preocupações dos nossos colaboradores no que toca à compreensão das circunstâncias biopsicossociais de cada indivíduo.<br>
+        <br>
+        Refira-se que esta valência não pretende substituir os laços familiares e de vizinhança, mas antes desenvolver uma acção complementar, privilegiando a vida em família e na comunidade como a forma mais natural e a que melhor satisfaz as necessidades dos indivíduos em geral e da população idosa em particular.</p>
+
+        <div id="containerNoticiasCuidados"> 
+
+         <div id="noticiaResumo">
+             <h3>Titulo da Noticia</h3>
+             <p>Resumo Noticia</p>
+
+             <a href="">Ver Noticia Completa</a>
+
+         </div>
+         <div id="noticiaResumo">
+
+            <h3>Titulo da Noticia</h3>
+            <p>Resumo Noticia</p>
+            <a href="">Ver Noticia Completa</a> 
+        </div>
+        <div id="noticiaResumo">
+
+            <h3>Titulo da Noticia</h3>
+            <p>Resumo Noticia</p>
+            <a href="">Ver Noticia Completa</a> 
+        </div>
+
+
+    </div>
+
+</div>  
+
+
+<div id = "containerInfDirInternamento">
+
+    <h2>Internamento</h2>
+
+    <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, </p>    
+
+        <div id="containerNoticiasCuidados"> 
+
+         <div id="noticiaResumo">
+             <h3>Titulo da Noticia</h3>
+             <p>Resumo Noticia</p>
+
+             <a href="">Ver Noticia Completa</a>
+
+         </div>
+         <div id="noticiaResumo">
+
+            <h3>Titulo da Noticia</h3>
+            <p>Resumo Noticia</p>
+            <a href="">Ver Noticia Completa</a> 
+        </div>
+        <div id="noticiaResumo">
+
+            <h3>Titulo da Noticia</h3>
+            <p>Resumo Noticia</p>
+            <a href="">Ver Noticia Completa</a> 
+        </div>
+
+
+    </div>
+
+</div>
+
+</div>
+
+
+<div id="footer"> 
+    <p> This is footer</p>
+</div>
+
+</body>
+
+</html>

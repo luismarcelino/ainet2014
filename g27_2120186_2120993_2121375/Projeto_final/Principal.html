@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+    <meta  charset="UTF-8" />  
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title> 
+    <link rel="stylesheet" type="text/css" href="Estilos/EstiloPrincipal.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu">
+    <script type="text/javascript" src="../JQUERY/js/jquery.min.js"> </script> 
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript"> 
+
+        // <![CDATA[ 
+    $("#containerSupEsqBody > div:gt(0)").hide();
+
+    setInterval(function() { 
+        $('#containerSupEsqBody > div:first')
+        .fadeOut(0)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#containerSupEsqBody');
+    },  3000);
+    
+    $("#containerSupDirBody > div:gt(0)").hide();
+
+    setInterval(function() { 
+        $('#containerSupDirBody > div:first')
+        .fadeOut(0)
+        .next()
+        .fadeIn(1000)
+        .end()
+        .appendTo('#containerSupDirBody');
+    },  3000);
+
+
+// ]]> 
+    </script> 
+</head>
+
+
+<body>
+    <div id="top">
+        <a href="Principal.html">
+         <div id="logotipo" class="imagem" href = "Principal.html">  </div>   
+     </a> 
+     <div id="topTittle">
+        <button id="LogRegBtn" type="button" value="Registar">Registar</button>
+        <button id="LogRegBtn" type="button" value="Login">Entrar</button>
+        <br>
+        <br>
+        <form id="formPesquisa" method="get" action="http://www.google.com">
+            <input type="text" class="inputPesquisa" name="q" size="21" maxlength="120"><input type="submit" value=">" class="buttonPesquisa">
+        </form>
+    </div>
+</div>
+<div id="container">
+    <div id="containerSup">  
+        <div id="containerSupEsq">
+            <div id="containerSupEsqTittle">
+                <p> Actualidade</p>
+            </div>
+            <div id="containerSupEsqBody">                          
+                <div id = "imgSlide">
+                    <a>
+                        <img src="http://www.misericordiadeleiria.pt/images/logo.JPG">
+                        <p>Exemplo Notícia</p>
+                    </a>
+                </div>
+                <div id = "imgSlide" class = "nextSlide">
+                    <a>
+                        <img src="http://www.misericordiadeleiria.pt/pic/conteudo/miolo_4adf2d654a5f2.JPG">
+                        <p>Exemplo Notícia</p>
+                    </a>
+                </div> 
+            </div>
+        </div>
+        <div id="containerSupDir">
+            <div id="containerSupDirTittle">
+                <p> Publicações Recentes</p>
+            </div>
+            <div id="containerSupDirBody">                          
+               <div id = "imgSlide">
+                <a>
+                    <img  src="http://www.misericordiadeleiria.pt/images/logo.JPG">
+                    <p>Exemplo Notícia</p>
+                </a>
+            </div>
+            <div id = "imgSlide" class= "nextSlide">
+                <a>
+                    <img src="http://www.misericordiadeleiria.pt/pic/conteudo/miolo_4adf2d654a5f2.JPG">
+                    <p>Exemplo Notícia</p>
+                </a>
+            </div> 
+        </div>
+    </div>
+</div>
+<div id="containerInf"> 
+    <div id="menu">
+        <h3> Saúde </h3>
+        <ul class="menuList">
+            <li>
+
+                <a href="marcacao_consulta.html" class="btnMenus"> Marcar Consulta </a>
+            </li>
+            <li>
+                <a href="especialidades.html" class="btnMenus"> Especialidades </a>
+            </li>
+            <li>
+                <a href="medicos.html" class="btnMenus"> Profissionais </a>  
+            </li>
+            <li>
+                <a href="ver_noticia.html" class="btnMenus"> Artigos/Notícias Clínicas </a>  
+            </li>
+        </ul>
+    </div>
+
+    <div id="menu">
+
+        <h3> Cuidados Geriátricos </h3>
+        <ul class="menuList">
+            <li>
+                <a href="cuidados_geriatricos.html" class="btnMenus"> Residencial</a>    
+            </li>
+            <li>
+                <a href="cuidados_geriatricos.html" class="btnMenus"> Lar</a>
+            </li>
+            <li>
+                <a href="cuidados_geriatricos.html" class="btnMenus"> Internamento</a>
+            </li>
+            <li>
+                <a href="cuidados_geriatricos.html" class="btnMenus"> Apoio domiciliário</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="menu">
+
+        <h3> Outros </h3>
+        <ul class="menuList">
+            <li>
+                <a href="creche.html" class="btnMenus" class="btnMenus"> Creche</a>
+            </li>
+            <li>
+              <a href="irmandade.html" class="btnMenus"> Irmandade</a>
+          </li>
+          <li>
+            <a href="contactos.html" class="btnMenus"> Contactos</a>
+        </li>
+    </ul>
+</div>
+</div>
+</div>
+<div id="footer"> 
+    <p> This is footer</p>
+</div>
+
+</body>
+
+</html>

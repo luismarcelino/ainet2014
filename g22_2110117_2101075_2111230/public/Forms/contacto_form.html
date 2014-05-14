@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Santa Casa da Misericórdia de Leiria - Cuidados Geriátricos</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+    .form {
+        width: 60%;
+        margin: 20px auto 30px auto;
+    }
+    .form h2 {
+        font-size: 1.1em;
+    }
+    .form .formrow {
+        padding: 20px;
+    }
+    .form input, textarea, select {
+        padding: 5px;
+        border-radius: 12px;
+    }
+    .form textarea {
+        width: 90%;
+        height: 50px;
+    }
+    .form label {
+        font-weight: bold;
+    }
+    .formButtons input {
+        padding: 15px;
+        margin-right: 10px;
+    }
+    </style>
+    <script src="../script/contacto_form.js"></script>
+</head>
+
+<body>
+    <!-- Include page header -->
+    <a href="http://validator.w3.org/check?uri=http%3A%2F%2Fserver46.serveftp.com%2FAInet%2FProjeto%2Fpublic%2FForms%2Fcontacto_form.html">Validate Page!</a>
+
+    <!-- Header Begin -->
+    <div class="mainHeader">
+        <div class="topLinks">
+            <ul>
+                <li><a href="#" title="Registar">Registar</a>
+                </li>
+                <li>|</li>
+                <li><a href="#" title="Login">Entrar</a>
+                </li>
+                <li>|</li>
+                <li><a href="#" title="Mapa">Como chegar</a> 
+                </li>
+                <li>|</li>
+                <li><a href="#" title="English">English</a>
+                </li>
+            </ul>
+        </div>
+        <div id="search">
+            <input type="search" name="pesquisa">
+            <img src="../img/icLupa.png" alt="lupa">
+        </div>
+        <div id="logo">
+            <img src="../img/logo_santa_casa.png" alt="Santa Casa da Misericórdia de leiria">
+            <img src="../img/slogan.png" alt="Santa Casa da Misericórdia de leiria">
+        </div>
+        <div class="navigationBar">
+            <ul>
+                <li><a class="" href="../Saude/saude.html">Saúde</a>
+                </li>
+                <li><a class="" href="../CuidadosGeriatricos/cuidados_geriatricos.html">Cuidados Geriátricos</a>
+                </li>
+                <li><a class="" href="../Creche/creche.html">Creche</a>
+                </li>
+                <li><a class="" href="../Irmandade/irmandade.html">Irmandade</a>
+                </li>
+                <li><a class="" href="../Contactos/contactos.html">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <div class="pageContent">
+        <div id="pathTree" class="insideContent">
+            <a class="" href="../index.html">Página inicial</a>
+            <span>&#47;</span>
+            <a class="" href="../Contactos/contactos.html">Contactos</a>
+            <span>&#47;</span>
+        </div>
+
+            <div class="insideContent frameArea">
+                <h1>Contactar</h1>
+
+                <div id="formContact" class="form">
+                    <form name="contactoForm" action="" onsubmit="return validaFormulario();" method="post">
+                        <div class="formrow requiredRow">
+                            <label>Nome (primeiro e último):</label>
+                            <input id="txt_Nomeprimeiroeúltimo" name="txt_Nomeprimeiroeúltimo" type="text" class="required" title="Nome (primeiro e último) :. Obrigatóriio">
+                        </div>
+
+                        <div class="formrow">
+                            <label>E-mail:</label>
+                            <input id="E-mail" name="E-mail" type="email" title="Nome (primeiro e último) :. Obrigatóriio">
+                        </div>
+
+                        <div class="formrow requiredRow">
+                            <label>Contacto:</label>
+                            <input id="Contacto" name="Contacto" type="tel" class="required" title="Nome (primeiro e último) :. Obrigatóriio">
+                        </div>
+
+                        <div class="formrow requiredRow">
+                            <label>Mensagem:</label>
+                            <textarea id="txtarea_Mensagem" name="txtarea_Mensagem" cols="20" rows="3" class="required" title="Mensagem :. Obrigatóriio"></textarea>
+                        </div>
+
+                        <div class="row formButtons">
+                            <input type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Footer Begin -->
+        <div class="footer">
+            <p id="footerTitle">Contactos:</p>
+            <p id="footerContacts">Santa Casa da Misericórdia de Leiria
+                <br>Instituição Particular de Solidariedade Social
+                <br>Sede:
+                <br>Rua Trindade Coelho, 8
+                <br>Apartado 1109
+                <br>2401-801 Leiria
+                <br>Tel.: 244 106 202 • Fax: 244 106 298
+                <br>geral@misericordiadeleiria.pt
+            </p>
+
+            <div id="footerContent">
+                <p>(C)2013/2014 <b>Aplicações para Internet</b> - Diurno</p>
+            </div>
+        </div>
+        <!-- Footer End -->
+</body>
+
+</html>

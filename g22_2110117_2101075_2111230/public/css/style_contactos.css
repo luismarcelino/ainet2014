@@ -1,0 +1,21 @@
+.contactInfo {
+	float: left;
+	width: 28%;
+	margin: 20px;
+	padding: 20px;
+	box-shadow: 0 0 10px 3px #888888;
+}
+.contactInfo p {
+	line-height: 60%;
+}
+.contactInfo h2 {
+	font-size: 1.2em;
+}
+#formContacto {
+	width: 100%;
+	clear: both;
+	text-align: center;
+	font-size: 1.5em;
+	padding: 20px;
+	margin: 20px;
+}

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Santa Casa da Misericórdia de Leiria - Saúde</title>
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/saude_panels.js"></script>
+    <style>
+    #menuEspecialidades {
+        width: 18%;
+        background-color: #fff;
+        float: left;
+    }
+    #menuEspecialidades a {
+        width: 90%;
+        padding: 5px;
+        border-radius: 12px;
+    }
+    #menuEspecialidades li {
+        width: 95%;
+        margin: 5px;
+        margin-top: 8px;
+        box-shadow: 0 0 10px 3px #888;
+        border-radius: 12px;
+    }
+    .corpoClinicoPanelTitle {
+        display: inline-block;
+        padding-right: 20px;
+    }
+    .panelEspecialidades {
+        float: left;
+        width: 40%;
+    }
+    .panelAcordos {
+        float: right;
+        width: 20%;
+    }
+    .panelClinico {
+        padding: 0 0 0 115px;
+        margin-bottom: 50px;
+        position: relative;
+    }
+    .panelClinico img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .clinicoData span {
+        font-weight: bold;
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Include page header -->
+    <a style="background-color: #fff; padding:10px; color: red;" href="http://validator.w3.org/check?uri=http%3A%2F%2Fserver46.serveftp.com%2FAInet%2FProjeto%2Fpublic%2FSaude%2Fsaude.html">Validate HTML!</a>
+
+    <!-- Header Begin -->
+    <div class="mainHeader">
+        <div class="topLinks">
+            <ul>
+                <li><a href="#" title="Login">Entrar</a>
+                </li>
+                <li>|</li>
+                <li><a href="../Forms/registar.html" title="Registar">Registar</a>
+                </li>
+                <li>|</li>
+                <li><a href="../Contactos/como_chegar.html" title="Mapa">Como chegar</a> 
+                </li>
+                <li>|</li>
+                <li><a href="#" title="English">English</a>
+                </li>
+            </ul>
+        </div>
+        <div id="search">
+            <input type="search" name="pesquisa">
+            <img src="../img/icLupa.png" alt="lupa">
+        </div>
+        <div id="logo">
+            <a href="../index.html">
+                <img src="../img/logo_santa_casa.png" alt="Santa Casa da Misericórdia de leiria">
+            </a>
+        </div>
+        <div id="slogan">
+            <img src="../img/slogan.png" alt="Santa Casa da Misericórdia de leiria">
+        </div>
+        <div class="navigationBar">
+            <ul>
+                <li><a class="active" href="../Saude/saude.html">Saúde</a>
+                </li>
+                <li><a class="" href="../CuidadosGeriatricos/cuidados_geriatricos.html">Cuidados Geriátricos</a>
+                </li>
+                <li><a class="" href="../Creche/creche.html">Creche</a>
+                </li>
+                <li><a class="" href="../Irmandade/irmandade.html">Irmandade</a>
+                </li>
+                <li><a class="" href="../Contactos/contactos.html">Contactos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Page Content Begin -->
+    <div class="pageContent">
+
+        <div id="pathTree" class="insideContent">
+            <a class="" href="../index.html">Página inicial</a>
+            <span>&#47;</span>
+            <span>Saúde</span>
+        </div>
+
+        <!-- Menu especialidades -->
+        <div id="menuEspecialidades" class="insideContent navigationBar">
+            <h2>Especialidades</h2>
+            <ul>
+                <li><a id="1" class="active" href="javascript:showPanels(1)">Alergologia e Pneumologia</a>
+                </li>
+                <li><a id="2" class="" href="javascript:showPanels(2)">Análises Clínicas</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Anatomia Patológica</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Anestesiologia e Medicina da Dor</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Cardiologia</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Centro de Dermoestética</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Centro de Diabetes</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Centro de Tratamento da Obesidade</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Centro de Tratamento da Obesidade</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Centro Oncologia Médica</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Cirurgia Geral</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Cirurgia Maxilo-Facial</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Cirurgia Pediátrica</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Cirurgia Plástica</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Cirurgia Torácica</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Cirurgia Vascular</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Clinica do Sono</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Departamento de Imagem Médica</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Dermatologia e Venereologia</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Endocrinologia - Nutrição</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Gastroenterologia</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Ginecologia e Obstetrícia</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Instituto Materno Infantil de Coimbra</a>
+                </li>
+                <li><a class="" href="javascript:showPanels()">Medicina da Reprodução</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Especialidades panels -->
+        <div id="corpoClinicoPanel1" class="insideContent panelEspecialidades" style="display: block;">
+            <h2 class="corpoClinicoPanelTitle">Alergologia e Pneumologia</h2>
+            <div class="button">
+                <a href="../Forms/marcar_consulta.html">Marcar Consulta</a>
+            </div>
+            <div class="insideContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ultrices nisl. In euismod, enim sit amet rhoncus iaculis, quam nunc pretium ipsum, quis sagittis nisl lacus ac justo. Nam ac elementum ante. Maecenas luctus lectus eu diam viverra sodales. Fusce nec metus non dui aliquam porttitor. Phasellus feugiat ornare faucibus. Aliquam porttitor tortor sed iaculis dapibus. Sed ut libero non ante gravida semper id auctor lorem. Fusce nec metus non dui aliquam porttito.
+                </p>
+            </div>
+
+            <div class="frameArea">
+            <h3><a href="../CorpoClinico/medico.html">Nome do clínico</a></h3>
+                <div id="medico1" class="panelClinico">
+                    <img src="../img/img_100x100.jpg" alt="Foto do clínico">
+                    <div class="clinicoData">
+                        <p>Tel: 111 111111</p>
+                        <p>Email: email@email.com</p>
+                        <p>Área Clinica:</p>
+                        <p>Especialidade:</p>
+                        <div class="button">
+                            <a href="../Forms/marcar_consulta.html">Marcar Consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frameArea">
+            <h3><a href="../CorpoClinico/medico.html">Nome do clínico</a></h3>
+                <div id="medico2" class="panelClinico">
+                    <img src="../img/img_100x100.jpg" alt="Foto do clínico">
+                    <div class="clinicoData">
+                        <p>Tel: 111 111111</p>
+                        <p>Email: email@email.com</p>
+                        <p>Área Clinica:</p>
+                        <p>Especialidade:</p>
+                        <div class="button">
+                            <a href="../Forms/marcar_consulta.html">Marcar Consulta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frameArea">
+            <h3><a href="../CorpoClinico/medico.html">Nome do clínico</a></h3>
+                <div id="medico3" class="panelClinico">
+                    <img src="../img/img_100x100.jpg" alt="Foto do clínico">
+                    <div class="clinicoData">
+                        <p>Tel: 111 111111</p>
+                        <p>Email: email@email.com</p>
+                        <p>Área Clinica:</p>
+                        <p>Especialidade:</p>
+                    </div>
+                    <div class="button">
+                        <a href="../Forms/marcar_consulta.html">Marcar Consulta</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="corpoClinicoPanel2" class="insideContent panelEspecialidades" style="display: none;">
+            <h2 class="corpoClinicoPanelTitle">Análises Clínicas</h2>
+            <div class="button">
+                <a href="../Forms/marcar_consulta.html">Marcar Consulta</a>
+            </div>
+            <div class="insideContent">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ultrices nisl. In euismod, enim sit amet rhoncus iaculis, quam nunc pretium ipsum, quis sagittis nisl lacus ac justo. Nam ac elementum ante. Maecenas luctus lectus eu diam viverra sodales. Fusce nec metus non dui aliquam porttitor. Phasellus feugiat ornare faucibus. Aliquam porttitor tortor sed iaculis dapibus. Sed ut libero non ante gravida semper id auctor lorem. Fusce nec metus non dui aliquam porttito.
+                </p>
+            </div>
+            <h3><a href="../CorpoClinico/medico.html">Nome do clínico</a></h3>
+            <div id="medico4" class="panelClinico">
+                <img src="../img/img_100x100.jpg" alt="Foto do clínico">
+                <div class="clinicoData">
+                    <p>Tel: 111 111111</p>
+                    <p>Email: email@email.com</p>
+                    <p>Área Clinica:</p>
+                    <p>Especialidade:</p>
+                    <div class="button">
+                        <a href="../Forms/marcar_consulta.html">Marcar Consulta</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3><a href="../CorpoClinico/medico.html">Nome do clínico</a></h3>
+            <div id="medico5" class="panelClinico">
+                <img src="../img/img_100x100.jpg" alt="Foto do clínico">
+                <div class="clinicoData">
+                    <p>Tel: 111 111111</p>
+                    <p>Email: email@email.com</p>
+                    <p>Área Clinica:</p>
+                    <p>Especialidade:</p>
+                    <div class="button">
+                        <a href="../Forms/marcar_consulta.html">Marcar Consulta</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3><a href="../CorpoClinico/medico.html">Nome do clínico</a></h3>
+            <div id="medico6" class="panelClinico">
+                <img src="../img/img_100x100.jpg" alt="Foto do clínico">
+                <div class="clinicoData">
+                    <p>Tel: 111 111111</p>
+                    <p>Email: email@email.com</p>
+                    <p>Área Clinica:</p>
+                    <p>Especialidade:</p>
+                </div>
+                <div class="button">
+                    <a href="../Forms/marcar_consulta.html">Marcar Consulta</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Acordos panels -->
+        <div id="acordosPanel1" class="insideContent panelAcordos" style="display: block;">
+            <div class="frameArea">
+                <h2>Acordos - Alergologia e Pneumologia</h2>
+                <div>
+                    <p>Acordo1</p>
+                </div>
+                <div>
+                    <p>Acordo2</p>
+                </div>
+                <div>
+                    <p>Acordo3</p>
+                </div>
+                <div>
+                    <p>Acordo4</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="acordosPanel2" class="insideContent panelAcordos" style="display: none;">
+            <h2>Acordos - Análises Clínicas</h2>
+            <div>
+                <p>Acordo1</p>
+            </div>
+            <div>
+                <p>Acordo2</p>
+            </div>
+            <div>
+                <p>Acordo3</p>
+            </div>
+            <div>
+                <p>Acordo4</p>
+            </div>
+        </div>
+
+
+        <!-- Artigos/Notícias panels -->
+        <div id="artigosNoticiasPanel1" class="newsPanel" style="display: block;">
+            <div class="insideContent frameArea">
+                <h2>Artigos/Notícias - Alergologia e Pneumologia</h2>
+                <div class="news newsSpan3">
+
+                    <h3><a href="ArtigoNoticia/noticia_artigo.html">Artigo 1</a>
+                    </h3>
+                    <img src="../img/img_250x250.jpg" class="img-polaroid" alt="">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</b>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ultrices nisl. In euismod, enim sit amet rhoncus iaculis, quam nunc pretium ipsum, quis sagittis nisl lacus ac justo. Nam ac elementum ante. Maecenas luctus lectus eu diam viverra sodales. Fusce nec metus non dui aliquam porttitor. Phasellus feugiat ornare faucibus. Aliquam porttitor tortor sed iaculis dapibus. Sed ut libero non ante gravida semper id auctor lorem. Fusce nec metus non dui aliquam porttito.
+                    </p>
+                    <a href="#">Ler mais ...</a>
+                </div>
+
+                <div class="news newsSpan3">
+                    <h3><a href="ArtigoNoticia/noticia_artigo.html">Artigo 2</a>
+                    </h3>
+                    <img src="../img/img_250x250.jpg" class="img-polaroid" alt="">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</b>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ultrices nisl. In euismod, enim sit amet rhoncus iaculis, quam nunc pretium ipsum, quis sagittis nisl lacus ac justo. Nam ac elementum ante. Maecenas luctus lectus eu diam viverra sodales. Fusce nec metus non dui aliquam porttitor. Phasellus feugiat ornare faucibus. Aliquam porttitor tortor sed iaculis dapibus. Sed ut libero non ante gravida semper id auctor lorem. Fusce nec metus non dui aliquam porttito.
+                    </p>
+                    <a href="#">Ler mais ...</a>
+                </div>
+
+                <div class="news newsSpan3">
+                    <h3><a href="ArtigoNoticia/noticia_artigo.html">Artigo 3</a>
+                    </h3>
+                    <img src="../img/img_250x250.jpg" class="img-polaroid" alt="">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</b>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ultrices nisl. In euismod, enim sit amet rhoncus iaculis, quam nunc pretium ipsum, quis sagittis nisl lacus ac justo. Nam ac elementum ante. Maecenas luctus lectus eu diam viverra sodales. Fusce nec metus non dui aliquam porttitor. Phasellus feugiat ornare faucibus. Aliquam porttitor tortor sed iaculis dapibus. Sed ut libero non ante gravida semper id auctor lorem. Fusce nec metus non dui aliquam porttito.
+                    </p>
+                    <a href="#">Ler mais ...</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="artigosNoticiasPanel2" class="newsPanel" style="display: none;">
+            <div class="insideContent frameArea">
+                <h2>Artigos/Notícias - Análises Clínicas</h2>
+                <div class="news">
+
+                    <h3><a href="ArtigoNoticia/noticia_artigo.html">Artigo 1</a>
+                    </h3>
+                    <img src="../img/img_250x250.jpg" class="img-polaroid" alt="">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</b>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ultrices nisl. In euismod, enim sit amet rhoncus iaculis, quam nunc pretium ipsum, quis sagittis nisl lacus ac justo. Nam ac elementum ante. Maecenas luctus lectus eu diam viverra sodales. Fusce nec metus non dui aliquam porttitor. Phasellus feugiat ornare faucibus. Aliquam porttitor tortor sed iaculis dapibus. Sed ut libero non ante gravida semper id auctor lorem. Fusce nec metus non dui aliquam porttito.
+                    </p>
+                    <a href="#">Ler mais ...</a>
+                </div>
+
+                <div class="news">
+                    <h3><a href="ArtigoNoticia/noticia_artigo.html">Artigo 2</a>
+                    </h3>
+                    <img src="../img/img_250x250.jpg" class="img-polaroid" alt="">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</b>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ultrices nisl. In euismod, enim sit amet rhoncus iaculis, quam nunc pretium ipsum, quis sagittis nisl lacus ac justo. Nam ac elementum ante. Maecenas luctus lectus eu diam viverra sodales. Fusce nec metus non dui aliquam porttitor. Phasellus feugiat ornare faucibus. Aliquam porttitor tortor sed iaculis dapibus. Sed ut libero non ante gravida semper id auctor lorem. Fusce nec metus non dui aliquam porttito.
+                    </p>
+                    <a href="#">Ler mais ...</a>
+                </div>
+
+                <div class="news">
+                    <h3><a href="ArtigoNoticia/noticia_artigo.html">Artigo 3</a>
+                    </h3>
+                    <img src="../img/img_250x250.jpg" class="img-polaroid" alt="">
+                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</b>
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet ultrices nisl. In euismod, enim sit amet rhoncus iaculis, quam nunc pretium ipsum, quis sagittis nisl lacus ac justo. Nam ac elementum ante. Maecenas luctus lectus eu diam viverra sodales. Fusce nec metus non dui aliquam porttitor. Phasellus feugiat ornare faucibus. Aliquam porttitor tortor sed iaculis dapibus. Sed ut libero non ante gravida semper id auctor lorem. Fusce nec metus non dui aliquam porttito.
+                    </p>
+                    <a href="#">Ler mais ...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Page Content End -->
+
+    <!-- Footer Begin -->
+    <div class="footer">
+        <p id="footerTitle">Contactos:</p>
+        <p id="footerContacts">Santa Casa da Misericórdia de Leiria
+            <br>Instituição Particular de Solidariedade Social
+            <br>Sede:
+            <br>Rua Trindade Coelho, 8
+            <br>Apartado 1109
+            <br>2401-801 Leiria
+            <br>Tel.: 244 106 202 • Fax: 244 106 298
+            <br>geral@misericordiadeleiria.pt
+        </p>
+
+        <div id="footerContent">
+            <p>(C)2013/2014 <b>Aplicações para Internet</b> - Diurno</p>
+        </div>
+        <div>
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />
+                </a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="Santa casa da Misericórdia de Leiria: SCML">
+		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+		<meta name="author" content="David, Eurico, Olavo">
+		<meta charset="UTF-8">
+		
+		<title>Santa casa da Misericórdia de Leiria: SCML</title>
+		
+		<script src="script/jquery.js"></script>
+		<script src="script/base.js"></script>
+		<script src="script/medico.js"></script>
+		
+		<link rel="shortcut icon" href="images/santa_casa100.png">
+		
+		<link rel="stylesheet" href="styles/estilo.css" />
+		<link rel="stylesheet" href="styles/estiloMenu.css" />
+	</head>
+	<body>
+		<div id="pagina">
+			<div id="paginaTopo">
+				<div id="paginaTopoTopo"></div>
+				<div id="paginaTopoConteudo">
+					<div id="paginaTopoCentro">
+						<div id="imagemcabecalho"></div>
+						<div id="imagemCentroCabecalho"></div>
+						<div id="pesquisaLogin">
+							<div id="divLogin" style="display:none">
+								User Name:<input type="text" name="userName"/><br>
+								Pass:<input type="text" name="userName"/><br>
+								<button type="button">Login</button> 
+							</div>
+							<input id="btnLogin" type="button" value="Login" onclick="login()"/> 
+							
+							<input id="searchBox" type="text" name="procurar"/>
+							<div id="find"><input type="image" src="images/search.png" alt="procurar"/></div>
+						</div>
+					</div>
+						<div id="cssmenu">
+							<ul>
+								<li><a href="index.html">Ínicio</a></li>
+								<li><a href="saude.html">Saúde</a></li>
+								<li><a href="marcacaoConsulta.html">Marcação Consulta</a></li>
+								<li><a href="cuidadosGeriatricos.html">Cuidados Geriátricos</a></li>
+								<li><a href="creche.html">Creche</a></li>
+								<li><a href="irmandade.html">Irmandade</a></li>
+								<li><a href="contactos.html">Contactos</a></li>
+					
+							</ul>
+						</div>
+				</div>
+			</div>
+			<div id="paginaPrincipal">
+				<div id="paginaPrincipalTopo"></div>
+				<div id="paginaPrincipalConteudo">
+					<div id= "conteudo">
+						
+						<div id="conteudoEsquerda">
+							<img src="images/medico.png" alt="img">
+							<div id="opcoesMedico">
+								<div class="opcao"><a href="#" class="butaoOpcaoMedico ">Gerir Noticias/ Artigo</a></div>
+								<div class="opcao"><a href="#" class="butaoOpcaoMedico ">Gerir Horario</a></div>
+								<div class="opcao"><a href="marcacaoConsulta.html" class="butaoOpcaoMedico">Editar Dados</a></div>
+							</div>
+						</div>
+						<div id="conteudoMedico">
+							<div class="nomeMedico"><h1>Dr Paulo Andrade</h1></div>
+							<div class="genero"><b>Género: </b>fgktgjr</div>
+							<div class="dataNascimento"><b>Data Nascimento: </b>21-02-1999</div>
+							<div class="numeroSegSocial"><b>Número da Seg. Social: </b>1232345678</div>
+							<div class="SistemasSeguroSaude"><b>Sistemas/Seguro de saúde: </b><div id="sistemasSaude"> </div></div>
+							<div class="numeroFiscal"><b>Número fiscal: </b>2116482839</div>
+							<div class="numeroTelefone"><b>Telefone: </b>96484868</div>
+							<div class="emailMedico"><b>Email: </b>email@gmail.com</div>
+							<div class="morada"><b>Morada: </b>hgfdghfghfgjfgdjfgjdfgjfd</div>
+							<div class="numeroIrmao"><b>Número de Irmão: </b>21345</div>
+							<div class="especialidades"><b>Especialidades: </b><div id="especialidades"> </div></div>
+							<div class="marcacao"><a href="marcacaoConsulta.html" class="marcarConsultaMedico">Marcar Consulta</a></div>
+						</div>
+						<div id="noticiasMedico" >
+							<div class="tipo"><h3>Noticias/Artigos</h3></div>
+							<div class="noticiaConteudo">Noticia nao definida</div>
+							<div class="noticiaImagem"></div>
+							<div class="noticiaLink"></div>
+							<div class="noticiaScroll"></div>
+						</div>
+						
+						
+						
+					</div>
+				</div>
+				<div id="paginaPrincipalFundo"></div>
+			</div>
+			<div id="paginaRodape">
+					<div id="paginaRodapeConteudo">
+					<a href="https://www.facebook.com/santacasaleiria?ref=ts&amp;fref=ts"><img src="images/facebook_logo.png" alt="facebookLink"></a>2014 © | Desenvolvimento: David Adrião, Eurico Sousa e Olavo Machado 
+					</div>
+					<div id="paginaRodapeFundo"></div>
+			</div>
+		</div>
+	</body>
+</html>
