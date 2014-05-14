@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/page_icon.ico">
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            $("#logo").fadeIn(500);
+            $("#title_text").delay(250).fadeIn(1000);
+            $("#subtitle_text").delay(500).fadeIn(1000);
+            $("#btn_login").delay(750).fadeIn(1000);
+            $("#slideshow").delay(1000).fadeIn(1000);
+
+            $("#btn_login").click(function() {
+                $(this).toggleClass('active');
+                $(this).next('#dropdown_login').toggle();
+                return false;
+            });
+
+            $(function() {
+                var slideshow = $("#img_slideshow");
+                var images = [
+                    'img/slideshow1.jpg',
+                    'img/slideshow2.jpg',
+                    'img/slideshow3.jpg'
+                ];
+                var current = 0;
+
+                function nextSlide() {
+                    slideshow.fadeOut(function() {
+                        $(this).attr('src', images[current = ++current % images.length]).fadeIn();
+                    });
+                    setTimeout(nextSlide, 5000);
+                }
+                setTimeout(nextSlide, 5000);
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <noscript>
+        This browser doesn't have JavaScript enabled or it does not support it. Please enable JavaScript or update your browser.
+    </noscript>
+    <div id="main_formulario">
+        <div id="header_form">
+            <div id="logo">
+                <a href="index.html">
+                    <img id="img_logo" src="img/logo.png" alt="Logotipo" />
+                </a>
+            </div>
+            <div id="title">
+                <h1 id="title_text">Santa Casa da Misericórdia de Leiria</h1>
+                <h2 id="subtitle_text">Marcar Consulta</h2>
+                <div id="login">
+                    <button id="btn_login">Login</button>
+                    <div id="dropdown_login">
+                        <p class="login_labels">Nome de Utilizador</p>
+                        <form>
+                            <input class="login_fields" type="text" name="username" maxlength="20" size="20">
+                        </form>
+                        <p class="login_labels">Password</p>
+                        <form>
+                            <input class="login_fields" type="password" name="password">
+                        </form>
+                        <p></p>
+                        <form>
+                            <input id="submit_login_btn" type="button" name="submit_login" value="Autenticar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+			<div id="breadcrumbs_container" class="breadcrumbs_especialidades" style="top: 181px;">
+				<div class="breadcrumb">
+					<a href="index.html" style="color: inherit; text-decoration: none;">Homepage</a>
+				</div>
+				<div class="breadcrumb" id="current_page" style="width: 200px;">
+					<a href="#" style="color: inherit; text-decoration: none;">Marcação de Consultas</a>
+				</div>
+			</div>
+        </div>
+
+        <div id="main_formulario_consulta" class="panel_formulario">
+            <form>
+                <br>
+                <label>(*) campos obrigatórios</label>
+                <br>
+                <label>
+                    <b class="formulario_labels">Nome:*</b>
+                </label>
+                <br>
+                <input type="text" name="fullname" class="formulario_text" />
+                <br>
+                <br>
+                <label>
+                    <b class="formulario_labels">Morada:</b>
+                </label>
+                <br>
+                <input type="text" name="consulta" class="formulario_text" />
+                <br>
+                <br>
+                <label>
+                    <b class="formulario_labels">Data de Nascimento:*</b>
+                </label>
+                <br>
+                <input type="date" name="bday" class="formulario_text">
+                <br>
+                <br>
+                <label>
+                    <b class="formulario_labels2">E-mail:</b>
+                </label>
+                <br>
+                <input type="text" name="consulta" class="formulario_text2" />
+                <br>
+                <br>
+                <label>
+                    <b class="formulario_labels2">Telefone:*</b>
+                </label>
+                <br>
+                <input type="text" name="consulta" class="formulario_text2" />
+                <br>
+                <br>
+                <label>
+                    <b class="formulario_labels2">Nome do medico:</b>
+                </label>
+                <br>
+                <input type="text" name="consulta" class="formulario_text2" />
+                <br>
+                <br>
+                <label>
+                    <b class="formulario_labels2">Especialidade:*</b>
+                </label>
+                <br>
+                <select name="consultar" class="formulario_text2">
+                    <option value="">---Selecionar---</option>
+                    <option value="">Especialidade A</option>
+                    <option value="">Especialidade B</option>
+                </select>
+                <br>
+                <br>
+                <label>
+                    <b class="formulario_labels2">Data da consulta:*</b>
+                </label>
+                <br>
+                <input type="date" name="bday" class="formulario_text">
+                <br>
+                <br>
+                <label>
+                    <b class="formulario_labels2">Hora da consulta:*</b>
+                </label>
+                <br>
+                <input type="time" name="usr_time" class="formulario_text">
+                <br>
+                <br>
+
+                <button type="reset" class="formulario_btns" value="Limpar">Limpar</button>
+                <button type="submit" class="formulario_btns" value="Confirmar">Confirmar</button>
+            </form>
+        </div>
+        <div id="credits_form">
+            <p>2014 Instituto Politécnico de Leiria Escola Superior de Tecnologia e Gestão • Desenvolvido por: Alexandre Olival, António Gonçalves, Elmar Spencer</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

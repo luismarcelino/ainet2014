@@ -1,0 +1,10 @@
+Grupo XX:
+
+Rúben Maia nº 2103504 PL4
+Ivo Silva nº 2100419 PL2
+João Agostinho nº 2100402 PL4
+
+O código javascript não foi todo terminado nesta fase mas será concluído na 2ª entrega.
+
+PS: não temos número de grupo atribuido mas o professor Fernando Silva
+tem conhecimento.

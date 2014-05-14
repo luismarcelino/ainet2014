@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Medico</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta name="author" content="Goncalo Bras">
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+			var d1 = $("#menu-container");
+			var d2 = $("#top-bar-logo");
+			var d3 = $("#menu-op1");
+			var d4 = $("#menu-op6");
+			var pos = d1.position();					   
+			$(window).scroll(function() {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					d1.addClass("cola");
+					d2.addClass("mostra");
+					d3.addClass("bordas");
+					d4.addClass("bordas");
+				} else {
+					d1.removeClass("cola");
+					d2.removeClass("mostra");
+					d3.removeClass("bordas");
+					d4.removeClass("bordas");
+				}
+			});
+		});
+		
+		$(window).scroll(function(e){
+		  parallax();
+		});
+		
+		function parallax(){
+		  var scrolled = $(window).scrollTop();
+		  $('.bg').css('top',-(scrolled*0.2)+'px');
+		}
+        
+        <!--
+        function novaNoticia(){
+            window.location.href='compor_artigo_noticia.html';
+        } 
+            
+            
+        
+        //-->
+    </script>
+</head>
+
+<body>
+    <!-- barra de topo -->
+    <div id="top-bar-container"> 
+		<div id="top-bar-conteudo">
+			<div id="top-bar-logo" class="top-bar-div">
+				<a target="_self" href="index.html">
+					<img class="logo" src="images/santa_casa100.png" alt="Inicio" width="36" height="36">
+				</a>
+				<p class="top-bar-titulo1">Santa Casa</p> 
+				<p class="top-bar-titulo2">da Misericórdia de Leiria</p>
+			</div>
+			<div id="top-bar-space" class="top-bar-div"> </div>
+			<div id="top-bar-space2" class="top-bar-div"> </div>
+
+			<div id="top-bar-contatos" class="top-bar-div"> 
+				<a id="link-contatos"  class="propriedades-contato" title="Página Contatos" target="_self" href="contatos.html"> Contatos </a>
+			</div>
+			<div id="top-bar-pesquisa" class="top-bar-div"> 
+				<form>				
+					<input type="search" id="pesquisa" class="ele-pesquisa" name=pesquisa placeholder="Insira pesquisa" required> 	
+					<input type="image" src="images/search_lupa32.png" alt="Pesquisa" id="submit-pesquisa" class="ele-pesquisa">
+
+				</form>
+			</div>
+			<div id="top-bar-login" class="top-bar-div">
+				<details> 
+					<summary> Login </summary>
+					<form>
+						<label for="user"> </label>
+						<input type="text" id="user" class="ele-login" maxlength="20" placeholder="Nome Utilizador" required>
+						<label for="password"> </label>
+						<input type="text" maxlength="20" id="password" class="ele-login" placeholder="Password" required>
+						<input type="submit" id="submit"  class="btn-login" value="OK">
+					</form>
+				</details>
+
+			</div>
+		</div>
+    </div>
+		
+    <!-- container principal -->
+	<div id="main-container">
+        <!-- logo e nome de instituicao -->
+        <div id="apresentacao-container"> 
+            <div id="apresentacao-logo">
+				<img id="large-logo" class="logo" src="images/santa_casa_sem_titulo.png" alt="logo" width="150" height="150">
+			</div>
+            <div id="apresentacao-nome">
+				<img id="large-titulo" class="logo" src="images/santa_casa_titulo.png" alt="logo" width="700" height="150">
+			</div>   
+        </div>
+        
+        <!-- menu do site -->
+        <div id="menu-container">             
+            <div id="menu-opcoes-container">
+				<div id="menu-op1" class="menu-op">  
+					<a id="link-inicio" target="_self" href="index.html">  <p class="menu-main-item"> Inicio </p> </a>
+				</div>
+				<div id="menu-op2" class="menu-op"> <p class="menu-main-item"> Saúde </p>
+					<ul class="op-menu">
+						<li class="menu-item"><a href="lista_especialidades.html"> <p>Lista de Especialidades</p> </a></li>
+						<li class="menu-item"><a href="corpo_clinico.html"> <p>Corpo Clínico</p> </a></li>
+						<li class="menu-item"><a href="3.html"> <p>Artigos / Notícias Clínicas</p> </a></li>
+					</ul> 
+				</div>
+				<div id="menu-op3" class="menu-op"> <p class="menu-main-item"> Cuidados Geriátricos </p>
+					<ul class="op-menu">
+						<li class="menu-item"><a href=".html"> <p>Residencial</p> </a></li>
+						<li class="menu-item"><a href=".html"> <p>Lar</p> </a></li>
+						<li class="menu-item"><a href=".html"> <p>Internamento</p> </a></li>
+						<li class="menu-item"><a href=".html"> <p>Apoio Domiciliário</p> </a></li>
+					</ul> 
+				</div>
+				<div id="menu-op4" class="menu-op"> 
+					<a id="link-creche" target="_self" href=".html"> <p class="menu-main-item">Creche</p> </a>
+				</div>
+				<div id="menu-op5" class="menu-op"> 
+					<a id="link-irmandade" target="_self" href=".html"> <p class="menu-main-item">Irmandade</p> </a>
+				</div>
+				<div id="menu-op6" class="menu-op"> 
+					<a id="link-marcar-consulta" target="_self" href="marcacao_consulta.html"> <p class="menu-main-item">Marcar Consulta</p> </a>
+				</div>
+			</div>
+        </div>
+        
+        <!-- Corpo do site -->
+        
+		<div class="body-container">
+                <div class="left-margin"></div>
+                <div class="right-margin"></div>
+                <div class="body-perfil-medico">
+                    <div id="medico-img">
+                    <img class="medico" src="images/medico.png" alt="foto-medico">
+                    
+                    </div>
+                    <div id="medico-texto"> 
+                        <p class="medico">Nome Cl&iacute;nico </p>
+                        <p id="medico-nome" class="medico-informacao">Jo&atilde;o Mendes</p>
+                        <!--<input type="text" id="medico-campo-nome" class="editar" />-->
+                        <p class="medico">Especialidades </p>
+                        
+                        <!--<datalist id="lst-especialidades">
+                            <option value="Olftalmologia">
+                            <option value="Medicina Dentaria">
+                            <option value="Ortopedia">
+                        </datalist>
+        
+                        <input list="lst-especialidades" class="editar" />
+                        
+                        <input type="button" value="adicionar" class="editar" />-->
+                        <p id="medico-especialidade" class="medico-informacao"> Dentista</p>
+                        <p class="medico">Periodo de consulta </p>
+                        <p id="medico-periodo-consulta" class="medico-informacao"> Segunda: 9h-12h</p>
+                    </div>
+                    <div>
+                        <input type="button" value="Editar" onClick="editarDados()"
+                               class="edit-buttons" />
+                        
+                    </div>
+                </div>
+                <div class="body-empty-1"></div>
+                <div class="body-artigos-medico">
+                    <div id="artigos-recentes">
+                        <img src="images/noticia-exemplo.png" id="medico-noticia-imagem" alt="imagem-noticia">
+                        <p id="medico-noticias-recentes"><span>Titulo Noticia</span></p>
+                    </div>
+                     
+                    <div id="artigos-lista" >
+                        <ul >
+                            <li>Cura para osteoporose</li>
+                            <li>Branqueamento dentario</li>
+                            <li>Correcao de miopia</li>
+                            <li>Testes de surdez</li>
+                            <li>Vacinacao</li>
+                            <li>Consultas de rotina</li>
+                            <li>Gripe sazonal</li>
+                            <li>Reumatismo na 3a idade</li>
+                            <li>Prescricao de antibioticos</li>
+                            <li>Medicamentos fora de validade</li>
+                            <li>Atestados Medicos</li>
+                            <li>Raio-x</li>
+                            <li>Doencas cardiacas</li>
+                            <li>Reducao de colesterol</li>
+                            <li>Evitar diabetes</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <input type="button" value="Adicionar" onClick="novaNoticia()" class="edit-buttons" />
+                    </div>
+                </div>
+        </div>
+		
+        
+					
+	</div>
+    <footer id="bottom-container"> 
+		<p class="text-footer">Feito por: Gonçalo Brás, Paulo Neves e Pedro Silva</p> 
+		<p class="text-footer">Aplicações para a Internet<br/>2014</p>
+	</footer>
+</body>
+</html>

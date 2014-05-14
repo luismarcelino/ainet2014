@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/page_icon.ico">
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+
+            $("#logo").fadeIn(500);
+            $("#title_text").delay(250).fadeIn(1000);
+            $("#subtitle_text").delay(500).fadeIn(1000);
+            $("#btn_login").delay(750).fadeIn(1000);
+            $("#slideshow").delay(1000).fadeIn(1000);
+
+            $("#btn_login").click(function() {
+                $(this).toggleClass('active');
+                $(this).next('#dropdown_login').toggle();
+                return false;
+            });
+
+            $(function() {
+                var slideshow = $("#img_slideshow");
+                var images = [
+                    'img/slideshow1.jpg',
+                    'img/slideshow2.jpg',
+                    'img/slideshow3.jpg'
+                ];
+                var current = 0;
+
+                function nextSlide() {
+                    slideshow.fadeOut(function() {
+                        $(this).attr('src', images[current = ++current % images.length]).fadeIn();
+                    });
+                    setTimeout(nextSlide, 5000);
+                }
+                setTimeout(nextSlide, 5000);
+            });
+            
+        });
+    </script>
+    
+</head>
+
+<body>
+    <noscript>
+        This browser doesn't have JavaScript enabled or it does not support it. Please enable JavaScript or update your browser.
+    </noscript>
+    <div id="main_index">
+        <div id="header">
+            <div id="logo">
+                <a href="index.html"><img id="img_logo" src="img/logo.png" alt="Logotipo" /></a>
+            </div>
+            <div id="title">
+                <h1 id="title_text">Santa Casa da Misericórdia de Leiria</h1>
+                <h2 id="subtitle_text">Consultas Externas</h2>
+                <div id="login">
+                    <button id="btn_login">Login</button>
+                    <div id="dropdown_login">
+                        <p class="login_labels">Nome de Utilizador</p>
+                        <form>
+                            <input class="login_fields" type="text" name="username" maxlength="20" size="20">
+                        </form>
+                        <p class="login_labels">Password</p>
+                        <form>
+                            <input class="login_fields" type="password" name="password">
+                        </form>
+                        <p></p>
+                            <form>
+                                <input id="submit_login_btn" type="button" name="submit_login" value="Autenticar">
+                            </form>
+                    </div>
+                </div>
+            </div>
+			<div id="breadcrumbs_container" class="breadcrumbs_especialidades" style="top: 226px;">
+				<div class="breadcrumb">
+					<a href="index.html" style="color: inherit; text-decoration: none;">Homepage</a>
+				</div>
+				<div class="breadcrumb" id="current_page" style="width: 230px;">
+					<a href="#" style="color: inherit; text-decoration: none;">Consultas Externas</a>
+				</div>
+			</div>
+            </div>
+            <div id="inf_formulario" class="inf_formulario">
+                <p style="font-size: 30px; color: #0099ff; text-shadow: 0 0 5px #0099ff ">Consultas Externas</p>
+            </div>
+
+        <div id="main_consultaE" class="panel_residencial">
+            <form>
+            <br>
+                <p class="inf_residencial">
+                    Várias especialidades médicas e cirúrgicas:
+                </p><br>
+                <ul id="ul_hospital" class="inf_residencial">
+                    <li>Acupunctura</li>
+                    <li>Cardiologia</li>
+                    <li>Cirurgia Geral</li>
+                    <li>Cirurgia Plástica e Reconstrutiva</li>
+                    <li>Cirurgia Vascular</li>
+                    <li>Dermatologia</li>
+                    <li>Diabetes</li>
+                    <li>Dietista</li>
+                    <li>Endocrinologia</li>
+                    <li>Estomatologia / Medicina Dentária</li>
+                    <li>Gastrenterologia</li>
+                    <li>Ginecologia</li>
+                    <li>Medicina Desportiva</li>
+                    <li>Medicina Física e de Reabilitação</li>
+                    <li>Mesoterapia</li>
+                    <li>Neurocirurgia</li>
+                    <li>Neurologia</li>
+                    <li>Oftalmologia adulto e infantil</li>
+                    <li>Ortopedia</li>
+                    <li>Otorrinolaringologia</li>
+                    <li>Pneumologia</li>
+                    <li>Psicologia Clínica</li>
+                    <li>Psiquiatria</li>
+                    <li>Reumatologia</li>
+                    <li>Urologia</li>
+                </ul>
+            </form>
+            <p class="inf_residencial">
+                    <b class="b_direito">Telefone geral:
+                    </b>&nbsp;244 106 203
+                </p>
+                <p class="inf_residencial">
+                    <b class="b_direito">Para marcações –
+                    </b>número directo 244 106 201
+                </p><br>
+                <ul id="ul_hospital_acordos" class="inf_residencial">
+                    <li><a class="anc_hospital" href="formularioconsulta.html">Formulário de Marcações On-line</a></li>
+                </ul>
+            <div>
+                <img src="img/consultas_externas.jpg" id="imagem_consultaE" alt="Imagem_consultaE">
+            </div>
+        <div id="footer">
+        </div>
+    </div>
+        <div id="credits">
+            <p>2014 Instituto Politécnico de Leiria Escola Superior de Tecnologia e Gestão • Desenvolvido por: Alexandre Olival, António Gonçalves, Elmar Spencer</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

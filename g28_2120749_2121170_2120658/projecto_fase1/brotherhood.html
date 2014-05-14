@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset="utf-8">
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="shortcut icon" href="./img/favicon.ico">
+
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="./css/ie8.css">
+			<script src="./js/vendor/html5shiv.min.js"></script>
+		<![endif]-->
+
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+		<script src="./js/vendor/jquery-1.11.0.min.js"></script>
+		<script src="./js/main.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="page">
+				<div id="header">
+					<a id="logo" href="./index.html"></a>
+					<div id="appointment" class="box-effect">
+						<span></span>
+						<a href="./schedule_appointment.html">Marcar Consulta</a>
+					</div>
+
+					<div id="topbar">
+						<ul id="topbar_menu">
+							<li><a href="./news.html">Notícias</a></li>
+							<li><a href="./contacts.html">Contactos</a></li>
+							<li><a href="">Localização</a></li>
+							<li><a href="#">Mapa do Site</a></li>
+						</ul>
+
+						<div id="topbar_search">
+							<div id="topbar_search_left"></div>
+								<div id="topbar_search_middle">
+									<form id="search" action="#" method="GET">
+										<input class="search" name="q" type="text" placeholder="Pesquisa">
+										<input type="image" src="img/search_button.png" alt="Submit Form">
+									</form>
+									<img id="login_button" src="img/user_icon.png" alt="Login">
+							</div>
+							<div id="topbar_search_right"></div>
+						</div>
+
+						<div id="topbar_login">
+							<form class="validate" id="login" action="#" method="POST">
+								<p>
+									<label for="login_email">Email</label>
+									<input class="check" id="login_email" name="email" type="text" placeholder="">
+								</p>
+								<p>
+									<label for="login_password">Password</label>
+									<input class="check" id="login_password" name="password" type="password" placeholder="">
+								</p>
+								<p><button>Entrar</button></p>
+							</form>
+							<p><a href="#">Recuperar acesso</a></p>
+							<p><a href="#">Registe-se aqui</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="mainmenu">
+					<ul>
+						<li>
+							<a href="./index.html">Início</a>
+						</li>
+						<li>
+							<a href="./scml.html">SCML</a>
+						</li> 
+						<li class="parent"><span>Saúde</span>
+							<div>
+								<ul>
+									<li><a href="./specialties_list.html">Lista de Especialidades</a></li>
+									<li><a href="./clinicalstaff.html">Corpo Clínico</a></li>
+									<li><a href="./news.html">Artigos e Noticias Clínicas</a></li>
+								</ul>
+								<ul>
+									<li><a href="./hospital.html">Hospital D. Manuel de Aguiar</a></li>
+									<li><a href="./schedule_appointment.html">Marcação de Consulta</a></li>
+								</ul>
+								
+							</div>
+						</li>
+						<li class="parent">
+							<span>Cuidado Geriátricos</span>
+							<div>
+								<ul>
+									<li><a href="./news.html">Notícias</a></li>
+									<li><a href="./residential.html">Residencial Assistida XXI</a></li>
+									<li><a href="./internment.html">Internamento</a></li>
+								</ul>
+								<ul>
+									<li><a href="./nursinghome.html">Lar Nª Srª Encarnação</a></li>
+									<li><a href="./homecare.html">Apoio Domiciliário</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<a href="./creche.html">Creche</a>
+						</li>
+						<li>
+							<a href="./brotherhood.html">Irmandade</a>
+						</li>
+						<li>
+							<a href="./healthinsurance.html">Acordos</a>
+						</li>
+						<li>
+							<a href="./contacts.html">Contactos</a>
+						</li>
+						<li class="parent">
+							<a href="#">Área Pessoal</a>
+							<div>
+								<ul>
+									<li><a href="./contacts.html">Formulário de Contacto</a></li>
+									<li><a href="./schedule_appointment.html">Marcações de Consultas</a></li>
+									<li><a href="#">Confirmar Marcação</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div id="content">
+                        <h1>Irmandade</h1>
+                    <article class="entry">
+                        <p>A Irmandade da Santa Casa da Misericórdia de Leiria, fundada no ano de 1544, é uma associação constituída por fiéis, vulgarmente chamados no Compromisso da Irmandade como irmãos.</p>
+                        <p>O número de irmãos é ilimitado e são eles que constituem a Assembleia Geral, órgão social responsável pela gestão da Santa Casa da Misericórdia, mediante poderes delegados na Mesa Administrativa e Conselho Fiscal.
+                        </p>
+                        <p>Podem ser admitidos como irmãos todas as pessoas de ambos os sexos; de maioridade; sejam naturais e residentes ou ligados por laços de afectividade ao concelho da sede da Irmandade; gozem de boa reputação moral e social; aceitem os princípios da doutrina e da moral cristãos que informam a Irmandade; e que se comprometam ao pagamento de uma quota semestral.
+                        </p>
+                        <p>A admissão dos irmãos é feita mediante proposta subscrita por dois irmãos e pelo próprio candidato e aprovada em Mesa Administrativa por maioria absoluta dos votos dos seus membros presentes na respectiva votação.
+                        </p>
+                        <h2>Direitos dos Irmãos</h2>
+                        <p>Todos os irmãos são detentores de direitos, nomeadamente assistir, participar e votar nas reuniões da Assembleia Geral; serem eleitos para os Corpos Sociais; requererem a convocação extraordinária da Assembleia Geral, Mesa Administrativa e Conselho Fiscal; visitar, gratuitamente, as instalações da Santa Casa da Misericórdia/Hospital D. Manuel de Aguiar; realizar, gratuitamente, exames em situações carenciados devidamente comprovadas; participar, gratuitamente em programa de Piscina, 2 vezes por semana, durante um mês; e ainda poderem integrar programas de Rastreio do Cancro do Colo do Útero e do Cancro da Próstata.
+                        </p>
+                        <h2>Deveres dos Irmãos</h2>
+                        <p>Todos os irmãos são obrigados a pagar anualmente o valor respectiva quota aprovado em Assembleia Geral; desempenhar com zelo e dedicação os cargos para que foram eleitos para os Corpos Sociais; comparecer em actos solenes para representarem a Irmandade; colaborar no progresso e desenvolvimento da Santa Casa da Misericórdia de Leiria; propor à Mesa Administrativa novos irmãos ou que se tornem benfeitores da Irmandade.
+                        </p>
+                        <h2>Exclusão dos Irmãos</h2>
+                        <p>Serão excluídos da Irmandade todos os irmãos que solicitarem a sua exoneração; que deixarem de pagar a sua quota por tempo superior a dois anos; que não prestarem conta dos valores que lhes tenham sido confiados; que, sem motivo justificado, se recusarem a ocupar os lugares dos Corpos Sociais para os quais foram eleitos; que perderam a boa reputação moral e social ou voluntariamente causaram danos à Irmandade; que tomem atitudes hostis à Religião Católica; e finalmente por aplicação da pena de exclusão por parte da Mesa Administrativa.
+                        </p>
+                        <p>Se pretender ajudar a Santa Casa da Misericórdia de Leiria/Hospital D. Manuel de Aguiar inscreva-se na qualidade de Irmão ou então torne-se seu benfeitor.
+                        </p>
+
+                        <br><br>
+						<div class="box box3">
+							<div>
+								<article class="related-entry">
+									<p><img src="img/logo.png" alt="Noticia"></p>
+									<p><a href="./article_news.html">Noticia</a></p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum dictum metus, at porttitor quam laoreet quis.</p>
+								</article>
+							</div>
+
+							<div>
+								<article class="related-entry">
+									<p><img src="img/logo.png" alt="Noticia"></p>
+									<p><a href="./article_news.html">Noticia</a></p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum dictum metus, at porttitor quam laoreet quis.</p>
+								</article>
+							</div>
+
+							<div>
+								<article class="related-entry">
+									<p><img src="img/logo.png" alt="Noticia"></p>
+									<p><a href="./article_news.html">Noticia</a></p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum dictum metus, at porttitor quam laoreet quis.</p>
+								</article>
+							</div>
+						</div>
+                    </article>
+				</div>
+			</div>
+					
+			<div id="footer-container">
+				<div id="footer">
+					<ul>
+						<li>
+							<p><strong>Localização</strong></p><br>
+							<p>
+								Santa Casa da Misericórdia de Leiria<br>
+								Instituição Particular de Solidariedade Social<br>
+								Rua Trindade Coelho&nbsp;&nbsp;Nº 8<br>
+								Apartado 1109<br>
+								2401-801 Leiria<br>
+								Portugal
+							</p>
+						</li>
+
+						<li>
+							<p><strong>Contactos</strong></p><br>
+							<p>Tel: 244 106 202</p>
+							<p>Fax: 244 106 298</p>
+							<p>Email: geral@misericordiadeleiria.pt</p><br>
+							<p>Latitude: 39.744026</p>
+							<p>Longitude: -8.804657</p>
+						</li>
+
+						<li>
+							<div id="googleapi">
+								<div id="map_canvas"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+Paulo Fernandes - 2101654
+Joao Paixao - 2121278
+Thiago Pires - Intercambio
+
+Páginas:
+contactos.html
+home.html
+saude.html
+
+CSS:
+Pasta css -> ficheiro styles.css

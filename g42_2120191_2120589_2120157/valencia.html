@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="stylesheet" type="text/css" href="novo.Estilos.css" />
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.watermarkinput.js"></script>	
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+		  function initialize() {
+			var map_canvas = document.getElementById('map_canvas');
+			var map_options = {
+			  center: new google.maps.LatLng(39.74025839999999,-8.802669400000013),
+			  zoom: 17,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(map_canvas, map_options)
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		<script type="text/javascript">
+		function mostraNoticia(n) {
+				if (n == 1) {
+					document.getElementById('valnoticia1').style.display="inline";
+					document.getElementById('valnoticia2').style.display="none";
+					document.getElementById('valnoticia3').style.display="none";
+					document.getElementById('valnoticia4').style.display="none";
+				}
+				else{
+					if (n == 2) {
+						document.getElementById('valnoticia1').style.display="none";
+						document.getElementById('valnoticia2').style.display="inline";
+						document.getElementById('valnoticia3').style.display="none";
+						document.getElementById('valnoticia4').style.display="none";
+					}
+				else{
+					if (n == 3) {
+						document.getElementById('valnoticia1').style.display="none";
+						document.getElementById('valnoticia2').style.display="none";
+						document.getElementById('valnoticia3').style.display="inline";
+						document.getElementById('valnoticia4').style.display="none";
+				}
+				else{
+					document.getElementById('valnoticia1').style.display="none";
+					document.getElementById('valnoticia2').style.display="none";
+					document.getElementById('valnoticia3').style.display="none";
+					document.getElementById('valnoticia4').style.display="inline";
+				}
+			}
+		}
+	}
+</script>
+		
+</head>	
+	<body>
+		<div id="main">
+			<div id="menu">
+				<div id="menu2">
+					<div id="headerLogo">
+						<a href="novo.html" > <img src="Imagens/santa_casa1000.png" 
+						title="Santa Casa da Misericórdia de Leiria" width="98x98" alt="Logo Santa Casa" /> </a>
+					</div>
+					<div id="headers">
+						<div id ="headerSaude" style="list-style-type: none;">
+							<span class="sub"><a href="paginaSaude.html" style="font-size: 17px; text-align: center;"><br/>Saúde</a>
+								<span >
+									<a href="#" style="font-size: 15px;">Hospital e Cliníca</a>
+									<a href="paginaSaude.html" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Marcação de Consultas</a>
+									<a href="#" style="font-size: 15px;">Confirmação Marcações</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerMedicos" style="list-style-type: none;">
+							<span class="sub"><a href="paginaMedicos.html" style="font-size: 17px; text-align: center;"><br/>Médico</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="paginaMedicos.html" style="font-size: 15px;">Detalhes do Médico</a>
+									<a href="#" style="font-size: 15px;">Horários das Consultas</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerPessoal" style="list-style-type: none;">
+							<span class="sub"><a href="#" style="font-size: 17px; text-align: center;"><br/>Pessoal</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Utentes</a>
+									<a href="#" style="font-size: 15px;">Médicos</a>
+									<a href="#" style="font-size: 15px;">Irmãos</a>
+									<a href="#" style="font-size: 15px;">Administrativo</a>
+									<a href="#" style="font-size: 15px;">Administrador</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerCreches" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Creches</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Todas as notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerIrmandade" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Irmandade</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Informação Pública</a>
+								</span>
+							</span>
+						</div>
+						<div id ="headerGeriatricos" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Cuidados Geriátricos</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Residencial</a>
+									<a href="#" style="font-size: 15px;">Lar</a>
+									<a href="#" style="font-size: 15px;">Internamento</a>
+									<a href="#" style="font-size: 15px;">Apoio domiciliário</a>
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>	
+								</span>
+							</span>
+						</div>							
+					</div>
+					<div id="headerRight">
+						<div id ="headerRegister" class="A">
+							<a href="registar.html" > <img src="Imagens/registar.png" 
+							title="Registar" width="100%" height="100%" alt="Logo registar" /></a>
+						</div>
+						<div id="headerLogin" class="A">
+							<a href="login.html" > <img src="Imagens/login.png" 
+							title="Entrar" width="100%" height="100%" alt="Logo Login" /> </a>
+						</div>
+						<div id="headerSearch">
+							<input type="text"/>
+						</div>
+					</div>	
+				</div>
+				<div id="centroValencia">
+						<div id="valencias">
+							<p class="VAN">Valências Notícias</p>
+						</div>
+					<div id="valenciaResumos">
+						<div id="valenciaResidencial">
+							<br/><a href="#" onclick="mostraNoticia(1)" class="VA">Residencial</a>
+						</div>
+						<div id="valenciaLar">
+							<br/><a href="#" onclick="mostraNoticia(2)" class="VA">Lar</a>
+						</div>
+						<div id="valenciaInternamento">
+							<br/><a href="#" onclick="mostraNoticia(3)" class="VA">Internamento</a>
+						</div>
+						<div id="valenciaApoio">
+							<br/><a href="#" onclick="mostraNoticia(4)" class="VA">Apoio Domiciálirio</a>
+						</div>
+					</div>
+						<div id="valenciaNoticias">
+							<div id="valnoticia1">
+								<br/><p style="font-size: 18px; font-family: Verdana; text-align: center;">Já se encontra em atividade, a Residencial Assistida XXI.</p>
+								<div id="valtexto1">
+									<img src="imagens/Residencia_Noticia1.jpg" title="Residencial" width="350px" height="200px" alt="Residencia"
+									style="float:right; padding-right:4%;"	/>
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Já se encontra em funcionamento, sob a alçada da Santa Casa da Misericórdia de Leiria,
+									a Residencial Assistida XXI. O edifício, localizado na Rua do Lis junto às instalações do 
+									Hospital Dom Manuel de Aguiar.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">A funcionalidade das instalações e o atendimento personalizado são os seus principais atributos.
+									Com uma localização privilegiada e detentora de vistas soberbas sobre Leiria, nomeadamente para 
+									dois dos principais símbolos desta cidade, o Rio Lis e o Castelo, a Residencial XXI assume-se como 
+									uma referência de qualidade e de acolhimento dos seus utentes.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">A Residencial XXI é o local ideal para quem pretende uma opção de repouso de cariz familiar.
+									Nos três pisos que compõem a Residencial Assistida XXI, existem diversos espaços destinados 
+									ao convívio e ao lazer, destacando-se um refeitório, bar, salas de leitura e um salão de jogos. </p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Com uma oferta de 33 camas, a Residencial XXI proporciona aos utentes um espaço de qualidade 
+									acima da média e um serviço de excelência, no acompanhamento que presta a cada utente.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Todos os quartos estão equipados com telefone, televisão por cabo e ar condicionado, apresentado, 
+									em complemento, uma cuidada decoração e proporcionando excelente conforto.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Os utentes da Residencial Assistida XXI beneficiam ainda de apoio médico, enfermagem, 
+									psicologia clínica e de animação cultural, fisioterapia, terapeuta ocupacional, dietista e 
+									serviços ecuménicos</p>
+								</div>
+							</div>
+							
+							<div id="valnoticia2" style="display: none;">
+								<br/><p style="font-size: 18px; font-family: Verdana; text-align: center;">Lar Nª SRª Encarnação</p>
+								<div id="valtexto2">
+									<img src="imagens/Lar_imagem.jpg" title="Lar" width="350px" height="200px" alt="Lar"
+									style="float:right; padding-right:4%;"	/>
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados com 
+									espaços ajardinados envolventes.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">O edifício e seu equipamento são considerados do mais moderno e funcional que se 
+									tem feito até hoje no nosso país.</p>
+									
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">No Lar da Santa Casa da Misericórdia de Leiria, os nossos utentes participam em inúmeras
+									actividades de animação sócio-educativa. Para além de visitas a locais de interesse
+									histórico, promovem-se inúmeras iniciativas ligadas à arte e ao espírito criador dos nossos
+									utentes, tendo como principal objectivo contribuir para o seu bem-estar psíquico e físico.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">O Lar Nossa Senhora da Encarnação recebe pessoas idosas, de ambos os sexos, com 
+									dificuldades ou ausência de inserção no meio social e familiar e que expressam vontade 
+									em serem admitidas nesta instituição.</p>
+									
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Uma vez integradas no Lar, pretendemos que aos nossos utentes seja prestado 
+									acolhimento e auxílio de qualidade, respeitando-se a Pessoa e o Indivíduo.
+									Apostando numa estratégia de combate ao isolamento, que envolve uma vasta área de actuação
+									por parte dos profissionais que colaboram connosco, o nosso objectivo é proporcionar 
+									aos nossos idosos um equilíbrio biopsicosocial, assegurando-lhes os cuidadosde saúde e o 
+									seu tratamento integral</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">A construção do lar foi iniciada em 1 de Fevereiro de 1983 e concluída em 1989.</p>
+								</div>
+							</div>
+							
+							<div id="valnoticia3" style="display: none;">
+								<br/><p style="font-size: 18px; font-family: Verdana; text-align: center;">A Creche Casa Sanches</p>
+								<div id="valtexto3">
+									<img src="imagens/imagemCreche.jpg" title="Creche" width="350px" height="200px" alt="Creche" 
+									style="float:right; padding-right:4%;"/>
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Num edifício totalmente recuperado para o efeito e cumprindo todas as disposições legais, 
+									encontra-se já em funcionamento a Creche Casa Sanches.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Com esta infra-estrutura, a Santa Casa da Misericórdia de Leiria vocaciona mais uma importante 
+									valência no âmbito das suas competências sociais, com uma capacidade instalada para 33 crianças, 
+									dos 0 aos 36 meses.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Apostando em elevados padrões de qualidade, quer no que toca à execução da obra física, 
+									quer no domínio do equipamento instalado e dos recursos humanos, pretende-se que a creche 
+									se assuma em Leiria como um espaço de referência qualitativa na área pueril, contando com 
+									uma estrutura de recursos humanos empenhada e com experiência consolidada no domínio infantil.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">O modelo de funcionamento da Creche Casa Sanches tem por base o princípio da subsidiariedade, 
+									estatuído pela Segurança Social. A aposta neste tipo de valências pela Santa Casa da Misericórdia 
+									de Leiria pretende facilitar às famílias o ingresso das crianças neste tipo de instituições,
+									em virtude da escassez das mesmas.</p>
+								</div>	
+							</div>
+							<div id="valnoticia4" style="display: none;">
+								<br/><p style="font-size: 18px; font-family: Verdana; text-align: center;">Apoio Domiciliário</p>
+								<div id="valtexto4">
+									<img src="imagens/apoio.jpg" title="Apoio Domiciliário" width="350px" height="200px" alt="Apoio" 
+									style="float:right; padding-right:4%;"/>
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Tendo como objectivo a prestação de cuidados ao nível da assistência de utentes impossibilitados de se deslocarem aos Centros de Dia, Lares e outras instituições sociais, a Santa Casa da Misericórdia de Leiria iniciou, em Julho de 2004, o Serviço de Apoio Domiciliário. </p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Este serviço prepara, distribui e administra diariamente refeições, assegurando a prestação de cuidados de higiene pessoal e de conforto habitacional, o tratamento de roupas e a administração de medicamentos.</p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">O Serviço de Apoio Domiciliário afigura-se, assim, para quem dele necessita (utentes e respectivas famílias) como uma resposta válida, salientando-se as preocupações dos nossos colaboradores no que toca à compreensão das circunstâncias biopsicossociais de cada indivíduo. </p>
+
+									<p style="font-size: 14px; font-family: Verdana; text-align: justify; padding-left:4%;">Refira-se que esta valência não pretende substituir os laços familiares e de vizinhança, mas antes desenvolver uma acção complementar, privilegiando a vida em família e na comunidade como a forma mais natural e a que melhor satisfaz as necessidades dos indivíduos em geral e da população idosa em particular.</p>
+								</div>		
+							</div>					
+						</div>
+					<div id="valenciaLink">
+						<a class="centrar" href="formulario.html" >Consulte o nosso Formulário </a> <br/>
+						<a class="centrar" href="listaNoticias.html" >Consulte todas as nossas noticias </a>
+					</div>
+				</div>
+				<div id = "footer">
+					<div id = "GPSFooter">
+						<div id="map_canvas"></div>
+					</div>
+					<div id = "dadosFooter">
+						<h3>Contactos</h3>
+						<p>Santa Casa da Misericórdia de Leiria</p>
+						<p>Instituição Particular de Solidariedade Social</p>
+						<p>Tel.: 244 106 202 • Fax: 244 106 298</p>
+						<p><a href="mailto:geral@misericordiadeleiria.pt" >geral@misericordiadeleiria.pt</a></p>
+					</div>
+					<div id = "referenciasFooter">
+						<div id = "maisInfoReferencias" >
+							<a href="contactos.html" > <img src="Imagens/info.png" 
+							title="Mais Contactos" width="45x45" alt="Logo mais info" /> </a>
+						</div>
+						<h3>Referências</h3>
+						<p>Lar Nossa Sra. da Encarnação</p>
+						<p>Clínica Médica e de Reabilitação</p>
+						<p>Hospital Dom Manuel de Aguiar</p>
+						<p>Creche "Casa Sanches"</p>
+						<p>Residencial XXI</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

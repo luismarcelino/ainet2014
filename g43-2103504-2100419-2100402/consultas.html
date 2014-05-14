@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+
+<head>
+	<title>SCML - Santa Casa da Misericórdia de Leiria</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="stylesheet" type="text/css" href="css/scmlMain.css"/>
+	<link rel="stylesheet" type="text/css" href="css/calendar.css"/>
+	<script type="text/javascript" src="jquery/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="jquery/scripts.js"></script>
+	<script type="text/javascript" src="jquery/jquery-ui.js"></script>
+</head>
+
+
+<body>
+<div class="main">
+	  <div class="header">
+		<div class="header_resize">
+		  <div class="logo">
+			<h1><a href="index.html"><img src="img/logo/santa_casa1000.png" height="130" width="130" alt="" /></a></h1>
+		  </div>
+		  <div class="banner">
+			<h1><img src="img/banner/banner.png" height="130" width="420" alt=""/></h1>
+		  </div>
+		  <div class="searchBox">
+			<a href="staff.html">Acesso Reservado</a>
+			<form id="formsearch" method="post" action="#">
+			  <p>
+			  <input name="editbox_search" class="editbox_search" id="editbox_search" maxlength="80" value="Procure no website" type="text"/>
+			  <input name="button_search" src="img/icons/lupa.png" class="button_search" type="image"/>
+			  </p>
+			</form>
+		  </div>
+		  <div class="clr"></div>
+		  <div class="menu_navegacao">
+			<ul>
+			  <li class="active"><a href="index.html"><span>Página Inicial</span></a></li>
+			  <li><a href="inserir_noticia.html"><span>Notícias</span></a></li>
+			  <li><a href="artigos.html"><span>Artigos</span></a></li>
+			  <li><a href="saude.html"><span>Saúde</span></a></li>
+			  <li><a href="medicos.html"><span>Médicos</span></a></li>
+			  <li><a href="contactos.html"><span>Contactos</span></a></li>
+			</ul>
+		  </div>
+		  <div class="clr"></div>
+		</div>
+	</div>
+	<div class="content">
+    <div class="content_resize">
+      <div class="mainbar">
+	  <div class="artigo">
+          <h2><span>Marcação</span>&nbsp;de Consultas</h2>
+          <div class="clr"></div>
+          <div class="post_content">
+            <p>"Aqui pode efectuar o pedido de marcação de uma consulta ou de um exame. 
+				Este procedimento carece de validação pelo Hospital D. Manuel de Aguiar.
+				Oportunamente será contactado para confirmação do dia e hora do seu pedido.
+				Obrigado!"</p>   
+          
+          
+        <div class="formulario">
+		<form action="" method="post" id="consultas_form">
+			<fieldset>
+			<p>
+				<span>(*)&nbsp;Campos com preenchimento obrigatório.</span>
+			</p>
+			<p><label>
+				<span>Nome : *</span><br/>
+				<input id="nome" type="text" name="nome" size="50" maxlength="150"/>
+			</label></p>
+			<p><label>
+				<span>Morada :</span><br/>
+				<textarea id="morada" name="morada" rows="" cols=""></textarea>
+			</label></p>
+			<p><label>
+				<span>Data de Nascimento : *</span><br/>
+				<input type="text" name="data_nascimento" id="data_nascimento" value="aaaa-mm-dd" size="10" maxlength="10" />
+				<img src="img/icons/cal.gif" id="cal_data_nascimento" alt=""/>
+			</label></p>
+			<p><label>
+				<span>E-mail :</span><br/>
+				<input id="email" type="text" name="email" size="50" maxlength="150"/>
+			</label></p>
+			<p><label>
+				<span>Telefone : *</span><br/>
+				<input id="telefone" type="text" name="telefone"/>
+			</label></p>
+			<p><label>
+				<span>Subsistema ou Seguro de Saúde :</span><br/>
+				<select name="sistema_saude_id" id="sistema_saude_id">
+						<option value="">--- Seleccione ---</option>
+						<option value="10">ADMG (só para MFR)</option>
+						<option value="1">ADSE</option>
+						<option value="5">IASFA (ADMA, ADME, ADMFA)</option>
+						<option value="12">Medis (só para MFR)</option>
+						<option value="7">Multicare</option>
+						<option value="13">Particular</option>
+						<option value="8">Planicare</option>
+						<option value="11">SAD PSP (só para MFR)</option>
+						<option value="2">SAMS Centro</option>
+						<option value="6">Serviços Sociais da CGD</option>
+						<option value="9">Servimed</option>
+						<option value="3">Sindicato dos Funcionários Judiciais</option>
+						<option value="4">SNS</option>
+				</select>
+			</label></p>
+			<p><label>
+				<span>Consulta :</span><br/>
+				<select name="consulta_id" id="consulta_id">
+					<option value="">--- Seleccione ---</option>
+					<option value="65">Acupunctura</option>
+					<option value="66">Cardiologia</option>
+					<option value="13">Cirurgia Geral</option>
+					<option value="20">Cirurgia Plástica e Reconstrutiva</option>
+					<option value="21">Cirurgia Vascular</option>
+					<option value="67">Dermatologia</option>
+					<option value="78">Diabetes</option>
+					<option value="11">Dietista</option>
+					<option value="8">Endocrinologia</option>
+					<option value="23">Estomatologia</option>
+					<option value="68">Gastrenterologia</option>
+					<option value="69">Ginecologia</option>
+					<option value="16">Medicina Desportiva</option>
+					<option value="24">Medicina Física e de Reabilitação</option>
+					<option value="26">Mesoterapia</option>
+					<option value="27">Neurocirurgia</option>
+					<option value="70">Neurologia</option>
+					<option value="71">Oftalmologia adulto e infantil</option>
+					<option value="72">Ortopedia</option>
+					<option value="73">Otorrinolaringologia</option>
+					<option value="74">Pneumologia</option>
+					<option value="10">Psicologia Clínica</option>
+					<option value="9">Psiquiatria</option>
+					<option value="75">Reumatologia</option>
+					<option value="76">Urologia</option>
+				</select>
+			</label></p>
+			<p><label>
+				<span>Exame :</span><br/>
+				<select name="exame_id" id="exame_id">
+						<option value="">--- Seleccione ---</option>
+						<option value="42">Anatomia Patológica</option>
+						<option value="3">Análises Clínicas</option>
+						<option value="51">Audiometria</option>
+						<option value="1">Cardiologia</option>
+						<option value="45">Colonoscopia</option>
+						<option value="4">Dermatologia</option>
+						<option value="48">Doppler a cores, transesofágico</option>
+						<option value="62">Eco-Doppler</option>
+						<option value="47">Ecocardiografia Modo M, 2D</option>
+						<option value="61">Ecografia</option>
+						<option value="43">Ecografia Geral e Vascular</option>
+						<option value="39">Electrocardiograma com prova de esforço em tapete rolante</option>
+						<option value="49">Electrocardiograma simples</option>
+						<option value="44">Endoscopia alta</option>
+						<option value="19">Gastrenterologia</option>
+						<option value="5">Ginecologia</option>
+						<option value="57">Imagiologia</option>
+						<option value="54">Impedânciometria</option>
+						<option value="63">Mamografia Digital</option>
+						<option value="50">MAPA (medição ambulatória da pressão arterial)</option>
+						<option value="28">Neurologia</option>
+						<option value="32">Oftalmologia</option>
+						<option value="33">Ortopedia</option>
+						<option value="64">Osteodensitometria</option>
+						<option value="37">Otorrinolaringologia</option>
+						<option value="2">Pneumologia</option>
+						<option value="53">Posturografia dinâmica e computorizada</option>
+						<option value="56">Provas funcionais respiratórias</option>
+						<option value="46">Rectosigmoidoscopia</option>
+						<option value="58">Reumatologia</option>
+						<option value="60">Rx-Digital</option>
+						<option value="59">TAC</option>
+						<option value="55">Timpanometria</option>
+						<option value="29">Urologia</option>
+						<option value="52">Videonistagmografia</option>
+				</select>
+			</label></p>
+			<p><label>
+				<span>Data Pretendida :</span><br/>
+				<input type="text" name="data_pretendida" id="data_pretendida" value="aaaa-mm-dd" size="10" maxlength="10" />
+				<img src="img/icons/cal.gif" id="cal_data_pretendida" alt=""/>
+			</label></p>
+			<p><label>
+				<span>Captcha :</span><br/>
+				<input id="captcha" type="text" name="captcha" />
+			</label></p>			
+			<p><label>
+				<span>&nbsp;</span> 
+				<input type="reset" class="button" value="Limpar" /> 
+				<input type="submit" class="button" value="Enviar" /> 
+			</label></p>
+			</fieldset>			
+			</form>
+		</div>
+		<p><strong>Nota:</strong> No dia da consulta deve ser portador dos Meios Complementares de Diagnóstico e/ou Terapêutica recentes que dispuser.
+		   Deve ser igualmente portador do Cartão de Utente do SNS e/ou do Cartão da Entidade Financeira Responsável (Termos de Responsabilidade
+		   e/ou Credenciais, quando aplicável).
+		</p>
+			<div class="clr"></div>
+		</div>
+		<div class="clr"></div>
+		</div>
+      </div>
+			<div class="sidebar">
+					<div class="gadget">
+					  <h2 class="star"><span>Valências</span></h2>
+					  <div class="clr"></div>
+					  <ul class="sb_menu">
+							<li><a href="hospital.html">Hospital D. Manuel de Aguiar</a></li>
+							<li><a href="residencial.html">Residencial Assistida XXI</a></li>
+							<li><a href="lar.html">Lar Nª Srª Encarnação</a></li>
+							<li><a href="creche.html">Creche Casa Sanches</a></li>
+							<li><a href="academia_cultural.html">Academia Cultural</a></li>
+							<li><a href="centro_medicina.html">Centro de Medicina Física e de Reabilitação</a></li>
+							<li><a href="centro_eventos.html">Centro de Eventos e Formação</a></li>
+					  </ul>
+					</div>
+					<div class="gadget">
+					  <h2 class="star"><span>Serviços</span></h2>
+					  <div class="clr"></div>
+					  <ul class="sb_menu">
+							<li><a href="apoio_domicilitario.html">Apoio Domicilitário</a></li>
+							<li><a href="atendimento_medico.html">Atendimento Médico e Cirúrgico</a></li>
+							<li><a href="consultas_externas.html">Consultas Externas</a></li>
+							<li><a href="medicina_fisica.html">Medicina Física e de Reabilitação</a></li>
+							<li><a href="meios_complementares.html">Meios Complementares de Diagnóstico e Terapêutica</a></li>
+							<li><a href="unidade_cirurgica.html">Unidade Cirúrgica</a></li>
+							<li><a href="unidade_cuidados.html">Unidade de Cuidados Continuados e Integrados</a></li>
+							<li><a href="unidade_privada.html">Unidade Privada</a></li>
+					  </ul>
+					</div>
+					<div class="gadget">
+					  <h2 class="star"><span>Consultas</span></h2>
+					  <div class="clr"></div>
+					  <ul class="sb_menu">
+							<li><a href="acordos.html">Acordos</a></li>
+							<li><a href="medicos.html">Corpo Clínico</a></li>
+							<li><a href="consultas.html">Marcação Consultas</a></li>
+					  </ul>
+					</div>
+					
+			</div>
+		<div class="clr"></div>
+	  </div>
+	</div>
+	  
+	<div class="footer_info">
+		<div class="footer_info_resize">
+		  <div class="coluna fc1">
+			<h2>Apresentação</h2>
+			<p>A Santa Casa da Misericórdia de Leiria – instituição com 500 anos de história – renova-se e actualiza-se diariamente. 
+				A presença num meio como a Internet é disto um bom exemplo.<br/>
+				Com este site, pretende a Misericórdia de Leiria dar a conhecer a todos aqueles que nos visitam as suas valências 
+				sociais e os projectos em que estamos envolvidos.<br/> 
+				Esperamos que aprecie este endereço.</p>
+		  </div>
+		  <div class="coluna fc3">
+			<h2>Serviços Prestados</h2>
+			<p>Serviços e valências da nossa instituição.</p>
+			<ul class="footer_info_ul">
+				<li><a href="hospital.html">Hospital D. Manuel de Aguiar</a></li>
+				<li><a href="residencial.html">Residencial Assistida XXI</a></li>
+				<li><a href="lar.html">Lar Nª Srª Encarnação</a></li>
+				<li><a href="creche.html">Creche Casa Sanches</a></li>
+				<li><a href="academia_cultural.html">Academia Cultural</a></li>
+				<li><a href="centro_medicina.html">Centro de Medicina Física e de Reabilitação</a></li>
+				<li><a href="centro_eventos.html">Centro de Eventos e Formação</a></li>
+				<li><a href="consultas.html">Marcação Consultas</a></li>
+			</ul>
+		  </div>
+		  <div class="coluna fc2">
+			<h2>Contactos</h2>
+			<p>Santa Casa da Misericórdia de Leiria</p>
+			<p class="contactos"> 
+			  <span>Morada:</span> Rua Trindade Coelho, 8 Apartado 1109 2401-801 Leiria<br />
+			  <span>Fax:</span> 244 106 298<br />
+			  <span>Telefone:</span> 244 106 202<br />
+			  <span>Fax:</span> 244 106 298<br />
+			  <span>E-mail:</span> <a href="#">geral@misericordiadeleiria.pt</a> 
+			</p>
+		  </div>
+		  <div class="clr"></div>
+		</div>
+    </div>
+	<div style="clear:both"></div>
+	<div class="footer">
+		<div class="footer_resize">
+		  <p class="lf"><a href="#">&copy; SCML</a>&nbsp;Todos os direitos reservados.</p>
+		  <p class="rf">Design por Ivo Silva, João Agostinho e Rúben Maia</p>
+		  <div style="clear:both;"></div>
+		  <p><a href="http://validator.w3.org/check?uri=referer"><img
+					src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a></p>
+		</div>
+	</div>
+	
+	
+</div>	
+</body>
+ 
+</html>

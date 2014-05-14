@@ -1,0 +1,337 @@
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>Lista de Especialidades</title>
+            <link rel="stylesheet" type="text/css" href="style/style.css">
+            <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+            <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+            <meta name="author" content="Pedro Silva">
+            
+            
+            
+           <script type="text/javascript"> 
+            $(document).ready(function() {
+                var d1 = $("#menu-container");
+                var d2 = $("#top-bar-logo");
+                var d3 = $("#menu-op1");
+                var d4 = $("#menu-op6");
+                var pos = d1.position();                       
+                $(window).scroll(function() {
+                var windowpos = $(window).scrollTop();
+                if (windowpos >= pos.top) {
+                    d1.addClass("cola");
+                    d2.addClass("mostra");
+                    d3.addClass("bordas");
+                    d4.addClass("bordas");
+                } else {
+                    d1.removeClass("cola");
+                    d2.removeClass("mostra");
+                    d3.removeClass("bordas");
+                    d4.removeClass("bordas");
+                }
+            });
+        });
+        </script>  
+            
+            
+            <script type = "text/jscript" src = "js/functions.js"></script>  
+            </head>
+        <body class = "background_image_lista_especialidades">
+            <!-- barra de topo -->
+    <div id="top-bar-container"> 
+        <div id="top-bar-conteudo">
+            <div id="top-bar-logo" class="top-bar-div">
+                <a target="_self" href="index.html">
+                    <img class="logo" src="images/santa_casa100.png" alt="Inicio" width="36" height="36">
+                </a>
+                <p class="top-bar-titulo1">Santa Casa</p> 
+                <p class="top-bar-titulo2">da Misericórdia de Leiria</p>
+            </div>
+            <div id="top-bar-space" class="top-bar-div"> </div>
+            <div id="top-bar-space2" class="top-bar-div"> </div>
+
+            <div id="top-bar-contatos" class="top-bar-div"> 
+                <a id="link-contatos"  class="propriedades-contato" title="Página Contatos" target="_self" href="contactos.html"> Contatos </a>
+            </div>
+            <div id="top-bar-pesquisa" class="top-bar-div"> 
+                <form>              
+                    <input type="search" id="pesquisa" class="ele-pesquisa" name=pesquisa placeholder="Insira pesquisa" required>   
+                    <input type="image" src="images/search_lupa32.png" alt="Pesquisa" id="submit-pesquisa" class="ele-pesquisa">
+
+                </form>
+            </div>
+            <div id="top-bar-login" class="top-bar-div">
+                <details> 
+                    <summary> Login </summary>
+                    <form>
+                        <label for="user"> </label>
+                        <input type="text" id="user" class="ele-login" maxlength="20" placeholder="Nome Utilizador" required>
+                        <label for="password"> </label>
+                        <input type="text" maxlength="20" id="password" class="ele-login" placeholder="Password" required>
+                        <input type="submit" id="submit"  class="btn-login" value="OK">
+                    </form>
+                </details>
+
+            </div>
+        </div>
+    </div>
+        
+    <!-- container principal -->
+    <div id="main-container">
+        <!-- logo e nome de instituicao -->
+        <div id="apresentacao-container"> 
+            <div id="apresentacao-logo">
+                <img id="large-logo" class="logo" src="images/santa_casa_sem_titulo.png" alt="logo" width="150" height="150">
+            </div>
+            <div id="apresentacao-nome">
+                <img id="large-titulo" class="logo" src="images/santa_casa_titulo.png" alt="logo" width="700" height="150">
+            </div>   
+        </div>
+        
+        <!-- menu do site -->
+        <div id="menu-container">             
+            <div id="menu-opcoes-container">
+                <div id="menu-op1" class="menu-op">  
+                    <a id="link-inicio" target="_self" href="index.html">  <p class="menu-main-item"> Inicio </p> </a>
+                </div>
+                <div id="menu-op2" class="menu-op"> <p class="menu-main-item"> Saúde </p>
+                    <ul class="op-menu">
+                        <li class="menu-item"><a href="lista_especialidades.html"> <p>Lista de Especialidades</p> </a></li>
+                        <li class="menu-item"><a href="corpo_clinico.html"> <p>Corpo Clínico</p> </a></li>
+                        <li class="menu-item"><a href="3.html"> <p>Artigos / Notícias Clínicas</p> </a></li>
+                    </ul> 
+                </div>
+                <div id="menu-op3" class="menu-op"> <p class="menu-main-item"> Cuidados Geriátricos </p>
+                    <ul class="op-menu">
+                        <li class="menu-item"><a href="creche.html"> <p>Residencial</p> </a></li>
+                        <li class="menu-item"><a href="creche.html"> <p>Lar</p> </a></li>
+                        <li class="menu-item"><a href="creche.html"> <p>Internamento</p> </a></li>
+                        <li class="menu-item"><a href="creche.html"> <p>Apoio Domiciliário</p> </a></li>
+                    </ul> 
+                </div>
+                <div id="menu-op4" class="menu-op"> 
+                    <a id="link-creche" target="_self" href="creche.html"> <p class="menu-main-item">Creche</p> </a>
+                </div>
+                <div id="menu-op5" class="menu-op"> 
+                    <a id="link-irmandade" target="_self" href="creche.html"> <p class="menu-main-item">Irmandade</p> </a>
+                </div>
+                <div id="menu-op6" class="menu-op"> 
+                    <a id="link-marcar-consulta" target="_self" href="marcacao_consulta.html"> <p class="menu-main-item">Marcar Consulta</p> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+    <div id = "especialidade-apresentacao-container">
+            <div id = "especialidade-apresentacao-imagem-container">
+                    <div id = "image-slider-weapper">
+                        <ul id = "image_slider">
+                            <li><img src = "images/EspecialidadesApresentacao.png" alt = "imagem de apresentacao"></li>
+                            <li><img src = "images/EspecialidadesApresentacao2.png" alt = "imagem de apresentacao"></li>
+                            <li><img src = "images/EspecialidadesApresentacao3.png" alt = "imagem de apresentacao"></li>
+                            <li><img src = "images/EspecialidadesApresentacao4.png" alt = "imagem de apresentacao"></li>
+                        </ul>
+                    </div>
+            </div>
+    </div>
+        
+
+            <div id = "especialidades_container">
+                <div id = "lista-especialidades-container">
+                    <div id = "lista-especialidades-titulo" class = "titulo"><p>ESPECIALIDADES</p></div>
+                    <div id = "lista-especialidades-lista" class = "cssmenu">
+                        <ul>
+                        
+                            <li >Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+                            <li>Especialidade 1</li>
+
+                        </ul>
+                    </div>
+                    <div id = "especialidades-detalhe"> 
+                        <div id = "especialidade_titulo"><p>Especialidade 1<p></div>
+                        <div id = "especialidade_corpo_texto"><p>O CEDRA- Centro de Doenças Respiratórias e Alérgicas reúne, há cerca de 30 anos, especialistas habituados a trabalhar em equipa nos Hospitais da Universidade de Coimbra. Ao decidirem estender a sua actividade ao sector privado, empenharam-se em potenciar a sua formação científica, concretizada na experiência clínica, através de afinidades e sinergias que têm vindo a adquirir. 
+
+      </p>
+                           </div>
+                            <div id = "especialidade_corpo_clinico_container">
+                                <div id = "especialidade_corpo_clinico_titulo"><p>Titulo Corpo clinico<p></div>
+                                <div id = "especialidade_corpo_clinico"> 
+                                      <div class = "especialidade_corpo_clinico_elemento">
+                                        <div class = "especialidade_elemento_foto"><a href = "medico.html"><img src = "imagensPedro/medico.png" alt = "foto do médigo"></a></div>
+                                        <div class = "especialidade_elemento_info">
+                                            <table>
+                                                <tr>
+                                                    <th>Dr. Pedro Costa</th>
+                                                </tr>
+                                                <tr>
+                                                <td> Tel: 239 484491</td>
+                                               </tr>
+                                                <tr>
+                                                <td> Email: uhc@idealmed.pt</td>
+                                               </tr>
+                                                <tr>
+                                                <td>Área Clinica: Alergologia e Pneumologia</td>
+                                               </tr>
+                                                <tr>
+                                                <td> Especialidade: Pneumologia</td>
+                                               </tr>
+
+                                            </table>
+                                        </div>
+                                        <div class = "especialidade_corpo_clinico_elemento_botao">
+                                            <p> <a href="marcacao_consulta.html">MARCAR CONSULTA</a></p>
+                                        </div>
+                                    </div>
+
+                                <div class = "especialidade_noticia_separador"></div>
+
+                                <div class = "especialidade_corpo_clinico_elemento">
+                                        <div class = "especialidade_elemento_foto"><a href = "medico.html"><img src = "imagensPedro/medico.png" alt = "foto do médigo"></a></div>
+                                        <div class = "especialidade_elemento_info">
+                                            <table>
+                                                <tr>
+                                                    <th>Dr. Pedro Costa</th>
+                                                </tr>
+                                                <tr>
+                                                <td> Tel: 239 484491</td>
+                                               </tr>
+                                                <tr>
+                                                <td> Email: uhc@idealmed.pt</td>
+                                               </tr>
+                                                <tr>
+                                                <td>Área Clinica: Alergologia e Pneumologia</td>
+                                               </tr>
+                                                <tr>
+                                                <td> Especialidade: Pneumologia</td>
+                                               </tr>
+
+                                            </table>
+                                        </div>
+                                        <div class = "especialidade_corpo_clinico_elemento_botao">
+                                            <p> <a href="marcacao_consulta.html">MARCAR CONSULTA</a></p>
+                                        </div>
+                                    </div>
+
+                        <div class = "especialidade_noticia_separador"></div>
+
+
+                        <div class = "especialidade_corpo_clinico_elemento">
+                                        <div class = "especialidade_elemento_foto"><a href = "medico.html"><img src = "imagensPedro/medico.png" alt = "foto do médigo"></a></div>
+                                        <div class = "especialidade_elemento_info">
+                                            <table>
+                                                <tr>
+                                                    <th>Dr. Pedro Costa</th>
+                                                </tr>
+                                                <tr>
+                                                <td> Tel: 239 484491</td>
+                                               </tr>
+                                                <tr>
+                                                <td> Email: uhc@idealmed.pt</td>
+                                               </tr>
+                                                <tr>
+                                                <td>Área Clinica: Alergologia e Pneumologia</td>
+                                               </tr>
+                                                <tr>
+                                                <td> Especialidade: Pneumologia</td>
+                                               </tr>
+
+                                            </table>
+                                        </div>
+                                        <div class = "especialidade_corpo_clinico_elemento_botao">
+                                            <p> <a href="marcacao_consulta.html">MARCAR CONSULTA</a></p>
+                                        </div>
+                                    </div>
+
+                            </div> 
+                            <div id = "especialidade_acordos_container">
+                                <div id = "especialidades_acordos_titulo">
+                                    <p>Acordos da especialidade</p></div>
+                                <div class = "especialidade_acordo_elemento">
+                                     <table>
+                                        <tr>
+                                            <td><a href = "https://www.google.pt/">
+                                                <img src = "imagensPedro/seguro1.png" class = "acordos_image" alt = "imagem do acordo de seguradora"></a></td>
+                                            <td><a href = "https://www.google.pt/">
+                                                <img src = "imagensPedro/seguro2.png" class = "acordos_image" alt = "imagem do acordo de seguradora"></a></td>
+                                            <td><a href = "https://www.google.pt/">
+                                                <img src = "imagensPedro/seguro3.png" class = "acordos_image" alt = "imagem do acordo de seguradora"></a></td>
+                                            <td><a href = "https://www.google.pt/">
+                                                <img src = "imagensPedro/seguro3.png" class = "acordos_image" alt = "imagem do acordo de seguradora"></a></td>
+                                        </tr>
+                                          <tr>
+                                            <td><a href = "https://www.google.pt/">
+                                                <img src = "imagensPedro/seguro4.png" class = "acordos_image" alt = "imagem do acordo de seguradora"></a></td>
+                                            <td><a href = "https://www.google.pt/">
+                                                <img src = "imagensPedro/seguro5.png" class = "acordos_image" alt = "imagem do acordo de seguradora"></a></td>
+                                            <td><a href = "https://www.google.pt/">
+                                                <img src = "imagensPedro/seguro6.png" class = "acordos_image" alt = "imagem do acordo de seguradora"></a></td>
+                                            <td><a href = "https://www.google.pt/">
+                                                <img src = "imagensPedro/seguro6.png" class = "acordos_image" alt = "imagem do acordo de seguradora"></a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+
+
+                            <div id = "especialidades_noticias_artigos_container">
+                                <div id = "especialidades_noticias_artigos_titulos"><p>Notícias</p></div>
+                                <div id = "especialidades_noticias_lista">
+                                    
+                                    <div class = "especialidade_news_container">
+                                        <p class = "news_config">
+                                            <p class = "news_config_title">Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia</p>
+                                            <p class = "news_config_text">
+                                                Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes instalações, com acesso a tecnologia digital 
+                                            <a style = "font-size: 16px; margin-left: 130px;" href = "visualizar_artigo_noticia.html"><br/>Continuar a Ler...</a></p></p>
+                                    </div>
+                                    
+                                    
+                                     <div class = "especialidade_news_container">
+                                        <p class = "news_config">
+                                            <p class = "news_config_title">Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia </p>
+                                            <p class = "news_config_text">Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes instalações, com acesso a tecnologia digital<a style = "font-size: 16px; margin-left: 130px;" href = "visualizar_artigo_noticia.html"><br/>Continuar a Ler...</a></p></p>
+                                    </div>
+                                    
+                                    <div class = "especialidade_news_container">
+                                        <p class = "news_config">
+                                            <p class = "news_config_title">
+                                                Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia
+                                            </p>
+                                            <p class = "news_config_text">
+                                                Agora o HDMA promove a abertura do seu renovado serviço de Imagiologia, onde poderá efectuar exames da mais variada ordem, em excelentes instalações, com acesso a tecnologia digital 
+                                            <a style = "font-size: 16px; margin-left: 130px;" href = "visualizar_artigo_noticia.html">Continuar a Ler...</a>
+                                            </p>
+                                        </p>
+                                    </div>
+                    
+                                    </div>
+                            </div>
+         </div>
+</div>
+</div>
+
+       <footer id="bottom-container"> 
+		<p class="text-footer">Feito por: Gonçalo Brás, Paulo Neves e Pedro Silva</p> 
+		<p class="text-footer">Aplicações para a Internet<br/>2014</p>
+	</footer>
+        </body>
+        </html>    

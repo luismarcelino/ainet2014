@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+		<head>
+		<meta charset="utf-8">
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="./css/reset.css">
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="shortcut icon" href="./img/favicon.ico">
+
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="./css/ie8.css">
+			<script src="./js/vendor/html5shiv.min.js"></script>
+		<![endif]-->
+
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+		<script src="./js/vendor/jquery-1.11.0.min.js"></script>
+		<script src="./js/main.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="page">
+				<div id="header">
+					<a id="logo" href="./index.html"></a>
+					<div id="appointment" class="box-effect">
+						<span></span>
+						<a href="./schedule_appointment.html">Marcar Consulta</a>
+					</div>
+
+					<div id="topbar">
+						<ul id="topbar_menu">
+							<li><a href="./news.html">Notícias</a></li>
+							<li><a href="./contacts.html">Contactos</a></li>
+							<li><a href="">Localização</a></li>
+							<li><a href="#">Mapa do Site</a></li>
+						</ul>
+
+						<div id="topbar_search">
+							<div id="topbar_search_left"></div>
+								<div id="topbar_search_middle">
+									<form id="search" action="#" method="GET">
+										<input class="search" name="q" type="text" placeholder="Pesquisa">
+										<input type="image" src="img/search_button.png" alt="Submit Form">
+									</form>
+									<img id="login_button" src="img/user_icon.png" alt="Login">
+							</div>
+							<div id="topbar_search_right"></div>
+						</div>
+
+						<div id="topbar_login">
+							<form class="validate" id="login" action="#" method="POST">
+								<p>
+									<label for="login_email">Email</label>
+									<input class="check" id="login_email" name="email" type="text" placeholder="">
+								</p>
+								<p>
+									<label for="login_password">Password</label>
+									<input class="check" id="login_password" name="password" type="password" placeholder="">
+								</p>
+								<p><button>Entrar</button></p>
+							</form>
+							<p><a href="#">Recuperar acesso</a></p>
+							<p><a href="#">Registe-se aqui</a></p>
+						</div>
+					</div>
+				</div>
+
+				<div id="mainmenu">
+					<ul>
+						<li>
+							<a href="./index.html">Início</a>
+						</li>
+						<li>
+							<a href="./scml.html">SCML</a>
+						</li> 
+						<li class="parent"><span>Saúde</span>
+							<div>
+								<ul>
+									<li><a href="./specialties_list.html">Lista de Especialidades</a></li>
+									<li><a href="./clinicalstaff.html">Corpo Clínico</a></li>
+									<li><a href="./news.html">Artigos e Noticias Clínicas</a></li>
+								</ul>
+								<ul>
+									<li><a href="./hospital.html">Hospital D. Manuel de Aguiar</a></li>
+									<li><a href="./schedule_appointment.html">Marcação de Consulta</a></li>
+								</ul>
+								
+							</div>
+						</li>
+						<li class="parent">
+							<span>Cuidado Geriátricos</span>
+							<div>
+								<ul>
+									<li><a href="./news.html">Notícias</a></li>
+									<li><a href="./residential.html">Residencial Assistida XXI</a></li>
+									<li><a href="./internment.html">Internamento</a></li>
+								</ul>
+								<ul>
+									<li><a href="./nursinghome.html">Lar Nª Srª Encarnação</a></li>
+									<li><a href="./homecare.html">Apoio Domiciliário</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li>
+							<a href="./creche.html">Creche</a>
+						</li>
+						<li>
+							<a href="./brotherhood.html">Irmandade</a>
+						</li>
+						<li>
+							<a href="./healthinsurance.html">Acordos</a>
+						</li>
+						<li>
+							<a href="./contacts.html">Contactos</a>
+						</li>
+						<li class="parent">
+							<a href="#">Área Pessoal</a>
+							<div>
+								<ul>
+									<li><a href="./contacts.html">Formulário de Contacto</a></li>
+									<li><a href="./schedule_appointment.html">Marcações de Consultas</a></li>
+									<li><a href="#">Confirmar Marcação</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div id="content">
+					<h1>Artigo / Notícia</h1>
+
+					<article class="entry">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in velit adipiscing, vestibulum augue eu, viverra turpis. Ut feugiat vulputate massa eu cursus. Sed faucibus mattis dolor vitae cursus. Mauris volutpat ipsum ornare odio tincidunt, aliquet rutrum metus laoreet. Sed porta risus vel risus semper, sagittis fringilla nibh lobortis. Proin ac lobortis sapien. Quisque tempus dapibus enim, et pharetra metus sagittis eu. Cras vel interdum sem. Phasellus eget ante rutrum, varius lacus ornare, congue justo. Nam ut felis dolor. Nulla facilisi. Mauris facilisis auctor condimentum. Sed interdum justo et sapien ullamcorper, sed ullamcorper metus placerat.</p>
+						<p>Etiam mollis diam ut molestie euismod. Aliquam volutpat egestas ultricies. Aliquam augue sapien, euismod non ante sed, consequat porta nisi. Etiam fringilla accumsan nisl vitae venenatis. Etiam ultricies nibh et velit sodales volutpat non eget purus. Sed vitae imperdiet eros, et tristique arcu. Mauris dictum euismod ligula, ac tincidunt mauris rhoncus sit amet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur at metus non augue pretium fermentum. Praesent pharetra posuere mi interdum tempor. Pellentesque nec erat metus. Phasellus pulvinar diam ut risus convallis, vel dictum lacus convallis. Suspendisse fermentum condimentum erat, non pellentesque justo feugiat eget.</p>
+						<p>In lacinia mauris vitae varius viverra. Sed eu pretium erat, vitae elementum sapien. Ut tincidunt lacinia nisi, condimentum pharetra nulla venenatis sit amet. Proin vulputate mauris eu lectus imperdiet, sit amet cursus neque faucibus. Vestibulum tristique, dolor eu lobortis vestibulum, neque nunc blandit elit, vitae faucibus quam nisl eu velit. Maecenas luctus velit eu est consequat aliquet et at lacus. Curabitur mattis turpis sit amet nunc volutpat dignissim.</p>
+						<p>Nullam sed nulla non lorem dignissim faucibus. Suspendisse quam sapien, porttitor nec mauris eu, consectetur iaculis urna. Donec leo dui, adipiscing non erat viverra, hendrerit euismod eros. Etiam interdum tortor ut dictum iaculis. Nam facilisis eros ac tortor fermentum hendrerit sit amet et sem. In eu nisl dui. Maecenas facilisis sollicitudin est vitae viverra. Vivamus at euismod turpis. Nulla a varius elit. Integer sed aliquet leo, sit amet cursus quam. Proin tincidunt massa eros, et congue sapien aliquet ac. In sapien est, aliquet id quam ut, molestie congue erat.</p>
+						<p>Maecenas lectus lectus, gravida et vulputate quis, tincidunt ac leo. Aliquam euismod porttitor consequat. Nam eget ullamcorper arcu. Duis suscipit rutrum rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nec elementum dui, vitae interdum velit. In eleifend nulla lobortis, aliquet arcu vitae, ultrices turpis. Morbi accumsan adipiscing eros sed volutpat. Vestibulum congue risus a ultricies hendrerit. Proin cursus nunc id fringilla porta. Proin rhoncus, justo vel semper laoreet, elit sem lobortis odio, nec semper massa metus ac tortor.</p>
+					</article>
+				</div>
+			</div>
+					
+			<div id="footer-container">
+				<div id="footer">
+					<ul>
+						<li>
+							<p><strong>Localização</strong></p><br>
+							<p>
+								Santa Casa da Misericórdia de Leiria<br>
+								Instituição Particular de Solidariedade Social<br>
+								Rua Trindade Coelho&nbsp;&nbsp;Nº 8<br>
+								Apartado 1109<br>
+								2401-801 Leiria<br>
+								Portugal
+							</p>
+						</li>
+
+						<li>
+							<p><strong>Contactos</strong></p><br>
+							<p>Tel: 244 106 202</p>
+							<p>Fax: 244 106 298</p>
+							<p>Email: geral@misericordiadeleiria.pt</p><br>
+							<p>Latitude: 39.744026</p>
+							<p>Longitude: -8.804657</p>
+						</li>
+
+						<li>
+							<div id="googleapi">
+								<div id="map_canvas"></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

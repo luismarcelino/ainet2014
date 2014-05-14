@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>SCML - Santa Casa da Misericórdia de Leiria</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="shortcut icon" href="img/page_icon.ico">
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+        
+        $(document).ready(function() {
+
+            $("#logo").fadeIn(500);
+            $("#title_text").delay(250).fadeIn(1000);
+            $("#subtitle_text").delay(500).fadeIn(1000);
+            $("#btn_login").delay(750).fadeIn(1000);
+            $("#slideshow").delay(1000).fadeIn(1000);
+
+            $("#btn_login").click(function() {
+                $(this).toggleClass('active');
+                $(this).next('#dropdown_login').toggle();
+                return false;
+            });
+
+            $(function() {
+                var slideshow = $("#img_slideshow");
+                var images = [
+                    'img/slideshow1.jpg',
+                    'img/slideshow2.jpg',
+                    'img/slideshow3.jpg'
+                ];
+                var current = 0;
+
+                function nextSlide() {
+                    slideshow.fadeOut(function() {
+                        $(this).attr('src', images[current = ++current % images.length]).fadeIn();
+                    });
+                    setTimeout(nextSlide, 5000);
+                }
+                setTimeout(nextSlide, 5000);
+            });
+            
+        });
+    </script>
+    
+</head>
+
+<body>
+    <noscript>
+        This browser doesn't have JavaScript enabled or it does not support it. Please enable JavaScript or update your browser.
+    </noscript>
+    <div id="main_index">
+        <div id="header">
+            <div id="logo">
+                <a href="index.html"><img id="img_logo" src="img/logo.png" alt="Logotipo" /></a>
+            </div>
+            <div id="title">
+                <h1 id="title_text">Santa Casa da Misericórdia de Leiria</h1>
+                <h2 id="subtitle_text">O Lar</h2>
+                <div id="login">
+                    <button id="btn_login">Login</button>
+                    <div id="dropdown_login">
+                        <p class="login_labels">Nome de Utilizador</p>
+                        <form>
+                            <input class="login_fields" type="text" name="username" maxlength="20" size="20">
+                        </form>
+                        <p class="login_labels">Password</p>
+                        <form>
+                            <input class="login_fields" type="password" name="password">
+                        </form>
+                        <p></p>
+                            <form>
+                                <input id="submit_login_btn" type="button" name="submit_login" value="Autenticar">
+                            </form>
+                    </div>
+                </div>
+            </div>
+			<div id="breadcrumbs_container" class="breadcrumbs_especialidades" style="top: 226px;">
+				<div class="breadcrumb">
+					<a href="index.html" style="color: inherit; text-decoration: none;">Homepage</a>
+				</div>
+				<div class="breadcrumb" id="current_page" style="width: 230px;">
+					<a href="#" style="color: inherit; text-decoration: none;">Lar Nª Srª Encarnação</a>
+				</div>
+			</div>
+        </div>
+            <div id="inf_formulario" class="inf_formulario">
+                <p style="font-size: 30px; color: #0099ff; text-shadow: 0 0 5px #0099ff ">Sobre o Lar</p>
+            </div>
+
+        <div id="main_lar" class="panel_lar">
+            <form>
+            <br>
+                 <p class="inf_residencial">
+                    O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados com espaços ajardinados envolventes.<br><br>
+                    O edifício e seu equipamento são considerados do mais moderno e funcional que se tem feito até hoje no nosso país.<br><br>
+                    <b class="b_direito">Descrição sumária do Lar:
+                    </b><br>
+                </p>
+                    <ul id="ul" class="inf_residencial">
+                        <li >43 Quartos com 2 camas</li>
+                        <li>2 Enfermarias com 2 camas</li>
+                        <li>1 Gabinete médico</li>
+                        <li>5 Salas de estar e convívio</li>
+                        <li>1 Cozinha geral</li>
+                        <li>1 Lavandaria</li>
+                        <li>2 Refeitórios com zonas de estar</li>
+                        <li>1 Bar</li>
+                        <li>3 Garagens</li>
+                        <li>1 Cave para arrumos</li>
+                        <li>1 Capela</li>
+                        <li>e ainda, aquecimento central eléctrico, posto de transformação eléctrico com gerador de
+                        emergência, sistema de aquecimento de águas, etc.</li>
+                    </ul>
+                <p class="inf_residencial">
+                    <b class="b_direito">Caracterização da população utente
+                    </b><br><br>
+                    O Lar Nossa Senhora da Encarnação recebe pessoas idosas, de ambos os sexos, com dificuldades ou ausência de inserção no meio social e familiar e que expressam vontade em serem admitidas nesta instituição.<br><br>
+                    Uma vez integradas no Lar, pretendemos que aos nossos utentes seja prestado acolhimento e auxílio de qualidade, respeitando-se a Pessoa e o Indivíduo.<br><br>
+                    Apostando numa estratégia de combate ao isolamento, que envolve uma vasta área de actuação por parte dos profissionais que colaboram connosco, o nosso objectivo é proporcionar aos nossos idosos um equilíbrio biopsicosocial, assegurando-lhes os cuidadosde saúde e o seu tratamento integral.<br>
+                </p>
+                <p class="inf_residencial">
+                    <b class="b_direito">Actividades desenvolvidas pelos utentes do Lar N. S. da Encarnação
+                    </b><br><br>
+                    No Lar da Santa Casa da Misericórdia de Leiria, os nossos utentes participam em inúmeras
+                    actividades de animação sócio-educativa. Para além de visitas a locais de interesse
+                    histórico, promovem-se inúmeras iniciativas ligadas à arte e ao espírito criador dos nossos
+                    utentes, tendo como principal objectivo contribuir para o seu bem-estar psíquico e físico.<br>
+                </p>
+                <p class="inf_residencial">
+                    <b class="b_direito">O terreno
+                    </b><br><br>
+                    O terreno onde foi edificado o Lar N. S. da Encarnação (antiga praça de touros), pertenceu outrora a uma Associação Cultural e Recreativa de Leiria que por força dos seus estatutos quando da sua extinção ou inactividade o mesmo seria entregue à Santa Casa da Misericórdia de Leiria o que ocorreu nos finais dos anos trinta.<br>
+                </p>
+                <p class="inf_residencial">
+                    <b class="b_direito">Antecedentes à Construção
+                    </b><br><br>
+                   A actividade da Santa Casa da Misericórdia de Leiria esteve até 1975 concentrada na gestão do Hospital de Leiria de sua propriedade.<br><br>
+                    Quando da estatização hospitalar a Santa Casa da Misericórdia sentiu-se na obrigação de encarar outra actividade com fins de apoio aos mais carenciados.<br><br>
+                    Assim, nasceu a ideia de construir um Lar para idosos no terreno mais adequado (antiga praça de touros).<br><br>
+                    Como a Misericórdia não dispunha de fundos para tal foi obrigada a vender alguns terrenos de legados e contar apenas com a renda do edifício do Hospital.<br>
+                </p>
+                <p class="inf_residencial">
+                    <b class="b_direito">A construção
+                    </b><br><br>
+                   A construção do lar foi iniciada em 1 de Fevereiro de 1983 e concluída em 1989.<br>
+                </p>
+            </form>
+            <div>
+                <img src="img/valencia_lar.jpg" id="imagem_lar" alt="Imagem_lar">
+            </div>
+
+        </div>
+
+        <div id="footer">
+        </div>
+        <div id="credits">
+            <p>2014 Instituto Politécnico de Leiria Escola Superior de Tecnologia e Gestão • Desenvolvido por: Alexandre Olival, António Gonçalves, Elmar Spencer</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

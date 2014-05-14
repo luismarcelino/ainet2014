@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Creche</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta name="author" content="Pedro Silva">
+    <script type = "text/jscript" src = "js/functions.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+     <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    
+             <script type="text/javascript"> 
+            $(document).ready(function() {
+                var d1 = $("#menu-container");
+                var d2 = $("#top-bar-logo");
+                var d3 = $("#menu-op1");
+                var d4 = $("#menu-op6");
+                var pos = d1.position();                       
+                $(window).scroll(function() {
+                var windowpos = $(window).scrollTop();
+                if (windowpos >= pos.top) {
+                    d1.addClass("cola");
+                    d2.addClass("mostra");
+                    d3.addClass("bordas");
+                    d4.addClass("bordas");
+                } else {
+                    d1.removeClass("cola");
+                    d2.removeClass("mostra");
+                    d3.removeClass("bordas");
+                    d4.removeClass("bordas");
+                }
+            });
+        });
+        </script>
+    
+    
+</head>
+<body class = "background_image_creche" >
+    
+    
+     <div id="top-bar-container"> 
+        <div id="top-bar-conteudo">
+            <div id="top-bar-logo" class="top-bar-div">
+                <a target="_self" href="index.html">
+                    <img class="logo" src="images/santa_casa100.png" alt="Inicio" width="36" height="36">
+                </a>
+                <p class="top-bar-titulo1">Santa Casa</p> 
+                <p class="top-bar-titulo2">da Misericórdia de Leiria</p>
+            </div>
+            <div id="top-bar-space" class="top-bar-div"> </div>
+            <div id="top-bar-space2" class="top-bar-div"> </div>
+
+            <div id="top-bar-contatos" class="top-bar-div"> 
+                <a id="link-contatos"  class="propriedades-contato" title="Página Contatos" target="_self" href="contactos.html"> Contatos </a>
+            </div>
+            <div id="top-bar-pesquisa" class="top-bar-div"> 
+                <form>              
+                    <input type="search" id="pesquisa" class="ele-pesquisa" name=pesquisa placeholder="Insira pesquisa" required>   
+                    <input type="image" src="images/search_lupa32.png" alt="Pesquisa" id="submit-pesquisa" class="ele-pesquisa">
+
+                </form>
+            </div>
+            <div id="top-bar-login" class="top-bar-div">
+                <details> 
+                    <summary> Login </summary>
+                    <form>
+                        <label for="user"> </label>
+                        <input type="text" id="user" class="ele-login" maxlength="20" placeholder="Nome Utilizador" required>
+                        <label for="password"> </label>
+                        <input type="text" maxlength="20" id="password" class="ele-login" placeholder="Password" required>
+                        <input type="submit" id="submit"  class="btn-login" value="OK">
+                    </form>
+                </details>
+
+            </div>
+        </div>
+    </div>
+        
+    <!-- container principal -->
+    <div id="main-container">
+        <!-- logo e nome de instituicao -->
+        <div id="apresentacao-container"> 
+            <div id="apresentacao-logo">
+                <img id="large-logo" class="logo" src="images/santa_casa_sem_titulo.png" alt="logo" width="150" height="150">
+            </div>
+            <div id="apresentacao-nome">
+                <img id="large-titulo" class="logo" src="images/santa_casa_titulo.png" alt="logo" width="700" height="150">
+            </div>   
+        </div>
+        
+        <!-- menu do site -->
+        <div id="menu-container">             
+            <div id="menu-opcoes-container">
+                <div id="menu-op1" class="menu-op">  
+                    <a id="link-inicio" target="_self" href="index.html">  <p class="menu-main-item"> Inicio </p> </a>
+                </div>
+                <div id="menu-op2" class="menu-op"> <p class="menu-main-item"> Saúde </p>
+                    <ul class="op-menu">
+                        <li class="menu-item"><a href="lista_especialidades.html"> <p>Lista de Especialidades</p> </a></li>
+                        <li class="menu-item"><a href="corpo_clinico.html"> <p>Corpo Clínico</p> </a></li>
+                        <li class="menu-item"><a href="3.html"> <p>Artigos / Notícias Clínicas</p> </a></li>
+                    </ul> 
+                </div>
+                <div id="menu-op3" class="menu-op"> <p class="menu-main-item"> Cuidados Geriátricos </p>
+                    <ul class="op-menu">
+                        <li class="menu-item"><a href="creche.html"> <p>Residencial</p> </a></li>
+                        <li class="menu-item"><a href="creche.html"> <p>Lar</p> </a></li>
+                        <li class="menu-item"><a href="creche.html"> <p>Internamento</p> </a></li>
+                        <li class="menu-item"><a href="creche.html"> <p>Apoio Domiciliário</p> </a></li>
+                    </ul> 
+                </div>
+                <div id="menu-op4" class="menu-op"> 
+                    <a id="link-creche" target="_self" href="creche.html"> <p class="menu-main-item">Creche</p> </a>
+                </div>
+                <div id="menu-op5" class="menu-op"> 
+                    <a id="link-irmandade" target="_self" href="creche.html"> <p class="menu-main-item">Irmandade</p> </a>
+                </div>
+                <div id="menu-op6" class="menu-op"> 
+                    <a id="link-marcar-consulta" target="_self" href="marcacao_consulta.html"> <p class="menu-main-item">Marcar Consulta</p> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id = "creche-container">
+        <div id = "creche-noticias-apresentacao-container">
+            <div id = "creche-noticia-apresentacao-resumo"> 
+                <div id = "image-slider-weapper">
+                <ul id = "image_slider">
+                    <li><img src = "images/EspecialidadesApresentacao.png" alt = "imagem de apresentacao"></li>
+                    <li><img src = "images/EspecialidadesApresentacao2.png" alt = "imagem de apresentacao"></li>
+                    <li><img src = "images/EspecialidadesApresentacao3.png" alt = "imagem de apresentacao"></li>
+                    <li><img src = "images/EspecialidadesApresentacao4.png" alt = "imagem de apresentacao"></li>
+                </ul>
+            </div>
+            </div>
+              
+        </div>
+        
+        
+        <div id = "creche-detalhes-container"> 
+                <div id = "creche-informacao-detalhada-container">
+                    <div id = "creche-titulo-informacao"><p>CRECHE</p><hr></div>
+                    <div id = "creche-texto-introducao"><h2>A Creche</h2><p> Num edifício totalmente recuperado para o efeito e cumprindo todas as disposições legais, encontra-se já em funcionamento a Creche Casa Sanches.
+
+Com esta infra-estrutura, a Santa Casa da Misericórdia de Leiria vocaciona mais uma importante valência no âmbito das suas competências sociais, com uma capacidade instalada para 33 crianças, dos 0 aos 36 meses.
+
+Apostando em elevados padrões de qualidade, quer no que toca à execução da obra física, quer no domínio do equipamento instalado e dos recursos humanos, pretende-se que a creche se assuma em Leiria como um espaço de referência qualitativa na área pueril, contando com uma estrutura de recursos humanos empenhada e com experiência consolidada no domínio infantil.
+
+O modelo de funcionamento da Creche Casa Sanches tem por base o princípio da subsidiariedade, estatuído pela Segurança Social. A aposta neste tipo de valências pela Santa Casa da Misericórdia de Leiria pretende facilitar às famílias o ingresso das crianças neste tipo de instituições, em virtude da escassez das mesmas.</p></div> 
+                    <div id = "creche-titulo-noticias"><p>Noticias relacionadas com a creche</p></div>
+                    
+                    <div id = "creche_noticias_container"> 
+                        <div class = "noticia_creche_elemento_container">
+                            <div class = "noticia_creche_elemento_foto">
+                                    <img class = "image_size" src = "imagensPedro/news.png" alt = "imagem das noticias"/>
+                            </div>
+                            <div class = "noticia_creche_elemento_info">
+                                <h3>Noticia de Ultima hora 1</h3>
+                                <p class = "noticias_texto"><br/>dsa fds fd fdhs fds  ghsuhgfsdughufi dhgdsugh dush guds ghdsghd sgfuds ghds ghds ghuds hugdsh gudsf guds gsduf ghus ghusi gghusihgudfusghfhugshuhgu fdsfds fdsfdsfd dsaddasds  dfdsfdsfd fds fds fdfd sfdf  fdsjfdsf dfdsfds fd jdsfhdjs fds fdddddddddddd fdfdsfsd  fdsf ds fdsfdsf sf sdf ds fsd fdss fds f.<a href = "visualizar_artigo_noticia.html">Continuar a ler...</a></p>
+                            </div>
+                        </div>
+
+                       <div class = "noticia_creche_elemento_container">
+                            <div class = "noticia_creche_elemento_foto">
+                                    <img class = "image_size" src = "imagensPedro/news.png" alt = "imagem das noticias"/>
+                            </div>
+                            <div class = "noticia_creche_elemento_info">
+                                <h3>Noticia de Ultima hora 1</h3>
+                                <p class = "noticias_texto"><br/>dsa fds fd fdhs fds  ghsuhgfsdughufi dhgdsugh dush guds ghdsghd sgfuds ghds ghds ghuds hugdsh gudsf guds gsduf ghus ghusi gghusihgudfusghfhugshuhgu fdsfds fdsfdsfd dsaddasds  dfdsfdsfd fds fds fdfd sfdf  fdsjfdsf dfdsfds fd jdsfhdjs fds fdddddddddddd fdfdsfsd  fdsf ds fdsfdsf sf sdf ds fsd fdss fds f.<a href = "visualizar_artigo_noticia.html">Continuar a ler...</a></p>
+                            </div>
+                        </div>
+                                        
+                        <div class = "noticia_creche_elemento_container">
+                            <div class = "noticia_creche_elemento_foto">
+                                    <img class = "image_size" src = "imagensPedro/news.png" alt = "imagem das noticias"/>
+                            </div>
+                            <div class = "noticia_creche_elemento_info">
+                                <h3>Noticia de Ultima hora 1</h3>
+                                <p class = "noticias_texto"><br/>dsa fds fd fdhs fds  ghsuhgfsdughufi dhgdsugh dush guds ghdsghd sgfuds ghds ghds ghuds hugdsh gudsf guds gsduf ghus ghusi gghusihgudfusghfhugshuhgu fdsfds fdsfdsfd dsaddasds  dfdsfdsfd fds fds fdfd sfdf  fdsjfdsf dfdsfds fd jdsfhdjs fds fdddddddddddd fdfdsfsd  fdsf ds fdsfdsf sf sdf ds fsd fdss fds f.<a href = "visualizar_artigo_noticia.html">Continuar a ler...</a></p>
+                            </div>
+                        </div>
+                
+                    <div id = "creche-informacao-contactos-titulo"><p>Contactos úteis</p><hr></div>
+                    
+                    <div id = "creche-informacao-contactos-corpo-texto">
+                        <div class = "creche_contacto">
+                        <p>Creche "Casa Sanches"<br/>
+                            Rua Trindade Coelho, 10<br/>
+                            2410-189 LEIRIA<br/>
+                            Tel.: 244 100 009 • Tm: 915 190 685 • Fax: 244 106 298<br/>
+                            geral@misericordiadeleiria.pt<br/></p>
+                        </div>
+                    </div>
+                </div>
+            <div class = "right-margin"></div>  
+        </div>
+    </div>
+        </div>
+    <footer id="bottom-container"> 
+		<p class="text-footer">Feito por: Gonçalo Brás, Paulo Neves e Pedro Silva</p> 
+		<p class="text-footer">Aplicações para a Internet<br/>2014</p>
+	</footer>
+</body>
+</html>    

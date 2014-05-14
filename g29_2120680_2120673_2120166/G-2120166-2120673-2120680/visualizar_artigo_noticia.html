@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Visualizar Artigo Noticia</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<meta name="author" content="Goncalo Bras">
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+			var d1 = $("#menu-container");
+			var d2 = $("#top-bar-logo");
+			var d3 = $("#menu-op1");
+			var d4 = $("#menu-op6");
+			var pos = d1.position();					   
+			$(window).scroll(function() {
+				var windowpos = $(window).scrollTop();
+				if (windowpos >= pos.top) {
+					d1.addClass("cola");
+					d2.addClass("mostra");
+					d3.addClass("bordas");
+					d4.addClass("bordas");
+				} else {
+					d1.removeClass("cola");
+					d2.removeClass("mostra");
+					d3.removeClass("bordas");
+					d4.removeClass("bordas");
+				}
+			});
+		});
+		
+		$(window).scroll(function(e){
+		  parallax();
+		});
+		
+		function parallax(){
+		  var scrolled = $(window).scrollTop();
+		  $('.bg').css('top',-(scrolled*0.2)+'px');
+		}
+        
+        
+            function editarTexto(){
+                var texto= document.getElementById('artigo-completo').innerHTML;
+                alert(texto);
+                window.location.href='compor_artigo_noticia.html';
+                
+            }
+        
+            function eliminarTexto(){
+                if(confirm("Tem a certeza que pretende eliminar o artigo?")){
+                    alert("Artigo eliminado");
+                    window.location.href='index.html';
+                }
+            }
+    </script>
+</head>
+
+<body>
+   <!-- barra de topo -->
+    <div id="top-bar-container"> 
+		<div id="top-bar-conteudo">
+			<div id="top-bar-logo" class="top-bar-div">
+				<a target="_self" href="index.html">
+					<img class="logo" src="images/santa_casa100.png" alt="Inicio" width="36" height="36">
+				</a>
+				<p class="top-bar-titulo1">Santa Casa</p> 
+				<p class="top-bar-titulo2">da Misericórdia de Leiria</p>
+			</div>
+			<div id="top-bar-space" class="top-bar-div"> </div>
+			<div id="top-bar-space2" class="top-bar-div"> </div>
+
+			<div id="top-bar-contatos" class="top-bar-div"> 
+				<a id="link-contatos"  class="propriedades-contato" title="Página Contatos" target="_self" href="contatos.html"> Contatos </a>
+			</div>
+			<div id="top-bar-pesquisa" class="top-bar-div"> 
+				<form>				
+					<input type="search" id="pesquisa" class="ele-pesquisa" name=pesquisa placeholder="Insira pesquisa" required> 	
+					<input type="image" src="images/search_lupa32.png" alt="Pesquisa" id="submit-pesquisa" class="ele-pesquisa">
+
+				</form>
+			</div>
+			<div id="top-bar-login" class="top-bar-div">
+				<details> 
+					<summary> Login </summary>
+					<form>
+						<label for="user"> </label>
+						<input type="text" id="user" class="ele-login" maxlength="20" placeholder="Nome Utilizador" required>
+						<label for="password"> </label>
+						<input type="text" maxlength="20" id="password" class="ele-login" placeholder="Password" required>
+						<input type="submit" id="submit"  class="btn-login" value="OK">
+					</form>
+				</details>
+
+			</div>
+		</div>
+    </div>
+		
+    <!-- container principal -->
+	<div id="main-container">
+        <!-- logo e nome de instituicao -->
+        <div id="apresentacao-container"> 
+            <div id="apresentacao-logo">
+				<img id="large-logo" class="logo" src="images/santa_casa_sem_titulo.png" alt="logo" width="150" height="150">
+			</div>
+            <div id="apresentacao-nome">
+				<img id="large-titulo" class="logo" src="images/santa_casa_titulo.png" alt="logo" width="700" height="150">
+			</div>   
+        </div>
+        
+        <!-- menu do site -->
+        <div id="menu-container">             
+            <div id="menu-opcoes-container">
+				<div id="menu-op1" class="menu-op">  
+					<a id="link-inicio" target="_self" href="index.html">  <p class="menu-main-item"> Inicio </p> </a>
+				</div>
+				<div id="menu-op2" class="menu-op"> <p class="menu-main-item"> Saúde </p>
+					<ul class="op-menu">
+						<li class="menu-item"><a href="lista_especialidades.html"> <p>Lista de Especialidades</p> </a></li>
+						<li class="menu-item"><a href="corpo_clinico.html"> <p>Corpo Clínico</p> </a></li>
+						<li class="menu-item"><a href="3.html"> <p>Artigos / Notícias Clínicas</p> </a></li>
+					</ul> 
+				</div>
+				<div id="menu-op3" class="menu-op"> <p class="menu-main-item"> Cuidados Geriátricos </p>
+					<ul class="op-menu">
+						<li class="menu-item"><a href=".html"> <p>Residencial</p> </a></li>
+						<li class="menu-item"><a href=".html"> <p>Lar</p> </a></li>
+						<li class="menu-item"><a href=".html"> <p>Internamento</p> </a></li>
+						<li class="menu-item"><a href=".html"> <p>Apoio Domiciliário</p> </a></li>
+					</ul> 
+				</div>
+				<div id="menu-op4" class="menu-op"> 
+					<a id="link-creche" target="_self" href=".html"> <p class="menu-main-item">Creche</p> </a>
+				</div>
+				<div id="menu-op5" class="menu-op"> 
+					<a id="link-irmandade" target="_self" href=".html"> <p class="menu-main-item">Irmandade</p> </a>
+				</div>
+				<div id="menu-op6" class="menu-op"> 
+					<a id="link-marcar-consulta" target="_self" href="marcacao_consulta.html"> <p class="menu-main-item">Marcar Consulta</p> </a>
+				</div>
+			</div>
+        </div>
+        
+        <!-- Corpo do site -->
+        
+		<div class="body-container">
+                <div class="left-margin"></div>
+                <div class="right-margin"></div>
+                <div class="body-noticia">
+                    
+                    
+                    <div id="noticia-visualizar-topo">
+                    <input type="button" value="Editar" id="btn-editar" class="edit-buttons" onClick="editarTexto()"/>
+                    <input type="button" value="Eliminar" class="edit-buttons" onClick="eliminarTexto()" />
+                    </div>
+                <p class="titulo">Titulo</p>
+                <img src="images/noticia-exemplo.png" id="noticia-imagem" alt="imagem-noticia">
+                <p class="noticia-completa" id="artigo-completo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+
+Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.
+
+Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.
+
+Aliquam vehicula sem ut pede. Cras purus lectus, egestas eu, vehicula at, imperdiet sed, nibh. Morbi consectetuer luctus felis. Donec vitae nisi. Aliquam tincidunt feugiat elit. Duis sed elit ut turpis ullamcorper feugiat. Praesent pretium, mauris sed fermentum hendrerit, nulla lorem iaculis magna, pulvinar scelerisque urna tellus a justo. Suspendisse pulvinar massa in metus. Duis quis quam. Proin justo. Curabitur ac sapien. Nam erat. Praesent ut quam.
+
+Vivamus commodo, augue et laoreet euismod, sem sapien tempor dolor, ac egestas sem ligula quis lacus. Donec vestibulum tortor ac lacus. Sed posuere vestibulum nisl. Curabitur eleifend fermentum justo. Nullam imperdiet. Integer sit amet mauris imperdiet risus sollicitudin rutrum. Ut vitae turpis. Nulla facilisi. Quisque tortor velit, scelerisque et, facilisis vel, tempor sed, urna. Vivamus nulla elit, vestibulum eget, semper et, scelerisque eget, lacus. Pellentesque viverra purus. Quisque elit. Donec ut dolor.
+
+Duis volutpat elit et erat. In at nulla at nisl condimentum aliquet. Quisque elementum pharetra lacus. Nunc gravida arcu eget nunc. Nulla iaculis egestas magna. Aliquam erat volutpat. Sed pellentesque orci. Etiam lacus lorem, iaculis sit amet, pharetra quis, imperdiet sit amet, lectus. Integer quis elit ac mi aliquam pretium. Nullam mauris orci, porttitor eget, sollicitudin non, vulputate id, risus. Donec varius enim nec sem. Nam aliquam lacinia enim. Quisque eget lorem eu purus dignissim ultricies. Fusce porttitor hendrerit ante. Mauris urna diam, cursus id, mattis eget, tempus sit amet, risus. Curabitur eu felis. Sed eu mi. Nullam lectus mauris, luctus a, mattis ac, tempus non, leo. Cras mi nulla, rhoncus id, laoreet ut, ultricies id, odio. </p>
+                    <div class="noticia-rodape"><p class="noticia-data">25/12/1968</p>
+                    <p class="noticia-autor">asdrubal</p>
+                    </div>
+                </div>
+        </div>
+		
+        
+        
+					
+	</div>
+    <footer id="bottom-container"> 
+		<p class="text-footer">Feito por: Gonçalo Brás, Paulo Neves e Pedro Silva</p> 
+		<p class="text-footer">Aplicações para a Internet<br/>2014</p>
+	</footer>
+</body>
+</html>

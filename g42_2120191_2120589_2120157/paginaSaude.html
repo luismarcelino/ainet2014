@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="stylesheet" type="text/css" href="novo.Estilos.css" />
+	
+		<script type="text/javascript">
+			function especialidade(d) {
+				if (d == 1) {
+					document.getElementById('AlergologiaePneumologia').style.display="inline";
+					document.getElementById('Cardiologia').style.display="none";
+					document.getElementById('Oftalmologia').style.display="none";
+					document.getElementById('Pediatria').style.display="none";
+					document.getElementById('Urologia').style.display="none";
+				}
+				else{
+					if (d == 2) {
+						document.getElementById('AlergologiaePneumologia').style.display="none";
+						document.getElementById('Cardiologia').style.display="inline";
+						document.getElementById('Oftalmologia').style.display="none";
+						document.getElementById('Pediatria').style.display="none";
+						document.getElementById('Urologia').style.display="none";
+					}
+				else{
+					if (d == 3) {
+						document.getElementById('AlergologiaePneumologia').style.display="none";
+						document.getElementById('Cardiologia').style.display="none";
+						document.getElementById('Oftalmologia').style.display="inline";
+						document.getElementById('Pediatria').style.display="none";
+						document.getElementById('Urologia').style.display="none";
+				}
+				else{
+					if (d == 4) {
+						document.getElementById('AlergologiaePneumologia').style.display="none";
+						document.getElementById('Cardiologia').style.display="none";
+						document.getElementById('Oftalmologia').style.display="none";
+						document.getElementById('Pediatria').style.display="inline";
+						document.getElementById('Urologia').style.display="none";
+				}
+				else{
+					document.getElementById('AlergologiaePneumologia').style.display="none";
+					document.getElementById('Cardiologia').style.display="none";
+					document.getElementById('Oftalmologia').style.display="none";
+					document.getElementById('Pediatria').style.display="none";
+					document.getElementById('Urologia').style.display="inline";
+				}
+			}
+		}
+	}
+}
+</script>
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+		  function initialize() {
+			var map_canvas = document.getElementById('map_canvas');
+			var map_options = {
+			  center: new google.maps.LatLng(39.74025839999999,-8.802669400000013),
+			  zoom: 17,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(map_canvas, map_options)
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+</head>	
+	<body>
+		<div id="main">
+			<div id="menu">
+				<div id="menu2">
+					<div id="headerLogo" style="text-align: center;">
+						<a href="novo.html" > <img src="Imagens/santa_casa1000.png" 
+						title="Santa Casa da Misericórdia de Leiria" width="98x98" alt="Logo Santa Casa" /> </a>
+					</div>
+					<div id="headers">
+						<div id ="headerSaude" style="list-style-type: none;">
+							<span class="sub"><a href="paginaSaude.html" style="font-size: 17px; text-align: center;"><br/>Saúde</a>
+								<span >
+									<a href="#" style="font-size: 15px;">Hospital e Cliníca</a>
+									<a href="paginaSaude.html" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Marcação de Consultas</a>
+									<a href="#" style="font-size: 15px;">Confirmação Marcações</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerMedicos" style="list-style-type: none;">
+							<span class="sub"><a href="paginaMedicos.html" style="font-size: 17px; text-align: center;"><br/>Médico</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="paginaMedicos.html" style="font-size: 15px;">Detalhes do Médico</a>
+									<a href="#" style="font-size: 15px;">Horários das Consultas</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerPessoal" style="list-style-type: none;">
+							<span class="sub"><a href="#" style="font-size: 17px; text-align: center;"><br/>Pessoal</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Utentes</a>
+									<a href="#" style="font-size: 15px;">Médicos</a>
+									<a href="#" style="font-size: 15px;">Irmãos</a>
+									<a href="#" style="font-size: 15px;">Administrativo</a>
+									<a href="#" style="font-size: 15px;">Administrador</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerCreches" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Creches</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Todas as notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerIrmandade" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Irmandade</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Informação Pública</a>
+								</span>
+							</span>
+						</div>
+						<div id ="headerGeriatricos" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Cuidados Geriátricos</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Residencial</a>
+									<a href="#" style="font-size: 15px;">Lar</a>
+									<a href="#" style="font-size: 15px;">Internamento</a>
+									<a href="#" style="font-size: 15px;">Apoio domiciliário</a>
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>	
+								</span>
+							</span>
+						</div>							
+					</div>
+					<div id="headerRight">
+					<div id ="headerRegister" class="A" style="text-align: center">
+						<a href="registar.html" > <img src="Imagens/registar.png" 
+						title="Registar" width="100%" height="100%" alt="Logo registar" /></a>
+					</div>
+					<div id="headerLogin" class="A" style="text-align: center">
+						<a href="login.html" > <img src="Imagens/login.png" 
+						title="Entrar" width="100%" height="100%" alt="Logo Login" /> </a>
+					</div>
+					<div id="headerSearch">
+						<input type="text"/>
+					</div>
+				</div>	
+			</div>
+				<div id = "divCentral">
+					<div id="EspecialidadesTexto">
+						<p style="font-size:20px; font-family: Verdana; text-align: center;">Lista de Especialidades</p>
+					</div>
+					<div id="divEsquerda">
+						<div id="Especialidades">
+							<p style="font-size:18px; font-family: Verdana; text-align: center;">Especialidades</p>
+						</div>
+						<div id="ListaEspecialidades">
+							<div id="LE1"><a href="#" onmouseover="especialidade(1)"><br/><span class="PS1"> Alergologia e Pneumologia<br/><br/></span></a></div>
+							<div id="LE2"><a href="#" onmouseover="especialidade(2)"><br/><span class="PS1"> Cardiologia<br/><br/></span></a></div>
+							<div id="LE3"><a href="#" onmouseover="especialidade(3)"><br/><span class="PS1"> Oftalmologia<br/><br/></span></a></div>
+							<div id="LE4"><a href="#" onmouseover="especialidade(4)"><br/><span class="PS1"> Pediatria<br/><br/></span></a></div>
+							<div id="LE5"><a href="#" onmouseover="especialidade(5)"><br/><span class="PS1"> Urologia<br/><br/></span></a></div>
+						</div>	
+					</div>
+					<div id="divDireita">
+						<div id="AlergologiaePneumologia">
+							<p class="PS2">Alergologia e Pneumologia</p>
+							<p class="PS3">O CEDRA- Centro de Doenças Respiratórias e Alérgicas reúne, há cerca de 30 anos, especialistas habituados 
+							a trabalhar em equipa nos Hospitais da Universidade de Coimbra. Ao decidirem estender a sua actividade ao 
+							sector privado, empenharam-se em potenciar a sua formação científica, concretizada na experiência clínica, 
+							através de afinidades e sinergias que têm vindo a adquirir.</p>
+							<p class="PS3">Procuraram, deste modo, proporcionar uma oferta de todas as valências de diagnóstico e tratamento das
+							doenças respiratórias e das do foro alérgico. A renovação dos seus quadros tem procurado acompanhar os 
+							avanços mais recentes no domínio destas duas especialidades que têm muitas afinidades e pontos de encontro.</p>
+							<p class="PS3">Todos os profissionais médicos apresentam um rico curriculum académico, científico e clínico tendo, 
+							no seu conjunto, mais de um milhar de artigos publicados em livros e revistas editados em Portugal e no 
+							estrangeiro. São, ainda, regularmente convidados a proferir conferências e a apresentar os seus trabalhos 
+							em reuniões científicas nacionais e internacionais, nomeadamente nas organizadas pelas sociedades 
+							científicas das duas especialidades a que pertencem.</p>
+							<p class="PS3">Para além dos médicos, o Cedra tem um grupo estável de colaboradores nos campos do secretariado, das 
+							técnicas de saúde, da informática e da enfermagem que se notabilizam pela competência, disponibilidade e 
+							excelentes relações humanas.</p><br/>
+							
+							<p style="font-size: 18px; font-family: Verdana; text-align: center">Especialistas em Alergologia e Pneumologia</p>
+							<img class="centrar" src="Imagens/PauloGaspar.jpg" width="125px" height="125px" alt="Paulo Gaspar" /><br/>
+							<p class="PS1">Paulo Gaspar</p>
+							<a href="#" class="PS1">Ver Perfil</a>
+						</div>
+						<div id="Cardiologia" style="display:none">
+							<p class="PS2">Cardiologia</p>
+
+							<p class="PS3">A Cardiologia da Santa Casa da Misericórdia de Leiria está equipada com os mais modernos e sofisticados meios tecnológicos para 
+							prevenção, diagnóstico e tratamento das doenças do coração.</p>
+
+							<p class="PS3">Além das consultas de Cardiologia geral, proporciona consultas especializadas nas mais diversas áreas:</p>
+
+							<p class="PS3">- Consultas de hipertensão, que englobam as mais modernas e inovadoras técnicas de tratamento</p>
+							<p class="PS3">- Consultas de Pacing e Arritmologia, em estreita colaboração com o seu sector de Intervenção 
+							cardiovascular, proporcionando aos doentes todas as técnicas de controle deste tipo de patologia</p>
+							<p class="PS3">- Consultas de doença coronária, também em estreita colaboração com o seu sector de intervenção 
+							cardiovascular, proporcionando aos doentes, sempre que necessário, a efectiva resolução dos seus problemas, 
+							através de cateterismo e angioplastia coronária</p>
+							<p class="PS3">- Consultas de opinião, através do seu corpo clínico, sempre que qualquer paciente considere necessário 
+							ouvir uma segunda opinião sobre o seu problema</p>
+							<p class="PS3">- Consultas de prevenção cardiovascular, visando o controle de todos os factores de risco 
+							cardiovasculares, sempre tão presentes na sociedade actual</p>
+							
+							<p style="font-size: 18px; font-family: Verdana; text-align: center">Especialistas em Cardiologia</p>
+							<img class="centrar" src="Imagens/JorgeBatista.jpg" width="125px" height="125px" alt="Jorge Batista" /><br/>
+							<p class="PS1">Jorge Batista</p>
+							<a href="#" class="PS1">Ver Perfil</a>
+
+						</div>
+						<div id="Oftalmologia" style="display:none">
+							<p class="PS2">Oftalmologia</p>
+							<p class="PS3">A especialidade de Oftalmologia na Santa Casa da Misericórdia de Leiria oferece uma prestação assistencial completa que se 
+							reparte pela Consulta adulta e pediátrica, apoio ao Atendimento Médico Permanente na área da especialidade, 
+							realização de Exames Complementares de Diagnóstico, Cirurgia de ambulatório e Cirurgia com internamento.</p><br/><br/>
+
+							<p class="PS2">Especialistas em Oftalmologia</p>
+							<img class="centrar" src="Imagens/RuiFranco.jpg" width="125px" height="125px" alt="Rui Franco" /><br/>
+							<p class="PS1">Rui Franco</p>
+							<a href="#" class="PS1">Ver Perfil</a>
+						</div>
+						<div id="Pediatria" style="display:none">
+							<p class="PS2">Pediatria</p>
+							<p class="PS3">A Pediatria está vocacionada para o acompanhamento da saúde física, emocional e social das crianças e jovens.</p>
+							<p class="PS3">A Idealmed dispõe de uma unidade de Pediatria, que integra uma Maternidade, equipada com dois blocos de partos; 
+							conta também com uma equipa de profissionais de saúde, disponível 24 horas por dia. Esta especialidade integra 
+							ainda uma Unidade de Cuidados Especiais de Neonatologia.</p>
+							<p class="PS3">A Idealmed assegura, assim, o acompanhamento diferenciado de mães e recém-nascidos, garantindo todos os cuidados 
+							necessários.</p><br/><br/>
+
+							<p class="PS2">Especialistas em Pediatria</p>
+							<img class="centrar" src="Imagens/BeatrizOliveira.jpg" width="125px" height="125px" alt="Beatriz Oliveira" /><br/>
+							<p class="PS1">Beatriz Oliveira</p>
+							<a href="#" class="PS1">Ver Perfil</a>
+						</div>
+						<div id="Urologia" style="display:none">
+							<p class="PS2">Urologia</p>
+							<p class="PS3">A Urologia é uma vertente médica que tem assumido uma importância crescente, abrangendo múltiplas áreas.</p>
+							<p class="PS3">Serviços Ambulatório: Ecografia - renal, vesical, prostática, escrotal, peniana, doppler, procedimentos 
+							ecoguiados (biopsias, punções, nefrostomias); Estudos Urodinâmicos - fluxometria, cistometria, estudo 
+							pressão-fluxo, electromiografia, perfil uretral Estudos Endoscópicos - uretroscopia, cistoscopia, colocação 
+							e remoção de cateteres uretéricos (duplo J), possibilidade de usar aparelhos flexíveis Múltiplos pequenos 
+							procedimentos - colocação/substituição de sonda vesical transuretral ou supra-púbica, pensos, pequenas cirurgias, 
+							ressuturas, entre outras.</p>
+							<p class="PS3">Serviço de Internamento: Cirurgia dos genitais externos - circuncisão, hidrocelo, varicocelo, quisto 
+							do epidídimo, orquidectomia, curvatura peniana, incontinência urinária feminina; Cirurgia Endoscópica - 
+							resseção transuretral uretérica, vesical, prostática, litotrícia de contacto, uretrotomia, ureterotomia, 
+							(possibilidade de utilização de aparelhos flexíveis e LASER); Cirurgia aberta - renal, vesical, prostática, 
+							uretra, retroperitoneu, supra-renal, pélvica; Cirurgia Laparoscópica - renal, supra-renal, uretérica, 
+							retroperitoneal, prostática</p><br/><br/>
+
+							<p class="PS2">Especialistas em Urologia</p>
+							<img class="centrar" src="Imagens/RuteFonseca.jpg" width="125px" height="125px" alt="Rute Fonseca" /><br/>
+							<p class="PS1">Rute Fonseca</p>
+							<a href="#" class="PS1">Ver Perfil</a>
+						</div>
+					</div>
+				</div>
+				<div id = "footer">
+					<div id = "GPSFooter">
+						<div id="map_canvas"></div>
+					</div>
+					<div id = "dadosFooter">
+						<h3>Contactos</h3>
+						<p>Santa Casa da Misericórdia de Leiria</p>
+						<p>Instituição Particular de Solidariedade Social</p>
+						<p>Tel.: 244 106 202 • Fax: 244 106 298</p>
+						<p><a href="mailto:geral@misericordiadeleiria.pt" >geral@misericordiadeleiria.pt</a></p>
+					</div>
+					<div id = "referenciasFooter">
+						<div id = "maisInfoReferencias" >
+							<a href="contactos.html" > <img src="Imagens/info.png" 
+							title="Mais Contactos" width="45x45" alt="Logo mais info" /> </a>
+						</div>
+						<h3>Referências</h3>
+						<p>Lar Nossa Sra. da Encarnação</p>
+						<p>Clínica Médica e de Reabilitação</p>
+						<p>Hospital Dom Manuel de Aguiar</p>
+						<p>Creche "Casa Sanches"</p>
+						<p>Residencial XXI</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,322 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="stylesheet" type="text/css" href="novo.Estilos.css" />
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.watermarkinput.js"></script>	
+		
+		<script type="text/javascript">
+			function exibe(n) {
+				if (n == 1) {
+					document.getElementById('news1').style.display="inline";
+					document.getElementById('news2').style.display="none";
+					document.getElementById('news3').style.display="none";
+					document.getElementById('news4').style.display="none";
+				}
+				else{
+					if (n == 2) {
+						document.getElementById('news1').style.display="none";
+						document.getElementById('news2').style.display="inline";
+						document.getElementById('news3').style.display="none";
+						document.getElementById('news4').style.display="none";
+					}
+				else{
+					if (n == 3) {
+						document.getElementById('news1').style.display="none";
+						document.getElementById('news2').style.display="none";
+						document.getElementById('news3').style.display="inline";
+						document.getElementById('news4').style.display="none";
+				}
+				else{
+					document.getElementById('news1').style.display="none";
+					document.getElementById('news2').style.display="none";
+					document.getElementById('news3').style.display="none";
+					document.getElementById('news4').style.display="inline";
+				}
+			}
+		}
+	}
+</script>
+		<script type="text/javascript">
+			function mostra(b) {
+				if (b == 1) {
+					document.getElementById('topicoConteudoSaude').style.display="inline";
+					document.getElementById('topicoConteudoCreches').style.display="none";
+					document.getElementById('topicoConteudoIrmandade').style.display="none";
+					document.getElementById('topicoConteudoCuidadosGeriatricos').style.display="none";
+				}
+				else{
+					if (b == 2) {
+						document.getElementById('topicoConteudoSaude').style.display="none";
+						document.getElementById('topicoConteudoCreches').style.display="inline";
+						document.getElementById('topicoConteudoIrmandade').style.display="none";
+						document.getElementById('topicoConteudoCuidadosGeriatricos').style.display="none";
+					}
+				else{
+					if (b == 3) {
+						document.getElementById('topicoConteudoSaude').style.display="none";
+						document.getElementById('topicoConteudoCreches').style.display="none";
+						document.getElementById('topicoConteudoIrmandade').style.display="inline";
+						document.getElementById('topicoConteudoCuidadosGeriatricos').style.display="none";
+				}
+				else{
+					document.getElementById('topicoConteudoSaude').style.display="none";
+					document.getElementById('topicoConteudoCreches').style.display="none";
+					document.getElementById('topicoConteudoIrmandade').style.display="none";
+					document.getElementById('topicoConteudoCuidadosGeriatricos').style.display="inline";
+				}
+			}
+		}
+	}
+</script>
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+		  function initialize() {
+			var map_canvas = document.getElementById('map_canvas');
+			var map_options = {
+			  center: new google.maps.LatLng(39.74025839999999,-8.802669400000013),
+			  zoom: 17,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(map_canvas, map_options)
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+		
+</head>	
+	<body>
+		<div id="main">
+			<div id="menu">
+				<div id="menu2">
+					<div id="headerLogo">
+						<a href="novo.html" > <img src="Imagens/santa_casa1000.png" 
+						title="Santa Casa da Misericórdia de Leiria" width="98x98" alt="Logo Santa Casa" /> </a>
+					</div>
+					<div id="headers">
+						<div id ="headerSaude" style="list-style-type: none;">
+							<span class="sub"><a href="paginaSaude.html" style="font-size: 17px; text-align: center;"><br/>Saúde</a>
+								<span >
+									<a href="#" style="font-size: 15px;">Hospital e Cliníca</a>
+									<a href="paginaSaude.html" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Marcação de Consultas</a>
+									<a href="#" style="font-size: 15px;">Confirmação Marcações</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerMedicos" style="list-style-type: none;">
+							<span class="sub"><a href="paginaMedicos.html" style="font-size: 17px; text-align: center;"><br/>Médico</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="paginaMedicos.html" style="font-size: 15px;">Detalhes do Médico</a>
+									<a href="#" style="font-size: 15px;">Horários das Consultas</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerPessoal" style="list-style-type: none;">
+							<span class="sub"><a href="#" style="font-size: 17px; text-align: center;"><br/>Pessoal</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Utentes</a>
+									<a href="#" style="font-size: 15px;">Médicos</a>
+									<a href="#" style="font-size: 15px;">Irmãos</a>
+									<a href="#" style="font-size: 15px;">Administrativo</a>
+									<a href="#" style="font-size: 15px;">Administrador</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerCreches" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Creches</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Todas as notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerIrmandade" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Irmandade</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Informação Pública</a>
+								</span>
+							</span>
+						</div>
+						<div id ="headerGeriatricos" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Cuidados Geriátricos</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Residencial</a>
+									<a href="#" style="font-size: 15px;">Lar</a>
+									<a href="#" style="font-size: 15px;">Internamento</a>
+									<a href="#" style="font-size: 15px;">Apoio domiciliário</a>
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>	
+								</span>
+							</span>
+						</div>							
+					</div>
+					
+					<div id="headerRight">
+						<div id ="headerRegister" class="A">
+							<a href="registar.html" > <img src="Imagens/registar.png" 
+							title="Registar" width="100%" height="100%" alt="Logo registar" /></a>
+						</div>
+						<div id="headerLogin" class="A">
+							<a href="login.html" > <img src="Imagens/login.png" 
+							title="Entrar" width="100%" height="100%" alt="Logo Login" /> </a>
+						</div>
+						<div id="headerSearch">
+							<input type="text"/>
+						</div>
+					</div>	
+				</div>
+				<div id = "news">
+					<div id = "newsContent" >
+						<div id = "news1" >
+							<a href="news1.html" style="color: black;"><img src="Imagens/noticia1.jpg" width="350px" height="200px"
+							alt="Logo noticia1" style="float:right; padding-right:5%; padding-top: 3%;" /><br/>
+							<span class="cl1" style="font-size:20px; font-family: Verdana;">Hospital D. Manuel de Aguiar promove excelência inovadora em Imagiologia</span>
+							<br/><br/><span style="font-size:15px; font-family: Verdana;">O antigo hospital de Leiria localizado no centro da cidade, desactivado há largos anos, 
+								sofreu extensas obras de remodelação e modernização. Tendo reiniciado funções em Março 
+								passado com a abertura da unidade de cuidados continuados, integrada na rede nacional 
+								de cuidados continuados.</span></a>
+						</div>
+						<div id = "news2" style="display: none;">
+							<a href="news2.html" style="color: black;"><img src="Imagens/noticia2.jpg" width="350px" height="200px"
+							alt="Logo noticia2" style="float:right; padding-right:5%; padding-top: 3%;" /><br/>
+							<span class="cl1" style="font-size:20px; font-family: Verdana;">IPL Inovação em Saúde em discussão no congresso de Leiria</span>
+							<br/><br/><span style="font-size:14px; font-family: Verdana;">"Desafios e Inovação em Saúde" é o tema do 2.º Congresso Internacional de Saúde do 
+							Instituto Politécnico de Leiria (IP Leiria), que se realiza nos dias 9 e 10 de maio, 
+							no campus 2, e conta com mais de 600 participantes de vários pontos do mundo.</span></a>
+						</div>
+						<div id = "news3" style="display: none;">
+							<a href="news3.html" style="color: black;"><img src="Imagens/noticia3.jpg" width="350px" height="200px"
+							alt="Logo noticia2" style="float:right; padding-right:5%; padding-top: 3%;" /><br/>
+							<span class="cl1" style="font-size:20px; font-family: Verdana;">Seminários acolhem retiros em Leiria e Fátima</span>
+							<br/><br/><span style="font-size:14px; font-family: Verdana;">Um será dedicado a casais. Outro vai decorrer com um tema ligado a Nossa Senhora 
+							de Fátima. É este o ponto de partida para dois retiros que vão realizar-se no Seminário 
+							de Leiria e no Seminário dos Missionários da Consolata, em Fátima.</span></a>
+						</div>
+						<div id = "news4" style="display: none;">
+							<a href="news4.html" style="color: black;"><img src="Imagens/noticia4.JPG" width="350px" height="200px"
+							alt="Logo noticia2" style="float:right; padding-right:5%; padding-top: 3%;" /><br/>
+							<span class="cl1" style="font-size:20px; font-family: Verdana;">Centro de Medicina Física e de Reabilitação</span>
+							<br/><br/><span style="font-size:14px; font-family: Verdana;">Com este serviço, a Santa Casa da Misericórdia de Leiria pretende responder ao nível 
+							da identificação e da maximização do potencial de movimento, no contexto da promoção, 
+							prevenção, tratamento e reabilitação dos seus utentes. </span></a>
+						</div>
+					</div>
+					<div id = "newsRight">
+						<div id="noticia1">
+							<a href="#" onclick="exibe(1)"><img src="Imagens/noticia1.jpg" width="100%" 
+							height="100%" alt="Logo noticia1"/></a>
+						</div>
+						<div id="noticia2">
+							<a href="#" onclick="exibe(2)"><img src="Imagens/noticia2.jpg" width="100%" 
+							height="100%" alt="Logo noticia2"/></a>
+						</div>
+						<div id="noticia3">
+							<a href="#" onclick="exibe(3)"><img src="Imagens/noticia3.jpg" width="100%" 
+							height="100%" alt="Logo noticia3"/></a>
+						</div>
+						<div id="noticia4">
+							<a href="#" onclick="exibe(4)"><img src="Imagens/noticia4.JPG" width="100%" 
+							height="100%" alt="Logo noticia4"/></a>
+						</div>
+					</div>
+				</div>
+				<div id = "center">
+					<div id = "pubs">
+						<div id = "publicacao1">
+							<br/><a href="publicacao1.html"><span class="cl2" style="color:black; font-family: Verdana; font-size: 18px;">A Residencial</span>
+							<br/><img src="Imagens/pub1.jpg" title="A residencia" width="130px" height="115px" style="float:right; padding-right: 4%;" 
+							alt="Imagem Residencia" /> <span style="color:black; font-family: Verdana; font-size:15px;">Já se encontra em atividade, a Residencial Assistida XXI.</span></a>
+						</div>
+						<div id = "publicacao2">
+							<br/><a href="publicacao2.html"><span class="cl2" style="color:black; font-family: Verdana; font-size: 18px;">O Lar</span>
+							<br/><img src="Imagens/pub2.jpg" title="O Lar" width="130px" height="115px" style="float:right; padding-right: 4%;" 
+							alt="Imagem Lar" /> <span style="color:black; font-family: Verdana; font-size:15px;">O Lar N. S. da Encarnação ocupa uma área de construção de 5.000 metros quadrados.</span></a>	
+						</div>
+						<div id = "publicacao3">
+							<br/><a href="publicacao3.html"><span class="cl2" style="color:black; font-family: Verdana; font-size: 18px;">A Creche</span>
+							<br/><img src="Imagens/pub3.jpg" title="A Creche" width="130px" height="115px" style="float:right; padding-right: 4%;" 
+							alt="Imagem Creche" /> <span style="color:black; font-family: Verdana; font-size:15px;">Num edifício totalmente recuperado já se encontra em atividade a Creche Casa Sanches.</span></a>
+						</div>
+					</div>
+					<div id="topicosCenter" >
+						<div id="topicosCenterTexto">
+							<h3 style="color:black; font-family: Verdana; margin-bottom: 5px;">Venha conhecer as nossas Valências</h3>
+						</div>
+						<div id="topicosCenterImagens">
+							<div id="centerSaude">
+								<a href="#" onmouseover="mostra(1)"><img src="imagens/areaSaude.png" title="Saúde" width="99%" height="99%"
+								alt="Imagem Saúde" /></a>
+							</div>
+							<div id="centerCreches">
+								<a href="#" onmouseover="mostra(2)"><img src="imagens/areaCreches.png" title="Creches" width="99%" height="99%"
+								alt="Imagem Creches" /></a>
+							</div>
+							<div id="centerIrmandade">
+								<a href="#" onmouseover="mostra(3)"><img src="imagens/areaIrmandade.png" title="Irmandade" width="99%" height="99%"
+								alt="Imagem Irmandade" /></a>
+							</div>
+							<div id="centerCuidadosGeriatricos">
+								<a href="#" onmouseover="mostra(4)"><img src="imagens/areaCuidadosGeriatricos.png" title="Cuidados Geriatricos" width="99%" height="99%"
+								alt="Imagem Cuidados Geriatricos" /></a>
+							</div>
+						</div>
+						<div id="topicosCenterConteudo">
+							<div id = "topicoConteudoSaude" >
+								<br/><br/><br/><a href="ConteudoSaude.html"><span style="font-size:35px; text-align: center;">Visite o nosso Hospital</span>
+								<br/><br/><img src="imagens/frente1.jpg" title="Hospital" width="55%" height="50%" alt="Imagem Saúde"/></a>
+							</div>
+							<div id = "topicoConteudoCreches" style="display: none;">
+								<br/><br/><br/><a href="ConteudoSaude.html"><span style="font-size:35px; text-align: center;">Fique a conhecer a nossa Creche e espreite as nossas instalações</span>
+								<br/><br/><img src="imagens/imagemCreche.jpg" title="Creche" width="45%" height="40%" alt="Imagem Creche"/></a>
+							</div>
+							<div id = "topicoConteudoIrmandade" style="display: none;">
+								<br/><br/><br/><a href="ConteudoIrmandade.html"><span style="font-size:35px; text-align: center;">Conheça os nossos Irmãos</span>
+								<br/><br/><img src="imagens/irmandade2.jpg" title="Irmandade" width="55%" height="50%" alt="Imagem Irmandade"/></a>
+							</div>
+							<div id = "topicoConteudoCuidadosGeriatricos" style="display: none;">
+								<br/><br/><br/><a href="ConteudoCuidadosGeriatricos.html"><span style="font-size:35px; text-align: center;">Espreite as nossas instalações para com os Cuidados Geriatricos</span>
+								<br/><br/><img src="imagens/cuidadosGeriatricos2.jpg" title="Cuidados Geriatricos" width="55%" height="50%" alt="Imagem Cuidados"/></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id = "footer">
+					<div id = "GPSFooter">
+						<div id="map_canvas"></div>
+					</div>
+					<div id = "dadosFooter">
+						<h3>Contactos</h3>
+						<p>Santa Casa da Misericórdia de Leiria</p>
+						<p>Instituição Particular de Solidariedade Social</p>
+						<p>Tel.: 244 106 202 • Fax: 244 106 298</p>
+						<p><a href="mailto:geral@misericordiadeleiria.pt" >geral@misericordiadeleiria.pt</a></p>
+					</div>
+					<div id = "referenciasFooter">
+						<div id = "maisInfoReferencias" >
+							<a href="contactos.html" > <img src="Imagens/info.png" 
+							title="Mais Contactos" width="45x45" alt="Logo mais info" /> </a>
+						</div>
+						<h3>Referências</h3>
+						<p>Lar Nossa Sra. da Encarnação</p>
+						<p>Clínica Médica e de Reabilitação</p>
+						<p>Hospital Dom Manuel de Aguiar</p>
+						<p>Creche "Casa Sanches"</p>
+						<p>Residencial XXI</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

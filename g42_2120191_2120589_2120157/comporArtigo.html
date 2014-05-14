@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="stylesheet" type="text/css" href="novo.Estilos.css" />
+		
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.watermarkinput.js"></script>	
+		<script type="text/javascript" src="js/tinymce/jscripts/tiny_mce/tiny_mce.js"></script>
+		<script type="text/javascript">
+			tinyMCE.init({
+					mode : "specific_textareas",
+					editor_selector : "mceEditor",
+					theme : "simple"
+			});
+		</script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+		  function initialize() {
+			var map_canvas = document.getElementById('map_canvas');
+			var map_options = {
+			  center: new google.maps.LatLng(39.74025839999999,-8.802669400000013),
+			  zoom: 17,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(map_canvas, map_options)
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
+
+</head>	
+	<body>
+		<div id="main">
+			<div id="menu">
+				<div id="menu2">
+					<div id="headerLogo" style="text-align: center;">
+						<a href="novo.html" > <img src="Imagens/santa_casa1000.png" 
+						title="Santa Casa da Misericórdia de Leiria" width="98x98" alt="Logo Santa Casa" /> </a>
+					</div>
+					<div id="headers">
+						<div id ="headerSaude" style="list-style-type: none;">
+							<span class="sub"><a href="paginaSaude.html" style="font-size: 17px; text-align: center;"><br/>Saúde</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Hospital e Cliníca</a>
+									<a href="paginaSaude.html" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Marcação de Consultas</a>
+									<a href="#" style="font-size: 15px;">Confirmação Marcações</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerMedicos" style="list-style-type: none;">
+							<span class="sub"><a href="paginaMedicos.html" style="font-size: 17px; text-align: center;"><br/>Médico</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="paginaMedicos.html" style="font-size: 15px;">Detalhes do Médico</a>
+									<a href="#" style="font-size: 15px;">Horários das Consultas</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerPessoal" style="list-style-type: none;">
+							<span class="sub"><a href="#" style="font-size: 17px; text-align: center;"><br/>Pessoal</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Utentes</a>
+									<a href="#" style="font-size: 15px;">Médicos</a>
+									<a href="#" style="font-size: 15px;">Irmãos</a>
+									<a href="#" style="font-size: 15px;">Administrativo</a>
+									<a href="#" style="font-size: 15px;">Administrador</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerCreches" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Creches</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Todas as notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerIrmandade" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Irmandade</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Informação Pública</a>
+								</span>
+							</span>
+						</div>
+						<div id ="headerGeriatricos" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Cuidados Geriátricos</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Residencial</a>
+									<a href="#" style="font-size: 15px;">Lar</a>
+									<a href="#" style="font-size: 15px;">Internamento</a>
+									<a href="#" style="font-size: 15px;">Apoio domiciliário</a>
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>	
+								</span>
+							</span>
+						</div>							
+					</div>
+					<div id="headerRight">
+						<div id ="headerRegister" >
+							<a href="registar.html" > <img src="Imagens/registar.png" 
+							title="Registar" width="100%" height="100%" alt="Logo registar" /></a>
+						</div>
+						<div id="headerLogin">
+							<a href="login.html" > <img src="Imagens/login.png" 
+							title="Entrar" width="100%" height="100%" alt="Logo Login" /> </a>
+						</div>
+						<div id="headerSearch">
+							<input type="text"/>
+						</div>
+					</div>	
+				</div>
+				<div id="centroCompor">
+					<div id="comporForm">
+						<form method="post" action="">
+							<fieldset id="fieldset2">
+						<label>Titulo:</label>
+							<input type="text" name="tituloCompor" id="tituloCompor" value=""/> <br/>
+						<label>Resumo:</label>
+							<br/><textarea id="resumoArtigo" rows="7" cols="100">
+							
+							</textarea> <br/>
+						<label>Corpo:</label>
+							<textarea id="bodyArtigo" class="mceEditor" rows="14" cols="100"> 
+							
+							</textarea>
+							<br/>
+							<label>Imagem:</label>
+							<input type="file" /> <br/>
+						<label>Autores:</label> <br/> 
+						<select multiple="multiple" id="autoresCompor" >
+								<option value="med1">Jorge Batista</option>
+								<option value="med2">Beatriz Oliveira</option>
+								<option value="med3">Rute Fonseca</option>
+								<option value="med4">Paulo Gaspar</option>
+								<option value="med5">Rui Franco</option>
+							</select> <br/> 
+						<label>Data:</label>
+							<input type="text" name="diaArt" id="dia" value="" maxlength="2" size="2"/>
+							<input type="text" name="mesArt" id="mes" value="" maxlength="2" size="2"/>
+							<input type="text" name="anoArt" id="ano" value="" maxlength="4" size="4"/>
+							<br/> 
+						<label>Especialidade/Valencia:</label>
+							<select name="especialidade" >
+								<option value="esp1">Alergologia e Pneumologia</option>
+								<option value="esp2">Cardiologia</option>
+								<option value="esp3">Oftalmologia</option>
+								<option value="esp4">Pediatria</option>
+								<option value="esp5">Urologia</option>
+								<option value="esp6">Creche</option>
+								<option value="esp7">Cuidados Geriatricos</option>
+								<option value="esp8">Irmandade</option>
+							</select> 
+							<br/>
+						<input type="reset" name="reset" value="Reset"/> 
+						<input type="submit" name="submit" value="Enviar"/>
+						</fieldset>
+						</form>
+					</div>
+				</div>
+				<div id = "footer">
+					<div id = "GPSFooter">
+						<div id="map_canvas"></div>
+					</div>
+					<div id = "dadosFooter">
+						<h3>Contactos</h3>
+						<p>Santa Casa da Misericórdia de Leiria</p>
+						<p>Instituição Particular de Solidariedade Social</p>
+						<p>Tel.: 244 106 202 • Fax: 244 106 298</p>
+						<p><a href="mailto:geral@misericordiadeleiria.pt" >geral@misericordiadeleiria.pt</a></p>
+					</div>
+					<div id = "referenciasFooter">
+						<div id = "maisInfoReferencias" >
+							<a href="contactos.html" > <img src="Imagens/info.png" 
+							title="Mais Contactos" width="45x45" alt="Logo mais info" /> </a>
+						</div>
+						<h3>Referências</h3>
+						<p>Lar Nossa Sra. da Encarnação</p>
+						<p>Clínica Médica e de Reabilitação</p>
+						<p>Hospital Dom Manuel de Aguiar</p>
+						<p>Creche "Casa Sanches"</p>
+						<p>Residencial XXI</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,881 @@
+* {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
+}
+#header {
+    position: absolute;
+    height: 10%;
+    width: 99.9%;
+    border: 1px solid;
+    border-color: transparent transparent #0099ff transparent;
+    margin: 0;
+}
+#logo {
+    display: none;
+    position: absolute;
+}
+#img_logo {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+}
+#title {
+    position: absolute;
+    width: 70%;
+    height: 75%;
+    left: 20%;
+}
+#title_text {
+    display: none;
+    font-family: Helvetica;
+    color: #0099ff;
+    font-size: 40px;
+    text-shadow: 0 0 5px #0099ff;
+    position: absolute;
+    top: 0px;
+    width: 500px;
+    left: 20px;
+}
+#subtitle_text {
+    display: none;
+    font-family: Helvetica;
+    font-size: 300%;
+    position: absolute;
+    right: 150px;
+    top: 70px;
+    color: #c6c6a9;
+}
+#btn_login {
+    display: none;
+    height: 30px;
+    width: 70px;
+    background: transparent;
+    border: 1px solid #3866a3;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: normal;
+    line-height: 30px;
+    text-align: center;
+    color: #0099ff;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+#btn_login:hover {
+    box-shadow: 0px 0px 20px #0099ff;
+}
+#btn_login:active {
+    box-shadow: none;
+    text-shadow: 0px 0px 20px #0099ff;
+}
+#dropdown_login {
+    z-index: 1;
+    display: none;
+    position: absolute;
+    height: 220px;
+    width: 300px;
+    background: white;
+    color: black;
+    border: 1px solid;
+    right: 0px;
+    top: 45.5px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #0099ff;
+    text-align: center;
+    box-shadow: 0px 0px 20px #0099ff;
+}
+#panel_divs {
+    margin: auto;
+    height: 100%;
+    width: 1270px;
+    position: absolute;
+}
+#panel_container {
+    position: absolute;
+    height: 45%;
+    width: 99.9%;
+    top: 32%;
+    margin: 0;
+    border: 1px solid;
+    border-color: transparent transparent #0099ff transparent;
+    text-align: center;
+}
+.panels {
+    width: 225px;
+    height: 450px;
+    margin-right: 0.1%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0099ff;
+    margin-top: 2%;
+    text-align: center;
+    float: left;
+}
+.panel_btns {
+    height: 50px;
+    width: 200px;
+    margin: 3px;
+    margin-left: -7px;
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #0099ff;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #0099ff;
+    display: inline;
+}
+.panel_btns:hover {
+    text-shadow: 0px 0px 20px #0099ff;
+}
+.panel_title {
+    font-family: Helvetica;
+    color: #0099ff;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 20px;
+}
+.panel_formulario {
+    width: 225px;
+    height: 450px;
+    margin-right: 0.1%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0099ff;
+    margin-top: 2%;
+    text-align: justify;
+    float: left;
+}
+.panel_residencial {
+    width: 25px;
+    height: 450px;
+    margin-right: 0.1%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0099ff;
+    margin-top: 2%;
+    text-align: justify;
+}
+.panel_lar {
+    width: 25px;
+    height: 450px;
+    margin-right: 0.1%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0099ff;
+    margin-top: 2%;
+    text-align: justify;
+}
+#slideshow {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    top: 10.5%;
+    margin: 0;
+    text-align: center;
+    display: none;
+}
+#img_slideshow {
+    margin: 0;
+    width: 1270px;
+    height: 500px;
+}
+#services_panel {
+    top: 24%;
+    position: absolute;
+    margin: 0;
+    width: 30%;
+    text-align: left;
+    height: 60%;
+}
+#services_panel a {
+    text-decoration: none;
+    color: #0099ff;
+}
+#title_div {
+    position: absolute;
+    top: 15%;
+    width: 20%;
+    height: 10%;
+}
+#text {
+    font-family: Helvetica;
+    color: #0099ff;
+    font-size: 60px;
+    text-shadow: 0 0 5px #0099ff;
+    margin-left: 15%;
+    top: 25%;
+    position: absolute;
+}
+#content_div {
+    left: 450px;
+    position: absolute;
+    top: 24.5%;
+    display: none;
+    border: 1px solid;
+    width: 750px;
+    height: 60%;;
+    background-color: #c6c6a9;
+    box-shadow: 0px 0px 20px #c6c6a9;
+}
+.service_div {
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid #0099ff;
+    background-color: white;
+    font-family: Helvetica;
+    color: #0099ff;
+    margin-top: 10px;
+}
+.service_div:active {
+    background-color: grey;
+}
+#text {
+    font-size: 20px;
+    font-family: Helvetica;
+    width: 600px;
+}
+#footer {
+    position: absolute;
+    height: 490px;
+    width: 100%;
+    margin: 0;
+    top: 1750px;
+}
+.login_labels {
+    font-family: Helvetica;
+    border: 1px solid;
+    border-color: transparent transparent #0099ff transparent;
+}
+.login_fields {
+    margin: 0;
+}
+#submit_login_btn {
+    width: 120px;
+    height: 30px;
+}
+#main_index {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 1270px;
+    height: 2250px;
+    position: relative;
+    margin: auto;
+}
+#main_services {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 1270px;
+    height: 1400px;
+    position: relative;
+    margin: auto;
+}
+#main_medico {
+    width: 750px;
+    height: 750px;
+    position: relative;
+}
+#main_especialidade {
+    width: 750px;
+    height: 1200px;
+}
+#main_formulario_consulta {
+    position: absolute;
+    height: 60%;
+    width: 59.9%;
+    margin: 0;
+    top: 23%;
+    margin-left: 20%;
+}
+#main_residencial {
+    position: absolute;
+    height: 35%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#main_creche {
+    position: absolute;
+    height: 29%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#main_lar {
+    position: absolute;
+    height: 75%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#imagem_lar {
+    position: absolute;
+    height: 96%;
+    width: 17.5%;
+    margin-left: 70%;
+    margin-right: 30%;
+    position: absolute;
+    top: 2%;
+}
+#imagem_creche {
+    position: absolute;
+    height: 76%;
+    width: 17.5%;
+    margin-left: 70%;
+    margin-right: 30%;
+    position: absolute;
+    top: 5%;
+}
+#inf_formulario {
+    position: absolute;
+    top: 14%;
+    height: 7%;
+    width: 59.9%;
+    margin: 0;
+    margin-left: 20%;
+}
+#imagem_residencial {
+    position: absolute;
+    margin-left: 70%;
+    margin-right: 30%;
+    position: absolute;
+    top: 5%;
+}
+#inf_residencial {
+    position: absolute;
+    top: 12%;
+    height: 7%;
+    width: 59.9%;
+    float: left;
+    margin: 0;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.inf_residencial {
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 30%;
+    margin-left: 10%;
+}
+.inf_formulario {
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 0.1%;
+}
+.formulario_labels {
+    font-family: Helvetica;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: transparent transparent #0099ff transparent;
+    margin-left: 30px;
+}
+.formulario_labels2 {
+    font-family: Helvetica;
+    font-size: 20px;
+    border: 1px solid;
+    border-color: transparent transparent #0099ff transparent;
+    margin-left: 30px;
+}
+.formulario_text2 {
+    text-align: justify;
+    margin-left: 50px;
+    margin-top: 1%;
+    width: 63%;
+    height: 30px;
+}
+.formulario_text {
+    margin-left: 50px;
+    margin-top: 1%;
+    width: 63%;
+    height: 30px;
+    text-align: justify;
+}
+.formulario_btns {
+    height: 30px;
+    width: 120px;
+    margin: 2px;
+    margin-left: 150px;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #0099ff;
+    display: inline;
+}
+#botao_marcar_consulta {
+    width: 100px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 15px;
+    top: 1%;
+    position: absolute;
+    left: 70%;
+    text-align: center;
+    font-family: Helvetica;
+    color: #0099ff;
+}
+#news_panel {
+    width: 735px;
+}
+.news_div {
+    float: left;
+    width: 325px;
+    height: 170px;
+    display: block;
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid #3866a3;
+}
+#news_container {
+    height: 365px;
+    width: 735px;
+    margin: 0;
+    position: absolute;
+    top: 95px;
+}
+.news_source_title {
+    font-family: Helvetica;
+    color: #0099ff;
+    margin: 0;
+}
+.news_source_div {
+    text-align: center;
+}
+.news_content_div {
+    height: 145px;
+    width: 325px;
+    margin: 0;
+    border-top: 1px solid #0099ff;
+    text-align: justify;
+    word-wrap: break-word;
+}
+.news_content {
+    margin: 0;
+    margin-left: 2px;
+    margin-right: 2px;
+    font-family: arial;
+    font-size: 13px;
+}
+.news_title {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+.news_info {
+    font-family: Arial;
+    font-size: 11px;
+}
+#publication_panel {
+    width: 1227px;
+    height: 500px;
+}
+#publications_container {
+    height: 80%;
+}
+.publication_div {
+    float: left;
+    width: 383px;
+    height: 400px;
+    display: block;
+    overflow: hidden;
+    margin: 5px;
+    border: 1px solid #3866a3;
+}
+.publication_header {
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: 0;
+    border-bottom: 1px solid #3866a3;
+}
+.publication_content {
+    margin: 0;
+    text-align: justify;
+    word-wrap: break-word;
+    font-family: Arial;
+}
+.publication_expand {
+    margin: 0;
+    text-align: right;
+    font-family: Arial;
+    font-size: 13px;
+}
+.panel_btns_container {
+    position: absolute;
+    margin: auto;
+    width: inherit;
+    top: 100px;
+}
+#contacts_panel {
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 595px;
+    margin: 10px;
+}
+#map_panel {
+    float: left;
+    display: block;
+    overflow: hidden;
+    width: 595px;
+    margin: 10px;
+}
+#google_map_frame {
+    width: 550px;
+    height: 350px;
+    margin: 0;
+    border: 0;
+}
+#contacts_container {
+    height: 80%;
+}
+.contact_div {
+    text-align: center;
+    float: left;
+    width: 265px;
+    height: 110px;
+    margin: 5px;
+    display: block;
+    overflow: hidden;
+    border: 1px solid #3866a3;
+}
+#contact_scml {
+    font-size: 12px;
+}
+#contact_larnse {
+    font-size: 16px;
+}
+#contact_clinicamr {
+    font-size: 16px;
+}
+#contact_hospitaldma {
+    font-size: 12px;
+}
+#contact_crechecs {
+    font-size: 17px;
+}
+#contact_residencial {
+    font-size: 20px;
+}
+#credits {
+    font-family: Helvetica;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 98.5%;
+    width: inherit;
+    border-top: 1px solid #3866a3;
+}
+.b_direito {
+    margin-left: -100px;
+    margin: 0px;
+}
+#ul {
+    margin-left: 15%;
+}
+#main_formulario {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    width: 1270px;
+    height: 1500px;
+    position: relative;
+    margin: auto;
+}
+#footer_form {
+    position: absolute;
+    height: 490px;
+    width: 100%;
+    margin: 0;
+    top: 175px;
+}
+#credits_form {
+    font-family: Helvetica;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 98%;
+    width: inherit;
+    border-top: 1px solid #3866a3;
+}
+#header_form {
+    position: absolute;
+    height: 12%;
+    width: 99.9%;
+    border: 1px solid;
+    border-color: transparent transparent #0099ff transparent;
+    margin: 0;
+}
+#foto_medico {
+    top: 5%;
+    position: absolute;
+}
+#bio_text {
+    top: 8%;
+    position: absolute;
+    left: 40%;
+}
+#img_medico {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+.news_medic {
+    height: 145px;
+    width: 325px;
+    margin: 0;
+    border-top: 1px solid #0099ff;
+    text-align: justify;
+    word-wrap: break-word;
+    top: 60%;
+    position: absolute;
+    left: 1%;
+}
+#titulo_news_med {
+    font-size: 30px; 
+    top: 50%; 
+    position: absolute;
+    left: 7%;
+    font-family: Helvetica;
+}
+.news_medic2 {
+    height: 145px;
+    width: 325px;
+    margin: 0;
+    border-top: 1px solid #0099ff;
+    text-align: justify;
+    word-wrap: break-word;
+    top: 60%;
+    position: absolute;
+    left: 50%;
+}
+#foto_medico_esp {
+    top: 30%;
+    position: absolute
+}
+
+#medico_esp {
+    margin: 0;
+    top: 30%;
+    position: absolute;
+}
+#header_services {
+    position: absolute;
+    height: 13%;
+    width: 99.9%;
+    border: 1px solid;
+    border-color: transparent transparent #0099ff transparent;
+    margin: 0;
+}
+#credits_services {
+    font-family: Helvetica;
+    font-size: 10px;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 97.5%;
+    width: inherit;
+    border-top: 1px solid #3866a3;
+}
+#breadcrumbs_container {
+	position: absolute;
+	height: 35px;
+	width: 100%;
+	margin: 0;
+}
+.breadcrumbs_especialidades {
+	top: 183px;
+}
+.breadcrumb {
+	background-color: white;
+	margin: 0;
+	height: inherit;
+	display: table-cell;
+	font-family: Helvetica;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: bold;
+	border-right: 1px solid #3866a3;
+	width: 100px;
+	font-size: 13px;
+	color: #c6c6a9;
+}
+#current_page {
+	text-shadow: 0 0 5px #0099ff;
+	color: #0099ff;
+}
+#ul_hospital {
+    margin-left: 10%;
+}
+
+#ul_hospital_acordos {
+    margin-left: 10%;
+}
+
+.anc_hospital {
+    height: 30px;
+    width: 120px;
+    font-family: Helvetica;
+    font-size: 20px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #0099ff;
+    margin-left: 30px;
+    color: black;
+	margin-bottom: 60px;
+}
+#main_acordo {
+    position: absolute;
+    height: 30%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#main_apoio {
+    position: absolute;
+    height: 24%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#main_servico {
+    position: absolute;
+    height: 20%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#imagem_apoio {
+    position: absolute;
+    margin-left: 70%;
+    margin-right: 30%;
+    position: absolute;
+    top: 5%;
+    height: 60%;
+    width: 20%;
+}
+#ul_servico {
+    margin-left: 10%;
+    list-style-type: square;
+}
+#main_consultaE {
+    position: absolute;
+    height: 45%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#main_consultaM {
+    position: absolute;
+    height: 37%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#main_consultaMe {
+    position: absolute;
+    height: 50%;
+    width: 99.9%;
+    margin: 0;
+    top: 15%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#imagem_consultaE {
+    position: absolute;
+    margin-left: 70%;
+    margin-right: 30%;
+    position: absolute;
+    top: 5%;
+    height: 35%;
+    width: 25%;
+}
+#irmandade_panel {
+    width: 1227px;
+    height: 500px;
+    top: 20%;
+}
+.panel_irmandade {
+    width: 225px;
+    height: 450px;
+    margin-right: 0%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #0099ff;
+    margin-top: 2%;
+    text-align: center;
+    float: left;
+    top: 20%;
+}
+#main_irmandade {
+    position: absolute;
+    height: 24%;
+    width: 99.9%;
+    margin: 0;
+    top: 55%;
+    margin-left: 0.1%;
+    margin-right: 0.1%;
+}
+#irmandade_div{
+    top: 40%;
+    position: absolute;
+    height: 30%;
+    width: 95.9%;
+    margin: 0;
+    border: 1px;
+    margin-left: 2%;
+    
+}
+#irmandade_text {
+    display: none;
+    font-family: Helvetica;
+    color: #0099ff;
+    font-size: 30px;
+    text-shadow: 0 0 5px #0099ff;
+    position: absolute;
+    top: 0px;
+    width: 500px;
+    left: 20px;
+}
+.inf_irmandade {
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 10%;
+    margin-left: 10%;
+}

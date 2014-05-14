@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Santa Casa da Misericórdia de Leiria</title>
+		<link rel="stylesheet" type="text/css" href="novo.Estilos.css" />
+	
+		<script type="text/javascript">
+			function medicos(p) {
+				if (p == 1) {
+					document.getElementById('MedicoJorgeBatista').style.display="inline";
+					document.getElementById('MedicoBeatrizOliveira').style.display="none";
+					document.getElementById('MedicoRuteFonseca').style.display="none";
+					document.getElementById('MedicoPauloGaspar').style.display="none";
+					document.getElementById('MedicoRuiFranco').style.display="none";
+				}
+				else{
+					if (p == 2) {
+						document.getElementById('MedicoJorgeBatista').style.display="none";
+						document.getElementById('MedicoBeatrizOliveira').style.display="inline";
+						document.getElementById('MedicoRuteFonseca').style.display="none";
+						document.getElementById('MedicoPauloGaspar').style.display="none";
+						document.getElementById('MedicoRuiFranco').style.display="none";
+					}
+				else{
+					if (p == 3) {
+						document.getElementById('MedicoJorgeBatista').style.display="none";
+						document.getElementById('MedicoBeatrizOliveira').style.display="none";
+						document.getElementById('MedicoRuteFonseca').style.display="inline";
+						document.getElementById('MedicoPauloGaspar').style.display="none";
+						document.getElementById('MedicoRuiFranco').style.display="none";
+				}
+				else{
+					if (p == 4) {
+						document.getElementById('MedicoJorgeBatista').style.display="none";
+						document.getElementById('MedicoBeatrizOliveira').style.display="none";
+						document.getElementById('MedicoRuteFonseca').style.display="none";
+						document.getElementById('MedicoPauloGaspar').style.display="inline";
+						document.getElementById('MedicoRuiFranco').style.display="none";
+				}
+				else{
+					document.getElementById('MedicoJorgeBatista').style.display="none";
+					document.getElementById('MedicoBeatrizOliveira').style.display="none";
+					document.getElementById('MedicoRuteFonseca').style.display="none";
+					document.getElementById('MedicoPauloGaspar').style.display="none";
+					document.getElementById('MedicoRuiFranco').style.display="inline";
+				}
+			}
+		}
+	}
+}
+</script>
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+		  function initialize() {
+			var map_canvas = document.getElementById('map_canvas');
+			var map_options = {
+			  center: new google.maps.LatLng(39.74025839999999,-8.802669400000013),
+			  zoom: 17,
+			  mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			var map = new google.maps.Map(map_canvas, map_options)
+		  }
+		  google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+</head>	
+	<body>
+		<div id="main">
+			<div id="menu">
+				<div id="menu2">
+					<div id="headerLogo">
+						<a href="novo.html" > <img src="Imagens/santa_casa1000.png" 
+						title="Santa Casa da Misericórdia de Leiria" width="98x98" alt="Logo Santa Casa" /> </a>
+					</div>
+					<div id="headers">
+						<div id ="headerSaude" style="list-style-type: none;">
+							<span class="sub"><a href="paginaSaude.html" style="font-size: 17px; text-align: center;"><br/>Saúde</a>
+								<span >
+									<a href="#" style="font-size: 15px;">Hospital e Cliníca</a>
+									<a href="paginaSaude.html" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Marcação de Consultas</a>
+									<a href="#" style="font-size: 15px;">Confirmação Marcações</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerMedicos" style="list-style-type: none;">
+							<span class="sub"><a href="paginaMedicos.html" style="font-size: 17px; text-align: center;"><br/>Médico</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Lista de Especialidades</a>
+									<a href="paginaMedicos.html" style="font-size: 15px;">Detalhes do Médico</a>
+									<a href="#" style="font-size: 15px;">Horários das Consultas</a>
+									<a href="#" style="font-size: 15px;">Corpo Clínico</a>
+									<a href="#" style="font-size: 15px;">Publicações e Notícias</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerPessoal" style="list-style-type: none;">
+							<span class="sub"><a href="#" style="font-size: 17px; text-align: center;"><br/>Pessoal</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Utentes</a>
+									<a href="#" style="font-size: 15px;">Médicos</a>
+									<a href="#" style="font-size: 15px;">Irmãos</a>
+									<a href="#" style="font-size: 15px;">Administrativo</a>
+									<a href="#" style="font-size: 15px;">Administrador</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerCreches" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Creches</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Todas as notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>
+								</span>
+							</span>
+						</div>
+						<div id = "headerIrmandade" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Irmandade</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Informação Pública</a>
+								</span>
+							</span>
+						</div>
+						<div id ="headerGeriatricos" style="list-style-type: none;">
+							<span class="sub"><a href="valencia.html" style="font-size: 17px; text-align: center;"><br/>Cuidados Geriátricos</a>
+								<span class="A1">
+									<a href="#" style="font-size: 15px;">Residencial</a>
+									<a href="#" style="font-size: 15px;">Lar</a>
+									<a href="#" style="font-size: 15px;">Internamento</a>
+									<a href="#" style="font-size: 15px;">Apoio domiciliário</a>
+									<a href="#" style="font-size: 15px;">Últimas notícias</a>
+									<a href="#" style="font-size: 15px;">Formulário de contacto</a>	
+								</span>
+							</span>
+						</div>							
+					</div>
+					<div id="headerRight">
+					<div id ="headerRegister" >
+						<a href="registar.html" > <img src="Imagens/registar.png" 
+						title="Registar" width="100%" height="100%" alt="Logo registar" /></a>
+					</div>
+					<div id="headerLogin" >
+						<a href="login.html" > <img src="Imagens/login.png" 
+						title="Entrar" width="100%" height="100%" alt="Logo Login" /> </a>
+					</div>
+					<div id="headerSearch">
+						<input type="text"/>
+					</div>
+				</div>	
+			</div>
+				<div id = "divCentral">
+					<div id="DetalhesDoMedicoTexto">
+						<p>Detalhes do Médico</p>
+					</div>
+					<div id="divEsquerda">
+						<div id="Medicos">
+							<p>Médicos</p>
+						</div>
+						<div id="ListaMedicos">
+							<div id="LM1"><a href="#" onmouseover="medicos(1)"><br/><span>Jorge Batista<br/><br/></span></a></div>
+							<div id="LM2"><a href="#" onmouseover="medicos(2)"><br/><span>Beatriz Oliveira<br/><br/></span></a></div>
+							<div id="LM3"><a href="#" onmouseover="medicos(3)"><br/><span>Rute Fonseca<br/><br/></span></a></div>
+							<div id="LM4"><a href="#" onmouseover="medicos(4)"><br/><span>Paulo Gaspar<br/><br/></span></a></div>
+							<div id="LM5"><a href="#" onmouseover="medicos(5)"><br/><span>Rui Franco<br/><br/></span></a></div>
+						</div>	
+					</div>
+					<div id="divDireita">
+						<div id="MedicoJorgeBatista" >
+							<p>PERFIL CLÍNICO</p><br/>
+							
+							<img src="Imagens/JorgeBatista.jpg" title="Jorge Batista" width="300px" height="300px" style="float:right; padding-right: 5%;" alt="Foto Jorge Batista" />
+							
+							<div id="medsNome1"><span class="cl3">Nome Clínico:</span> <span class="cl4">&nbsp;Jorge Batista</span><br/><br/><br/></div>		
+							<div id="medsEspe1"><span class="cl3">Especialidades:</span> <span class="cl4">&nbsp;Cardiologia</span><br/><br/><br/></div>
+							<div id="medsInv1"><span class="cl3">Investigação:</span> <span class="cl4">&nbsp;Fracturas Osteoporóticas e Avaliação da qualidade dos Ossos</span><br/><br/><br/></div>
+							<div id="medsHor1"><span class="cl3">Horário de Consultas:</span> <span class="cl4">&nbsp;14h-18h (Todos os dias úteis)</span><br/><br/><br/></div>
+							
+							<span class="cl3">Últimas publicações:</span><br/><br/>
+							
+							<a href="#" title="noticia1" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Estudo sobre a Qualidade dos Ossos</a><br/><br/>
+							<a href="#" title="noticia2" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Como tratar uma fractura</a><br/><br/><br/><br/>
+							<a href="formulario.html" title="marcarConsulta" style="color: blue; font-size:18px; font-family: Verdana; padding-left: 5%;">Marcar Consulta</a>
+						</div>
+						<div id="MedicoBeatrizOliveira" style="display:none">
+							<p>PERFIL CLÍNICO</p><br/>
+							
+							<img src="Imagens/BeatrizOliveira.jpg" title="Beatriz Oliveira" width="300px" height="300px" style="float:right; padding-right: 5%;" alt="Foto Beatriz Oliveira" />
+							
+							<div id="medsNome2"><span class="cl3">Nome Clínico:</span> <span class="cl4">&nbsp;Beatriz Oliveira</span><br/><br/><br/></div>				
+							<div id="medsEspe2"><span class="cl3">Especialidades:</span> <span class="cl4">&nbsp;Pediatria</span><br/><br/><br/></div>
+							<div id="medsInv2"><span class="cl3">Investigação:</span> <span class="cl4">&nbsp;Dores infantis não devem ser subestimadas e Uso e abuso de antibióticos</span><br/><br/><br/></div> 
+							<div id="medsHor2"><span class="cl3">Horário de Consultas:</span> <span style="font-size:17px; font-family: Verdana;">&nbsp;9h-13h (Todos os dias úteis)</span><br/><br/><br/></div>
+							
+							<span class="cl3">Últimas publicações:</span><br/><br/>
+							
+							<a href="#" title="noticia1" style="font-size:15px; font-family: Verdana; padding-left: 5%;">O que fazer em caso de queimadura</a><br/><br/>
+							<a href="#" title="noticia2" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Regras para os antibióticos</a><br/><br/><br/><br/>
+							<a href="formulario.html" title="marcarConsulta" style="color: blue; font-size:18px; font-family: Verdana; padding-left: 5%;">Marcar Consulta</a>
+						</div>
+						<div id="MedicoRuteFonseca" style="display:none">
+							<p>PERFIL CLÍNICO</p><br/>
+							
+							<img src="Imagens/RuteFonseca.jpg" title="Rute Fonseca" width="300px" height="300px" style="float:right; padding-right: 5%; " alt="Foto Rute Fonseca" />
+							
+							<div id="medsNome3"><span class="cl3">Nome Clínico:</span> <span class="cl4">&nbsp;Rute Fonseca</span><br/><br/><br/></div>
+							<div id="medsEspe3"><span class="cl3">Especialidades:</span> <span class="cl4">&nbsp;Urologia</span><br/><br/><br/></div>
+							<div id="medsInv3"><span class="cl3">Investigação:</span> <span class="cl4">&nbsp;Infertilidade Masculina e Sangue na Urina</span><br/><br/><br/></div>
+							<div id="medsHor3"><span class="cl3">Horário de Consultas:</span> <span class="cl4">&nbsp;16h-19h (Todos os dias úteis)</span><br/><br/><br/></div>
+							
+							<span class="cl3">Últimas publicações:</span><br/><br/>
+							
+							<a href="#" title="noticia1" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Soluções para a Infertilidade</a><br/><br/>
+							<a href="#" title="noticia2" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Como tratar o Sangue na Urina</a><br/><br/><br/><br/>
+							<a href="formulario.html" title="marcarConsulta" style="color: blue; font-size:18px; font-family: Verdana; padding-left: 5%;">Marcar Consulta</a>
+							</div>
+						<div id="MedicoPauloGaspar" style="display:none">
+							<p>PERFIL CLÍNICO</p><br/>
+							
+							<img src="Imagens/PauloGaspar.jpg" title="Paulo Gaspar" width="300px" height="300px" style="float:right; padding-right: 5%;" alt="Foto Paulo Gaspar" />
+							
+							<div id="medsNome4"><span class="cl3">Nome Clínico:</span> <span class="cl4">&nbsp;Paulo Gaspar</span><br/><br/><br/></div>
+							<div id="medsEspe4"><span class="cl3">Especialidades:</span> <span class="cl4">&nbsp;Alergologia e Pneumologia</span><br/><br/><br/></div>
+							<div id="medsInv4"><span class="cl3">Investigação:</span> <span class="cl4">&nbsp;Equilíbrio da Saúde Mental</span><br/><br/><br/></div>
+							<div id="medsHor4"><span class="cl3">Horário de Consultas:</span> <span class="cl4">&nbsp;13h-15h (Todos os dias úteis)</span><br/><br/><br/></div>
+							
+							<span class="cl3">Últimas publicações:</span><br/><br/>
+							
+							<a href="#" title="noticia1" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Tratamento para a dificuldade em respirar</a><br/><br/>
+							<a href="#" title="noticia2" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Alergias mais comuns</a><br/><br/><br/><br/>
+							<a href="formulario.html" title="marcarConsulta" style="color: blue; font-size:18px; font-family: Verdana; padding-left: 5%;">Marcar Consulta</a>
+						</div>
+						<div id="MedicoRuiFranco" style="display:none">
+							<p>PERFIL CLÍNICO</p><br/>
+							
+							<img src="Imagens/RuiFranco.jpg" title="Rui Franco" width="300px" height="300px" style="float:right; padding-right: 5%;" alt="Foto Rui Franco" />
+							
+							<div id="medsNome5"><span class="cl3">Nome Clínico:</span> <span class="cl4">&nbsp;Rui Franco</span><br/><br/><br/></div>
+							<div id="medsEspe5"><span class="cl3">Especialidades:</span> <span class="cl4">&nbsp;Oftalmologia</span><br/><br/><br/></div>
+							<div id="medsInv5"><span class="cl3">Investigação:</span> <span class="cl4">&nbsp;Tratamento da Retina</span><br/><br/><br/></div>
+							<div id="medsHor5"><span class="cl3">Horário de Consultas:</span> <span class="cl4">&nbsp;14h-19h (Todos os dias úteis)</span><br/><br/><br/></div>
+							
+							<span class="cl3">Últimas publicações:</span><br/><br/>
+							
+							<a href="#" title="noticia1" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Como saber se necessita de usar óculos</a><br/><br/>
+							<a href="#" title="noticia2" style="font-size:15px; font-family: Verdana; padding-left: 5%;">Cuide da sua visão</a><br/><br/><br/><br/>
+							<a href="formulario.html" title="marcarConsulta" style="color: blue; font-size:18px; font-family: Verdana; padding-left: 5%;">Marcar Consulta</a>
+						</div>
+					</div>
+				</div>
+				<div id = "footer">
+					<div id = "GPSFooter">
+						<div id="map_canvas"></div>
+					</div>
+					<div id = "dadosFooter">
+						<h3>Contactos</h3>
+						<p>Santa Casa da Misericórdia de Leiria</p>
+						<p>Instituição Particular de Solidariedade Social</p>
+						<p>Tel.: 244 106 202 • Fax: 244 106 298</p>
+						<p><a href="mailto:geral@misericordiadeleiria.pt" >geral@misericordiadeleiria.pt</a></p>
+					</div>
+					<div id = "referenciasFooter">
+						<div id = "maisInfoReferencias" >
+							<a href="contactos.html" > <img src="Imagens/info.png" 
+							title="Mais Contactos" width="45x45" alt="Logo mais info" /> </a>
+						</div>
+						<h3>Referências</h3>
+						<p>Lar Nossa Sra. da Encarnação</p>
+						<p>Clínica Médica e de Reabilitação</p>
+						<p>Hospital Dom Manuel de Aguiar</p>
+						<p>Creche "Casa Sanches"</p>
+						<p>Residencial XXI</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
